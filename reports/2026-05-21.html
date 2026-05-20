@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | YYYY年M月D日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  /* 响应式设计 - 手机端 */
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 {
+      font-size: 20px;
+    }
+    .date {
+      font-size: 15px;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+    }
+    .section {
+      margin-bottom: 24px;
+    }
+    .section-title {
+      font-size: 17px;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+    }
+    ul {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    table {
+      font-size: 15px;
+    }
+    th, td {
+      padding: 10px 12px;
+    }
+    .highlight, .warning {
+      padding: 14px 18px;
+      font-size: 15px;
+    }
+    .back-button {
+      font-size: 15px;
+      padding: 10px 14px;
+      margin-bottom: 16px;
+    }
+  }
+
+  /* 响应式设计 - 平板端 */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body {
+      max-width: 90%;
+      margin: 30px auto;
+      padding: 24px;
+    }
+    h1 {
+      font-size: 21px;
+    }
+  }
+
+  /* 响应式设计 - 小屏幕手机 */
+  @media (max-width: 480px) {
+    body {
+      margin: 12px auto;
+      padding: 12px;
+      font-size: 17px;
+    }
+    h1 {
+      font-size: 19px;
+    }
+    .date {
+      font-size: 14px;
+    }
+    .section-title {
+      font-size: 18px;
+    }
+    table {
+      font-size: 14px;
+      display: block;
+      overflow-x: auto;
+    }
+  }
+
+  /* 响应式设计 - 大屏幕电脑 */
+  @media (min-width: 1200px) {
+    body {
+      max-width: 900px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年5月21日（周四）</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>英伟达Q1营收816亿美元</strong> — 超预期，AI算力需求无天花板 <span class="source">（财联社）</span></li>
+    <li><strong>OpenAI筹备$1万亿估值IPO</strong> — 拟数日内递交招股书，最快9月上市 <span class="source">（财联社）</span></li>
+    <li><strong>三星今日起大罢工</strong> — 劳资谈判破裂，HBM供给收紧预期 <span class="source">（财联社）</span></li>
+    <li><strong>WTI原油暴跌5.66%至$98.26</strong> — 两天跌9%，地缘溢价消退 <span class="source">（财联社）</span></li>
+    <li><strong>12.8T光模块亮相光博会</strong> — 光通信"超级周期"确认 <span class="source">（财联社）</span></li>
+    <li><strong>液冷服务器概念爆发</strong> — 同飞/申菱+12%，川润/宏盛/银轮涨停 <span class="source">（财联社）</span></li>
+  </ul>
+</div>
+
+<!-- 一、大势研判 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 一、大势研判</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">🌍 宏观 & 地缘</strong>
+    <ul>
+      <li><strong>美伊谈判延续</strong> — 伊朗在"强烈不信任美国"下继续推进谈判，5月底朝觐季结束后于伊斯兰堡举行新一轮 <span class="source">（阿拉比亚电视台）</span></li>
+      <li><strong>WTI原油期货暴跌5.66%</strong> — 收报$98.26/桶（Brent亦暴跌$110→$105区间），两天累计-9%。Wood Mackenzie警告若霍尔木兹长期停摆，油价恐升至$200 <span class="source">（财联社/WoodMac）</span></li>
+      <li><strong>高盛：美国国债收益率难以下降</strong> — 30年期升破5%，长期远期收益率仅比公允价值高出约半个标准差 <span class="source">（高盛）</span></li>
+      <li><strong>联合国：2026年全球经济增速预期放缓至2.6%</strong> — 能源价格上涨、运输中断、市场波动为主因 <span class="source">（UNCTAD）</span></li>
+      <li><strong>习近平为普京举行欢迎宴会</strong> — 《中俄睦邻友好合作条约》继续延期，能源/科技/交通/创新合作全面提质升级 <span class="source">（央视新闻）</span></li>
+      <li><strong>商务部解读中美经贸磋商成果</strong> — 关税不超过吉隆坡水平，300亿美元对等降税框架，建立贸易理事会和投资理事会，引进200架波音飞机 <span class="source">（商务部）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">💡 算力基建</strong>
+    <ul>
+      <li><strong>英伟达2027财年Q1营收816亿美元</strong> — 单季$81.6B，AI芯片需求再超预期！数据中心GPU算力=液冷管最强需求支撑 <span class="source">（财联社）</span></li>
+      <li><strong>国家超算互联网：30+智算/超算中心统一调度</strong> — 300万+CPU核+20万张GPU卡，八大枢纽20ms时延圈，从"建算力"转向"织算网" <span class="source">（财联社/工信部）</span></li>
+      <li><strong>英伟达在新加坡设立研究中心</strong> — 加码东南亚AI算力基建布局 <span class="source">（财联社）</span></li>
+      <li><strong>发改委：强化智能算力统筹</strong> — 智谱AI等5家企业座谈，整治"内卷式"竞争、软硬结合参与国家重大项目 <span class="source">（财联社）</span></li>
+      <li><strong>ARM股价大涨15%</strong> — AI芯片架构需求爆炸，数据中心渗透率持续提升 <span class="source">（财联社）</span></li>
+      <li><strong>半导体板块主力净流入149.57亿元</strong> — 中芯国际净买入34.51亿居首，资金从AI硬件（工业富联/天孚）转向半导体上游 <span class="source">（财联社）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 二、液冷管赛道情报 -->
+<div class="section">
+  <div class="section-title orange">💧 二、液冷管赛道情报</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">📈 5月20日液冷板块爆发</strong>
+    <ul>
+      <li><strong>同飞股份 +12%</strong>、<strong>申菱环境 +12%</strong>、川润股份涨停、宏盛股份涨停、银轮股份涨停、英维克/大元泵业跟涨 <span class="source">（财联社）</span></li>
+      <li>三星罢工→HBM供给收紧→AI芯片单机功率密度提升→液冷散热需求强化！逻辑链完整 <span class="source">（財联社/貔貅研判）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">💰 成本端重大利好</strong>
+    <ul>
+      <li><strong>WTI $98.26（-5.66%）</strong> — 两天跌9%，化工原料成本压力骤降，液冷管毛利率弹性释放 <span class="source">（财联社）</span></li>
+      <li>伊朗美方谈判仍在推进→地缘溢价消退→油价有进一步下行空间 <span class="source">（阿拉比亚）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#e87020;">🧊 需求端强化</strong>
+    <ul>
+      <li><strong>英伟达$81.6B季度营收</strong> — 数据中心GPU是核心收入来源=液冷管直接需求 <span class="source">（英伟达）</span></li>
+      <li><strong>12.8T光模块亮相</strong> — 光通信"超级周期"确认，AI数据中心数据带宽需求爆发意味着算力密度继续提升 <span class="source">（光博会）</span></li>
+      <li><strong>国家算力网从"建算力"到"织算网"</strong> — 20万张GPU卡联网调度，全国八大枢纽节点全面铺开液冷需求 <span class="source">（工信部）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、下游应用战场 -->
+<div class="section">
+  <div class="section-title green">🔋 三、下游应用战场</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🖥️ 数据中心/算力中心</strong>
+    <ul>
+      <li><strong>英伟达Q1营收$81.6B</strong> — 数据中心GPU需求爆炸，直接拉动液冷散热需求 <span class="source">（财联社）</span></li>
+      <li><strong>OpenAI筹备$1T估值IPO</strong> — 最快本周五提交招股书，目标9月上市，AI赛道超级催化剂 <span class="source">（财联社）</span></li>
+      <li><strong>谷歌I/O：Gemini 900M MAU（+100% YoY）</strong> — 每日请求量7倍增长，AI应用爆发倒逼算力扩容 <span class="source">（谷歌）</span></li>
+      <li><strong>中国算力网：八大枢纽+20毫秒时延圈</strong> — 超30家智算中心统一调度 <span class="source">（工信部）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🔋 储能行业</strong>
+    <ul>
+      <li><strong>德方纳米87亿元投向锂电新材料</strong> — 磷酸铁锂正极材料+磷基新能源材料项目 <span class="source">（财联社）</span></li>
+      <li><strong>工业气体概念异动</strong> — 中船特气+15%（六氟化钨方向），AI芯片制造特种气体需求验证 <span class="source">（财联社）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🚗 新能源汽车</strong>
+    <ul>
+      <li><strong>东风汽车T1商用车新能源平台6月前投产</strong> — 纯氢/氢电混/纯电，燃料电池+储氢+热管理一体化 <span class="source">（财联社）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#34a853;">⚡ 液冷超充桩</strong>
+    <ul>
+      <li><strong>印尼资源民族主义升级</strong> — 要求棕榈油/煤炭/镍必须通过国企销售（镍价影响不锈钢成本，间接影响液冷管路） <span class="source">（财联社）</span></li>
+      <li>超充桩方向暂无新增动态</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、集成商动态 -->
+<div class="section">
+  <div class="section-title purple">📡 四、集成商动态（渠道情报）</div>
+  <table>
+    <tr>
+      <th style="width:18%">企业</th>
+      <th>核心进展</th>
+    </tr>
+    <tr>
+      <td><strong>英维克</strong></td>
+      <td>5月20日股价跟涨，液冷概念板块亢奋</td>
+    </tr>
+    <tr>
+      <td><strong>曙光数创</strong></td>
+      <td>北交所液冷龙头，关注度提升</td>
+    </tr>
+    <tr>
+      <td><strong>高澜股份</strong></td>
+      <td>液冷散热系统主流供应商</td>
+    </tr>
+    <tr>
+      <td><strong>申菱环境</strong></td>
+      <td><strong>5月20日大涨12%！</strong>液冷动力十足</td>
+    </tr>
+    <tr>
+      <td><strong>巨化股份</strong></td>
+      <td>冷却液龙头，受益于液冷渗透率提升</td>
+    </tr>
+  </table>
+</div>
+
+<!-- 五、二级市场 & 资本动向 -->
+<div class="section">
+  <div class="section-title darkblue">📈 五、二级市场 & 资本动向</div>
+  <ul>
+    <li><strong>A股5月20日收盘</strong> — 上证-0.45%，深证-0.37%，创业板+0.05%。恒生-0.55%，恒生科技+0.17% <span class="source">（财联社）</span></li>
+    <li><strong>LPR维持不变</strong> — 1年3%，5年3.5%，符合预期 <span class="source">（央行）</span></li>
+    <li><strong>半导体主力流入149.57亿元</strong> — 中芯国际34.51亿居首 <span class="source">（财联社）</span></li>
+    <li><strong>工业富联遭净卖出23.6亿元</strong> — 获利盘撤退信号，资金从AI硬件转向半导体上游 <span class="source">（财联社）</span></li>
+    <li><strong>S&P500期货+0.5%，纳斯达克100期货+0.82%</strong> — 风险情绪回暖 <span class="source">（财联社）</span></li>
+    <li><strong>公安部：上市公司财务造假"零容忍"</strong> — A股治理升级，长期利好优质标的 <span class="source">（公安部）</span></li>
+    <li><strong>房地产数据恶化</strong> — 1-4月土地出让收入6801亿元，同比下降27.2% <span class="source">（财政部）</span></li>
+  </ul>
+</div>
+
+<!-- 六、利通科技（839167） -->
+<div class="section">
+  <div class="section-title gray">🏢 六、利通科技（839167）动态</div>
+  <ul>
+    <li><strong>5月20日液冷板块全面爆发</strong> — 申菱环境+12%、同飞股份+12%、川润/宏盛/银轮涨停，液冷集成商情绪亢奋，利通科技作为液冷管核心供应商应受益于板块情绪 <span class="source">（财联社/貔貅研判）</span></li>
+    <li><strong>成本端重大利好</strong> — 化工原料价格随WTI油价大跌（$107→$98，-9%/2天），液冷管毛利率弹性释放，利通科技直接受益 <span class="source">（财联社）</span></li>
+    <li><strong>需求端三重强化</strong> — 英伟达$81.6B季度营收+OpenAI $1T IPO+国家算力网"织算网"战略升级=液冷管需求长期逻辑历史最强确认 <span class="source">（多源综合）</span></li>
+    <li><strong>今日关注</strong> — 三星罢工第一天（HBM供给收紧→AI芯片涨价→单机功率提升→液冷需求更刚性），注意利通科技今日股价反应</li>
+  </ul>
+</div>
+
+<!-- 七、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 七、战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 高度关注</strong><br>
+    <strong>三星罢工第一天（5月21日）</strong> — 历史性大规模罢工对全球存储/HBM供应链冲击程度待观察。直接受益：HBM涨价预期→三星股价下行/海力士受益；间接受益：AI芯片供给缺口→单机算力密度提升→液冷需求更刚性<br><br>
+    <strong>OpenAI+SpaceX双IPO窗口</strong> — OpenAI最快本周五递交招股书，SpaceX同步推进。AI+商业航天双巨头同时冲刺IPO = 全球资本市场超级事件。算力基建相关标的将迎新一轮价值重估
+  </div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    <strong>油价$200极端情景</strong> — WoodMac警示若霍尔木兹完全封锁，Brent恐达$200。目前基准情景（谈判延续）下WTI $98-110区间，对液冷管利润率可控<br><br>
+    <strong>中俄能源合作深化</strong> — 普京访华+条约延期，天然气/石油进口结构变化或影响全球能源定价<br><br>
+    <strong>印尼资源民族主义</strong> — 镍出口管制收紧影响不锈钢成本，间接影响液冷管路原材料价格<br><br>
+    <strong>国台办严批赖清德"5·20"讲话</strong> — 台海局势短期紧张，潜在地缘风险
+  </div>
+</div>
+
+</body>
+</html>
