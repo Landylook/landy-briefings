@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年5月22日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  /* 响应式设计 - 手机端 */
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 {
+      font-size: 20px;
+    }
+    .date {
+      font-size: 15px;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+    }
+    .section {
+      margin-bottom: 24px;
+    }
+    .section-title {
+      font-size: 17px;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+    }
+    ul {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    table {
+      font-size: 15px;
+    }
+    th, td {
+      padding: 10px 12px;
+    }
+    .highlight, .warning {
+      padding: 14px 18px;
+      font-size: 15px;
+    }
+    .back-button {
+      font-size: 15px;
+      padding: 10px 14px;
+      margin-bottom: 16px;
+    }
+  }
+
+  /* 响应式设计 - 平板端 */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body {
+      max-width: 90%;
+      margin: 30px auto;
+      padding: 24px;
+    }
+    h1 {
+      font-size: 21px;
+    }
+  }
+
+  /* 响应式设计 - 小屏幕手机 */
+  @media (max-width: 480px) {
+    body {
+      margin: 12px auto;
+      padding: 12px;
+      font-size: 17px;
+    }
+    h1 {
+      font-size: 19px;
+    }
+    .date {
+      font-size: 14px;
+    }
+    .section-title {
+      font-size: 18px;
+    }
+    table {
+      font-size: 14px;
+      display: block;
+      overflow-x: auto;
+    }
+  }
+
+  /* 响应式设计 - 大屏幕电脑 */
+  @media (min-width: 1200px) {
+    body {
+      max-width: 900px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年5月22日（周五）</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>OpenAI Q1营收57亿美元</strong> — AI双寡头格局确认，算力需求无天花板 <span class="source">（财联社）</span></li>
+    <li><strong>Anthropic年化营收接近450亿美元</strong> — Q2预计翻倍至110亿美元 <span class="source">（财联社）</span></li>
+    <li><strong>SpaceX宣布10GW太阳能工厂</strong> — 选址奥斯汀，算力+能源融合新里程碑 <span class="source">（财联社）</span></li>
+    <li><strong>ARM美股暴涨16%</strong> — 存储概念股大爆发，HBM/DRAM需求继续强化 <span class="source">（财联社）</span></li>
+    <li><strong>WTI原油跌破$98</strong> — 夜盘$97.62，化工原料成本端利好持续 <span class="source">（财联社）</span></li>
+    <li><strong>特朗普威胁伊朗：必须交出浓缩铀</strong> — 地缘风险溢价可能反弹 <span class="source">（财联社）</span></li>
+  </ul>
+</div>
+
+<!-- 一、大势研判 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 一、大势研判</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">🌍 宏观 & 地缘</strong>
+    <ul>
+      <li><strong>特朗普威胁伊朗：必须交出高丰度浓缩铀</strong> — 白宫最新表态，外交语气转硬，鲁比奥称"无法保证协议达成" <span class="source">（财联社）</span></li>
+      <li><strong>WTI原油跌破$98至$97.62</strong> — 夜盘下跌0.65%，从上周$107累计跌幅超10%，地缘溢价消退中 <span class="source">（财联社）</span></li>
+      <li><strong>美联储官员观点分裂</strong> — 巴尔金：政策处于良好状态；古尔斯比：通胀问题正在加剧，7月加息概率分歧加大 <span class="source">（财联社）</span></li>
+      <li><strong>美伊谈判仍在推进</strong> — 巴基斯坦陆军参谋长赴德黑兰继续斡旋，谈判渠道维持开放 <span class="source">（新华社）</span></li>
+      <li><strong>英国债市大涨</strong> — 30年期国债收益率创2023年12月以来最大周跌幅（-23bps），避险情绪降温 <span class="source">（财联社）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">💡 AI & 算力基建</strong>
+    <ul>
+      <li><strong>OpenAI Q1营收57亿美元</strong> — AI收入爆炸确认，领先竞争对手Anthropic 10亿美元 <span class="source">（财联社）</span></li>
+      <li><strong>Anthropic年化营收接近450亿美元</strong> — Q2预计翻倍至110亿美元，AI双寡头格局确认 <span class="source">（财联社）</span></li>
+      <li><strong>SpaceX宣布在奥斯汀附近建设10GW太阳能工厂</strong> — 全球能源+算力融合新里程碑 <span class="source">（财联社）</span></li>
+      <li><strong>ARM美股暴涨16%</strong> — 3月以来最大单日涨幅，存储概念股集体大爆发：闪迪+10%、希捷+8%、美光+4% <span class="source">（财联社）</span></li>
+      <li><strong>美国将向IBM等9家量子计算公司划拨20亿美元</strong> — 政府将获得股权，量子计算国家战略化 <span class="source">（财联社）</span></li>
+      <li><strong>特朗普推迟AI行政命令签字</strong> — "对某些方面不满意"，具体政策待定 <span class="source">（财联社）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 二、液冷管赛道情报 -->
+<div class="section">
+  <div class="section-title orange">💧 二、液冷管赛道情报</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">💰 成本端持续利好</strong>
+    <ul>
+      <li><strong>WTI原油$97.62（跌破$98）</strong> — 从$107高位累计跌超10%，化工原料成本压力骤降，液冷管毛利率弹性释放 <span class="source">（财联社）</span></li>
+      <li>伊朗强硬表态若持续→油价可能反弹，但当前趋势利好持续 <span class="source">（貔貅研判）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🧊 需求端全面强化</strong>
+    <ul>
+      <li><strong>英伟达Q1营收$81.6B</strong> — 数据中心$75.2B同比翻倍，液冷管直接需求确认 <span class="source">（财联社）</span></li>
+      <li><strong>ARM +16%</strong> — AI芯片架构需求爆发，HBM/DRAM供给紧张→单机功率密度提升→液冷散热需求更刚性 <span class="source">（财联社）</span></li>
+      <li><strong>国家超算互联网</strong> — 30+智算中心、20万GPU卡联网，全国八大枢纽"织算网" <span class="source">（工信部）</span></li>
+      <li><strong>中鼎股份（000887）募资19.2亿</strong> — 布局智能机器人热管理系统总成，液冷技术从数据中心→机器人场景延伸 <span class="source">（财联社）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#e87020;">🗺️ 液冷应用场景</strong>
+    <ul>
+      <li><strong>数据中心/智算中心</strong> — 英伟达GPU+OpenAI算力需求最强场景 <span class="source">（貔貅研判）</span></li>
+      <li><strong>储能行业</strong> — 大储项目液冷渗透率92.7%，持续扩张 <span class="source">（貔貅研判）</span></li>
+      <li><strong>液冷超充桩</strong> — 单枪600kW~1.5MW，2026年国内需求破百万根 <span class="source">（貔貅研判）</span></li>
+      <li><strong>智能机器人</strong> — 特斯拉Optimus产线改造+人形机器人2035年市场达$200B（巴克莱），热管理新增量 <span class="source">（财联社/巴克莱）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、下游应用战场 -->
+<div class="section">
+  <div class="section-title green">🔋 三、下游应用战场</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🖥️ 数据中心/算力中心</strong>
+    <ul>
+      <li><strong>英伟达Q1 $81.6B</strong> — 数据中心$75.2B（同比翻倍），数据中心GPU=液冷管最强需求 <span class="source">（财联社）</span></li>
+      <li><strong>OpenAI Q1 $5.7B营收</strong> — AI军备竞赛持续，算力需求无上限 <span class="source">（财联社）</span></li>
+      <li><strong>国家超算互联网</strong> — 从"建算力"到"织算网"，八大枢纽20ms时延圈 <span class="source">（工信部）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🔋 储能行业</strong>
+    <ul>
+      <li><strong>德方纳米87亿元投向锂电新材料</strong> — 磷酸铁锂+磷基新能源材料 <span class="source">（财联社）</span></li>
+      <li><strong>大储项目液冷渗透率92.7%</strong> — 储能热管理液冷化趋势不可逆 <span class="source">（貔貅研判）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🤖 机器人</strong>
+    <ul>
+      <li><strong>特斯拉Optimus产线改造</strong> — 弗里蒙特工厂Model S/X产线→人形机器人产线，马斯克亲自见证 <span class="source">（财联社）</span></li>
+      <li><strong>巴克莱：2035年人形机器人市场达$200B</strong> — 物理AI生态$1T规模，液冷新应用场景 <span class="source">（财联社/巴克莱）</span></li>
+      <li><strong>中鼎股份19.2亿布局机器人关节+热管理</strong> — A股上市公司真金白银投入 <span class="source">（财联社）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#34a853;">⚡ 液冷超充桩</strong>
+    <ul>
+      <li><strong>2026年国内液冷超充桩需求破百万根</strong> — 单枪600kW~1.5MW，渗透率加速 <span class="source">（貔貅研判）</span></li>
+      <li><strong>东风汽车T1平台6月前投产</strong> — 纯氢/氢电混/纯电，燃料电池+热管理一体化 <span class="source">（财联社）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、集成商动态 -->
+<div class="section">
+  <div class="section-title purple">📡 四、集成商动态（渠道情报）</div>
+  <table>
+    <tr>
+      <th style="width:18%">企业</th>
+      <th>核心进展</th>
+    </tr>
+    <tr>
+      <td><strong>英维克</strong></td>
+      <td>液冷概念主流供应商，5月21日随板块跟跌，关注今日延续性</td>
+    </tr>
+    <tr>
+      <td><strong>曙光数创</strong></td>
+      <td>北交所液冷龙头，国家算力网受益标的</td>
+    </tr>
+    <tr>
+      <td><strong>高澜股份</strong></td>
+      <td>液冷散热系统主流供应商</td>
+    </tr>
+    <tr>
+      <td><strong>申菱环境</strong></td>
+      <td><strong>5月20日+12%，</strong>液冷动力十足</td>
+    </tr>
+    <tr>
+      <td><strong>巨化股份</strong></td>
+      <td>冷却液龙头，受益于液冷渗透率提升</td>
+    </tr>
+    <tr>
+      <td><strong>同飞股份</strong></td>
+      <td><strong>5月20日+12%</strong>，液冷板块领涨</td>
+    </tr>
+  </table>
+</div>
+
+<!-- 五、二级市场 & 资本动向 -->
+<div class="section">
+  <div class="section-title darkblue">📈 五、二级市场 & 资本动向</div>
+  <ul>
+    <li><strong>道指创历史收盘新高</strong> — 5月21日+0.55%，美股整体上涨 <span class="source">（财联社）</span></li>
+    <li><strong>ARM +16%</strong> — 3月以来最大单日涨幅，存储概念股集体爆发：闪迪+10%、希捷+8%、西部数据+5%、美光+4% <span class="source">（财联社）</span></li>
+    <li><strong>中概股金龙指数-3%</strong> — 网易-6%、贝壳-7%、万国数据-6%，A股跟跌 <span class="source">（财联社）</span></li>
+    <li><strong>A股5月21日收跌</strong> — 近4800只个股下跌，仅34只涨停，天承科技/思特威从高点回落超20% <span class="source">（财联社）</span></li>
+    <li><strong>港股通5月25日暂停</strong> — 佛诞日休市，5月26日起恢复 <span class="source">（上交所）</span></li>
+    <li><strong>摩根大通将华纳兄弟探索贷款增至$100亿</strong> — 派拉蒙合并前债务再融资，媒体整合加速 <span class="source">（财联社）</span></li>
+    <li><strong>英国30年期国债收益率创最大周跌幅</strong> — -23bps，避险资金从美债转向全球配置 <span class="source">（财联社）</span></li>
+    <li><strong>土耳其MSCI ETF暴跌8.3%</strong> — 新兴市场risk-off，资金流出新兴市场 <span class="source">（财联社）</span></li>
+  </ul>
+</div>
+
+<!-- 六、利通科技（839167） -->
+<div class="section">
+  <div class="section-title gray">🏢 六、利通科技（839167）动态</div>
+  <ul>
+    <li><strong>液冷板块5月21日跟跌</strong> — 昨日强势股（申菱+12%、同飞+12%）今日随大盘回落，液冷管板块短期调整 <span class="source">（财联社/貔貅研判）</span></li>
+    <li><strong>成本端利好持续</strong> — WTI $97.62，化工原料压力持续缓解，液冷管毛利率弹性释放中 <span class="source">（财联社）</span></li>
+    <li><strong>需求端逻辑未变</strong> — 英伟达$81.6B+OpenAI $5.7B季营收+国家算力网长期利好不变 <span class="source">（多源综合）</span></li>
+    <li><strong>关注今日开盘方向</strong> — 昨夜ARM+16%美股存储概念爆发，关注今日A股液冷板块跟涨机会</li>
+  </ul>
+</div>
+
+<!-- 七、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 七、战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 高度关注</strong><br>
+    <strong>伊朗浓缩铀事件</strong> — 特朗普要求伊朗交出高丰度浓缩铀，外交语气转硬。若美伊谈判破裂→霍尔木兹风险→油价$100+→液冷管成本端承压（当前基准情景：谈判延续，油价$98-110区间）<br><br>
+    <strong>液冷板块今日方向</strong> — 昨夜ARM+16%、存储概念爆发、美股科技大涨。今日重点关注A股液冷板块能否跟涨
+  </div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    <strong>OpenAI IPO递表</strong> — 目标$1T估值，关注周五美股收盘后动态<br><br>
+    <strong>SpaceX IPO</strong> — 奥斯汀10GW太阳能工厂=SpaceX能源基础设施重大布局<br><br>
+    <strong>中芯国际收购中芯北方49%股权</strong> — 获证监会注册批复，12个月内有效，国产替代加速<br><br>
+    <strong>人形机器人超级周期</strong> — 特斯拉Optimus产线改造+巴克莱$200B市场预测，液冷应用场景从数据中心→机器人延伸
+  </div>
+</div>
+
+</body>
+</html>
