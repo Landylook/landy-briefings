@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年5月27日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  /* 响应式设计 - 手机端 */
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 {
+      font-size: 20px;
+    }
+    .date {
+      font-size: 15px;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+    }
+    .section {
+      margin-bottom: 24px;
+    }
+    .section-title {
+      font-size: 17px;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+    }
+    ul {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    table {
+      font-size: 15px;
+    }
+    th, td {
+      padding: 10px 12px;
+    }
+    .highlight, .warning {
+      padding: 14px 18px;
+      font-size: 15px;
+    }
+    .back-button {
+      font-size: 15px;
+      padding: 10px 14px;
+      margin-bottom: 16px;
+    }
+  }
+
+  /* 响应式设计 - 平板端 */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body {
+      max-width: 90%;
+      margin: 30px auto;
+      padding: 24px;
+    }
+    h1 {
+      font-size: 21px;
+    }
+  }
+
+  /* 响应式设计 - 小屏幕手机 */
+  @media (max-width: 480px) {
+    body {
+      margin: 12px auto;
+      padding: 12px;
+      font-size: 17px;
+    }
+    h1 {
+      font-size: 19px;
+    }
+    .date {
+      font-size: 14px;
+    }
+    .section-title {
+      font-size: 18px;
+    }
+    table {
+      font-size: 14px;
+      display: block;
+      overflow-x: auto;
+    }
+  }
+
+  /* 响应式设计 - 大屏幕电脑 */
+  @media (min-width: 1200px) {
+    body {
+      max-width: 900px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年5月27日（周三）</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>美光科技暴涨19%</strong> — 市值首破$1万亿，存储芯片HBM需求确认 <span class="source">（财联社）</span></li>
+    <li><strong>SpaceX获22.9亿美元订单</strong> — 美国太空军军事太空数据网络 <span class="source">（财联社）</span></li>
+    <li><strong>软银机器人Roze启动美股IPO</strong> — 高盛/摩根/瑞穗联合保荐 <span class="source">（财联社）</span></li>
+    <li><strong>标普500+纳指再创新高</strong> — 科技股强势延续 <span class="source">（财联社）</span></li>
+    <li><strong>WTI原油$93.89（-2.81%）</strong> — 油价跌至$93区间，化工原料成本端利好 <span class="source">（财联社）</span></li>
+    <li><strong>霍尔木兹海峡25艘船只正常通行</strong> — 伊朗未封锁海峡，地缘溢价消退 <span class="source">（央视）</span></li>
+  </ul>
+</div>
+
+<!-- 一、大势研判 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 一、大势研判</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">📈 美股再度新高</strong>
+    <ul>
+      <li><strong>标普500指数+0.61%</strong> — 再创历史新高！ <span class="source">（财联社）</span></li>
+      <li><strong>纳斯达克综指+1.19%</strong> — 连续走强 <span class="source">（财联社）</span></li>
+      <li><strong>道琼斯指数-0.23%</strong> — 权重股表现分化 <span class="source">（财联社）</span></li>
+      <li><strong>美光科技+19%</strong> — 市值突破$1万亿创11年以来最大单日涨幅！存储芯片HBM需求爆炸 <span class="source">（财联社）</span></li>
+      <li><strong>英伟达Vera CPU</strong> — Phoronix基准测试中代理式AI性能释放 <span class="source">（财联社）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">🛢️ 油价继续下行至$93</strong>
+    <ul>
+      <li><strong>WTI原油$93.89（-2.81%）</strong> — 从上周$107累计跌超12%！ <span class="source">（财联社）</span></li>
+      <li><strong>霍尔木兹航运恢复正常</strong> — 25艘船只通行，伊朗未封锁，美国汽油期货-5%创五周新低 <span class="source">（财联社/央视）</span></li>
+      <li><strong>布伦特原油+3.58%至$99.58</strong> — 美布价差拉大至约$6 <span class="source">（财联社）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">🌍 地缘政治</strong>
+    <ul>
+      <li><strong>美伊谈判持续</strong> — 特朗普与内塔尼亚胡通话协调；伊朗革命卫队24小时内引导25艘船只通过霍尔木兹 <span class="source">（财联社/央视）</span></li>
+      <li><strong>伊朗全面恢复国际互联网</strong> — 内部稳定性信号 <span class="source">（新华社）</span></li>
+      <li><strong>前纽约联储主席称降息依据"很弱"</strong> — 中性利率或高于美联储假设 <span class="source">（财联社）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 二、液冷管赛道情报 -->
+<div class="section">
+  <div class="section-title orange">💧 二、液冷管赛道情报</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">💰 成本端持续利好</strong>
+    <ul>
+      <li><strong>WTI原油跌至$93.89</strong> — 从$107高位累计跌超12%，美国汽油期货-5%创五周新低，化工原料成本端压力骤然缓解 <span class="source">（财联社）</span></li>
+      <li><strong>霍尔木兹航运正常</strong> — 25艘船只24小时内安全通过，伊朗未封锁，油价地缘溢价继续消退 <span class="source">（央视）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🧊 需求端确认强化</strong>
+    <ul>
+      <li><strong>美光科技+19%，市值突破$1万亿</strong> — 存储芯片HBM需求确认！液冷散热需求刚性再强化 <span class="source">（财联社）</span></li>
+      <li><strong>英伟达Vera CPU代理式AI性能测试</strong> — AI芯片迭代加速，量子功热持续提升 <span class="source">（财联社）</span></li>
+      <li><strong>StarCloud太空算力×星链合作</strong> — 部署50+台星链迷你激光终端于卫星轨道数据中心，太空算力新赛道 <span class="source">（财联社）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#e87020;">🎯 应用场景扩张</strong>
+    <ul>
+      <li><strong>软银机器人Roze启动IPO</strong> — 保荐人：高盛、摩根大通、瑞穗、摩根士丹利。机器人资产证券化=热管理需求资本化 <span class="source">（财联社）</span></li>
+      <li><strong>太空算力液冷</strong> — StarCloud太空数据中心部署星链终端，液冷散热技术从地面到太空 <span class="source">（财联社）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、下游应用战场 -->
+<div class="section">
+  <div class="section-title green">🔋 三、下游应用战场</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🖥️ 数据中心/算力中心</strong>
+    <ul>
+      <li><strong>美光$1万亿市值</strong> — 存储芯片HBM之王，数据中心DRAM/NAND需求确认 <span class="source">（财联社）</span></li>
+      <li><strong>英伟达Vera CPU性能测试</strong> — 代理式AI时代芯片持续迭代 <span class="source">（财联社）</span></li>
+      <li><strong>PCB概念持续强势</strong> — 生益电子涨停创历史新高，沪电股份同创新高 <span class="source">（财联社）</span></li>
+      <li><strong>深科技14.7亿扩封测产能</strong> — 深圳+合肥布局高端存储封测 <span class="source">（财联社）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🚀 太空算力</strong>
+    <ul>
+      <li><strong>StarCloud×SpaceX</strong> — 部署50+台星链迷你激光终端于卫星轨道数据中心，太空算力新赛道开启！ <span class="source">（财联社）</span></li>
+      <li><strong>NASA公布月球基地三阶段路线图</strong> — 月球南极长期驻留设施 <span class="source">（财联社）</span></li>
+      <li><strong>蓝色起源合同</strong> — NASA$2.34亿/辆运送漫游车至月球 <span class="source">（财联社）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🤖 机器人</strong>
+    <ul>
+      <li><strong>软银机器人Roze启动美股IPO</strong> — 芯片设计/软硬件一体化，高盛/大摩/摩根大通/瑞穗保荐 <span class="source">（财联社）</span></li>
+      <li><strong>特斯拉Optimus产线+SpaceX合并猜想</strong> — 马斯克讨论合并，人形机器人+太空无限战略 <span class="source">（财联社）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#34a853;">⚡ 储能/新能源</strong>
+    <ul>
+      <li><strong>澳洲LNG工会取消罢工计划</strong> — 能源供应压力缓解 <span class="source">（财联社）</span></li>
+      <li><strong>几内亚管控铝土矿出口</strong> — 6月出台新规，铝价可能走强 <span class="source">（财联社）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、集成商动态 -->
+<div class="section">
+  <div class="section-title purple">📡 四、集成商动态（渠道情报）</div>
+  <table>
+    <tr>
+      <th style="width:18%">企业</th>
+      <th>核心进展</th>
+    </tr>
+    <tr>
+      <td><strong>英维克</strong></td>
+      <td>液冷概念主流供应商，5月26日随大盘分化（创业板V型反弹+0.54%）</td>
+    </tr>
+    <tr>
+      <td><strong>曙光数创</strong></td>
+      <td>北交所液冷龙头，国家算力网受益标的</td>
+    </tr>
+    <tr>
+      <td><strong>高澜股份</strong></td>
+      <td>液冷散热系统主流供应商</td>
+    </tr>
+    <tr>
+      <td><strong>申菱环境</strong></td>
+      <td>液冷动力企业，A股科技股情绪回暖</td>
+    </tr>
+    <tr>
+      <td><strong>巨化股份</strong></td>
+      <td>冷却液龙头，受益于液冷渗透率提升</td>
+    </tr>
+  </table>
+</div>
+
+<!-- 五、二级市场 & 资本动向 -->
+<div class="section">
+  <div class="section-title darkblue">📈 五、二级市场 & 资本动向</div>
+  <ul>
+    <li><strong>美光科技+19%市值破$1万亿</strong> — 2011年11月以来最大单日涨幅，HBM需求确认 <span class="source">（财联社）</span></li>
+    <li><strong>标普500+0.61%再创历史新高</strong> — 纳斯达克+1.19%强势，道指-0.23%分化 <span class="source">（财联社）</span></li>
+    <li><strong>WTI原油$93.89（-2.81%）</strong> — 布伦特$99.58（+3.58%），美布价差约$6 <span class="source">（财联社）</span></li>
+    <li><strong>纳指100期货涨1.5%</strong> — 半导体爆发：联华电子ADR+16%、Power Integrations+18%、Wolfspeed+9.1% <span class="source">（财联社）</span></li>
+    <li><strong>A股5月26日创业板V形反弹+0.54%</strong> — PCB（生益电子涨停创新高）、电力板块活跃 <span class="source">（财联社）</span></li>
+    <li><strong>港股通5月26日恢复</strong> — 佛诞日休市后正常交易 <span class="source">（上交所）</span></li>
+  </ul>
+</div>
+
+<!-- 六、利通科技（839167） -->
+<div class="section">
+  <div class="section-title gray">🏢 六、利通科技（839167）动态</div>
+  <ul>
+    <li><strong>液冷板块情绪回暖</strong> — 创业板V形反弹+0.54%，PCB概念涨停（生益电子创新高） <span class="source">（财联社）</span></li>
+    <li><strong>成本端持续利好</strong> — WTI跌至$93.89，化工原料成本压力骤降，液冷管毛利率弹性释放 <span class="source">（财联社）</span></li>
+    <li><strong>需求端强化确认</strong> — 美光+19%市值$1万亿+HBM需求爆发+深科技14.7亿扩封测=液冷管需求刚性长期成立 <span class="source">（财联社）</span></li>
+    <li><strong>关注今日开盘方向</strong> — 昨夜美股纳指+1.5%，半导体暴涨，A股科技情绪有望延续</li>
+  </ul>
+</div>
+
+<!-- 七、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 七、战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 高度关注</strong><br>
+    <strong>油价下行趋势确认</strong> — WTI $93.89（-2.81%）从$107累计跌超12%。化工原料成本端利好持续，但需警惕霍尔木兹地缘升级可能带来的油价反弹风险<br><br>
+    <strong>美光$1万亿市值里程碑</strong> — 存储芯片HBM需求爆炸，液冷散热需求刚性再确认！相关概念股可重点关注
+  </div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    <strong>SpaceX IPO</strong> — 富时罗素称SpaceX将独立审查是否纳入指数；获22.9亿美元太空军合同；马斯克讨论与特斯拉合并猜想<br><br>
+    <strong>软银机器人Roze IPO</strong> — 高盛/摩根大通/瑞穗/摩根士丹利联合保荐，机器人资产证券化加速<br><br>
+    <strong>美伊谈判</strong> — 伊朗25艘船只通过霍尔木兹，外交渠道仍开放，关注下一步进展
+  </div>
+</div>
+
+</body>
+</html>
