@@ -5,12 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
 <title>AI研究员--Landy葉的简报 | 2026年6月2日</title>
 <style>
-  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; color: #222; line-height: 1.8; font-size: 15px; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
   h1 { font-size: 22px; font-weight: bold; margin-bottom: 6px; color: #111; }
   .date { color: #888; font-size: 14px; margin-bottom: 28px; border-bottom: 1px solid #eee; padding-bottom: 18px; }
   .section { margin-bottom: 28px; }
-  .section-title { font-size: 16px; font-weight: bold; color: #111; margin-bottom: 12px; padding-bottom: 6px; border-bottom: 2px solid #222; }
+  .section-title {
+    font-size: 16px; font-weight: bold; color: #111; margin-bottom: 12px;
+    padding-bottom: 6px; border-bottom: 2px solid #222;
+  }
   .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
   .section-title.green { border-bottom-color: #34a853; color: #34a853; }
   .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
   .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
@@ -22,19 +34,42 @@
   table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 8px; }
   th { background: #f5f5f5; text-align: left; padding: 8px 10px; border: 1px solid #ddd; font-weight: 600; }
   td { padding: 8px 10px; border: 1px solid #ddd; vertical-align: top; }
-  .highlight { background: #fff8e1; padding: 12px 16px; border-left: 4px solid #f9a825; margin-top: 10px; font-size: 14px; }
-  .warning { background: #fce8e6; padding: 12px 16px; border-left: 4px solid #ea4335; margin-top: 10px; font-size: 14px; }
-  .back-button { display: inline-flex; align-items: center; color: #1a73e8; text-decoration: none; font-size: 14px; font-weight: 500; margin-bottom: 20px; padding: 8px 12px; border-radius: 4px; transition: background-color 0.2s; }
+  .highlight {
+    background: #fff8e1; padding: 12px 16px; border-left: 4px solid #f9a825; margin-top: 10px; font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6; padding: 12px 16px; border-left: 4px solid #ea4335; margin-top: 10px; font-size: 14px;
+  }
+  .back-button {
+    display: inline-flex; align-items: center; color: #1a73e8; text-decoration: none;
+    font-size: 14px; font-weight: 500; margin-bottom: 20px; padding: 8px 12px; border-radius: 4px;
+    transition: background-color 0.2s;
+  }
   .back-button:hover { background-color: #f5f5f5; }
   .back-button span { margin-right: 6px; }
-  @media (max-width: 768px) { body { margin: 20px auto; padding: 16px; font-size: 16px; line-height: 1.9; } h1 { font-size: 20px; } .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; } .section { margin-bottom: 24px; } .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; } ul { padding-left: 24px; } li { margin-bottom: 10px; } .highlight, .warning { padding: 14px 18px; font-size: 15px; } }
-  @media (max-width: 480px) { body { margin: 12px auto; padding: 12px; font-size: 17px; } h1 { font-size: 19px; } .section-title { font-size: 18px; } }
+  @media (max-width: 768px) {
+    body { margin: 20px auto; padding: 16px; font-size: 16px; line-height: 1.9; }
+    h1 { font-size: 20px; } .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
+    .section { margin-bottom: 24px; }
+    .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
+    ul { padding-left: 24px; } li { margin-bottom: 10px; }
+    table { font-size: 15px; } th, td { padding: 10px 12px; }
+    .highlight, .warning { padding: 14px 18px; font-size: 15px; }
+    .back-button { font-size: 15px; padding: 10px 14px; margin-bottom: 16px; }
+  }
+  @media (max-width: 480px) {
+    body { margin: 12px auto; padding: 12px; font-size: 17px; }
+    h1 { font-size: 19px; } .section-title { font-size: 18px; }
+  }
 </style>
 </head>
 <body>
 <div>
-  <a href="/landy-briefings/" class="back-button"><span>←</span> 返回简报列表</a>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
 </div>
+
 <h1>AI研究员--Landy葉的简报</h1>
 <div class="date">2026年6月2日</div>
 
@@ -42,11 +77,10 @@
 <div class="section">
   <div class="section-title red">🔴 地缘·宏观</div>
   <ul>
-    <li><strong>Arm盘前涨超10%</strong> — 美股大型科技股盘前涨跌分化，Arm涨超10%领跑，英伟达涨超2%，甲骨文涨超3%；英特尔跌超6% <span class="source">（36氪）</span></li>
-    <li><strong>霍尼韦尔业务分拆</strong> — 自动化与航空航天业务将于6月29日分别独立上市为"霍尼韦尔科技"与"霍尼韦尔航空航天"，分拆进入实质性阶段 <span class="source">（界面）</span></li>
-    <li><strong>上海推进新型工业化</strong> — 上海发布"十五五"规划，要求发展壮大新兴支柱产业，超前布局未来产业；原则同意长三角内河航运体系联通工程 <span class="source">（36氪）</span></li>
-    <li><strong>公募基金批量调整基准</strong> — 195只存量公募基金今起调整业绩比较基准，涉及股票型、混合型、债券型、QDII等；业内称不会引发基金调仓 <span class="source">（中国基金报）</span></li>
-    <li><strong>美团Q2外卖UE预期改善</strong> — 美团管理层预期Q2外卖UE明显好于Q1，行业竞争逐步回归理性，美团巩固中高价值外卖市场领先地位 <span class="source">（36氪）</span></li>
+    <li><strong>特朗普将农业设备进口关税从25%降至15%</strong> — 白宫签署公告调整金属关税，移动式工业设备（推土机、叉车等）同样适用15%优惠税率，需从贸易协定国家进口 <span class="source">（新浪财经）</span></li>
+    <li><strong>燃油涨价冲击印度航空业</strong> — 印度三大航司（印度航空、靛蓝航空、印度快运）削减约<strong>250架次/日</strong>国内航班，料持续至8月，暑期出行高峰或推高票价 <span class="source">（财联社）</span></li>
+    <li><strong>两市融资余额减少76.61亿元</strong> — 上交所14681.89亿（-40.57亿），深交所14063.03亿（-36.04亿），合计28744.92亿，市场短线情绪降温 <span class="source">（36氪）</span></li>
+    <li><strong>全球智能手机出货量预计降13.9%</strong> — Counterpoint：2026年约<strong>10.8亿部</strong>，创2013年以来新低，下滑幅度超此前预测 <span class="source">（36氪）</span></li>
   </ul>
 </div>
 
@@ -54,12 +88,12 @@
 <div class="section">
   <div class="section-title lightblue">🤖 AI·算力·数据中心</div>
   <ul>
-    <li><strong>英伟达盘前涨超2%，Arm涨超10%</strong> — 英伟达Rubin已全面投产（供应链2倍于Blackwell），AI芯片板块热度不减，Arm受益于AI芯片IP授权逻辑持续走强 <span class="source">（36氪）</span></li>
-    <li><strong>有研复材投资1.5亿建先进金属基复合材料产业化项目</strong> — 续建项目，一期投资1.5亿元，布局金属基复合材料，用于航空航天等领域 <span class="source">（36氪）</span></li>
-    <li><strong>华兰股份子公司2.05亿增资自然常数</strong> — 取得完全摊薄基础上34.17%股权，布局数智医药 <span class="source">（36氪）</span></li>
-    <li><strong>苹果WWDC 6月8日召开</strong> — 近十五年最大Siri改版将发布，iOS 27推出全新聊天机器人应用；Mac产品线全面升级M4芯片 <span class="source">（彭博）</span></li>
-    <li><strong>微软Build大会下周举行</strong> — 将发布编码AI模型（提升GitHub Copilot竞争力）及转录、推理、语音等多款AI模型 <span class="source">（界面）</span></li>
-    <li><strong>英伟达发布Nemotron 3 Ultra</strong> — 新AI模型持续巩固AI生态壁垒</li>
+    <li style="font-weight: bold; color: #d32f2f;">【重磅】宇树科技科创板IPO过会，同日与英伟达官宣重磅合作</strong> — 人形机器人龙头冲刺科创板，叠加英伟达合作，标志着AI硬件从训练到推理、从云端到边缘的生态闭环加速 <span class="source">（第一电动/盖世汽车）</span></li>
+    <li><strong>英伟达Rubin全面投产持续发酵</strong> — Rubin供应链规模Blackwell的2倍，机柜级AI工厂组装仅需5分钟（此前2小时），液冷管路用量翻倍 <span class="source">（界面/36氪）</span></li>
+    <li><strong>英伟达推出NVIDIA DSX平台</strong> — AI工厂完整构建指南，可在装机前模拟验证性能，加速数据中心液冷部署 <span class="source">（界面）</span></li>
+    <li><strong>MiniMax拟于科创板上市</strong> — 已聘请专业顾问签订辅导协议，AI大模型公司资本化加速 <span class="source">（36氪）</span></li>
+    <li><strong>苹果Siri近15年最大改版</strong> — 6月8日WWDC公布iOS 27重大更新，Siri重新设计，推出全新聊天机器人应用 <span class="source">（彭博）</span></li>
+    <li><strong>LG Display开发HMO面板技术</strong> — 苹果考虑采用作为下一代低功耗背板材料，替代LTPO TFT，或用于Apple Watch <span class="source">（财联社）</span></li>
   </ul>
 </div>
 
@@ -67,21 +101,36 @@
 <div class="section">
   <div class="section-title green">🔋 储能·新能源·超充</div>
   <ul>
-    <li><strong>智驾下半场加速：15万元级车型开始普及高阶辅助驾驶</strong> — 激光雷达、城市NOA从30万+车型下探至15万级，崔东树称中国市场智驾竞争全球最激烈 <span class="source">（中证报）</span></li>
-    <li><strong>小鹏MONA M03增程版曝光</strong> — 10-15万级纯电+增程双动力，智驾能力向低价市场渗透 <span class="source">（行业观察）</span></li>
-    <li><strong>液冷超充桩2026年规划目标百万根</strong> — 华为液冷超充合作项目加速落地，单枪600kW，储能+超充融合成为趋势</li>
-    <li><strong>特斯拉上海储能超级工厂进入设备安装阶段</strong> — Megapack储能系统年产能超40GWh，预计2026年量产</li>
+    <li><strong>比亚迪5月售车超38万辆</strong> — 蝉联榜首，新能源车累计销量突破<strong>1650万</strong>辆 <span class="source">（盖世汽车）</span></li>
+    <li><strong>零跑5月交付破8.1万台</strong> — 领跑新势力阵营 <span class="source">（盖世汽车）</span></li>
+    <li><strong>吉利5月销量237,637辆，海外出口同比增184%</strong> — 全球化布局成效显著 <span class="source">（盖世汽车）</span></li>
+    <li><strong>赛力斯与字节跳动合作"AI原生汽车"</strong> — 不再用华为智驾，转向自建AI能力，字节技术赋能整车智能 <span class="source">（第一电动）</span></li>
+    <li><strong>中信证券研报：下半年锂电行业供需格局将迎来景气上行</strong> — 受益内需修复+全球油价上行，动力电池高景气延续；储能国内外需求共振向上，电池和中游聚焦高端产品 <span class="source">（36氪）</span></li>
+    <li><strong>北汽新能源5月销量同比增27.75%</strong> <span class="source">（盖世汽车）</span></li>
+    <li><strong>大众安徽5月交付2303台，环比激增119%</strong> <span class="source">（盖世汽车）</span></li>
+    <li><strong>A股高开汽车股领涨</strong> — 比亚迪涨超2%，新易盛、聚辰股份涨超2% <span class="source">（36氪）</span></li>
   </ul>
 </div>
 
 <!-- 💹 A股·港股 -->
 <div class="section">
   <div class="section-title purple">💹 A股·港股</div>
-  <ul>
-    <li><strong>液冷概念板块延续强势</strong> — 英伟达Rubin全面投产，昨日A股英维克、高澜股份、曙光数创等液冷集成商盘中异动；今日关注板块持续性</li>
-    <li>液冷管路逻辑强化：Rubin功耗1800W+，液冷从可选变强制；工信部要求新建智算中心液冷渗透率<strong>100%</strong> <span class="source">（核心催化）</span></li>
-    <li><strong>港股科技股情绪回暖</strong> — 恒生科技指数上周涨势延续，南向资金持续净买入 <span class="source">（36氪）</span></li>
-  </ul>
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#9334e6;">💧 液冷概念板块</strong>
+    <ul>
+      <li><strong>英伟达Rubin全产+宇树IPO过会+英伟达合作</strong> — 三大事件叠加，液冷、算力基建概念继续发酵</li>
+      <li>A股液冷概念股（英维克/曙光数创/高澜股份/申菱环境）今日盘中表现值得关注</li>
+    </ul>
+  </div>
+  <div style="margin-left:12px;">
+    <strong style="color:#9334e6;">📊 盘面数据</strong>
+    <ul>
+      <li><strong>A股三大指数集体高开</strong> — 沪指+0.09%，深成指+0.46%，创业板+0.92%</li>
+      <li><strong>恒指开盘-0.01%，恒生科技+0.62%</strong> — 比亚迪股份涨超3%，禾赛涨超2%</li>
+      <li><strong>融资余额减少76.61亿</strong> — 短线情绪降温，但科技主线产业趋势未被破坏 <span class="source">（36氪）</span></li>
+      <li><strong>中信证券：管网更新东风起</strong> — 城市更新"十五五"规划提<strong>36.5万公里</strong>量化指标，管道龙头进入业绩与估值双修复通道 <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
 </div>
 
 <!-- 🏢 利通科技（839167） -->
@@ -89,12 +138,14 @@
   <div class="section-title gray">🏢 利通科技（839167）动态</div>
   <ul>
     <li>北交所暂无利通科技（839167）新公告发布</li>
-    <li><strong>液冷管赛道核心逻辑持续验证</strong> — 英伟达Rubin全面投产（功耗1800W+，Blackwell供应链2倍），液冷需求爆发；政策加持：工信部新建智算中心液冷渗透率<strong>100%</strong>；储能液冷渗透率<strong>92.7%</strong></li>
-    <li><strong>关注Rubin供应链溢出效应</strong> — 机柜级AI工厂建设加速，液冷管路国产替代龙头有望优先受益</li>
+    <li style="font-weight: bold; color: #1a73e8;">【催化叠加】英伟达Rubin量产 + 宇树IPO过会+英伟达合作 — 算力基建从AI大模型延展至机器人赛道，液冷管路需求面进一步扩大</li>
+    <li><strong>液冷管赛道核心逻辑强化</strong> — Rubin功耗1800W+（H100仅700W），液冷从可选变强制；供应链规模翻倍；工信部要求新建智算中心液冷渗透率<strong>100%</strong></li>
+    <li><strong>储能液冷确定性高</strong> — 中信证券看多下半年锂电景气上行，储能国内外需求共振向上，储能液冷渗透率已达<strong>92.7%</strong></li>
+    <li><strong>新能源汽车热管理扩容</strong> — 比亚迪月销38万、零跑8.1万，800V高压平台热管理升级趋势明确</li>
   </ul>
   <div class="highlight">
     <strong>🟡 持续关注</strong><br>
-    Rubin量产带动液冷管路需求翻倍以上增长，利通科技在智算中心、储能、新能源汽车三大场景的液冷软管订单突破窗口期。
+    Rubin供应链+宇树机器人双轮驱动算力基础设施需求，液冷管路订单突破窗口期正在打开。跟踪英维克、高澜等集成商的液冷管路采购动向。
   </div>
 </div>
 
