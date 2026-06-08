@@ -130,5 +130,5 @@ else
 fi
 
 echo ""
-echo "🌐 在线网站: https://lucylook6-design.github.io/landy-briefings/"
+echo "🌐 在线网站: https://landylook.github.io/landy-briefings/"
 echo "🌐 本地预览: file://$BRIEFINGS/index.html"
