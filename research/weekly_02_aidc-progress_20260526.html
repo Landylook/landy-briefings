@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>智算中心进展研究报告（第2期） | 火箭军情报部</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background: #f5f7fb; color: #1a1a2e; line-height: 1.6; }
+    .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+
+    .header { background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); color: #fff; padding: 32px 40px; border-radius: 16px; margin-bottom: 24px; position: relative; overflow: hidden; }
+    .header::after { content: '🦅'; position: absolute; right: 30px; top: 20px; font-size: 48px; opacity: 0.3; }
+    .header h1 { font-size: 24px; margin-bottom: 6px; letter-spacing: 1px; }
+    .header .sub { font-size: 14px; opacity: 0.8; display: flex; justify-content: space-between; }
+    .badge { display: inline-block; background: rgba(255,255,255,0.15); padding: 2px 12px; border-radius: 20px; font-size: 12px; margin-right: 8px; }
+
+    .core-card { background: #fff; border-left: 5px solid #e74c3c; padding: 20px 24px; border-radius: 0 12px 12px 0; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+    .core-card .label { font-size: 12px; color: #e74c3c; font-weight: 700; letter-spacing: 2px; margin-bottom: 4px; }
+    .core-card p { font-size: 16px; font-weight: 500; color: #2d3436; }
+
+    .section { background: #fff; border-radius: 12px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+    .section h2 { font-size: 18px; color: #2d3436; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 2px solid #f0f0f0; position: relative; }
+    .section h2::before { content: ''; position: absolute; bottom: -2px; left: 0; width: 40px; height: 2px; background: #e74c3c; }
+    .section h3 { font-size: 15px; color: #2d3436; margin: 16px 0 10px; }
+    .section p, .section li { font-size: 14px; color: #444; line-height: 1.8; }
+
+    table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 12px 0; }
+    thead th { background: #f8f9fa; color: #636e72; font-weight: 600; padding: 10px 12px; text-align: left; border-bottom: 2px solid #e0e0e0; }
+    tbody td { padding: 10px 12px; border-bottom: 1px solid #f0f0f0; vertical-align: top; }
+    tbody tr:hover { background: #f8f9fa; }
+    .highlight { color: #e74c3c; font-weight: 700; }
+    .highlight-blue { color: #2980b9; font-weight: 700; }
+    .highlight-green { color: #27ae60; font-weight: 700; }
+
+    .data-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; margin: 12px 0; }
+    .data-card { background: #f8f9fa; border-radius: 10px; padding: 16px; text-align: center; }
+    .data-card .num { font-size: 24px; font-weight: 700; color: #2d3436; }
+    .data-card .num.red { color: #e74c3c; }
+    .data-card .num.blue { color: #2980b9; }
+    .data-card .num.green { color: #27ae60; }
+    .data-card .desc { font-size: 11px; color: #636e72; margin-top: 4px; }
+
+    .trend-list { list-style: none; }
+    .trend-list li { padding: 12px 0; border-bottom: 1px solid #f0f0f0; }
+    .trend-list li:last-child { border: none; }
+    .trend-list li .trend-title { font-weight: 600; color: #2d3436; }
+    .trend-list li .trend-desc { font-size: 13px; color: #636e72; margin-top: 4px; }
+    .trend-icon { display: inline-block; width: 24px; text-align: center; margin-right: 8px; }
+
+    .footnote { background: #f8f9fa; border-radius: 12px; padding: 16px 20px; margin: 20px 0; font-size: 12px; color: #636e72; line-height: 1.8; }
+    .footnote strong { color: #2d3436; }
+
+    .info-box { background: #fff3cd; border: 1px solid #ffc107; border-radius: 10px; padding: 14px 18px; margin: 12px 0; font-size: 13px; }
+    .info-box .title { font-weight: 700; color: #856404; }
+
+    @media (max-width: 600px) {
+      .container { padding: 12px; }
+      .header { padding: 20px; }
+      .section { padding: 16px; }
+      table { font-size: 11px; }
+      .data-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+      <h1>📊 智算中心建设进展研究报告（第2期）</h1>
+      <div class="sub">
+        <span><span class="badge">📅 2026年5月26日</span><span class="badge">🦅 火箭军情报部</span><span class="badge">🧠 参谋诸葛亮</span></span>
+        <span>Vol.02</span>
+      </div>
+    </div>
+
+    <!-- Core Conclusion -->
+    <div class="core-card">
+      <div class="label">⚡ 核心结论</div>
+      <p>AIDC+"算电协同"双驱动格局确立。全球AI Token调用量连续五周暴涨（中国连续四周全球第一）、英伟达Rubin机架PCB价值量暴增233%、华为"韬定律"改写国产芯片规则、中金指出发电供需缺口长期存在——智算中心建设正从"快速上量"进入"全产业链共振"的新阶段。关键变化：电力供应已超越GPU供给成为下一个瓶颈。</p>
+    </div>
+
+    <!-- Section 1: Key Numbers -->
+    <div class="section">
+      <h2>📈 本周关键数据全景</h2>
+      <div class="data-grid">
+        <div class="data-card">
+          <div class="num red">28.9万亿</div>
+          <div class="desc">全球AI模型周Token调用量（+7.4%）</div>
+        </div>
+        <div class="data-card">
+          <div class="num red">9.22万亿</div>
+          <div class="desc">中国周Token调用量（+20%，全球第一）</div>
+        </div>
+        <div class="data-card">
+          <div class="num blue">+233%</div>
+          <div class="desc">Rubin机架PCB价值量增幅（$11.7万/架）</div>
+        </div>
+        <div class="data-card">
+          <div class="num blue">$752亿</div>
+          <div class="desc">英伟达Q1数据中心收入（同比+100%）</div>
+        </div>
+        <div class="data-card">
+          <div class="num green">105%↑</div>
+          <div class="desc">联想AI相关收入同比增长</div>
+        </div>
+        <div class="data-card">
+          <div class="num">1.25万亿</div>
+          <div class="desc">中芯国际A股市值（创历史新高）</div>
+        </div>
+        <div class="data-card">
+          <div class="num blue">4.3GW</div>
+          <div class="desc">2025年燃气轮机产能缺口→2030年15.1GW</div>
+        </div>
+        <div class="data-card">
+          <div class="num green">39.9亿kW</div>
+          <div class="desc">全国累计发电装机（同比+14.2%）</div>
+        </div>
+        <div class="data-card">
+          <div class="num">1,400亿</div>
+          <div class="desc">联想AI服务器项目储备（单位：元）</div>
+        </div>
+        <div class="data-card">
+          <div class="num red">+719%</div>
+          <div class="desc">长鑫科技Q1营收同比增长</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 2: Demand Signal -->
+    <div class="section">
+      <h2>🚨 需求信号确认：Token消耗五连涨，中国稳居全球第一</h2>
+      <p>据OpenRouter最新数据，上周（5月18-24日）全球AI大模型总调用量达<strong>28.9万亿Token</strong>，环比增长<strong>7.4%</strong>，连续五周上涨。其中中国AI大模型周调用量达<strong>9.223万亿Token</strong>，环比增长近<strong>20%</strong>，连续四周超过美国并稳居全球首位。</p>
+
+      <div style="background:#f0f7ff; border-radius:10px; padding:16px; margin:12px 0;">
+        <p style="font-size:13px; margin:0;"><strong>✍️ 参谋长解读：</strong>Token调用量是AI算力需求的"领先指标"。中国连续四周全球第一，意味着国产大模型的推理负载远超市场预期——这对智算中心的<strong>上架率</strong>和<strong>算力利用率</strong>是强力验证信号。英伟达Q1数据中心收入<strong>$752亿</strong>、同比增长近一倍也从供给端印证了需求的真实性。</p>
+      </div>
+      <p style="font-size:12px; color:#636e72;">来源：格隆汇 2026/5/26，OpenRouter数据，格隆汇文章《芯片集体爆发》</p>
+    </div>
+
+    <!-- Section 3: AI Infrastructure Chain -->
+    <div class="section">
+      <h2>🔗 算力基础设施"动能升级"——从GPU到电力到散热</h2>
+
+      <h3>1️⃣ 英伟达Rubin机架：PCB价值量暴增233%</h3>
+      <p>摩根士丹利对英伟达下一代Rubin机架的物料清单拆解显示：PCB成为价值增幅最显著的下游零部件。较上一代GB300机架，PCB从约<strong>3.5万美元</strong>跃升至约<strong>11.7万美元</strong>，增幅<strong>+233%</strong>。</p>
+      <div style="background:#f0f7ff; border-radius:10px; padding:14px; margin:10px 0;">
+        <p style="font-size:13px; margin:0;">📌 <strong>产业链溢出效应：</strong>单机柜功耗提升→液冷散热需求→PCB层数/材料升级（高速CCL用量↑）→激光钻孔/曝光设备量价齐升。A股PCB概念生益电子涨超10%、总市值突破千亿。建议关注：<strong>大族数控、芯碁微装</strong>（设备端）、<strong>沪电股份、胜宏科技</strong>（PCB厂商）。（来源：财联社5月26日电报、格隆汇文章）</p>
+      </div>
+
+      <h3>2️⃣ 液冷散热：从"可选"到"必选"</h3>
+      <p>AI单机柜功耗持续攀升（超大规模集群从30kW→80kW+），液冷已成为新建AIDC的标准配置。格隆汇最新研报明确指出：<strong>"液冷散热技术渗透率提升"</strong>是算力基础设施建设核心方向，重点关注<strong>英维克</strong>等核心部件供应商。金刚石铜复合材料在郑州超算中心实现规模化应用，芯片模组传热能力提升<strong>80%</strong>——这是全国首次规模化采用该材料。</p>
+      <p style="font-size:12px; color:#636e72;">来源：格隆汇《芯片集体爆发！华为"韬定律"重塑未来》（2026/5/26）、财联社5月26日电</p>
+
+      <h3>3️⃣ 电力供应：AIDC时代的新瓶颈</h3>
+      <p>中金公司最新研报指出：<strong>AIDC驱动发电长期供需缺口，持续看好发电产业链。</strong>核心逻辑：</p>
+      <ul style="margin:8px 0 0 20px; color:#444;">
+        <li>超大规模云厂商资本开支创新高（阿里、腾讯均表示将加大资本开支）</li>
+        <li>数据中心用电量激增 + 北美电网老化 → 缺电逻辑持续演绎</li>
+        <li>燃气轮机全球主机厂订单创历史新高，产能缺口从<strong>4.3GW</strong>（2025年）扩大到<strong>15.1GW</strong>（2030年E）</li>
+        <li>国内受益标的：<strong>杰瑞股份、应流股份、豪迈科技</strong>（零部件出海）</li>
+        <li>外溢机会：燃气内燃机、SOFC、柴发——<strong>潍柴动力</strong>在多个领域有布局优势</li>
+      </ul>
+      <p style="font-size:12px; color:#636e72; margin-top:6px;">来源：中金（格隆汇文章引用，2026/5/26）</p>
+    </div>
+
+    <!-- Section 4: Huawei Tau Law -->
+    <div class="section" style="background: #fef9ef;">
+      <h2>🏆 本周最大变量：华为"韬(τ)定律"改写半导体规则</h2>
+
+      <div class="info-box">
+        <span class="title">🔬 关键事件：</span> 5月25日，华为在ISCAS 2026（上海）正式发表"韬(τ)定律"，公司董事、半导体业务部总裁何庭波发表演讲。这是中国在全球半导体领域<strong>首次</strong>提出指导产业发展的新原则。
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>维度</th>
+            <th>摩尔定律（传统）</th>
+            <th>韬定律（华为）</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>核心逻辑</strong></td>
+            <td>"几何缩微"——缩小晶体管物理尺寸</td>
+            <td>"时间(τ)缩微"——压缩信号传播时延</td>
+          </tr>
+          <tr>
+            <td><strong>创新技术</strong></td>
+            <td>单一尺寸迭代</td>
+            <td>逻辑折叠 + 全栈软硬芯协同 + 灵衢总线</td>
+          </tr>
+          <tr>
+            <td><strong>覆盖层级</strong></td>
+            <td>芯片维度</td>
+            <td>器件→电路→芯片→系统 四层协同</td>
+          </tr>
+          <tr>
+            <td><strong>实践成果</strong></td>
+            <td>—</td>
+            <td>过去六年设计量产<strong>381款芯片</strong></td>
+          </tr>
+          <tr>
+            <td><strong>里程碑</strong></td>
+            <td>—</td>
+            <td>2031年密度达<strong>1.4纳米</strong>同等水平；2026秋麒麟芯片率先采用逻辑折叠</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div style="background:#e8f8f5; border-radius:10px; padding:14px; margin:10px 0;">
+        <p style="font-size:13px; margin:0;"><strong>🧠 参谋长解读：</strong>韬定律对智算中心建设的战略意义——国产芯片性能天花板被打开，国产智算中心对英伟达的依赖将加速降低。发改委5月22日明确表态"指导国产大模型加大力度适配国产算力芯片"，叠加华为技术突破+国产存储双雄上市（长江存储IPO、长鑫科技5月27日上会），<strong>国产算力生态闭环正在加速形成</strong>。</p>
+      </div>
+      <p style="font-size:12px; color:#636e72;">来源：华为官网《华为发表韬(τ)定律，实现晶体管密度与系统性能突破》（2026/5/25）；格隆汇《华为推出"韬定律"改写全球半导体规则》（2026/5/26）</p>
+    </div>
+
+    <!-- Section 5: Policy & Ecosystem -->
+    <div class="section">
+      <h2>🏛️ 政策护航：国产大模型×国产算力芯片协同适配</h2>
+      <p><strong>5月22日，国家发展改革委</strong>新闻发言人李超明确表示：推动人工智能与经济社会各行业各领域广泛深度融合，<strong>指导国产大模型加大力度适配国产算力芯片</strong>。开源证券认为，这一表态将"国产大模型"与"国产算力芯片"的协同适配提升至<strong>明确的政策指导层面</strong>。</p>
+
+      <p style="margin-top:12px;">叠加以下事件：</p>
+      <ul style="margin:8px 0 0 20px; color:#444;">
+        <li><strong>阿里达摩院</strong>玄铁9系列处理器成功适配安卓系统——RISC-V在安卓生态迈入商业化新阶段</li>
+        <li><strong>长江存储</strong>：5月19日启动IPO辅导（中信证券+中信建投），Q1收入超200亿，NAND产量超全球10%</li>
+        <li><strong>长鑫科技</strong>：5月27日科创板IPO上会，Q1营收同比+719%，预计上半年归母净利500-570亿（+2244%~2544%）</li>
+        <li><strong>宇树科技</strong>：6月1日科创板IPO上会，拟募资42.02亿元</li>
+        <li><strong>恒生科技指数</strong>纳入智谱、MiniMax；恒生综合指数纳入壁仞科技、天数智芯</li>
+      </ul>
+      <p style="font-size:12px; color:#636e72; margin-top:6px;">来源：格隆汇5月26日文章、财联社5月26日电</p>
+    </div>
+
+    <!-- Section 6: Energy Data -->
+    <div class="section">
+      <h2>⚡ 电力基建：AIDC需求驱动的供给侧变革</h2>
+      <p>国家能源局5月25日发布数据：截至4月底，全国累计发电装机容量<strong>39.9亿千瓦</strong>，同比增长<strong>14.2%</strong>。其中：</p>
+      <div class="data-grid">
+        <div class="data-card">
+          <div class="num green">12.5亿kW</div>
+          <div class="desc">太阳能装机（同比+26.2%）</div>
+        </div>
+        <div class="data-card">
+          <div class="num blue">6.6亿kW</div>
+          <div class="desc">风电装机（同比+22.0%）</div>
+        </div>
+        <div class="data-card">
+          <div class="num">925小时</div>
+          <div class="desc">1-4月设备平均利用</div>
+        </div>
+      </div>
+      <p>国盛证券指出，<strong>绿电直连政策落地</strong>推动源网荷储加速，"算电协同"有望打开绿电企业新增长空间。电力板块华电能源2连板、京能电力等大幅上涨，背后逻辑是：2026年强厄尔尼诺预期+数据中心高耗能→电力供需缺口扩大→虚拟电厂参与电力现货交易→实现"算随电动"新模式。</p>
+      <p style="font-size:12px; color:#636e72; margin-top:4px;">来源：财联社5月26日电报、国家能源局数据、国盛证券</p>
+    </div>
+
+    <!-- Section 7: Company Spotlight -->
+    <div class="section">
+      <h2>🏢 联想集团：AI基础设施需求验证案例</h2>
+      <p>联想集团（0992.HK）5月26日早盘飙升<strong>12.1%</strong>，创历史新高。背后是：</p>
+      <ul style="margin:8px 0 0 20px; color:#444;">
+        <li>2025/26财年全年业绩：AI相关收入同比<strong>飚升105%</strong></li>
+        <li>AI服务器项目储备飙升至<strong>1,400亿元</strong></li>
+        <li>基础设施方案业务集团（ISG）<strong>实现扭亏为盈</strong></li>
+      </ul>
+      <div style="background:#f0f7ff; border-radius:10px; padding:14px; margin:10px 0;">
+        <p style="font-size:13px; margin:0;">📌 联想案例揭示了<strong>AI服务器需求的爆发节奏</strong>。1,400亿项目储备意味着中国企业级AI基础设施市场仍在加速放量。这对于关注液冷管路/UQD/软管的上游供应商（利通科技等）是<strong>强正面信号</strong>——AIDC建设的资本开支正在从GPU采购向<strong>配套基础设施</strong>扩散。</p>
+      </div>
+      <p style="font-size:12px; color:#636e72;">来源：财联社5月26日09:45电报</p>
+    </div>
+
+    <!-- Section 8: Trends -->
+    <div class="section">
+      <h2>🔮 趋势判断：智算中心产业链迎来四大拐点</h2>
+      <ul class="trend-list">
+        <li>
+          <div><span class="trend-icon">1️⃣</span><strong class="trend-title">从"GPU受限"到"电力受限"——AIDC建设的瓶颈迁移</strong></div>
+          <div class="trend-desc">中金指出AIDC驱动发电长期供需缺口（燃气轮机4.3GW→15.1GW），叠加国家能源局39.9亿kW装机数据，电力供给正取代GPU供给成为制约AIDC建设进度的核心变量。"算电协同"从概念进入实操。</div>
+        </li>
+        <li>
+          <div><span class="trend-icon">2️⃣</span><strong class="trend-title">从"买英伟达"到"买国产"——国产算力生态闭环加速形成</strong></div>
+          <div class="trend-desc">华为韬定律+发改委适配政策+长江存储/长鑫科技上市+壁仞科技恒指纳入——国产算力从芯片到存储到应用的政策-技术-资本三重共振。2026年下半年有望看到国产GPU在智算中心的上架率显著提升。</div>
+        </li>
+        <li>
+          <div><span class="trend-icon">3️⃣</span><strong class="trend-title">液冷渗透率从"行业趋势"变为"订单兑现"</strong></div>
+          <div class="trend-desc">英维克等液冷供应商在格隆汇报告中被明确提及。华为381款芯片的量产表明散热方案已经从实验室走向成熟部署。对于液冷软管/UQD供应商（利通科技/希恩/诺通）——这是确定性的产业趋势。</div>
+        </li>
+        <li>
+          <div><span class="trend-icon">4️⃣</span><strong class="trend-title">Token消耗验证AIDC ROIC——上架率不再是问题</strong></div>
+          <div class="trend-desc">全球周28.9万亿Token调用量，中国20%环比增长——AIDC建设的终端需求不但真实，而且在加速。与2024年市场担心的"算力闲置"不同，2026年的核心矛盾是"算力不够用"。</div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Section 9: Summary Chart -->
+    <div class="section" style="background: #e8f8f5;">
+      <h2>📊 一张图看懂：AIDC产业链"新动能"全景</h2>
+      <pre style="font-family: 'Courier New', monospace; font-size: 11px; line-height: 1.4; background: #fff; padding: 16px; border-radius: 8px; overflow-x: auto;">
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                        AIDC产业链 · 2026年5月动能升级地图                      │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│  📡 需求端                                                                   │
+│  ┌──────────────────────────────────────┐                                   │
+│  │ Token消耗五连涨：28.9万亿/周（+7.4%）│  ←── 联想AI收入+105%               │
+│  │ 中国连续四周全球第一：9.22万亿（+20%）│      AI服务器储备1400亿            │
+│  │ 英伟达Q1数据中心收入$752亿（+100%）  │      验证需求真实性                │
+│  └──────────────────────────────────────┘                                   │
+│                        ↓                                                      │
+│  ⚡ 算力层升级                                                                 │
+│  ┌──────────────────────────────┬──────────────────────────────────┐          │
+│  │ GPU迭代         │ 基础设施配套            │                          │
+│  │ Rubin机架PCB+233%│ 液冷:从可选→必选       │                          │
+│  │ $11.7万/架       │ 金刚石铜:传热+80%      │                          │
+│  │ 华为韬定律:芯片密度↑│ 英维克等核心供应商    │                          │
+│  └──────────────────────────────┴──────────────────────────────────┘          │
+│                        ↓                                                      │
+│  🏗️ AIDC建设                                                                  │
+│  ┌──────────────────────────────────────┐                                   │
+│  │ 电力供应成为新瓶颈                      │                                   │
+│  │ 燃气轮机产能缺口4.3GW(2025)→15.1GW(2030)│                                   │
+│  │ 绿电直连+源网荷储+虚拟电厂               │                                   │
+│  │ 国家能源局:太阳能+26.2%,风电+22.0%     │                                   │
+│  └──────────────────────────────────────┘                                   │
+│                        ↓                                                      │
+│  🧬 上游材料/零部件                                                           │
+│  ┌──────────────────────┬───────────────────────┐                           │
+│  │ 国产芯片生态       │ 液冷管路/UQD           │                           │
+│  │ 华为韬定律(381款芯片)│ 利通科技/希恩/诺通     │                           │
+│  │ 长江存储IPO(200亿Q1)│ 倍仕达/派克/史陶比尔   │                           │
+│  │ 长鑫科技+719%营收   │ 渗透率加速⇨订单兑现    │                           │
+│  │ 壁仞科技入恒指     │                       │                           │
+│  └──────────────────────┴───────────────────────┘                           │
+│                                                                              │
+├─────────────────────────────────────────────────────────────────────────────┤
+│  🎯 核心结论：AIDC产业链从"快速上量"进入"全产业链共振"新阶段                    │
+│  关注三条主线：(1)电力供给侧 (2)液冷散热渗透 (3)国产算力替代                    │
+│  最大的增量变量：Token消耗验证了需求真实性，AIDC上架率不再是风险                  │
+└─────────────────────────────────────────────────────────────────────────────┘
+</pre>
+    </div>
+
+    <!-- Section 10: UQD / Liquid Cooling Relevance -->
+    <div class="section" style="border-left: 4px solid #27ae60;">
+      <h2>💧 对液冷管路/UQD赛道的专项解读</h2>
+      <p>本周行业动态对液冷管路/UQD/UQDB赛道的影响：</p>
+      <table>
+        <thead>
+          <tr>
+            <th>信号</th>
+            <th>对液冷管路/UQD的影响</th>
+            <th>影响方向</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rubin机架功耗提升（PCB+233%）</td>
+            <td>单机柜功耗继续爬升→液冷必选→管路/UQD用量增加</td>
+            <td style="color:#27ae60; font-weight:700;">📈 强利好</td>
+          </tr>
+          <tr>
+            <td>Token消耗五连涨（中国+20%）</td>
+            <td>算力需求真实→AIDC建设加速→散热配套需求兑现</td>
+            <td style="color:#27ae60; font-weight:700;">📈 强利好</td>
+          </tr>
+          <tr>
+            <td>电力供给成为瓶颈</td>
+            <td>液冷方案降低PUE→绿电直连可行性提高→液冷渗透率加速</td>
+            <td style="color:#27ae60; font-weight:700;">📈 利好</td>
+          </tr>
+          <tr>
+            <td>金刚石铜首次规模化应用</td>
+            <td>界面材料创新≠替代管路/UQD，是互补发展</td>
+            <td style="color:#2980b9; font-weight:700;">➡️ 中性偏利好</td>
+          </tr>
+          <tr>
+            <td>国产芯片加速（华为韬定律）</td>
+            <td>国产服务器散热方案同样需液冷→第三方UQD供应商受益</td>
+            <td style="color:#27ae60; font-weight:700;">📈 利好</td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="background:#d5f5e3; border-radius:10px; padding:14px; margin:10px 0;">
+        <p style="font-size:13px; margin:0;"><strong>🧠 参谋长判断：</strong>五个信号全部偏正面。液冷赛道已从"概念炒作"进入"订单兑现期"——AIDC建设真实需求叠加Token消耗验证，散热产业链正迎来确定性增长。对于利通科技而言，当前核心关注点是进入英维克等液冷集成商供应链的节奏，以及UQD产品在国内客户（曙光数创/英维克/高澜）中的验证进度。</p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footnote">
+      <strong>📋 数据来源：</strong><br>
+      1. 格隆汇《芯片集体爆发！华为"韬定律"重塑未来》（2026/5/26）<br>
+      2. 格隆汇《华为推出"韬定律"改写全球半导体规则》（2026/5/26）<br>
+      3. 格隆汇《中金：AIDC驱动发电长期供需缺口》<br>
+      4. 格隆汇5月26日盘前要点（音频版）<br>
+      5. 财联社5月26日电报（早盘时段）<br>
+      6. 华为官网《华为发表韬(τ)定律，实现晶体管密度与系统性能突破》（ISCAS 2026）<br>
+      7. 国家能源局2026年4月全国电力统计数据（5月25日发布）<br>
+      8. OpenRouter AI模型调用量公开数据（2026/5/24）<br>
+      9. 摩根士丹利Rubin机架物料清单拆解报告（财联社引用）<br>
+      10. 联想集团2025/26财年业绩（财联社5月26日电报）<br>
+      <br>
+      <strong>报告编号：</strong>weekly_02_智算中心进展_20260526<br>
+      <strong>编制机构：</strong>🦅 火箭军 · 参谋诸葛亮 🧠
+    </div>
+
+  </div>
+</body>
+</html>
