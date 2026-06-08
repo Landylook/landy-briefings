@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年6月9日（周二）</title>
+<style>
+  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; color: #222; line-height: 1.8; font-size: 15px; }
+  h1 { font-size: 22px; font-weight: bold; margin-bottom: 6px; color: #111; }
+  .date { color: #888; font-size: 14px; margin-bottom: 28px; border-bottom: 1px solid #eee; padding-bottom: 18px; }
+  .section { margin-bottom: 28px; }
+  .section-title { font-size: 16px; font-weight: bold; color: #111; margin-bottom: 12px; padding-bottom: 6px; border-bottom: 2px solid #222; }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+  ul { margin: 0; padding-left: 20px; }
+  li { margin-bottom: 8px; }
+  li strong { font-weight: 600; }
+  .source { color: #888; font-size: 12px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 8px; }
+  th { background: #f5f5f5; text-align: left; padding: 8px 10px; border: 1px solid #ddd; font-weight: 600; }
+  td { padding: 8px 10px; border: 1px solid #ddd; vertical-align: top; }
+  .highlight { background: #fff8e1; padding: 12px 16px; border-left: 4px solid #f9a825; margin-top: 10px; font-size: 14px; }
+  .warning { background: #fce8e6; padding: 12px 16px; border-left: 4px solid #ea4335; margin-top: 10px; font-size: 14px; }
+  .back-button { display: inline-flex; align-items: center; color: #1a73e8; text-decoration: none; font-size: 14px; font-weight: 500; margin-bottom: 20px; padding: 8px 12px; border-radius: 4px; transition: background-color 0.2s; }
+  .back-button:hover { background-color: #f5f5f5; }
+  .back-button span { margin-right: 6px; }
+  @media (max-width: 768px) {
+    body { margin: 20px auto; padding: 16px; font-size: 16px; line-height: 1.9; }
+    h1 { font-size: 20px; } .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
+    .section { margin-bottom: 24px; } .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
+    ul { padding-left: 24px; } li { margin-bottom: 10px; } table { font-size: 15px; } th, td { padding: 10px 12px; }
+    .highlight, .warning { padding: 14px 18px; font-size: 15px; }
+    .back-button { font-size: 15px; padding: 10px 14px; margin-bottom: 16px; }
+  }
+  @media (max-width: 480px) { body { margin: 12px auto; padding: 12px; font-size: 17px; } h1 { font-size: 19px; } .section-title { font-size: 18px; } }
+</style>
+</head>
+<body>
+<div>
+  <a href="/landy-briefings/" class="back-button"><span>←</span> 返回简报列表</a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年6月9日（周二）</div>
+
+<!-- 🔴 地缘·宏观 -->
+<div class="section">
+  <div class="section-title red">🔴 地缘·宏观</div>
+  <ul>
+    <li><strong>亚马逊与康宁达成数十亿美元协议</strong> — 康宁美股盘前涨超9%，协议涉及光纤/玻璃材料，可能与AI数据中心基础设施扩张相关 <span class="source">（36氪）</span></li>
+    <li><strong>日本证监会建议处罚富途旗下moomoo证券</strong> — NISA制度销售、反洗钱、系统风控等多方面存在问题 <span class="source">（财新）</span></li>
+    <li><strong>电子元器件缺货涨价潮蔓延</strong> — 深圳华强：Q1收入同比增长超300%，存储、电源管理芯片、模拟芯片、MLCC全线上涨，客户开始拉货补库存 <span class="source">（36氪）</span></li>
+    <li><strong>中国科研突破石墨烯晶体管新纪录</strong> — 中科院金属所研制首款硅-石墨烯-锗势垒晶体管，刷新截止频率和电流增益世界纪录 <span class="source">（科技日报）</span></li>
+  </ul>
+</div>
+
+<!-- 🤖 AI·算力·数据中心 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 AI·算力·数据中心</div>
+  <ul>
+    <li style="font-weight: bold; color: #d32f2f;">【历史性信号】AI机器网络请求量首超人类 — 57.4% vs 42.6%</strong>，互联网格局拐点，AI推理需求从实验到工业级应用，液冷散热从可选变强制</li>
+    <li><strong>亚马逊巨额订单利好康宁</strong> — 数据中心光纤/玻璃材料大单印证AI基建投资持续扩大，液冷管路采购周期也将随数据中心扩张同步启动 <span class="source">（36氪）</span></li>
+    <li><strong>黄仁勋访韩推进物理AI</strong> — 与KRAFTON、NCSOFT讨论人形机器人和RTX Spark游戏本合作，英伟达生态从AI训练向推理+机器人延伸</li>
+    <li><strong>携程接入微信AI生态</strong> — 微信开放平台发布AI生态接入指引，携程首批适配围绕酒店/机票/旅游/出行接入微信AIAgent，AI应用加速落地 <span class="source">（36氪）</span></li>
+    <li><strong>"昆仑元AI"获5000万战略融资</strong> — 垂直AI领域持续资本化 <span class="source">（36氪）</span></li>
+    <li><strong>Rokid发布隐私整改声明</strong> — AI眼镜违规拍摄风波，引导行业规范化发展 <span class="source">（36氪）</span></li>
+  </ul>
+</div>
+
+<!-- 🔋 储能·新能源·超充 -->
+<div class="section">
+  <div class="section-title green">🔋 储能·新能源·超充</div>
+  <ul>
+    <li style="font-weight: bold; color: #1a73e8;">【重磅】赣锋锂业储能电芯满产满销</strong> — 产能利用率接近<strong>100%</strong>；自研588Ah和648Ah大电芯为行业标杆；南昌588Ah产线Q3启动产能爬坡 <span class="source">（36氪）</span></li>
+    <li><strong>MLCC、芯片缺货涨价</strong> — 深圳华强Q1电子元器件业务营收同比增<strong>300%+</strong>，村田等品牌高端MLCC需求大增，客户主动补库存 <span class="source">（36氪）</span></li>
+    <li><strong>锋龙股份澄清不涉及人形机器人</strong> — 连续3交易日涨超20%，公司主营园林机械/汽车零部件，与优必选无关 <span class="source">（36氪）</span></li>
+    <li><strong>储能液冷配套需求持续</strong> — 赣锋588Ah/648Ah大电芯专为大型储能电站设计，液冷系统在大容量电芯方案中已成标配</li>
+  </ul>
+</div>
+
+<!-- 💹 A股·港股 -->
+<div class="section">
+  <div class="section-title purple">💹 A股·港股</div>
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#9334e6;">💧 液冷概念板块</strong>
+    <ul>
+      <li><strong>AI流量超人类 + 亚马逊康宁大单 + 英伟达生态扩张</strong> — 三条主线印证AI基建投资加速，液冷管路需求确定性增强</li>
+      <li><strong>英维克/高澜/曙光数创/申菱环境</strong> — 关注本周是否有新订单/中标公告</li>
+    </ul>
+  </div>
+  <div style="margin-left:12px;">
+    <strong style="color:#9334e6;">📊 重要事件</strong>
+    <ul>
+      <li><strong>6月9日：ST派瑞复牌</strong> — 财务造假更名，日涨跌幅<strong>20%</strong></li>
+      <li><strong>6月10日：中国平安187亿、中信银行79亿分红到账</strong> — 合计266亿现金分红入市</li>
+      <li><strong>电子元器件板块景气度高</strong> — MLCC/存储/模拟芯片全线上涨，关注深圳华强等分销商</li>
+      <li><strong>胜宏科技拟推7亿员工持股</strong> — PCB龙头信心信号</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 🏢 利通科技（839167） -->
+<div class="section">
+  <div class="section-title gray">🏢 利通科技（839167）动态</div>
+  <ul>
+    <li>北交所暂无利通科技（839167）新公告发布</li>
+    <li style="font-weight: bold; color: #1a73e8;">【多重催化】AI流量首超人类 + 亚马逊康宁数十亿大单 + 赣锋储能满产</strong> — 液冷管路需求从AI数据中心→储能→超充全面点燃</li>
+    <li><strong>AI基建主线</strong> — AI推理需求暴涨（机器流量57.4%），数据中心液冷从可选变强制，液冷管路用量翻倍</li>
+    <li><strong>储能主线</strong> — 赣锋锂业储能满产+大电芯量产在即，大型储能电站液冷配套成标配，液冷管路需求确定性高</li>
+    <li><strong>电子元器件涨价</strong> — MLCC/芯片全线涨价，或反映AI硬件供应链整体景气度上行，间接利好液冷管路国产替代</li>
+  </ul>
+  <div class="highlight">
+    <strong>🟡 持续关注</strong><br>
+    本周核心看点：（1）液冷集成商是否有新订单公布（英维克/高澜/曙光数创）；（2）储能大项目招标进展；（3）利通科技液冷软管订单突破信号。AI基建投资加速期已至。
+  </div>
+</div>
+
+</body>
+</html>
