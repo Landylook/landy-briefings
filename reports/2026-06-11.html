@@ -20,12 +20,14 @@
   li { margin-bottom: 8px; }
   li strong { font-weight: 600; }
   .source { color: #888; font-size: 12px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 8px; }
+  th { background: #f5f5f5; text-align: left; padding: 8px 10px; border: 1px solid #ddd; font-weight: 600; }
+  td { padding: 8px 10px; border: 1px solid #ddd; vertical-align: top; }
   .highlight { background: #fff8e1; padding: 12px 16px; border-left: 4px solid #f9a825; margin-top: 10px; font-size: 14px; }
   .warning { background: #fce8e6; padding: 12px 16px; border-left: 4px solid #ea4335; margin-top: 10px; font-size: 14px; }
   .back-button { display: inline-flex; align-items: center; color: #1a73e8; text-decoration: none; font-size: 14px; font-weight: 500; margin-bottom: 20px; padding: 8px 12px; border-radius: 4px; transition: background-color 0.2s; }
   .back-button:hover { background-color: #f5f5f5; }
   .back-button span { margin-right: 6px; }
-  @media (max-width: 768px) { body { margin: 20px auto; padding: 16px; font-size: 16px; } }
 </style>
 </head>
 <body>
@@ -40,11 +42,12 @@
 <div class="section">
   <div class="section-title red">🔴 地缘·宏观</div>
   <ul>
-    <li><strong>南向资金净买入82.43亿港元</strong> — 盈富基金获净买入<strong>40.56亿港元</strong>（腾讯控股19.95亿、长飞光纤光缆10.56亿）；阿里巴巴-W遭净卖出23.72亿港元 <span class="source">（第一财经）</span></li>
-    <li><strong>信立泰：招商银行提供不超4.5亿元股票回购专项贷款</strong> — 期限36个月，回购价格不超过45元/股，用于股权激励或员工持股 <span class="source">（36氪）</span></li>
-    <li><strong>常铝股份筹划控制权变更</strong> — 控股股东齐鲁财金筹划股份转让，可能导致控制权变更，6月11日继续停牌 <span class="source">（36氪）</span></li>
-    <li><strong>英国商业大臣：英国需承担更多风险留住初创企业</strong> — 政府角色转变信号，鼓励创新 <span class="source">（新浪财经）</span></li>
-    <li><strong>亚瑟士宣布2027年分拆鬼冢虎</strong> — 品牌重组动作 <span class="source">（财联社）</span></li>
+    <li><strong>SpaceX计划2027年启动太空AI基础设施演示</strong> — 在轨道部署计算能力路线图明确，太空算力时代开启 <span class="source">（界面）</span></li>
+    <li><strong>美的与阿里巴巴达成战略合作</strong> — 探索"全屋智能+AI大模型+商业生态"，AI与智能家居生态深度融合 <span class="source">（36氪）</span></li>
+    <li><strong>摩根士丹利：欧洲股市有10%上涨空间</strong> — 中东和平协议若达成，资金有望回流欧洲 <span class="source">（界面）</span></li>
+    <li><strong>南向资金净买入82.43亿港元</strong> — 盈富基金获净买入<strong>40.56亿港元</strong>，腾讯控股<strong>19.95亿港元</strong>；长飞光纤<strong>10.56亿港元</strong>（光缆+算力） <span class="source">（第一财经）</span></li>
+    <li><strong>速卖通383个品牌日销超亚马逊</strong> — 海外618收官，速卖通品牌GMV渗透率达40%，西班牙/法国/波兰本土订单反超跨境 <span class="source">（36氪）</span></li>
+    <li><strong>瑞达期货、百洋医药筹划H股上市</strong> — 中资股港股上市持续 <span class="source">（36氪）</span></li>
   </ul>
 </div>
 
@@ -52,12 +55,10 @@
 <div class="section">
   <div class="section-title lightblue">🤖 AI·算力·数据中心</div>
   <ul>
-    <li><strong>力量钻石：10.28亿建设金刚石功能材料项目</strong> — 聚焦<strong>散热材料</strong>（金刚石单晶/多晶）、光学材料、声学振膜等高端规模化生产。金刚石散热是AI芯片热管理前沿技术路线 <span class="source">（36氪）</span></li>
-    <li><strong>腾讯云与华硕达成战略合作</strong> — 基于Agent Bucket智能存储打造"个人空间盘"，面向百万级笔记本用户 <span class="source">（36氪）</span></li>
-    <li><strong>均胜电子：新菲光光模块业务进入量产阶段</strong> — 光模块是AI数据中心互联核心器件 <span class="source">（36氪）</span></li>
-    <li><strong>3连板金安国纪澄清：覆铜板尚未应用于AI服务器及算力领域</strong> — 高频高速覆铜板尚在实验室研发及客户送样阶段，未形成收入 <span class="source">（36氪）</span></li>
-    <li><strong>和远气体：电子特气产品尚处试生产阶段</strong> — 预计2-3年内对经营业绩不会产生重大影响 <span class="source">（36氪）</span></li>
-    <li><strong>AI机器流量57.4%超人类</strong> — 数据中心液冷需求刚性，液冷管路用量持续增长</li>
+    <li style="font-weight: bold; color: #d32f2f;">【重磅】SpaceX 2027年启动太空AI基础设施演示</strong> — AI算力从地面延展至太空，液冷技术应用场景再扩展。太空数据中心对散热要求极高，或带来液冷管路新增量市场</li>
+    <li><strong>美的×阿里巴巴战略合作</strong> — AI大模型落地智能家居，全屋智能生态加速，边缘算力需求持续放大 <span class="source">（36氪）</span></li>
+    <li><strong>AI机器流量57.4%首超人类</strong> — 数据中心液冷需求刚性化，Rubin全产加速</li>
+    <li><strong>谷歌DeepMind欧洲机器人加速器</strong> — 16家初创获Gemini机器人模型支持，AI算力需求从云到端全场景覆盖</li>
   </ul>
 </div>
 
@@ -65,11 +66,10 @@
 <div class="section">
   <div class="section-title green">🔋 储能·新能源·超充</div>
   <ul>
-    <li style="font-weight: bold; color: #1a73e8;">【重磅】比亚迪第二代刀片电池爆单</strong> — 闪充技术发布后订单爆发式增长，<strong>产能供不应求</strong>，公司正努力提升产能。明年产能释放后，国内外市场同时发力，闪充生态落地全球 <span class="source">（36氪）</span></li>
-    <li><strong>比亚迪发布4nm璇玑A3芯片</strong> — 辅助驾驶车型保有量超<strong>315万台</strong>，每日生成超<strong>2亿公里</strong>数据，已为L3级自动驾驶做好全准备 <span class="source">（36氪）</span></li>
-    <li><strong>广东超充政策</strong> — 2027年底前建成300万个充电设施，"超充县县通"，液冷超充桩需求持续爆发</li>
-    <li><strong>赣锋锂业储能满产满销</strong> — 588Ah产线Q3启动产能爬坡，大储项目液冷配套持续</li>
-    <li><strong>顺发恒能：拟36亿元建设800MW级燃机项目</strong> — 能源基础设施持续扩张 <span class="source">（36氪）</span></li>
+    <li style="font-weight: bold; color: #1a73e8;">【重磅】比亚迪刀片电池闪充订单爆发式增长，产能供不应求</strong> — 第二代刀片电池+闪充技术引爆市场，明年产能释放后国内外同时发力，液冷超充桩作为闪充基础设施核心组件，需求确定 <span class="source">（36氪）</span></li>
+    <li><strong>龙蟠科技投资10.88亿元建设印尼锂源三期</strong> — 年产12万吨磷酸铁锂，锂电正极材料扩产持续 <span class="source">（36氪）</span></li>
+    <li><strong>广东超充县县通政策</strong> — 2027年300万充电设施，满足800万辆新能源汽车，液冷超充桩是核心增量</li>
+    <li><strong>赣锋锂业储能满产满销</strong> — 588Ah产线Q3爬坡，大型储能电站液冷配套持续</li>
   </ul>
 </div>
 
@@ -79,17 +79,18 @@
   <div style="margin-left:12px; margin-bottom:14px;">
     <strong style="color:#9334e6;">💧 液冷概念板块</strong>
     <ul>
-      <li><strong>力量钻石（10.28亿金刚石散热项目）</strong> — 金刚石散热材料新赛道，AI芯片散热前沿路线</li>
-      <li><strong>英维克（6月9日获机构净买入2.99亿）</strong> — 液冷集成商龙头，持续获资金关注</li>
-      <li><strong>长飞光纤光缆（南向资金净买入10.56亿港元）</strong> — AI数据中心光纤基础设施</li>
+      <li><strong>SpaceX 2027年太空AI算力路线图</strong> — 液冷技术从地面延伸到太空，想象空间打开</li>
+      <li><strong>比亚迪闪充订单爆发</strong> — 液冷超充桩核心客户需求井喷</li>
+      <li><strong>英维克6月9日机构净买入2.99亿</strong> — 液冷集成商龙头获大资金认可</li>
     </ul>
   </div>
   <div style="margin-left:12px;">
     <strong style="color:#9334e6;">📊 重要事件</strong>
     <ul>
-      <li><strong>比亚迪产业链全线下半年爆发</strong> — 第二代刀片电池闪充+4nm芯片+L3准备，新能源热管理升级加速</li>
-      <li><strong>南向资金持续买入港股</strong> — 腾讯控股获19.95亿港元净买入，科技龙头受青睐</li>
-      <li><strong>常铝股份控制权变更停牌</strong> — 关注复牌后动向</li>
+      <li><strong>常铝股份控制权变更停牌</strong> — 控股股东齐鲁财金筹划股权转让</li>
+      <li><strong>信立泰取得招行4.5亿股票回购专项贷款</strong> — 回购3-5亿元 <span class="source">（36氪）</span></li>
+      <li><strong>英力股份：若AIPC换机潮来临将直接受益</strong> — 拓展AI服务器机柜新业务 <span class="source">（36氪）</span></li>
+      <li><strong>长飞光纤获南向资金净买入10.56亿港元</strong> — 光纤光缆+算力基础设施 <span class="source">（第一财经）</span></li>
     </ul>
   </div>
 </div>
@@ -99,14 +100,13 @@
   <div class="section-title gray">🏢 利通科技（839167）动态</div>
   <ul>
     <li>北交所暂无利通科技（839167）新公告发布</li>
-    <li style="font-weight: bold; color: #1a73e8;">【核心催化】比亚迪第二代刀片电池爆单 → 热管理需求爆发</strong> — 比亚迪是利通科技液冷管路在新能源汽车领域的重要应用场景，闪充技术+刀片电池量产加速直接拉动液冷管路需求</li>
-    <li><strong>金刚石散热新赛道</strong> — 力量钻石10.28亿入局金刚石散热材料，说明AI芯片级散热已成产业化方向，液冷管路+芯片级散热共同构建完整散热解决方案</li>
-    <li><strong>广东超充政策+比亚迪闪充</strong> — 两重政策+需求叠加，液冷超充桩管路需求确定性极高</li>
-    <li><strong>关注利通科技液冷软管在新能源汽车+超充+智算中心三大场景的订单突破</strong></li>
+    <li style="font-weight: bold; color: #1a73e8;">【双重催化】比亚迪闪充订单爆发 + SpaceX太空AI</strong> — 液冷超充桩需求井喷+液冷技术太空化，液冷管路应用场景全面扩张</li>
+    <li><strong>超充桩逻辑强化</strong> — 比亚迪刀片电池闪充技术引爆市场，液冷超充桩是闪充生态的核心散热组件，利通科技作为液冷软管供应商直接受益</li>
+    <li><strong>太空AI新赛道</strong> — SpaceX 2027年路线图明确，太空算力对散热要求严苛，液冷管路或将成为太空数据中心的标配材料</li>
   </ul>
   <div class="highlight">
     <strong>🟡 持续关注</strong><br>
-    本周核心信号：比亚迪爆单（热管理）+ 金刚石散热材料（前沿路线）+ 英维克2.99亿机构买入（资金信号）。液冷管路赛道三重共振：新能源汽车热管理 + 超充桩 + 智算中心。
+    今日核心信号：比亚迪闪充订单爆发（液冷超充桩直接需求）+ SpaceX太空AI（液冷管新增量市场）。关注液冷超充桩招标加速，以及利通科技液冷软管在超充桩领域的订单突破。
   </div>
 </div>
 
