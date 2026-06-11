@@ -21,6 +21,7 @@
   li strong { font-weight: 600; }
   .source { color: #888; font-size: 12px; }
   .highlight { background: #fff8e1; padding: 12px 16px; border-left: 4px solid #f9a825; margin-top: 10px; font-size: 14px; }
+  .warning { background: #fce8e6; padding: 12px 16px; border-left: 4px solid #ea4335; margin-top: 10px; font-size: 14px; }
   .back-button { display: inline-flex; align-items: center; color: #1a73e8; text-decoration: none; font-size: 14px; font-weight: 500; margin-bottom: 20px; padding: 8px 12px; border-radius: 4px; transition: background-color 0.2s; }
   .back-button:hover { background-color: #f5f5f5; }
   .back-button span { margin-right: 6px; }
@@ -29,7 +30,7 @@
     h1 { font-size: 20px; } .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
     .section { margin-bottom: 24px; } .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
     ul { padding-left: 24px; } li { margin-bottom: 10px; }
-    .highlight { padding: 14px 18px; font-size: 15px; }
+    .highlight, .warning { padding: 14px 18px; font-size: 15px; }
     .back-button { font-size: 15px; padding: 10px 14px; margin-bottom: 16px; }
   }
 </style>
@@ -46,10 +47,10 @@
 <div class="section">
   <div class="section-title red">🔴 地缘·宏观</div>
   <ul>
-    <li><strong>SpaceX IPO获中东财富基金数十亿美元认购</strong> — 沙特PIF、科威特投资局各认购<strong>10-50亿美元</strong>，卡塔尔投资局（5800亿美元）也可能参与。SpaceX上市加速，太空基建时代开启 <span class="source">（财联社）</span></li>
-    <li><strong>新易盛筹划发行H股赴港上市</strong> — 光模块龙头之一，董事会已通过议案，旨在提升国际影响力，尚需股东会、证监会备案及香港联交所核准 <span class="source">（36氪）</span></li>
-    <li><strong>杰瑞股份：燃气轮机发电机组今年以来多次涨价</strong> — 北美供不应求，迪拜基地建设中，海内外产能可调节。美国关税政策影响下，出口导向型能源装备持续受益 <span class="source">（36氪）</span></li>
-    <li><strong>美股大型科技股盘前下跌</strong> — 英伟达、Arm跌超1%，微软、谷歌、亚马逊、Meta、特斯拉集体低开。短期情绪波动，不改AI基础设施长期投资逻辑 <span class="source">（36氪）</span></li>
+    <li><strong>京东方A被美国国防部列入"中国军事企业清单"</strong> — 6月8日发布，京东方澄清并无正当理由，生产经营正常，限制仅涉及美国国防采购 <span class="source">（36氪）</span></li>
+    <li><strong>德纳与伊顿Mobility业务合并，交易估值51亿美元</strong> — 美国汽车零部件龙头与伊顿合并，逆向莫里斯信托结构。全球汽车零部件整合加速 <span class="source">（界面）</span></li>
+    <li><strong>美股大型科技股盘前下跌</strong> — 英伟达、Arm跌超1%，微软、谷歌、亚马逊集体低开。AI短期情绪波动延续</li>
+    <li><strong>海尔新能源在四川成立新公司</strong> — 清洁能源业务持续扩张 <span class="source">（天眼查）</span></li>
   </ul>
 </div>
 
@@ -57,10 +58,10 @@
 <div class="section">
   <div class="section-title lightblue">🤖 AI·算力·数据中心</div>
   <ul>
-    <li><strong>SpaceX中东金主入场</strong> — 沙特+科威特+卡塔尔三大中东主权基金联合认购，IPO规模或创历史级。太空数据中心散热需求全新场景，液冷管路潜在新增量</li>
-    <li><strong>新易盛赴港上市</strong> — 光模块是AI数据中心核心器件，高速光模块需求与液冷散热需求同向增长</li>
+    <li><strong>SpaceX IPO获中东财富基金数十亿美元认购</strong> — 沙特PIF、科威特投资局各认购10-50亿美元，卡塔尔投资局（5800亿美元）也可能参与。太空基建时代开启，液冷应用场景延伸至太空 <span class="source">（财联社）</span></li>
+    <li><strong>证监会批准华泰三峡清洁能源REITs注册</strong> — 清洁能源基础设施封闭式REITs，募集5亿份，期限20年。储能项目资本化加速，液冷配套资金来源拓宽 <span class="source">（36氪）</span></li>
+    <li><strong>谷歌DeepMind启动欧洲机器人加速器</strong> — 首批16家初创企业获Gemini模型访问权限，覆盖物流、制造、医疗、海洋探索等领域</li>
     <li><strong>英伟达短期调整</strong> — 盘前跌超1%，AI算力基础设施长期需求确定，Rubin量产+液冷渗透率提升核心逻辑不变</li>
-    <li><strong>谷歌DeepMind欧洲机器人加速器</strong> — 首批16家初创获Gemini模型支持，AI算力向边缘+机器人场景延伸</li>
   </ul>
 </div>
 
@@ -68,10 +69,10 @@
 <div class="section">
   <div class="section-title green">🔋 储能·新能源·超充</div>
   <ul>
-    <li><strong>广东：2027年底前建成300万个充电设施，超充县县通</strong> — 满足<strong>800万辆</strong>新能源汽车充电需求，液冷超充桩将成标配。政策强支撑，液冷管路需求确定 <span class="source">（36氪）</span></li>
-    <li><strong>杰瑞燃气轮机涨价</strong> — 能源基础设施供不应求，美国关税壁垒下中国能源装备出口受益，储能调峰电站配套燃气轮机需求持续</li>
-    <li><strong>赣锋锂业储能满产</strong> — 588Ah/648Ah大电芯Q3爬坡，储能液冷配套需求确定</li>
-    <li><strong>中船科技41.49亿风电投资</strong> — 3个风电场推进中，新能源基建持续扩张</li>
+    <li><strong>华泰三峡清洁能源REITs获批</strong> — 储能/清洁能源项目权益融资渠道打开，储能项目资本化加速，配套液冷需求同步释放 <span class="source">（36氪/证监会）</span></li>
+    <li><strong>广东：2027年底前建成300万个充电设施，超充县县通</strong> — 满足<strong>800万辆</strong>新能源汽车充电需求，液冷超充桩将成标配 <span class="source">（36氪）</span></li>
+    <li><strong>赣锋锂业储能满产满销</strong> — 588Ah/648Ah大电芯Q3启动产能爬坡，液冷配套需求确定</li>
+    <li><strong>杰瑞燃气轮机多次涨价</strong> — 北美供不应求，迪拜基地建设中，海内外产能可调节</li>
   </ul>
 </div>
 
@@ -81,17 +82,17 @@
   <div style="margin-left:12px; margin-bottom:14px;">
     <strong style="color:#9334e6;">💧 液冷概念板块</strong>
     <ul>
-      <li><strong>英维克获机构净买入2.99亿（6/9龙虎榜榜首）</strong> — 液冷集成商龙头获大资金认可，板块资金效应持续</li>
-      <li><strong>新易盛筹划H股上市</strong> — 光模块龙头赴港，AI器件资本化加速</li>
-      <li><strong>SpaceX概念持续升温</strong> — 中东财富基金认购，航天液冷全新赛道</li>
+      <li style="font-weight: bold; color: #d32f2f;">【重点信号】英维克获机构净买入2.99亿元（6/9龙虎榜榜首）</strong> — 液冷集成商龙头获大资金入场，信号积极 <span class="source">（第一财经）</span></li>
+      <li><strong>华泰清洁能源REITs获批</strong> — 储能项目资本化新渠道，液冷配套项目资金来源拓宽</li>
+      <li><strong>新易盛筹划H股赴港上市</strong> — 光模块龙头国际化，AI硬件持续资本化 <span class="source">（36氪）</span></li>
     </ul>
   </div>
   <div style="margin-left:12px;">
     <strong style="color:#9334e6;">📊 重要事件</strong>
     <ul>
-      <li><strong>6月11日：ST景峰停牌一天，6/12复牌更名"景峰医药"</strong> — 日涨跌幅由5%变10%</li>
-      <li><strong>6月11日：*ST生物停牌一天，6/12复牌更名"南华生物"</strong> — 日涨跌幅由5%变10%</li>
-      <li><strong>新易盛H股上市</strong> — 光模块龙头国际化，资本市场看好AI硬件</li>
+      <li><strong>6/12：ST景峰更名"景峰医药"、*ST生物更名"南华生物"复牌</strong> — 日涨跌幅由5%恢复至10%</li>
+      <li><strong>德纳+伊顿51亿美元合并</strong> — 全球汽车零部件整合浪潮，中国供应商竞争加剧</li>
+      <li><strong>红宝丽澄清：非光刻胶概念</strong> — 蹭热点炒作风险警示</li>
     </ul>
   </div>
 </div>
@@ -101,13 +102,13 @@
   <div class="section-title gray">🏢 利通科技（839167）动态</div>
   <ul>
     <li>北交所暂无利通科技（839167）新公告发布</li>
-    <li style="font-weight: bold; color: #1a73e8;">【新催化】SpaceX IPO获中东主权基金认购</strong> — 太空数据中心散热需求全新赛道，液冷管路应用场景从地球延伸至太空</li>
-    <li><strong>液冷管四大需求驱动</strong> — AI推理爆发（机器流量57.4%）→数据中心液冷；广东超充县县通→液冷超充桩；赣锋储能满产→储能液冷；SpaceX太空基建→全新场景</li>
-    <li><strong>英维克2.99亿机构买入信号</strong> — 液冷集成商获大资金关注，板块效应下利通科技作为上游管路供应商有望受益</li>
+    <li style="font-weight: bold; color: #1a73e8;">【新催化】SpaceX IPO获中东主权基金认购，太空液冷散热全新赛道开启</li>
+    <li><strong>液冷管四大需求驱动</strong> — AI推理爆发（机器流量57.4%）→数据中心液冷；广东超充县县通→液冷超充桩；赣锋储能满产→储能液冷；华泰REITs→储能资本化加速</li>
+    <li><strong>英维克2.99亿机构买入信号</strong> — 液冷集成商获大资金关注，作为上游管路供应商利通科技有望受益板块效应</li>
   </ul>
   <div class="highlight">
     <strong>🟡 持续关注</strong><br>
-    本周核心：英维克等液冷集成商是否持续获得资金关注；广东超充桩招标进展；SpaceX上市对液冷板块情绪催化。液冷管路国产替代加速期持续。
+    英维克获机构2.99亿买入是否带动液冷板块资金效应持续；华泰REITs储能项目落地进展；广东超充桩招标节奏。液冷管路国产替代加速期持续。
   </div>
 </div>
 
