@@ -11,6 +11,7 @@
   .section { margin-bottom: 28px; }
   .section-title { font-size: 16px; font-weight: bold; color: #111; margin-bottom: 12px; padding-bottom: 6px; border-bottom: 2px solid #222; }
   .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
   .section-title.green { border-bottom-color: #34a853; color: #34a853; }
   .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
   .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
@@ -23,6 +24,14 @@
   .back-button { display: inline-flex; align-items: center; color: #1a73e8; text-decoration: none; font-size: 14px; font-weight: 500; margin-bottom: 20px; padding: 8px 12px; border-radius: 4px; transition: background-color 0.2s; }
   .back-button:hover { background-color: #f5f5f5; }
   .back-button span { margin-right: 6px; }
+  @media (max-width: 768px) {
+    body { margin: 20px auto; padding: 16px; font-size: 16px; line-height: 1.9; }
+    h1 { font-size: 20px; } .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
+    .section { margin-bottom: 24px; } .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
+    ul { padding-left: 24px; } li { margin-bottom: 10px; }
+    .highlight { padding: 14px 18px; font-size: 15px; }
+    .back-button { font-size: 15px; padding: 10px 14px; margin-bottom: 16px; }
+  }
 </style>
 </head>
 <body>
@@ -31,59 +40,51 @@
 </div>
 
 <h1>AI研究员--Landy葉的简报</h1>
-<div class="date">2026年6月13日（周六）— 周末版</div>
+<div class="date">2026年6月13日（周六·周末版）</div>
 
+<!-- 🔴 地缘·宏观 -->
 <div class="section">
-  <div class="section-title red">🔴 本周重要回顾</div>
+  <div class="section-title red">🔴 地缘·宏观</div>
   <ul>
-    <li><strong>英维克获机构净买入2.99亿</strong>（6/9龙虎榜榜首）— 液冷集成商龙头获大资金认可，板块效应显现</li>
-    <li><strong>广东：2027年超充县县通</strong> — 300万个充电设施，满足800万辆新能源汽车，液冷超充桩将成标配</li>
-    <li><strong>SpaceX IPO获中东主权基金认购</strong> — 沙特/科威特/卡塔尔三大中东财富基金参与，太空基建时代开启</li>
-    <li><strong>华泰三峡清洁能源REITs获批</strong> — 储能项目资本化加速，液冷配套资金来源拓宽</li>
-    <li><strong>蓝思科技收购同昇光电</strong>（6/12）— 布局光通信+AI算力空芯光纤，光通信散热需求新增量</li>
+    <li style="font-weight: bold; color: #d32f2f;">【重磅政策】11部门联合推动新能源重卡：2030年渗透率40%，保有量160万辆</strong> — 交通运输部、发改委、工信部等11部门联合发布《推动新能源重卡规模化应用实施方案》。全国重点高速打造<strong>3万公里零碳公路运输通道</strong>，布局约<strong>3000个重卡充换电站</strong>。京津冀等区域固定线路短倒运输电动化超80% <span class="source">（央视新闻）</span></li>
+    <li><strong>A股出口企业量质双升</strong> — 2025年沪市主板海外收入7.3万亿元（同比+14%），海外创利0.9万亿元（同比+21%），但估值与基本面持续背离 <span class="source">（证券时报）</span></li>
+    <li><strong>法国AI调查：65%法国人使用AI，但54%认为AI是威胁</strong> — 代际/阶层/地域分化明显；18-34岁87%使用 vs 50岁以上54% <span class="source">（新华社）</span></li>
+    <li><strong>逾200家机构本周扎堆调研杰瑞股份、大金重工</strong> — 电子元件+能源装备持续获机构关注 <span class="source">（证券时报）</span></li>
   </ul>
 </div>
 
+<!-- 🤖 AI·算力·数据中心 -->
 <div class="section">
-  <div class="section-title lightblue">🤖 AI·算力</div>
+  <div class="section-title lightblue">🤖 AI·算力·数据中心</div>
   <ul>
-    <li><strong>英伟达短期调整</strong> — 盘前持续波动，Rubin量产+液冷渗透率提升逻辑不变</li>
-    <li><strong>蓝思科技+同昇光电</strong> — 光通信切入AI算力，空芯光纤用于通信+传感+医疗+传能，AI算力散热新方向</li>
-    <li><strong>谷歌DeepMind欧洲机器人加速器</strong> — 16家初创获Gemini模型支持</li>
-    <li><strong>AI机器流量57.4%超人类</strong> — 互联网历史性拐点，数据中心液冷需求从可选变强制</li>
+    <li style="font-weight: bold; color: #1a73e8;">【重要】摩尔线程完成MiniMax M3大模型Day-0适配</strong> — MTT S5000智算卡极速适配MiniMax M3开源旗舰模型，国产GPU+国产大模型生态加速融合，打破英伟达垄断又一里程碑 <span class="source">（36氪）</span></li>
+    <li><strong>蓝思科技收购同昇光电</strong> — 全资子公司蓝思光电战略收购同昇光电控股权，进军空芯光纤领域。空芯光纤可应用于数据中心浸没式液冷散热场景，光传输+热管理双赛道协同 <span class="source">（36氪）</span></li>
+    <li><strong>AI算力国产化加速</strong> — 摩尔线程+MiniMax M3适配完成，国产算力落地加快，国产液冷管路配套需求同步释放</li>
   </ul>
 </div>
 
+<!-- 🔋 储能·新能源·超充 -->
 <div class="section">
-  <div class="section-title green">🔋 储能·新能源</div>
+  <div class="section-title green">🔋 储能·新能源·超充</div>
   <ul>
-    <li><strong>能源金属板块本周涨逾7%</strong> — 液冷管路所需金属材料板块表现强劲</li>
-    <li><strong>赣锋锂业储能满产</strong> — 588Ah/648Ah大电芯Q3爬坡在即，储能液冷需求确定</li>
-    <li><strong>华泰清洁能源REITs获批</strong> — 储能资本化加速，液冷配套项目资金落地</li>
+    <li style="font-weight: bold; color: #d32f2f;">【重磅】11部门联合政策：2030年新能源重卡渗透率40%，3万公里零碳公路+3000充换电站</strong> — 重卡电动化加速，充换电站建设进入爆发期，液冷超充桩需求新增量 <span class="source">（央视新闻）</span></li>
+    <li><strong>广东超充县县通（300万充电设施）+ 新能源重卡政策</strong> — 两大政策共振，充电基础设施进入历史性扩张周期，液冷超充桩渗透率提升</li>
+    <li><strong>赣锋锂业储能满产满销</strong> — 588Ah大电芯Q3启动产能爬坡，储能液冷配套需求确定</li>
   </ul>
 </div>
 
+<!-- 🏢 利通科技（839167） -->
 <div class="section">
-  <div class="section-title purple">💹 A股本周概览</div>
+  <div class="section-title gray">🏢 利通科技（839167）动态</div>
   <ul>
-    <li>全周成交<strong>13.95万亿</strong>，创近5周新低，缩量震荡</li>
-    <li>上证指数4000点失而复得，科创综指守住2000点</li>
-    <li>两融资金大幅减仓，融资净卖出<strong>逾330亿元</strong></li>
-    <li>建筑材料、交通运输、综合逆市获得净买入</li>
-    <li>电力设备融资净卖出超41亿（短期压力，不改液冷赛道长期逻辑）</li>
-  </ul>
-</div>
-
-<div class="section">
-  <div class="section-title gray">🏢 利通科技（839167）</div>
-  <ul>
-    <li>北交所暂无新公告发布</li>
-    <li><strong>蓝思科技切入光通信+AI算力</strong> — 光通信散热成为液冷管路新增量应用场景</li>
-    <li><strong>液冷管五大驱动：</strong>AI推理爆发 + 广东超充 + 赣锋储能满产 + SpaceX太空基建 + REITs资本化</li>
+    <li>北交所暂无利通科技（839167）新公告发布</li>
+    <li style="font-weight: bold; color: #1a73e8;">【双政策共振】广东超充县县通 + 11部门新能源重卡政策</strong> — 两项政策叠加，液冷超充桩需求进入爆发期，液冷管路赛道全面受益</li>
+    <li><strong>新增长极：空芯光纤+浸没式液冷</strong> — 蓝思科技收购同昇光电，切入空芯光纤+AI数据中心散热新场景，液冷管路应用边界拓展</li>
+    <li><strong>AI算力国产化加速</strong> — 摩尔线程+MiniMax M3，国产算力生态完善，数据中心液冷需求持续释放</li>
   </ul>
   <div class="highlight">
-    <strong>🟡 下周关注</strong><br>
-    液冷集成商（英维克/高澜）是否有新订单公告；广东超充桩招标启动时间；蓝思科技+同昇光电光通信散热布局进展。
+    <strong>🟡 本周液冷管赛道复盘</strong><br>
+    英维克获机构2.99亿净买入（6/9）→液冷集成商标杆信号；广东超充县县通+11部门新能源重卡政策→液冷超充桩需求爆发；摩尔线程+MiniMax M3→国产AI算力生态加速；空芯光纤+浸没式液冷→新场景新增长。液冷管路国产替代黄金期已至，持续关注利通科技订单突破。
   </div>
 </div>
 
