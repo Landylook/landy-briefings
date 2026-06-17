@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>智算中心进展研究报告（第3期） | 火箭军情报部</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background: #f5f7fb; color: #1a1a2e; line-height: 1.6; }
+    .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+
+    .header { background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); color: #fff; padding: 32px 40px; border-radius: 16px; margin-bottom: 24px; position: relative; overflow: hidden; }
+    .header::after { content: '🦅'; position: absolute; right: 30px; top: 20px; font-size: 48px; opacity: 0.3; }
+    .header h1 { font-size: 24px; margin-bottom: 6px; letter-spacing: 1px; }
+    .header .sub { font-size: 14px; opacity: 0.8; display: flex; justify-content: space-between; }
+    .badge { display: inline-block; background: rgba(255,255,255,0.15); padding: 2px 12px; border-radius: 20px; font-size: 12px; margin-right: 8px; }
+
+    .core-card { background: #fff; border-left: 5px solid #e74c3c; padding: 20px 24px; border-radius: 0 12px 12px 0; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+    .core-card .label { font-size: 12px; color: #e74c3c; font-weight: 700; letter-spacing: 2px; margin-bottom: 4px; }
+    .core-card p { font-size: 16px; font-weight: 500; color: #2d3436; }
+
+    .section { background: #fff; border-radius: 12px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+    .section h2 { font-size: 18px; color: #2d3436; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 2px solid #f0f0f0; position: relative; }
+    .section h2::before { content: ''; position: absolute; bottom: -2px; left: 0; width: 40px; height: 2px; background: #e74c3c; }
+    .section h3 { font-size: 15px; color: #2d3436; margin: 16px 0 10px; }
+    .section p, .section li { font-size: 14px; color: #444; line-height: 1.8; }
+
+    table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 12px 0; }
+    thead th { background: #f8f9fa; color: #636e72; font-weight: 600; padding: 10px 12px; text-align: left; border-bottom: 2px solid #e0e0e0; }
+    tbody td { padding: 10px 12px; border-bottom: 1px solid #f0f0f0; vertical-align: top; }
+    tbody tr:hover { background: #f8f9fa; }
+    .highlight { color: #e74c3c; font-weight: 700; }
+    .highlight-blue { color: #2980b9; font-weight: 700; }
+    .highlight-green { color: #27ae60; font-weight: 700; }
+
+    .data-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; margin: 12px 0; }
+    .data-card { background: #f8f9fa; border-radius: 10px; padding: 16px; text-align: center; }
+    .data-card .num { font-size: 24px; font-weight: 700; color: #2d3436; }
+    .data-card .num.red { color: #e74c3c; }
+    .data-card .num.blue { color: #2980b9; }
+    .data-card .num.green { color: #27ae60; }
+    .data-card .desc { font-size: 11px; color: #636e72; margin-top: 4px; }
+
+    .trend-list { list-style: none; }
+    .trend-list li { padding: 12px 0; border-bottom: 1px solid #f0f0f0; }
+    .trend-list li:last-child { border: none; }
+    .trend-list li .trend-title { font-weight: 600; color: #2d3436; }
+    .trend-list li .trend-desc { font-size: 13px; color: #636e72; margin-top: 4px; }
+    .trend-icon { display: inline-block; width: 24px; text-align: center; margin-right: 8px; }
+
+    .footnote { background: #f8f9fa; border-radius: 12px; padding: 16px 20px; margin: 20px 0; font-size: 12px; color: #636e72; line-height: 1.8; }
+    .footnote strong { color: #2d3436; }
+
+    .info-box { background: #fff3cd; border: 1px solid #ffc107; border-radius: 10px; padding: 14px 18px; margin: 12px 0; font-size: 13px; }
+    .info-box .title { font-weight: 700; color: #856404; }
+
+    @media (max-width: 600px) {
+      .container { padding: 12px; }
+      .header { padding: 20px; }
+      .section { padding: 16px; }
+      table { font-size: 11px; }
+      .data-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+      <h1>📊 智算中心建设进展研究报告（第3期）</h1>
+      <div class="sub">
+        <span><span class="badge">📅 2026年6月17日</span><span class="badge">🦅 火箭军情报部</span><span class="badge">🧠 参谋诸葛亮</span></span>
+        <span>Vol.03</span>
+      </div>
+    </div>
+
+    <!-- Core Conclusion -->
+    <div class="core-card">
+      <div class="label">⚡ 核心结论</div>
+      <p>推理算力需求爆发拐点确立。字节跳动与天数智芯洽谈采购<strong>至少5万颗推理GPU</strong>，标志国产推理芯片正式进入"大规模集采验证"阶段。2026年Q1国内推理需求已达训练需求的<strong>8倍</strong>（中国工程院数据），全球AI推理芯片2030年规模预计达<strong>3.07万亿元</strong>。液冷散热作为推理集群高密度部署标配，正从"可选项"加速变为"必选项"。</p>
+    </div>
+
+    <!-- Section 1: Key Numbers -->
+    <div class="section">
+      <h2>📈 本周关键数据全景</h2>
+      <div class="data-grid">
+        <div class="data-card">
+          <div class="num red">5万颗</div>
+          <div class="desc">字节跳动拟采购天数智芯推理GPU（最低量）</div>
+        </div>
+        <div class="data-card">
+          <div class="num blue">380亿元</div>
+          <div class="desc">阿里单季度资本开支（2026财年Q1）</div>
+        </div>
+        <div class="data-card">
+          <div class="num red">3800亿元</div>
+          <div class="desc">阿里未来三年算力投资总规划</div>
+        </div>
+        <div class="data-card">
+          <div class="num blue">8倍</div>
+          <div class="desc">2026Q1中国推理需求 vs 训练需求</div>
+        </div>
+        <div class="data-card">
+          <div class="num green">+30~40%</div>
+          <div class="desc">2026Q1算力租赁成本涨幅</div>
+        </div>
+        <div class="data-card">
+          <div class="num blue">3.07万亿</div>
+          <div class="desc">全球AI推理芯片2030年规模（人民币）</div>
+        </div>
+        <div class="data-card">
+          <div class="num green">1.17万亿</div>
+          <div class="desc">中国AI推理芯片2030年规模（人民币）</div>
+        </div>
+        <div class="data-card">
+          <div class="num red">4~5倍</div>
+          <div class="desc">2026全年推理需求 vs 训练需求（预期）</div>
+        </div>
+        <div class="data-card">
+          <div class="num blue">60~90%</div>
+          <div class="desc">推理占超大规模AI集群总能耗比重</div>
+        </div>
+        <div class="data-card">
+          <div class="num green">万卡级</div>
+          <div class="desc">百度全国AI算力集群规模</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 2: ByteDance Deal -->
+    <div class="section" style="border-left: 4px solid #e74c3c;">
+      <h2>🚨 本周最大事件：字节跳动5万颗国产推理芯片大单</h2>
+      <div class="info-box">
+        <span class="title">📌 关键事件：</span> 据第一财经6月17日报道，字节跳动正与天数智芯洽谈采购<strong>至少5万颗AI推理芯片</strong>（智铠系列云端推理GPU）。若交易达成，天数智芯将成为华为昇腾和寒武纪之后，字节跳动的<strong>第三家GPU供应商</strong>。
+      </div>
+
+      <p>字节跳动已明确将训练与推理的芯片供应链<strong>完全拆分</strong>：</p>
+      <table>
+        <thead>
+          <tr>
+            <th>用途</th>
+            <th>芯片供应商</th>
+            <th>定位</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>大规模模型训练</strong></td>
+            <td>华为昇腾 + 寒武纪高端训练卡</td>
+            <td>超大规模预训练底座</td>
+          </tr>
+          <tr>
+            <td><strong>线上C端推理</strong></td>
+            <td>天数智芯智铠系列（新增）</td>
+            <td>海量并发推理主力供给</td>
+          </tr>
+          <tr>
+            <td><strong>中高端推理/私有化部署</strong></td>
+            <td>寒武纪（兼顾）</td>
+            <td>垂直行业</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div style="background:#f0f7ff; border-radius:10px; padding:16px; margin:12px 0;">
+        <p style="font-size:13px; margin:0;"><strong>✍️ 参谋长解读：</strong>5万颗不是小数目——这是国产推理芯片厂商有史以来收到的<strong>最大单笔实质性订单咨询</strong>。字节跳动豆包日均Token消耗量极大，其选择天数智芯而非继续追加英伟达，传递了两个信号：①国产推理GPU在性价比上已能满足互联网大厂大规模并发场景；②信创合规压力下，大厂正在实质性推进供应链多元化。该订单若落地，将为天数智芯带来可观的收入和现金流，对整个国产推理芯片赛道是强心针。</p>
+      </div>
+      <p style="font-size:12px; color:#636e72;">来源：第一财经《字节跳动加量采购国产芯片，互联网大厂竞速搭建算力护城河》（2026/6/17）</p>
+    </div>
+
+    <!-- Section 3: Internet Giants Infrastructure Race -->
+    <div class="section">
+      <h2>🏢 互联网大厂算力竟跑：百度、阿里、腾讯加速圈地</h2>
+      <p>除字节跳动外，主要互联网大厂均在密集布局数据中心：</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>企业</th>
+            <th>算力布局</th>
+            <th>国产化节奏</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>阿里巴巴</strong></td>
+            <td>2026财年Q1资本开支<strong>超380亿元</strong>，未来三年规划<strong>超3800亿元</strong>加码云和智算硬件</td>
+            <td>持续采购英伟达H系列，同时加大国产算力适配</td>
+          </tr>
+          <tr>
+            <td><strong>腾讯</strong></td>
+            <td>在全国多地建设HCC高性能AI集群，提供混元大模型MaaS、游戏AIGC、视频生成推理服务</td>
+            <td><strong>2026年下半年</strong>大规模导入国产算力</td>
+          </tr>
+          <tr>
+            <td><strong>百度</strong></td>
+            <td>在全国布局<strong>万卡级AI算力集群</strong>规模</td>
+            <td>积极适配国产训练+推理芯片</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div style="background:#f0f7ff; border-radius:10px; padding:14px; margin:10px 0;">
+        <p style="font-size:13px; margin:0;">📌 <strong>液冷视角：</strong>互联网大厂自建数据中心，是液冷管路/UQD供应商最重要的增量客户群。相比传统IDC，这些新建智算中心<strong>单体规模更大、功率密度更高（PUE要求更严）</strong>，液冷渗透率接近100%。联想AI服务器项目储备1400亿元（5月数据），互联网大厂"圈地"规模更不在其下——液冷散热方案是刚需。</p>
+      </div>
+      <p style="font-size:12px; color:#636e72;">来源：第一财经（2026/6/17），36氪财经电报（2026/6/17）</p>
+    </div>
+
+    <!-- Section 4: Inference-Centric Era -->
+    <div class="section">
+      <h2>⚡ 推理时代确立：需求结构深度重塑</h2>
+
+      <h3>1️⃣ 推理需求爆发：已达训练8倍</h3>
+      <p>中国工程院数据：<strong>2026年一季度，中国推理需求已达训练需求的8倍</strong>。这一比例远超市场预期。灼识咨询报告预测，全球AI推理芯片行业规模到2030年将达到<strong>3.07万亿元人民币</strong>（其中中国<strong>1.17万亿元</strong>）。</p>
+
+      <h3>2️⃣ Token成本战：竞争核心切换</h3>
+      <p>行业竞争的关键已从"模型能力"切换为"谁的Token成本更低"（曦望Sunrise CEO王湛）。2026年国内大模型进入应用爆发期，DeepSeek V4等模型带来的Token市场爆发，Agent快速普及。具体高推理需求场景：</p>
+      <ul style="margin:8px 0 0 20px; color:#444;">
+        <li>大厂高并发推理集群：搜索推荐、智能客服、短视频多模态生成</li>
+        <li>智能体应用：每天产生<strong>数万亿次Token消耗</strong>，是国产推理芯片最大金主</li>
+        <li>MoE架构常态化训练与微调：算力调度与局部推理能力要求暴增</li>
+      </ul>
+
+      <h3>3️⃣ 算力供需失衡：租赁成本+30~40%，一卡难求</h3>
+      <p>推理需求激增造成<strong>暂时性供需失衡</strong>：</p>
+      <ul style="margin:8px 0 0 20px; color:#444;">
+        <li>2026年Q1算力租赁成本上涨近<strong>30%~40%</strong></li>
+        <li>全年AI推理算力需求预计达到训练的<strong>4~5倍</strong></li>
+        <li>短缺集中在：高端AI加速卡、HBM、先进封装、整机服务器</li>
+        <li>热门型号排产紧张、整机报价随供需波动上行</li>
+      </ul>
+      <p style="font-size:12px; color:#636e72; margin-top:6px;">来源：第一财经（2026/6/17）；灼识咨询全球AI推理芯片行业报告（第一财经引用）</p>
+
+      <h3>4️⃣ 推理能耗：占AI总能耗60%~90%</h3>
+      <p>香港理工大学研究推算：在超大规模云端，由于"十亿级别"用户高频请求，推理能耗已占AI总能耗约<strong>60%~90%</strong>。这意味着——<strong>推理芯片的能效比（每瓦性能）直接决定数据中心的PUE和运营成本</strong>，液冷散热的重要性进一步凸显。</p>
+      <p style="font-size:12px; color:#636e72;">来源：香港理工大学研究（第一财经引用）；中国工程院数据</p>
+    </div>
+
+    <!-- Section 5: Microsoft + DeepSeek V4 -->
+    <div class="section" style="background: #fef9ef;">
+      <h2>🌐 全球AI格局：微软测试DeepSeek V4，国产模型出海</h2>
+      <div class="info-box">
+        <span class="title">📌 关键事件：</span> 据阿克西奥斯新闻网报道，微软正考虑引入深度求索（DeepSeek）V4大模型，作为旗下Copilot协同办公工具的<strong>低成本备选方案</strong>，以替代目前支持的Anthropic和OpenAI模型。微软计划在<strong>未来数周内</strong>推出基于DeepSeek V4的低成本大模型服务，部署于Azure云平台。
+      </div>
+
+      <p>此外，深度求索于2026年4月发布的开源V4模型，凭借性价比优势在全球研发人员与科研圈迅速走红。本周早些时候，The Information报道深度求索完成<strong>首轮融资，金额超70亿美元</strong>（约500亿元人民币）。</p>
+
+      <div style="background:#e8f8f5; border-radius:10px; padding:14px; margin:10px 0;">
+        <p style="font-size:13px; margin:0;"><strong>🧠 参谋长解读：</strong>微软测试DeepSeek V4是国产大模型全球化的重要信号——中国AI能力获得美国顶级云厂商认可。推理芯片需求不仅来自国内，<strong>全球AI应用爆发都在拉动算力需求</strong>。对液冷管路/UQD赛道而言，国内大厂"圈地"是增量，东南亚、中东、欧洲的AIDC建设热潮是更大的增量空间。</p>
+      </div>
+      <p style="font-size:12px; color:#636e72;">来源：新浪财经引用阿克西奥斯新闻网（2026/6/17）；The Information（via 新浪财经，2026/6/17）</p>
+    </div>
+
+    <!-- Section 6: Market Forecast -->
+    <div class="section">
+      <h2>📊 市场规模：推理芯片2030年将达3.07万亿元</h2>
+      <p>灼识咨询全球AI推理芯片行业报告核心预测：</p>
+      <table>
+        <thead>
+          <tr>
+            <th>市场</th>
+            <th>2030年规模（人民币）</th>
+            <th>备注</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>全球AI推理芯片</strong></td>
+            <td class="highlight">3.07万亿元</td>
+            <td>2026~2030年CAGR高速增长</td>
+          </tr>
+          <tr>
+            <td><strong>中国AI推理芯片</strong></td>
+            <td class="highlight-blue">1.17万亿元</td>
+            <td>占全球约38%</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p style="margin-top:12px;">交银国际研报分析认为：随着国产GPU扩产在即，叠加超大型云厂商订单滚动释放，预计<strong>2026年下半年项目落地节奏将较上半年进一步加快</strong>。推理芯片短缺客观存在，但国产替代窗口已打开。</p>
+      <p style="font-size:12px; color:#636e72;">来源：第一财经（灼识咨询数据引用，2026/6/17）；交银国际研报（第一财经引用）</p>
+    </div>
+
+    <!-- Section 7: Trends -->
+    <div class="section">
+      <h2>🔮 趋势判断：推理时代智算中心四大新特征</h2>
+      <ul class="trend-list">
+        <li>
+          <div><span class="trend-icon">1️⃣</span><strong class="trend-title">推理需求8倍于训练——高密度、低延迟算力成增长主力</strong></div>
+          <div class="trend-desc">推理芯片需求已远超训练。中国工程院数据+灼识咨询预测共同确认这一结构性切换。数据中心从"训练中心"向"推理中心"升级，单机柜功率密度要求更高，液冷散热已是刚需而非可选项。</div>
+        </li>
+        <li>
+          <div><span class="trend-icon">2️⃣</span><strong class="trend-title">国产推理芯片从"可用"进入"规模采购"阶段</strong></div>
+          <div class="trend-desc">字节跳动5万颗订单咨询是标志性事件。面壁智能、清微智能等行业人士明确表示，国产芯片在推理场景的性价比、交付可控性和本地化服务能力已从PoC验证进入规模化部署窗口。</div>
+        </li>
+        <li>
+          <div><span class="trend-icon">3️⃣</span><strong class="trend-title">Token成本战——能效比决定竞争力</strong></div>
+          <div class="trend-desc">竞争核心从模型能力转向"谁的Token成本更低"。推理占超大规模AI集群总能耗60%~90%，推理芯片能效比（每瓦性能）直接决定数据中心PUE和运营成本。液冷散热降低PUE的价值被重新定价。</div>
+        </li>
+        <li>
+          <div><span class="trend-icon">4️⃣</span><strong class="trend-title">互联网大厂多供应商格局确立——供应链博弈加剧</strong></div>
+          <div class="trend-desc">阿里3800亿、腾讯HCC、百度万卡集群——大厂正在实质性地圈地算力。华为昇腾+寒武纪+天数智芯的"训练/推理分离"模式将被更多厂商效仿。多供应商格局对液冷集成商而言意味着更多客户入口。</div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Section 8: Summary Chart -->
+    <div class="section" style="background: #e8f8f5;">
+      <h2>📊 一张图看懂：推理时代AIDC产业链新格局</h2>
+      <pre style="font-family: 'Courier New', monospace; font-size: 10px; line-height: 1.35; background: #fff; padding: 16px; border-radius: 8px; overflow-x: auto;">
+┌──────────────────────────────────────────────────────────────────────────────────┐
+│                     推理时代 · AIDC产业链新格局地图  (2026年6月)                    │
+├──────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                  │
+│  📡 需求侧                                                                      │
+│  ┌──────────────────────────────────────────────────────────────────────┐        │
+│  │ 推理需求 = 训练需求 × 8倍（中国Q1数据）                                   │        │
+│  │ 推理占AI总能耗 60%~90%（超大规模云端）                                   │        │
+│  │ 全年推理需求预计为训练的 4~5倍                                           │        │
+│  │ Token成本战：竞争核心切换为"谁的Token成本更低"                            │        │
+│  └──────────────────────────────────────────────────────────────────────┘        │
+│                              ↓                                                    │
+│  🏢 互联网大厂"圈地"算力                                                          │
+│  ┌────────────┬────────────────────────────────────────────────────┐              │
+│  │ 字节跳动  │ 洽谈天数智芯5万颗推理GPU + 华为昇腾/寒武纪  │              │
+│  │ 阿里巴巴  │ 单季度资本开支380亿，三年规划3800亿         │              │
+│  │ 腾讯      │ HCC集群，2026下半年大规模导国产算力        │              │
+│  │ 百度      │ 全国万卡级AI算力集群                        │              │
+│  └────────────┴────────────────────────────────────────────────────┘              │
+│                              ↓                                                    │
+│  ⚡ 芯片层                                                                        │
+│  ┌────────────────────────────────────────────────────────────┐                   │
+│  │ 训练芯片：华为昇腾 + 寒武纪高端训练卡  │  推理芯片：天数智芯智铠系列     │        │
+│  │ 全球AI推理芯片2030E：3.07万亿元        │  中国：1.17万亿元                │        │
+│  │ 国产芯片在推理侧已达"可用"→"规模部署"  │  阶段跨越                          │        │
+│  └────────────────────────────────────────────────────────────┘                   │
+│                              ↓                                                    │
+│  💧 散热/电力                                                                    │
+│  ┌────────────────────────────────────────────────────────────┐                   │
+│  │ 推理芯片能效比直接决定PUE → 液冷散热价值重定价               │                   │
+│  │ 推理密度↑ → 单机柜功耗↑ → 液冷渗透率接近100%                │                   │
+│  │ 算力租赁成本 Q1 +30~40%  → IDC运营商利润率承压              │                   │
+│  └────────────────────────────────────────────────────────────┘                   │
+│                              ↓                                                    │
+│  🏗️ 液冷管路/UQD赛道受益逻辑                                                       │
+│  ┌────────────────────────────────────────────────────────────┐                   │
+│  │ 推理时代 = 高密度 = 高功率 = 液冷刚需                        │                   │
+│  │ 互联网大厂自建数据中心 → 液冷渗透率↑↑                        │                   │
+│  │ 能效比竞争 → PUE优化 → 液冷散热方案价值凸显                  │                   │
+│  │ 英维克/曙光数创/高澜 → 利通科技UQD/软管上游受益              │                   │
+│  └────────────────────────────────────────────────────────────┘                   │
+│                                                                                  │
+├──────────────────────────────────────────────────────────────────────────────────┤
+│  🎯 核心结论：推理时代确立，液冷散热进入"刚需兑现期"                                 │
+│  关键变量：字节跳动订单落地节奏 + 互联网大厂国产算力导入速度                          │
+└──────────────────────────────────────────────────────────────────────────────────┘
+</pre>
+    </div>
+
+    <!-- Section 9: Liquid Cooling Relevance -->
+    <div class="section" style="border-left: 4px solid #27ae60;">
+      <h2>💧 对液冷管路/UQD赛道的专项影响</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>信号</th>
+            <th>对液冷管路/UQD的影响</th>
+            <th>影响方向</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>推理需求8倍于训练</td>
+            <td>推理密度>>训练密度，单机柜功率更高→液冷成为唯一可行散热方案</td>
+            <td style="color:#27ae60; font-weight:700;">📈 强利好</td>
+          </tr>
+          <tr>
+            <td>推理占能耗60%~90%</td>
+            <td>PUE优化压力→数据中心必须降PUE→液冷渗透率必须提升</td>
+            <td style="color:#27ae60; font-weight:700;">📈 强利好</td>
+          </tr>
+          <tr>
+            <td>互联网大厂圈地（阿里3800亿等）</td>
+            <td>大规模新建智算中心，液冷配置率接近100%，项目储备充足</td>
+            <td style="color:#27ae60; font-weight:700;">📈 强利好</td>
+          </tr>
+          <tr>
+            <td>字节跳动5万颗推理芯片大单</td>
+            <td>推理芯片上量→推理服务器出货↑→液冷配套需求跟着兑现</td>
+            <td style="color:#27ae60; font-weight:700;">📈 强利好</td>
+          </tr>
+          <tr>
+            <td>国产推理芯片规模部署</td>
+            <td>国产服务器同样需要液冷散热，第三方UQD供应商受益</td>
+            <td style="color:#27ae60; font-weight:700;">📈 利好</td>
+          </tr>
+          <tr>
+            <td>算力租赁涨价+30~40%</td>
+            <td>IDC运营商利润率承压→降PUE动力更强→液冷改造需求提升</td>
+            <td style="color:#27ae60; font-weight:700;">📈 利好</td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="background:#d5f5e3; border-radius:10px; padding:14px; margin:10px 0;">
+        <p style="font-size:13px; margin:0;"><strong>🧠 参谋长判断：</strong>六个信号全部利好液冷赛道。推理时代的高功率密度特征是液冷渗透率的"天然引擎"。当前应重点关注：①字节跳动推理集群的液冷方案选型（英维克/曙光数创/高澜的份额）；②液冷软管/UQD在国产推理服务器中的渗透速度。</p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footnote">
+      <strong>📋 数据来源：</strong><br>
+      1. 第一财经《字节跳动加量采购国产芯片，互联网大厂竞速搭建算力护城河》（2026/6/17）<br>
+      2. 灼识咨询全球AI推理芯片行业报告（第一财经引用，2026/6/17）<br>
+      3. 36氪财经电报（2026/6/17）<br>
+      4. 新浪财经《微软正考虑接入深度求索模型赋能Copilot协同办公工具》（2026/6/17）<br>
+      5. 香港理工大学能耗研究（第一财经引用）<br>
+      6. 中国工程院2026Q1数据（第一财经引用）<br>
+      7. 交银国际研报分析（第一财经引用）<br>
+      <br>
+      <strong>报告编号：</strong>weekly_03_aidc-progress_20260617<br>
+      <strong>编制机构：</strong>🦅 火箭军 · 参谋诸葛亮 🧠
+    </div>
+
+  </div>
+</body>
+</html>
