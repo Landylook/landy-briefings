@@ -11,7 +11,6 @@
   .section { margin-bottom: 28px; }
   .section-title { font-size: 16px; font-weight: bold; color: #111; margin-bottom: 12px; padding-bottom: 6px; border-bottom: 2px solid #222; }
   .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
-  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
   .section-title.green { border-bottom-color: #34a853; color: #34a853; }
   .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
   .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
@@ -21,7 +20,6 @@
   li strong { font-weight: 600; }
   .source { color: #888; font-size: 12px; }
   .highlight { background: #fff8e1; padding: 12px 16px; border-left: 4px solid #f9a825; margin-top: 10px; font-size: 14px; }
-  .warning { background: #fce8e6; padding: 12px 16px; border-left: 4px solid #ea4335; margin-top: 10px; font-size: 14px; }
   .back-button { display: inline-flex; align-items: center; color: #1a73e8; text-decoration: none; font-size: 14px; font-weight: 500; margin-bottom: 20px; padding: 8px 12px; border-radius: 4px; transition: background-color 0.2s; }
   .back-button:hover { background-color: #f5f5f5; }
   .back-button span { margin-right: 6px; }
@@ -30,7 +28,7 @@
     h1 { font-size: 20px; } .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
     .section { margin-bottom: 24px; } .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
     ul { padding-left: 24px; } li { margin-bottom: 10px; }
-    .highlight, .warning { padding: 14px 18px; font-size: 15px; }
+    .highlight { padding: 14px 18px; font-size: 15px; }
     .back-button { font-size: 15px; padding: 10px 14px; margin-bottom: 16px; }
   }
 </style>
@@ -47,12 +45,12 @@
 <div class="section">
   <div class="section-title red">🔴 地缘·宏观</div>
   <ul>
-    <li style="font-weight: bold; color: #d32f2f;">【历史性事件】微软正考虑接入深度求索V4模型赋能Copilot</strong> — 微软测试DeepSeek V4作为Copilot低成本备选方案，用于替代Anthropic、OpenAI模型。国产AI大模型首次进入美国科技巨头核心产品体系，AI竞争格局重塑 <span class="source">（新浪财经/阿克西奥斯）</span></li>
-    <li><strong>陆家嘴论坛：陈茂波推动"产业在上海，境外财资在香港"</strong> — 沪港协同丰富人民币投资产品，三峡水利拟终止万州燃机项目（天然气价格无法锁定） <span class="source">（证券时报）</span></li>
-    <li><strong>联想拟择机回购股份</strong> — 回购6.75亿美元可转债，择机市场回购，发行新可转债同时优化资本结构 <span class="source">（36氪）</span></li>
-    <li><strong>千方科技拟1-2亿元回购股份</strong> — 用于员工持股或股权激励，回购价不超12.42元/股 <span class="source">（36氪）</span></li>
-    <li><strong>金融监管总局：注册在浦东新区的商业银行可承销自贸离岸债</strong> — 沪港金融协同进一步落地 <span class="source">（36氪）</span></li>
-    <li><strong>8家车企整车资质永久失效系不实消息</strong> — 工信部辟谣，仅个别生产地址注销，非整车资质注销 <span class="source">（证券时报）</span></li>
+    <li style="font-weight: bold; color: #d32f2f;">【重磅】字节跳动加量采购国产AI芯片：5万颗 from 天数智芯</strong> — 字节跳动正与天数智芯洽谈，采购至少<strong>5万颗</strong>推理AI芯片（智铠系列），用于大模型推理负载。天数智芯将成为华为和寒武纪之后字节跳动第三家GPU供应商。国产算力需求爆发，液冷散热需求同步释放 <span class="source">（第一财经）</span></li>
+    <li><strong>微软正考虑接入深度求索V4大模型</strong> — 微软Copilot或采用深度求索V4作为低成本备选方案，测试中已部署于微软云。本土大模型进入全球科技巨头采购名单，中国AI能力出口获实质认可 <span class="source">（新浪财经）</span></li>
+    <li><strong>铝电容大厂尼吉康全线涨价</strong> — 日本Nichicon宣布涨价，主因：订单超出产能+中东局势推升原材料采购难度。电子元件景气信号持续 <span class="source">（财联社）</span></li>
+    <li><strong>三峡水利终止万州燃机发电项目</strong> — 天然气指标和价格无法锁定，项目预期经济效益差。清洁能源转型中气电项目风险凸显 <span class="source">（36氪）</span></li>
+    <li><strong>陈茂波：沪港协同推动"产业在上海，境外财资在香港"</strong> — 陆家嘴论坛，人民币国际化+企业出海金融服务 <span class="source">（证券时报）</span></li>
+    <li><strong>联想/千方科技回购股份</strong> — 联想拟择机回购+千方科技1-2亿回购，上市公司管理层信心信号 <span class="source">（36氪）</span></li>
   </ul>
 </div>
 
@@ -60,11 +58,10 @@
 <div class="section">
   <div class="section-title lightblue">🤖 AI·算力·数据中心</div>
   <ul>
-    <li style="font-weight: bold; color: #d32f2f;">【重磅】微软测试DeepSeek V4作为Copilot备选大模型</strong> — 国产AI首次进入美国科技巨头核心产品，深度求索V4云端本地部署，替代Anthropic/OpenAI降低成本。全球AI格局重塑，国产算力生态获国际认可 <span class="source">（新浪财经）</span></li>
-    <li style="font-weight: bold; color: #1a73e8;">【重磅】字节跳动5万颗国产AI芯片采购</strong> — 从天数智芯采购智铠系列推理GPU，用于大模型推理负载。天数智芯成为字节跳动第三家GPU供应商（华为+寒武纪之后），国产GPU替代加速 <span class="source">（第一财经）</span></li>
-    <li><strong>英伟达盘前涨0.57%</strong> — 短期震荡向上，SpaceX涨超2%</li>
-    <li><strong>摩尔线程+MiniMax M3已完成适配</strong> — 国产GPU+国产大模型生态持续融合</li>
-    <li><strong>铝电容涨价蔓延</strong> — 尼吉康全线涨价（中东局势+原材料上涨），MLCC/电容缺货潮持续，AI硬件供应链景气度持续 <span class="source">（财联社）</span></li>
+    <li style="font-weight: bold; color: #1a73e8;">【重磅催化】字节跳动5万颗国产AI芯片大单</strong> — 天数智芯推理芯片（智铠系列）获国内最大互联网厂商认可，寒武纪+华为+天数智芯三大国产GPU供应商格局形成。推理芯片需求爆发，数据中心液冷散热刚性增长</li>
+    <li><strong>微软接入深度求索V4</strong> — 中国大模型进入全球科技巨头选型，成本优势凸显。深度求索V4部署于微软云Copilot，国产AI能力出海里程碑</li>
+    <li><strong>摩尔线程+MiniMax M3适配（6/13）</strong> — 国产GPU+国产大模型生态持续融合，打破英伟达垄断</li>
+    <li><strong>SpaceX IPO进行中</strong> — 英特尔涨超3%，SpaceX涨超2%，太空基建持续</li>
   </ul>
 </div>
 
@@ -72,10 +69,10 @@
 <div class="section">
   <div class="section-title green">🔋 储能·新能源·超充</div>
   <ul>
-    <li><strong>广东超充县县通政策</strong> — 2027年底前建成300万个充电设施，超充站不少于加油站数量</li>
-    <li><strong>11部门新能源重卡政策</strong> — 2030年渗透率40%，保有量160万辆，3万公里零碳公路，3000座重卡充换电站</li>
-    <li><strong>三峡水利终止万州燃机发电项目</strong> — 天然气指标和价格无法锁定，预期经济效益差。清洁能源项目投资需警惕经济性风险</li>
-    <li><strong>赣锋锂业储能满产满销</strong> — 588Ah大电芯Q3启动产能爬坡，液冷配套需求确定</li>
+    <li><strong>广东超充县县通（300万充电设施）</strong> — 政策强支撑，液冷超充桩爆发</li>
+    <li><strong>11部门新能源重卡政策</strong> — 2030年渗透率40%，3万公里零碳公路+3000充换电站</li>
+    <li><strong>三峡水利终止燃机项目</strong> — 天然气价格/指标锁定困难，清洁能源项目风险警示</li>
+    <li><strong>赣锋锂业储能满产满销</strong> — 588Ah大电芯Q3爬坡在即</li>
   </ul>
 </div>
 
@@ -85,17 +82,17 @@
   <div style="margin-left:12px; margin-bottom:14px;">
     <strong style="color:#9334e6;">💧 液冷概念板块</strong>
     <ul>
-      <li><strong>微软+DeepSeek V4</strong> — 国产AI进入微软Copilot，国产算力生态获国际认可，数据中心液冷需求持续放大</li>
-      <li><strong>字节跳动5万颗国产芯片采购</strong> — 天数智芯成为第三家GPU供应商，国产AI推理芯片加速替代</li>
-      <li><strong>铝电容/MLCC涨价蔓延</strong> — 算力硬件供应链景气度持续，液冷配套需求同步受益</li>
+      <li><strong>字节跳动5万颗国产芯片大单</strong> — 天数智芯/寒武纪/华为等国产算力链受益，推理芯片需求爆发带动数据中心液冷配套</li>
+      <li><strong>铝电容涨价</strong> — 电子元件景气延续，MLCC/电容涨价潮持续</li>
+      <li><strong>联想+千方科技回购</strong> — 科技公司信心信号，AI基础设施资本开支持续</li>
     </ul>
   </div>
   <div style="margin-left:12px;">
     <strong style="color:#9334e6;">📊 重要事件</strong>
     <ul>
-      <li><strong>6/26：*ST赛隆进入退市整理期</strong> — 15个交易日，预计7/16最后交易日</li>
-      <li><strong>联想+千方科技回购</strong> — 科技公司信心信号</li>
-      <li><strong>英伟达盘前小涨+SpaceX涨2%</strong> — AI基础设施长期向上</li>
+      <li><strong>6/26：*ST赛隆进入退市整理期</strong> — 最后交易日7/16</li>
+      <li><strong>陈茂波：沪港金融协同深化</strong> — 人民币国际化+企业出海金融服务</li>
+      <li><strong>铝电容涨价潮</strong> — 电子元件上游景气度持续</li>
     </ul>
   </div>
 </div>
@@ -105,13 +102,13 @@
   <div class="section-title gray">🏢 利通科技（839167）动态</div>
   <ul>
     <li>北交所暂无利通科技（839167）新公告发布</li>
-    <li style="font-weight: bold; color: #1a73e8;">【双重催化】微软+DeepSeek V4 + 字节跳动5万颗国产芯片</strong> — 国产AI生态获国际认可，AI推理算力爆发，液冷需求从训练向推理延伸</li>
-    <li><strong>液冷管四大需求驱动</strong> — AI推理爆发（DeepSeek V4国际认可）→数据中心液冷刚性需求；广东超充+重卡政策→液冷超充桩；国产GPU替代加速→液冷管路国产替代；铝电容涨价→算力硬件景气度持续</li>
-    <li><strong>液冷集成商信号</strong> — 英维克获机构净买入2.99亿（上周龙虎榜榜首），板块效应持续</li>
+    <li style="font-weight: bold; color: #1a73e8;">【重大催化】字节跳动5万颗国产推理芯片大单落地</strong> — 天数智芯、寒武纪、华为三大国产GPU供应商格局形成，推理芯片需求爆发，数据中心液冷散热从"可选"变"强制"，液冷管路需求翻倍式增长</li>
+    <li><strong>微软接入深度求索V4</strong> — 国产大模型进入全球科技巨头选型，中国AI能力出口里程碑，间接验证国产算力生态成熟度</li>
+    <li><strong>铝电容涨价+MLCC涨价</strong> — 电子元件上游景气持续，数据中心散热需求与元件景气同步向上</li>
   </ul>
   <div class="highlight">
     <strong>🟡 持续关注</strong><br>
-    本周核心：DeepSeek V4进入微软Copilot，国产AI算力生态获国际认可，液冷需求空间进一步打开。关注字节跳动国产芯片采购进展（天数智芯）及液冷集成商是否有新订单。液冷管路国产替代黄金期已至。
+    本周核心信号：字节跳动5万颗国产芯片大单落地，推理芯片需求爆发式增长。液冷管路三大需求共振：AI推理芯片爆发 + 广东超充县县通 + 11部门新能源重卡政策。关注利通科技液冷软管在国产数据中心推理场景的订单突破。
   </div>
 </div>
 
