@@ -3,113 +3,281 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-<title>AI研究员--Landy葉的简报 | 2026年6月19日（周五）</title>
+<title>AI研究员--Landy葉的简报 | 2026年6月19日</title>
 <style>
-  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; color: #222; line-height: 1.8; font-size: 15px; }
-  h1 { font-size: 22px; font-weight: bold; margin-bottom: 6px; color: #111; }
-  .date { color: #888; font-size: 14px; margin-bottom: 28px; border-bottom: 1px solid #eee; padding-bottom: 18px; }
-  .section { margin-bottom: 28px; }
-  .section-title { font-size: 16px; font-weight: bold; color: #111; margin-bottom: 12px; padding-bottom: 6px; border-bottom: 2px solid #222; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
   .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
   .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
   .section-title.green { border-bottom-color: #34a853; color: #34a853; }
   .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
   .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
   .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
-  ul { margin: 0; padding-left: 20px; }
-  li { margin-bottom: 8px; }
-  li strong { font-weight: 600; }
-  .source { color: #888; font-size: 12px; }
-  .highlight { background: #fff8e1; padding: 12px 16px; border-left: 4px solid #f9a825; margin-top: 10px; font-size: 14px; }
-  .warning { background: #fce8e6; padding: 12px 16px; border-left: 4px solid #ea4335; margin-top: 10px; font-size: 14px; }
-  .back-button { display: inline-flex; align-items: center; color: #1a73e8; text-decoration: none; font-size: 14px; font-weight: 500; margin-bottom: 20px; padding: 8px 12px; border-radius: 4px; transition: background-color 0.2s; }
-  .back-button:hover { background-color: #f5f5f5; }
-  .back-button span { margin-right: 6px; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
   @media (max-width: 768px) {
-    body { margin: 20px auto; padding: 16px; font-size: 16px; line-height: 1.9; }
-    h1 { font-size: 20px; } .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
-    .section { margin-bottom: 24px; } .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
-    ul { padding-left: 24px; } li { margin-bottom: 10px; }
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 { font-size: 20px; }
+    .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
+    .section { margin-bottom: 24px; }
+    .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 10px; }
+    table { font-size: 15px; }
+    th, td { padding: 10px 12px; }
     .highlight, .warning { padding: 14px 18px; font-size: 15px; }
     .back-button { font-size: 15px; padding: 10px 14px; margin-bottom: 16px; }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body { max-width: 90%; margin: 30px auto; padding: 24px; }
+    h1 { font-size: 21px; }
+  }
+  @media (max-width: 480px) {
+    body { margin: 12px auto; padding: 12px; font-size: 17px; }
+    h1 { font-size: 19px; }
+    .date { font-size: 14px; }
+    .section-title { font-size: 18px; }
+    table { font-size: 14px; display: block; overflow-x: auto; }
+  }
+  @media (min-width: 1200px) {
+    body { max-width: 900px; }
   }
 </style>
 </head>
 <body>
+
 <div>
-  <a href="/landy-briefings/" class="back-button"><span>←</span> 返回简报列表</a>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
 </div>
 
 <h1>AI研究员--Landy葉的简报</h1>
-<div class="date">2026年6月19日（周五）</div>
+<div class="date">2026年6月19日 星期五</div>
 
-<!-- 🔴 地缘·宏观 -->
+<!-- 今日速览 -->
 <div class="section">
-  <div class="section-title red">🔴 地缘·宏观</div>
+  <div class="section-title">📊 今日速览</div>
   <ul>
-    <li><strong>商务部等8部门：加快"人工智能+消费"发展，17项举措</strong> — 扩大智能终端供给，推动消费电子从功能型向智能型转变；布局<strong>人形机器人消费新赛道</strong>；打造"人、车、家"全场景联动生态；AI与脑机接口、增强现实融合 <span class="source">（36氪）</span></li>
-    <li><strong>国家能源局：5月全社会用电量同比增长6.9%</strong> — 1-5月累计42018亿千瓦时，同比+5.7%。第三产业用电量同比+8.6%，数据中心+工业用电持续旺盛 <span class="source">（36氪）</span></li>
-    <li><strong>央行：Q1金融业机构总资产556.34万亿元，同比+8.8%</strong> — 银行业+8.0%、证券业+25.4%、保险业+12.2%，资本市场持续扩容 <span class="source">（36氪）</span></li>
-    <li><strong>市场监管总局督导货拉拉反垄断整改</strong> — 退还不合理费用1.2亿，抽成费率11%降至9%，减轻司机负担超13亿/年 <span class="source">（央视新闻）</span></li>
-    <li><strong>滴滴自动驾驶参加伦敦MOVE 2026大会</strong> — L4级全栈技术自主可控，Robotaxi R2已交付，持续在广州/北京测试 <span class="source">（36氪）</span></li>
+    <li><strong>美股科技股盘前多数上涨</strong> — 英特尔涨超8%，美光科技涨超5%，英伟达、Meta涨超1% <span class="source">（36氪）</span></li>
+    <li><strong>中概股盘前多数下跌</strong> — 小鹏跌超2%，理想跌超1%；蔚来逆势涨超2% <span class="source">（36氪）</span></li>
+    <li><strong>6月乘用车零售预计约165万辆</strong> — 环比增长9.3%，新能源渗透率预计达63.6% <span class="source">（36氪/乘联分会）</span></li>
+    <li><strong>Waymo召回近3900辆Robotaxi</strong> — 因高速施工区风险，软件更新修复 <span class="source">（The Verge）</span></li>
+    <li><strong>澜起科技推进PCIe 7.0 Retimer研发</strong> — PCIe 6.x芯片已送样客户测试 <span class="source">（36氪）</span></li>
   </ul>
 </div>
 
-<!-- 🤖 AI·算力·数据中心 -->
+<!-- 一、地缘·中东 -->
 <div class="section">
-  <div class="section-title lightblue">🤖 AI·算力·数据中心</div>
-  <ul>
-    <li style="font-weight: bold; color: #d32f2f;">【重磅】智谱涨超26%股价创历史新高，天数智芯涨超21%</strong> — 恒指收跌1.59%背景下，AI板块逆势大涨。字节跳动5万颗国产AI芯片采购催化，天数智芯GPU供应想象空间打开 <span class="source">（36氪）</span></li>
-    <li><strong>商务部"AI+消费"17项举措</strong> — 人形机器人消费新赛道获政策加持，AI推理从云端下沉至消费终端，液冷散热需求从数据中心延伸至智能终端</li>
-    <li><strong>全社会用电量5月同比+6.9%</strong> — 数据中心+工业用电双旺，电力需求是算力基础设施的先行指标，持续验证液冷散热需求</li>
-    <li><strong>滴滴自动驾驶L4持续落地</strong> — L4级 Robotaxi 自动驾驶算力需求持续，边缘液冷散热新增量</li>
-  </ul>
-</div>
+  <div class="section-title lightblue">🌍 一、地缘·中东</div>
 
-<!-- 🔋 储能·新能源·超充 -->
-<div class="section">
-  <div class="section-title green">🔋 储能·新能源·超充</div>
-  <ul>
-    <li><strong>5月全社会用电量同比+6.9%</strong> — 数据中心+工业用电双旺，储能调峰需求同步释放</li>
-    <li><strong>广东超充县县通 + 11部门新能源重卡政策</strong> — 3万公里零碳公路+3000充换电站，液冷超充桩需求持续</li>
-    <li><strong>赣锋锂业储能满产满销</strong> — 588Ah大电芯Q3启动产能爬坡，储能液冷配套需求确定</li>
-    <li><strong>东风汽车在宁波成立新能源销售公司</strong> — 车企扩张新能源销售网络 <span class="source">（天眼查）</span></li>
-  </ul>
-</div>
-
-<!-- 💹 A股·港股 -->
-<div class="section">
-  <div class="section-title purple">💹 A股·港股</div>
   <div style="margin-left:12px; margin-bottom:14px;">
-    <strong style="color:#9334e6;">💧 液冷概念板块</strong>
     <ul>
-      <li style="font-weight: bold; color: #d32f2f;">智谱+26%创新高 + 天数智芯+21%</strong> — AI概念港股逆势大涨，液冷GPU算力赛道资金持续涌入</li>
-      <li><strong>恒指收跌1.59%</strong> — 大盘调整，AI板块逆势走强，资金结构性分化</li>
-      <li><strong>MINIMAX-WP涨超10%、兆易创新涨超10%</strong> — AI芯片/模型全链条爆发</li>
+      <li><strong>奥巴马总统中心在芝加哥落成揭幕</strong> — 6月18日，奥巴马总统中心正式举行落成典礼，多位前总统（拜登、小布什、克林顿）及夫人出席。仪式由奥巴马和米歇尔·奥巴马共同主持。 <span class="source">（AP News）</span></li>
     </ul>
   </div>
-  <div style="margin-left:12px;">
-    <strong style="color:#9334e6;">📊 重要事件</strong>
+
+  <div class="highlight">
+    <strong>🟡 地缘观察</strong><br>
+    中东方向暂无重大新事件，聚焦全球经济与科技板块动向。
+  </div>
+</div>
+
+<!-- 二、AI·科技 -->
+<div class="section">
+  <div class="section-title orange">🤖 二、AI·科技</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">💡 AI前沿</strong>
     <ul>
-      <li><strong>商务部17项"AI+消费"举措</strong> — 人形机器人/智能终端/全场景联动生态，政策力推AI落地消费端</li>
-      <li><strong>艾华集团澄清超级电容</strong> — AI服务器业务占比低，未形成销售，人形机器人液冷需求需关注 <span class="source">（36氪）</span></li>
-      <li><strong>南向资金净流出67.92亿港元</strong> — 港股短期承压，AI板块独立行情</li>
+      <li><strong>马斯克：中国大模型或在2027年Q1赶上Fable水平</strong> — 针对网友提问"智谱GLM-5.2何时赶上Anthropic Fable"，马斯克回应"可能在2027年一季度"。Google DeepMind CEO哈萨比斯此前也表示中美模型差距"只差几个月"。<span class="source">（36氪/上证报）</span></li>
+      <li><strong>企业AI ROI问题引发关注</strong> — NEA合伙人Tiffany Luck指出企业仍在摸索AI投资回报率。Uber数月内用光全年AI预算，部分公司削减Claude许可证，Meta砍掉内部AI排行榜。硅谷"Tokenmaxxing热"降温。<span class="source">（TechCrunch）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🔧 半导体与硬件</strong>
+    <ul>
+      <li><strong>澜起科技PCIe 7.0 Retimer加速研发</strong> — 目前Gen 5产品为主，PCIe 6.x/CXL 3.x芯片已送样客户测试，同时推进PCIe 7.0 Retimer及PCIe Switch芯片研发。<span class="source">（36氪）</span></li>
+      <li><strong>美股大型科技股盘前普涨</strong> — 英特尔涨超8%，美光科技涨超5%，英伟达、Meta涨超1%。<span class="source">（36氪）</span></li>
+      <li><strong>沪硅产业子公司获增资114.48亿元</strong> — 公司与国盛集团共同对上海新昇增资，其中公司以股权作价74.48亿元，国盛集团出资40亿元。<span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#e87020;">🚗 智能出行</strong>
+    <ul>
+      <li><strong>Waymo召回近3900辆Robotaxi</strong> — 因车辆进入高速施工区风险，已暂停高速公路服务，将通过软件更新修复。<span class="source">（The Verge）</span></li>
+      <li><strong>追觅战略调整聚焦四大核心赛道</strong> — 聚焦智能家庭、户外庭院、智能出行、具身智能。Q1扫地机全球销量与销售额双第一，割草机器人环比增长240%。<span class="source">（36氪）</span></li>
     </ul>
   </div>
 </div>
 
-<!-- 🏢 利通科技（839167） -->
+<!-- 三、A股·港股 -->
 <div class="section">
-  <div class="section-title gray">🏢 利通科技（839167）动态</div>
-  <ul>
-    <li>北交所暂无利通科技（839167）新公告发布</li>
-    <li style="font-weight: bold; color: #1a73e8;">【AI板块逆势大涨】智谱+26%创新高 + 天数智芯+21%</strong> — 国产AI芯片/大模型全链条爆发，液冷GPU算力需求资金认可度持续提升</li>
-    <li><strong>液冷管四大驱动逻辑</strong> — （1）国产AI算力爆发（字节+天数智芯5万颗GPU）；（2）人形机器人新赛道政策加持（商务部17项举措）；（3）5月用电量+6.9%（算力基础设施先行指标）；（4）液冷超充桩政策共振</li>
-    <li><strong>用电量数据持续验证液冷逻辑</strong> — 5月全社会用电量同比+6.9%，第三产业+8.6%，数据中心+储能用电持续释放，液冷管路需求有电力数据支撑</li>
-  </ul>
+  <div class="section-title green">📈 三、A股·港股</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">📊 市场数据</strong>
+    <ul>
+      <li><strong>机构资金动态</strong> — 6月18日龙虎榜46只个股有机构参与，净买入前三：厦门钨业（4.24亿元）、福达股份（3.23亿元）、博云新材（2.97亿元）。净卖出前三：盛和资源（3.07亿元）、光迅科技（1.57亿元）、智微智能（1.52亿元）。<span class="source">（36氪/第一财经）</span></li>
+      <li><strong>6月乘用车零售预计约165万辆</strong> — 环比增长9.3%，新能源零售约105万辆，渗透率63.6%。以旧换新政策持续发力。<span class="source">（乘联分会/36氪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🏢 公司动态</strong>
+    <ul>
+      <li><strong>德方纳米拟定增募资不超29亿元</strong> — 用于年产20万吨锂电新材料一体化项目及补充流动资金。<span class="source">（36氪）</span></li>
+      <li><strong>合力泰将被ST</strong> — 因2017-2021年报虚假记载，6月23日起变更为"ST合力泰"，涨跌幅限制变为5%。<span class="source">（36氪）</span></li>
+      <li><strong>博瑞医药实控人涉嫌操纵市场被取保候审</strong> — 董事长袁建栋因操纵证券市场案被苏州公安取保候审。<span class="source">（36氪）</span></li>
+      <li><strong>兆易创新3日涨幅偏离值超20%</strong> — 公司公告不存在重大未披露事项，生产经营正常。<span class="source">（36氪）</span></li>
+      <li><strong>银之杰选举新董事长</strong> — 开盘啦创始人卓海杭当选董事长。<span class="source">（36氪）</span></li>
+      <li><strong>阿里巴巴调整可转债转换率</strong> — 因2026年股息宣布，2024年可转换优先票据转换率调整。<span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#34a853;">🔥 热点概念</strong>
+    <ul>
+      <li><strong>机构重仓厦门钨业</strong> — 单日净买入4.24亿元，稀有资源板块获资金关注。<span class="source">（36氪/第一财经）</span></li>
+      <li><strong>半导体材料获资本加持</strong> — 沪硅产业子公司获114亿元增资，半导体国产替代进程加速。<span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、利通科技 -->
+<div class="section">
+  <div class="section-title gray">🏢 四、利通科技（839167）动态</div>
+
   <div class="highlight">
-    <strong>🟡 持续关注</strong><br>
-    智谱/天数智芯大涨后板块情绪；字节跳动+天数智芯GPU订单进展；商务部人形机器人消费赛道政策催化；液冷超充桩招标节奏。液冷管路国产替代黄金期，持续关注利通科技液冷软管订单突破。
+    <strong>🟡 信息提示</strong><br>
+    今日公开渠道未检索到利通科技（839167）最新公告或新闻，北交所行情及公司动态待开市后持续追踪。
+  </div>
+
+  <ul>
+    <li><strong>本周暂无新增公告</strong> — 建议关注北交所6月19日盘面表现及液冷管板块联动情况。<span class="source">（公开信息）</span></li>
+    <li><strong>液冷赛道持续升温</strong> — AI算力需求驱动液冷渗透率提升，数据中心液冷管路国产替代趋势明确。<span class="source">（综合资讯）</span></li>
+  </ul>
+</div>
+
+<!-- 战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 五、战略预警 / 机会提示</div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    1. <strong>AI ROI降温信号</strong> — 硅谷企业开始收紧AI预算，Uber数月用完全年额度，但算力需求结构性增长趋势不变，液冷作为刚需赛道逻辑未变。<br>
+    2. <strong>半导体国产替代加速</strong> — 沪硅产业百亿级增资、澜起PCIe 7.0研发推进，半导体材料与设备板块持续受益。<br>
+    3. <strong>乘用车新能源渗透率达63.6%</strong> — 新能源车热管理市场扩容，液冷管路需求同步增长。
+  </div>
+
+  <div class="warning">
+    <strong>🔴 风险提示</strong><br>
+    1. 博瑞医药实控人被取保、合力泰因财务造假被ST——A股监管趋严，需注意持仓标的合规风险。<br>
+    2. Waymo Robotaxi召回事件可能影响自动驾驶板块市场情绪。
   </div>
 </div>
 
