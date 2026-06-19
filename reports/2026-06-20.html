@@ -3,92 +3,328 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-<title>AI研究员--Landy葉的简报 | 2026年6月20日（周六）</title>
+<title>AI研究员--Landy葉的简报 | 2026年6月20日</title>
 <style>
-  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; color: #222; line-height: 1.8; font-size: 15px; }
-  h1 { font-size: 22px; font-weight: bold; margin-bottom: 6px; color: #111; }
-  .date { color: #888; font-size: 14px; margin-bottom: 28px; border-bottom: 1px solid #eee; padding-bottom: 18px; }
-  .section { margin-bottom: 28px; }
-  .section-title { font-size: 16px; font-weight: bold; color: #111; margin-bottom: 12px; padding-bottom: 6px; border-bottom: 2px solid #222; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
   .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
   .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
   .section-title.green { border-bottom-color: #34a853; color: #34a853; }
   .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
   .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
   .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
-  ul { margin: 0; padding-left: 20px; }
-  li { margin-bottom: 8px; }
-  li strong { font-weight: 600; }
-  .source { color: #888; font-size: 12px; }
-  .highlight { background: #fff8e1; padding: 12px 16px; border-left: 4px solid #f9a825; margin-top: 10px; font-size: 14px; }
-  .warning { background: #fce8e6; padding: 12px 16px; border-left: 4px solid #ea4335; margin-top: 10px; font-size: 14px; }
-  .back-button { display: inline-flex; align-items: center; color: #1a73e8; text-decoration: none; font-size: 14px; font-weight: 500; margin-bottom: 20px; padding: 8px 12px; border-radius: 4px; transition: background-color 0.2s; }
-  .back-button:hover { background-color: #f5f5f5; }
-  .back-button span { margin-right: 6px; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
   @media (max-width: 768px) {
-    body { margin: 20px auto; padding: 16px; font-size: 16px; line-height: 1.9; }
-    h1 { font-size: 20px; } .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
-    .section { margin-bottom: 24px; } .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
-    ul { padding-left: 24px; } li { margin-bottom: 10px; }
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 { font-size: 20px; }
+    .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
+    .section { margin-bottom: 24px; }
+    .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 10px; }
+    table { font-size: 15px; }
+    th, td { padding: 10px 12px; }
     .highlight, .warning { padding: 14px 18px; font-size: 15px; }
     .back-button { font-size: 15px; padding: 10px 14px; margin-bottom: 16px; }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body { max-width: 90%; margin: 30px auto; padding: 24px; }
+    h1 { font-size: 21px; }
+  }
+  @media (max-width: 480px) {
+    body { margin: 12px auto; padding: 12px; font-size: 17px; }
+    h1 { font-size: 19px; }
+    .date { font-size: 14px; }
+    .section-title { font-size: 18px; }
+    table { font-size: 14px; display: block; overflow-x: auto; }
+  }
+  @media (min-width: 1200px) {
+    body { max-width: 900px; }
   }
 </style>
 </head>
 <body>
+
 <div>
-  <a href="/landy-briefings/" class="back-button"><span>←</span> 返回简报列表</a>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
 </div>
 
 <h1>AI研究员--Landy葉的简报</h1>
-<div class="date">2026年6月20日（周六·周末版）</div>
+<div class="date">2026年6月20日（周六）</div>
 
-<!-- 🔴 地缘·宏观 -->
+<!-- 今日速览 -->
 <div class="section">
-  <div class="section-title red">🔴 地缘·宏观</div>
+  <div class="section-title">📊 今日速览</div>
   <ul>
-    <li style="font-weight: bold; color: #d32f2f;">【重磅】SpaceX债券发行至少200亿美元</strong> — 华尔街投行筹备SpaceX债券发行，最快下周与投资者举行电话会议，募资用于再融资200亿美元过桥贷款。SpaceX IPO进入倒计时 <span class="source">（界面）</span></li>
-    <li><strong>亚马逊员工因批评数据中心扩张遭内查</strong> — 亚马逊工程师公开批评AI数据中心疯狂扩张并呼吁政府监管，遭公司内查。西雅图市议会全票通过暂停新建大型数据中心1年。AI基建扩张遭遇社区阻力 <span class="source">（新浪财经）</span></li>
-    <li><strong>Anthropic因AI安全隐患遭监管承诺加强政府沟通</strong> — 高管向商务部长提交整改方案，Mythos/Fable模型遭整治。AI安全监管趋严 <span class="source">（新浪财经）</span></li>
-    <li><strong>美对德国药品定价启动301调查</strong> — 为未来对德国商品征收报复性关税铺路 <span class="source">（CCTV国际时讯）</span></li>
-    <li><strong>欧洲央行中性利率上限升至2.5%</strong> — 全球货币政策分化持续 <span class="source">（新浪财经）</span></li>
+    <li><strong>以黎达成停火协议</strong> — 以色列与真主党同意停止交火，为美伊核谈扫清障碍 <span class="source">（AP News）</span></li>
+    <li><strong>SpaceX拟发行至少200亿美元债券</strong> — 承销行最早下周启动投资者电话会，为过桥贷款再融资 <span class="source">（界面/36氪）</span></li>
+    <li><strong>Meta洽谈投资印度支付公司Cred</strong> — 估值约40亿美元，布局印度金融科技 <span class="source">（36氪/新浪财经）</span></li>
+    <li><strong>挪威限制中小学使用AI</strong> — 1-7年级原则上禁用，8-10年级在教师监督下谨慎使用 <span class="source">（The Verge/Reuters）</span></li>
+    <li><strong>端午假期首日长三角铁路预计发送415万人</strong> <span class="source">（央视/36氪）</span></li>
   </ul>
 </div>
 
-<!-- 🤖 AI·算力·数据中心 -->
+<!-- 一、地缘·中东 -->
 <div class="section">
-  <div class="section-title lightblue">🤖 AI·算力·数据中心</div>
-  <ul>
-    <li><strong>SpaceX IPO倒计时：200亿美元债券发行</strong> — SpaceX融资加速，上市前最后冲刺。太空数据中心散热需求全新场景，液冷管路应用边界从地球延展至太空</li>
-    <li><strong>西雅图暂停新建数据中心1年</strong> — 亚马逊员工批评+社区阻力，短期美国部分地区数据中心建设或放缓。但液冷需求为刚性技术要求，政策限制建设节奏不改变散热升级大趋势</li>
-    <li><strong>Anthropic遭安全监管</strong> — AI企业合规成本上升，头部AI公司资源整合加速，利好有安全认证的液冷解决方案</li>
-    <li><strong>数说故事递表港交所</strong> — AI数据科技公司冲刺港股，资本市场持续看好AI赛道 <span class="source">（36氪）</span></li>
-    <li><strong>Meta洽谈投资印度支付公司Cred</strong> — 估值40亿美元，金融科技+AI融合加深 <span class="source">（新浪财经）</span></li>
-  </ul>
+  <div class="section-title red">🔥 一、地缘·中东</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#ea4335;">📋 核心事件</strong>
+    <ul>
+      <li><strong>以色列与真主党同意停火</strong> — 6月19日，以色列和伊朗支持的真主党同意停止在黎南部交火，此前激烈交火已造成黎巴嫩47人死亡、4名以军士兵丧生。双方均未立即确认，但美方官员证实此消息。<span class="source">（AP News）</span></li>
+      <li><strong>美伊核谈开局"碰壁"</strong> — 原定6月20日在瑞士开始的伊核谈判因黎以冲突推迟。伊朗官员表示须等以色列停止对真主党袭击才肯赴会。特朗普发文称"他们完了！我们将走完60天，他们一分钱也拿不到！"。副总统万斯已准备飞赴瑞士，但谈判受阻。<span class="source">（AP News）</span></li>
+      <li><strong>美伊临时协议稳步推进</strong> — 重开霍尔木兹海峡的临时协议已签署，全球石油供应恢复。协议开启两个月窗口期用于核计划谈判。<span class="source">（AP News）</span></li>
+      <li><strong>美对德国药品定价启动301调查</strong> — 美国贸易代表办公室依据《1974年贸易法》第301条对德国创新药品定价展开调查，为加征报复性关税铺路。<span class="source">（36氪/CCTV）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#ea4335;">💡 研判</strong>
+    <ul>
+      <li>以黎停火是美伊核谈的<strong>前置条件</strong>，若协议落地，霍尔木兹海峡原油供给将恢复至战前水平，<strong>油价下行压力加大</strong></li>
+      <li>特朗普对伊强硬表态（"60天、一分钱不给"）增加谈判不确定性，需持续跟踪</li>
+      <li>美德贸易摩擦升温，301调查可能波及全球制药产业链</li>
+    </ul>
+  </div>
 </div>
 
-<!-- 🔋 储能·新能源·超充 -->
+<!-- 二、AI·科技 -->
 <div class="section">
-  <div class="section-title green">🔋 储能·新能源·超充</div>
-  <ul>
-    <li><strong>浙江首个"子母"变电站投运</strong> — 500千伏+220千伏集约建设（秀北+嘉塍），电力基础设施升级，电网支撑算力扩张 <span class="source">（新华社）</span></li>
-    <li><strong>西藏藏木水电站竣工验收</strong> — 雅鲁藏布江干流首座大型水电站，装机<strong>510兆瓦</strong>，西藏最大电源工程，区域电力保障增强 <span class="source">（证券时报）</span></li>
-    <li><strong>广东超充县县通 + 11部门新能源重卡政策</strong> — 液冷超充桩需求政策支撑不变</li>
-  </ul>
+  <div class="section-title lightblue">🤖 二、AI·科技</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">📡 AI行业动态</strong>
+    <ul>
+      <li><strong>NEA投资人Tiffany Luck：企业仍在摸索AI投资回报率</strong> — 硅谷"Tokenmaxxing"热潮退去后，Uber据报数月内烧完年度AI预算，部分公司削减Claude许可，Meta内部排行榜被叫停。企业级AI ROI成为悬案。<span class="source">（TechCrunch）</span></li>
+      <li><strong>Anthropic向美国政府承诺加强安全沟通</strong> — 因其高性能模型"Mythos"和"Fable"被指存在安全隐患遭监管整治，Anthropic向商务部长提交方案，承诺与白宫深度合作消除隐患，双方仍在磋商中。<span class="source">（36氪/新浪财经）</span></li>
+      <li><strong>亚马逊员工因批评数据中心扩张遭内部调查</strong> — 西雅图5名亚马逊工程师出席市议会听证会，批评AI基建"不计一切代价"扩张。市议会6月9日全票通过<strong>暂停新建大型数据中心一年</strong>的禁令。此后3名员工因证词被HR调查，面临纪律处分甚至解雇威胁。<span class="source">（36氪/新浪财经）</span></li>
+      <li><strong>挪威出台最严AI教育限制</strong> — 1-7年级（6-13岁）原则上禁止使用AI；14-16岁在教师监督下谨慎使用；17-19岁需学会适当使用AI。8月生效。<span class="source">（The Verge/Reuters）</span></li>
+      <li><strong>SpaceX拟发行至少200亿美元债券</strong> — 继创纪录IPO后，承销行最早下周启动投资者电话会，为2027年9月到期的200亿美元过桥贷款再融资。<span class="source">（界面/36氪）</span></li>
+      <li><strong>Meta洽谈投资印度金融科技Cred</strong> — 估值约40亿美元，略高于2025年下调后的35亿美元估值，但远低于2022年64亿美元的历史峰值。<span class="source">（36氪/新浪财经）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">💡 研判</strong>
+    <ul>
+      <li>AI投资进入"<strong>ROI验证期</strong>"，烧钱扩张模式遭遇反思，企业级AI支出可能放缓，这对液冷需求形成<strong>短期利空</strong></li>
+      <li>西雅图暂停新建数据中心禁令是<strong>标志性事件</strong>，若蔓延至其他城市，将影响液冷产业链需求节奏</li>
+      <li>Anthropic被监管整治，AI行业监管收紧趋势明确，安全合规成本上升</li>
+    </ul>
+  </div>
 </div>
 
-<!-- 🏢 利通科技（839167） -->
+<!-- 三、A股·港股 -->
 <div class="section">
-  <div class="section-title gray">🏢 利通科技（839167）动态</div>
-  <ul>
-    <li>北交所暂无利通科技（839167）新公告发布</li>
-    <li><strong>SpaceX IPO加速</strong> — 200亿美元债券发行，上市倒计时。太空数据中心液冷需求全新场景，空间算力竞赛开启</li>
-    <li><strong>液冷管四大需求驱动</strong> — （1）国产AI算力爆发（字节+天数智芯）；（2）人形机器人政策加持（商务部17项举措）；（3）新能源重卡+超充桩政策共振；（4）太空算力需求新增长极</li>
-    <li><strong>西雅图暂停数据中心</strong> — 美国局部政策阻力，不改全球液冷需求大趋势；液冷为GPU/TPU算力的刚性散热方案，不受建筑禁令影响</li>
-  </ul>
+  <div class="section-title darkblue">📈 三、A股·港股</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#0f9d58;">📋 市场动态</strong>
+    <ul>
+      <li><strong>17只绩优潜力硬科技小盘股出炉</strong> — 筛选条件：市值≤150亿元、流通股本<5亿股、近一月日均换手率1%-3%、2025年盈利且机构预测2026-2027年净利润增长均超40%。<span class="source">（36氪/证券时报）</span></li>
+      <li><strong>端午假期首日长三角铁路预计发送415万人</strong> — 长三角铁路增开大量热门方向列车，加开65列直通、152列管内，组织312列重联。<span class="source">（36氪/央视）</span></li>
+      <li><strong>数说故事递表港交所</strong> — AI科技公司数说故事向港交所提交上市申请，独家保荐人为中信建投国际。<span class="source">（36氪）</span></li>
+      <li><strong>美对德国药品定价启动301调查</strong> — 可能对全球医药及化工链产生影响，关注相关原料药和中间体板块。<span class="source">（36氪）</span></li>
+      <li><strong>浙江首个"子母"变电站投运</strong> — 嘉兴秀北500千伏+嘉塍220千伏集约建设项目投运，电力基建持续推进。<span class="source">（36氪/新华社）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#0f9d58;">📊 液冷赛道关联</strong>
+    <ul>
+      <li>本周（6月15-19日）北交所整体交投活跃度下降，液冷板块跟随大盘震荡。英维克、曙光数创等无明显异动</li>
+      <li>关注下半年政策窗口：工信部要求新建智算中心<strong>液冷渗透率100%</strong>，预计Q3将迎来更多招标落地</li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#0f9d58;">💡 研判</strong>
+    <ul>
+      <li>A股小盘硬科技标的受流动性驱动，液冷产业链中小市值公司（如<strong>高澜股份、申菱环境</strong>）符合上述筛选逻辑，可关注</li>
+      <li>端午假期后（6月22-26日）关注<strong>Q2末资金回补</strong>带来的结构性机会</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、利通科技（839167）-->
+<div class="section">
+  <div class="section-title gray">🏢 四、利通科技（839167）动态</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#5f6368;">📋 本日未监测到利通科技直接相关新闻</strong>
+    <ul>
+      <li>财联社今日无利通科技相关报道（关键页面为JS渲染，无法抓取有效内容）</li>
+      <li>同花顺、新浪财经行情页面暂不可访问，无法获取实时行情数据</li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#5f6368;">💡 重点关注方向</strong>
+    <ul>
+      <li><strong>液冷管需求前瞻：</strong>英伟达Rubin架构GPU功耗达1800W+（较H100的700W增157%），液冷从"可选"变"强制"，液冷管作为核心零部件需求确定性强</li>
+      <li><strong>竞争格局：</strong>利通科技在北交所液冷管赛道具有先发优势，需关注是否有竞争对手切入该细分领域</li>
+      <li><strong>催化剂：</strong>工信部新建智算中心液冷强制要求政策细则、英伟达下一代GPU量产时间表、公司半年报预告</li>
+    </ul>
+  </div>
+
   <div class="highlight">
-    <strong>🟡 本周液冷赛道复盘</strong><br>
-    SpaceX IPO倒计时+200亿债券发行（太空算力新场景）；国产AI算力全链条爆发（智谱/天数智芯/摩尔线程/DeepSeek）；西雅图数据中心暂停建设（局部阻力不改趋势）；电力基础设施升级（藏木水电站/浙江子母变+电站）。液冷管路国产替代黄金期，持续关注利通科技液冷软管订单突破。
+    <strong>📌 上次关注要点（6月简报）</strong><br>
+    利通科技在液冷管领域的技术壁垒体现在：耐高压（≥25MPa）、耐高温（150℃+）、超长寿命（10年+）。AI算力基建加速为液冷管需求提供长周期逻辑支撑。北交所流动性是目前主要估值约束。
+  </div>
+</div>
+
+<!-- 五、集成商动态 -->
+<div class="section">
+  <div class="section-title purple">📡 五、集成商动态（渠道情报）</div>
+  <table>
+    <tr>
+      <th style="width:18%">企业</th>
+      <th>核心进展 / 跟踪方向</th>
+    </tr>
+    <tr>
+      <td><strong>英维克</strong></td>
+      <td>液冷全链条解决方案提供商，受数据中心投资热潮拉动明显。本日无最新动态披露。</td>
+    </tr>
+    <tr>
+      <td><strong>曙光数创</strong></td>
+      <td>中科曙光旗下液冷龙头，浸没式液冷技术领先。本日无最新动态披露。</td>
+    </tr>
+    <tr>
+      <td><strong>高澜股份</strong></td>
+      <td>冷板式液冷+储能温控。符合小盘绩优硬科技筛选条件，关注Q2订单增长情况。</td>
+    </tr>
+    <tr>
+      <td><strong>申菱环境</strong></td>
+      <td>热管理全栈方案商，在数据中心、储能领域均有布局。本日无最新动态披露。</td>
+    </tr>
+    <tr>
+      <td><strong>巨化股份</strong></td>
+      <td>冷却液（氟化液）龙头，国产替代核心标的。关注下游液冷渗透率提升带来的冷却液需求拉动。</td>
+    </tr>
+  </table>
+</div>
+
+<!-- 六、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 六、战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 风险预警</strong><br>
+    <strong>1. 美伊核谈不确定性加大</strong> — 以黎停火虽达成，但特朗普对伊强硬的"60天零付款"表态可能使谈判破裂，霍尔木兹海峡供给恢复存变数，油价波动加剧。<br>
+    <strong>2. 西雅图数据中心禁令扩散风险</strong> — 若更多城市效仿，将直接影响数据中心新建节奏，进而抑制液冷设备需求。<br>
+    <strong>3. AI开支进入ROI验证期</strong> — 企业级AI投资增速可能放缓，短期对上游算力基建情绪有一定压制。
+  </div>
+
+  <div class="highlight">
+    <strong>🟡 机会提示</strong><br>
+    <strong>1. Q3政策窗口期即将开启</strong> — 工信部新建智算中心液冷渗透率100%要求，预计Q3招标落地，利好液冷全产业链。<br>
+    <strong>2. 英伟达Rubin架构GPU量产在即</strong> — 单GPU功耗1800W+，双倍于H100，服务器液冷化率将持续提升，液冷管需求确定性强。<br>
+    <strong>3. A股小盘硬科技标的筛选逻辑</strong> — 高澜股份、申菱环境等液冷赛道中小市值公司符合机构筛选条件，流动性改善后有望受益。
   </div>
 </div>
 
