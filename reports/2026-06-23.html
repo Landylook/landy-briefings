@@ -3,114 +3,328 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-<title>AI研究员--Landy葉的简报 | 2026年6月23日（周二）</title>
+<title>AI研究员--Landy葉的简报 | 2026年6月23日</title>
 <style>
-  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; color: #222; line-height: 1.8; font-size: 15px; }
-  h1 { font-size: 22px; font-weight: bold; margin-bottom: 6px; color: #111; }
-  .date { color: #888; font-size: 14px; margin-bottom: 28px; border-bottom: 1px solid #eee; padding-bottom: 18px; }
-  .section { margin-bottom: 28px; }
-  .section-title { font-size: 16px; font-weight: bold; color: #111; margin-bottom: 12px; padding-bottom: 6px; border-bottom: 2px solid #222; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
   .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
   .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
   .section-title.green { border-bottom-color: #34a853; color: #34a853; }
   .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
   .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
   .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
-  ul { margin: 0; padding-left: 20px; }
-  li { margin-bottom: 8px; }
-  li strong { font-weight: 600; }
-  .source { color: #888; font-size: 12px; }
-  .highlight { background: #fff8e1; padding: 12px 16px; border-left: 4px solid #f9a825; margin-top: 10px; font-size: 14px; }
-  .warning { background: #fce8e6; padding: 12px 16px; border-left: 4px solid #ea4335; margin-top: 10px; font-size: 14px; }
-  .back-button { display: inline-flex; align-items: center; color: #1a73e8; text-decoration: none; font-size: 14px; font-weight: 500; margin-bottom: 20px; padding: 8px 12px; border-radius: 4px; transition: background-color 0.2s; }
-  .back-button:hover { background-color: #f5f5f5; }
-  .back-button span { margin-right: 6px; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
   @media (max-width: 768px) {
-    body { margin: 20px auto; padding: 16px; font-size: 16px; line-height: 1.9; }
-    h1 { font-size: 20px; } .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
-    .section { margin-bottom: 24px; } .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
-    ul { padding-left: 24px; } li { margin-bottom: 10px; }
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 { font-size: 20px; }
+    .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
+    .section { margin-bottom: 24px; }
+    .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 10px; }
+    table { font-size: 15px; }
+    th, td { padding: 10px 12px; }
     .highlight, .warning { padding: 14px 18px; font-size: 15px; }
     .back-button { font-size: 15px; padding: 10px 14px; margin-bottom: 16px; }
+  }
+  @media (max-width: 480px) {
+    body { margin: 12px auto; padding: 12px; font-size: 17px; }
+    h1 { font-size: 19px; }
+    .date { font-size: 14px; }
+    .section-title { font-size: 18px; }
+    table { font-size: 14px; display: block; overflow-x: auto; }
+  }
+  @media (min-width: 1200px) {
+    body { max-width: 900px; }
   }
 </style>
 </head>
 <body>
+
 <div>
-  <a href="/landy-briefings/" class="back-button"><span>←</span> 返回简报列表</a>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
 </div>
 
 <h1>AI研究员--Landy葉的简报</h1>
-<div class="date">2026年6月23日（周二）</div>
+<div class="date">2026年6月23日 星期二</div>
 
-<!-- 🔴 地缘·宏观 -->
+<!-- 今日速览 -->
 <div class="section">
-  <div class="section-title red">🔴 地缘·宏观</div>
+  <div class="section-title">📊 今日速览</div>
   <ul>
-    <li style="font-weight: bold; color: #d32f2f;">【历史级重磅】英伟达详解Rubin全面液冷技术</strong> — 6月21日英伟达官方博客：Rubin是全球首个实现<strong>100%液冷</strong>的AI计算平台，被称为"数据中心历史上最重要的能效突破之一"。英伟达原文明确：所有为Rubin建设系统的云服务商和数据中心运营商都在推动全面液冷转型 <span class="source">（财联社）</span></li>
-    <li><strong>SpaceX首次发行优先无担保票据</strong> — 750亿美元IPO后首次公开债务融资，所得净收益用于偿还过桥贷款。SpaceX盘前跌超3%，短期市场情绪波动 <span class="source">（界面）</span></li>
-    <li><strong>垣信卫星启动新一轮融资（千帆星座）</strong> — "中国版SpaceX"千帆星座建设主体，意向投资不低于<strong>50亿元</strong> <span class="source">（证券时报）</span></li>
-    <li><strong>高盛：对冲基金五周来首次净卖出全球股票</strong> — 美股和欧洲卖出量最大，亚洲发达市场除外，市场情绪转向谨慎 <span class="source">（财联社）</span></li>
-    <li><strong>多家银行收紧黄金白银杠杆交易</strong> — 广发银行保证金提至140%，华夏银行120%，中国银行120%，黄金白银短期承压 <span class="source">（中新经纬）</span></li>
+    <li><strong>英伟达发布Vera Rubin NVL4系统</strong> Q4起供货，单系统提供超过 <strong>7 exaflops</strong> AI算力，支持液冷架构 <span class="source">（界面/36氪）</span></li>
+    <li><strong>光棒个别类型较年初涨价逾五倍</strong>，供应紧缺或将延续至<strong>2027年</strong>，G.657.A2类光棒涨幅达 <strong>550%</strong> <span class="source">（上证报/36氪）</span></li>
+    <li><strong>英伟达发布Halos机器人安全系统</strong>，推进Physical AI落地，首个合作Agility集成至人形机器人Digit <span class="source">（界面/36氪）</span></li>
+    <li><strong>英国首相斯塔默宣布辞职</strong>，引发继任者角逐，英国政坛再度震荡 <span class="source">（AP News）</span></li>
+    <li><strong>美伊谈判进入新阶段</strong>，特朗普威胁震慑后第二轮谈判启动 <span class="source">（AP News）</span></li>
+    <li><strong>LPR连续13个月保持不变</strong>，1年期3.0%，5年期以上3.5% <span class="source">（中证网/36氪）</span></li>
   </ul>
 </div>
 
-<!-- 🤖 AI·算力·数据中心 -->
+<!-- 一、地缘·中东 -->
 <div class="section">
-  <div class="section-title lightblue">🤖 AI·算力·数据中心</div>
+  <div class="section-title red">🌍 一、地缘·中东</div>
   <ul>
-    <li style="font-weight: bold; color: #d32f2f;">🔥 Rubin全面液冷 = 液冷管路的"教科书级"官方背书</strong> — 英伟达原文："由于英伟达Rubin平台采用全面液冷，因此所有为该平台建设系统的云服务商和数据中心运营商都在推动相关转型。"液冷从"可选"变"唯一选择"</li>
-    <li><strong>SpaceX盘前跌超3%</strong> — IPO后首次债券发行，短期市场消化，不改太空算力长期趋势</li>
-    <li><strong>英特尔任命SK海力士前CEO李锡熙为代工执行副总裁</strong> — 全球半导体代工竞争加剧 <span class="source">（界面）</span></li>
-    <li><strong>微软Copilot强制安装</strong> — AI普及加速，数据中心算力需求刚性支撑 <span class="source">（财联社）</span></li>
-    <li><strong>苹果2026-2027产品路线图</strong> — 折叠屏iPhone、AirPods AI助手、智能眼镜全线推出，AI终端爆发</li>
+    <li><strong>美伊谈判进入新阶段</strong> — 美国与伊朗在第二轮谈判后达成新进展，特朗普在首日谈判发出强硬威胁后，双方进入更深入的对话阶段 <span class="source">（AP News）</span></li>
+    <li><strong>英国首相斯塔默宣布辞职</strong> — 基尔·斯塔默突然宣布辞去首相职务，英国政坛再掀巨浪，继任者竞选序幕拉开 <span class="source">（AP News）</span></li>
+    <li><strong>中东局势持续影响全球能源市场</strong> — 美伊核谈判的走向将直接影响原油供应格局，市场高度关注后续谈判结果 <span class="source">（AP News）</span></li>
+    <li><strong>美联储沃什鹰派立场获城堡证券肯定</strong> — 城堡证券表示沃什压低通胀的立场有助于增强美联储信誉，支撑长期美债收益率 <span class="source">（新浪财经/36氪）</span></li>
   </ul>
 </div>
 
-<!-- 🔋 储能·新能源·超充 -->
+<!-- 二、AI · 科技 -->
 <div class="section">
-  <div class="section-title green">🔋 储能·新能源·超充</div>
-  <ul>
-    <li style="font-weight: bold; color: #1a73e8;">【重点订单】宏英智能6.64亿元储能电站PC总承包合同</strong> — 甘肃白银200MW/800MWh独立储能电站，宏英新能源供应设备5.32亿元。大型储能项目持续释放，液冷配套需求直接落地 <span class="source">（36氪）</span></li>
-    <li><strong>垣信卫星50亿融资启动</strong> — 中国版SpaceX，低轨卫星互联网加速，卫星算力液冷新场景</li>
-    <li><strong>广东超充县县通 + 11部门新能源重卡政策</strong> — 液冷超充桩政策支撑不变</li>
-    <li><strong>赣锋锂业储能满产满销</strong> — 588Ah大电芯Q3启动产能爬坡</li>
-  </ul>
-</div>
+  <div class="section-title lightblue">🤖 二、AI · 科技</div>
 
-<!-- 💹 A股·港股 -->
-<div class="section">
-  <div class="section-title purple">💹 A股·港股</div>
   <div style="margin-left:12px; margin-bottom:14px;">
-    <strong style="color:#9334e6;">💧 液冷概念板块</strong>
+    <strong style="color:#1a73e8;">🔥 行业重磅</strong>
     <ul>
-      <li style="font-weight: bold; color: #d32f2f;">英伟达Rubin 100%全面液冷 = 液冷管路历史性最强背书</strong> — 所有Rubin系统建设者都在推动液冷转型，需求确定性100%</li>
-      <li><strong>宏英智能6.64亿储能电站订单</strong> — 大型储能项目液冷配套直接落地，液冷管路订单持续释放</li>
-      <li><strong>中船特气停牌核查</strong> — 5月11日至6月22日严重异常波动，股价暴涨后停牌核查 <span class="source">（36氪）</span></li>
+      <li><strong>英伟达发布Vera Rubin NVL4系统</strong> — 结合Rubin GPU与Vera CPU，通过NVLink、InfiniBand与<strong>液冷架构</strong>实现一体化设计，单系统提供超过 <strong>7 exaflops</strong> AI算力，支持最高144 GPU/机架密度。戴尔、HPE、Supermicro等将推出基于该架构的系统，预计<strong>2026年Q4起供货</strong> <span class="source">（界面/36氪）</span></li>
+      <li><strong>英伟达发布Halos机器人安全系统</strong> — 面向物理AI与机器人领域的全栈安全系统，覆盖AI算力芯片、传感器连接到OS软件栈，首个合作Agility集成至人形机器人Digit，用于工厂与物流场景 <span class="source">（界面/36氪）</span></li>
+      <li><strong>英伟达转向100%液冷</strong> — 英伟达称通过切换至100%液冷并提高服务器运行温度，可将用水量降至"接近零" <span class="source">（The Verge）</span></li>
+      <li><strong>全球资金"加杠杆"押注半导体</strong> — 半导体杠杆ETF成资金追逐焦点，散户主导入场。业内警告杠杆工具双刃剑效应，短期剧烈回撤风险暴露 <span class="source">（上证报/36氪）</span></li>
     </ul>
   </div>
-  <div style="margin-left:12px;">
-    <strong style="color:#9334e6;">📊 重要事件</strong>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">💡 产业趋势</strong>
     <ul>
-      <li><strong>海天味业10-20亿回购（70%注销）</strong> — 消费龙头大手笔回报股东 <span class="source">（36氪）</span></li>
-      <li><strong>藏格矿业收到巨龙铜业9.23亿分红</strong> — 本年累计已收24.62亿 <span class="source">（36氪）</span></li>
-      <li><strong>港交所优化按金规定</strong> — 2026年9月/2027年3月分两阶段实施 <span class="source">（36氪）</span></li>
+      <li><strong>SpaceX发债交易筹资至少200亿美元</strong> — 火箭制造商的资本市场首秀转向债市，此前IPO已筹逾850亿美元 <span class="source">（新浪财经/36氪）</span></li>
+      <li><strong>SpaceX租赁AI算力给Reflection</strong> — 通过2029年协议以1.5亿美元/月租出Colossus 2数据中心算力，类似此前与Anthropic、Google的交易 <span class="source">（The Verge/WSJ）</span></li>
+      <li><strong>企业AI ROI仍在摸索中</strong> — NEA投资人称企业在纠结AI投入产出比。Uber数月耗尽年度AI预算，部分公司削减Claude许可证，Meta关停内部排行榜 <span class="source">（TechCrunch）</span></li>
+      <li><strong>高纯四氯化硅景气度上行</strong> — 算力光纤需求共振，满足光纤A2超低损耗光棒及先进制程的6N以上超高纯产品产能偏紧，全球有效产能紧张 <span class="source">（上证报/36氪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">📊 光通信产业链（重点关注）</strong>
+    <ul>
+      <li><strong>光棒个别类型较年初涨价逾五倍</strong> — 通用G.652D光棒报价涨幅超<strong>180%</strong>；G.657.A2类数据中心用光棒涨幅近<strong>550%</strong>（22-30元→160元/等效芯公里）。紧缺状态预计持续到<strong>2027年</strong> <span class="source">（上证报/36氪）</span></li>
+      <li><strong>算力光纤需求共振</strong> — AI算力网络建设带来巨量光纤光缆需求，上游原材料涨价传导叠加供需失衡 <span class="source">（上证报/36氪）</span></li>
     </ul>
   </div>
 </div>
 
-<!-- 🏢 利通科技（839167） -->
+<!-- 三、A股 · 港股 -->
 <div class="section">
-  <div class="section-title gray">🏢 利通科技（839167）动态</div>
+  <div class="section-title green">📈 三、A股 · 港股</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">📊 宏观与政策</strong>
+    <ul>
+      <li><strong>LPR连续13个月保持不变</strong> — 1年期3.0%，5年期以上3.5%。主要政策利率不变、银行稳息差两大因素制约 <span class="source">（中证网/36氪）</span></li>
+      <li><strong>美联储7月维持利率不变概率63.7%</strong> — 9月维持利率不变概率降至26.1%，累计加息25BP概率为52.2% <span class="source">（CME/财联社/36氪）</span></li>
+      <li><strong>巴克莱建议为美债收益率走高布局</strong> — 美联储鹰派转向后，各期限美债目标收益率上调约35BP，预测美联储2027年前维持政策不变 <span class="source">（新浪财经/36氪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#34a853;">💼 市场动态</strong>
+    <ul>
+      <li><strong>太合音乐集团递表港交所</strong> — 联席保荐人为Deutsche Bank、中信建投国际 <span class="source">（36氪）</span></li>
+      <li><strong>中报行情启动</strong> — 长川科技中报利润增<strong>110%-134%</strong>，卫星化学增118%，业绩预增龙头获关注 <span class="source">（东方财富）</span></li>
+      <li><strong>23股深夜发减持公告</strong> — 格力电器减持套现约16亿，1股被立案，市场情绪承压 <span class="source">（东方财富）</span></li>
+      <li><strong>全球半导体板块持续走强</strong> — AI产业迭代需求全面爆发，但散户主导杠杆ETF带来市场波动隐患 <span class="source">（上证报/36氪）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、液冷及下游 -->
+<div class="section">
+  <div class="section-title orange">💧 四、液冷及下游应用战场</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🖥️ 数据中心/智算中心</strong>
+    <ul>
+      <li><strong>英伟达Vera Rubin采用液冷架构</strong> — 新高密度系统支持144 GPU/机架，液冷从可选变为<strong>强制标配</strong> <span class="source">（界面/36氪）</span></li>
+      <li><strong>英伟达100%液冷方案</strong> — 通过全液冷+高温运行实现"近零"用水，进一步巩固液冷趋势 <span class="source">（The Verge）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🔋 储能行业</strong>
+    <ul>
+      <li>储能板块暂无重点新动态，持续关注大储液冷渗透率提升趋势</li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🚗 新能源汽车</strong>
+    <ul>
+      <li><strong>Lucid Motors裁员18%</strong> — 约1500人，亚利桑那工厂取消第二班产线，四个月前刚完成12%裁员，美国电车洗牌加速 <span class="source">（新浪财经/36氪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#e87020;">⚡ 液冷超充桩</strong>
+    <ul>
+      <li>暂无新动态，持续跟踪国内超充站建设进度</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 五、集成商动态 -->
+<div class="section">
+  <div class="section-title purple">📡 五、集成商动态（渠道情报）</div>
+  <table>
+    <tr>
+      <th style="width:18%">企业</th>
+      <th>核心进展</th>
+    </tr>
+    <tr>
+      <td><strong>英维克</strong></td>
+      <td>暂无新动态，持续跟踪液冷散热订单</td>
+    </tr>
+    <tr>
+      <td><strong>曙光数创</strong></td>
+      <td>暂无新动态，液冷方案受益于智算中心建设加速</td>
+    </tr>
+    <tr>
+      <td><strong>高澜股份</strong></td>
+      <td>暂无新动态，持续关注液冷管路业务拓展</td>
+    </tr>
+    <tr>
+      <td><strong>申菱环境</strong></td>
+      <td>暂无新动态，关注数据中心温控业务</td>
+    </tr>
+    <tr>
+      <td><strong>巨化股份</strong></td>
+      <td>暂无新动态，冷却液国产替代趋势持续</td>
+    </tr>
+  </table>
+</div>
+
+<!-- 六、利通科技 -->
+<div class="section">
+  <div class="section-title gray">🏢 六、利通科技（839167）动态</div>
   <ul>
-    <li>北交所暂无利通科技（839167）新公告发布</li>
-    <li style="font-weight: bold; color: #d32f2f;">【最强催化剂】英伟达官方认证Rubin 100%全面液冷</strong> — 液冷管路从"可选"变"唯一选择"，英伟达原文背书，需求确定性100%</li>
-    <li><strong>宏英智能6.64亿储能订单</strong> — 大型储能项目液冷配套持续落地，液冷管路订单加速释放</li>
-    <li><strong>液冷管四大需求共振</strong> — Rubin全面液冷+千帆星座卫星液冷+储能订单落地+超充桩政策</li>
+    <li><strong>液冷管赛道利好</strong> — 英伟达Vera Rubin NVL4系统Q4供货+100%液冷方案，进一步确认液冷技术成为AI算力基建<strong>刚需</strong>，利通科技作为液冷管路核心供应商有望持续受益 <span class="source">（界面/36氪/The Verge）</span></li>
+    <li><strong>光通信产业链景气带动</strong> — 光棒涨价超<strong>550%</strong>、紧缺延续至2027年，算力光纤需求共振验证AI基建上游高景气，液冷管路作为算力基建"血管"逻辑进一步强化 <span class="source">（上证报/36氪）</span></li>
+    <li><strong>北交所/中小企业关注</strong> — 中报行情启动，关注利通科技中期业绩披露节奏。市场风格切换期，业绩确定性强的标的获资金青睐</li>
   </ul>
+</div>
+
+<!-- 七、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 七、战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 高度关注</strong><br>
+    <strong>1. 美伊谈判后续走向</strong> — 若谈判破裂可能引发中东局势升级，影响全球能源价格和避险资产走势。<br>
+    <strong>2. 美联储鹰派持续</strong> — 美联储利率维持高位时间延长，巴克莱上调美债收益率预期35BP，全球流动性收紧预期升温。<br>
+    <strong>3. 半导体杠杆ETF风险</strong> — 散户主导的资金狂欢推高板块波动，短期剧烈回撤风险不容忽视。
+  </div>
+
   <div class="highlight">
-    <strong>🔥 液冷管赛道历史性时刻</strong><br>
-    英伟达官方认证 Rubin 为全球首个100%全液冷AI平台，明确表示"所有为该平台建设系统的云服务商和数据中心运营商都在推动相关转型"。液冷不是可选项，而是Rubin时代的唯一选项。宏英智能6.64亿储能电站订单验证大型储能项目液冷配套加速落地。液冷管路国产替代黄金期，持续关注利通科技液冷软管订单突破。
+    <strong>🟡 持续跟踪</strong><br>
+    <strong>1. 光棒/光纤产业链紧缺</strong> — 光棒涨价550%、紧缺至2027年，液冷管路与光纤产业链共享AI基建红利。<br>
+    <strong>2. 英伟达Vera Rubin液冷方案</strong> — 液冷从可选到刚需确认，关注液冷管路组件供应商订单兑现节奏。<br>
+    <strong>3. 中报行情</strong> — 长川科技、卫星化学等已发预增公告，业绩增长确定性强的标的进入布局窗口。
   </div>
 </div>
 
