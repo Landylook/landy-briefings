@@ -3,108 +3,304 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-<title>AI研究员--Landy葉的简报 | 2026年6月26日（周四）</title>
+<title>AI研究员--Landy葉的简报 | 2026年6月26日</title>
 <style>
-  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; color: #222; line-height: 1.8; font-size: 15px; }
-  h1 { font-size: 22px; font-weight: bold; margin-bottom: 6px; color: #111; }
-  .date { color: #888; font-size: 14px; margin-bottom: 28px; border-bottom: 1px solid #eee; padding-bottom: 18px; }
-  .section { margin-bottom: 28px; }
-  .section-title { font-size: 16px; font-weight: bold; color: #111; margin-bottom: 12px; padding-bottom: 6px; border-bottom: 2px solid #222; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
   .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
   .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
   .section-title.green { border-bottom-color: #34a853; color: #34a853; }
   .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
   .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
   .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
-  ul { margin: 0; padding-left: 20px; }
-  li { margin-bottom: 8px; }
-  li strong { font-weight: 600; }
-  .source { color: #888; font-size: 12px; }
-  .highlight { background: #fff8e1; padding: 12px 16px; border-left: 4px solid #f9a825; margin-top: 10px; font-size: 14px; }
-  .warning { background: #fce8e6; padding: 12px 16px; border-left: 4px solid #ea4335; margin-top: 10px; font-size: 14px; }
-  .back-button { display: inline-flex; align-items: center; color: #1a73e8; text-decoration: none; font-size: 14px; font-weight: 500; margin-bottom: 20px; padding: 8px 12px; border-radius: 4px; transition: background-color 0.2s; }
-  .back-button:hover { background-color: #f5f5f5; }
-  .back-button span { margin-right: 6px; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
   @media (max-width: 768px) {
-    body { margin: 20px auto; padding: 16px; font-size: 16px; line-height: 1.9; }
-    h1 { font-size: 20px; } .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
-    .section { margin-bottom: 24px; } .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
-    ul { padding-left: 24px; } li { margin-bottom: 10px; }
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 { font-size: 20px; }
+    .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
+    .section { margin-bottom: 24px; }
+    .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 10px; }
+    table { font-size: 15px; }
+    th, td { padding: 10px 12px; }
     .highlight, .warning { padding: 14px 18px; font-size: 15px; }
     .back-button { font-size: 15px; padding: 10px 14px; margin-bottom: 16px; }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body { max-width: 90%; margin: 30px auto; padding: 24px; }
+    h1 { font-size: 21px; }
+  }
+  @media (max-width: 480px) {
+    body { margin: 12px auto; padding: 12px; font-size: 17px; }
+    h1 { font-size: 19px; }
+    .date { font-size: 14px; }
+    .section-title { font-size: 18px; }
+    table { font-size: 14px; display: block; overflow-x: auto; }
+  }
+  @media (min-width: 1200px) {
+    body { max-width: 900px; }
   }
 </style>
 </head>
 <body>
+
 <div>
-  <a href="/landy-briefings/" class="back-button"><span>←</span> 返回简报列表</a>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
 </div>
 
 <h1>AI研究员--Landy葉的简报</h1>
-<div class="date">2026年6月26日（周四）</div>
+<div class="date">2026年6月26日 星期五</div>
 
-<!-- 🔴 地缘·宏观 -->
+<!-- 今日速览 -->
 <div class="section">
-  <div class="section-title red">🔴 地缘·宏观</div>
+  <div class="section-title">📊 今日速览</div>
   <ul>
-    <li><strong>豆包发布2.1 Pro模型</strong> — 火山引擎发布豆包2.1 Pro，在Coding（编程）、Agent（智能体）、VLM（视觉语言模型）三大核心方向实现能力跃升。字节跳动AI战略加速 <span class="source">（36氪）</span></li>
-    <li><strong>扬杰科技全系列产品价格上调10%-15%，7月1日执行</strong> — 上游芯片晶圆、大宗金属、封装原材料全线持续涨价。7月再度大幅涨价，成本增幅超出预期。电子元器件景气周期延续 <span class="source">（证券时报）</span></li>
-    <li><strong>正行创新获近亿美元天使轮</strong> — 具身智能/机器人AI，获正大集团、华勤技术、九安医疗等投资，世界动作模型+强化学习核心方向 <span class="source">（36氪）</span></li>
-    <li><strong>巨人网络10亿战略投资光轮智能</strong> — 物理AI数据+评测基础设施，机器人学习+仿真合成数据 <span class="source">（36氪）</span></li>
-    <li><strong>腾讯上海启善投资增资至8亿（增幅7900%）</strong> — 腾讯旗下投资平台大幅扩张 <span class="source">（天眼查）</span></li>
+    <li><strong>美国PCE超预期</strong> — 5月核心PCE同比上涨3.4%，通胀粘性压制降息预期 <span class="source">（36氪/央视财经）</span></li>
+    <li><strong>苹果全球大涨价</strong> — Mac/iPad因内存短缺涨20%，MacBook Pro入门款飙至1999美元 <span class="source">（36氪/界面）</span></li>
+    <li><strong>台积电N2/A16产能暴增</strong> — 2026-2028年先进工艺产能年复合增速70%，CoWoS年复合增速超80% <span class="source">（36氪/上证报）</span></li>
+    <li><strong>美军股涨跌分化</strong> — 美光科技涨超15%，苹果跌超6%，中概股普跌 <span class="source">（36氪）</span></li>
+    <li><strong>霍尔木兹海峡恢复</strong> — 通航量恢复至战事前约57%，创单日最高纪录 <span class="source">（36氪/新华社）</span></li>
   </ul>
 </div>
 
-<!-- 🤖 AI·算力·数据中心 -->
+<!-- 一、大势研判 -->
 <div class="section">
-  <div class="section-title lightblue">🤖 AI·算力·数据中心</div>
-  <ul>
-    <li><strong>豆包2.1 Pro三大跃升</strong> — Coding/Agent/VLM全面升级，字节跳动AI战略加速，推理算力需求持续释放</li>
-    <li><strong>英伟达+智谱+vivo+红杉中国加码B站AI创造公开赛</strong> — 英伟达提供100亿Tokens+RTX AI技术支持，AI开发生态持续壮大 <span class="source">（36氪）</span></li>
-    <li><strong>小米入股破壳时刻</strong> — AI具身智能相关，小米+星海图AI联合投资 <span class="source">（天眼查）</span></li>
-    <li><strong>英伟达Rubin全面液冷</strong> — 液冷管路最强官方背书，所有Rubin系统建设者都在推动液冷转型</li>
-  </ul>
-</div>
+  <div class="section-title lightblue">🤖 一、大势研判</div>
 
-<!-- 🔋 储能·新能源·超充 -->
-<div class="section">
-  <div class="section-title green">🔋 储能·新能源·超充</div>
-  <ul>
-    <li><strong>扬杰科技涨价+宏英智能6.64亿储能大单</strong> — 电子元器件涨价+储能项目订单双验证，储能液冷配套需求持续</li>
-    <li><strong>广东超充县县通 + 11部门新能源重卡政策</strong> — 液冷超充桩需求政策支撑不变</li>
-  </ul>
-</div>
-
-<!-- 💹 A股·港股 -->
-<div class="section">
-  <div class="section-title purple">💹 A股·港股</div>
   <div style="margin-left:12px; margin-bottom:14px;">
-    <strong style="color:#9334e6;">💧 液冷概念板块</strong>
+    <strong style="color:#1a73e8;">📈 宏观数据</strong>
     <ul>
-      <li><strong>主力资金加仓非银金融，抛售有色金属/电力设备</strong> — 工业富联、胜宏科技、兆易创新被抛售，液冷概念短期承压</li>
-      <li><strong>英伟达Rubin全面液冷</strong> — 液冷管路最强官方背书，需求确定性100%</li>
+      <li><strong>美国5月PCE同比上涨4.1%</strong>，核心PCE同比上涨3.4%，通胀粘性仍高于美联储2%目标，市场对年内降息预期进一步降温 <span class="source">（36氪/央视财经）</span></li>
+      <li>美股三大指数涨跌不一：纳指跌<strong>0.46%</strong>，标普500基本持平，道指涨<strong>0.14%</strong> <span class="source">（36氪）</span></li>
+      <li>热门中概股普跌：阿里巴巴、理想汽车跌超4%，拼多多、百度、蔚来跌超3% <span class="source">（36氪）</span></li>
+      <li><strong>资金面紧张情绪缓解</strong>，债市全线走强，央行释放稳定跨季流动性信号 <span class="source">（36氪/上证报）</span></li>
     </ul>
   </div>
+
   <div style="margin-left:12px;">
-    <strong style="color:#9334e6;">📊 重要事件</strong>
+    <strong style="color:#1a73e8;">🌍 地缘局势</strong>
     <ul>
-      <li><strong>扬杰科技7月1日起全系涨价10%-15%</strong> — 电子元器件景气周期确认，成本压力持续传导</li>
-      <li><strong>正行创新/光轮智能融资</strong> — 具身智能资本热潮，散热需求从数据中心延伸至机器人</li>
+      <li><strong>霍尔木兹海峡通航量持续恢复</strong>：标普全球报告称6月24日78艘船舶通过，创伊朗战事爆发以来单日最高纪录；本月日均通航量恢复至战前水平约<strong>57%</strong>，有望成为战事以来最高通航月份 <span class="source">（36氪/新华社）</span></li>
+      <li><strong>委内瑞拉遭遇两次强震</strong>：至少188人死亡，造成广泛破坏，搜救仍在进行 <span class="source">（AP News）</span></li>
+      <li>美国最高法院为特朗普政府恢复更严格的庇护寻求者政策扫清道路 <span class="source">（AP News）</span></li>
     </ul>
   </div>
 </div>
 
-<!-- 🏢 利通科技（839167） -->
+<!-- 二、AI与科技前沿 -->
 <div class="section">
-  <div class="section-title gray">🏢 利通科技（839167）动态</div>
+  <div class="section-title orange">💻 二、AI与科技前沿</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🔬 AI大模型</strong>
+    <ul>
+      <li><strong>美国政府要求OpenAI分阶段发布GPT-5.6</strong>：Altman表示美政府对最前沿模型性能日益担忧，要求先向小部分可信合作伙伴发布，再逐步扩大 <span class="source">（36氪/财联社）</span></li>
+      <li><strong>谷歌重组AI编程小组追赶Anthropic</strong>：调整模型训练思路，拓展至生成演示文稿等场景，将临时团队正式固化，布局AI编程从"写代码"到"全办公场景" <span class="source">（36氪/新浪财经）</span></li>
+      <li><strong>企业AI ROI趋于务实</strong>：Uber数个月内用光年度AI预算，部分公司削减Claude许可证，Meta取消内部排行榜——Tokenmaxxing热潮退潮 <span class="source">（TechCrunch）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🔧 算力基建</strong>
+    <ul>
+      <li><strong>台积电N2/A16产能大爆发</strong>：2026-2028年先进工艺产能年复合增速<strong>70%</strong>；CoWoS、SoIC先进封装2022-2027年CAGR超<strong>80%</strong>；全球半导体市场今年预计突破1万亿美元，2030年达1.5万亿美元 <span class="source">（36氪/上证报）</span></li>
+      <li><strong>苹果因内存短缺全球提价</strong>：AI数据中心扩张引发DRAM/NAND空前短缺，Mac/iPad全线涨价<strong>20%</strong>，iPhone暂未调整 <span class="source">（36氪/界面）</span></li>
+      <li><strong>美光科技涨超15%</strong>：芯片股集体上扬，闪迪涨超21%，美光涨超15%，受益于存储芯片景气周期 <span class="source">（36氪）</span></li>
+      <li><strong>铠侠筹备赴美上市</strong>：日本闪存制造商启动承销商甄选，计划2027年春季在美发行ADS <span class="source">（36氪/界面）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#e87020;">🌐 科技巨头动态</strong>
+    <ul>
+      <li><strong>亚马逊追加印度投资130亿美元</strong>：到2030年追加投资用于AI和云基础设施，系在去年公布350亿美元投资计划之上的追加 <span class="source">（36氪/新浪财经）</span></li>
+      <li><strong>中国具身智能市场突破万亿</strong>：2025年约9150亿元，预计2026年达10904亿元，全国相关企业已突破万家 <span class="source">（36氪/央视财经）</span></li>
+      <li><strong>零跑D99上市</strong>：旗舰MPV售价24.98-31.98万元，增程版CLTC纯电续航480km <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、A股·港股·资本市场 -->
+<div class="section">
+  <div class="section-title green">📈 三、A股·港股·资本市场</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">📊 市场风向</strong>
+    <ul>
+      <li><strong>债市全线走强</strong>：资金面紧张情绪缓解，央行稳定跨季流动性信号叠加银行融出规模回升 <span class="source">（36氪/上证报）</span></li>
+      <li>美股科技股分化：芯片股（美光+15%、闪迪+21%）vs 消费电子（苹果-6%）、云巨头（微软-3%、亚马逊-3%） <span class="source">（36氪）</span></li>
+      <li>中概股普跌：阿里巴巴、理想汽车跌超4%，拼多多、百度跌超3% <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#34a853;">🏭 行业动态</strong>
+    <ul>
+      <li><strong>泡泡玛特新品罕见破发</strong>：LABUBU"复古理发店"系列多款跌破发行价超30%，较此前全线加价行情逆转 <span class="source">（36氪/第一财经）</span></li>
+      <li><strong>台积电中国技术论坛</strong>：在上海举办闭门会，HPC+AI占全球半导体需求55%，智能手机占20% <span class="source">（36氪/上证报）</span></li>
+      <li>Polymarket被黑：第三方供应商被入侵，约300万美元用户加密代币被盗，平台承诺退款 <span class="source">（The Verge）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、液冷管赛道情报 -->
+<div class="section">
+  <div class="section-title purple">💧 四、液冷管赛道情报</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#9334e6;">🔋 AI算力驱动液冷需求</strong>
+    <ul>
+      <li><strong>台积电先进封装产能暴增</strong>：CoWoS、SoIC 2022-2027年CAGR超80%，直接拉动液冷散热需求——封装密度提升=散热密度提升 <span class="source">（36氪/上证报）</span></li>
+      <li><strong>全球半导体市场破万亿</strong>：HPC+AI占55%需求，英伟达、AMD等GPU功耗持续攀升，液冷从"可选"变"刚需" <span class="source">（36氪/上证报）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#9334e6;">📦 上游供应链信号</strong>
+    <ul>
+      <li><strong>苹果因内存短缺大涨价</strong>：AI数据中心扩张导致DRAM/NAND空前短缺，说明算力基建投资正在挤压全球存储产能——算力军备竞赛进入资源争夺阶段 <span class="source">（36氪/界面）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#9334e6;">🏭 竞争格局</strong>
+    <ul>
+      <li>目前暂无液冷管赛道竞争企业（英维克、曙光数创、高澜股份等）最新动态披露。AI算力需求持续上行过程中，液冷散热产业链仍处于高景气周期。</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 五、利通科技（839167） -->
+<div class="section">
+  <div class="section-title gray">🏢 五、利通科技（839167）动态</div>
   <ul>
-    <li>北交所暂无利通科技（839167）新公告发布</li>
-    <li><strong>液冷管需求=三大场景共振</strong> — 英伟达Rubin全面液冷（最强背书）+ 具身智能机器人（散热新场景）+ 储能大单（宏英6.64亿）+ 超充桩政策共振</li>
-    <li><strong>扬杰科技涨价验证元器件景气</strong> — MLCC/半导体涨价，电子产业链景气向上，液冷管路作为数据中心关键器件同步受益</li>
+    <li>财联社搜索利通科技未返回最新资讯（非交易时段或无新增报道）</li>
+    <li><strong>行业景气度持续</strong>：从上位行业看，台积电先进封装产能暴增、AI算力投资持续加码，液冷管作为算力基建的"血管"，中长期需求逻辑不变</li>
+    <li><strong>DRAM/NAND短缺传导</strong>：AI数据中心扩张导致全球存储空前短缺，进一步印证算力基建投资高速增长，利好液冷产业链相关标的</li>
   </ul>
+</div>
+
+<!-- 六、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 六、战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 高度关注</strong><br>
+    <strong>1. 美国通胀反复压制降息</strong> — 5月核心PCE 3.4%超预期，美联储降息窗口进一步收窄，全球流动性宽松预期延后，对成长股估值形成压力<br><br>
+    <strong>2. 科技泡沫分化信号</strong> — 美光+15%vs苹果-6%：存储/芯片端受益AI基建，消费电子端受成本冲击，板块内部剧烈分化
+  </div>
+
   <div class="highlight">
-    <strong>🟡 持续关注</strong><br>
-    英伟达Rubin全面液冷最强背书持续发酵；扬杰科技7月1日涨价验证元器件景气；具身智能机器人新场景（正行创新/光轮智能）持续资本化。液冷管路国产替代黄金期，利通科技液冷软管订单突破信号持续关注。
+    <strong>🟡 持续跟踪</strong><br>
+    <strong>1. AI编程工具竞争白热化</strong> — 谷歌重组追赶Anthropic、OpenAI，AI编程从"写代码"向"全办公场景"演进，关注相关赛道投资机会<br><br>
+    <strong>2. 地缘缓和窗口</strong> — 霍尔木兹海峡通航恢复至57%，中东局势边际缓解，关注原油、航运成本回落对产业链的影响<br><br>
+    <strong>3. 液冷产业链爆发</strong> — 台积电CoWoS产能CAGR超80%、全球半导体破万亿，液冷管赛道中长期逻辑持续强化
   </div>
 </div>
 
