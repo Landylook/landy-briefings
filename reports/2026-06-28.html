@@ -3,91 +3,253 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-<title>AI研究员--Landy葉的简报 | 2026年6月28日（周日）</title>
+<title>AI研究员--Landy葉的简报 | 2026年6月28日</title>
 <style>
-  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; color: #222; line-height: 1.8; font-size: 15px; }
-  h1 { font-size: 22px; font-weight: bold; margin-bottom: 6px; color: #111; }
-  .date { color: #888; font-size: 14px; margin-bottom: 28px; border-bottom: 1px solid #eee; padding-bottom: 18px; }
-  .section { margin-bottom: 28px; }
-  .section-title { font-size: 16px; font-weight: bold; color: #111; margin-bottom: 12px; padding-bottom: 6px; border-bottom: 2px solid #222; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
   .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
   .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
   .section-title.green { border-bottom-color: #34a853; color: #34a853; }
   .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
   .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
   .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
-  ul { margin: 0; padding-left: 20px; }
-  li { margin-bottom: 8px; }
-  li strong { font-weight: 600; }
-  .source { color: #888; font-size: 12px; }
-  .highlight { background: #fff8e1; padding: 12px 16px; border-left: 4px solid #f9a825; margin-top: 10px; font-size: 14px; }
-  .warning { background: #fce8e6; padding: 12px 16px; border-left: 4px solid #ea4335; margin-top: 10px; font-size: 14px; }
-  .back-button { display: inline-flex; align-items: center; color: #1a73e8; text-decoration: none; font-size: 14px; font-weight: 500; margin-bottom: 20px; padding: 8px 12px; border-radius: 4px; transition: background-color 0.2s; }
-  .back-button:hover { background-color: #f5f5f5; }
-  .back-button span { margin-right: 6px; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
   @media (max-width: 768px) {
-    body { margin: 20px auto; padding: 16px; font-size: 16px; line-height: 1.9; }
-    h1 { font-size: 20px; } .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
-    .section { margin-bottom: 24px; } .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
-    ul { padding-left: 24px; } li { margin-bottom: 10px; }
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 { font-size: 20px; }
+    .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
+    .section { margin-bottom: 24px; }
+    .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 10px; }
+    table { font-size: 15px; }
+    th, td { padding: 10px 12px; }
     .highlight, .warning { padding: 14px 18px; font-size: 15px; }
     .back-button { font-size: 15px; padding: 10px 14px; margin-bottom: 16px; }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body { max-width: 90%; margin: 30px auto; padding: 24px; }
+    h1 { font-size: 21px; }
+  }
+  @media (max-width: 480px) {
+    body { margin: 12px auto; padding: 12px; font-size: 17px; }
+    h1 { font-size: 19px; }
+    .date { font-size: 14px; }
+    .section-title { font-size: 18px; }
+    table { font-size: 14px; display: block; overflow-x: auto; }
+  }
+  @media (min-width: 1200px) {
+    body { max-width: 900px; }
   }
 </style>
 </head>
 <body>
+
 <div>
-  <a href="/landy-briefings/" class="back-button"><span>←</span> 返回简报列表</a>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
 </div>
 
 <h1>AI研究员--Landy葉的简报</h1>
-<div class="date">2026年6月28日（周日·周末版）</div>
+<div class="date">2026年6月28日（周日）</div>
 
-<!-- 🔴 地缘·宏观 -->
+<!-- 今日速览 -->
 <div class="section">
-  <div class="section-title red">🔴 地缘·宏观</div>
+  <div class="section-title">📊 今日速览</div>
   <ul>
-    <li style="font-weight: bold; color: #d32f2f;">【重磅】SK海力士将第四工厂完工时间从2044年提前至2034年</strong> — 三星与SK海力士新半导体集群规划进入收尾阶段，AI芯片需求"爆发式增长"，SK海力士龙仁集群第四座工厂完工时间提前整整10年！SK海力士+三星合计扩产，HBM/AI芯片产能大战加速 <span class="source">（界面）</span></li>
-    <li><strong>台积电先进制程代工全线涨价5%-10%</strong> — 7nm及以下所有先进制程，涨幅约5%至10%，影响约75%晶圆营收来源。AI芯片成本上涨，液冷散热性价比优势进一步凸显 <span class="source">（财联社）</span></li>
-    <li><strong>融资融券余额首次突破3万亿元</strong> — 截至6月23日，两融余额30009.71亿元，较上日增加59.40亿元。资金跑步入场，A股情绪持续回暖 <span class="source">（证券时报）</span></li>
-    <li><strong>高盛Q2股票交易营收将突破50亿美元创纪录</strong> — 对冲基金强劲需求押注AI及AI基础设施爆发，SpaceX IPO为最大助力 <span class="source">（财联社）</span></li>
-    <li><strong>马来西亚央行加大资金流入促进力度</strong> — 林吉特6月下跌4.30%，亚洲货币承压 <span class="source">（界面）</span></li>
+    <li><strong>美伊局势再度紧张</strong> — 美军周六打击伊朗多个军事目标，称回应伊朗无人机攻击油轮，特朗普警告若不停火将"彻底完成军事任务" <span class="source">（AP News）</span></li>
+    <li><strong>功率半导体涨价潮</strong> — AI算力集群功耗激增驱动，有厂商称"AI相关电源功率订单爆满"，行业加速低端产能出清 <span class="source">（36氪/科创板日报）</span></li>
+    <li><strong>马斯克收购光模块初创Mesh</strong> — FTC批准收购前SpaceX工程师创立的光模块公司，核心产品Alpha C1收发器速率达1.6Tbps，用光信号替代铜缆 <span class="source">（36氪/界面新闻）</span></li>
+    <li><strong>高通计划将数据中心芯片技术引入手机</strong> — 高带宽计算HBC架构采用芯片垂直堆叠，预计2028年商业化，提升端侧AI能力 <span class="source">（36氪）</span></li>
+    <li><strong>A+H上市热潮</strong> — 上半年24家A股公司发行H股，募资超1200亿港元，前十大IPO中A+H企业占8席 <span class="source">（36氪/证券时报）</span></li>
   </ul>
 </div>
 
-<!-- 🤖 AI·算力·数据中心 -->
+<!-- 一、地缘·中东 -->
 <div class="section">
-  <div class="section-title lightblue">🤖 AI·算力·数据中心</div>
+  <div class="section-title lightblue">🌍 一、地缘·中东</div>
+
   <ul>
-    <li style="font-weight: bold; color: #d32f2f;">【超级重磅】SK海力士第四工厂提前10年完工 + 台积电全线涨价</strong> — AI芯片产能大战加速，台积电先进制程涨价传导成本，液冷散热为GPU/TPU算力唯一解决方案，需求侧全面共振</li>
-    <li><strong>英伟达Rubin全面液冷技术</strong> — 全球首个100%全液冷AI平台，液冷管路"唯一选择"教科书级背书</li>
-    <li><strong>高盛Q2股票交易营收将破50亿美元</strong> — 对冲基金押注AI基础设施爆发，液冷GPU算力赛道获华尔街顶级资金认可</li>
-    <li><strong>豆包专业版正式上线</strong> — 豆包2.1系列模型，支持Agent任务+Office+浏览器+Skills，月费68/200/500元三档 <span class="source">（36氪）</span></li>
-    <li><strong>摩根资产管理：锂电或成能源链复苏先头</strong> — 储能已成锂电池需求重要增量，电动重卡放量，锂电需求持续复苏 <span class="source">（财联社）</span></li>
+    <li><strong>美伊停火协议再受冲击</strong> — 美军周六（6月27日）袭击伊朗多处军事目标，包括监控设施、通信系统、防空阵地、无人机仓库和布雷装备。起因是伊朗无人机攻击满载200万桶原油的油轮"Kiku"。美军称伊朗"有机会遵守停火协议"，但"选择了另一条路" <span class="source">（AP News）</span></li>
+    <li><strong>特朗普发出强硬警告</strong> — 在Truth Social发文称打击了伊朗"导弹和无人机存储点及海岸雷达站"，警告"若停火继续被违抗，美军将被迫彻底完成军事任务"，并断言"伊朗伊斯兰共和国将不复存在" <span class="source">（AP News）</span></li>
+    <li><strong>霍尔木兹海峡博弈升级</strong> — 美军领导的多国海事机构宣布扩建阿曼沿海替代航线，允许双向通航，这可能与伊朗设定新的对峙点。伊朗仍视海峡为核心谈判筹码 <span class="source">（AP News）</span></li>
+    <li><strong>委内瑞拉地震</strong> — 地震死亡人数升至1,430人，救援工作仍在进行 <span class="source">（AP News）</span></li>
   </ul>
 </div>
 
-<!-- 🔋 储能·新能源·超充 -->
+<!-- 二、AI·科技 -->
 <div class="section">
-  <div class="section-title green">🔋 储能·新能源·超充</div>
+  <div class="section-title orange">🤖 二、AI·科技</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">⚡ AI基础设施</strong>
+    <ul>
+      <li><strong>功率半导体阶梯式涨价</strong> — AI算力集群功耗激增驱动功率半导体成为新增长引擎。国产厂商表示"AI电源功率订单爆满，根本做不过来"，已进入多家头部客户数据中心800V HVDC及服务器电源供应链。行业加速低端产能出清，份额向IDM全链条能力头部企业集中 <span class="source">（36氪/科创板日报）</span></li>
+      <li><strong>高通HBC架构</strong> — 高通计划将数据中心芯片垂直堆叠技术（高带宽计算架构）引入智能手机，提升端侧AI能力。第一代数据中心产品明年推出，预计2028年商业化供货 <span class="source">（36氪）</span></li>
+      <li><strong>马斯克收购光模块初创Mesh</strong> — FTC批准收购，核心产品Alpha C1光学收发器速率达<b>1.6Tbps</b>，用光信号替代服务器与GPU间铜缆，大幅降低延迟与能耗。创始人为前SpaceX星链激光链路设计师 <span class="source">（36氪/界面新闻）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🤖 具身智能</strong>
+    <ul>
+      <li><strong>北京人形机器人创新中心</strong> — 双大脑模型"天鹕"和"我悟"完成生成式AI服务备案，将分阶段开放API调用能力 <span class="source">（36氪/界面新闻）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#e87020;">🍎 苹果动态</strong>
+    <ul>
+      <li><strong>触屏MacBook Pro</strong> — 马克·古尔曼爆料，触屏MacBook Pro将搭载M5 Pro/Max芯片，今年底或明年初发布，苹果跳过M6 Pro/Max，直接推出M7系列 <span class="source">（36氪/界面新闻）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、A股·港股 -->
+<div class="section">
+  <div class="section-title green">📈 三、A股·港股</div>
+
   <ul>
-    <li><strong>摩根资管：锂电或成能源链复苏先头</strong> — 储能已成为锂电池需求重要增量，上游碳酸锂/电池/供需格局好的材料环节优先关注 <span class="source">（财联社）</span></li>
-    <li><strong>广东超充县县通 + 11部门新能源重卡政策</strong> — 液冷超充桩需求政策支撑不变</li>
-    <li><strong>赣锋锂业储能满产满销</strong> — 588Ah大电芯Q3启动产能爬坡，液冷配套需求确定</li>
+    <li><strong>主力资金大调仓</strong> — 本周（6/22-26）A股震荡，沪指周跌1.55%，科创50逆势大涨<b>6.32%</b>。"易中天"（新易盛、中际旭创、天孚通信）合计被抛售超<b>267亿元</b>，中际旭创净流出137.8亿元居首 <span class="source">（36氪/证券时报）</span></li>
+    <li><strong>A+H上市潮创纪录</strong> — 上半年24家A股公司发行H股，合计募资超<b>1200亿港元</b>创历史新高。前十大港股IPO中A+H企业占八席，领益智造、圣邦股份、芯碁微装为收官之作 <span class="source">（36氪/证券时报）</span></li>
+    <li><strong>章建平减仓江淮汽车</strong> — 超级牛散"章盟主"之妻方文艳9个交易日减持923.5万股，套现约<b>2.9亿元</b> <span class="source">（36氪/证券时报）</span></li>
+    <li><strong>兴业银行上调贵金属保证金</strong> — 黄金TD合约保证金从40%大幅上调至<b>120%</b>，6月29日收盘清算后生效 <span class="source">（36氪/每日经济新闻）</span></li>
+    <li><strong>奔驰利润腰斩</strong> — 2025年净利润从104亿欧元骤降至53亿欧元（<b>-49%</b>），推迟9万名德国员工奖金，并谋求延长工时（35h→40h）不加薪 <span class="source">（36氪/界面新闻）</span></li>
   </ul>
 </div>
 
-<!-- 🏢 利通科技（839167） -->
+<!-- 四、利通科技 -->
 <div class="section">
-  <div class="section-title gray">🏢 利通科技（839167）动态</div>
+  <div class="section-title gray">🏢 四、利通科技（839167）动态</div>
   <ul>
-    <li>北交所暂无利通科技（839167）新公告发布</li>
-    <li style="font-weight: bold; color: #1a73e8;">【超级重磅】SK海力士第四工厂提前10年 + 台积电全线涨价</strong> — AI芯片产能大战加速，台积电涨价传导芯片成本上升，液冷散热性价比优势凸显。液冷管路是GPU算力的唯一散热方案，需求确定性达100%</li>
-    <li><strong>液冷管四大需求驱动</strong> — （1）英伟达Rubin 100%液冷；（2）SK海力士/三星AI芯片扩产加速；（3）台积电涨价芯片成本上升→液冷散热性价比凸显；（4）两融余额突破3万亿→资金面宽松</li>
+    <li><strong>液冷管赛道持续受益</strong> — 功率半导体涨价潮验证AI算力基建高景气度。AI电源订单"爆满"意味着数据中心建设需求旺盛，液冷管路作为算力基础设施"血管"配套需求同步提升 <span class="source">（行业逻辑推演）</span></li>
+    <li><strong>光进铜退趋势加速</strong> — 马斯克收购的Mesh公司以光信号替代铜缆（1.6Tbps），全球数据中心互联向光互联演进，液冷管路与光模块构成数据中心"冷+光"两条升级主线，均为利通科技所在的管路/连接器方向的利好 <span class="source">（行业趋势研判）</span></li>
+    <li><strong>A+H上市潮提振北交所关注度</strong> — 上半年24家A股转H股创纪录，北交所优质标的（如利通科技）在跨境资本流动大背景下估值重估潜力上升 <span class="source">（市场逻辑推演）</span></li>
+    <li>注：今日无利通科技直接相关公告。财联社搜索"利通科技"无结果。</li>
   </ul>
+
   <div class="highlight">
-    <strong>🔥 液冷管赛道超级催化剂</strong><br>
-    SK海力士第四工厂提前10年完工（2044→2034）+ 台积电先进制程全线涨价5%-10%。全球AI芯片产能大战已爆发，液冷散热是GPU/TPU算力的唯一选择。液冷管路需求确定性100%，利通科技（839167）作为液冷软管核心供应商，持续关注订单突破信号。
+    <strong>🟡 本周关注</strong><br>
+    功率半导体涨价潮是AI算力景气度的先行指标。液冷管路作为数据中心温控"刚需"，随新建智算中心液冷渗透率政策驱动（工信部要求100%），利通科技所在赛道的β属性将持续增强。
+  </div>
+</div>
+
+<!-- 战略预警 -->
+<div class="section">
+  <div class="section-title darkblue">📌 五、战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 高度关注</strong><br>
+    <b>美伊局势骤然升级</b> — 美军连续两日打击伊朗目标，停火协议面临崩溃风险。霍尔木兹海峡若完全封锁将冲击全球能源供应链，油价可能大幅飙升。关注对利通科技下游客户（数据中心、储能）成本端的传导效应。
+  </div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    <b>AI算力基建链景气确认</b> — 功率半导体厂商订单爆满、光模块1.6Tbps产品突破、高通HBC架构入局，均指向AI算力需求持续超预期。液冷管作为算力基建"卖铲人"，关注度不应局限于单一标的，产业链整体受益逻辑值得反复验证。
   </div>
 </div>
 
