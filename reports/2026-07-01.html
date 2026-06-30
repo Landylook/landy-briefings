@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年7月1日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  /* 响应式设计 - 手机端 */
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 {
+      font-size: 20px;
+    }
+    .date {
+      font-size: 15px;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+    }
+    .section {
+      margin-bottom: 24px;
+    }
+    .section-title {
+      font-size: 17px;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+    }
+    ul {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    table {
+      font-size: 15px;
+    }
+    th, td {
+      padding: 10px 12px;
+    }
+    .highlight, .warning {
+      padding: 14px 18px;
+      font-size: 15px;
+    }
+    .back-button {
+      font-size: 15px;
+      padding: 10px 14px;
+      margin-bottom: 16px;
+    }
+  }
+
+  /* 响应式设计 - 平板端 */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body {
+      max-width: 90%;
+      margin: 30px auto;
+      padding: 24px;
+    }
+    h1 {
+      font-size: 21px;
+    }
+  }
+
+  /* 响应式设计 - 小屏幕手机 */
+  @media (max-width: 480px) {
+    body {
+      margin: 12px auto;
+      padding: 12px;
+      font-size: 17px;
+    }
+    h1 {
+      font-size: 19px;
+    }
+    .date {
+      font-size: 14px;
+    }
+    .section-title {
+      font-size: 18px;
+    }
+    table {
+      font-size: 14px;
+      display: block;
+      overflow-x: auto;
+    }
+  }
+
+  /* 响应式设计 - 大屏幕电脑 */
+  @media (min-width: 1200px) {
+    body {
+      max-width: 900px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年7月1日 周三 · 农历五月十七</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>美伊局势趋缓</strong> — 美国特使抵卡塔尔就霍尔木兹海峡问题展开间接谈判 <span class="source">（AP News）</span></li>
+    <li><strong>美股全线收涨</strong> — 纳指涨1.52%，科技股走强，英伟达、特斯拉涨超2% <span class="source">（36氪）</span></li>
+    <li><strong>AI竞赛白热化</strong> — Anthropic推出Claude Science科研工作台，谷歌发布全新多模态AI创作工具 <span class="source">（36氪/新浪财经）</span></li>
+    <li><strong>美联储加息预期升温</strong> — 7月维持利率不变概率降至66.3%，交易员加码空头押注 <span class="source">（36氪/财联社）</span></li>
+    <li><strong>宝马投17亿美元</strong> — 美国工厂纯电改造完成，iX5 SUV年内在美投产 <span class="source">（36氪/新浪财经）</span></li>
+  </ul>
+</div>
+
+<!-- 一、地缘·中东 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 一、地缘·中东</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">🌍 美伊局势</strong>
+    <ul>
+      <li><strong>美特使抵卡塔尔斡旋</strong> — 美国中东特使Steve Witkoff与Jared Kushner抵达卡塔尔首都多哈，就霍尔木兹海峡航运问题与调解方展开间接谈判。双方不进行直接对话，由卡塔尔方面担任中间人。此前周末波斯湾发生交火，美伊关系紧张。（AP News）</li>
+      <li><strong>霍尔木兹海峡危机</strong> — 伊朗与美国的冲突焦点集中在全球最重要的石油运输通道霍尔木兹海峡。此前美方试图重新开放海峡航运通道，引发周末交火。（AP News）</li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">🌊 欧洲及其他</strong>
+    <ul>
+      <li><strong>摩纳哥爆炸案</strong> — 摩纳哥发生爆炸事件，一名与俄罗斯有联系的乌克兰大亨受伤。（AP News）</li>
+      <li><strong>全球诈骗调查</strong> — AP揭露全球诈骗团伙利用美国科技四天内让受害者"坠入爱河"的新型AI诈骗手段。（AP News）</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 二、AI·科技 -->
+<div class="section">
+  <div class="section-title orange">💡 二、AI·科技</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🤖 AI大模型动态</strong>
+    <ul>
+      <li><strong>谷歌发布全新AI创作工具</strong> — 推出Gemini 3.5 Flash模型，输出速度是其他前沿模型的4倍；同时发布Gemini <strong>Omni</strong>多模态模型，支持对话式视频编辑，用户口述需求即可自动修改视频内容；所有Omni生成视频嵌入不可见SynthID水印。（新浪财经）</li>
+      <li><strong>Anthropic推出Claude Science</strong> — 面向科学家的AI工作台，整合分散科研工具至统一环境。AI代理端到端运行分析，配备专门审核代理检查引文和计算结果，为冲刺IPO前的关键商业动作。（36氪/新浪财经）</li>
+      <li><strong>AI助力RNA药物研发</strong> — 弗吉尼亚理工大学团队开发"RNAbpFlow"AI模型，在预测RNA三维结构方面媲美AlphaFold 3，无需依赖海量进化数据库，有望加速RNA靶向药物研发。（36氪/科技日报）</li>
+      <li><strong>谷歌推出Stitch设计工具</strong> — 通过自然语言对话即可生成UI原型，支持一键导出至Figma或HTML/CSS代码。（新浪财经）</li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🖥️ 全球科技</strong>
+    <ul>
+      <li><strong>英国拟强制苹果谷歌开放支付</strong> — 英国CMA启动公开咨询，拟强制苹果和谷歌允许开发者引导用户使用外部支付渠道，降低"苹果税"和"谷歌税"。（36氪/新浪财经）</li>
+      <li><strong>美光科技投资2.5亿美元</strong> — 向特朗普530A账户投资，支持儿童和家庭项目，覆盖7个州。（36氪/新浪财经）</li>
+      <li><strong>"Weird Al"拒AI代言</strong> — 知名歌手拒绝对AI商业软件代言，称"不想成为AI的代言人"。（The Verge）</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、A股·港股 -->
+<div class="section">
+  <div class="section-title green">📈 三、A股·港股</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🇺🇸 隔夜美股</strong>
+    <ul>
+      <li><strong>三大指数集体收涨</strong> — 纳指涨<strong>1.52%</strong>，道指涨<strong>0.26%</strong>，标普涨<strong>0.79%</strong>。大型科技股：英特尔涨超6%，SpaceX涨超4%，苹果、英伟达、特斯拉涨超2%，微软、谷歌涨超1%；奈飞跌超3%。（36氪）</li>
+      <li><strong>中概股涨跌互现</strong> — 小鹏集团涨超3%，爱奇艺、蔚来涨超2%，百度、B站涨超1%；富途控股跌超3%，老虎证券跌超2%，理想汽车、腾讯音乐跌超1%。（36氪）</li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🏛️ 美联储动向</strong>
+    <ul>
+      <li><strong>7月加息概率抬头</strong> — 据CME「美联储观察」，7月维持利率不变概率<strong>66.3%</strong>，加息25bp概率<strong>33.7%</strong>；到9月加息25bp概率大幅升至<strong>50%</strong>。交易员正大举加码联邦基金利率期货空头头寸。（36氪/财联社）</li>
+      <li><strong>新主席沃什转向偏鹰</strong> — 在新任美联储主席凯文·沃什将重点转向物价稳定后，市场加息预期明显升温。（36氪/财联社）</li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#34a853;">📋 A股重要公告</strong>
+    <ul>
+      <li><strong>中微公司（688012）</strong> — 拟出资不超<strong>14.7亿元</strong>参与设立半导体私募基金，总规模30亿元，聚焦半导体、泛半导体和战略新兴领域。（36氪）</li>
+      <li><strong>兴齐眼药</strong> — 控股股东提议<strong>8000万至1亿元</strong>回购股份用于注销并减少注册资本。（36氪）</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、利通科技（839167） -->
+<div class="section">
+  <div class="section-title gray">🏢 四、利通科技（839167）动态</div>
+
+  <div class="highlight">
+    <strong>💧 液冷管赛道背景</strong><br>
+    英伟达下一代GPU架构Rubin功耗预计达<strong>1800W+</strong>，芯片功耗持续攀升推动液冷从"可选"变为"强制"。数据中心/智算中心液冷渗透率加速提升，工信部要求新建智算中心液冷渗透率100%。利通科技作为北交所液冷管核心标的（839167），是A股稀缺的液冷管路供应商。
+  </div>
+
+  <ul>
+    <li><strong>赛道热度不减</strong> — 全球芯片巨头持续加大AI算力投入，液冷散热需求确定性增强。美光科技宣布投资2.5亿美元支持特朗普530A账户，其存储芯片扩产也将带动液冷需求。（36氪）</li>
+    <li><strong>英伟达产业链催化</strong> — 美股科技股持续走强，英伟达涨超2%。H100→Rubin架构迭代加速，液冷管路配套从"选配"变"标配"的逻辑持续强化。（36氪）</li>
+    <li><strong>大盘流动性</strong> — 北交所市场流动性变化值得关注。如市场整体风险偏好提升，中小市值标的将受益于资金外溢效应。（财联社）</li>
+  </ul>
+
+  <p style="margin-top:12px; font-size:14px; color:#888;">⚠️ 今日利通科技未发布重大公告，暂无新增专项资讯。以上为赛道逻辑持续跟踪。</p>
+</div>
+
+<!-- 五、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 五、战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 高度关注</strong><br>
+    <strong>1. 美伊霍尔木兹海峡局势</strong> — 美特使赴卡塔尔谈判结果将在未来几天揭晓。若谈判破裂，油价飙升将冲击全球通胀预期，进而影响美联储加息路径和A股风险偏好。<br>
+    <strong>2. 美联储加息节奏反转</strong> — 市场加息预期快速升温，9月加息25bp概率已升至50%。若7月或9月意外加息，将引发全球资产重定价。
+  </div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    <strong>1. 英伟达Rubin架构量产时间表</strong> — 下一代GPU功耗1800W+，液冷管路需求确定性大增，利通科技作为国产液冷管路龙头将持续受益。<br>
+    <strong>2. 宝马17亿美元美国工厂投产</strong> — 年内iX5 SUV下线，到2030年在美国组装至少6款纯电动车型。新能源汽车液冷需求持续放量。<br>
+    <strong>3. 英国CMA对苹果谷歌支付限制</strong> — 若通过，将改变全球应用生态格局，降低开发者费用，影响科技巨头收入构成。
+  </div>
+</div>
+
+</body>
+</html>
