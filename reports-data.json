@@ -1,9 +1,55 @@
 [
   {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
+  {
+<<<<<<< Updated upstream
     "date": "2026-07-01",
+=======
+    "date": "2026-05-08",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "<strong>美伊霍尔木兹冲突升级 <strong>A股总市值突破120万亿�<strong>A股AI产业链爆发",
+    "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },"ai", "stock", "energy"],
+    "file": "reports/2026-05-08.html"
+  },
+  {
+    "date": "2026-05-06",
+>>>>>>> Stashed changes
     "title": "AI研究员--Landy葉的简报",
     "desc": "美伊局势趋缓 · 美股全线收涨 · AI竞赛白热化",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
+  {
+    "date": "2026-05-08",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "<strong>美伊霍尔木兹冲突升级 <strong>A股总市值突破120万亿�<strong>A股AI产业链爆发",
+    "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },"ai", "stock", "energy"],
+    "file": "reports/2026-05-08.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -11,13 +57,109 @@
     "file": "reports/2026-07-01.html"
   },
   {
+<<<<<<< Updated upstream
     "date": "2026-06-28",
-    "title": "AI研究员--Landy葉的简报",
-    "desc": "台积电先进制程代工全线涨价5%-10% · 融资融券余额首次突破3万亿元 · 高盛Q2股票交易营收将突破50亿美元创纪录",
+=======
+    "date": "2026-05-05",
+    "title": "AI研究员简报",
+    "desc": "中东局势缓和，油价回落至104美元",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
+  {
+    "date": "2026-05-08",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "<strong>美伊霍尔木兹冲突升级 <strong>A股总市值突破120万亿�<strong>A股AI产业链爆发",
+    "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },"ai", "stock", "energy"],
+    "file": "reports/2026-05-08.html"
+  },
       "ai",
       "stock",
       "energy"
+    ],
+    "file": "reports/2026-05-05.html"
+  },
+  {
+    "date": "2026-05-04",
+    "title": "AI研究员简报",
+    "desc": "伊美冲突升级可能性大，伊朗批准霍尔木兹海峡管理法",
+    "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
+  {
+    "date": "2026-05-08",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "<strong>美伊霍尔木兹冲突升级 <strong>A股总市值突破120万亿�<strong>A股AI产业链爆发",
+    "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },"ai", "stock", "energy"],
+    "file": "reports/2026-05-08.html"
+  },
+      "ai",
+      "stock",
+      "energy"
+    ],
+    "file": "reports/2026-05-04.html"
+  },
+  {
+    "date": "2026-05-03",
+>>>>>>> Stashed changes
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "台积电先进制程代工全线涨价5%-10% · 融资融券余额首次突破3万亿元 · 高盛Q2股票交易营收将突破50亿美元创纪录",
+    "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
+<<<<<<< Updated upstream
+      "ai",
+      "stock",
+      "energy"
+=======
+  {
+    "date": "2026-05-08",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "<strong>美伊霍尔木兹冲突升级 <strong>A股总市值突破120万亿�<strong>A股AI产业链爆发",
+    "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },"ai", "stock", "energy"],
+    "file": "reports/2026-05-08.html"
+  },
+      "液冷",
+      "AI算力",
+      "储能",
+      "超充"
+>>>>>>> Stashed changes
     ],
     "file": "reports/2026-06-28.html"
   },
@@ -26,6 +168,27 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "字节中兴豆包AI手机发布时间或延迟 · 马斯克亿元薪酬强势回归 · SpaceX股价暴跌不改液冷赛道基本面",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
+  {
+    "date": "2026-05-08",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "<strong>美伊霍尔木兹冲突升级 <strong>A股总市值突破120万亿�<strong>A股AI产业链爆发",
+    "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },"ai", "stock", "energy"],
+    "file": "reports/2026-05-08.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -33,10 +196,67 @@
     "file": "reports/2026-06-27.html"
   },
   {
+<<<<<<< Updated upstream
     "date": "2026-06-26",
+=======
+    "date": "2026-05-01",
+    "title": "AI研究员简报",
+    "desc": "WTI原油暴涨至106.88美元，布伦特突破118美元",
+    "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
+  {
+    "date": "2026-05-08",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "<strong>美伊霍尔木兹冲突升级 <strong>A股总市值突破120万亿�<strong>A股AI产业链爆发",
+    "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },"ai", "stock", "energy"],
+    "file": "reports/2026-05-08.html"
+  },
+      "ai",
+      "stock",
+      "energy"
+    ],
+    "file": "reports/2026-05-01.html"
+  },
+  {
+    "date": "2026-04-30",
+>>>>>>> Stashed changes
     "title": "AI研究员--Landy葉的简报",
     "desc": "豆包发布2.1 Pro模型 · 扬杰科技全系列产品价格上调10%-15%，7月1日执行 · 正行创新获近亿美元天使轮",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
+  {
+    "date": "2026-05-08",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "<strong>美伊霍尔木兹冲突升级 <strong>A股总市值突破120万亿�<strong>A股AI产业链爆发",
+    "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },"ai", "stock", "energy"],
+    "file": "reports/2026-05-08.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -48,6 +268,27 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "SpaceX首次发行优先无担保票据 · 高盛：对冲基金五周来首次净卖出全球股票 · 多家银行收紧黄金白银杠杆交易",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
+  {
+    "date": "2026-05-08",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "<strong>美伊霍尔木兹冲突升级 <strong>A股总市值突破120万亿�<strong>A股AI产业链爆发",
+    "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },"ai", "stock", "energy"],
+    "file": "reports/2026-05-08.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -55,10 +296,163 @@
     "file": "reports/2026-06-25.html"
   },
   {
+<<<<<<< Updated upstream
     "date": "2026-06-24",
+=======
+    "date": "2026-04-28",
+    "title": "今日简报",
+    "desc": "最新AI、液冷、资本市场动态",
+    "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
+  {
+    "date": "2026-05-08",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "<strong>美伊霍尔木兹冲突升级 <strong>A股总市值突破120万亿�<strong>A股AI产业链爆发",
+    "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },"ai", "stock", "energy"],
+    "file": "reports/2026-05-08.html"
+  },
+      "ai",
+      "stock",
+      "energy"
+    ],
+    "file": "reports/2026-04-28.html"
+  },
+  {
+    "date": "2026-04-27",
+    "title": "AI研究员简报",
+    "desc": "WTI原油突破100美元",
+    "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
+  {
+    "date": "2026-05-08",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "<strong>美伊霍尔木兹冲突升级 <strong>A股总市值突破120万亿�<strong>A股AI产业链爆发",
+    "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },"ai", "stock", "energy"],
+    "file": "reports/2026-05-08.html"
+  },
+      "ai",
+      "stock",
+      "energy"
+    ],
+    "file": "reports/2026-04-27.html"
+  },
+  {
+    "date": "2026-04-26",
+    "title": "AI研究员简报",
+    "desc": "白宫记者晚宴枪击事件",
+    "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
+  {
+    "date": "2026-05-08",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "<strong>美伊霍尔木兹冲突升级 <strong>A股总市值突破120万亿�<strong>A股AI产业链爆发",
+    "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },"ai", "stock", "energy"],
+    "file": "reports/2026-05-08.html"
+  },
+      "ai",
+      "stock",
+      "energy"
+    ],
+    "file": "reports/2026-04-26.html"
+  },
+  {
+    "date": "2026-04-25",
+    "title": "AI研究员简报",
+    "desc": "伊朗提出三阶段谈判方案",
+    "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
+  {
+    "date": "2026-05-08",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "<strong>美伊霍尔木兹冲突升级 <strong>A股总市值突破120万亿�<strong>A股AI产业链爆发",
+    "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },"ai", "stock", "energy"],
+    "file": "reports/2026-05-08.html"
+  },
+      "ai",
+      "stock",
+      "energy"
+    ],
+    "file": "reports/2026-04-25.html"
+  },
+  {
+    "date": "2026-04-24",
+>>>>>>> Stashed changes
     "title": "AI研究员--Landy葉的简报",
     "desc": "4只商业不动产REITs获批 · 端午节国内出游1.24亿人次，同比+4.4% · 华为乾崑智驾7月1日起调价",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
+  {
+    "date": "2026-05-08",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "<strong>美伊霍尔木兹冲突升级 <strong>A股总市值突破120万亿�<strong>A股AI产业链爆发",
+    "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },"ai", "stock", "energy"],
+    "file": "reports/2026-05-08.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -70,6 +464,27 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "李强总理出席夏季达沃斯论坛（6/23-24，大连） · 英国央行发布稳定币监管框架 · 商务部：前5个月近4000家外资企业追加在华投资",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
+  {
+    "date": "2026-05-08",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "<strong>美伊霍尔木兹冲突升级 <strong>A股总市值突破120万亿�<strong>A股AI产业链爆发",
+    "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },"ai", "stock", "energy"],
+    "file": "reports/2026-05-08.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -81,6 +496,27 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "德意志银行上调美国通胀预期：预计美联储2026年合计加息50bp至4.1% · SpaceX被MSCI打最低ESG评级\"CCC\" · 高盛下调黄金目标价至4900美元/盎司",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
+  {
+    "date": "2026-05-08",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "<strong>美伊霍尔木兹冲突升级 <strong>A股总市值突破120万亿�<strong>A股AI产业链爆发",
+    "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },"ai", "stock", "energy"],
+    "file": "reports/2026-05-08.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -92,6 +528,27 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "挪威宣布禁止小学生使用生成式AI · 英国拟强制Meta/YouTube推送本地新闻 · 金饰克价年内大跌近450元",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
+  {
+    "date": "2026-05-08",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "<strong>美伊霍尔木兹冲突升级 <strong>A股总市值突破120万亿�<strong>A股AI产业链爆发",
+    "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },"ai", "stock", "energy"],
+    "file": "reports/2026-05-08.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -103,6 +560,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "金融监管总局：鼓励大型金融机构向中小机构输出算力服务 · 兆易创新澄清股价异动 · Robo.ai拟6000万美元收购QC Capital",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -114,6 +578,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "商务部等8部门：加快\"人工智能+消费\"发展，17项举措 · 国家能源局：5月全社会用电量同比增长6.9% · 央行：Q1金融业机构总资产556.34万亿元，同比+8.8%",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -125,6 +596,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "陆家嘴论坛：陈茂波推动\"产业在上海，境外财资在香港\" · 联想拟择机回购股份 · 千方科技拟1-2亿元回购股份",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -136,6 +614,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "8家车企资质冻结系谣言 · 字节跳动加量采购国产AI芯片 · 微软考虑接入深度求索V4模型",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -147,6 +632,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "美股科技股盘前普涨 · 理想汽车盘前涨超5% · 汇丰策略师Kettner：股市无需催化剂即可持续上涨",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -158,6 +650,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "中国外贸前5月增长15.3% · OpenAI考虑大幅下调API价格 · 多只汽车股创十余年新低",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -169,6 +668,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "南向资金净买入82.43亿港元 · 信立泰：招商银行提供不超4.5亿元股票回购专项贷款 · 常铝股份筹划控制权变更",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -180,6 +686,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "贝莱德推出太空ETF（代码STAR） · 英国CMA正式启动派拉蒙收购华纳兄弟探索合并审查 · CoreWeave高管上市以来套现超23亿美元",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -191,6 +704,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "亚马逊与康宁达成数十亿美元协议 · 日本证监会建议处罚富途旗下moomoo证券 · 电子元器件缺货涨价潮蔓延",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -202,6 +722,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "AI流量首超人类互联网流量 · 黄仁勋访韩会见KRAFTON和NCSOFT · 沪市密集分红潮",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -213,6 +740,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "Arm盘前涨超10% · 霍尼韦尔业务分拆 · 上海推进新型工业化",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -224,6 +758,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "要闻1 · 要闻2 · 要闻3",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -235,6 +776,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "深圳楼市新政满月成效显著 · 苏州工业增长强劲 · 6月5日起国内航线燃油附加费下调",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -246,6 +794,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "神二十一乘组凯旋 · 丁向群任国家金融监督管理总局党委书记 · 四部门联合公布新规",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -257,6 +812,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "伦敦金失守4400美元 · 韩国释放民间石油储备 · 熊猫债年内发行突破1200亿",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -268,6 +830,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "迈威尔科技CEO：数据中心业务+50%，互连+70% · 美光科技两日连涨29% · WTI原油6%暴跌至约$88",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -279,6 +848,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "美光科技暴涨19% · SpaceX获22.9亿美元订单 · 软银机器人Roze启动美股IPO",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -290,6 +866,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "OpenAI Q1营收57亿美元 · Anthropic年化营收接近450亿美元 · SpaceX宣布10GW太阳能工厂",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -301,6 +884,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "英伟达Q1营收816亿美元 · OpenAI筹备$1万亿估值IPO · 三星今日起大罢工",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -312,6 +902,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "伊朗局势信号矛盾 · 普京抵达北京 · 利率互换市场显示",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -323,6 +920,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "特朗普推迟对伊朗军事打击 · 特朗普：不考虑向德黑兰让步 · 普京将于5月19-20日访华",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -334,6 +938,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "特朗普：仍相信伊朗有意达成协议 · 金正恩：加强守卫南部边境，把边界筑成坚不可摧要塞 · 沙特拦截3架伊拉克方向无人机",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -345,6 +956,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "SpaceX IPO关键催化 · 中信证券确认AI+能化为全年主线 · 国轩高科固态电池400Wh/kg",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -356,6 +974,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "SpaceX IPO确认 · 以色列准备重启对伊朗军事行动 · WTI原油本周暴涨10.48%",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -367,6 +992,13 @@
     "title": "AI研究员--Landy陸葉的简报",
     "desc": "霍尔木兹海峡封锁冲击全球能源 · 英伟达 Rubin 架构强制液冷 · 机器人半马在北京举办",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -378,6 +1010,27 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "阿里AI视频模型HappyHorse将于4月27日开放测试 · 国际能源署：2025年数据中心电力需求增长17%，电动汽车增长38% · 沪深两市成交额连续第9个交易日突破2万亿",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
+  {
+    "date": "2026-05-08",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "<strong>美伊霍尔木兹冲突升级 <strong>A股总市值突破120万亿�<strong>A股AI产业链爆发",
+    "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },"ai", "stock", "energy"],
+    "file": "reports/2026-05-08.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -389,6 +1042,27 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "金富科技液冷产能扩张 · 广东加大算电协同投资 · 中东局势推高油价",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
+  {
+    "date": "2026-05-08",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "<strong>美伊霍尔木兹冲突升级 <strong>A股总市值突破120万亿�<strong>A股AI产业链爆发",
+    "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },"ai", "stock", "energy"],
+    "file": "reports/2026-05-08.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -400,6 +1074,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "宁德时代发布第三代神行超充电池 · 宁德时代钠离子电池年内大规模量产 · 我国软件产业规模有望突破20万亿元大关",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -411,6 +1092,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "要闻1 · 要闻2 · 要闻3",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -422,6 +1110,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "DeepSeek发布V4接口文档 · 霍尔木兹海峡局势急剧升温 · 德州仪器Q2指引大超预期",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -433,6 +1128,13 @@
     "title": "AI研究员简报",
     "desc": "DeepSeek-V4-Pro API限时2.5折优惠 · 百度智能云上线DeepSeek-V4 · 元戎启行全面转向大模型自动驾驶路线",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -444,6 +1146,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "AI算力需求持续爆发 · DeepSeek-V4预览版正式开源 · 亚洲首个百万方级盐穴储氢工程投产",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -455,6 +1164,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "Anthropic Claude Mythos发现2000+零日漏洞引发全球关注 · 液冷技术成为2026年AI数据中心标配 · 液冷市场规模快速扩张",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -466,6 +1182,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "美国指控DeepSeek等中国AI公司窃取知识产权 · OpenAI发布GPT-Rosalind科研模型 · Anthropic Claude Mythos锁定50家公司防火墙",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -477,6 +1200,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "A股放量反弹 · 锂电产业链爆发+算力租赁活跃 · 韩国今年提供530亿韩元支持AI工厂项目",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -488,6 +1218,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "科技巨头财报夜： · Anthropic估值冲击9000亿美元： · 美联储连续第三次维持利率不变：",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -499,6 +1236,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "中东局势急剧升级 · AI巨头季报强劲 · 英伟达跌超4%",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -510,6 +1254,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "美银预测2027年全球云计算AI资本开支将达1万亿美元 · 美股总市值首次突破75万亿美元 · 存储概念股强势连涨五周",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -521,6 +1272,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "要闻1 · 要闻2 · 要闻3",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -532,6 +1290,13 @@
     "title": "AI研究员简报",
     "desc": "特朗普：将于中东启动行动引导被困船只驶离霍尔木兹海峡 · 特朗普称伊朗\"新提议\"不可接受 · WTI原油期货跌2.75%，报102.18美元/桶",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -543,6 +1308,13 @@
     "title": "AI研究员简报",
     "desc": "阿联酋宣布拦截伊朗12枚弹道导弹+3枚巡航导弹+4架无人机 · 伊朗官员：霍尔木兹海峡目前完全处于伊朗管控之下 · 迪拜国际机场3月客运量同比锐减66%",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -554,6 +1326,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "AMD Q1数据中心营收58亿美元 · 韩国KOSPI涨5% · 黄金突破4580美元/盎司",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -565,6 +1344,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "国际油价暴跌超12% · DeepSeek首轮融资估值450亿美元 · Kimi半年内融资超39亿美元",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -576,6 +1362,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "美伊霍尔木兹冲突升级 · A股总市值突破120万亿 · A股AI产业链爆发",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -587,6 +1380,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "美伊冲突再升级 · 美银大幅修正预期 · 汽车出口爆发",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -598,6 +1398,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "霍尔木兹冲突全面升级 · 港股IPO爆发 · 英伟达今年股权投资超400亿美元",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -609,6 +1416,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "尿素危机冲击美国弹药生产 · 国务院立法计划：加快AI健康发展综合性立法 · 4月法拍房挂拍27.2万套",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -620,6 +1434,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "快手可灵AI分拆融资 · 存储芯片15年来最严重短缺 · 碳酸锂突破20万元/吨",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -631,6 +1452,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "A股低开高走 · 存储芯片概念反弹 · 生益科技、大族激光涨停",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -642,6 +1470,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "第2届冷却液与液冷技术论坛 · Cerebras AI芯片IPO定价185美元/股 · 中信证券：算力期货年内落地",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
@@ -653,6 +1488,13 @@
     "title": "AI研究员--Landy葉的简报",
     "desc": "SpaceX IPO招股说明书最快可能于下周发布 · 道指三个月来首次收于50000点上方 · 英伟达七连涨",
     "tags": [
+  {
+    "date": "2026-07-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美股分化 · 美联储通胀立场 · 英伟达核能数据中心",
+    "tags": ["ai", "stock", "energy"],
+    "file": "reports/2026-07-02.html"
+  },
       "ai",
       "stock",
       "energy"
