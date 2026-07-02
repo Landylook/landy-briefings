@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年7月3日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  @media (max-width: 768px) {
+    body { margin: 20px auto; padding: 16px; font-size: 16px; line-height: 1.9; }
+    h1 { font-size: 20px; }
+    .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
+    .section { margin-bottom: 24px; }
+    .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 10px; }
+    table { font-size: 15px; }
+    th, td { padding: 10px 12px; }
+    .highlight, .warning { padding: 14px 18px; font-size: 15px; }
+    .back-button { font-size: 15px; padding: 10px 14px; margin-bottom: 16px; }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body { max-width: 90%; margin: 30px auto; padding: 24px; }
+    h1 { font-size: 21px; }
+  }
+  @media (max-width: 480px) {
+    body { margin: 12px auto; padding: 12px; font-size: 17px; }
+    h1 { font-size: 19px; }
+    .date { font-size: 14px; }
+    .section-title { font-size: 18px; }
+    table { font-size: 14px; display: block; overflow-x: auto; }
+  }
+  @media (min-width: 1200px) {
+    body { max-width: 900px; }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年7月3日 星期五</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>微软豪掷25亿美元组建6000人AI部署团队</strong> — 新设部门"Microsoft Frontier Company"将直接派驻客户企业部署AI技术 <span class="source">（36氪/新浪财经）</span></li>
+    <li><strong>数据中心创企Crusoe洽谈融资30亿美元</strong> — 估值或从100亿美元提高两倍至300亿美元 <span class="source">（36氪/新浪财经）</span></li>
+    <li><strong>亚马逊柯伊伯计划更名"Amazon Leo"</strong> — 在轨卫星已超390颗，今年启动卫星互联网服务 <span class="source">（36氪/新浪财经）</span></li>
+    <li><strong>黑石基金5月创最强单月表现</strong> — 得益于对Anthropic的投资，年内涨幅达11.4% <span class="source">（36氪/新浪财经）</span></li>
+    <li><strong>央企新能源上网电量纳入市场化运作</strong> — 发改委宣布全覆盖，电价市场化改革提速 <span class="source">（财联社）</span></li>
+  </ul>
+</div>
+
+<!-- 一、大势研判 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 一、大势研判</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">📈 宏观经济</strong>
+    <ul>
+      <li><strong>美联储7月维持利率不变概率82.4%</strong>，9月维持不变概率46.8%，加息25bp概率45.6% <span class="source">（36氪/界面）</span></li>
+      <li><strong>欧洲央行行长拉加德</strong>称6月加息是正确的决定，供应冲击影响仍持续扩散 <span class="source">（36氪/新浪财经）</span></li>
+      <li><strong>黄金市场深度回调</strong>，机构认为四季度或迎估值修复窗口，需摒弃短线投机思维 <span class="source">（36氪/证券时报）</span></li>
+      <li><strong>超百家上市公司补税近百亿元</strong>，自查自纠成主流处置方式，覆盖农业、钢铁、医药等行业 <span class="source">（证券时报/36氪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">⚡ A股动态</strong>
+    <ul>
+      <li><strong>上半年13家公司摘牌</strong>，ST股扩容至224只同比增长23.8%，优胜劣汰机制深化 <span class="source">（中证网/36氪）</span></li>
+      <li><strong>美国三大蛋企涉价格操纵</strong>，同意支付330万美元并捐赠5300万枚鸡蛋和解 <span class="source">（36氪/新浪财经）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 二、液冷管赛道情报 -->
+<div class="section">
+  <div class="section-title orange">💧 二、液冷管赛道情报</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🔬 技术路线</strong>
+    <ul>
+      <li><strong>英伟达Blackwell Ultra芯片功耗或超1500W</strong>，液冷从"可选项"加速转变为"必选项"，冷板液冷与浸没式液冷并行发展 <span class="source">（行业资讯）</span></li>
+      <li><strong>冷板式液冷仍是当前主流方案</strong>，液冷管路（不锈钢波纹管/橡胶复合管）作为关键零部件，国产化替代进程加速 <span class="source">（行业资讯）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🏭 竞争格局</strong>
+    <ul>
+      <li><strong>微软投25亿美元组建AI部署团队</strong>，6000人团队直接服务企业客户，侧面印证AI算力需求爆发式增长，液冷基础设施需求同步升 <span class="source">（36氪）</span></li>
+      <li><strong>Crusoe数据中心创企融资30亿美元</strong>，估值飙升至300亿美元，与Meta、甲骨文签订AI算力合同，核心受益液冷散热配套 <span class="source">（36氪）</span></li>
+      <li><strong>数据中心军备竞赛加剧</strong>，头部云厂商资本开支持续扩张，液冷管路供应商订单能见度提升 <span class="source">（行业分析）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#e87020;">📦 客户与订单</strong>
+    <ul>
+      <li><strong>国内液冷市场份额持续集中</strong>，头部集成商（英维克、曙光数创等）加速拿单，利通科技作为管路供应商有望受益产业链外溢 <span class="source">（行业资讯）</span></li>
+      <li><strong>液冷超充桩标准推进中</strong>，2026年国内液冷超充桩需求预计突破百万根，液冷管路产品线迎来新增长极 <span class="source">（行业分析）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、下游应用战场 -->
+<div class="section">
+  <div class="section-title green">🔋 三、下游应用战场</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🖥️ 数据中心/算力中心</strong>
+    <ul>
+      <li><strong>Crusoe数据中心融资30亿美元</strong>，估值从100亿升至约300亿美元，Meta、甲骨文签约客户 <span class="source">（36氪/新浪财经）</span></li>
+      <li><strong>亚马逊"柯伊伯计划"更名"Amazon Leo"</strong> ，在轨卫星超390颗，今年启动卫星互联网服务 <span class="source">（36氪/新浪财经）</span></li>
+      <li><strong>微软投入25亿美元组建6000人AI部署团队</strong>，Frontier Company新部门直接服务企业客户，AI商业化加速落地 <span class="source">（36氪/新浪财经）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🔋 储能行业</strong>
+    <ul>
+      <li><strong>发改委推动央企新能源上网电量市场化运作</strong>，新能源电价改革提速，大储项目收益率预期改善 <span class="source">（财联社）</span></li>
+      <li><strong>液冷储能渗透率超92%</strong>，大储项目温控方案逐步固化为液冷路线，储能液冷管路需求稳定攀升 <span class="source">（行业数据）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🚗 新能源汽车</strong>
+    <ul>
+      <li><strong>特斯拉Q2交付480,126辆</strong>，Model 3/Y交付467,762辆同比增25%，储能部署13.5GWh <span class="source">（36氪）</span></li>
+      <li><strong>特斯拉设定员工每周AI支出上限200美元</strong>，7月6日起生效，控制AI成本引发关注 <span class="source">（36氪/The Information）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#34a853;">⚡ 液冷超充桩</strong>
+    <ul>
+      <li><strong>液冷超充桩建设持续推进</strong>，2026年国内需求预期突破百万根，高压快充800V平台规模上量推动液冷管路需求 <span class="source">（行业分析）</span></li>
+      <li><strong>特斯拉储能业务强势</strong>，Q2部署13.5GWh同比增速显著，超充网络扩张带动充电桩液冷需求 <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、集成商动态 -->
+<div class="section">
+  <div class="section-title purple">📡 四、集成商动态（渠道情报）</div>
+  <table>
+    <tr>
+      <th style="width:18%">企业</th>
+      <th>核心进展</th>
+    </tr>
+    <tr>
+      <td><strong>英维克</strong></td>
+      <td>国内液冷温控龙头，持续受益于数据中心液冷渗透率提升，当前未发现重大负面动态</td>
+    </tr>
+    <tr>
+      <td><strong>曙光数创</strong></td>
+      <td>浸没式液冷领先企业，在数据中心、智算中心领域持续获取订单</td>
+    </tr>
+    <tr>
+      <td><strong>高澜股份</strong></td>
+      <td>液冷管路及冷却设备供应商，受益于储能温控和超充桩液冷需求增长</td>
+    </tr>
+    <tr>
+      <td><strong>申菱环境</strong></td>
+      <td>专用性空调及温控解决方案提供商，积极布局数据中心液冷温控领域</td>
+    </tr>
+    <tr>
+      <td><strong>巨化股份</strong></td>
+      <td>冷却液（氟化液）主要供应商，浸没式液冷发展带动冷却液需求增长</td>
+    </tr>
+  </table>
+</div>
+
+<!-- 五、二级市场 & 资本动向 -->
+<div class="section">
+  <div class="section-title darkblue">📈 五、二级市场 & 资本动向</div>
+  <ul>
+    <li><strong>黑石私募股权基金5月创最强单月表现</strong>，得益于对Anthropic的AI投资，年内涨幅11.4%，Q2投入超25亿美元包括追加Anthropic和Stripe <span class="source">（36氪/新浪财经）</span></li>
+    <li><strong>数据中心创企Crusoe融资30亿美元</strong>，估值或提高两倍至300亿美元 <span class="source">（36氪/新浪财经）</span></li>
+    <li><strong>胜达克半导体启动上市辅导</strong>，招商证券担任辅导机构，半导体产业链IPO活跃 <span class="source">（36氪）</span></li>
+    <li><strong>黄金市场深度回调</strong>，机构认为四季度或迎估值修复窗口 <span class="source">（36氪/证券时报）</span></li>
+    <li><strong>上半年A股摘牌13家</strong>，ST股扩容至224只，市场"排雷"加速 <span class="source">（中证网/36氪）</span></li>
+  </ul>
+</div>
+
+<!-- 六、利通科技 -->
+<div class="section">
+  <div class="section-title gray">🏢 六、利通科技（839167）动态</div>
+  <ul>
+    <li><strong>液冷管路龙头地位稳固</strong> — 作为北交所液冷管路细分赛道核心标的，利通科技的不锈钢波纹管和橡胶复合管产品持续受益于数据中心液冷、储能温控、超充桩三大下游需求共振</li>
+    <li><strong>产业链地位持续提升</strong> — 在液冷管路国产化替代进程中，利通科技处于关键卡位，产品竞争力随技术迭代和客户验证推进不断增强</li>
+    <li><strong>受益AI算力基建放量</strong> — 微软25亿美元AI部署团队、Crusoe300亿美元估值等国际巨头高投入，持续验证AI算力军备竞赛格局，利通科技作为上游管路供应商，订单能见度向好</li>
+    <li><strong>储能+超充双轮驱动</strong> — 储能液冷渗透率92.7%+液冷超充桩2026年百万根需求预期，两大新兴应用场景为利通科技打开第二、第三增长曲线</li>
+    <li><strong>北交所流动性持续改善</strong> — 随着北交所制度改革深化和优质标的扩容，市场关注度提升，为估值修复提供有利环境</li>
+  </ul>
+</div>
+
+<!-- 七、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 七、战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 高度关注</strong><br>
+    <strong>1. 全球央行利率路径不确定性</strong> — 美联储9月加息概率达45.6%，若加息落地将对全球科技股估值形成压力，影响液冷板块估值中枢<br>
+    <strong>2. 上市公司补税潮扩大</strong> — 年内补税近百亿元，若税务口径进一步收紧，可能波及更多企业短期利润和现金流
+  </div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    <strong>1. AI算力军备竞赛升级</strong> — 微软25亿美元部署团队+Crusoe融资30亿美元+黑石加注Anthropic，AI基建投入持续超预期，利好液冷全产业链<br>
+    <strong>2. 利通科技中报预期</strong> — 利通科技将于8月底披露中报，建议关注液冷管路营收占比及毛利率变化<br>
+    <strong>3. 特斯拉储能超充双增长</strong> — Q2储能部署13.5GWh，超充网络扩张利好液冷超充管路需求
+  </div>
+</div>
+
+</body>
+</html>
