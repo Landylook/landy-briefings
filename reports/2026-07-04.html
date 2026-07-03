@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年7月4日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 { font-size: 20px; }
+    .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
+    .section { margin-bottom: 24px; }
+    .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 10px; }
+    table { font-size: 15px; }
+    th, td { padding: 10px 12px; }
+    .highlight, .warning { padding: 14px 18px; font-size: 15px; }
+    .back-button { font-size: 15px; padding: 10px 14px; margin-bottom: 16px; }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body { max-width: 90%; margin: 30px auto; padding: 24px; }
+    h1 { font-size: 21px; }
+  }
+  @media (max-width: 480px) {
+    body { margin: 12px auto; padding: 12px; font-size: 17px; }
+    h1 { font-size: 19px; }
+    .date { font-size: 14px; }
+    .section-title { font-size: 18px; }
+    table { font-size: 14px; display: block; overflow-x: auto; }
+  }
+  @media (min-width: 1200px) {
+    body { max-width: 900px; }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年7月4日（周六）</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>A股再融资制度全面改革</strong> — 证监会连发新政，小额快速融资上限大幅提升，储架发行制度落地 <span class="source">（36氪）</span></li>
+    <li><strong>深交所优化锁价定增</strong> — 增加储架发行制度，便利上市公司灵活融资 <span class="source">（36氪）</span></li>
+    <li><strong>生数科技发布Vidu S1</strong> — 实时交互视频生成模型，支持540P高清、25FPS实时通话 <span class="source">（36氪）</li>
+    <li><strong>韩国宣布打造"韩版星链"</strong> — 低轨卫星互联网计划加速推进 <span class="source">（36氪）</li>
+    <li><strong>天赐材料终止锂电项目</strong> — 电解液产能过剩，宣布终止南通24.3万吨扩产项目 <span class="source">（36氪）</span></li>
+    <li><strong>小鹏×神州租车合作</strong> — 批量交付1300台新能源车，累计合作超5000台 <span class="source">（36氪）</span></li>
+    <li><strong>美国极端高温</strong> — 1.1亿人处于极端高温风险中，川普活动因高温暂停 <span class="source">（The Verge/AP）</span></li>
+  </ul>
+</div>
+
+<!-- 一、地缘·中东 -->
+<div class="section">
+  <div class="section-title lightblue">🌍 一、地缘·中东</div>
+  <ul>
+    <li><strong>伊朗最高领袖霍梅尼葬礼</strong> — 伊朗为已故最高领袖霍梅尼举行为期多天的葬礼仪式 <span class="source">（AP News）</span></li>
+    <li><strong>中东局势持续紧张</strong> — 地区冲突持续，各方势力博弈加剧，能源市场保持警惕 <span class="source">（AP News）</span></li>
+  </ul>
+</div>
+
+<!-- 二、AI·科技 -->
+<div class="section">
+  <div class="section-title orange">🤖 二、AI·科技</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🧠 AI视频生成</strong>
+    <ul>
+      <li><strong>生数科技发布Vidu S1</strong> — 实时交互视频生成模型，支持540P（960×540）高清分辨率、25FPS帧率（最高42FPS），可基于真人/动漫/萌宠创建专属交互角色，支持语音控制视频走向 <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🚀 国际科技动态</strong>
+    <ul>
+      <li><strong>自动驾驶领域投资回暖</strong> — Humble Robotics获资本青睐，自动驾驶货运赛道重现2016年般热潮，Travis Kalanick回归机器人领域 <span class="source">（TechCrunch）</span></li>
+      <li><strong>任天堂复刻情怀</strong> — 第三方推出Game Boy Advance风格紧凑键盘，内置肩键，致敬经典 <span class="source">（The Verge）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#e87020;">📱 消费电子</strong>
+    <ul>
+      <li><strong>ILM分享T2液态金属终结者制作挑战</strong> — 电影特效团队探讨经典角色技术突破 <span class="source">（The Verge）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、A股·港股 -->
+<div class="section">
+  <div class="section-title green">📈 三、A股·港股</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">⚡ 再融资制度改革（重磅）</strong>
+    <ul>
+      <li><strong>小额快速融资上限大幅提升</strong> — 沪深上市公司小额快速融资上限从3亿元→<strong>6亿元</strong>，特大型企业（净资产>100亿）上限提升至<strong>10亿元</strong>；北交所从1亿元→<strong>2亿元</strong> <span class="source">（36氪）</span></li>
+      <li><strong>储架发行制度落地</strong> — 一次注册、分次发行，便利上市公司抓住市场时机平滑融资规模 <span class="source">（36氪）</span></li>
+      <li><strong>简易程序再融资授权调整</strong> — 由年度股东会授权改为股东会授权，提高灵活性 <span class="source">（36氪）</span></li>
+      <li><strong>简化控股股东定增条件</strong> — 支持规范运作的控股股东参与定增，限售期延长至36个月 <span class="source">（36氪）</span></li>
+      <li><strong>深交所增加储架发行</strong> — 规定董事会提前确定部分发行对象时，需明确资金上下限、数量及价格确定原则 <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">📋 行业公司动态</strong>
+    <ul>
+      <li><strong>天赐材料终止南通项目</strong> — 电解液行业产能供需错配、价格持续下降，宣布终止年产24.3万吨锂电及含氟新材料项目 <span class="source">（36氪）</span></li>
+      <li><strong>深水海纳控股权变更终止</strong> — 控股股东与茂名发展集团终止控制权变更事宜 <span class="source">（36氪）</span></li>
+      <li><strong>雪祺电气股权变动</strong> — 股东志道投资以12.8元/股转让12.65%股份给刘翔，总价2.96亿元 <span class="source">（36氪）</span></li>
+      <li><strong>东方财富出资2亿</strong> — 参与上海云锋元创私募基金，目标认缴总额30亿元，重点投向硬科技、新兴技术领域 <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#34a853;">🎬 文化消费</strong>
+    <ul>
+      <li><strong>电影院多样化经营通知</strong> — 国家电影局、市场监管总局联合发文，推动电影院业态创新，打造综合性文化体验空间 <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、利通科技（839167）-->
+<div class="section">
+  <div class="section-title gray">🏢 四、利通科技（839167）动态</div>
+  <ul>
+    <li>今日无公开重大事项公告 <span class="source">（财联社搜索无结果）</span></li>
+    <li><strong>液冷管赛道持续受益</strong> — 工信部要求新建智算中心液冷渗透率100%，芯片功耗持续攀升（H100 700W→Rubin 1800W+）推动液冷从可选变强制，持续看好液冷管路需求 <span class="source">（行业研究）</span></li>
+  </ul>
+</div>
+
+<!-- 五、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 五、战略预警 / 机会提示</div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    再融资制度改革利好优质上市公司，储架发行制度将改变A股再融资格局，关注后续配套细则及对液冷赛道上市公司的潜在影响。
+  </div>
+</div>
+
+</body>
+</html>
