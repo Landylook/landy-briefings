@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年7月5日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 {
+      font-size: 20px;
+    }
+    .date {
+      font-size: 15px;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+    }
+    .section {
+      margin-bottom: 24px;
+    }
+    .section-title {
+      font-size: 17px;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+    }
+    ul {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    table {
+      font-size: 15px;
+    }
+    th, td {
+      padding: 10px 12px;
+    }
+    .highlight, .warning {
+      padding: 14px 18px;
+      font-size: 15px;
+    }
+    .back-button {
+      font-size: 15px;
+      padding: 10px 14px;
+      margin-bottom: 16px;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body {
+      max-width: 90%;
+      margin: 30px auto;
+      padding: 24px;
+    }
+    h1 {
+      font-size: 21px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    body {
+      margin: 12px auto;
+      padding: 12px;
+      font-size: 17px;
+    }
+    h1 {
+      font-size: 19px;
+    }
+    .date {
+      font-size: 14px;
+    }
+    .section-title {
+      font-size: 18px;
+    }
+    table {
+      font-size: 14px;
+      display: block;
+      overflow-x: auto;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    body {
+      max-width: 900px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年7月5日（周日）</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>伊朗最高领袖哈梅内伊身亡</strong> — 美伊战争爆发，伊朗开始举行为期多天的葬礼仪式 <span class="source">（AP News）</span></li>
+    <li><strong>快递业务量破千亿</strong> — 截至6月30日，我国快递业务量已超1000亿件，比2025年提前9天 <span class="source">（36氪）</span></li>
+    <li><strong>华为何庭波发布V2版"韬定律"论文</strong> — 补充工程落地细节、实测量化数据与产品演进路线 <span class="source">（36氪/财联社）</span></li>
+    <li><strong>具身智能公司光象科技完成数亿元天使轮融资</strong> — 珠海科技产业集团、兴证资本、松禾资本等头部机构参与 <span class="source">（36氪）</span></li>
+    <li><strong>液冷超充桩</strong> — 液冷超充赛道持续高增长，单枪功率向1.5MW迈进 <span class="source">（行业观察）</span></li>
+  </ul>
+</div>
+
+<!-- 一、地缘·中东 -->
+<div class="section">
+  <div class="section-title red">🌍 一、地缘·中东</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#ea4335;">🔴 重大事件</strong>
+    <ul>
+      <li><strong>伊朗最高领袖哈梅内伊在美伊战争中身亡</strong>，伊朗已开始举行为期多天的葬礼仪式 <span class="source">（AP News）</span></li>
+      <li><strong>6月海湾地区原油出口激增</strong> — 日均出口量突破1000万桶，但仍明显低于冲突前水平（较去年同期约1650万桶低40%） <span class="source">（36氪/央视新闻）</span></li>
+      <li><strong>阿联酋成为原油出口恢复最快的国家</strong>，6月日均出口量升至370-380万桶创历史新高 <span class="source">（36氪）</span></li>
+      <li>霍尔木兹海峡通航逐步恢复，约2300万桶原油仍在等待通过海峡（4月底一度高达9600万桶） <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+
+  <div class="highlight">
+    <strong>🟡 研判</strong><br>
+    中东局势趋于缓和，油气出口恢复但仍低于冲突前水平。液冷管赛道需关注能源巨头资本开支变化。
+  </div>
+</div>
+
+<!-- 二、AI·科技 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 二、AI·科技</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">🔬 硬核技术</strong>
+    <ul>
+      <li><strong>华为何庭波发布V2版"韬定律"论文</strong> — 补充大量工程落地细节、实测量化数据，新增Kirin2026与Kirin9030Pro的电压/频率/功耗对比数据 <span class="source">（36氪/财联社）</span></li>
+      <li><strong>首款神经动力学芯片问世</strong> — 北京大学联合中科院上海微系统所研制，首次将复杂运算单步时延压缩至2.12毫秒，在脑皮层重建任务中较GPU提速50-478倍 <span class="source">（36氪/新华社）</span></li>
+      <li><strong>业内首个AI-eSIM产业协同平台成立</strong> — 由中国移动发起，汇聚40余家产业链企业 <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">💰 资本动向</strong>
+    <ul>
+      <li><strong>光象科技完成数亿元天使轮融资</strong> — 珠海科技产业集团、兴证资本、松禾资本、顺禧基金、慕华科创、See Fund、亿宸资本、上市公司行云科技等参与 <span class="source">（36氪）</span></li>
+      <li><strong>长光卫星完成近50亿元融资</strong> <span class="source">（36氪）</span></li>
+      <li><strong>德国大陆集团将向孤星基金出售康迪泰克业务板块</strong>，企业价值40亿欧元，专注核心轮胎业务 <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">📋 监管与政策</strong>
+    <ul>
+      <li><strong>两协会联合倡议规范情感陪伴人形机器人</strong> — 中国人形机器人百人会和中国机械工业联合会联合发布，聚焦安全伦理、隐私保护、质量管理 <span class="source">（36氪/央视新闻）</span></li>
+      <li><strong>宁德时代与北京绿交所签署战略合作协议</strong> — 围绕碳减排方法学、供应链绿色金融、国际绿色规则对接合作 <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、A股·港股 -->
+<div class="section">
+  <div class="section-title green">📈 三、A股·港股</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">📊 市场数据</strong>
+    <ul>
+      <li><strong>暑运前三天全国铁路累计发送旅客超3800万人次</strong>，暑运期间预计发送旅客10.1亿人次 <span class="source">（36氪/央视网）</span></li>
+      <li><strong>今年我国快递业务量已超1000亿件</strong>，比2025年提前9天，折射消费市场平稳增长 <span class="source">（36氪）</span></li>
+      <li><strong>广州白云国际机场口岸外籍客流占比突破四成</strong>，创历史新高 <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🏭 产业动态</strong>
+    <ul>
+      <li><strong>常州三大项目签约</strong>，总投资超15亿元，用地约130亩，达产后预计年新增工业产值超17亿元 <span class="source">（36氪）</span></li>
+      <li><strong>瀚银科技被罚没近7445万元</strong> — 违反清算管理规定和商户管理规定 <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#34a853;">🤖 AI应用</strong>
+    <ul>
+      <li><strong>具身智能加速落地</strong> — 光象科技等多家公司获大额融资，人形机器人正走进家庭和生活场景 <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、利通科技（839167） -->
+<div class="section">
+  <div class="section-title gray">🏢 四、利通科技（839167）</div>
+  <ul>
+    <li><strong>液冷管赛道持续受益AI算力基建</strong> — H100 700W→Rubin 1800W+，芯片功耗攀升推动液冷从可选变强制 <span class="source">（行业研究）</span></li>
+    <li><strong>储能行业液冷渗透率达92.7%</strong> — 大储项目液冷方案成为标配，利通管路需求持续 <span class="source">（行业观察）</span></li>
+    <li><strong>液冷超充桩单枪功率向1.5MW迈进</strong> — 2026年国内需求有望破百万根，高端管路国产替代加速 <span class="source">（行业研究）</span></li>
+    <li>工信部要求新建智算中心液冷渗透率100%，政策驱动赛道高景气 <span class="source">（政策跟踪）</span></li>
+  </ul>
+
+  <div class="highlight">
+    <strong>📌 投资逻辑不变</strong><br>
+    AI芯片功耗持续攀升 + 政策强制液冷渗透 + 国产替代提速，三重逻辑共振，利通作为北交所液冷管核心标的，持续受益。
+  </div>
+</div>
+
+<!-- 五、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 五、战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 高度关注</strong><br>
+    伊朗最高领袖身亡引发中东变局，持续跟踪原油价格波动及能源巨头资本开支变化对液冷市场的影响。
+  </div>
+
+  <div class="highlight">
+    <strong>🟢 持续看好</strong><br>
+    液冷管赛道：AI算力+储能+新能源车+超充桩四轮驱动，政策强推，国产替代加速，利通科技（839167）核心受益。
+  </div>
+</div>
+
+</body>
+</html>
