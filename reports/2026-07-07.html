@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年7月7日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 { font-size: 20px; }
+    .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
+    .section { margin-bottom: 24px; }
+    .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 10px; }
+    table { font-size: 15px; }
+    th, td { padding: 10px 12px; }
+    .highlight, .warning { padding: 14px 18px; font-size: 15px; }
+    .back-button { font-size: 15px; padding: 10px 14px; margin-bottom: 16px; }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body { max-width: 90%; margin: 30px auto; padding: 24px; }
+    h1 { font-size: 21px; }
+  }
+  @media (max-width: 480px) {
+    body { margin: 12px auto; padding: 12px; font-size: 17px; }
+    h1 { font-size: 19px; }
+    .date { font-size: 14px; }
+    .section-title { font-size: 18px; }
+    table { font-size: 14px; display: block; overflow-x: auto; }
+  }
+  @media (min-width: 1200px) {
+    body { max-width: 900px; }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年7月7日 星期二</div>
+
+<!-- 📊 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>伊朗最高领袖哈梅内伊归真</strong> — 德黑兰举行大规模送葬，中东地缘格局面临重塑 <span class="source">（AP News）</span></li>
+    <li><strong>SpaceX公布AI数据中心计划</strong> — 将利用星链网络回传能力，加速AI基础设施布局 <span class="source">（36氪）</span></li>
+    <li><strong>A股中报预增率88.89%</strong> — 72家公司披露业绩预告，生物医药/化工/半导体领涨 <span class="source">（36氪）</span></li>
+    <li><strong>逸文科技跻身独角兽</strong> — 完成1.5亿美元Pre-B轮融资，投后估值超10亿美元 <span class="source">（36氪）</span></li>
+  </ul>
+</div>
+
+<!-- 一、地缘·中东 -->
+<div class="section">
+  <div class="section-title red">🌍 一、地缘·中东</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#ea4335;">🔥 伊朗政局</strong>
+    <ul>
+      <li><strong>伊朗最高领袖哈梅内伊葬礼</strong>在德黑兰举行，数万民众涌上街头送葬，中东地缘政治格局面临重大不确定性 <span class="source">（AP News）</span></li>
+      <li>俄罗斯对乌克兰发动新一轮导弹和无人机袭击，<strong>至少22人遇难</strong> <span class="source">（AP News）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 二、AI·科技 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 二、AI·科技</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">🚀 科技前沿</strong>
+    <ul>
+      <li><strong>SpaceX公布AI数据中心计划</strong>，计划在美国中西部建设专门面向AI工作负载的数据中心，直接利用星链网络高速低延迟数据回传能力 <span class="source">（36氪）</span></li>
+      <li><strong>逸文科技（Even Realities）</strong>完成1.5亿美元Pre-B轮融资，投后估值超<strong>10亿美元</strong>，美团龙珠与美团战投领投，腾讯超额跟投 <span class="source">（36氪）</span></li>
+      <li><strong>福泰制药以约100亿美元</strong>收购Crinetics Pharmaceuticals，溢价102%，为公司史上最大交易 <span class="source">（36氪/财联社）</span></li>
+      <li><strong>美联储理事沃勒</strong>为前瞻指引辩护，称运用得当能起到积极作用《新任主席沃什主张减少对前瞻指引的依赖》<span class="source">（36氪）</span></li>
+      <li>英国FCA被敦促考虑对<strong>ChatGPT等LLM模型纳入金融监管</strong>，评估AI对消费者财务决策的系统性风险 <span class="source">（36氪）</span></li>
+      <li><strong>Apple watchOS 27</strong>开发者测试版加入Siri AI功能，支持腕上与手机间连续对话 <span class="source">（The Verge）</span></li>
+      <li>NASA TESS卫星通过<strong>微引力透镜法</strong>首次发现一颗"超级木星"，质量1.6倍木星，距地球近4万光年 <span class="source">（The Verge）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">♻️ 新能源/材料</strong>
+    <ul>
+      <li><strong>电解液添加剂VC价格攀升</strong>，宁德时代、比亚迪等头部电池厂密集通过长单、入股绑定VC产能，短期供需紧平衡难改 <span class="source">（36氪/证券时报）</span></li>
+      <li>新能源、AI产业带动<strong>铜、铝、钼、锂等有色金属全线走强</strong>，行业上半年利润同比显著增长 <span class="source">（36氪/证券时报）</span></li>
+      <li><strong>玻璃基板进入关键验证期</strong>，TGV工艺被认为是决定产业化拐点的核心环节 <span class="source">（36氪/证券时报）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、A股·港股 -->
+<div class="section">
+  <div class="section-title green">📈 三、A股·港股</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">📊 市场数据</strong>
+    <ul>
+      <li><strong>A股中报预增率88.89%</strong>，72家公司披露半年报预告，64家预增。生物医药、化工、半导体大幅预增数量最多 <span class="source">（36氪/中证网）</span></li>
+      <li>重要股东减持渠道"<strong>一降两升</strong>"：协议转让占比由51.56%降至24.45%，大宗交易升至20.63%（+51.35%），询价转让升至11.83%（+209%） <span class="source">（36氪/上证报）</span></li>
+      <li><strong>煤炭板块逆市上涨3.74%</strong>，第十轮涨价激活板块。焦煤产量5月同比下降7.75%，供应偏紧 <span class="source">（36氪/证券时报）</span></li>
+      <li><strong>银行板块估值修复窗口打开</strong>，低估值遇上高分红，机构关注配置机遇 <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#34a853;">💡 产业逻辑</strong>
+    <ul>
+      <li>AI赋能助力上市公司业绩提升，<strong>多家公司在业绩预告中提及AI转型</strong>带动运营效率提升 <span class="source">（36氪）</span></li>
+      <li>铜铝钼锂等有色品种受益于<strong>AI算力芯片和存储芯片需求爆发</strong>，行业供需格局结构性重塑 <span class="source">（36氪/证券时报）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、液冷管赛道情报 -->
+<div class="section">
+  <div class="section-title orange">💧 四、液冷管赛道情报</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🔬 行业动态</strong>
+    <ul>
+      <li><strong>AI算力需求爆发</strong>带动高端算力芯片需求激增，英伟达下一代GPU功耗持续攀升，液冷从可选变为强制 <span class="source">（36氪/证券时报）</span></li>
+      <li>有色金属走强传导至<strong>液冷管路原材料端</strong>，铜、铝价格高企对液冷管路成本端形成支撑 <span class="source">（证券时报）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#e87020;">📡 集成商动态</strong>
+    <table>
+      <tr>
+        <th style="width:18%">企业</th>
+        <th>核心进展</th>
+      </tr>
+      <tr>
+        <td><strong>英维克</strong></td>
+        <td>AI数据中心散热需求旺盛，持续受益于算力基建浪潮</td>
+      </tr>
+      <tr>
+        <td><strong>曙光数创</strong></td>
+        <td>液冷散热技术领先，关注智算中心液冷渗透率提升</td>
+      </tr>
+      <tr>
+        <td><strong>高澜股份</strong></td>
+        <td>电力电子冷却+数据中心液冷双轮驱动</td>
+      </tr>
+      <tr>
+        <td><strong>申菱环境</strong></td>
+        <td>专用空调及液冷温控方案提供商</td>
+      </tr>
+      <tr>
+        <td><strong>巨化股份</strong></td>
+        <td>冷却液国产替代核心标的，关注氟化工景气度</td>
+      </tr>
+    </table>
+    <div style="font-size:12px; color:#888; margin-top:4px;">（券商研报/公开信息）</div>
+  </div>
+</div>
+
+<!-- 五、利通科技（839167） -->
+<div class="section">
+  <div class="section-title purple">🏢 五、利通科技（839167）</div>
+  <ul>
+    <li><strong>液冷管路赛道核心标的</strong>——北交所上市，专注液冷管路和超充管路，受益于AI算力基建和液冷超充桩放量</li>
+    <li><strong>下游四大应用场景持续拓展</strong>：智算中心、储能、新能源汽车、液冷超充桩</li>
+    <li>有色金属<strong>铜铝价格高企</strong>对管路成本端构成一定压力，关注公司原材料锁价机制和毛利率变化 <span class="source">（证券时报）</span></li>
+  </ul>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    利通科技近期公开资讯较少，建议持续关注北交所公告和液冷管路行业订单动态。当前核心逻辑仍是AI算力基建+液冷超充双主线驱动。
+  </div>
+</div>
+
+<!-- 六、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 六、战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 高度关注</strong><br>
+    1. <strong>伊朗最高领袖哈梅内伊归真</strong>——中东地缘政治格局面临重大不确定性，可能影响全球能源价格和避险情绪 <span class="source">（AP News）</span><br>
+    2. 俄乌冲突持续升级，俄大规模导弹无人机袭击乌克兰，<strong>22人遇难</strong> <span class="source">（AP News）</span>
+  </div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    1. <strong>A股中报季开启</strong>——预增率88.89%，关注液冷/算力产业链公司业绩兑现 <span class="source">（中证网）</span><br>
+    2. <strong>SpaceX入局AI数据中心</strong>——巨头跨界布局加速行业竞争，关注液冷散热需求拉动 <span class="source">（36氪）</span><br>
+    3. <strong>美联储政策转向信号</strong>——沃什主席减少前瞻指引依赖，市场波动性或增加
+  </div>
+</div>
+
+</body>
+</html>
