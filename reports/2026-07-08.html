@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年7月8日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 { font-size: 20px; }
+    .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
+    .section { margin-bottom: 24px; }
+    .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 10px; }
+    table { font-size: 15px; }
+    th, td { padding: 10px 12px; }
+    .highlight, .warning { padding: 14px 18px; font-size: 15px; }
+    .back-button { font-size: 15px; padding: 10px 14px; margin-bottom: 16px; }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body { max-width: 90%; margin: 30px auto; padding: 24px; }
+    h1 { font-size: 21px; }
+  }
+
+  @media (max-width: 480px) {
+    body { margin: 12px auto; padding: 12px; font-size: 17px; }
+    h1 { font-size: 19px; }
+    .date { font-size: 14px; }
+    .section-title { font-size: 18px; }
+    table { font-size: 14px; display: block; overflow-x: auto; }
+  }
+
+  @media (min-width: 1200px) {
+    body { max-width: 900px; }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年7月8日 周三</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>美军再次打击伊朗</strong> — 霍尔木兹海峡3艘商船遭袭后，美方发动新一轮空袭，目标为防空/岸防系统和反舰导弹设施 <span class="source">（AP News）</span></li>
+    <li><strong>Meta发布Muse Image AI模型</strong> — 新图像生成模型上线Meta AI及Instagram/WhatsApp，广告主即将可使用 <span class="source">（新浪财经）</span></li>
+    <li><strong>美联储7月维持利率不变概率73.3%</strong> — CME"美联储观察"显示9月累计加息25基点概率52.7% <span class="source">（财联社）</span></li>
+    <li><strong>美股三大指数集体收跌</strong> — 纳指跌1.16%，英特尔跌超9%，特斯拉跌超4%；Meta逆势涨超2% <span class="source">（36氪）</span></li>
+  </ul>
+</div>
+
+<!-- 一、地缘·中东 -->
+<div class="section">
+  <div class="section-title red">🌍 地缘·中东</div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#ea4335;">⚔️ 美伊冲突</strong>
+    <ul>
+      <li><strong>美军发动新一轮打击</strong> — 霍尔木兹海峡3艘商船被击中后数小时，美军中央司令部宣布发动精准打击，"惩罚针对商业航运的袭击"。目标包括防空系统、海岸监视系统、地空导弹及反舰巡航导弹发射阵地 <span class="source">（AP News）</span></li>
+      <li><strong>伊朗方面回应</strong> — 伊朗外交部副部长在X平台发文，称美军袭击违反临时停火协议。伊朗媒体报道格什姆岛和阿巴斯港传出爆炸声 <span class="source">（AP News）</span></li>
+      <li><strong>霍梅尼葬礼进行中</strong> — 空袭发生在伊朗最高领袖哈梅内伊（战争爆发时身亡）的葬礼期间，给旨在重新开放海峡、结束战争的谈判蒙上阴影 <span class="source">（AP News）</span></li>
+      <li><strong>北约军备新动向</strong> — 北约公布数十亿美元军备合同以展示火力，同时特朗普再次要求格陵兰 <span class="source">（AP News）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 二、AI·科技 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 AI·科技</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">🤖 AI前沿</strong>
+    <ul>
+      <li><strong>Meta发布Muse Image</strong> — 时隔一年重磅发布，这是Alexandr Wang担任Meta首席AI官后首款AI模型。上线Meta AI、Instagram和WhatsApp，支持文生图、图片修改，广告主很快可用 <span class="source">（新浪财经/36氪）</span></li>
+      <li><strong>OpenAI首席未来学家离职</strong> — Joshua Achiam在OpenAI工作9年后宣布离开，此前刚在Musk诉Altman案中作证。他表示"在前沿实验室围墙外也可能推进使命" <span class="source">（The Verge）</span></li>
+      <li><strong>AI将蛋白质序列"翻译"成文字</strong> — 以色列理工和特拉维夫大学开发BetaDescribe系统，为理解蛋白质功能开辟新路，有望加速药物研发和新材料设计 <span class="source">（科技日报/36氪）</span></li>
+      <li><strong>超级算法提升暗能量测量精度</strong> — 巴塞罗那大学团队开发CIGaRS框架，将Ia型超新星暗能量测量精度大幅提升 <span class="source">（科技日报/36氪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">🏭 科技公司动态</strong>
+    <ul>
+      <li><strong>卡特彼勒收购Skycatch</strong> — 矿业机械巨头收购空间数据公司，强化矿业科技能力，此次收购紧随RPMGlobal之后 <span class="source">（新浪财经/36氪）</span></li>
+      <li><strong>Notion推出AI Agent中心</strong> — 新应用Notion AG成为AI Agent的操作枢纽 <span class="source">（The Verge）</span></li>
+      <li><strong>Xbox裁减黑曜石员工约25%</strong> — 黑曜石工作室将继续开发《Grounded 2》和《天外世界2》DLC <span class="source">（The Verge）</span></li>
+      <li><strong>Google Earth Pro 2027年6月停止下载</strong> — 谷歌建议用户转向网页版 <span class="source">（The Verge）</span></li>
+      <li><strong>自动驾驶热潮回归</strong> — Travis Kalanick回归机器人领域，Humble Robotics将自动驾驶技术引入货运 <span class="source">（TechCrunch）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、A股·港股 -->
+<div class="section">
+  <div class="section-title green">📈 A股·港股</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🇺🇸 隔夜美股</strong>
+    <ul>
+      <li><strong>三大指数齐跌</strong> — 道指-0.25%，纳指-1.16%，标普500-0.45%。<strong>Meta逆势涨超2%</strong>（AI利好），亚马逊+0.75%，英伟达+0.71%；<strong>英特尔-9%</strong>，特斯拉-4%，苹果-0.64% <span class="source">（36氪）</span></li>
+      <li><strong>中概股多数下跌</strong> — 爱奇艺-7%，富途-4%，小鹏、蔚来、百度-2%；唯品会+1%，阿里+0.23% <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🏛️ 宏观政策</strong>
+    <ul>
+      <li><strong>美联储7月利率不变概率73.3%</strong> — 9月加息25基点概率52.7%，加息50基点概率14.9% <span class="source">（财联社）</span></li>
+      <li><strong>证监会对编造中公教育虚假信息立案</strong> — 网名"南京路宝宝总"的安某编造传播误导性信息，涉嫌违反证券法 <span class="source">（36氪/证监会）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#34a853;">🛢️ 大宗商品关注</strong>
+    <ul>
+      <li><strong>霍尔木兹海峡局势升级</strong> — 原油运输通道风险加剧，油价波动预期上升。关注能源及石化板块影响 <span class="source">（AP News）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、利通科技 -->
+<div class="section">
+  <div class="section-title gray">🏢 四、利通科技（839167）动态</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#5f6368;">📰 今日暂无利通科技专项新公告</strong>
+    <ul>
+      <li>财联社搜索"利通科技"未返回有效资讯内容（JS渲染页面限制）</li>
+      <li>暂未监测到关于利通科技（839167）的最新公告或媒体报道</li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#5f6368;">📌 关联行业关注</strong>
+    <ul>
+      <li><strong>液冷散热赛道</strong> — 全球AI算力需求持续扩张，Meta/OpenAI等大厂持续加码AI投资，数据中心液冷需求基本面不变</li>
+      <li><strong>英伟达GPU功耗趋势</strong> — 美股英伟达隔夜涨0.71%，算力军备竞赛持续推进</li>
+      <li><strong>霍尔木兹海峡危机</strong> — 若油价因此大幅上行，可能影响液冷产业链上游原材料成本</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 五、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 五、战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 高度关注</strong><br>
+    <strong>美伊冲突升级：</strong>美军对伊朗发动新一轮空袭，霍尔木兹海峡航运安全受直接威胁。原油价格波动风险加大，可能传导至化工原材料成本。关注今日A股开盘石油板块反应，以及液冷管原材料（如冷却液、特种塑料）价格变化。
+  </div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    ① Meta AI大模型发布节奏加快，算力需求确定性增强，液冷散热是刚需<br>
+    ② 美联储9月加息概率超50%，全球流动性预期收紧，关注对北交所小盘股影响<br>
+    ③ 卡特彼勒收购强化矿业科技，关注工程机械+数据智能化交叉赛道机会
+  </div>
+</div>
+
+</body>
+</html>
