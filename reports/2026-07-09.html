@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年7月9日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  /* 响应式设计 */
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 { font-size: 20px; }
+    .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
+    .section { margin-bottom: 24px; }
+    .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 10px; }
+    table { font-size: 15px; }
+    th, td { padding: 10px 12px; }
+    .highlight, .warning { padding: 14px 18px; font-size: 15px; }
+    .back-button { font-size: 15px; padding: 10px 14px; margin-bottom: 16px; }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body { max-width: 90%; margin: 30px auto; padding: 24px; }
+    h1 { font-size: 21px; }
+  }
+  @media (max-width: 480px) {
+    body { margin: 12px auto; padding: 12px; font-size: 17px; }
+    h1 { font-size: 19px; }
+    .date { font-size: 14px; }
+    .section-title { font-size: 18px; }
+    table { font-size: 14px; display: block; overflow-x: auto; }
+  }
+  @media (min-width: 1200px) {
+    body { max-width: 900px; }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年7月9日 星期四</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>美联储6月纪要"鹰派暂停"</strong> — 所有官员支持维持利率不变，多数官员认为通胀仍将高位，部分官员认为需要加息 <span class="source">（财联社）</span></li>
+    <li><strong>SK海力士美国IPO获逾7倍超额认购</strong> — 融资规模约245亿美元，有望创外国企业美国上市第二大纪录 <span class="source">（新浪财经）</span></li>
+    <li><strong>Meta在加拿大投建130亿加元数据中心</strong> — 1吉瓦装机容量，系加拿大首个算力基地，全球总数将增至33座 <span class="source">（新浪财经）</span></li>
+    <li><strong>智谱H股配售314亿港元</strong> — 每股1588港元，用于基座模型研发及商业化落地 <span class="source">（36氪）</span></li>
+    <li><strong>SpaceX AI发布Grok 4.5模型</strong> — 与Cursor合作，面向法律、金融等复杂场景 <span class="source">（36氪/财联社）</span></li>
+  </ul>
+</div>
+
+<!-- 一、大势研判 -->
+<div class="section">
+  <div class="section-title lightblue">🌍 一、地缘·中东</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">🔥 伊朗局势</strong>
+    <ul>
+      <li><strong>美军对伊朗发动新一轮打击</strong> — 特朗普宣布停火协议破裂后，美国对伊朗实施新一轮空袭 <span class="source">（AP News）</span></li>
+      <li><strong>美联储纪要提及中东冲突</strong> — 多数官员指出，由于AI相关需求、中东冲突以及关税，通胀可能仍将保持高位 <span class="source">（财联社）</span></li>
+      <li><strong>特朗普称将授权乌克兰生产爱国者防御系统</strong> — 北约框架下进一步升级对乌军事支持 <span class="source">（AP News）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">📈 宏观数据</strong>
+    <ul>
+      <li><strong>美联储6月会议纪要：</strong>所有官员均支持维持利率不变。少数人认为6月FOMC有加息理由。核心通胀率和整体通胀率均有所上升，几乎所有与会者都表示可能需要采取一些政策收紧措施 <span class="source">（财联社）</span></li>
+      <li><strong>美股三大指数涨跌不一：</strong>道指跌1.09%，纳指涨0.2%，标普500跌0.28%。英伟达涨超3%，阿里巴巴涨超11%，特斯拉、Meta跌超2% <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 二、AI·科技 -->
+<div class="section">
+  <div class="section-title orange">🤖 二、AI·科技</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🔬 AI前沿</strong>
+    <ul>
+      <li><strong>SpaceX AI发布Grok 4.5</strong> — 与Cursor合作打造，面向软件工程、法律、金融服务等复杂多步骤任务，增强网络安全能力 <span class="source">（36氪/财联社）</span></li>
+      <li><strong>智谱配售新H股筹资约314亿港元</strong> — 每股1588港元，所得款项用于支持基座模型研发、技术创新、商业化落地及生态建设 <span class="source">（36氪）</span></li>
+      <li><strong>Cloudflare与OpenAI启动试点项目</strong> — 利用Cloudflare全球网络数据（内容更新鲜度、流量质量等）帮助AI搜索引擎更高效索引网页，提升回答准确性与时效性 <span class="source">（界面）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🖥️ 算力基建</strong>
+    <ul>
+      <li><strong>Meta在加拿大投建1吉瓦数据中心</strong> — 130亿加元（91.7亿美元），落户艾伯塔省斯特金县，为加拿大首个算力基地。Meta全球数据中心将增至33座。利用当地丰富的天然气资源发电，寒冷气候降低散热成本 <span class="source">（新浪财经）</span></li>
+      <li><strong>英特尔XBM内存架构专利曝光</strong> — 新型Cross-Batch Memory架构，拟取消HBM所需的硅中介层，采用UCIe互连及内置冗余修复，降低AI芯片"内存墙"瓶颈 <span class="source">（界面）</span></li>
+      <li><strong>SK海力士美国IPO获逾7倍超额认购</strong> — 发行1.779亿份ADR，融资约245亿美元，仅次于阿里巴巴的250亿美元，有望成为外国企业美国第二大IPO。吸引全球多头基金、主权财富基金及亚洲投资者 <span class="source">（新浪财经/36氪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#e87020;">🏗️ 产业链</strong>
+    <ul>
+      <li><strong>MasTec斥16.5亿美元收购Superior Group</strong> — 美国基建工程公司收购全美最大电气承包商之一，将业务从"围栏外"（发电/输变电）延伸至"围栏内"（数据中心电气系统）。Superior三年员工从800人增至3000人，CAGR超50%。AI热潮推动数据中心投资激增，MasTec一季度营收增长35% <span class="source">（新浪财经/36氪）</span></li>
+      <li><strong>General Intuition获3.2亿美元融资</strong> — Bezos支持的AI初创公司，估值23亿美元，认为游戏数据比互联网数据更能训练AGI的空间和时间理解能力 <span class="source">（TechCrunch）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、A股·港股 -->
+<div class="section">
+  <div class="section-title green">📈 三、A股·港股</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🇨🇳 中概股表现</strong>
+    <ul>
+      <li><strong>热门中概股普涨：</strong>阿里巴巴涨超11%，爱奇艺涨超5%，百度、京东涨超4%，拼多多、腾讯音乐涨超2% <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">📋 重点公司动态</strong>
+    <ul>
+      <li><strong>湖南黄金：</strong>拟发行股份购买黄金天岳及中南冶炼100%股权，交易总对价43.34亿元，同步募资不超10亿元 <span class="source">（36氪）</span></li>
+      <li><strong>粉笔：</strong>张小龙辞任CEO、董事会主席，盛海燕接任，即日生效 <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#34a853;">💰 资本动态</strong>
+    <ul>
+      <li><strong>智谱港股配售314亿港元</strong> — 每股1588港元，AI大模型赛道持续吸金 <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、利通科技 -->
+<div class="section">
+  <div class="section-title purple">🏢 四、利通科技（839167）动态</div>
+  
+  <div class="highlight">
+    <strong>⚠️ 今日未获取到利通科技专属新闻</strong><br>
+    利通科技（839167）暂无新增公告或重大新闻。财联社搜索页面为JS动态渲染，未提取到有效内容。建议后续关注北交所公告及液冷管业务进展。
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#9334e6;">📡 关联产业信号</strong>
+    <ul>
+      <li><strong>Meta加拿大1GW数据中心落地</strong> — 液冷散热需求将进一步爆发。Meta选择寒冷地区建设是降低散热成本的策略，但核心AI集群仍离不开高效液冷方案 <span class="source">（新浪财经）</span></li>
+      <li><strong>MasTec收购Superior布局数据中心"围栏内"电气系统</strong> — 液冷管路属于数据中心关键基础设施，液冷管供应商将随数据中心建设浪潮持续受益 <span class="source">（新浪财经）</span></li>
+      <li><strong>英特尔研发XBM架构降低AI内存成本</strong> — 若XBM成功量产，可能改变HBM供应链格局，但液冷散热在高端AI场景中仍是刚需 <span class="source">（界面）</span></li>
+      <li><strong>英伟达股价涨超3%</strong> — GPU需求持续旺盛，液冷渗透率提升趋势不改 <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 五、集成商动态 -->
+<div class="section">
+  <div class="section-title darkblue">📡 五、集成商动态（渠道情报）</div>
+  <table>
+    <tr>
+      <th style="width:18%">企业</th>
+      <th>核心进展</th>
+    </tr>
+    <tr>
+      <td><strong>英维克</strong></td>
+      <td>英维克液冷方案持续受益于AI算力扩张，英伟达涨超3%反映算力需求旺盛，液冷散热渗透率持续提升</td>
+    </tr>
+    <tr>
+      <td><strong>曙光数创</strong></td>
+      <td>Meta 1GW数据中心+AWS等巨头持续投建算力基础设施，液冷方案需求扩大，曙光数创作为国内液冷龙头有望受益</td>
+    </tr>
+    <tr>
+      <td><strong>高澜股份</strong></td>
+      <td>液冷管路关键供应商，数据中心与储能双轮驱动，2026年液冷渗透率提升趋势明确</td>
+    </tr>
+    <tr>
+      <td><strong>申菱环境</strong></td>
+      <td>精密温控+液冷配套，受益于数据中心散热需求提升，MasTec收购信号显示数据中心基建加速</td>
+    </tr>
+    <tr>
+      <td><strong>巨化股份</strong></td>
+      <td>冷却液国产替代方向，氟化工龙头，关注数据中心冷却液需求增长</td>
+    </tr>
+  </table>
+</div>
+
+<!-- 六、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 六、战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 高度关注</strong><br>
+    <strong>1. 中东局势升级：</strong>美国重启对伊朗空袭，停火协议破裂。地缘风险推升通胀预期，美联储纪要显示几乎所有官员认为需要政策收紧。地缘冲突+高通胀+加息预期三重压制风险偏好。<br>
+    <strong>2. 美联储转向预期：</strong>6月纪要"鹰派暂停"，通胀上行压力增大，若后续加息将压制科技股估值。
+  </div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    <strong>1. SK海力士美国IPO定价：</strong>7倍超额认购+245亿美元规模，若定价成功将引爆全球存储芯片板块情绪，间接利好液冷散热需求。<br>
+    <strong>2. Meta 130亿加元数据中心：</strong>液冷管路长期需求确定性增强，关注利通科技是否有机会切入海外供应链。<br>
+    <strong>3. 英特尔XBM架构：</strong>若HBM替代方案落地，可能改变高带宽内存散热格局，但短期不影响液冷主流趋势。<br>
+    <strong>4. 智谱314亿港元配售：</strong>中国AI大模型赛道融资活跃程度，关注是否带动北交所AI概念。
+  </div>
+</div>
+
+</body>
+</html>
