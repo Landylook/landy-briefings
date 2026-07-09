@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年7月10日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 { font-size: 20px; }
+    .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
+    .section { margin-bottom: 24px; }
+    .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 10px; }
+    table { font-size: 15px; }
+    th, td { padding: 10px 12px; }
+    .highlight, .warning { padding: 14px 18px; font-size: 15px; }
+    .back-button { font-size: 15px; padding: 10px 14px; margin-bottom: 16px; }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body { max-width: 90%; margin: 30px auto; padding: 24px; }
+    h1 { font-size: 21px; }
+  }
+  @media (max-width: 480px) {
+    body { margin: 12px auto; padding: 12px; font-size: 17px; }
+    h1 { font-size: 19px; }
+    .date { font-size: 14px; }
+    .section-title { font-size: 18px; }
+    table { display: block; overflow-x: auto; }
+  }
+  @media (min-width: 1200px) {
+    body { max-width: 900px; }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年7月10日 星期五</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>OpenAI发布GPT-5.6系列模型</strong> — 旗舰模型Sol支持4个AI代理并行处理，基准测试业界领先 <span class="source">（界面新闻）</span></li>
+    <li><strong>Meta首次推出付费AI模型</strong> — Muse Spark 1.1定价仅为OpenAI/Anthropic顶级模型的约25% <span class="source">（新浪财经）</span></li>
+    <li><strong>美伊冲突升级</strong> — 美伊在中东互相猛烈交火，停火协议面临破裂风险 <span class="source">（AP News）</span></li>
+    <li><strong>美股三大指数集体收涨</strong> — 纳指涨1.3%，Arm涨超9%，Meta涨超4% <span class="source">（36氪）</span></li>
+    <li><strong>法国对英伟达反垄断调查接近尾声</strong> — 最高面临全球年度营收10%罚款 <span class="source">（财联社）</span></li>
+  </ul>
+</div>
+
+<!-- 一、地缘·中东 -->
+<div class="section">
+  <div class="section-title lightblue">🌍 一、地缘·中东</div>
+  <ul>
+    <li><strong>美伊冲突猛烈交火</strong> — 美国与伊朗在中东地区互相升级军事打击，停火协议受到严重威胁。双方在中东多个地点展开交火，局势持续紧张 <span class="source">（AP News）</span></li>
+    <li><strong>乌克兰无人机袭击俄罗斯石油设施</strong> — 乌方无人机再次打击俄境内油库，多艘油轮被点燃 <span class="source">（AP News）</span></li>
+    <li><strong>原油供应风险上升</strong> — 地缘冲突叠加俄乌战事加剧，中东油价供应端不确定性加大，关注后续对能源价格及通胀预期的影响 <span class="source">（AP News）</span></li>
+  </ul>
+</div>
+
+<!-- 二、AI·科技 -->
+<div class="section">
+  <div class="section-title orange">🤖 二、AI·科技</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🔥 大模型动态</strong>
+    <ul>
+      <li><strong>OpenAI发布GPT-5.6系列</strong> — 旗舰模型GPT-5.6 Sol、均衡型Terra和低成本Luna正式开放。Sol支持Ultra模式，可默认协调<strong>4个AI代理并行处理</strong>复杂任务，显著降低推理成本和响应时间，并配备迄今最完善的安全防护体系 <span class="source">（界面新闻）</span></li>
+      <li><strong>Meta推出Muse Spark 1.1</strong> — 首次向开发者推出付费API版本，定价仅为OpenAI和Anthropic顶级模型的<strong>约25%</strong>。在智能体、编程和多模态测试中优于谷歌Gemini模型 <span class="source">（新浪财经）</span></li>
+      <li><strong>OpenAI应用负责人离职</strong> — Fidji Simo因长期慢性疾病恶化离开全职岗位，转任兼职顾问 <span class="source">（界面/36氪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">💡 AI新创</strong>
+    <ul>
+      <li><strong>General Intuition获$3.2亿融资</strong> — Bezos支持的游戏数据AI创企（估值$23亿），投资者含Coatue、Eric Schmidt、MIT和Google DeepMind，用游戏数据训练通用人工智能 <span class="source">（TechCrunch）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#e87020;">⚖️ 监管与安全</strong>
+    <ul>
+      <li><strong>法国对英伟达反垄断调查接近尾声</strong> — 调查始于2023年，围绕GPU/AI云计算领域绝对主导地位，最高面临<strong>全球年度营收10%</strong>的巨额罚款 <span class="source">（财联社）</span></li>
+      <li><strong>Patreon联手Cloudflare封杀AI爬虫</strong> — 防止AI公司在创作者作品上进行模型训练 <span class="source">（The Verge）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、A股·港股 -->
+<div class="section">
+  <div class="section-title green">📈 三、A股·港股</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🌐 海外市场</strong>
+    <ul>
+      <li><strong>美股三大指数集体收涨</strong> — 道指涨0.27%，纳指涨<strong>1.3%</strong>，标普500涨0.81%。Arm涨超9%，Meta涨超4%，特斯拉涨超3% <span class="source">（36氪）</span></li>
+      <li><strong>美联储7月维持利率不变概率74.9%</strong> — CME"美联储观察"显示9月累计加息25bp概率51.1% <span class="source">（财联社）</span></li>
+      <li><strong>热门中概股涨跌不一</strong> — 爱奇艺涨超8%，阿里/拼多多涨超1%；名创优品/蔚来/小鹏跌超2% <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#34a853;">🏢 重点公司</strong>
+    <ul>
+      <li><strong>立讯精密H股上市</strong> — H股7月9日在港交所主板挂牌，发行价63.28港元，募资净额约<strong>240.39亿港元</strong> <span class="source">（36氪）</span></li>
+      <li><strong>德国大众拟大裁员</strong> — 全球裁员规模最高或达<strong>10至12万个岗位</strong>，德国部分工厂面临关闭风险，车型阵容精简最多50% <span class="source">（央视财经/财联社）</span></li>
+      <li><strong>Netflix探索直播电视</strong> — 为提升用户活跃度，拟增设直播频道并捆绑第三方流媒体订阅套餐 <span class="source">（新浪财经）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、利通科技（839167）动态 -->
+<div class="section">
+  <div class="section-title purple">🏢 四、利通科技（839167）动态</div>
+  <div class="highlight">
+    <strong>🔍 今日无利通科技专项新闻</strong><br>
+    截至今日未检索到利通科技（839167）的公告或媒体报道。北交所液冷管赛道短期内缺乏催化事件，建议持续关注：
+  </div>
+  <ul>
+    <li><strong>液冷赛道大环境利好</strong> — 随着英伟达GPU功耗持续攀升（H100 700W → Rubin 1800W+），液冷从可选变强制，液冷管路配件需求确定性增强</li>
+    <li><strong>关注数据中心资本开支</strong> — OpenAI发布GPT-5.6加速AI算力需求，叠加法国对英伟达反垄断调查，可能影响全球GPU供应格局，间接利好国产液冷方案</li>
+    <li><strong>竞争格局稳定</strong> — 液冷管细分赛道玩家有限，利通科技在北交所具备稀缺性，待中报窗口期关注订单和业绩兑现</li>
+  </ul>
+</div>
+
+<!-- 五、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 五、战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 高度关注</strong><br>
+    <strong>1）美伊冲突升级 → 油价波动 → 通胀预期升温</strong> — 若中东局势继续恶化，原油价格上涨可能推升全球通胀预期，进而影响美联储加息路径，对成长股估值形成压制。<br><br>
+    <strong>2）法国对英伟达反垄断落地风险</strong> — 最高10%全球营收罚款，英伟达若承压可能影响GPU供应及数据中心液冷方案推进节奏。
+  </div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    <strong>1）GPT-5.6发布 → AI算力需求再升级</strong> — 新模型支持4代理并行，推理成本下降将加速AI应用落地，利好数据中心液冷需求。<br><br>
+    <strong>2）Meta低价AI定价策略</strong> — 定价仅为对手25%，可能引发AI模型价格战，加速行业洗牌的同时扩大算力需求总量。
+  </div>
+</div>
+
+</body>
+</html>
