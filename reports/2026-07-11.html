@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年7月11日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 {
+      font-size: 20px;
+    }
+    .date {
+      font-size: 15px;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+    }
+    .section {
+      margin-bottom: 24px;
+    }
+    .section-title {
+      font-size: 17px;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+    }
+    ul {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    table {
+      font-size: 15px;
+    }
+    th, td {
+      padding: 10px 12px;
+    }
+    .highlight, .warning {
+      padding: 14px 18px;
+      font-size: 15px;
+    }
+    .back-button {
+      font-size: 15px;
+      padding: 10px 14px;
+      margin-bottom: 16px;
+    }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body {
+      max-width: 90%;
+      margin: 30px auto;
+      padding: 24px;
+    }
+    h1 {
+      font-size: 21px;
+    }
+  }
+  @media (max-width: 480px) {
+    body {
+      margin: 12px auto;
+      padding: 12px;
+      font-size: 17px;
+    }
+    h1 {
+      font-size: 19px;
+    }
+    .date {
+      font-size: 14px;
+    }
+    .section-title {
+      font-size: 18px;
+    }
+    table {
+      font-size: 14px;
+      display: block;
+      overflow-x: auto;
+    }
+  }
+  @media (min-width: 1200px) {
+    body {
+      max-width: 900px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年7月11日（周六）</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>霍尔木兹海峡局势升级</strong> — 美国要求伊朗公开保证海峡开放，地缘风险持续发酵 <span class="source">（AP News）</span></li>
+    <li><strong>SK海力士登陆纳斯达克</strong> — 募资约265亿美元，成为年内最大科技IPO <span class="source">（36氪）</span></li>
+    <li><strong>AMD将发布Zen 6 Venice CPU</strong> — 性能能效比Zen 5提升超70%，7月22日亮相 <span class="source">（36氪）</span></li>
+    <li><strong>东阳光签130-150亿算力合同</strong> — 算力服务采购大单，液冷需求持续释放 <span class="source">（36氪）</span></li>
+    <li><strong>紫光股份预增83%-123%</strong> — 智算与国产化驱动，ICT市场高速增长 <span class="source">（36氪）</span></li>
+  </ul>
+</div>
+
+<!-- 一、地缘 · 中东 -->
+<div class="section">
+  <div class="section-title red">🌍 一、地缘 · 中东</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#ea4335;">⚔️ 霍尔木兹海峡局势</strong>
+    <ul>
+      <li><strong>美国要求伊朗公开保证</strong>霍尔木兹海峡开放，并承诺不再攻击过往船只。美方明确向伊朗提出条件：须公开声明海峡畅通并放弃军事威胁 <span class="source">（AP News）</span></li>
+      <li><strong>伊朗回应待观察</strong> — 当前中东紧张局势持续，霍尔木兹海峡作为全球最重要能源通道之一的通航安全直接影响国际油价和供应链稳定</li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#ea4335;">🛢️ 大宗商品影响</strong>
+    <ul>
+      <li>中东局势持续升温可能影响国际油价，关注对石化原材料（冷却液上游）的传导效应</li>
+      <li>地缘溢价风险值得长期跟踪</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 二、AI · 科技 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 二、AI · 科技</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">💾 芯片动态</strong>
+    <ul>
+      <li><strong>SK海力士本周五登陆纳斯达克</strong> — 发行价每份ADR 149美元，募资约265亿美元。作为全球第二大存储芯片厂商，打通美国融资渠道方便全球AI投资者布局 <span class="source">（36氪/新浪财经）</span></li>
+      <li><strong>AMD将于7月22-23日发布EPYC Venice CPU</strong> — 基于Zen 6架构，性能能效比Zen 5提升超70%，AI算力竞争再升级 <span class="source">（36氪/新浪财经）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">🖥️ AI应用与算力</strong>
+    <ul>
+      <li><strong>东阳光签130-150亿元算力服务合同</strong> — 子公司东莞东阳光云智算采购高性能算力服务器，以租赁方式向客户交付算力资源，合同期60个月 <span class="source">（36氪）</span></li>
+      <li><strong>General Intuition完成3.2亿美元融资</strong> — Bezos参投的AGI初创公司，估值23亿美元，用游戏数据训练AI对物理世界的理解能力 <span class="source">（TechCrunch）</span></li>
+      <li><strong>OpenAI确认Codex独立应用继续运营</strong> — 不会因ChatGPT Work上线而停用，并计划在侧边栏中集成聊天和项目管理 <span class="source">（The Verge）</span></li>
+      <li><strong>YouTube推出AI搜索功能"Ask YouTube"</strong> — 美区Web端开始推送，用AI对话模式回答视频内容相关问题 <span class="source">（The Verge）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">📈 科技企业业绩</strong>
+    <ul>
+      <li><strong>亿道信息：上半年净利预增1442%-1792%</strong> — AIPC、AIOT产品线放量，AI技术渗透推动大幅增长 <span class="source">（36氪）</span></li>
+      <li><strong>紫光股份：上半年净利预增83%-123%</strong> — 智算和国产化领域机遇驱动ICT市场快速增长 <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、A股 · 港股 -->
+<div class="section">
+  <div class="section-title darkblue">📈 三、A股 · 港股</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#0f9d58;">📊 市场数据</strong>
+    <ul>
+      <li><strong>中概股美股盘前普涨</strong> — 阿里巴巴、蔚来、理想涨超2%，京东、小鹏涨超1% <span class="source">（36氪）</span></li>
+      <li><strong>美股科技股涨跌不一</strong> — Meta涨超4%，微软涨近1%，英伟达跌0.5%，特斯拉跌0.38% <span class="source">（36氪）</span></li>
+      <li><strong>机构龙虎榜</strong> — 机构净买入前三：晶合集成（7.34亿）、托伦斯（4.05亿）、金风科技（3.5亿）；净卖出前三：昊华科技（3.54亿）、正帆科技（2.66亿）、杰瑞股份（1.91亿） <span class="source">（36氪/第一财经）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#0f9d58;">🏭 业绩预告</strong>
+    <ul>
+      <li><strong>广汽集团预亏40.6-45.7亿元</strong> — 竞争加剧、自主品牌投入加大导致亏损扩大 <span class="source">（36氪）</span></li>
+      <li><strong>紫光股份预增83%-123%</strong> — 智算与国产化双轮驱动 <span class="source">（36氪）</span></li>
+      <li><strong>亿道信息预增1442%-1792%</strong> — AI战略+投资收益驱动 <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#0f9d58;">⚖️ 监管动态</strong>
+    <ul>
+      <li><strong>巨力索具被罚450万元</strong> — 互动易平台回复投资者问题时存在误导性陈述，时任董秘被罚300万，时任总经理被罚200万 <span class="source">（36氪）</span></li>
+      <li><strong>倍轻松被罚250万元</strong> — 实控人马学军被罚630万，涉及未披露关联交易、重大担保及年报重大遗漏 <span class="source">（36氪）</span></li>
+      <li><strong>恒瑞医药"双艾"组合第三次被FDA延迟批准</strong> — FDA发出CRL，但未涉及安全性及有效性，公司将继续与FDA沟通 <span class="source">（36氪/中证报）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、液冷管赛道情报 -->
+<div class="section">
+  <div class="section-title orange">💧 四、液冷管赛道情报</div>
+
+  <div class="highlight">
+    <strong>🔑 关键信号</strong><br>
+    今日虽无液冷专项新闻，但算力和芯片领域多个事件强烈暗示液冷需求加速：
+    <strong>① SK海力士265亿美元纳斯达克上市</strong> — AI存储芯片巨头加码融资，AI基础设施投资持续扩大<br>
+    <strong>② 东阳光130-150亿算力合同</strong> — 大规模算力服务器部署，液冷散热需求必然同步增长<br>
+    <strong>③ AMD Zen 6 Venice CPU性能提升70%+</strong> — 芯片功耗持续攀升，散热压力进一步加大
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🏭 竞争格局</strong>
+    <table>
+      <tr><th>企业</th><th>最新动态</th></tr>
+      <tr><td><strong>英维克</strong></td><td>暂无新动态发布（7月10日数据）</td></tr>
+      <tr><td><strong>曙光数创</strong></td><td>暂无新动态发布</td></tr>
+      <tr><td><strong>高澜股份</strong></td><td>暂无新动态发布</td></tr>
+      <tr><td><strong>申菱环境</strong></td><td>暂无新动态发布</td></tr>
+      <tr><td><strong>巨化股份</strong></td><td>暂无新动态发布</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- 五、下游应用战场 -->
+<div class="section">
+  <div class="section-title green">🔋 五、下游应用战场</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🖥️ 数据中心/算力中心</strong>
+    <ul>
+      <li><strong>东阳光云智算签130-150亿算力服务合同</strong> — 采购部署高性能算力服务器，以租赁方式交付，合同期60个月。算力中心大规模建设直接拉动液冷散热需求 <span class="source">（36氪）</span></li>
+      <li><strong>SK海力士纳市IPO</strong> — 募资265亿美元用于AI基础设施，算力军备竞赛持续升温 <span class="source">（36氪/新浪财经）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🚗 新能源汽车</strong>
+    <ul>
+      <li><strong>广汽集团预亏40.6-45.7亿</strong> — 行业竞争加剧、价格战持续，自主品牌利润承压 <span class="source">（36氪）</span></li>
+      <li>热门中概股中蔚来、理想、小鹏盘前普涨，市场情绪回暖</li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#34a853;">⚡ 液冷超充桩</strong>
+    <ul>
+      <li>本周暂无专项新动态，但芯片功耗持续攀升路径（H100→Rubin）背景下，液冷超充桩长期逻辑不变</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 六、利通科技（839167）-->
+<div class="section">
+  <div class="section-title gray">🏢 六、利通科技（839167）动态</div>
+  <ul>
+    <li><strong>今日未检索到利通科技直接相关公告或新闻</strong>（财联社搜索无结果，其他源未覆盖）<span class="source">（财联社）</span></li>
+    <li><strong>周末无重大公告</strong> — 7月11日为周六，市场休市，无交易数据</li>
+    <li><strong>液冷赛道整体信号积极</strong> — 算力大单、芯片IPO、新CPU发布等上游事件持续验证液冷散热需求的长期增长逻辑，利通科技作为液冷管路核心标的间接受益</li>
+  </ul>
+</div>
+
+<!-- 七、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 七、战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 高度关注</strong><br>
+    1. <strong>霍尔木兹海峡局势</strong> — 美国对伊朗提明确条件，中东地缘风险可能短期冲击油价，关注对液冷上游原材料（冷却液、管路）成本影响<br>
+    2. <strong>SK海力赴美上市</strong> — 265亿美元AI融资体量说明算力赛道资本热度不减，液冷作为算力基建"血管"持续受益
+  </div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    1. <strong>东阳光百亿算力合同</strong> — 落地路径及合作方，算力租赁模式能否复制<br>
+    2. <strong>AMD Zen 6 Venice发布会</strong> — 7月22-23日，关注CPU功耗数据和散热解决方案<br>
+    3. <strong>利通科技中报</strong> — 随着液冷渗透率提升，关注后续业绩释放节奏
+  </div>
+</div>
+
+</body>
+</html>
