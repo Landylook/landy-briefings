@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年7月12日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 {
+      font-size: 20px;
+    }
+    .date {
+      font-size: 15px;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+    }
+    .section {
+      margin-bottom: 24px;
+    }
+    .section-title {
+      font-size: 17px;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+    }
+    ul {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    table {
+      font-size: 15px;
+    }
+    th, td {
+      padding: 10px 12px;
+    }
+    .highlight, .warning {
+      padding: 14px 18px;
+      font-size: 15px;
+    }
+    .back-button {
+      font-size: 15px;
+      padding: 10px 14px;
+      margin-bottom: 16px;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body {
+      max-width: 90%;
+      margin: 30px auto;
+      padding: 24px;
+    }
+    h1 {
+      font-size: 21px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    body {
+      margin: 12px auto;
+      padding: 12px;
+      font-size: 17px;
+    }
+    h1 {
+      font-size: 19px;
+    }
+    .date {
+      font-size: 14px;
+    }
+    .section-title {
+      font-size: 18px;
+    }
+    table {
+      font-size: 14px;
+      display: block;
+      overflow-x: auto;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    body {
+      max-width: 900px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年7月12日（星期日）</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>智谱跻身"万亿港元俱乐部"</strong> — 市值半年涨10倍，唐杰发内部信"巨浪已来"，不追求短期变现直指AGI高地 <span class="source">（36氪）</span></li>
+    <li><strong>腾讯洽购Manus？</strong> — 知情人士称腾讯不控股，以约20亿美元估值从Meta手中回购Manus全部股权 <span class="source">（36氪/南方都市报）</span></li>
+    <li><strong>存储、锂矿、有色企业业绩暴增</strong> — 多家A股公司半年报预喜，部分净利润10倍以上增长，钨精矿同比涨超350% <span class="source">（36氪/证券时报）</span></li>
+    <li><strong>Circle获银行经营牌照</strong> — OCC批准设信托银行，USDC流通规模超730亿美元 <span class="source">（36氪/新浪财经）</span></li>
+    <li><strong>General Intuition获3.2亿美元融资</strong> — 贝佐斯支持的AI创业公司，用游戏数据训练AGI，估值23亿美元 <span class="source">（TechCrunch）</span></li>
+  </ul>
+</div>
+
+<!-- 一、地缘·中东 -->
+<div class="section">
+  <div class="section-title red">🌍 一、地缘·中东</div>
+
+  <ul>
+    <li><strong>霍尔木兹海峡命运成美伊谈判焦点</strong> — 特朗普与伊朗最高领袖哈梅内伊互相放话，海峡通行权问题悬而未决，全球油价面临不确定性 <span class="source">（AP News）</span></li>
+    <li><strong>越南船只倾覆致15名印度游客死亡</strong> — 离岸不远处发生沉船事故，南亚海上安全引发关注 <span class="source">（AP News）</span></li>
+    <li><strong>西班牙圣费尔明节一名跑者被牛角顶伤面部</strong> — 潘普洛纳奔牛节再发事故 <span class="source">（AP News）</span></li>
+  </ul>
+
+  <div class="highlight">
+    <strong>🟡 持续关注</strong><br>
+    霍尔木兹海峡局势是影响全球油价的关键变量，若冲突升级将推高能源价格，利好能源板块但可能增加液冷数据中心电力成本。
+  </div>
+</div>
+
+<!-- 二、AI·科技 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 二、AI·科技</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">🔥 AI大模型与智能体</strong>
+    <ul>
+      <li><strong>智谱市值半年涨10倍</strong> — 唐杰发内部信"巨浪已来"：不追求短期应用变现，直指AGI下一个高地（长程任务、自治智能体、自我进化、极致安全治理），6月跻身万亿港元俱乐部 <span class="source">（36氪）</span></li>
+      <li><strong>腾讯洽购Manus</strong> — 中方资本组团以约20亿美元估值从Meta手中回购Manus全部股权，腾讯保持少数股东地位不控股，标志中国资本争夺通用AI Agent赛道控制权 <span class="source">（36氪/南方都市报）</span></li>
+      <li><strong>OpenAI高管变动</strong> — Fidji Simo卸任，Greg Brockman继续负责产品；此前Brockman在Simo休病假期间接管产品工作 <span class="source">（The Verge）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">💡 AI基础设施与创新</strong>
+    <ul>
+      <li><strong>General Intuition获3.2亿美元融资</strong> — 贝佐斯支持的AI创业公司，认为游戏数据比互联网文本更适合训练AGI，谷歌DeepMind、MIT研究者、Coatue参投 <span class="source">（TechCrunch）</span></li>
+      <li><strong>欧洲央行警告AI或加剧通胀波动</strong> — 管委Moulin指出AI同时作用于供需两端，短期可能有通胀效应（资本支出增加），长期则可能因生产率提升抑制通胀 <span class="source">（36氪/财联社）</span></li>
+      <li><strong>全球首个潮玩AI设计平台"妙呀"全量公测</strong> — 大麦娱乐携手阿里Token Foundry推出，同时启动百万激励计划 <span class="source">（36氪）</span></li>
+      <li><strong>Circle获银行经营牌照</strong> — OCC批准设立Circle国民信托银行，USDC流通规模超730亿美元，稳定币合规化迈出关键一步 <span class="source">（36氪/新浪财经）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、A股·港股 -->
+<div class="section">
+  <div class="section-title green">📈 三、A股·港股</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">📊 市场数据</strong>
+    <ul>
+      <li><strong>存储、锂矿、有色板块业绩暴增</strong> — 多家公司发布2026年半年度业绩预告，部分净利润实现<strong>10倍以上增长</strong>：存储芯片受AI需求拉动持续高景气；锂电上游矿端和锂盐端受益基本面修复；钨精矿价格上半年同比涨幅超<strong>350%</strong> <span class="source">（36氪/证券时报）</span></li>
+      <li><strong>6月全国期货成交额同比增长52.72%</strong> — 成交量同比增27%，成交额超80万亿元；1-6月累计成交额超482万亿元，同比增42.08% <span class="source">（36氪/中期协）</span></li>
+      <li><strong>乘联分会：6月新能源车库存小幅收缩</strong> — 车市出口持续走强，燃油乘用车出现"崩塌式下滑"，商用车电动化加速 <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#34a853;">🌐 宏观与产业</strong>
+    <ul>
+      <li><strong>中国电力技术创新全球第一</strong> — UN《全球电力发展指数（2026）》报告显示，中国电力发展综合排名世界前列，电力技术创新居全球首位 <span class="source">（36氪/央视新闻）</span></li>
+      <li><strong>我国海洋生产总值超11万亿元</strong> — 造船三大指标全球领先连续16年，全球货物吞吐量前10港口中占8席 <span class="source">（36氪/央视新闻）</span></li>
+      <li><strong>国际能源署批评欧盟电气化迟缓</strong> — 欧盟电气化率仅23%，拖累竞争力；600吉瓦可再生能源项目建成等待并网 <span class="source">（36氪/新浪财经）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、利通科技（839167） -->
+<div class="section">
+  <div class="section-title purple">🏢 四、利通科技（839167）动态</div>
+
+  <ul>
+    <li><strong>暂无新增公告</strong> — 7月11日（上周五）至7月12日（周日）未搜索到利通科技新增公告或新闻报道 <span class="source">（财联社搜索未返回有效内容）</span></li>
+    <li><strong>行业层面：液冷赛道持续升温</strong> — AI算力需求拉动数据中心的液冷渗透率持续提升，存储芯片企业业绩暴增印证AI基建高景气度，液冷管路作为散热核心部件需求有望同步受益 <span class="source">（综合）</span></li>
+    <li><strong>板块联动关注</strong> — 北交所6月期货成交额大增52.72%，流动性改善利好北交所标的如利通科技的交易活跃度 <span class="source">（中期协）</span></li>
+  </ul>
+
+  <div class="highlight">
+    <strong>🟡 本周关注</strong><br>
+    建议关注：1) 液冷管路领域是否有新订单/产能公告；2) 北交所流动性改善对利通科技估值的传导效应；3) 半年报业绩披露窗口临近。
+  </div>
+</div>
+
+<!-- 战略预警 / 机会提示 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 五、战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 高度关注</strong><br>
+    <strong>霍尔木兹海峡局势</strong> — 特朗普与伊朗领导人互相威胁，全球油价存在大幅波动的风险。若冲突加剧，将推升能源价格，利好油气板块但增加算力中心运营成本。<br>
+    <strong>腾讯洽购Manus</strong> — 中国资本大规模回购AI资产的信号，可能引发AI赛道新一轮估值重估，需关注液冷产业链相关标的联动。
+  </div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    <strong>存储芯片/锂矿企业业绩暴增</strong> — AI需求拉动逻辑持续验证，液冷散热作为AI算力的"刚需配套"有望受益。<br>
+    <strong>北交所流动性改善</strong> — 期货成交额大增52.72%，市场活跃度提升对北交所标的是积极信号。<br>
+    <strong>智谱万亿港元俱乐部</strong> — 国产AI大模型估值天花板被打破，利好整个AI产业链信心。
+  </div>
+</div>
+
+</body>
+</html>
