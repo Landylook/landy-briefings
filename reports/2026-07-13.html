@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年7月13日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 { font-size: 20px; }
+    .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
+    .section { margin-bottom: 24px; }
+    .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 10px; }
+    table { font-size: 15px; }
+    th, td { padding: 10px 12px; }
+    .highlight, .warning { padding: 14px 18px; font-size: 15px; }
+    .back-button { font-size: 15px; padding: 10px 14px; margin-bottom: 16px; }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body { max-width: 90%; margin: 30px auto; padding: 24px; }
+    h1 { font-size: 21px; }
+  }
+  @media (max-width: 480px) {
+    body { margin: 12px auto; padding: 12px; font-size: 17px; }
+    h1 { font-size: 19px; }
+    .date { font-size: 14px; }
+    .section-title { font-size: 18px; }
+    table { font-size: 14px; display: block; overflow-x: auto; }
+  }
+  @media (min-width: 1200px) {
+    body { max-width: 900px; }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年7月13日 周一</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>美伊局势升级</strong> — 美国对伊朗发动新一轮打击，霍尔木兹海峡紧张局势加剧 <span class="source">（AP News）</span></li>
+    <li><strong>国产算力再获催化</strong> — 华为将在AI大会上展出业界最大规模超节点Atlas 950 SuperPoD真机 <span class="source">（招商证券/36氪）</span></li>
+    <li><strong>燃气轮机价格暴涨300%</strong> — AI数据中心电力需求激增推动燃气轮机价格3年涨3倍 <span class="source">（央视财经/36氪）</span></li>
+    <li><strong>长鑫科技IPO来袭</strong> — 7月16日网上申购，拟融资<strong>295亿元</strong>，今年A股最大IPO <span class="source">（36氪）</span></li>
+  </ul>
+</div>
+
+<!-- 一、大势研判 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 一、大势研判</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">📈 行业数据</strong>
+    <ul>
+      <li><strong>云计算设备出口暴增</strong> — 今年1-5月我国云计算设备、半导体设备出口金额同比大增<strong>114.4%</strong>、<strong>91.5%</strong>，AI产品承运量持续上涨，航空运价淡季不淡 <span class="source">（央视财经/36氪）</span></li>
+      <li><strong>REITs指数化突破</strong> — 首批4只REITs指数基金募集收官，近<strong>12亿元</strong>增量资金入市，填补REITs指数化投资空白 <span class="source">（上证报/36氪）</span></li>
+      <li><strong>熊猫债存量突破5000亿</strong> — 熊猫债市场存量规模首次迈上<strong>5000亿元</strong>，今年已发超1700亿元，同比增超七成 <span class="source">（央视财经/36氪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">⚡ 政策动态</strong>
+    <ul>
+      <li><strong>A股科技板块调整或近尾声</strong> — 多家券商认为AI算力需求扩张长期趋势未变，7月中下旬半年报将验证行情节奏 <span class="source">（上证报/36氪）</span></li>
+      <li><strong>港股扰动趋缓</strong> — 中信证券认为港股卖空占比将从历史高位回落，推荐创新药、航空、机器人及工业金属 <span class="source">（中信证券/36氪）</span></li>
+      <li><strong>美国消费信贷首次下降</strong> — 5月消费信贷下降1.82亿美元，信用卡借贷创2024年以来最大降幅，折射经济隐忧 <span class="source">（新华社/36氪）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 二、液冷管赛道情报 -->
+<div class="section">
+  <div class="section-title orange">💧 二、液冷管赛道情报</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🔬 技术路线</strong>
+    <ul>
+      <li><strong>AI电力需求驱动燃气轮机爆发</strong> — 微软向GE Vernova采购7台大型燃气轮机为数据中心供电，单台售价超<strong>2.5亿美元</strong>，燃气轮机价格3年涨<strong>300%</strong>，GE Vernova股价半年涨超70%。液冷作为更高效的散热方案需求逻辑强化 <span class="source">（央视财经/36氪）</span></li>
+      <li><strong>国产算力催化液冷</strong> — 华为将在即将召开的AI大会上展出业界最大规模超节点Atlas 950 SuperPoD真机，智算基础设施热度持续攀升 <span class="source">（招商证券/36氪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🏭 竞争格局</strong>
+    <ul>
+      <li><strong>AI服务器/智算硬件业绩弹性突出</strong> — 中信建投指出计算机板块半年报预告验证AI产业链景气度延续，AI服务器、智算基础设施硬件链条表现亮眼 <span class="source">（中信建投/36氪）</span></li>
+      <li><strong>海外模型持续迭代</strong> — OpenAI、xAI、Meta等海外模型强化Agent、Coding和多模态能力，推理侧算力消耗和基础设施投入有望继续共振 <span class="source">（中信建投/36氪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#e87020;">📦 客户与订单</strong>
+    <ul>
+      <li><strong>AI产品航空承运量大幅上涨</strong> — 多家头部货代和货运航司反馈，近期AI产品承运量持续上涨，半导体设备和云计算设备出口高速增长 <span class="source">（央视财经/36氪）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、下游应用战场 -->
+<div class="section">
+  <div class="section-title green">🔋 三、下游应用战场</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🖥️ 数据中心/算力中心</strong>
+    <ul>
+      <li><strong>长鑫科技295亿IPO</strong> — 国产存储芯片巨头长鑫科技7月16日网上申购，科创板拟融资<strong>295亿元</strong>，为今年A股规模最大IPO，将显著拉动智算中心建设 <span class="source">（36氪）</span></li>
+      <li><strong>华为Atlas 950 SuperPoD真机首展</strong> — 业界最大规模超节点将在人工智能大会上亮相，算力密度提升带来液冷刚需 <span class="source">（招商证券/36氪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🔋 储能行业</strong>
+    <ul>
+      <li><strong>经济运行"稳新活融"</strong> — 上半年基建投资、外贸进出口等多维度数据勾勒经济新图景，储能行业在能源转型中持续受益 <span class="source">（中证网/36氪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🚗 新能源汽车</strong>
+    <ul>
+      <li>（本期暂无重大新增动态）</li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#34a853;">⚡ 液冷超充桩</strong>
+    <ul>
+      <li>（本期暂无重大新增动态）</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、集成商动态 -->
+<div class="section">
+  <div class="section-title purple">📡 四、集成商动态（渠道情报）</div>
+  <table>
+    <tr>
+      <th style="width:18%">企业</th>
+      <th>核心进展</th>
+    </tr>
+    <tr>
+      <td><strong>英维克</strong></td>
+      <td>AI算力硬件高景气背景下，液冷散热方案需求持续旺盛，半年报业绩值得关注 <span class="source">（中信建投/36氪）</span></td>
+    </tr>
+    <tr>
+      <td><strong>曙光数创</strong></td>
+      <td>液冷领军企业，华为超节点等国产算力催化背景下，液冷渗透率提升逻辑不变 <span class="source">（行业跟踪）</span></td>
+    </tr>
+    <tr>
+      <td><strong>高澜股份</strong></td>
+      <td>数据中心液冷+储能液冷双轮驱动，行业高景气持续 <span class="source">（行业跟踪）</span></td>
+    </tr>
+    <tr>
+      <td><strong>申菱环境</strong></td>
+      <td>温控设备需求受益AI算力扩张 <span class="source">（行业跟踪）</span></td>
+    </tr>
+    <tr>
+      <td><strong>巨化股份</strong></td>
+      <td>冷却液国产替代方向持续关注 <span class="source">（行业跟踪）</span></td>
+    </tr>
+  </table>
+</div>
+
+<!-- 五、二级市场 & 资本动向 -->
+<div class="section">
+  <div class="section-title darkblue">📈 五、二级市场 & 资本动向</div>
+  <ul>
+    <li><strong>融资资金净偿还</strong> — 近一周融资净偿还677.77亿元，电子行业净偿还最多（211.08亿），存储概念股遭撤离；石油石化、钢铁获净买入 <span class="source">（证券时报/36氪）</span></li>
+    <li><strong>科技股调整或近尾声</strong> — 多家券商认为当前赚钱效应收缩已趋于充分，AI产业仍有望成为领涨主线，7月下旬半年报是关键 <span class="source">（上证报/36氪）</span></li>
+    <li><strong>Meta面临1.4万亿美元罚款</strong> — 美国4州联合指控Meta利用成瘾算法诱导未成年人，索赔高达<strong>1.4万亿美元</strong>，全美29州已提起诉讼 <span class="source">（央视财经/36氪）</span></li>
+    <li><strong>69%美国人支持AI财富基金</strong> — 民意调查显示多数劳动力支持立法强制AI巨头将半数股份划入公共主权财富基金 <span class="source">（新浪财经/36氪）</span></li>
+  </ul>
+</div>
+
+<!-- 六、利通科技 -->
+<div class="section">
+  <div class="section-title gray">🏢 六、利通科技（839167）动态</div>
+  <ul>
+    <li>本期未从公开渠道获取利通科技直接相关的最新公告或动态。建议关注北交所利通科技（839167）半年报预告时间节点及液冷管业务订单进展 <span class="source">（持续跟踪）</span></li>
+    <li>重点关注：AI算力基建液冷渗透率提升为利通科技液冷管业务提供的长期增长逻辑 <span class="source">（持续跟踪）</span></li>
+    <li>行业背景利好：燃气轮机暴涨300%印证AI电力需求激增 -> 液冷散热从"可选"变"刚需" -> 液冷管需求同步受益 <span class="source">（央视财经/36氪）</span></li>
+  </ul>
+</div>
+
+<!-- 七、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 七、战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 高度关注</strong><br>
+    <strong>美伊局势升级：</strong>美国对伊朗发动新一轮打击，霍尔木兹海峡紧张加剧，可能推升全球能源价格，进而影响数据中心电力成本和液冷经济性对比。同时地缘风险可能引发全球市场波动。<span class="source">（AP News）</span>
+  </div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    <strong>1. 长鑫科技IPO（7月16日申购）</strong> — 295亿元超级募资将带动国产智算产业链全面升级，液冷需求催化。<br>
+    <strong>2. 华为AI大会超节点展出</strong> — Atlas 950 SuperPoD真机首展，算力密度提升加速液冷渗透。<br>
+    <strong>3. 半年报窗口期</strong> — 7月中下旬半年报密集披露，AI算力硬件业绩验证关键时点。<br>
+    <strong>4. AI财富基金立法动向</strong> — 69%美国人支持，可能影响科技巨头投资和AI产业格局。<span class="source">（综合整理）</span>
+  </div>
+</div>
+
+</body>
+</html>
