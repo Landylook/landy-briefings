@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年7月14日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .lito {
+    background: #e8f5e9;
+    padding: 12px 16px;
+    border-left: 4px solid #2e7d32;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 { font-size: 20px; }
+    .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
+    .section { margin-bottom: 24px; }
+    .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 10px; }
+    table { font-size: 15px; }
+    th, td { padding: 10px 12px; }
+    .highlight, .warning, .lito { padding: 14px 18px; font-size: 15px; }
+    .back-button { font-size: 15px; padding: 10px 14px; margin-bottom: 16px; }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body { max-width: 90%; margin: 30px auto; padding: 24px; }
+    h1 { font-size: 21px; }
+  }
+  @media (max-width: 480px) {
+    body { margin: 12px auto; padding: 12px; font-size: 17px; }
+    h1 { font-size: 19px; }
+    .date { font-size: 14px; }
+    .section-title { font-size: 18px; }
+    table { font-size: 14px; display: block; overflow-x: auto; }
+  }
+  @media (min-width: 1200px) {
+    body { max-width: 900px; }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年7月14日 · 星期二</div>
+
+<!-- 地缘 · 中东 -->
+<div class="section">
+  <div class="section-title red">🌍 一、地缘 · 中东</div>
+  <ul>
+    <li><strong>美军再次空袭伊朗</strong> — 美国对伊朗发动新一轮军事打击，特朗普同时宣布将对通过霍尔木兹海峡的船只收费。中东局势持续升级，霍尔木兹海峡通行风险加剧。 <span class="source">（AP News）</span></li>
+    <li><strong>匈牙利通过宪法修正案</strong> — 匈牙利议会通过宪法修正案，解除欧尔班时代总统职务，政治格局发生重大变化。 <span class="source">（AP News）</span></li>
+    <li><strong>乌克兰担忧失去特朗普纽带</strong> — 参议员林赛·格雷厄姆突然去世后，乌方担忧与美国特朗普政府的战略联系进一步弱化。 <span class="source">（AP News）</span></li>
+  </ul>
+</div>
+
+<!-- AI · 科技 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 二、AI · 科技</div>
+
+  <div>
+    <strong style="color:#1a73e8;">🤯 大模型 & AI 芯片</strong>
+    <ul>
+      <li><strong>苹果跳过M6高端系列，直接推进M7</strong> — 苹果调整Mac芯片路线图，M7预计2027年上半年发布，M7 Ultra目标接近英伟达Blackwell性能，2028年产品将采用1.4纳米制程。 <span class="source">（36氪/界面）</span></li>
+      <li><strong>英特尔向爱尔兰追加投资50亿欧元</strong> — 扩大Intel 3制程下Xeon 6及下一代服务器处理器产能，满足AI和高性能计算需求。 <span class="source">（36氪/界面）</span></li>
+      <li><strong>General Intuition获3.2亿美元融资</strong> — 这家由贝佐斯支持、估值23亿美元的AI初创公司认为"游戏数据比互联网数据更适合训练AGI"，Coatue、Eric Schmidt等参投。 <span class="source">（TechCrunch）</span></li>
+      <li><strong>韩国团队开发芯片堆叠新工艺</strong> — 实现约4倍于商用HBM的集成密度，有望缓解AI存储瓶颈。 <span class="source">（36氪/科技日报）</span></li>
+    </ul>
+  </div>
+
+  <div>
+    <strong style="color:#1a73e8;">🔬 前沿科技突破</strong>
+    <ul>
+      <li><strong>世界首台超导量子热机研制成功</strong> — 芬兰阿尔托大学团队基于超导电路实现循环量子热机，标志量子热力学从理论走向实验的关键一步。 <span class="source">（36氪/科技日报）</span></li>
+      <li><strong>我国刷新钙钛矿-有机叠层太阳能电池效率纪录</strong> — 中科院化学所李永舫院士团队认证效率达<strong>28.04%</strong>，成果发表于《自然》。 <span class="source">（36氪/央视新闻）</span></li>
+      <li><strong>电子近光速运动重塑分子化学键</strong> — 布朗大学团队首次"看到"电子以接近光速飞奔时化学键的变化，论文发表于《科学》。 <span class="source">（36氪/科技日报）</span></li>
+    </ul>
+  </div>
+
+  <div>
+    <strong style="color:#1a73e8;">💻 科技巨头动态</strong>
+    <ul>
+      <li><strong>威廉姆斯引入黑石等53.4亿美元投资</strong> — 美国能源基础设施公司联手黑石、阿波罗、KKR，加速建设数据中心配套电力项目，凸显AI算力需求驱动的能源基建热潮。 <span class="source">（36氪/界面）</span></li>
+      <li><strong>英特尔发布"Starfire"品牌芯片</strong> — 重返太空领域命名路线，瞄准高端市场。 <span class="source">（The Verge）</span></li>
+      <li><strong>壳牌18亿美元出售印度可再生能源平台</strong> — 出售Sprng Energy全部股权，标志传统能源巨头调整可再生能源战略布局。 <span class="source">（36氪/界面）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- A股 · 港股 -->
+<div class="section">
+  <div class="section-title darkblue">📈 三、A股 · 港股</div>
+
+  <div>
+    <strong style="color:#0f9d58;">🏦 市场要闻</strong>
+    <ul>
+      <li><strong>多家银行收到票据业务指引</strong> — 不得开展价格低于<strong>0.50%</strong>的转贴现操作，旨在引导机构降低对购买票据冲规模的依赖，避免过度压价，票据市场出现罕见全品类价格横盘。 <span class="source">（36氪/财联社）</span></li>
+    </ul>
+  </div>
+
+  <div>
+    <strong style="color:#0f9d58;">🌙 美股隔夜表现</strong>
+    <ul>
+      <li><strong>美股三大指数集体收跌</strong> — 道指跌0.26%，纳指<strong>跌1.55%</strong>，标普500跌0.79%。大型科技股多数下跌：Arm跌超7%，英特尔跌超6%，英伟达、特斯拉跌超3%。微软逆势涨超1%。 <span class="source">（36氪）</span></li>
+      <li><strong>中概股涨跌不一</strong> — 叮咚买菜、蔚来涨超3%，网易、京东涨超2%；百度、名创优品跌超3%。 <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 液冷管赛道情报 -->
+<div class="section">
+  <div class="section-title orange">💧 四、液冷管赛道情报</div>
+
+  <div>
+    <strong style="color:#e87020;">📦 数据中心电力与液冷需求</strong>
+    <ul>
+      <li><strong>威廉姆斯获黑石等53.4亿美元投资电力项目</strong> — 为数据中心配套电力项目引入巨额资本，显示AI算力扩张对电力和冷却基础设施的拉动效应持续放大。液冷作为高密度机柜标配方案，需求确定性增强。 <span class="source">（36氪/界面）</span></li>
+    </ul>
+  </div>
+
+  <div>
+    <strong style="color:#e87020;">🔬 技术路线</strong>
+    <ul>
+      <li><strong>韩国芯片堆叠技术新突破</strong> — 4倍于商用HBM的集成密度意味着单芯片功耗密度将进一步攀升，液冷从"可选"加速变为"刚需"。 <span class="source">（36氪/科技日报）</span></li>
+      <li><strong>苹果M7 Ultra对标Blackwell</strong> — 苹果跳级推进AI芯片研发，显示AI竞争的白热化趋势，算力军备竞赛持续拉动液冷管路市场扩大。 <span class="source">（36氪/界面）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 利通科技（839167）动态 -->
+<div class="section">
+  <div class="section-title gray">🏢 五、利通科技（839167）动态</div>
+
+  <div class="highlight">
+    <strong>⚠️ 今日暂无利通科技专项新闻报道</strong><br>
+    财联社搜索结果未返回利通科技最新资讯。液冷赛道景气度持续上行，建议关注后续公告及下游订单进展。
+  </div>
+
+  <ul>
+    <li><strong>液冷赛道景气度持续</strong> — 从AI芯片竞争（苹果M7、英伟达Blackwell）到数据中心电力基建（威廉姆斯53.4亿美元投资），液冷全产业链受益逻辑不变。 <span class="source">（综合）</span></li>
+    <li><strong>关注北交所板块联动</strong> — 美股科技板块承压（纳指跌1.55%），但AI基础设施投资热度不减，液冷管路细分赛道增长逻辑持续强化。 <span class="source">（综合）</span></li>
+  </ul>
+</div>
+
+<!-- 战略预警 / 机会提示 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 六、战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 中东风暴升级</strong><br>
+    美军对伊朗新一轮空袭 + 特朗普宣布对霍尔木兹海峡船只收费，能源供应链风险急剧上升。若中东冲突进一步扩大，原油价格可能大幅波动，需关注对全球通胀预期和货币政策的影响。
+  </div>
+
+  <div class="highlight">
+    <strong>🟡 AI芯片竞赛白热化</strong><br>
+    苹果跳过M6高端版直接研发M7、英特尔追加50亿欧元产能、General Intuition获3.2亿美元融资——AI算力"军备竞赛"全面加速，液冷管路确定性受益。重点关注英伟达Blackwell供应链中冷却系统相关标的。
+  </div>
+
+  <div class="lito">
+    <strong>🟢 数据中心电力基建爆发</strong><br>
+    黑石、阿波罗、KKR联合投资53.4亿美元于数据中心配套电力项目——私募巨头大举押注标志着数据中心电力与冷却基础设施进入资本密集建设期，液冷管路行业需求拐点确认。
+  </div>
+</div>
+
+</body>
+</html>
