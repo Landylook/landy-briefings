@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年7月15日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 {
+      font-size: 20px;
+    }
+    .date {
+      font-size: 15px;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+    }
+    .section {
+      margin-bottom: 24px;
+    }
+    .section-title {
+      font-size: 17px;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+    }
+    ul {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    table {
+      font-size: 15px;
+    }
+    th, td {
+      padding: 10px 12px;
+    }
+    .highlight, .warning {
+      padding: 14px 18px;
+      font-size: 15px;
+    }
+    .back-button {
+      font-size: 15px;
+      padding: 10px 14px;
+      margin-bottom: 16px;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body {
+      max-width: 90%;
+      margin: 30px auto;
+      padding: 24px;
+    }
+    h1 {
+      font-size: 21px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    body {
+      margin: 12px auto;
+      padding: 12px;
+      font-size: 17px;
+    }
+    h1 {
+      font-size: 19px;
+    }
+    .date {
+      font-size: 14px;
+    }
+    .section-title {
+      font-size: 18px;
+    }
+    table {
+      font-size: 14px;
+      display: block;
+      overflow-x: auto;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    body {
+      max-width: 900px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年7月15日 · 周三</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>美股三大指数收涨</strong>，SK海力士暴涨超27%，存储芯片全线爆发，英伟达涨超4% <span class="source">（36氪）</span></li>
+    <li><strong>美联储主席沃什</strong>国会证词：对持续高通胀"绝不容忍"，约半数委员预计年底前需加息 <span class="source">（36氪/AP News）</span></li>
+    <li><strong>加州电动车新补贴</strong>方案出炉，特斯拉Model 3/Y直接受益，补贴金额$3,500 <span class="source">（财联社/36氪）</span></li>
+    <li><strong>长鑫科技</strong>科创板IPO定价8.66元/股，对应市值约5,792亿元，A股排名第28 <span class="source">（36氪/第一财经）</span></li>
+    <li><strong>西班牙2-1胜法国</strong>，挺进2026世界杯决赛 <span class="source">（AP News）</span></li>
+  </ul>
+</div>
+
+<!-- 一、大势研判 -->
+<div class="section">
+  <div class="section-title lightblue">🌍 一、地缘·中东</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">🌐 地缘政治</strong>
+    <ul>
+      <li><strong>欧盟与英国正式签署</strong>关于直布罗陀的条约，居民可凭居留卡进入西班牙，西班牙公民可使用政府身份证件进入直布罗陀。签署方包括欧盟贸易委员、英国欧洲事务国务大臣、西班牙外交大臣及直布罗陀首席部长 <span class="source">（36氪/央视新闻）</span></li>
+      <li><strong>Uber据悉深入洽谈</strong>收购德国外卖巨头Delivery Hero，计划最快本周达成协议，每股出价约33欧元。交易可能面临全球60多个市场的反垄断审查 <span class="source">（36氪/界面）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">💰 宏观政策</strong>
+    <ul>
+      <li><strong>美联储主席沃什</strong>为首次国会作证准备的证词曝光：对持续高通胀"绝不容忍"，"有恢复物价稳定的坚定决心"。但19名委员会成员中约半数预计年底前需加息，另一半倾向于维持利率不变甚至降息 <span class="source">（36氪/央视财经）</span></li>
+      <li><strong>加州推出"我的第一辆电动车"</strong>补贴计划，SB 168法案签署生效，总规模约2.7亿美元（州政府1.355亿+车企配套）。新车补贴$3,500（限MSRP<$5万），二手车补贴$1,750（限<$2.5万）。特斯拉Model 3/Y基础款直接受益 <span class="source">（财联社/36氪）</span></li>
+      <li><strong>市场波动加剧</strong>，公募机构加速打造多资产配置拼图。业内人士称"在资产荒与低利率时代，单纯追求高收益或一味保守都可能面临困境" <span class="source">（36氪/中证报）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 二、AI·科技 -->
+<div class="section">
+  <div class="section-title orange">🤖 二、AI·科技</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">💾 半导体 & 硬科技</strong>
+    <ul>
+      <li><strong>美股存储芯片全线暴涨：</strong>SK海力士涨超27%，闪迪涨超5%，美光科技涨超4%。英伟达涨超4%，英特尔涨超4% <span class="source">（36氪）</span></li>
+      <li><strong>长鑫科技科创板IPO</strong>发行价8.66元/股，发行后总股本66.88亿股，对应市值5,791.88亿元，A股排名第28。7月16日网上/网下申购，授予中金公司超额配售选择权（不超过初始发行15%） <span class="source">（36氪/第一财经）</span></li>
+      <li><strong>威兆半导体</strong>递表港交所，独家保荐人为广发证券 <span class="source">（36氪）</span></li>
+      <li><strong>信维通信</strong>拟以不超过11亿元收购益阳电子科技55%股权并增资，加强高端MLCC产品布局 <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🧠 AI前沿</strong>
+    <ul>
+      <li><strong>Bezos投资的AI创业公司</strong>General Intuition完成$3.2亿融资，估值$23亿，Coatue、Eric Schmidt、MIT及Google DeepMind参投。核心观点：游戏数据比互联网文本更适合训练AGI，因游戏中包含空间和时间的运动理解 <span class="source">（TechCrunch）</span></li>
+      <li><strong>AI音乐生成工具Suno</strong>引发版权讨论，The Verge专题分析AI音乐的内容创作与消费方式变革 <span class="source">（The Verge）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#e87020;">🚗 新能源车</strong>
+    <ul>
+      <li><strong>Slate Auto</strong>确认其$24,950电动皮卡运费为$1,450，最终起售价$26,400，称"美国所有皮卡中运费最低" <span class="source">（The Verge）</span></li>
+      <li><strong>大众集团成本削减</strong>可能导致多款车型被砍，包括保时捷Taycan、Cayenne Coupe和718后继车型，以及大众Jetta/Taos、奥迪Q5 Sportback等 <span class="source">（The Verge/Reuters）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、A股·港股 -->
+<div class="section">
+  <div class="section-title green">📈 三、A股·港股</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🏥 创新药板块</strong>
+    <ul>
+      <li><strong>头部公募掀起南下"举牌潮"：</strong>易方达、富国、汇添富等一个月内增持多只港股创新药标的并触及举牌线。南向资金对迈威生物、科济药业等持股6月以来大幅提升。机构认为AI主线休整、资金寻求高低切换，估值处于历史低位的创新药板块迎来多重逻辑共振的估值修复窗口 <span class="source">（36氪/上证报）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🗂️ 其他重要动态</strong>
+    <ul>
+      <li><strong>信维通信</strong>拟不超过11亿元收购MLCC标的，加码高端电子元器件 <span class="source">（36氪）</span></li>
+      <li><strong>长鑫科技</strong>科创板7月16日申购，A股市值排名第28，网下/网上同日进行 <span class="source">（36氪/第一财经）</span></li>
+      <li><strong>2026年度票房破190亿</strong>，《飞驰人生3》《给阿嬷的情书》《镖人》暂列年度前三 <span class="source">（36氪/灯塔专业版）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、利通科技（839167）-->
+<div class="section">
+  <div class="section-title purple">🏢 四、利通科技（839167）动态</div>
+  <div class="highlight">
+    <strong>📌 注：</strong>今日财联社等资讯源未直接抓取到利通科技最新公告或新闻。建议关注北交所公告及公司官网动态。
+  </div>
+  <ul>
+    <li><strong>液冷赛道核心逻辑不变：</strong>英伟达H100→Rubin路线芯片功耗持续攀升（700W→1800W+），液冷从可选变强制。SK海力士涨超27%暗示HBM/存储配套需求旺盛，间接利好液冷散热产业链 <span class="source">（综合）</span></li>
+    <li><strong>AI算力基建需求强劲：</strong>英伟达涨超4%、美光涨超4%，芯片需求向上传导至液冷管路及散热方案，利通科技作为液冷管标的持续受益于行业β <span class="source">（综合）</span></li>
+    <li><strong>储能液冷渗透率维持高位</strong>（92.7%），大储项目液冷方案仍是标配 <span class="source">（行业数据）</span></li>
+    <li><strong>短期关注：</strong>北交所流动性变化、公司半年度业绩预告披露节奏、液冷管新客户/新订单公告 <span class="source">（貔貅提示）</span></li>
+  </ul>
+</div>
+
+<!-- 五、二级市场 & 资本动向 -->
+<div class="section">
+  <div class="section-title darkblue">📈 五、二级市场 & 资本动向</div>
+  <ul>
+    <li><strong>美股三大指数</strong>集体收涨：道指+0.02%，纳指+0.9%，标普500+0.38%。SK海力士+27%，闪迪+5%，美光+4%，英伟达+4%，英特尔+4%。IBM-25%（市值蒸发近$700亿）。中概股多数下跌，百度-3%，阿里/京东/拼多多/哔哩哔哩微跌，小鹏+3%，理想+2%，蔚来+1% <span class="source">（36氪）</span></li>
+    <li><strong>港股创新药</strong>获公募举牌潮，机构看好估值修复窗口 <span class="source">（36氪/上证报）</span></li>
+    <li><strong>长鑫科技</strong>科创板定价8.66元，市值约5,792亿，上市后A股排名第28 <span class="source">（36氪/第一财经）</span></li>
+    <li><strong>Uber拟收购</strong>Delivery Hero，报价约每股33欧元，反垄断审查或成为最大障碍 <span class="source">（36氪/界面）</span></li>
+    <li><strong>马士基上调</strong>远东至北欧/地中海旺季附加费（PSS），20'柜$500，40'柜$1,000，7月22日起生效 <span class="source">（36氪/财联社）</span></li>
+  </ul>
+</div>
+
+<!-- 六、战略预警/机会提示 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 六、战略预警 / 机会提示</div>
+
+  <div class="highlight">
+    <strong>🟢 机会提示</strong><br>
+    <strong>存储芯片全线爆发</strong> — SK海力士暴涨27%，美光/英伟达/英特尔均涨超4%。AI算力基建链条（存储→芯片→散热/液冷）景气度持续向上，液冷管作为基建"血管"需求确定性增强。利通科技受益于行业β。<br><br>
+    <strong>加州电动车补贴</strong> — 特斯拉Model 3/Y直接受益，$3,500即时折扣有望刺激美国电动车销量。关注液冷超充桩配套建设需求。
+  </div>
+
+  <div class="warning">
+    <strong>🔴 风险关注</strong><br>
+    <strong>美联储加息预期分化</strong> — 约半数FOMC委员预计年底前需加息。沃什国会首秀表态"对通胀绝不容忍"偏鹰，若加息落地将对全球风险资产（包括A股/港股科技股）形成压力。<br><br>
+    <strong>大众集团大范围砍车型</strong> — 保时捷Taycan、奥迪Q6 E-Tron等电动车型面临取消风险，欧洲车企电动化转型节奏可能放缓，对供应链产生不确定性。
+  </div>
+</div>
+
+</body>
+</html>
