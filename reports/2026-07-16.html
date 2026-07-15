@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年7月16日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 { font-size: 20px; }
+    .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
+    .section { margin-bottom: 24px; }
+    .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 10px; }
+    table { font-size: 15px; }
+    th, td { padding: 10px 12px; }
+    .highlight, .warning { padding: 14px 18px; font-size: 15px; }
+    .back-button { font-size: 15px; padding: 10px 14px; margin-bottom: 16px; }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body { max-width: 90%; margin: 30px auto; padding: 24px; }
+    h1 { font-size: 21px; }
+  }
+  @media (max-width: 480px) {
+    body { margin: 12px auto; padding: 12px; font-size: 17px; }
+    h1 { font-size: 19px; }
+    .date { font-size: 14px; }
+    .section-title { font-size: 18px; }
+    table { font-size: 14px; display: block; overflow-x: auto; }
+  }
+  @media (min-width: 1200px) {
+    body { max-width: 900px; }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年7月16日（周四）</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>A股半年报披露启幕</strong> — 优彩资源、沃华医药率先"交卷"，昊志机电将于7月21日发首份创业板半年报 <span class="source">（36氪）</span></li>
+    <li><strong>美联储褐皮书发布</strong> — 多数地区经济小幅至温和增长，物价总体温和上涨，7月维持利率不变概率近<strong>88.8%</strong> <span class="source">（财联社）</span></li>
+    <li><strong>苹果寻求收购AI芯片公司</strong> — 苹果正与银行家接触，探讨收购半导体初创企业以强化AI服务器芯片 <span class="source">（36氪）</span></li>
+    <li><strong>SpaceX开源Grok Build</strong> — 马斯克旗下AI宣布完全开源，并删除此前保留的所有编码数据 <span class="source">（36氪）</span></li>
+    <li><strong>股票ETF半月吸金近<strong>2000亿元</strong></strong> — 宽基ETF重获资金青睐，7月1-14日净流入<strong>1946.71亿元</strong> <span class="source">（上证报）</span></li>
+  </ul>
+</div>
+
+<!-- 地缘·中东 -->
+<div class="section">
+  <div class="section-title red">🌍 地缘·中东</div>
+  <ul>
+    <li><strong>印度调整石油出口税</strong> — 自7月16日起，柴油出口暴利税从每升<strong>8.5卢比上调至15.5卢比</strong>，航空涡轮燃料从<strong>7.5卢比上调至14.5卢比</strong>；汽油出口税从每升4卢比下调至2.5卢比 <span class="source">（财联社）</span></li>
+    <li><strong>世界杯半决赛</strong> — 阿根廷 vs 英格兰半决赛进行中，阿根廷以2-0领先（截至发稿） <span class="source">（AP News）</span></li>
+  </ul>
+</div>
+
+<!-- AI·科技 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 AI·科技</div>
+  <ul>
+    <li><strong>苹果寻求收购AI芯片公司</strong> — 熟悉苹果工作的人士透露，苹果正与银行家探讨收购芯片公司，以解决内部AI服务器性能问题，已接触多家半导体初创企业 <span class="source">（36氪）</span></li>
+    <li><strong>SpaceX开源Grok Build</strong> — 马斯克旗下AI平台宣布开源，并重置所有用户限制，承诺完全尊重零数据保留（ZDR）原则，已删除之前保留的所有编码数据 <span class="source">（36氪/界面）</span></li>
+    <li><strong>微软安全部门裁员数百人</strong> — 新任安全负责人海耶特·加洛特主导重组，替换至少<strong>8名高管</strong>，以将更多资源转向AI安全产品 <span class="source">（财联社）</span></li>
+    <li><strong>豆包AI手机即将发布</strong> — 字节跳动联合中兴努比亚打造的首款AI智能体手机将于2026世界人工智能大会期间亮相，首批备货<strong>约20万台</strong> <span class="source">（36氪/界面）</span></li>
+    <li><strong>本田车型集成谷歌Gemini</strong> — 本田宣布将谷歌Gemini集成至Civic、Accord、CR-V、Pilot等车型，车主可自然语言交互 <span class="source">（36氪/界面）</span></li>
+    <li><strong>Apple Siri公开beta版体验</strong> — Apple Siri AI刷新公开beta版发布，全面能力需开发者支持配合，预计秋季大规模推送 <span class="source">（The Verge）</span></li>
+  </ul>
+</div>
+
+<!-- A股·港股 -->
+<div class="section">
+  <div class="section-title darkblue">📈 A股·港股</div>
+  <ul>
+    <li><strong>A股半年报披露启幕</strong> — 7月15日晚，优彩资源、沃华医药率先披露半年报；昊志机电将于<strong>7月21日</strong>发布创业板首份半年报；宁德时代、海康威视等将于<strong>7月25日</strong>披露 <span class="source">（36氪/上证报）</span></li>
+    <li><strong>公募基金上新风向变化</strong> — 科技主题基金持续上新，同时红利、固收等防御型产品明显扩容，供给结构更趋均衡 <span class="source">（36氪/上证报）</span></li>
+    <li><strong>股票ETF半月吸金<strong>1946.71亿元</strong></strong> — 7月13日单日净流入<strong>597.04亿元</strong>，14日再净流入<strong>185.71亿元</strong>，宽基ETF成为"吸金"主力 <span class="source">（36氪/上证报）</span></li>
+    <li><strong>基金信披新规落地</strong> — 二季报首次披露过去7年、10年长期业绩，长期价值导向愈发凸显 <span class="source">（36氪/上证报）</span></li>
+    <li><strong>日本将加密货币重新归类为金融资产</strong> — 日本议会通过法律，确立加密资产单独征税框架，为未来加密ETF奠定基础，新规预计<strong>2027年生效</strong> <span class="source">（36氪）</span></li>
+  </ul>
+</div>
+
+<!-- 利通科技（839167）-->
+<div class="section">
+  <div class="section-title gray">🏢 利通科技（839167）动态</div>
+  <ul>
+    <li><strong>暂无公开重大公告</strong> — 今日财联社搜索未发现利通科技相关新动态，建议持续关注北交所公告及后续半年报披露节点 <span class="source">（财联社）</span></li>
+    <li>利通科技作为北交所液冷管核心标的，液冷技术广泛应用于数据中心/智算中心、储能、新能源汽车、液冷超充桩等赛道，持续跟踪下游需求释放节奏 <span class="source">（貔貅整理）</span></li>
+  </ul>
+
+  <div class="highlight">
+    <strong>📌 液冷管赛道持续关注</strong><br>
+    2026年AI算力基建加速，芯片功耗持续攀升（H100 700W → Rubin 1800W+），液冷从可选变强制。政策端，工信部要求新建智算中心液冷渗透率100%，赛道持续高景气。
+  </div>
+</div>
+
+<!-- 战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 高度关注</strong><br>
+    A股进入半年报业绩验证期，资金配置逻辑正由主题交易转向业绩兑现，需密切关注液冷管赛道个股业绩兑现情况。
+  </div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    美联储9月利率路径仍存不确定性（累计加息25bp概率44%），保持关注；美国削减预算波及医疗基础设施，关注AI安全赛道机会。
+  </div>
+</div>
+
+</body>
+</html>
