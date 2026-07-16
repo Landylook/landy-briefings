@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年7月17日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 {
+      font-size: 20px;
+    }
+    .date {
+      font-size: 15px;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+    }
+    .section {
+      margin-bottom: 24px;
+    }
+    .section-title {
+      font-size: 17px;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+    }
+    ul {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    table {
+      font-size: 15px;
+    }
+    th, td {
+      padding: 10px 12px;
+    }
+    .highlight, .warning {
+      padding: 14px 18px;
+      font-size: 15px;
+    }
+    .back-button {
+      font-size: 15px;
+      padding: 10px 14px;
+      margin-bottom: 16px;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body {
+      max-width: 90%;
+      margin: 30px auto;
+      padding: 24px;
+    }
+    h1 {
+      font-size: 21px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    body {
+      margin: 12px auto;
+      padding: 12px;
+      font-size: 17px;
+    }
+    h1 {
+      font-size: 19px;
+    }
+    .date {
+      font-size: 14px;
+    }
+    .section-title {
+      font-size: 18px;
+    }
+    table {
+      font-size: 14px;
+      display: block;
+      overflow-x: auto;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    body {
+      max-width: 900px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年7月17日 星期五</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>美股三大指数集体收跌</strong> — 纳指跌1.47%，半导体、存储概念股重挫，SK海力士跌超13%，英伟达跌超2% <span class="source">（36氪）</span></li>
+    <li><strong>Anthropic筹备IPO</strong> — 计划数周内召开投资者会议，估值达9650亿美元，最早10月启动 <span class="source">（36氪/界面）</span></li>
+    <li><strong>月之暗面开源Kimi K3</strong> — 全球首个开源3万亿参数模型，原生支持视觉理解及100万token上下文 <span class="source">（36氪）</span></li>
+    <li><strong>近1700家A股公司披露上半年业绩预告</strong> — AI算力、机器人、创新药三大赛道持续高景气 <span class="source">（中证报）</span></li>
+  </ul>
+</div>
+
+<!-- 一、地缘·中东 -->
+<div class="section">
+  <div class="section-title lightblue">🌍 一、地缘·中东</div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">📡 国际动态</strong>
+    <ul>
+      <li><strong>美国收紧国际学生入境居留期限</strong> — 美国土安全部新规将外国学生、交流访问者入境居留期限设为最高4年，延期须申请，60天后生效 <span class="source">（央视新闻/36氪）</span></li>
+      <li><strong>世界人工智能合作组织（WAICO）成立</strong> — 29国签署成立协定，总部设在上海，王毅代表中国政府签署。哈萨克斯坦、俄罗斯、印尼等成为创始成员国 <span class="source">（新华社/36氪）</span></li>
+      <li><strong>华尔街银行利润暴涨</strong> — 欧盟委员会本周发布银行业竞争力报告，拟废除部分杠杆率资本监管要求，为银行松绑 <span class="source">（新浪财经/36氪）</span></li>
+      <li><strong>SpaceX星舰第13次试飞取消</strong> — 引擎未正常点火触发自动中止，SPCX收盘价首次跌破IPO发行价$135 <span class="source">（The Verge/36氪）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 二、AI·科技 -->
+<div class="section">
+  <div class="section-title orange">🤖 二、AI·科技</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🔬 AI大模型 & 基础设施</strong>
+    <ul>
+      <li><strong>月之暗面正式开源Kimi K3</strong> — 2.8万亿参数，基于KDA混合线性注意力机制，全球首个开源3万亿级别模型，原生视觉+100万token上下文，面向长程编程与推理场景 <span class="source">（36氪）</span></li>
+      <li><strong>Anthropic拟IPO</strong> — 计划数周内与投资者会面，估值9650亿美元首次超越OpenAI，最早10月启动上市 <span class="source">（36氪/界面）</span></li>
+      <li><strong>澜起科技韩国办公室遭搜查</strong> — 首尔中央地方检察厅就反垄断事宜进行现场搜查，公司称全力配合，未受指控，经营正常 <span class="source">（36氪）</span></li>
+      <li><strong>澜起科技预计上半年净利润增长63.9%-81.2%</strong> — 受益AI产业趋势，DDR5渗透率提升，PCIe Retimer等新产品收入攀升 <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#e87020;">📱 消费电子 & 平台</strong>
+    <ul>
+      <li><strong>苹果将推出OLED版iPad mini</strong> — 五年来最大升级，最快今秋发布，10月上市；明年更新入门版及iPad Air <span class="source">（界面/36氪）</span></li>
+      <li><strong>奈飞Q2营收125.6亿美元</strong> — 同比增长13%，考虑推出免费广告支持流媒体 <span class="source">（The Verge/36氪）</span></li>
+      <li><strong>奈飞考虑推免费流媒体</strong> — CEO Sarandos表示"某些市场可能有意义"，暂无短期计划 <span class="source">（The Verge）</span></li>
+      <li><strong>美股半导体板块重挫</strong> — SK海力士跌超13%，闪迪跌超12%，希捷科技跌10%，西部数据跌超9% <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、A股·港股 -->
+<div class="section">
+  <div class="section-title green">📈 三、A股·港股</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">📊 市场概览</strong>
+    <ul>
+      <li><strong>近1700家A股公司披露上半年业绩预告</strong> — 三大高景气赛道：AI算力、机器人、创新药迎来业绩兑现期，新旧动能转换信号明显 <span class="source">（中证报）</span></li>
+      <li><strong>逾80家央企控股上市公司上半年业绩报喜</strong> — 有色金属、化工、航运、军工、电力景气度高企；AI、商业航天、新材料等战略性新兴产业成为增长新引擎 <span class="source">（上证报/36氪）</span></li>
+      <li><strong>澜起科技上半年净利预增63.9%-81.2%</strong> — 营收约33.35亿元，同比+26.6%，AI产业趋势驱动DDR5 RCD芯片出货量显著增加 <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#34a853;">⚡ 液冷相关</strong>
+    <ul>
+      <li><strong>AI算力需求持续高景气</strong> — 中证报指出AI算力产业链上市公司业绩集中爆发，液冷散热作为AI算力基建核心环节持续受益 <span class="source">（中证报）</span></li>
+      <li><strong>澜起科技DDR5渗透率提升</strong> — 第三、第四子代RCD芯片出货占比提升，MRCD/MDB、PCIe Retimer等互联芯片收入显著攀升，验证AI服务器需求旺盛 <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、利通科技（839167）动态 -->
+<div class="section">
+  <div class="section-title purple">🏢 四、利通科技（839167）动态</div>
+
+  <div class="highlight">
+    <strong>💡 行业背景</strong><br>
+    今日无利通科技直接相关公告或新闻。但以下行业动向对利通科技（液冷管路龙头）构成利好：<br><br>
+    <strong>1. AI算力产业链业绩爆发</strong> — 近1700家A股公司预告中，AI算力板块最亮眼，液冷从"可选"变"强制"趋势加速 <span class="source">（中证报）</span><br>
+    <strong>2. DDR5/AI服务器芯片需求旺盛</strong> — 澜起科技业绩预增超60%，验证AI服务器产业链高景气 <span class="source">（36氪）</span><br>
+    <strong>3. 美股半导体回调</strong> — 存储/半导体大跌或预示短期调整，但AI长期算力需求不改，液冷赛道基本面坚实 <span class="source">（36氪）</span>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#9334e6;">📋 跟踪点评</strong>
+    <ul>
+      <li><strong>行业景气度：高</strong> — AI算力产业链业绩兑现期已至，液冷管路需求持续上行</li>
+      <li><strong>竞争格局：稳定</strong> — 未观察到液冷管路领域新进入者或价格战信号</li>
+      <li><strong>政策面：利好</strong> — 世界人工智能合作组织成立，上海总部，中国AI话语权提升</li>
+      <li><strong>风险提示</strong> — 美股半导体板块短期调整或影响A股科技板块情绪</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 五、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 五、战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 高度关注</strong><br>
+    <strong>美股半导体板块暴跌溢出效应</strong> — SK海力士跌超13%、闪迪/希捷跌10%+，或传导至A股科技板块情绪。关注北交所相关标的短期波动风险，但AI长期逻辑不变，回调或是加仓机会。
+  </div>
+
+  <div class="highlight">
+    <strong>🟡 机会提示</strong><br>
+    <strong>1. Kimi K3开源意义重大</strong> — 全球首个开源3万亿参数模型，国产大模型实力显现，利好算力基础设施及液冷需求持续增长<br>
+    <strong>2. AnthropicIPO估值9650亿美元</strong> — AI独角兽估值天花板不断抬高，印证AI产业长期增长空间<br>
+    <strong>3. 央企AI/商业航天/新材料</strong> — 逾80家央企上半年业绩报喜，战略性新兴产业是新增长极，资金有望持续流入<br>
+    <strong>4. WAICO成立</strong> — 世界人工智能合作组织总部设上海，中国在全球AI治理中话语权提升，利好国内AI产业链
+  </div>
+</div>
+
+</body>
+</html>
