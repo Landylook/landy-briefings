@@ -112,6 +112,7 @@
     margin-right: 6px;
   }
 
+  /* 响应式设计 - 手机端 */
   @media (max-width: 768px) {
     body {
       margin: 20px auto;
@@ -119,30 +120,85 @@
       font-size: 16px;
       line-height: 1.9;
     }
-    h1 { font-size: 20px; }
-    .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
-    .section { margin-bottom: 24px; }
-    .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
-    ul { padding-left: 24px; }
-    li { margin-bottom: 10px; }
-    table { font-size: 15px; }
-    th, td { padding: 10px 12px; }
-    .highlight, .warning { padding: 14px 18px; font-size: 15px; }
-    .back-button { font-size: 15px; padding: 10px 14px; margin-bottom: 16px; }
+    h1 {
+      font-size: 20px;
+    }
+    .date {
+      font-size: 15px;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+    }
+    .section {
+      margin-bottom: 24px;
+    }
+    .section-title {
+      font-size: 17px;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+    }
+    ul {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    table {
+      font-size: 15px;
+    }
+    th, td {
+      padding: 10px 12px;
+    }
+    .highlight, .warning {
+      padding: 14px 18px;
+      font-size: 15px;
+    }
+    .back-button {
+      font-size: 15px;
+      padding: 10px 14px;
+      margin-bottom: 16px;
+    }
   }
+
+  /* 响应式设计 - 平板端 */
   @media (min-width: 769px) and (max-width: 1024px) {
-    body { max-width: 90%; margin: 30px auto; padding: 24px; }
-    h1 { font-size: 21px; }
+    body {
+      max-width: 90%;
+      margin: 30px auto;
+      padding: 24px;
+    }
+    h1 {
+      font-size: 21px;
+    }
   }
+
+  /* 响应式设计 - 小屏幕手机 */
   @media (max-width: 480px) {
-    body { margin: 12px auto; padding: 12px; font-size: 17px; }
-    h1 { font-size: 19px; }
-    .date { font-size: 14px; }
-    .section-title { font-size: 18px; }
-    table { font-size: 14px; display: block; overflow-x: auto; }
+    body {
+      margin: 12px auto;
+      padding: 12px;
+      font-size: 17px;
+    }
+    h1 {
+      font-size: 19px;
+    }
+    .date {
+      font-size: 14px;
+    }
+    .section-title {
+      font-size: 18px;
+    }
+    table {
+      font-size: 14px;
+      display: block;
+      overflow-x: auto;
+    }
   }
+
+  /* 响应式设计 - 大屏幕电脑 */
   @media (min-width: 1200px) {
-    body { max-width: 900px; }
+    body {
+      max-width: 900px;
+    }
   }
 </style>
 </head>
@@ -155,83 +211,102 @@
 </div>
 
 <h1>AI研究员--Landy葉的简报</h1>
-<div class="date">2026年7月18日 周六</div>
+<div class="date">2026年7月18日 · 星期六</div>
 
 <!-- 今日速览 -->
 <div class="section">
   <div class="section-title">📊 今日速览</div>
   <ul>
-    <li><strong>中东战火升级</strong> — 美伊互炸基建，伊朗导弹击中科威特海水淡化厂，油价冲上<strong>$86/桶</strong> <span class="source">（AP News）</span></li>
-    <li><strong>Apple诉OpenAI窃取商业机密</strong> — 指控400+前Apple员工入职OpenAI，或影响OpenAI年内IPO <span class="source">（TechCrunch）</span></li>
-    <li><strong>Netflix近$6亿收购Ben Affleck的AI初创</strong> — AI并购持续火热 <span class="source">（The Verge）</span></li>
-    <li><strong>Meta拟$100亿出租算力给Anthropic</strong> — 大模型算力军备竞赛白热化 <span class="source">（The Verge）</span></li>
-    <li><strong>科创板年内回购上限超80亿</strong> — 澜起科技拟回购3-6亿元 <span class="source">（36氪/第一财经）</span></li>
+    <li><strong>WAIC 2026开幕</strong> — 世界人工智能大会在上海启幕，腾讯、蔚来神玑、文远知行等集中展示AI前沿 <span class="source">（36氪）</span></li>
+    <li><strong>IDC预测：2030年全球活跃Agent将超22亿</strong> — 大模型Agent化加速，推动算力需求持续攀升 <span class="source">（36氪/IDC）</span></li>
+    <li><strong>湖南裕能投240亿建设新能源材料项目</strong> — 含80万吨磷酸铁锂、100万吨磷酸铁产能 <span class="source">（36氪）</span></li>
+    <li><strong>科创板年内回购金额上限超80亿</strong> — 50余家公司新增披露回购计划，澜起科技3-6亿元领衔 <span class="source">（36氪/第一财经）</span></li>
   </ul>
 </div>
 
-<!-- 一、地缘·中东 -->
+<!-- 一、大势研判 -->
 <div class="section">
-  <div class="section-title lightblue">🌍 地缘·中东</div>
+  <div class="section-title lightblue">🤖 一、大势研判</div>
 
-  <ul>
-    <li><strong>美伊战事升级</strong> — 美军连续第7夜轰炸伊朗，打击桥梁、能源设施和港口。伊朗反击导弹射向卡塔尔和科威特，击中科威特一座大型海水淡化厂，科威特约<strong>90%饮用水</strong>依赖该设施 <span class="source">（AP News）</span></li>
-    <li><strong>霍尔木兹海峡持续封锁</strong> — 自2月28日伊朗封锁海峡以来，油价持续走高，周五突破<strong>$86/桶</strong>，接近一个月高位 <span class="source">（AP News）</span></li>
-    <li><strong>临时停火破裂</strong> — 此前短暂停火协议已崩溃，冲突已持续逾4个月，暂无结束迹象 <span class="source">（AP News）</span></li>
-    <li><strong>中东水资源脆弱性暴露</strong> — 海湾国家高度依赖海水淡化（科威特90%、阿曼86%、沙特70%），均在伊朗导弹射程范围内 <span class="source">（AP News）</span></li>
-  </ul>
-</div>
-
-<!-- 二、AI·科技 -->
-<div class="section">
-  <div class="section-title orange">🤖 AI·科技</div>
-
-  <ul>
-    <li><strong>Apple诉OpenAI商业秘密案发酵</strong> — Apple指控OpenAI窃取贸易机密，400+前Apple员工跳槽至OpenAI，OpenAI的IPO计划或受影响 <span class="source">（TechCrunch）</span></li>
-    <li><strong>Apple向OpenAI数十名前员工发出法律警告</strong> — 约40名前员工收到律师函，要求保存相关通信文件 <span class="source">（The Verge / FT）</span></li>
-    <li><strong>Netflix以近$6亿收购Ben Affleck的AI初创</strong> — AI领域并购持续升温 <span class="source">（The Verge）</span></li>
-    <li><strong>Meta拟向Anthropic出租算力</strong> — 潜在交易价值<strong>$100亿/两年</strong>，Anthropic月付Meta <span class="source">（The Verge / NYT）</span></li>
-    <li><strong>IDC：2030年全球活跃AI Agent将超22亿</strong> — 2026年预计7940万个，DAA（日活智能体）指标由李彦宏首次提出 <span class="source">（36氪）</span></li>
-    <li><strong>2026世界人工智能大会上海开幕</strong> — 神玑公司（蔚来芯片子公司）首次参展，发布"睿动"具身智能开发平台 <span class="source">（36氪）</span></li>
-    <li><strong>Apple与Google被要求下架AI"脱衣"App</strong> — 旧金山检察官发函，指13款App涉嫌生成未经同意的裸体AI图片 <span class="source">（The Verge）</span></li>
-    <li><strong>SpaceX竞标DoD算力合同</strong> — 继Google和Anthropic后，SpaceX欲将云计算版图拓展至国防部 <span class="source">（The Verge / WSJ）</span></li>
-  </ul>
-</div>
-
-<!-- 三、A股·港股 -->
-<div class="section">
-  <div class="section-title green">📈 A股·港股</div>
-
-  <ul>
-    <li><strong>科创板年内回购上限超80亿</strong> — 50余家公司新增回购计划，澜起科技3-6亿领衔 <span class="source">（36氪/第一财经）</span></li>
-    <li><strong>深交所重点监控"万邦医药"</strong> — 本周对173起异常交易采取监管措施 <span class="source">（36氪）</span></li>
-    <li><strong>湖南裕能拟投240亿</strong> — 贵州瓮安矿化一体新能源项目，含80万吨磷酸铁锂、100万吨磷酸铁 <span class="source">（36氪）</span></li>
-    <li><strong>惠科股份出资40亿</strong> — 绍兴建先进封装及测试项目，一期月产能2000万颗12寸混合芯片 <span class="source">（36氪）</span></li>
-    <li><strong>华勤技术约1.89亿港元增持晶合集成H股</strong> — 持股比例升至约10.48% <span class="source">（36氪）</span></li>
-    <li><strong>高盛看好通宇通讯低轨卫星业务</strong> — 相控阵天线进入重点星座供应链 <span class="source">（36氪/界面）</span></li>
-    <li><strong>甘咨询辟谣"高盛重仓"</strong> — 公告称高盛国际持仓比例较低，媒体报道严重失实 <span class="source">（36氪）</span></li>
-  </ul>
-</div>
-
-<!-- 四、利通科技（839167）动态 -->
-<div class="section">
-  <div class="section-title purple">🏢 四、利通科技（839167）动态</div>
-
-  <div class="highlight">
-    <strong>🟡 本周暂无利通科技新增重大公告或新闻披露</strong><br>
-    近期缺乏利通科技直接相关的最新动态，以下为持仓跟踪提示：
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">📈 行业数据</strong>
+    <ul>
+      <li><strong>WAIC 2026在上海开幕</strong> — 以"智能伙伴 共创未来"为主题。腾讯连续九届参展，展示AI在各领域进化为生产生活好搭档的跃进 <span class="source">（36氪）</span></li>
+      <li><strong>IDC预发布DAA研究报告</strong> — 预计2030年全球活跃Agent数量将突破22亿个，Agent生态爆发将驱动智算中心军备竞赛 <span class="source">（36氪/IDC）</span></li>
+      <li><strong>Apple起诉OpenAI</strong> — Apple提起商业机密诉讼，指控超400名前员工现任职OpenAI，恰逢OpenAI考虑年内IPO，事态可能影响AI行业人才流向 <span class="source">（TechCrunch）</span></li>
+    </ul>
   </div>
 
-  <ul>
-    <li><strong>赛道环境持续利好</strong> — 安徽神玑发布"睿动"具身智能开发平台，AI算力芯片功耗持续攀升（H100→Rubin），液冷从可选变强制，液冷管需求逻辑不变 <span class="source">（36氪）</span></li>
-    <li><strong>AI基建资本开支持续扩张</strong> — Anthropic $500亿建数据中心、Meta拟$100亿出租算力，算力基建投入维持高景气度 <span class="source">（The Verge）</span></li>
-    <li><strong>IDC预测AI Agent 2030年超22亿</strong> — 推理端算力需求爆发，将进一步驱动数据中心液冷渗透率提升 <span class="source">（36氪）</span></li>
-    <li>建议持续关注北交所及利通科技后续季报/半年报披露时间 <span class="source">（貔貅提示）</span></li>
-  </ul>
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">⚡ 算力基建动态</strong>
+    <ul>
+      <li><strong>惠科股份出资40亿元建设先进封装及测试项目</strong> — 位于绍兴，一期建设12寸混合芯片先进封装产线，达产产能2000万颗/月，建设周期不超过3年 <span class="source">（36氪）</span></li>
+      <li><strong>腾讯智能体集中亮相WAIC</strong> — 以"Hey，我的AI Buddy"主题展示AI生产力提升，AI Agent化趋势将推动液冷需求从可选变为强制 <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
 </div>
 
-<!-- 集成商动态 -->
+<!-- 二、液冷管赛道情报 -->
 <div class="section">
-  <div class="section-title darkblue">📡 集成商动态（渠道情报）</div>
+  <div class="section-title orange">💧 二、液冷管赛道情报</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🔬 技术路线</strong>
+    <ul>
+      <li><strong>蔚来神玑芯片展出完整产品序列</strong> — NX9031X/U/C覆盖智能辅助驾驶、具身智能、Agent推理三大AI赛道，推理侧功耗需求将持续推动液冷方案落地 <span class="source">（36氪）</span></li>
+      <li><strong>液冷渗透率持续提升</strong> — AI Agent数量暴增（IDC预测2030年22亿+）意味着更大规模算力集群，液冷管在冷板式液冷和浸没式液冷中的管路需求确定性增强</li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#e87020;">📦 订单与市场</strong>
+    <ul>
+      <li><strong>WAIC 2026集中展示AI Agent应用</strong> — 启明、腾讯、文远知行等厂商密集发布智能体产品，推理部署的大规模集群建设周期即将到来，液冷管路作为基础设施核心组件将持续受益</li>
+      <li><strong>国产替代进程持续</strong> — 随着智算中心建设加速，液冷管路国产化率仍有提升空间，关注头部集成商配套进展</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、下游应用战场 -->
+<div class="section">
+  <div class="section-title green">🔋 三、下游应用战场</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🖥️ 数据中心/算力中心</strong>
+    <ul>
+      <li><strong>WAIC 2026成为AI基础设施展示窗口</strong> — 腾讯、蔚来神玑、黑芝麻等密集发布AI Agent和芯片产品，推理端算力需求将直接推动智算中心建设提速 <span class="source">（36氪）</span></li>
+      <li><strong>文远知行发布物理AI大模型WITT</strong> — 智能驾驶和机器人方向对算力提出更高要求，端侧+云侧混合部署将拉动边缘数据中心液冷需求 <span class="source">（第一电动）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🔋 储能行业</strong>
+    <ul>
+      <li><strong>湖南裕能拟投资240亿元建设矿化一体新能源电池材料项目</strong> — 含80万吨磷酸铁锂、100万吨磷酸铁产能，建设周期5年，首期18个月内投资50-80亿元 <span class="source">（36氪/公司公告）</span></li>
+      <li><strong>大储液冷渗透率维持高位</strong> — 湖南裕能240亿级投资反映储能产业链持续扩产，液冷储能系统配套管路需求有增无减</li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🚗 新能源汽车</strong>
+    <ul>
+      <li><strong>小米增程首车内饰外观公开</strong> — 雷军发布视频解读，已在工厂试产，小米汽车产品线加速扩张 <span class="source">（车东西）</span></li>
+      <li><strong>小米汽车在马来西亚招聘</strong> — 100多人抢一个岗位，小米汽车海外布局加速 <span class="source">（第一电动）</span></li>
+      <li><strong>华为ADS 5.0 vs 地平线HSD 2.0 vs 博世文远</strong> — 智驾方案竞争白热化，自动驾驶对芯片算力和散热方案的要求持续提升 <span class="source">（第一电动）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#34a853;">⚡ 液冷超充桩</strong>
+    <ul>
+      <li>本日暂无液冷超充桩具体项目新闻，但WAIC 2026展示的智能驾驶和电动汽车生态加速将推动超充补能系统建设</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、集成商动态 -->
+<div class="section">
+  <div class="section-title purple">📡 四、集成商动态（渠道情报）</div>
   <table>
     <tr>
       <th style="width:18%">企业</th>
@@ -239,42 +314,62 @@
     </tr>
     <tr>
       <td><strong>英维克</strong></td>
-      <td>受益于AI算力基建持续扩张，液冷温控需求景气度维持高位</td>
+      <td>本日暂无公开新动态，WAIC期间液冷散热方案有望成为行业焦点</td>
     </tr>
     <tr>
       <td><strong>曙光数创</strong></td>
-      <td>IDC预测DAA 2030超22亿，推理端算力需求持续推升数据中心液冷渗透</td>
+      <td>本日暂无公开新动态，持续关注智算中心液冷订单</td>
     </tr>
     <tr>
       <td><strong>高澜股份</strong></td>
-      <td>新能源+储能液冷双轮驱动，湖南裕能240亿项目预示储能赛道资本涌入</td>
+      <td>本日暂无公开新动态</td>
     </tr>
     <tr>
       <td><strong>申菱环境</strong></td>
-      <td>数据中心温控赛道整体受益于中东战事推升的能源基建投入</td>
+      <td>本日暂无公开新动态</td>
     </tr>
     <tr>
       <td><strong>巨化股份</strong></td>
-      <td>冷却液国产替代逻辑不变，氟化工产业链关注政策催化</td>
+      <td>本日暂无公开新动态</td>
     </tr>
   </table>
 </div>
 
-<!-- 战略预警 -->
+<!-- 五、二级市场 & 资本动向 -->
 <div class="section">
-  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 战略预警 / 机会提示</div>
+  <div class="section-title darkblue">📈 五、二级市场 & 资本动向</div>
+  <ul>
+    <li><strong>科创板年内新增50余家公司披露回购计划</strong> — 回购金额上限合计超80亿元。澜起科技7月17日披露3-6亿元回购，道通科技、海泰新光、三友医疗等相继发布 <span class="source">（36氪/第一财经）</span></li>
+    <li><strong>深交所对"万邦医药"实施重点监控</strong> — 7月13-17日共对173起异常交易行为采取措施，涉及盘中拉抬打压、虚假申报等 <span class="source">（36氪）</span></li>
+    <li><strong>神玑公司首次独立参加WAIC</strong> — 蔚来旗下芯片子公司展现从车载芯片到AI全场景芯片的完整产品矩阵，标志着车企芯片子公司的资本化运作加速 <span class="source">（36氪）</span></li>
+    <li><strong>华勤技术约1.89亿港元收购晶合集成0.28% H股</strong> — 累计持股已达10.48%，半导体产业横向整合加速 <span class="source">（36氪）</span></li>
+  </ul>
+</div>
+
+<!-- 六、利通科技 -->
+<div class="section">
+  <div class="section-title gray">🏢 六、利通科技（839167）动态</div>
+  <ul>
+    <li><strong>本日暂无利通科技新增公告/新闻</strong> — 财联社等信源信息有限，需关注周一股市交易期间是否有新动态</li>
+    <li><strong>WAIC 2026释放积极信号</strong> — AI Agent化和推理需求推动智算中心建设确定性增强，液冷管路作为算力基础设施核心组件，利通科技可关注与集成商的合作进展</li>
+    <li><strong>科创板回购潮的参照意义</strong> — 北交所上市公司如有利通科技层面回购或增持预期，将形成积极信号</li>
+  </ul>
+</div>
+
+<!-- 七、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 七、战略预警 / 机会提示</div>
 
   <div class="warning">
     <strong>🔴 高度关注</strong><br>
-    <strong>中东战事全面升级</strong> — 美伊互炸基建，油价$86+，霍尔木兹海峡封锁持续。可能推升全球通胀预期，影响央行货币政策节奏。同时，高油价将加速能源基建和液冷超充投资。<br><br>
-    <strong>Apple诉OpenAI或改变AI竞争格局</strong> — 商业秘密案若影响OpenAI IPO，可能重塑大模型行业生态。
+    <strong>WAIC 2026释放AI Agent化加速信号</strong> — 腾讯、蔚来神玑、文远知行、黑芝麻等密集发布Agent/芯片产品。IDC预测2030年全球活跃Agent超22亿个，推理算力需求将推升智算中心建设增速，液冷管路需求确定性强。建议密切关注本次WAIC参展液冷企业的客户拓展动态。
   </div>
 
   <div class="highlight">
     <strong>🟡 持续跟踪</strong><br>
-    <strong>AI算力基建军备竞赛</strong> — Anthropic $500亿、Meta $100亿出租算力、SpaceX竞标DoD合同，算力基建资本开支持续高涨，液冷产业链核心受益。<br><br>
-    <strong>华为/Meta具身智能赛道</strong> — 世界AI大会具身智能产品密集发布，机器人热管理有望成为液冷新增长极。<br><br>
-    <strong>科创板回购潮</strong> — 年内50+公司回购超80亿，市场底部信号值得关注。
+    <strong>Apple诉OpenAI案</strong> — 涉及超400名前Apple员工现就职OpenAI，恰逢OpenAI年内IPO关键期，或将影响全球AI人才流动格局。<br><br>
+    <strong>科创板回购潮</strong> — 50余家公司年内回购置上限超80亿，关注北交所是否跟进形成示范效应。<br><br>
+    <strong>小米增程车试产</strong> — 增程车型热管理对液冷管路需求弹性大，关注定点供应商信息。 
   </div>
 </div>
 
