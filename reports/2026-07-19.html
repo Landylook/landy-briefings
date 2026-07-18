@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年7月19日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.red { border-bottom-color: #d93025; color: #d93025; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 { font-size: 20px; }
+    .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
+    .section { margin-bottom: 24px; }
+    .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 10px; }
+    table { font-size: 15px; }
+    th, td { padding: 10px 12px; }
+    .highlight, .warning { padding: 14px 18px; font-size: 15px; }
+    .back-button { font-size: 15px; padding: 10px 14px; margin-bottom: 16px; }
+  }
+  @media (max-width: 480px) {
+    body { margin: 12px auto; padding: 12px; font-size: 17px; }
+    h1 { font-size: 19px; }
+    .date { font-size: 14px; }
+    .section-title { font-size: 18px; }
+    table { font-size: 14px; display: block; overflow-x: auto; }
+  }
+  @media (min-width: 1200px) {
+    body { max-width: 900px; }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年7月19日（周日）</div>
+
+<!-- 📊 今日速览 -->
+<div class="section">
+  <div class="section-title lightblue">📊 今日速览</div>
+  <ul>
+    <li><strong>美伊冲突持续升级</strong> — 美军发动新一轮空袭打击伊朗，霍尔木兹海峡局势紧张 <span class="source">（AP News）</span></li>
+    <li><strong>Apple起诉OpenAI窃取商业机密</strong> — 指控逾400名前苹果员工跳槽，可能影响OpenAI年内IPO计划 <span class="source">（TechCrunch）</span></li>
+    <li><strong>WAIC 2026在上海召开</strong> — 腾讯升级发布具身智能全栈方案，月之暗面Kimi K3开源模型超越GPT-5.6 <span class="source">（36氪）</span></li>
+    <li><strong>人形机器人赛道火热</strong> — 2026上半年全球融资规模达<strong>1072亿元</strong>，近乎2025全年两倍 <span class="source">（东方财富）</span></li>
+    <li><strong>锂电池消费税调整</strong> — 崔东树："油电同权"大幕正式拉开 <span class="source">（36氪）</span></li>
+  </ul>
+</div>
+
+<!-- 一、地缘·中东 -->
+<div class="section">
+  <div class="section-title red">🌍 一、地缘 · 中东</div>
+  <ul>
+    <li><strong>美军对伊朗发动新一轮空袭</strong> — 美国军方发动新的空袭以"惩罚"伊朗导致美军士兵死亡。美伊双方已突破多条红线，重返全面战争边缘 <span class="source">（AP News）</span></li>
+    <li><strong>俄乌方面</strong> — 乌克兰无人机袭击俄罗斯境内多地仓库等目标，造成<strong>9人死亡、80余人受伤</strong> <span class="source">（AP News）</span></li>
+    <li><strong>世界杯决赛在中东紧张背景下举行</strong> — 2026美加墨世界杯决赛将于当地时间7月19日打响，国际足联首次设置<strong>11分钟中场表演</strong>，麦当娜、夏奇拉、贾斯汀·比伯等艺人登台 <span class="source">（36氪）</span></li>
+  </ul>
+</div>
+
+<!-- 二、AI · 科技 -->
+<div class="section">
+  <div class="section-title purple">🤖 二、AI · 科技</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#9334e6;">🔥 WAIC 2026 重磅发布</strong>
+    <ul>
+      <li><strong>腾讯</strong>升级发布具身智能全栈方案，贯穿云底座、模型层、平台层与应用层；ADP 4.0海外版正式上线，已落地<strong>30+行业</strong>；WorkBuddy发布独立App，成为业界首个登陆<strong>iOS、Android、鸿蒙三端</strong>的通用智能体应用 <span class="source">（36氪）</span></li>
+      <li><strong>腾讯WorkBuddy × 李未可科技</strong> — 发布首款接入WorkBuddy的X-AI记忆眼镜，搭载自研WakeeMemory OS <span class="source">（36氪）</span></li>
+      <li><strong>云迹科技</strong>发布"人机共生世界价值模型"，基于超<strong>11亿次</strong>真实服务交互数据 <span class="source">（36氪）</span></li>
+      <li><strong>滴滴</strong>分享AI升级出行体验，"AI小滴"已拥有<strong>90+标签</strong>，支持沿途搜、多目的地规划等 <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#9334e6;">🚀 AI行业动态</strong>
+    <ul>
+      <li><strong>Apple起诉OpenAI</strong> — 指控盗取商业机密，逾400名前苹果员工已跳槽OpenAI，或扰乱OpenAI年内IPO计划 <span class="source">（TechCrunch）</span></li>
+      <li><strong>月之暗面最快6个月内赴港上市</strong> — 发布全球参数量最大开源模型Kimi K3，在Code Arena上超越Claude Fable 5和GPT-5.6 <span class="source">（36氪）</span></li>
+      <li><strong>国家数据局</strong>：全国已建成高质量数据集<strong>12万个</strong>，总体量超<strong>1565 PB</strong>，较一季度末增长超<strong>60%</strong> <span class="source">（36氪）</span></li>
+      <li><strong>人形机器人赛道</strong> — 2026上半年全球融资<strong>1072亿元</strong>，近乎2025全年两倍。特斯拉三代Optimus预计7-8月量产，英伟达与宇树科技合作发布Isaac GR00T平台 <span class="source">（东方财富）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#9334e6;">📱 科技监管</strong>
+    <ul>
+      <li><strong>Apple下架AI"脱衣"应用</strong> — 应旧金山检察官要求移除13款可生成非自愿裸图的App，已删除其中3款并终止开发者账号 <span class="source">（The Verge）</span></li>
+      <li><strong>美国联邦雇员可恢复安装TikTok</strong> — 司法部发布备忘录，字节跳动出售股权协议生效后，美国用户数据已转移至境内数据中心 <span class="source">（The Verge）</span></li>
+      <li><strong>B2B行业首份AI智能体全球支付白皮书</strong> — 寻汇Sunrate与万事达卡在WAIC联合发布，AI智能体可重塑跨境支付全链路 <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、A股 · 港股 -->
+<div class="section">
+  <div class="section-title green">📈 三、A股 · 港股</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">📊 市场数据</strong>
+    <ul>
+      <li><strong>三区域外贸上半年创历史新高</strong> — 京津冀进出口<strong>2.58万亿元</strong>（+16.2%），黄河流域<strong>3.6万亿元</strong>（+14.7%），东北地区<strong>6563亿元</strong>（+8.6%） <span class="source">（36氪）</span></li>
+      <li><strong>锂电池消费税调整</strong> — 崔东树认为"油电同权"大幕拉开，新能源汽车税收优惠保护期正在分阶段退出。宁德时代和比亚迪占电池市场<strong>64%份额</strong>，国轩高科、蜂巢能源等表现较强 <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🏭 产业热点</strong>
+    <ul>
+      <li><strong>人形机器人提速</strong> — 宇树科技、云深处和乐聚智能IPO均已通过受理，6月1日宇树科技完成上会 <span class="source">（东方财富）</span></li>
+      <li><strong>宁德时代/比亚迪仍主导电池格局</strong> — 崔东树指出两者合计占<strong>64%比例</strong>，比亚迪全面转型磷酸铁锂，宁德时代三元电池优势明显 <span class="source">（36氪）</span></li>
+      <li><strong>屈臣氏集团考虑推迟伦敦IPO</strong> — 原计划今年秋季同步登陆伦敦、香港双重上市，募资约<strong>20亿美元</strong>，估值约<strong>300亿美元</strong> <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#34a853;">📡 液冷/算力相关</strong>
+    <ul>
+      <li><strong>英伟达与宇树科技合作</strong> — 发布Isaac GR00T具身智能平台，切入人形机器人赛道。英伟达GPU功耗持续攀升，液冷从可选变强制 <span class="source">（东方财富 / 综合）</span></li>
+      <li><strong>国家数据局</strong> — 全国高质量数据集总量超<strong>1565PB</strong>，为AI发展提供数据基础支撑，算力需求长期向好 <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、利通科技（839167） -->
+<div class="section">
+  <div class="section-title orange">🏢 四、利通科技（839167）动态</div>
+  <div class="highlight">
+    <strong>🔄 本周暂无利通科技直接相关新闻公告</strong><br>
+    周日市场休市，暂未监测到利通科技最新公告或媒体报道。以下为影响液冷管赛道的相关宏观/行业动态：
+  </div>
+  <ul>
+    <li><strong>WAIC 2026：算力需求确定性增强</strong> — 腾讯发布具身智能全栈方案、月之暗面Kimi K3开源模型性能超越GPT-5.6、国家数据局公布高质量数据集<strong>1565PB</strong>，AI大模型训练推理需求持续爆发，液冷散热渗透确定性增强 <span class="source">（36氪）</span></li>
+    <li><strong>英伟达GPU功耗持续攀升</strong> — 从H100（700W）到Rubin（1800W+），液冷从可选变为强制配置，利好液冷管路供应商 <span class="source">（综合研判）</span></li>
+    <li><strong>人形机器人量产元年</strong> — 特斯拉三代Optimus预计7-8月量产，AI算力基建投资有望进一步加大，利好液冷散热全产业链 <span class="source">（东方财富）</span></li>
+    <li><strong>锂电池消费税调整"油电同权"</strong> — 新能源汽车热管理升级需求持续，800V高压平台液冷管路需求有望受益 <span class="source">（36氪）</span></li>
+  </ul>
+</div>
+
+<!-- 五、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 五、战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 高度关注</strong><br>
+    <strong>美伊冲突升级</strong> — 美军对伊朗发动新一轮空袭，霍尔木兹海峡局势紧张，可能影响全球能源价格和供应链稳定。需关注对大宗商品、航运及中东地区业务的影响。
+  </div>
+
+  <div class="highlight">
+    <strong>🟢 机会提示</strong><br>
+    <strong>WAIC 2026进一步确认AI算力需求爆发</strong> — 腾讯、月之暗面等密集发布，大模型竞赛从"参数"转向"应用"。液冷散热作为算力基建核心配套，需求确定性持续增强。建议关注利通科技后续公告及订单动态。
+  </div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    <strong>Apple vs OpenAI诉讼</strong> — 若OpenAI IPO受阻，国内大模型公司（如月之暗面赴港上市）可能吸引更多资本关注，国产算力和液冷产业链也有望受益于资本溢出效应。
+  </div>
+</div>
+
+</body>
+</html>
