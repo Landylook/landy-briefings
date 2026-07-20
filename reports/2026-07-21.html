@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年7月21日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 { font-size: 20px; }
+    .date { font-size: 15px; }
+    .section-title { font-size: 17px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 10px; }
+    table { font-size: 15px; }
+    th, td { padding: 10px 12px; }
+    .highlight, .warning { font-size: 15px; }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body { max-width: 90%; padding: 24px; }
+  }
+  @media (max-width: 480px) {
+    body { font-size: 17px; padding: 12px; }
+    table { display: block; overflow-x: auto; }
+  }
+  @media (min-width: 1200px) {
+    body { max-width: 900px; }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年7月21日 周二</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>美对加拿大加征50%关税</strong> — 8月19日生效，美加贸易摩擦升级 <span class="source">（央视新闻/36氪）</span></li>
+    <li><strong>Apple起诉OpenAI窃取商业秘密</strong> — 400+前苹果员工跳槽OpenAI，OpenAI IPO或受冲击 <span class="source">（TechCrunch）</span></li>
+    <li><strong>A股"六大方阵"护盘</strong> — 沪市一晚新增回购增持25家，金额上限超百亿 <span class="source">（36氪/证券时报）</span></li>
+    <li><strong>美股三大指数收跌</strong> — 中概股逆势走强，阿里巴巴涨超4% <span class="source">（36氪）</span></li>
+    <li><strong>美连续第10晚空袭伊朗</strong> — 中东局势持续紧张 <span class="source">（AP News）</span></li>
+  </ul>
+</div>
+
+<!-- 一、地缘·中东 -->
+<div class="section">
+  <div class="section-title red">🌍 一、地缘·中东</div>
+
+  <ul>
+    <li><strong>美军连续第10晚空袭伊朗</strong> — 美方称行动持续，已由军事首长于7月20日披露，霍尔木兹海峡局势仍是焦点 <span class="source">（AP News）</span></li>
+    <li><strong>美对加拿大加征50%关税</strong> — 白宫公告称自8月19日起，对加拿大部分产品额外加征50%关税，以回应加拿大在汽车及零部件贸易方面的"歧视性措施" <span class="source">（央视新闻/36氪）</span></li>
+    <li><strong>阿联酋上半年非石油贸易创历史新高</strong> — 达1.94万亿迪拉姆（约5280亿美元），同比增长13.1%，黄金贸易额增长48.8%领跑 <span class="source">（新华社/36氪）</span></li>
+    <li><strong>乌克兰向莫斯科发射约400架无人机</strong> — 泽连斯基面临国内抗议压力，俄乌冲突持续升级 <span class="source">（AP News）</span></li>
+  </ul>
+</div>
+
+<!-- 二、AI·科技 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 二、AI·科技</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">🔬 AI大模型</strong>
+    <ul>
+      <li><strong>Apple起诉OpenAI窃取商业机密</strong> — 诉状指控OpenAI首席硬件官在内的400多名前苹果员工加盟，苹果要求巨额赔偿，OpenAI正考虑今年晚些时候IPO，时机极糟 <span class="source">（TechCrunch）</span></li>
+      <li><strong>美国AI安全局局长上任3个月后辞职</strong> — Chris Fall被特朗普政府任命3个月后辞职 <span class="source">（The Verge）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">💻 半导体</strong>
+    <ul>
+      <li><strong>新易盛预计下半年订单快速增长</strong> — 1.6T光模块预计Q3/Q4起放量节奏加快，800G已成为出货主力，硅光产品份额持续提升 <span class="source">（36氪）</span></li>
+      <li><strong>"木头姐"7月持续减持AMD</strong> — 7月17日又卖出价值约1170万美元AMD股票，7月累计减持约6810万美元 <span class="source">（新浪财经/36氪）</span></li>
+      <li><strong>美股科技股表现分化</strong> — 特斯拉、苹果跌超2%，英特尔、微软涨超2%，英伟达小幅上涨；中概股集体走强，阿里巴巴涨超4% <span class="source">（36氪）</span></li>
+      <li><strong>胜宏科技推激励计划</strong> — 以155.94元/股授予不超486万股限制性股票，业绩考核目标：2026年净利润/营收增长不低于40% <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、A股·港股 -->
+<div class="section">
+  <div class="section-title darkblue">📈 三、A股·港股</div>
+
+  <ul>
+    <li><strong>沪市一晚新增回购增持25家</strong> — 总额上限超百亿元，其中回购上限39.6亿元、增持上限67.75亿元；16家提交绩优业绩预告、23家发布重大合同等利好 <span class="source">（36氪/证券时报）</span></li>
+    <li><strong>A股年内累计回购超800亿元</strong> — 截至7月20日，超800家公司实施回购，合计816.67亿元；美的集团、京东方A、顺丰控股、贵州茅台、紫金矿业均超20亿元 <span class="source">（证券时报/36氪）</span></li>
+    <li><strong>证监会召开投资者座谈会</strong> — "国家队"、央企、上市公司、公募私募、保险资金同步增持/回购/自购，多方合力提振市场信心 <span class="source">（中国基金报/36氪）</span></li>
+    <li><strong>中基协数据：6月新备案私募基金规模1091.67亿元</strong> — 新备案基金2219只，其中证券投资基金1466只、创业投资基金599只、股权投资基金154只 <span class="source">（36氪）</span></li>
+    <li><strong>上海三大先导产业制造业产值同比增14.5%</strong> — 人工智能制造业增21.8%、集成电路增19.5%、生物医药增7.2% <span class="source">（澎湃/36氪）</span></li>
+    <li><strong>"尼卡光学"完成近亿元A轮融资</strong> — 专注体全息技术在AI眼镜、车载AR-HUD场景产业化应用 <span class="source">（36氪）</span></li>
+  </ul>
+</div>
+
+<!-- 四、利通科技（839167）动态 -->
+<div class="section">
+  <div class="section-title gray">🏢 四、利通科技（839167）动态</div>
+
+  <div class="highlight">
+    <strong>📌 近期无公开市场公告</strong><br>
+    截止2026年7月21日，财联社、36氪等渠道未检索到利通科技（839167）最新的公开市场公告、新闻或重大事件。利通科技作为北交所液冷管赛道标的，暂无新订单公告或经营数据披露。
+  </div>
+
+  <ul>
+    <li><strong>今日关注：</strong> 北交所整体流动性受A股"六大方阵"护盘影响，市场信心提振或有利于北交所中小盘股估值修复 <span class="source">（36氪/证券时报）</span></li>
+    <li><strong>新易盛1.6T光模块加速放量</strong> — 代表算力互联需求持续高景气，液冷作为AI算力基建核心配套赛道，中长期逻辑不变 <span class="source">（36氪）</span></li>
+    <li><strong>上海AI制造业产值增长21.8%</strong> — 算力基建投资持续增长，液冷散热方案渗透率提升，利通科技所处赛道景气度持续向上 <span class="source">（澎湃/36氪）</span></li>
+  </ul>
+</div>
+
+<!-- 五、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 五、战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 高度关注</strong><br>
+    1. <strong>中东局势升级</strong>：美连续10晚空袭伊朗，霍尔木兹海峡通行风险或推高全球能源成本，关注对液冷管上游树脂/原材料成本的影响（AP News）<br>
+    2. <strong>美加贸易摩擦</strong>：8月19日对加拿大加征50%关税，关注北美客户订单稳定性及供应链转移趋势（央视新闻）
+  </div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    1. <strong>A股"护盘"效应</strong>：国家队+上市公司+险资+公募私募联动增持回购，短期有利于市场情绪修复，关注北交所资金回流信号（36氪）<br>
+    2. <strong>Apple vs OpenAI诉讼</strong>：可能改变AI人才流动格局，Apple与AI公司关系走向值得关注（TechCrunch）<br>
+    3. <strong>新易盛1.6T+硅光路线</strong>：光模块/光互联需求印证AI算力投资仍在加速上行周期，利好液冷散热赛道（36氪）
+  </div>
+</div>
+
+</body>
+</html>
