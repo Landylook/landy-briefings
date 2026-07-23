@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-07-24",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "黑石集团Q2利润飙26% · 央行维持三大关键利率不变 · 普冉股份H1净利同比增长1925%",
+    "tags": [
+      "ai",
+      "stock",
+      "energy"
+    ],
+    "file": "reports/2026-07-24.html"
+  },
+  {
     "date": "2026-07-23",
     "title": "AI研究员--Landy葉的简报",
     "desc": "Anthropic将部署2GW AMD GPU集群 · Google Q2营收破千亿，Gemini月活达9.5亿 · 特朗普\"创世纪计划\"拨50亿美元",

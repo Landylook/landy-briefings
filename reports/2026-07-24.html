@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年7月24日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 { font-size: 20px; }
+    .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
+    .section { margin-bottom: 24px; }
+    .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 10px; }
+    table { font-size: 15px; }
+    th, td { padding: 10px 12px; }
+    .highlight, .warning { padding: 14px 18px; font-size: 15px; }
+    .back-button { font-size: 15px; padding: 10px 14px; margin-bottom: 16px; }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body { max-width: 90%; margin: 30px auto; padding: 24px; }
+    h1 { font-size: 21px; }
+  }
+  @media (max-width: 480px) {
+    body { margin: 12px auto; padding: 12px; font-size: 17px; }
+    h1 { font-size: 19px; }
+    .date { font-size: 14px; }
+    .section-title { font-size: 18px; }
+    table { font-size: 14px; display: block; overflow-x: auto; }
+  }
+  @media (min-width: 1200px) {
+    body { max-width: 900px; }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年7月24日 · 周五</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>黑石集团Q2利润飙26%</strong> — AI基建投资全面兑现，私募/信贷/不动产全线受益 <span class="source">（36氪/新浪财经, Jul 23）</span></li>
+    <li><strong>央行维持三大关键利率不变</strong> — 欧洲央行存款便利利率2.25%，中美宽松预期升温 <span class="source">（36氪/界面, Jul 23）</span></li>
+    <li><strong>普冉股份H1净利同比增长1925%</strong> — 存储芯片景气+AI算力拉动，量价齐升 <span class="source">（36氪/上交所, Jul 23）</span></li>
+    <li><strong>澜起科技3-6亿元回购</strong> — 回购价上限332.90元/股，科技股逆向布局信号 <span class="source">（36氪/上交所, Jul 23）</span></li>
+    <li><strong>红板科技50亿元PCB项目</strong> — 高阶mSAP高端精密电路板，AI PCB需求放量 <span class="source">（36氪/上交所, Jul 23）</span></li>
+    <li><strong>美股科技盘前普跌</strong> — 特斯拉7%、谷歌5%、Meta/亚马逊2%+ <span class="source">（36氪, Jul 23）</span></li>
+  </ul>
+</div>
+
+<!-- 一、地缘·宏观 -->
+<div class="section">
+  <div class="section-title red">🔴 一、地缘·宏观</div>
+  <ul>
+    <li><strong>欧洲央行维持三大关键利率不变</strong> — 存款便利利率2.25%、主要再融资利率2.40%、边际贷款利率2.65%。欧央行继续按兵不动，市场预期9月降息窗口可能打开。 <span class="source">（36氪/界面, Jul 23）</span></li>
+    <li><strong>中国证监会召开党建暨监管工作座谈会</strong> — 明确当前"地缘政治冲突持续，全球金融联动风险上升"，但"宏观政策面、基本面、资金面积极因素不断积聚"，强调"扎扎实实办好自己的事"，确保"十五五"良好开局。 <span class="source">（36氪/证监会, Jul 23）</span></li>
+    <li><strong>证监会：更大力度推动并购重组</strong> — 释放并购重组活力，推更多典型案例。扶优限劣促进上市公司做优做强，坚决维护资本市场基础设施安全稳定。 <span class="source">（36氪/证监会, Jul 23）</span></li>
+  </ul>
+</div>
+
+<!-- 二、AI·算力·数据中心 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 二、AI·算力·数据中心</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">🌍 国际动态</strong>
+    <ul>
+      <li><strong>黑石集团Q2可分配收益19.8亿美元</strong> — 同比+26%，AI基建投资全面兑现。公司在美国大范围布局AI基础设施，私募股权、信贷、不动产等核心业务全线受益。 <span class="source">（36氪/新浪财经, Jul 23）</span></li>
+      <li><strong>Google每月处理约3200万亿tokens</strong> — 同比上年同期的<strong>7倍</strong>！CEO皮查伊在Google I/O大会上表示，公司将在2026年投资<strong>800亿美元</strong>建设数据中心基础设施，已推出第八代TPU平台。 <span class="source">（科技行者/Google I/O, Jul 23）</span></li>
+      <li><strong>AI热潮下数据中心可持续发展</strong> — 行业热议如何在AI爆发增长中平衡能效与绿色目标，液冷技术成为关键解决方案之一。 <span class="source">（科技行者/至顶网, Jul 23）</span></li>
+      <li><strong>IBM收购HRL实验室</strong> — 量子计算领域重大收购！HRL前身为休斯研究实验室，历史上发明了世界上第一台激光器、首个MOS晶体管，在量子比特工程方面拥有深厚积累，已开发出接近1K温度的纠错架构。 <span class="source">（科技行者/至顶网, Jul 23）</span></li>
+      <li><strong>英特尔俄亥俄芯片厂寻求运营伙伴</strong> — SK海力士入围意向名单，双方尚未达成正式协议。英特尔不再推进整体出售，转为寻找合作运营方。 <span class="source">（36氪/界面, Jul 23）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">🏭 产业链/AI应用</strong>
+    <ul>
+      <li><strong>普冉股份H1净利润8.25亿元</strong> — 同比+<strong>1925%</strong>！受益于AI算力建设，存储芯片量价齐升。公司"存储+"战略推进，MCU、Driver等新品逐步渗透工业控制与AIoT。 <span class="source">（36氪/上交所, Jul 23）</span></li>
+      <li><strong>红板科技50亿元mSAP高端PCB项目</strong> — 建成后将主要生产高阶HDI和mSAP精密电路板，供应国内外高端电子领域头部客户。 <span class="source">（36氪/上交所, Jul 23）</span></li>
+      <li><strong>OpenAI推出ChatGPT桌面端语音模式</strong> — 可查日历、写邮件、准备会议等。ChatGPT还接入Yelp，提供本地商家推荐和"请求报价"功能。 <span class="source">（The Verge/Axios, Jul 23）</span></li>
+      <li><strong>Amazon升级AI助手接入智能家居</strong> — Claude获语音模式，可操作Gmail和Slack。Uber裁员10%客服拥抱AI，远程员工强制返岗。 <span class="source">（The Verge/Bloomberg, Jul 23）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、液冷管赛道情报 -->
+<div class="section">
+  <div class="section-title orange">💧 三、液冷管赛道情报</div>
+  <ul>
+    <li><strong>Google年投800亿美元建数据中心</strong> — 单Google一家每年资本开支即达800亿美元量级（约<strong>5800亿人民币</strong>），液冷方案渗透率从23%→100%是确定性趋势。每1%的液冷渗透率提升对应约<strong>80亿美元</strong>液冷基础设施市场。 <span class="source">（科技行者/Google I/O）</span></li>
+    <li><strong>AI token生成量同比7倍增长</strong> — Google每月处理3200万亿tokens，意味计算密度急剧提升，液冷从"可选项"变为"必选项"。 <span class="source">（科技行者）</span></li>
+    <li><strong>黑石19.8亿AI基建收益</strong> — 全球最大资管公司的真金白银押注信号：AI基建是未来十年最确定的投资主线，液冷管路作为"血管"将长期受益。 <span class="source">（36氪/新浪财经）</span></li>
+    <li><strong>数据中心可持续发展议题升温</strong> — AI爆发背景下，数据中心能效与绿色目标成为行业焦点，液冷技术是兼顾算力密度与环境目标的制胜方案。 <span class="source">（科技行者）</span></li>
+  </ul>
+</div>
+
+<!-- 四、新能源&汽车 -->
+<div class="section">
+  <div class="section-title green">🔋 四、新能源&汽车</div>
+  <ul>
+    <li><strong>特斯拉美股盘前跌超7%</strong> — 科技股整体承压，谷歌跌5%，Meta、亚马逊跌2%+，英伟达、苹果、微软小幅下跌。关注特斯拉Q2财报预期。 <span class="source">（36氪, Jul 23）</span></li>
+    <li><strong>热门中概股涨跌不一</strong> — 理想涨1%，蔚来涨0.21%，百度涨0.16%，京东涨0.1%；阿里巴巴跌1%+，哔哩哔哩跌0.96%。 <span class="source">（36氪, Jul 23）</span></li>
+  </ul>
+</div>
+
+<!-- 五、二级市场 -->
+<div class="section">
+  <div class="section-title purple">📈 五、二级市场 & 资本动向</div>
+  <ul>
+    <li><strong>A股回购增持潮持续</strong> — 澜起科技拟以<strong>3-6亿元</strong>回购A股（上限332.90元/股），普冉股份预计H1净利<strong>增1925%</strong>（存储芯片景气），A股科技板块配置价值凸显。 <span class="source">（36氪/上交所, Jul 23）</span></li>
+    <li><strong>美股大型科技股盘前普跌</strong> — 特斯拉-7%、谷歌-5%、Meta/亚马逊-2%+。或与Q2财报季预期分化有关。 <span class="source">（36氪, Jul 23）</span></li>
+    <li><strong>黑石19.8亿美元AI基建收益</strong> — 二季度利润大涨26%，AI基建投资的旗舰收益信号，利好液冷/算力全产业链。 <span class="source">（36氪/新浪财经, Jul 23）</span></li>
+    <li><strong>证监会：释放并购重组活力</strong> — 政策春风利好上市公司整合，利通科技作为北交所标的，若后续有资产重组或战略合作动作将受益。 <span class="source">（36氪/证监会, Jul 23）</span></li>
+  </ul>
+</div>
+
+<!-- 六、利通科技 -->
+<div class="section">
+  <div class="section-title gray">🏢 六、利通科技（839167）动态</div>
+  <ul>
+    <li>今日未监测到利通科技相关重大公告。但产业链逻辑持续强化：<strong>Google年投800亿美元</strong>建数据中心+<strong>黑石19.8亿美元</strong>AI基建收益，两张王牌验证液冷赛道景气度。</li>
+    <li>建议持续关注：液冷概念板块资金流变化、北交所公告页(bse.cn)、英维克/高澜/曙光数创等集成商中标公告。</li>
+  </ul>
+</div>
+
+<!-- 七、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 七、战略预警 / 机会提示</div>
+
+  <div class="highlight">
+    <strong>🟢 机会信号</strong><br>
+    <strong>1. Google年投800亿美元 + 每32,000万亿tokens</strong> — token量同比7倍，算力需求曲线陡峭。液冷管需求量级超预估。<br>
+    <strong>2. 黑石19.8亿AI收益</strong> — 全球最大资管重仓押注AI基建，信号明确。<br>
+    <strong>3. 存储芯片景气传导</strong> — 普冉H1净利+1925%、澜起回购，半导体板块超跌修复窗口。<br>
+    <strong>4. 证监会推动并购重组</strong> — 政策利好北交所上市公司资产整合预期。<br>
+    <strong>5. 美股回调 = 买入窗口</strong> — 特斯拉/谷歌回调，关注资金是否流入A股液冷概念。
+  </div>
+</div>
+
+</body>
+</html>
