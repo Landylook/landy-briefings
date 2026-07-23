@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年7月23日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 { font-size: 20px; }
+    .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
+    .section { margin-bottom: 24px; }
+    .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 10px; }
+    table { font-size: 15px; }
+    th, td { padding: 10px 12px; }
+    .highlight, .warning { padding: 14px 18px; font-size: 15px; }
+    .back-button { font-size: 15px; padding: 10px 14px; margin-bottom: 16px; }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body { max-width: 90%; margin: 30px auto; padding: 24px; }
+    h1 { font-size: 21px; }
+  }
+  @media (max-width: 480px) {
+    body { margin: 12px auto; padding: 12px; font-size: 17px; }
+    h1 { font-size: 19px; }
+    .date { font-size: 14px; }
+    .section-title { font-size: 18px; }
+    table { font-size: 14px; display: block; overflow-x: auto; }
+  }
+  @media (min-width: 1200px) {
+    body { max-width: 900px; }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年7月23日 · 周四</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>Anthropic将部署2GW AMD GPU集群</strong> — AI军备竞赛再升级，液冷冷却刚需确认 <span class="source">（The Verge）</span></li>
+    <li><strong>Google Q2营收破千亿，Gemini月活达9.5亿</strong> — 广告+云双引擎驱动，同比增长24% <span class="source">（The Verge）</span></li>
+    <li><strong>特朗普"创世纪计划"拨50亿美元</strong> — 278项AI科研项目，含AI数据中心能耗优化 <span class="source">（The Verge）</span></li>
+    <li><strong>A股掀起回购增持潮</strong> — 逾20家公司终止减持，私募自购队伍扩容 <span class="source">（36氪/证券时报）</span></li>
+    <li><strong>中信证券：Agent将拉动CPU价值重估</strong> — CPU与GPU配比或达8:1，远期市场2万亿美元 <span class="source">（36氪）</span></li>
+  </ul>
+</div>
+
+<!-- 一、AI·算力·数据中心 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 一、AI·算力·数据中心</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">🌍 国际动态</strong>
+    <ul>
+      <li><strong>Anthropic × AMD：2GW GPU集群部署</strong> — 作为合作协议的一部分，Anthropic将在AMD平台上部署高达<strong>2GW</strong>的AI GPU。这是AI实验室与芯片巨头的战略级合作，对液冷管路的需求将是百亿级。 <span class="source">（The Verge, Jul 22）</span></li>
+      <li><strong>Google Q2营收1198亿美元</strong> — 同比增长24%，其中云业务持续高增；Gemini月活已达<strong>9.5亿</strong>（2月时为7.5亿），增长动能强劲。 <span class="source">（The Verge, Jul 22）</span></li>
+      <li><strong>特朗普"创世纪计划"落地</strong> — 宣布超过<strong>50亿美元</strong>联邦承诺，涉及278个奖项、342家机构，涵盖AI数据中心能源需求等关键议题。微软、谷歌分别提供数百万算力和AI积分。 <span class="source">（The Verge/WSJ, Jul 22）</span></li>
+      <li><strong>IBM下调全年营收展望</strong> — 大型机业务需求疲软，Q2营收172亿美元（同比+1%），全年增速预期从5%+降至4%-5%，软件部门预期增长6%-8%。 <span class="source">（36氪/界面, Jul 22）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">🏭 产业链动向</strong>
+    <ul>
+      <li><strong>英特尔俄亥俄芯片厂寻求运营伙伴</strong> — SK海力士入围潜在名单，双方尚未正式谈判。英特尔不再整体出售，改为寻找运营合作伙伴。 <span class="source">（36氪/界面, Jul 23）</span></li>
+      <li><strong>中信证券：Agent将显著拉动CPU需求</strong> — 乐观情形下CPU与GPU配比达<strong>8:1</strong>，远期市场规模有望达<strong>2万亿美元</strong>，比当前GPU市场更大。2026年是国产CPU加速渗透之年。 <span class="source">（36氪, Jul 23）</span></li>
+      <li><strong>中信证券：看好超跌后的电子板块</strong> — 半导体设备与国产算力业绩上行拐点明确，PCB、存储、AI电源等环节供需景气度将保持高位，AI产业链行情有望向消费电子扩散。 <span class="source">（36氪, Jul 23）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 二、液冷管赛道情报 -->
+<div class="section">
+  <div class="section-title orange">💧 二、液冷管赛道情报</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🔬 技术路线与需求驱动</strong>
+    <ul>
+      <li><strong>Anthropic 2GW AMD GPU部署</strong> — 这是迄今最大规模的单一AI GPU集群计划之一。2GW对应约<strong>200万块GPU</strong>（按单卡1000W计），液冷方案几乎成为唯一可行选择。液冷管作为冷却系统"血管"，需求巨大。 <span class="source">（The Verge）</span></li>
+      <li><strong>"创世纪计划"500+奖项涵盖AI能效</strong> — 美国联邦50亿美元投入中包含AI数据中心能源效率专项研究，液冷技术将成为重点突破方向之一。 <span class="source">（The Verge/WSJ）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#e87020;">🏭 竞争格局</strong>
+    <ul>
+      <li>本周液冷板块暂无重大公告，但<a href="https://data.eastmoney.com/concept/detail?ccode=SCO35049">液冷概念板块</a>在A股资金流中持续活跃，建议关注近期集成商订单公告。</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、下游应用战场 -->
+<div class="section">
+  <div class="section-title green">🔋 三、下游应用战场</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🖥️ 数据中心/算力中心</strong>
+    <ul>
+      <li><strong>中信证券：国产算力业绩拐点明确</strong> — 半导体设备与AI基础设施相关标的估值已明显回落，但基本面未逆转，超跌修复空间较强。 <span class="source">（36氪）</span></li>
+      <li><strong>华泰证券：AI眼镜成为AI Agent高频入口</strong> — 大模型多模态能力成熟，AI眼镜凭借第一视角感知和全天候佩戴属性，有望率先落地。终端算力需求将从云侧向端侧迁移。 <span class="source">（36氪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🚗 新能源汽车</strong>
+    <ul>
+      <li><strong>6月中国品牌乘用车销量181.2万辆</strong> — 同比增长6.2%，市占率<strong>75.5%</strong>（同比+8.2pp）。上半年累计913.8万辆，市占率71.8%。自主品牌份额持续攀升，合资车企承压。 <span class="source">（36氪/中汽协, Jul 23）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、二级市场 & 资本动向 -->
+<div class="section">
+  <div class="section-title purple">📈 四、二级市场 & 资本动向</div>
+  <ul>
+    <li><strong>两市融资余额增加7.46亿元</strong> — 上交所13632亿（-3.67亿），深交所13270亿（+11.13亿），合计<strong>26902.68亿元</strong>。 <span class="source">（36氪, Jul 23）</span></li>
+    <li><strong>A股回购增持潮持续</strong> — 多家公司披露增持计划，7月以来逾<strong>20家</strong>上市公司股东终止减持计划。公私募基金密集自购，绩优基金放开限购。 <span class="source">（36氪/证券时报, Jul 22-23）</span></li>
+    <li><strong>硬科技企业重塑港股结构</strong> — 年内已上市100家公司中，技术硬件与设备（22家）、软件与服务（15家）、半导体（13家）位列前五。半导体、AI、生物科技成为港股IPO主流。 <span class="source">（36氪/证券时报, Jul 23）</span></li>
+    <li><strong>中汽协：6月中国品牌乘用车市占率75.5%</strong> — 同比提升8.2个百分点，环比提升7.3%。 <span class="source">（36氪, Jul 23）</span></li>
+    <li><strong>猪价周期：中信预计2027年景气可期</strong> — 2026H1猪价低位震荡，行业深度亏损，下半年去产能有望持续。 <span class="source">（36氪, Jul 23）</span></li>
+  </ul>
+</div>
+
+<!-- 五、利通科技 -->
+<div class="section">
+  <div class="section-title gray">🏢 五、利通科技（839167）动态</div>
+  <ul>
+    <li>今日未监测到利通科技相关重大公告或新闻。液冷管赛道逻辑持续强化：<strong>Anthropic 2GW AMD GPU</strong>部署+<strong>创世纪计划50亿美元</strong>AI投入，均指向液冷方案的不可替代性。</li>
+    <li>建议持续关注：液冷概念板块资金流、英维克/高澜/曙光数创等集成商中标公告、北交所利通科技官方公告页。 <span class="source">（北交所bse.cn）</span></li>
+  </ul>
+</div>
+
+<!-- 六、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 六、战略预警 / 机会提示</div>
+
+  <div class="highlight">
+    <strong>🟢 机会信号</strong><br>
+    <strong>1. Anthropic 2GW AMD GPU集群</strong> — 这是迄今最大AI GPU集群之一，液冷管路为刚需。英维克、曙光数创、高澜股份等集成商可能近期收获大单。<br>
+    <strong>2. A股回购增持潮</strong> — 机构对当前点位配置价值认可度高，底部承接力量增强，利通科技作为北交所标的可能受整体情绪提振。<br>
+    <strong>3. 国产算力加速渗透</strong> — 中信明确看好国产CPU/GPU渗透率从个位数升至两位数，与利通科技所在的液冷散热产业链形成共振。
+  </div>
+</div>
+
+</body>
+</html>

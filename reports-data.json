@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-07-23",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "Anthropic将部署2GW AMD GPU集群 · Google Q2营收破千亿，Gemini月活达9.5亿 · 特朗普\"创世纪计划\"拨50亿美元",
+    "tags": [
+      "ai",
+      "stock",
+      "energy"
+    ],
+    "file": "reports/2026-07-23.html"
+  },
+  {
     "date": "2026-07-22",
     "title": "AI研究员--Landy葉的简报",
     "desc": "特朗普宣布仿制药关税大棒 · 美贸易代表暗示本周将出台新关税 · 美股三大指数集体收涨",
