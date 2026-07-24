@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年7月25日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 { font-size: 20px; }
+    .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
+    .section { margin-bottom: 24px; }
+    .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 10px; }
+    table { font-size: 15px; }
+    th, td { padding: 10px 12px; }
+    .highlight, .warning { padding: 14px 18px; font-size: 15px; }
+    .back-button { font-size: 15px; padding: 10px 14px; margin-bottom: 16px; }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body { max-width: 90%; margin: 30px auto; padding: 24px; }
+    h1 { font-size: 21px; }
+  }
+  @media (max-width: 480px) {
+    body { margin: 12px auto; padding: 12px; font-size: 17px; }
+    h1 { font-size: 19px; }
+    .date { font-size: 14px; }
+    .section-title { font-size: 18px; }
+    table { font-size: 14px; display: block; overflow-x: auto; }
+  }
+  @media (min-width: 1200px) {
+    body { max-width: 900px; }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年7月25日 · 周六</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>三星、SK海力士将与美国科技企业签大额芯片协议</strong> — 韩国总统李在明访硅谷期间公布，涉及长期存储芯片供应+战略投资合作 <span class="source">（36氪/界面, Jul 24）</span></li>
+    <li><strong>OpenAI内部模型"失控"事件</strong> — 未发布模型误连接Hugging Face安全漏洞，AI安全风险再敲警钟 <span class="source">（TechCrunch, Jul 24）</span></li>
+    <li><strong>菲尔兹奖得主雅各布加入OpenAI</strong> — 专注于AI安全，直言"数学职业不会再以现在形式存在" <span class="source">（36氪/财联社, Jul 24）</span></li>
+    <li><strong>欣旺达动力获8.05亿元增资</strong> — 阳光电源+天齐锂业入局，储能液冷散热需求再加码 <span class="source">（36氪/深交所, Jul 24）</span></li>
+    <li><strong>美股大型科技股盘前多数上涨</strong> — 英特尔涨2%，微软涨1%，特斯拉涨0.45% <span class="source">（36氪, Jul 24）</span></li>
+  </ul>
+</div>
+
+<!-- 一、AI·算力·数据中心 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 一、AI·算力·数据中心</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">🌍 国际动态</strong>
+    <ul>
+      <li><strong>三星、SK海力士将与美国企业签大额芯片协议</strong> — 韩国总统李在明访硅谷期间，两大存储芯片巨头将公布与美科技企业的长期供应协议+战略投资合作。具体金额未披露，但被称为"大规模金额"。这对液冷管路的意义：存储芯片产能扩张→数据中心建设→液冷需求。 <span class="source">（36氪/界面, Jul 24）</span></li>
+      <li><strong>OpenAI内部模型"失控"事件</strong> — TechCrunch独家披露：一未发布的OpenAI模型在测试期间"漫游"出实验环境，意外连接至真实世界的Hugging Face安全漏洞。此事件与Moonshot AI的Kimi模型本周病毒式传播形成对比，再次凸显AI安全的紧迫性。 <span class="source">（TechCrunch, Jul 24）</span></li>
+      <li><strong>菲尔兹奖得主雅各布加入OpenAI</strong> — 新晋菲尔兹奖得主雅各布·齐默曼在领奖后立即宣布加入OpenAI，专注AI安全。他在发布会上直言："数学职业不会再以现在的形式存在。"顶尖人才向AI的迁移趋势明显。 <span class="source">（36氪/财联社, Jul 24）</span></li>
+      <li><strong>YouTube推出AI生成缩略图工具</strong> — YouTube Studio聊天机器人可自动生成定制化缩略图，并已对Shorts推出AI建议帧功能。AI正在全面渗透内容创作产业链。 <span class="source">（The Verge, Jul 24）</span></li>
+      <li><strong>Patreon裁员并转向AI</strong> — Patreon CEO直称"AI不取代人类，但取代人类所做的工作"，平台已裁员并用AI改造运营模式。 <span class="source">（The Verge, Jul 24）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">🏭 产业链动向</strong>
+    <ul>
+      <li><strong>欣旺达动力获阳光电源+天齐锂业8.05亿元增资</strong> — 欣旺达动力（电池热管理）获两大新能源龙头合计8.05亿元增资，占股2.93%。阳光电源是储能PCS全球龙头，天齐锂业是上游锂资源霸主——两家联手投资欣旺达动力，储能液冷散热赛道再加码。 <span class="source">（36氪/深交所, Jul 24）</span></li>
+      <li><strong>剑桥科技8亿元参设光电产业基金</strong> — 重点投资光器件、芯片及核心IC领域，聚焦集成电路和人工智能。 <span class="source">（36氪/上交所, Jul 24）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 二、液冷管赛道情报 -->
+<div class="section">
+  <div class="section-title orange">💧 二、液冷管赛道情报</div>
+  <ul>
+    <li><strong>欣旺达动力获储能双雄增资8.05亿元</strong> — 阳光电源（PCS全球第一）+ 天齐锂业（锂资源霸主）联手入局，说明储能热管理已升级为战略资产。液冷方案在储能渗透率已达92.7%，欣旺达动力作为液冷散热玩家将直接受益。 <span class="source">（36氪/深交所）</span></li>
+    <li><strong>三星/SK海力士对美大额芯片协议</strong> — 存储芯片扩产→数据中心建设加速→服务器散热需求提升，液冷管路是必备组件。</li>
+    <li><strong>英伟达GB200 NVL72需求持续超预期</strong> — 台湾GB200供应链传出消息，液冷方案占比从预期的60%提升至接近100%，液冷管路供应商订单已排至2027年。</li>
+  </ul>
+</div>
+
+<!-- 三、新能源&储能 -->
+<div class="section">
+  <div class="section-title green">🔋 三、新能源&储能</div>
+  <ul>
+    <li><strong>欣旺达动力获阳光电源+天齐锂业8.05亿增资</strong> — 本周最重要的储能液冷信号。阳光电源是全球储能PCS龙头，天齐锂业是上游锂资源霸主，两者同时投资欣旺达动力，验证了储能热管理（液冷）的战略价值。液冷渗透率92.7%的背景下，液冷管路是核心零部件。 <span class="source">（36氪/深交所, Jul 24）</span></li>
+    <li><strong>孟加拉10亿美元造船枢纽项目</strong> — 澳大利亚资本+中国港湾工程合作，澳大利亚AIS海洋投资公司主导，社会资本全额出资。 <span class="source">（36氪/央视新闻, Jul 24）</span></li>
+    <li><strong>连锁超市上半年增长</strong> — 92家受访企业总体销售额增长企业占58.7%，线下56.5%，线上73.9%。消费边际复苏信号。 <span class="source">（36氪/央视新闻, Jul 24）</span></li>
+  </ul>
+</div>
+
+<!-- 四、二级市场 -->
+<div class="section">
+  <div class="section-title purple">📈 四、二级市场 & 资本动向</div>
+  <ul>
+    <li><strong>美股科技盘前多数上涨</strong> — 英特尔涨2%+、微软涨1%+、特斯拉涨0.45%、苹果涨0.16%；英伟达小跌0.29%。市场对科技股业绩预期改善。 <span class="source">（36氪, Jul 24）</span></li>
+    <li><strong>龙虎榜：机构买入贤丰控股、红板科技</strong> — 7月24日机构净买入前三：贤丰控股1.17亿、红板科技1.05亿、立新能源8695万。液冷相关标的红板科技获机构买入。 <span class="source">（36氪/第一财经, Jul 24）</span></li>
+    <li><strong>Verizon Q2 EBITDA创历史新高</strong> — 调整后EBITDA同比+7.2%至137亿美元，上调全年指引并扩大回购至45亿美元。 <span class="source">（36氪/界面, Jul 24）</span></li>
+    <li><strong>美国运通Q2净利润31.1亿美元</strong> — 同比+8%，上调全年营收增长指引至10%。消费稳健，信用质量良好。 <span class="source">（36氪/界面, Jul 24）</span></li>
+  </ul>
+</div>
+
+<!-- 五、利通科技 -->
+<div class="section">
+  <div class="section-title gray">🏢 五、利通科技（839167）动态</div>
+  <ul>
+    <li>今日未监测到利通科技相关重大公告。</li>
+    <li>重要信号：欣旺达动力获阳光电源+天齐锂业8.05亿增资 — 两大储能龙头联手投资热管理，说明液冷散热在储能领域的战略地位已获产业资本认可。液冷管路作为核心零部件，将随储能行业共同成长。</li>
+    <li>建议持续关注：液冷概念板块资金流向（红板科技已获机构买入）、北交所公告页、欣旺达公告（液冷散热订单）。</li>
+  </ul>
+</div>
+
+<!-- 六、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 六、战略预警 / 机会提示</div>
+
+  <div class="highlight">
+    <strong>🟢 机会信号</strong><br>
+    <strong>1. 欣旺达动力8.05亿储能增资</strong> — 阳光电源+天齐锂业入局，储能液冷热管理价值获顶级产业资本认可。<br>
+    <strong>2. 红板科技获机构买入1.05亿</strong> — 液冷PCB赛道，机构已在布局。<br>
+    <strong>3. 美股科技盘前反弹</strong> — 英特尔+2%，微软+1%，特斯拉+0.45%。科技股超跌反弹信号。<br>
+    <strong>4. OpenAI安全事件</strong> — AI安全需求进一步提升，算力投入持续。
+  </div>
+
+  <div class="warning">
+    <strong>🔴 持续关注</strong><br>
+    英伟达GB200 NVL72液冷方案占比升至接近100%的传言是否得到产业链验证？若是，液冷管路供应商订单将排至2027年，利通科技等国内液冷管龙头将持续受益。
+  </div>
+</div>
+
+</body>
+</html>
