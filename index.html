@@ -434,10 +434,13 @@
   .banner-blue:hover { border-color: #93c5fd; box-shadow: 0 10px 36px rgba(59, 130, 246, 0.1); }
   .banner-green { background: linear-gradient(135deg, #fff 0%, #ecfdf5 50%, #f0fdf4 100%); border-color: #d1fae5; }
   .banner-green:hover { border-color: #6ee7b7; box-shadow: 0 10px 36px rgba(16, 185, 129, 0.1); }
+  .banner-orange { background: linear-gradient(135deg, #fff 0%, #fff7ed 50%, #f0f4ff 100%); border-color: #fed7aa; }
+  .banner-orange:hover { border-color: #fb923c; box-shadow: 0 10px 36px rgba(234, 88, 12, 0.1); }
 
   .training-icon-purple { background: linear-gradient(135deg, #f72585, #b5179e, #7209b7); box-shadow: 0 4px 20px rgba(247, 37, 133, 0.3); }
   .training-icon-blue { background: linear-gradient(135deg, #4361ee, #3b82f6, #2563eb); box-shadow: 0 4px 20px rgba(67, 97, 238, 0.3); }
   .training-icon-green { background: linear-gradient(135deg, #06d6a0, #10b981, #059669); box-shadow: 0 4px 20px rgba(6, 214, 160, 0.3); }
+  .training-icon-orange { background: linear-gradient(135deg, #f59e0b, #ea580c, #c2410c); box-shadow: 0 4px 20px rgba(234, 88, 12, 0.25); }
 
   /* ── 底部 ── */
   footer {
@@ -525,7 +528,7 @@
     </button>
     <button class="tab-btn" data-tab="knowledge" onclick="switchTab('knowledge')">
       📚 知识库
-      <span class="tab-badge">3</span>
+      <span class="tab-badge">4</span>
     </button>
     <button class="tab-btn" data-tab="research" onclick="switchTab('research')">
       🧠 行业调研
@@ -567,6 +570,20 @@
   <div id="tab-knowledge" class="tab-content">
     <div class="page-title">知识库</div>
     <div class="page-sub" style="margin-bottom: 24px;">技术培训 · 产品资料 · 行业知识</div>
+
+    <a class="training-banner banner-orange" href="handbooks/diesel-generator-sales-bootcamp.html" target="_blank">
+      <div class="training-icon training-icon-orange">⚡</div>
+      <div class="training-content">
+        <div class="training-title"><span>算力中心柴电销售工程师 · 3天24小时集训</span></div>
+        <div class="training-desc">IDC / 智算中心 / 超算中心备用电源：技术、方案、竞品、项目与顾问式销售</div>
+        <div class="training-meta">
+          <span class="training-tag">🧭 Day1-Day3 学习路径</span>
+          <span class="training-tag">🛠️ 25个实战章节</span>
+          <span class="training-tag">📋 报价 / BOD / FAT模板</span>
+        </div>
+      </div>
+      <div class="training-arrow">›</div>
+    </a>
 
     <a class="training-banner" href="https://landylook.github.io/liquid-cooling-training/" target="_blank">
       <div class="training-icon training-icon-purple">📚</div>
@@ -799,6 +816,15 @@ document.getElementById("latest-date").textContent = "—";
 
 // 加载内部文件
 renderInternal();
+
+// 从独立课程页返回时，自动恢复到知识库栏目
+const savedTab = sessionStorage.getItem('landyTab');
+if (savedTab) {
+  switchTab(savedTab);
+  sessionStorage.removeItem('landyTab');
+} else if (window.location.hash === '#knowledge') {
+  switchTab('knowledge');
+}
 
 </script>
 </body>

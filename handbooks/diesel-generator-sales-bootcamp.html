@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="面向IDC、智算中心和超算中心的3天24小时柴电销售工程师实战训练：技术、方案、竞品、项目、谈判与模板。">
+<title>算力中心柴电销售工程师 · 3天24小时集训｜Landy 知识库</title>
+<style>
+:root{--bg:#f0f4ff;--surface:#fff;--surface2:#f6f8fd;--border:#dce3f0;--accent:#4361ee;--accent2:#7209b7;--orange:#ea580c;--green:#059669;--red:#c24141;--text:#1a1d2e;--secondary:#4a4f6a;--muted:#8b90a5;--radius:14px;--shadow:0 14px 46px rgba(44,56,102,.1)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;line-height:1.65;background-image:radial-gradient(ellipse 70% 35% at 0 0,rgba(67,97,238,.08),transparent 55%),radial-gradient(ellipse 50% 30% at 100% 10%,rgba(234,88,12,.05),transparent 55%)}button,input{font:inherit}a{color:inherit;text-decoration:none}
+.topbar{position:sticky;top:0;z-index:50;height:68px;padding:0 max(22px,calc((100vw - 1120px)/2));display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,.88);border-bottom:1px solid var(--border);backdrop-filter:blur(18px)}
+.back{display:flex;align-items:center;gap:10px;color:var(--secondary);font-size:13px;font-weight:650}.back i{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(135deg,#4361ee,#7209b7);color:#fff;font-style:normal}.toplinks{display:flex;gap:22px;font-size:12px;color:var(--muted)}.toplinks a:hover{color:var(--accent)}
+.hero{background:linear-gradient(135deg,#101934 0%,#172654 52%,#33204c 100%);color:#fff;padding:82px max(22px,calc((100vw - 1120px)/2)) 76px;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:36px 36px}.hero-inner{position:relative;display:grid;grid-template-columns:1fr 390px;gap:66px;align-items:center}.eyebrow{font:700 11px/1.4 ui-monospace,monospace;letter-spacing:.15em;color:#8da2ff}.hero h1{font-size:clamp(40px,5vw,66px);line-height:1.12;letter-spacing:-.045em;margin:18px 0}.hero h1 span{color:#f7a14a}.hero p{color:#b8c2dc;font-size:16px;line-height:1.9;max-width:670px}.actions{display:flex;gap:12px;margin-top:30px}.actions a{padding:12px 20px;border-radius:9px;font-size:13px;font-weight:700;border:1px solid rgba(255,255,255,.22)}.actions .primary{background:linear-gradient(135deg,#f59e0b,#ea580c);border:0}.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.12)}.stats div{padding:24px 20px;background:rgba(13,22,48,.78)}.stats b,.stats span{display:block}.stats b{font:800 31px/1 ui-monospace,monospace}.stats span{font-size:10px;color:#91a0c0;margin-top:9px}.redline{grid-column:1/-1;padding:16px 18px;background:rgba(234,88,12,.12);border-left:3px solid #fb923c;color:#d9deeb;font-size:11px}.redline b{color:#ffb16c}
+.container{max-width:1120px;margin:0 auto;padding:76px 22px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:34px}.section-head small{color:var(--accent);font:700 10px/1 ui-monospace,monospace;letter-spacing:.13em}.section-head h2{font-size:38px;letter-spacing:-.04em;margin:9px 0 0}.section-head p{max-width:470px;margin:0;color:var(--muted);font-size:13px}
+.days{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#ccd5e6;border:1px solid #ccd5e6;border-radius:var(--radius);overflow:hidden}.days button{border:0;background:#fff;text-align:left;padding:22px 24px;cursor:pointer;position:relative}.days button:after{content:"";position:absolute;left:0;bottom:0;height:4px;width:0;background:linear-gradient(90deg,var(--accent),var(--accent2));transition:.25s}.days button.active:after{width:100%}.days small,.days b,.days span{display:block}.days small{color:var(--accent);font:700 10px/1 ui-monospace,monospace}.days b{font-size:18px;margin:9px 0 5px}.days span{color:var(--muted);font-size:11px}
+.toolbar{display:flex;align-items:center;justify-content:space-between;gap:18px;margin:20px 0;padding:15px 18px;background:#e5eaf5;border-radius:12px}.toolbar label{display:flex;align-items:center;gap:9px;background:#fff;border:1px solid var(--border);border-radius:9px;padding:0 12px;width:min(560px,75%)}.toolbar input{width:100%;padding:11px 0;border:0;outline:0;background:transparent;font-size:13px}.toolbar>span{font-size:11px;color:var(--muted)}.toolbar b{color:var(--accent)}
+.module{background:#fff;border:1px solid var(--border);border-radius:var(--radius);margin-bottom:20px;overflow:hidden;box-shadow:0 2px 5px rgba(0,0,0,.025)}.module-head{display:grid;grid-template-columns:62px 1fr auto;gap:18px;align-items:center;padding:24px 26px;border-bottom:1px solid var(--border)}.module-num{width:54px;height:54px;display:grid;place-items:center;border-radius:13px;color:#fff;background:linear-gradient(135deg,#4361ee,#7209b7);font:800 16px/1 ui-monospace,monospace}.module-head small{color:var(--accent);font:700 9px/1 ui-monospace,monospace;letter-spacing:.1em}.module-head h3{font-size:22px;margin:6px 0 2px}.module-head p{margin:0;color:var(--muted);font-size:11px}.module-hours{padding:6px 10px;border:1px solid var(--border);border-radius:20px;color:var(--muted);font-size:10px}
+.lesson{border-bottom:1px solid #e7ebf3}.lesson:last-child{border:0}.lesson-title{border:0;background:#fff;width:100%;padding:18px 25px;display:grid;grid-template-columns:25px 1fr auto;gap:13px;align-items:center;text-align:left;cursor:pointer}.lesson-title:hover{background:#f9faff}.lesson-title .done{width:21px;height:21px;border:1px solid #bcc7d9;border-radius:6px;display:grid;place-items:center;color:#fff;font-size:11px}.lesson-title .done.checked{background:var(--accent);border-color:var(--accent)}.lesson-title b,.lesson-title small{display:block}.lesson-title b{font-size:14px}.lesson-title small{font-size:10px;color:var(--muted);margin-top:4px}.lesson-title i{font-style:normal;font-size:20px;color:#9aa6bb}.lesson-body{display:none;padding:3px 26px 27px 63px;background:#f9faff}.lesson.open .lesson-body{display:block}.lesson.open .lesson-title{background:#f9faff}.lesson-body h4{font-size:12px;margin:0 0 8px}.lesson-body p,.lesson-body li{font-size:11.5px;color:var(--secondary);line-height:1.75}.lesson-body ul{padding-left:18px;margin:0}.lesson-body li{margin:5px 0}.case{margin:18px 0;padding:16px 18px;background:#fff8e8;border-left:3px solid #f59e0b}.case p{margin:0;color:#69593a}.duo{display:grid;grid-template-columns:1fr 1fr;gap:14px}.duo>div{padding:16px;background:#fff;border:1px solid var(--border);border-radius:10px}.duo .trap{border-color:#f0d3d3}.duo .trap h4{color:var(--red)}.sales{margin-top:14px;padding:14px 16px;background:#eaf2ff;border:1px solid #cfdcff;border-radius:10px;color:#31518b;font-size:11.5px}.sales b{margin-right:8px}.empty{padding:50px;text-align:center;background:#fff;border:1px solid var(--border);border-radius:var(--radius);color:var(--muted)}
+.flow{background:#111a36;color:#fff;padding:70px max(22px,calc((100vw - 1120px)/2))}.flow h2{font-size:34px;margin:8px 0}.flow>p{color:#9daac6;margin:0 0 30px}.flow-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#334061}.flow-grid div{padding:22px;background:#192545}.flow-grid span,.flow-grid b,.flow-grid small{display:block}.flow-grid span{color:#f8a74d;font:700 10px/1 ui-monospace,monospace}.flow-grid b{margin:13px 0 5px}.flow-grid small{color:#8e9db8;font-size:10px}
+.tool-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.tool{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:24px}.tool header{display:flex;align-items:center;justify-content:space-between}.tool h3{font-size:18px;margin:0}.tool p{color:var(--muted);font-size:11px}.tool pre{white-space:pre-wrap;max-height:260px;overflow:auto;background:#f7f8fc;border:1px solid #e3e8f2;border-radius:10px;padding:15px;font:10.5px/1.7 ui-monospace,monospace;color:#4d5870}.tool button{border:1px solid #bfc9dd;background:#fff;color:#465775;border-radius:8px;padding:9px 14px;cursor:pointer;font-size:11px;font-weight:700}.tool button:hover{background:var(--accent);color:#fff}
+.exam{background:#e5eaf5;padding:70px max(22px,calc((100vw - 1120px)/2));display:grid;grid-template-columns:.75fr 1.25fr;gap:60px}.exam h2{font-size:36px;line-height:1.25;margin:10px 0}.exam>div>p{color:#66718a;font-size:13px}.pass{font:800 52px/1 ui-monospace,monospace;color:var(--accent);margin-top:30px}.pass small{font:500 11px/1 sans-serif;color:var(--muted)}.quiz{display:grid;gap:9px}.quiz button{border:1px solid #cbd3e2;background:rgba(255,255,255,.75);border-radius:10px;padding:17px 18px;display:grid;grid-template-columns:28px 1fr auto;gap:12px;text-align:left;cursor:pointer}.quiz button>span{color:var(--accent);font:700 10px/1.5 ui-monospace,monospace}.quiz b{font-size:13px}.quiz p{margin:8px 0 0;color:#596781;font-size:11px}.quiz i{font-style:normal;color:var(--muted);font-size:9px}
+.sources{display:grid;grid-template-columns:1fr 1fr;gap:18px}.sources>div{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:24px}.sources h3{margin-top:0}.sources a{display:grid;grid-template-columns:26px 1fr;padding:13px 0;border-top:1px solid #e7ebf3}.sources a span{grid-row:1/3;color:var(--accent)}.sources a b{font-size:12px}.sources a small{font-size:9px;color:var(--muted);margin-top:3px}
+.power-map{margin:34px 0 38px;padding:24px;background:#fff;border:1px solid var(--border);border-radius:var(--radius)}.power-map>header{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:18px}.power-map h3{margin:0;font-size:18px}.power-map p{margin:0;color:var(--muted);font-size:10px}.power-chain{display:grid;grid-template-columns:1fr 40px 1fr 40px 1fr 40px 1fr;align-items:center}.power-node{min-height:94px;padding:16px;border:1px solid #d8e0ef;border-radius:11px;background:#f8faff}.power-node b,.power-node small{display:block}.power-node b{font-size:13px}.power-node small{margin-top:7px;color:var(--muted);font-size:9px}.power-node.hot{background:#fff6ea;border-color:#f2c995}.power-arrow{text-align:center;color:var(--accent);font-size:20px;font-weight:800}.power-note{margin-top:14px;padding:11px 13px;background:#edf3ff;border-radius:8px;color:#38598f;font-size:10px}
+.script-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.script-card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:18px}.script-card small{color:var(--accent);font:700 9px/1 ui-monospace,monospace}.script-card h3{font-size:14px;margin:8px 0}.script-card p{font-size:11px;color:var(--secondary);margin:0}.script-card b{color:var(--orange)}
+.capstone{margin-bottom:16px;padding:22px;background:#111a36;color:#fff;border-radius:14px}.capstone h3{margin:0 0 8px}.capstone p{color:#b6c0d7;font-size:11px}.capstone-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#34405f}.capstone-grid div{background:#192545;padding:14px}.capstone-grid b,.capstone-grid small{display:block}.capstone-grid b{color:#f4a45a}.capstone-grid small{color:#a2aec6;font-size:9px;margin-top:4px}
+footer{padding:34px 22px;text-align:center;background:#fff;border-top:1px solid var(--border);color:var(--muted);font-size:11px}footer a{color:var(--accent);font-weight:700}
+@media(max-width:820px){.hero-inner,.exam{grid-template-columns:1fr}.stats{max-width:520px}.section-head{align-items:start;flex-direction:column}.tool-grid,.sources,.script-grid{grid-template-columns:1fr}.toplinks{display:none}.power-chain{grid-template-columns:1fr}.power-arrow{transform:rotate(90deg)}.capstone-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.hero{padding-top:55px}.hero h1{font-size:39px}.days{grid-template-columns:1fr}.toolbar{align-items:stretch;flex-direction:column}.toolbar label{width:100%}.module-head{grid-template-columns:52px 1fr;padding:20px 16px}.module-hours{display:none}.lesson-title{padding:17px 16px}.lesson-body{padding:3px 16px 22px}.duo{grid-template-columns:1fr}.flow-grid{grid-template-columns:repeat(2,1fr)}.power-map>header{align-items:start;flex-direction:column}.capstone-grid{grid-template-columns:1fr}}
+@media print{.topbar,.actions,.days,.toolbar,.tool button{display:none}.hero{background:#fff;color:#111;padding:28px}.hero p{color:#444}.lesson-body{display:block!important}.container{padding:32px 0}.module{break-inside:avoid}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="back" href="../index.html#knowledge" onclick="sessionStorage.setItem('landyTab','knowledge')"><i>←</i><span>Landy 知识库</span></a>
+  <nav class="toplinks"><a href="#course">课程</a><a href="#toolkit">工具箱</a><a href="#scripts">话术</a><a href="#exam">考核</a><a href="#sources">资料</a></nav>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="eyebrow">DATA CENTER DIESEL GENERATOR · FIELD BOOTCAMP</div>
+      <h1>算力中心柴电<br><span>销售工程师</span></h1>
+      <p>3天 × 8小时封闭训练，把技术、方案、竞品、项目和谈判压进一套可执行的作战系统。目标不是背参数，而是能主持需求会、交初版方案、控交付风险并推动回款。</p>
+      <div class="actions"><a class="primary" href="#course">开始 Day 1</a><a href="#toolkit">先拿模板</a></div>
+    </div>
+    <div class="stats">
+      <div><b>24h</b><span>脱产集训</span></div><div><b>6</b><span>核心模块</span></div>
+      <div><b id="lesson-total">25</b><span>实战章节</span></div><div><b>4</b><span>即用模板</span></div>
+      <div class="redline"><b>红线：</b>不混用kW/kVA；不把设备冗余等同Tier认证；不在缺少项目工况时承诺性能。</div>
+    </div>
+  </div>
+</section>
+
+<main class="container" id="course">
+  <div class="section-head"><div><small>THE 72-HOUR UPGRADE</small><h2>三天作战路线</h2></div><p>每章均包含核心知识、行业案例、实战技巧、避坑指南与销售应用。勾选章节后，进度只保存在本设备。</p></div>
+  <div class="power-map">
+    <header><div><h3>图解：市电中断后的关键供电链</h3><p>销售必须能把“设备参数”翻译成“业务恢复过程”。</p></div><p>典型逻辑示意，实际时序以项目BOD、保护定值和厂家验证为准。</p></header>
+    <div class="power-chain">
+      <div class="power-node"><b>① 市电异常</b><small>进线保护识别欠压、失压或频率异常；防止瞬时扰动造成误动作。</small></div>
+      <div class="power-arrow">→</div>
+      <div class="power-node hot"><b>② UPS桥接</b><small>电池维持关键IT负载，给柴发启动和配电转换留出窗口。</small></div>
+      <div class="power-arrow">→</div>
+      <div class="power-node"><b>③ 柴发建压建频</b><small>多机按策略启动、同步、合闸；拒启机组被隔离，备用容量补位。</small></div>
+      <div class="power-arrow">→</div>
+      <div class="power-node hot"><b>④ 分步带载</b><small>UPS、泵、冷机按优先级投入；控制最大步载，稳定后进入长时供能。</small></div>
+    </div>
+    <div class="power-note"><b>销售抓手：</b>每一箭头都对应一个接口、一个时间指标、一个故障场景和一份验证证据；只谈“机组多少千瓦”无法覆盖整条链。</div>
+  </div>
+  <div class="days">
+    <button class="active" data-day="1"><small>DAY 1</small><b>筑基通关</b><span>技术基础 + 行业认知 · 8小时</span></button>
+    <button data-day="2"><small>DAY 2</small><b>方案进阶</b><span>竞品 + 方案 + 出海 · 8小时</span></button>
+    <button data-day="3"><small>DAY 3</small><b>操盘成交</b><span>项目管理 + 顾问销售 · 8小时</span></button>
+  </div>
+  <div class="toolbar"><label>⌕<input id="search" placeholder="搜索当天课程：并机、低价、FAT…"></label><span><b id="progress">0/25</b> 章节完成</span></div>
+  <div id="modules"></div>
+</main>
+
+<section class="flow">
+  <div class="eyebrow">SALES ENGINEERING MODEL</div><h2>六步选型，不靠拍脑袋</h2><p>稳态容量只是起点；真正的顾问同时管理瞬态、短路、环境、冗余与扩容。</p>
+  <div class="flow-grid">
+    <div><span>01</span><b>负载清单</b><small>kW / kVA / PF / 谐波</small></div>
+    <div><span>02</span><b>最大步载</b><small>UPS / 冷机 / 泵组</small></div>
+    <div><span>03</span><b>发动机校核</b><small>频率跌落与恢复</small></div>
+    <div><span>04</span><b>发电机校核</b><small>电压、励磁与短路</small></div>
+    <div><span>05</span><b>环境修正</b><small>海拔、温度、风阻、背压</small></div>
+    <div><span>06</span><b>冗余扩容</b><small>N+R与维护场景</small></div>
+  </div>
+</section>
+
+<section class="container" id="toolkit">
+  <div class="section-head"><div><small>FIELD TOOLKIT</small><h2>项目工具箱</h2></div><p>复制到会议纪要、邮件或投标文件中，再按项目工况完成书面确认。</p></div>
+  <div class="tool-grid" id="tools"></div>
+</section>
+
+<section class="container" id="scripts">
+  <div class="section-head"><div><small>CONSULTATIVE TALK TRACKS</small><h2>顶级销售必备话术</h2></div><p>话术不是“压客户”，而是把模糊争论引导到同工况、同边界、同验收和共同下一步。</p></div>
+  <div class="script-grid" id="script-grid"></div>
+</section>
+
+<section class="exam" id="exam">
+  <div><div class="eyebrow">FINAL GATE</div><h2>结业不是听完，<br>而是能在压力下做对</h2><p>知识题40分、方案实操35分、谈单答辩25分；总分100，80分通关。额定制、Tier边界、技术承诺和竞品合规属于红线题。</p><div class="pass">80 <small>通关线</small></div></div>
+  <div>
+    <div class="capstone">
+      <h3>终局实战：10MW智算中心投标答辩</h3>
+      <p>输入：分期IT负载、UPS与制冷清单、场址条件、N+1目标、90天到货、竞品低价8%。交付：10分钟需求复述、单线逻辑、容量/步载假设、六包报价、FAT/SAT策略、三项商务交换条件。</p>
+      <div class="capstone-grid"><div><b>35分</b><small>技术方案与边界</small></div><div><b>25分</b><small>需求与价值表达</small></div><div><b>20分</b><small>风险和项目计划</small></div><div><b>20分</b><small>异议与谈判</small></div></div>
+    </div>
+    <div class="quiz" id="quiz"></div>
+  </div>
+</section>
+
+<section class="container" id="sources">
+  <div class="section-head"><div><small>OFFICIAL SOURCES</small><h2>标准与视频入口</h2></div><p>规范会更新，投标和签约前必须核验项目所在地最新版本及审查意见。</p></div>
+  <div class="sources">
+    <div><h3>标准与政策</h3>
+      <a href="https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=F83B7F7C512E145E709DF10B947339DB" target="_blank"><span>↗</span><b>GB/T 2820.1-2022 标准信息</b><small>全国标准信息公共服务平台</small></a>
+      <a href="https://www.nda.gov.cn/sjj/zwgk/zcfb/0830/20240830174329104216060_pc.html" target="_blank"><span>↗</span><b>东数西算实施意见</b><small>国家数据局</small></a>
+      <a href="https://uptimeinstitute.com/tier-certification" target="_blank"><span>↗</span><b>Uptime Institute Tier资料</b><small>官方认证入口</small></a>
+      <a href="https://www.iso.org/committee/16152/x/catalogue/" target="_blank"><span>↗</span><b>ISO 8528系列</b><small>ISO目录</small></a>
+    </div>
+    <div><h3>YouTube 官方学习</h3>
+      <a href="https://www.youtube.com/@CumminsPowerGeneration" target="_blank"><span>▶</span><b>Cummins Power Generation</b><small>搜索 data center / paralleling</small></a>
+      <a href="https://www.youtube.com/@CatElectricPower" target="_blank"><span>▶</span><b>Caterpillar Electric Power</b><small>大型发电与数据中心</small></a>
+      <a href="https://www.youtube.com/@UptimeInstitute" target="_blank"><span>▶</span><b>Uptime Institute</b><small>Tier与韧性</small></a>
+      <a href="https://www.youtube.com/@Vertiv" target="_blank"><span>▶</span><b>Vertiv</b><small>UPS与数据中心电力链</small></a>
+    </div>
+  </div>
+</section>
+
+<footer><a href="../index.html" onclick="sessionStorage.setItem('landyTab','knowledge')">← 返回 Landy 知识库</a><br>销售工程训练材料，不替代有资质设计、厂家最终选型、消防/环保审查或合同法律意见。</footer>
+
+<script>
+const modules=[
+{day:1,id:"M1",title:"算力柴电底层技术",sub:"供电链、机组、额定、并机与容错",hours:4,lessons:[
+L("role","柴发在算力中心的真正角色","45 min","柴发不是一台机器，而是一条可用性链。",
+["UPS承担毫秒级桥接，柴发负责启动、稳定、并机/合闸和长时供能。","智算负载具有高功率密度、UPS整流非线性、阶跃快和冷却辅机联动等特点。","控制、燃油、冷却、排烟或保护任何一环失效，额定功率再大也不可用。"],
+"某项目只按IT额定功率采购，未计UPS损耗、制冷辅机和最大步载；首轮带载时频率跌落，UPS反复转电池。",
+["第一问不是“多少千瓦”，而是“哪些负载必须在第几秒恢复？”","用正常、维护、单故障、黑启动、复电五种工况组织需求会。"],
+["把UPS电池时间当柴发启动时间","只看铭牌，不看完整供电链"],
+"首次甲方会先画供电链，再确认恢复目标与最大步载。"),
+L("anatomy","机组与辅助系统全解","45 min","发动机只是核心部件之一，成套能力决定交付。",
+["柴油机决定机械功率、燃耗、瞬态和环境降额。","发电机决定电压响应、温升、绝缘和短路能力；控制系统处理同步、负载分配和保护。","日用油箱、泵、过滤、散热器、风道、排烟、消声、启动电池和假负载缺一不可。"],
+"某项目为降噪采用高阻力消声器和过长排烟管，却未核算背压，高负载时排温升高并受限。",
+["索取环境降额、瞬态曲线、冷却静压、允许背压四张证据表","用接口矩阵写清谁设计、供货、安装、调试、验收"],
+["只报价机组本体","把发动机品牌等同整机质量"],
+"技术应答使用“部件—功能—失效后果—验证文件”四列。"),
+L("ratings","kW、kVA、PF与额定制","45 min","不同额定制和边界的价格没有可比性。",
+["kW是有功、kVA是视在；初筛可用kW≈kVA×PF，但必须明确效率和测量边界。","PRP、ESP、COP等额定按厂家数据与GB/T 2820.1/ISO 8528-1核验。","长期低载可能导致积碳和湿堆，机组不是越大越保险。"],
+"A品牌1500kW ESP与B品牌1500kW PRP被直接比价，低价方案的持续带载和服务边界完全不同。",
+["六同：同额定、环境、PF、步载、排放、服务范围","客户报IT MW时必须索取设施负载清单"],
+["固定经验系数一把乘到底","把备用功率理解为无限时运行"],
+"先锁定比较基准，再谈价格；边界不一致时，低价往往意味着漏项。"),
+L("controls","ATS、并机与控制时序","55 min","系统能力体现在异常发生时如何降级。",
+["ATS负责电源转换；并机系统负责同步、合闸、负载分配、解列和保护。","失电时序：判据确认→启动→建压建频→并机→分步带载。","并机核验相序、频差、压差、相角、逆功率、过流接地及通信失效策略。"],
+"多机并联系统出现通信单点故障。FAT只测单机，未模拟通信中断和拒启，问题直到SAT才暴露。",
+["把拒启、拒合、通信中断、突加突卸和复电抖动写进FAT","要求交付因果矩阵和事件顺序"],
+["把ATS和并机柜混为一谈","未经批准承诺闭路切换"],
+"不要说“控制器很智能”，直接展示故障、报警、旁路和手动恢复路径。"),
+L("redundancy","N+1、2N、GB等级与Tier","50 min","设备数量不等于拓扑容错。",
+["N是满足设计负载的容量，R是冗余；还要检查母线、控制、油路与冷却共享点。","GB 50174等级与Uptime Tier不能机械互换。Tier III关注可维护，Tier IV关注单一故障容错。","维护场景和故障场景必须分别验证。"],
+"某2N方案共用一套不可隔离的供油泵组，一处故障即可同时影响两路。",
+["用红笔圈出两路所有共用点","把“多一台机”翻译成消除哪条中断路径"],
+["宣称A级等同Tier IV","只数机组，不审辅系统"],
+"问竞品：“单台检修时再发生一台拒启，关键负载如何保持？请在图上证明。”")
+]},
+{day:1,id:"M2",title:"行业全景与机会判断",sub:"政策、客户、商业模式与项目资格",hours:4,lessons:[
+L("policy","政策红利与项目约束","60 min","政策新闻是线索，不是订单。",
+["东数西算形成8个国家枢纽节点、10个集群，新增大型项目持续受布局、绿电、能效和安全约束。","项目须核验能评、环评、电力接入、土地、消防和地方规划。","AI算力把机会从单机升级为并机、油路、声学、控制与运维。"],
+"某智算项目高调签约，但电力接入和能评未落实；销售提前投入大量定制方案，项目最终停滞。",
+["项目五证据：主体、资金、土地/备案、能评环评、电力接入","追踪设计院出图、EPC中标与运营商资本开支"],
+["用过时市场规模制造紧迫感","忽略绿色政策对柴油运行的约束"],
+"机会评审先看证据，再决定投入多少售前资源。"),
+L("ecosystem","客户生态与商业模式","60 min","询价人不一定是决策人，采购链不等于付款链。",
+["角色包括业主、算力客户、设计院、咨询、EPC、机电分包、成套/OEM、服务和监管方。","模式包括整机直销、系统集成、EPC分包、框采、租赁与运维。","技术、预算、采购、使用和付款的影响人通常不同。"],
+"总包发询价、设计院锁规格、业主付款；销售只维护总包联系人，技术和回款均失控。",
+["画决策、技术否决、预算、使用、影响者五类权力地图","报价前确认合同链和付款来源"],
+["向所有角色讲同一套参数","没有项目报备和价格保护"],
+"对设计讲合规、对运维讲恢复、对采购讲可比价、对财务讲现金流。"),
+L("qualification","痛点地图与机会评分","60 min","TOP销售把时间投给可改变结果的项目。",
+["六大痛点：可用性、合规、工期、CAPEX、OPEX、运维可达性。","建议评分：真实性25、技术20、关系15、预算15、采购15、交付10。","资质必然不符、纯陪标、支付不可接受或交期不可能时及时退出。"],
+"预算充足但规格已被竞品锁定的项目，赢率低于预算一般但仍处设计阶段的项目。",
+["设置Go/No-Go门审","每个下一步必须有日期、责任人和交付物"],
+["把关系好等同赢率高","无限改方案却换不到信息"],
+"周会只回答：证据、差距、下一步、退出条件。"),
+L("segments","细分赛道与新手认知","60 min","先选适合自己的赛道，再建立产品组合。",
+["大型IDC/智算关注高压、多机并联、严格测试与服务网络；中小机房更看重成套和交付。","运营商、金融常有成熟集采规格和准入。","海外项目法规、燃油、环境、服务和备件可能比设备价格更关键。"],
+"新手直接套工业备用机样本响应智算招标，未覆盖高压、UPS兼容和分步加载，技术分严重不足。",
+["按客户×阶段×功率段×区域管理漏斗","建立100术语卡与20个图纸问题库"],
+["认为品牌大就一定通过","把租赁临电当正式备用系统"],
+"用目标客户、产品组合、区域服务、资质业绩的匹配度制定年度计划。")
+]},
+{day:2,id:"M3",title:"品牌与竞品对标",sub:"从品牌口水战转向可验证证据",hours:3,lessons:[
+L("brandmap","正确的品牌分层","70 min","动力、发电机、控制、成套与辅件是不同层级。",
+["动力生态包括Cummins、Caterpillar、MTU、Mitsubishi、Perkins、Volvo Penta、潍柴、玉柴等。","国内成套与系统集成可关注科泰、泰豪、怡昌等，型号与授权逐单核验。","Parker、Gates、Manuli主要是流体连接/软管部件生态，不是整机品牌。"],
+"把发动机品牌、整机OEM和控制系统混成一个维度，竞品比较无法落地。",
+["分别核验发动机选型书、发电机数据、控制矩阵、成套工厂和SLA","每个优势后附证据编号"],
+["把授权等同集成能力","引用未经验证的故障率"],
+"总纲：“不要求您相信品牌，我们用同一工况和边界验证。”"),
+L("matrix","十二维竞品矩阵","70 min","没有六同前提的价差没有意义。",
+["比较额定、功率密度、瞬态、燃耗、排放、环境、短路、控制、认证、交期、SLA与TCO。","价格拆为本体、并机、机械辅机、电气、工程服务和商务风险六包。","功率越大，替换越可能重算母线、保护、散热和空间。"],
+"竞品低价不含并机主控、远置散热、声学与SAT；边界还原后总成本更高。",
+["用偏差表而非口头攻击","至少三份同边界RFQ再形成价格区间"],
+["发布固定全国品牌价格表","同功率直接一对一替换"],
+"低价拦截是逐项还原遗漏成本与风险，而不是说“我们质量更好”。"),
+L("intercept","竞品拦截与品牌替换","40 min","把口头优势变成合同可验证条件。",
+["对一步带载、低油耗、低噪等承诺，写明工况、测点、恢复指标与测试。","品牌替换要证明功能、接口、认证和服务等价，并获书面批准。","竞品有真优势时承认，再回到客户优先级。"],
+"竞品承诺一步带100%负载；销售要求在项目海拔、UPS模型和恢复指标下纳入FAT。",
+["准备六同表、偏差表和测试建议","替代项标注批准状态"],
+["诋毁竞品或传播事故八卦","未经确认承诺完全等价"],
+"桥句：“同工况、同边界、同验收，结果才有决策价值。”")
+]},
+{day:2,id:"M4",title:"系统方案与海外视野",sub:"BOD、容量、辅系统、应答与出海",hours:5,lessons:[
+L("bod","BOD与需求基线","55 min","先冻结设计输入，再推荐型号。",
+["BOD固定等级、电制、负载、环境、模式、冗余、自治、排放噪声、接口和验收。","负载表包含kW/kVA、PF、效率、启动、同时率、优先级、步载和扩容。","未知项登记假设、影响、责任人和截止日。"],
+"客户只给“10MW机房”，销售先发BOD V0.1，三天内拿到优先级和步载假设。",
+["每次变更更新BOD版本","图纸、招标和纪要冲突时发RFI"],
+["把口头需求当基线","没有五工况功率平衡"],
+"技术会不是讲完样本，而是把红色未知项变成书面答案。"),
+L("sizing","容量与瞬态六步法","65 min","先优化加载时序，再放大机组。",
+["稳态初筛：负载输入×需求/同时系数+损耗，再按冗余分配。","发动机校核频率，发电机校核电压、励磁、短路和非线性负载。","环境修正覆盖海拔、温度、燃油、风阻和排烟背压。"],
+"把冷机、泵和UPS整流分四步投入后，项目减少一台大机且保留N+1。",
+["容量表同时交最大步载表","最终结果由厂家工具或书面计算确认"],
+["固定25%裕量代替计算","忽略UPS PF与谐波变化"],
+"路演按“基线—时序优化—校核—节省—剩余风险”讲。"),
+L("mechanical","油、风、水、烟、声与消防","60 min","声学、热工和消防必须联合设计。",
+["供油核验储油、日用箱、泵冗余、过滤、回油、泄漏与补油。","通风核验散热、短路、静压、极端温度和检修通道。","排烟核验背压、热膨胀、保温、防烫、冷凝；噪声写测点、工况和标准。"],
+"声学分包增加消声片后风阻超限，机组高温降额；单专业都合格，系统却失败。",
+["建立压降预算表","自治时间用可用油量和实际负载率计算"],
+["按几何容积算续航","低噪承诺不写测点"],
+"把噪声验收条件写清，避免口号变成无限责任。"),
+L("deliverables","单线图、BOQ与技术应答","60 min","图纸、清单、报价和偏差必须四向一致。",
+["单线图表达电压、机组、断路器、母线/母联、UPS、ATS和控制边界。","BOQ分机组、并机配电、燃油、冷却通风、排烟声学、工程服务六包。","应答写响应/偏差/优于，并附证据和影响。"],
+"油路液位传感器在总包、成套和弱电之间无人负责，调试前才发现。",
+["每个包含项写数量、规格、服务和验收","用接口矩阵分配设计、供货、安装、编程、测试"],
+["用“系统一套”掩盖数量","复制历史项目未改环境"],
+"主动提交边界图，帮助采购可比价，也能拦截漏项低价。"),
+L("global","海外项目七道门","60 min","出海报价首先是合规和服务设计。",
+["核验电压、频率、海拔、温湿度、沙尘盐雾与燃油。","目的国排放、噪声、电气、消防与储油逐项确认，CE/UL/NFPA不得想当然。","明确HS、Incoterms、税费、原产地、出口管制、语言、服务与运输。"],
+"机组到港后才发现内陆道路限高，拆解重运使开服延误。",
+["国家合规矩阵逐项签字","汇率、保函和付款时间价值计入价格"],
+["只报FOB不管场址接口","把CE当完整许可"],
+"先确认交付术语、场址、清关、现场服务和税务，再谈单价。")
+]},
+{day:3,id:"M5",title:"项目全生命周期",sub:"从线索、投标到验收、回款和运维",hours:4,lessons:[
+L("survey","资格审查与现场勘测","55 min","踏勘能发现样本里没有的风险。",
+["资格审查覆盖真实性、合同链、预算、准入、竞争、交期、适配和付款。","踏勘十区：运输、吊装、尺寸、基础、风道、排烟、油路、电缆、接地、敏感点。","照片需编号、方向、尺度和问题标注，未知项形成RFI。"],
+"设备性能满足，但吊装口不足，最终拆墙进场；联合踏勘本可避免。",
+["销售、技术、项目经理联合踏勘","未获许可不拍敏感区域"],
+["一个人凭经验踏勘","回公司靠记忆补方案"],
+"踏勘总结先讲影响工期和成本的三项风险。"),
+L("bid","投标门审与报价策略","65 min","每次让价都要交换条件。",
+["标前核验资质、授权、业绩、保证金、废标条款和关键参数。","价格包含目标成本、底价、期望价、锚点、付款价值和风险准备金。","红队按评分表反向审标，查四向一致。"],
+"竞品低8%，但预付款高、质保金低；还原资金成本后可有条件优化。",
+["让价换预付款、交期、范围、质保或数量","提交前完成废标十问"],
+["拍脑袋打折","技术承诺与商务排除冲突"],
+"“价格可以优化，但需从付款、范围或交期交换一个条件。”"),
+L("contractfat","合同、生产与FAT","60 min","客户输入也必须进入交期机制。",
+["合同明确附件优先级、范围、变更、验收、付款、质保、责任上限。","计划围绕长周期件、图纸冻结、FAT窗口和运输关键路径。","FAT覆盖文件、铭牌、启停、稳态、步载、并机故障、通信和报警。"],
+"客户图纸批准晚20天，合同无顺延机制，供应商仍被追责。",
+["客户输入与计划影响书面闭环","FAT前内部预验"],
+["FAT通过等同项目验收","NCR未关闭就发货"],
+"周报只写关键路径、偏差、需客户决策和恢复计划。"),
+L("satpay","SAT、验收、回款与售后","60 min","文档交付就是现金流工程。",
+["SAT验证现场安装、接口、接地保护、联动、带载和通信。","IST验证市电、UPS、柴发、冷却和控制的系统级故障恢复。","验收包含竣工图、报告、培训、备件、手册与问题关闭表；回款资料提前准备。"],
+"设备运行正常，但竣工资料缺失导致甲方无法审计，验收款被卡。",
+["合同签署时建立回款资料清单","巡检报告标风险等级、截止日与客户确认"],
+["只做空载月试","验收后才找签字人"],
+"明确合同第几节点、哪些证据已齐、何时签署和排款。")
+]},
+{day:3,id:"M6",title:"顾问级销售谈单",sub:"需求、价值、异议、谈判与复购",hours:4,lessons:[
+L("discovery","高阶需求挖掘","60 min","从事实一路问到不决策的代价。",
+["现状：供电、负载、阶段和角色；痛点：停电、验收、工期、空间与运维。","影响：SLA、声誉、整改与延期；关键事件：送电、上架、开服。","决策：评分、预算、签字、采购方式、竞品和不决策代价。"],
+"客户说要大品牌，深挖发现真实痛点是过去本地服务4小时无人到场。",
+["事实→问题→影响→优先级→证据→共同下一步","结束前复述三项成功标准"],
+["会议80%讲公司","只问预算，不问评分和付款"],
+"首次会必须拿到成功标准、未知项负责人、下次日期和双方交付物。"),
+L("value","价值方案与报价路演","60 min","价格前先让客户确认成功标准。",
+["价值结构：风险→设计选择→可验证改善→证据→成本与取舍。","报价分基础合规、推荐韧性与可选优化包。","TCO含采购、工程、燃油、维护、备件、测试、融资和停机风险，假设透明。"],
+"推荐方案单价高5%，但通过时序优化减少一台机组，总CAPEX下降。",
+["用瀑布图说明差价","每个高价项连接一个失效路径"],
+["用夸张宕机损失恐吓","选项过多让客户无法决策"],
+"“今天不是读报价单，先确认三项成功标准，再看配置如何支撑。”"),
+L("objections","低价、技术与品牌异议","60 min","先分类，再转化为评判标准。",
+["四步：确认分类→追问证据影响→共同定义标准→数据/测试/方案回应。","低价先恢复同边界成本；仍低则换条件、缩范围、证明价值或退出。","不知道答案时明确复核负责人和书面答复时间。"],
+"客户拿竞品一步100%带载施压；销售要求相同海拔、UPS模型和恢复指标下做FAT。",
+["使用同工况、同边界、同验收桥句","承认竞品真实优势"],
+["传播无法核验的故障率","抢单时什么都承诺"],
+"技术未知不可怕，猜答案才危险；用确定的复核时限建立信任。"),
+L("negotiation","谈判、复购与长期绑定","60 min","关系的终点是持续运营价值。",
+["谈判变量含价格、范围、数量、付款、交期、验收、质保、SLA、违约和框架。","谈判前写BATNA、目标、底线、可交换变量和授权层级。","长期绑定依靠年度演练、运行数据、备件、扩容路线图、培训与QBR。"],
+"首次项目利润普通，但通过年度黑启动测试和备件库，成为下一期扩容首选接口。",
+["打包交换，不逐项退让","赢单也复盘，避免把运气当能力"],
+["用不合规关系代替价值","售后只在故障时出现"],
+"QBR展示可用性证据、未闭环风险、扩容预测和预算建议。")
+]}
+];
+
+function L(id,title,duration,takeaway,core,example,tips,traps,sales){return{id,title,duration,takeaway,core,example,tips,traps,sales}}
+const tools=[
+{title:"项目报价六包模板",desc:"防低价漏项与后期增补",text:`项目：____  客户：____  版本：V____  有效期：____
+币种/税率：____  交付地点/Incoterm：____
+
+1. 柴油发电机组：额定制、kW/kVA、V/Hz、数量
+2. 控制与并机：主控、同步、负载分配、通信
+3. 高低压配电：断路器、母线、保护、计量
+4. 燃油/冷却/通风/排烟/声学：数量与边界
+5. 工程测试：设计配合、FAT、SAT、IST
+6. 运输、吊装、备件、培训、质保、SLA
+
+附：包含/排除、付款证据、交期起算、变更、验收、质保与责任上限。`},
+{title:"BOD方案简表",desc:"第一次技术会即可使用",text:`项目地点/海拔/温度：____
+IT规模及分期：____  等级/认证目标：____
+关键开服日期：____
+
+电压/频率/接地：____  负载表版本：____
+UPS/冷机型号：____  最大步载：____
+排放/噪声/储油：____
+
+N=____  R=____  单机额定=____
+母线分段：____  正常/维护/故障工况：____
+共享点及消除措施：____
+
+假设：____  影响：____  责任人：____  关闭日：____`},
+{title:"FAT / SAT检查表",desc:"用测试把承诺变成证据",text:`FAT
+□ 文件、铭牌、外观、随机件
+□ 启动、稳态、电压/频率、保护
+□ 最大步载、突卸、恢复时间
+□ 拒启、拒合、通信中断
+□ 并机、负载分配、告警、停机
+□ NCR关闭后放行
+
+SAT / IST
+□ 安装、油路、排烟、电缆、接地
+□ ATS/并机/UPS/BMS/EPMS联动
+□ 假负载或批准现场带载
+□ 失电、维护、单故障、复电
+□ 回退方案、见证签字、竣工资料`},
+{title:"顾问式需求15问",desc:"从“几台多大”升级为业务对话",text:`1. 哪些负载必须恢复？允许多少秒？
+2. IT、UPS损耗、制冷各是多少？
+3. 最大一次投入负载和启动方式？
+4. 海拔、温度、频率和电压？
+5. 五种运行工况如何定义？
+6. GB等级、Tier还是企业标准？
+7. 储油和补油组织？
+8. 排放、噪声、消防条件？
+9. 设计、EPC、业主、运维、采购是谁？
+10. 哪些参数构成技术否决？
+11. 评分、预算与采购方式？
+12. 竞品和已锁定规格？
+13. 图纸、FAT、到货、开服日期？
+14. 验收签字人与付款证据？
+15. 下一步双方何时交付什么？`}
+];
+const scripts=[
+["第一次见甲方","先不急着推荐品牌。请允许我先确认：必须恢复的负载、允许中断时间、最大一步加载，以及验收时怎样证明成功。四项锁定后，型号和价格才有可比性。"],
+["客户只给IT容量","IT容量只是输入之一。还需要UPS损耗、制冷和水泵等关键辅机、同时系数、分期计划及最大步载；我先发一版负载表，未知项由双方共同关闭。"],
+["客户要求一步100%带载","可以把它作为性能目标，但需同时写清海拔、温度、UPS模型、初始负载、电压/频率跌落和恢复时间，并在FAT中按同一条件验证。"],
+["竞品低价8%","先把六个边界拉齐：额定制、环境、控制并机、机械辅机、工程测试和售后SLA。若同边界后仍有差距，我们再从付款、范围、交期或数量交换条件。"],
+["客户质疑品牌","品牌是风险代理指标，不是最终证据。我们按发动机、发电机、控制、成套、项目业绩和服务响应逐层提供可核验资料。"],
+["客户说你们方案太大","同意先挑战容量。我们将稳态、最大步载、环境降额和冗余拆开校核；能通过加载时序优化的，不靠盲目放大设备解决。"],
+["客户要求口头保证","这个参数会影响选型和合同责任，我不现场猜。今天记录工况，明确技术负责人和书面答复时间，再把验证方法一并给您。"],
+["客户要求免费反复改方案","可以继续深化。为确保双方资源有效投入，请先共同冻结BOD版本、未决项负责人和下一轮决策日期，变更项按影响更新。"],
+["设计院锁定竞品","我们不做简单替牌，而是提交功能、接口、认证、服务等价矩阵和偏差表；涉及母线、保护、散热、空间的内容重新校核并取得书面批准。"],
+["采购只谈单价","设备单价可以谈，但项目需要比较可交付总成本：本体、并机、辅系统、工程测试、资金成本和漏项风险。我们把每一项摊开，方便您做同口径决策。"],
+["要求马上打折","价格优化可以做，但需要交换一个项目条件：提高预付款、确认标准交期、缩小范围、增加批量或调整质保。请选对您最容易的一项。"],
+["交期被压缩","请先确定关键开服日期与不可压缩的长周期件。我们可以并行设计、分批发运或提前锁料，但客户图纸批准和变更也要进入顺延机制。"],
+["FAT项目争议","我们回到已批准的FAT程序、工况、测点与判定值。偏差先出NCR，写明隔离、原因、纠正、复测和放行责任，不用口头争论代替证据。"],
+["验收款被卡","请一起对照合同节点：实体工作、测试记录、竣工资料、培训和签字证据分别缺哪项；今天确定责任人、关闭日期和排款申请日。"],
+["推动下一次会议","我复述一下今天确认的三项成功标准和四个未知项。我们双方各自在×日交付什么，并在×日邀请设计、运维和采购共同做方案门审，可以吗？"],
+["老客户复购","这次不只做故障回顾。我们把年度运行小时、启动成功率、报警、油品、备件、扩容和预算合成一张风险路线图，提前规划下一期容量。"]
+];
+const quiz=[
+["ESP与PRP同数值可直接比价。","错。额定制、运行时间与工况边界不同。"],
+["N+1机组就一定满足Tier III。","错。必须验证完整拓扑、可维护性和共享点。"],
+["最大步载可以通过控制时序优化。","对。先优化分组和延时，再决定是否放大机组。"],
+["FAT通过可以替代SAT。","错。FAT验证工厂条件，SAT验证现场接口与联动。"],
+["不知道答案时可以先口头承诺。","错。应明确复核负责人和书面答复时间。"],
+["1500kVA、PF 0.8可直接写成1500kW。","错。视在功率与有功功率不同，初筛为1200kW，还要核验效率和额定边界。"],
+["机组越大，算力中心越安全。","错。过大可能长期低载，也不自动解决瞬态、短路和系统单点故障。"],
+["ATS与多机并机主控是同一种设备。","错。电源转换与同步、负载分配、解列保护的职责不同。"],
+["只要发动机品牌相同，成套质量就相同。","错。发电机、控制、集成、辅系统、工厂测试和服务能力都会改变结果。"],
+["冷机和UPS同时投入造成大步载，应先考虑分步时序。","对。时序优化后仍需由厂家按工况校核。"],
+["低噪声承诺只写dB(A)数值即可。","错。必须写测点、距离、高度、负载、背景噪声和执行标准。"],
+["油箱几何容积等于可用储油量。","错。需扣除死油位、膨胀空间并结合实际负载率与燃耗计算。"],
+["现场海拔和温度不会影响机组容量。","错。发动机和发电机均可能降额，通风与冷却也受影响。"],
+["Tier是品牌和设备清单认证。","错。Tier是性能导向的完整基础设施拓扑与运营验证，不能由某一台设备宣称。"],
+["Parker、Gates、Manuli可与Cummins按整机品牌直接比较。","错。前三者主要处于流体连接/软管部件生态，比较层级不同。"],
+["海外项目拿到CE就不需要核验当地法规。","错。目的国排放、电气、消防、储油、清关和现场许可仍需逐项确认。"],
+["竞品低价时，最有效的第一反应是立刻降价。","错。先恢复同工况、同边界、同验收，再设计条件交换。"],
+["投标技术应答写“完全满足”最稳妥。","错。必须逐条响应并附证据；偏差和假设要透明。"],
+["合同交期应从签字当天无条件起算。","错。应明确预付款、图纸批准、接口资料等起算前提和客户延误机制。"],
+["回款管理从验收后开始。","错。签约时就应建立每个付款节点的证据、签字人和排款路径。"]
+];
+let activeDay=1,opened="role";const progressKey="landy-dg-progress";let done=JSON.parse(localStorage.getItem(progressKey)||"[]");
+function render(){
+ const q=document.getElementById("search").value.trim().toLowerCase();
+ const list=modules.filter(m=>m.day===activeDay).map(m=>({...m,lessons:m.lessons.filter(l=>!q||JSON.stringify(l).toLowerCase().includes(q))})).filter(m=>m.lessons.length);
+ document.getElementById("modules").innerHTML=list.length?list.map(m=>`<article class="module"><header class="module-head"><div class="module-num">${m.id}</div><div><small>${m.hours} HOURS · MODULE</small><h3>${m.title}</h3><p>${m.sub}</p></div><span class="module-hours">${m.lessons.length} 课</span></header>${m.lessons.map(lessonHTML).join("")}</article>`).join(""):`<div class="empty">当天课程中没有找到“${esc(q)}”，换个关键词试试。</div>`;
+ document.getElementById("progress").textContent=`${done.length}/${modules.flatMap(m=>m.lessons).length}`;
+}
+function lessonHTML(l){const open=opened===l.id,checked=done.includes(l.id);return`<section class="lesson ${open?"open":""}"><button class="lesson-title" onclick="toggleLesson('${l.id}')"><span class="done ${checked?"checked":""}" onclick="event.stopPropagation();toggleDone('${l.id}')">${checked?"✓":""}</span><span><b>${l.title}</b><small>${l.duration} · ${l.takeaway}</small></span><i>${open?"−":"+"}</i></button><div class="lesson-body"><h4>核心知识点</h4><ul>${l.core.map(x=>`<li>${x}</li>`).join("")}</ul><div class="case"><h4>行业案例</h4><p>${l.example}</p></div><div class="duo"><div><h4>实战技巧</h4><ul>${l.tips.map(x=>`<li>${x}</li>`).join("")}</ul></div><div class="trap"><h4>避坑指南</h4><ul>${l.traps.map(x=>`<li>${x}</li>`).join("")}</ul></div></div><div class="sales"><b>销售应用</b>${l.sales}</div></div></section>`}
+function toggleLesson(id){opened=opened===id?"":id;render()}function toggleDone(id){done=done.includes(id)?done.filter(x=>x!==id):[...done,id];localStorage.setItem(progressKey,JSON.stringify(done));render()}
+function esc(s){return s.replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]))}
+document.querySelectorAll(".days button").forEach(b=>b.onclick=()=>{document.querySelectorAll(".days button").forEach(x=>x.classList.remove("active"));b.classList.add("active");activeDay=+b.dataset.day;document.getElementById("search").value="";render()});
+document.getElementById("search").oninput=render;
+document.getElementById("tools").innerHTML=tools.map((t,i)=>`<article class="tool"><header><div><h3>${String(i+1).padStart(2,"0")} · ${t.title}</h3><p>${t.desc}</p></div></header><pre>${t.text}</pre><button onclick="copyTool(this,${i})">复制模板</button></article>`).join("");
+function copyTool(btn,i){navigator.clipboard.writeText(tools[i].text);btn.textContent="已复制 ✓";setTimeout(()=>btn.textContent="复制模板",1500)}
+document.getElementById("script-grid").innerHTML=scripts.map((x,i)=>`<article class="script-card"><small>SCENARIO ${String(i+1).padStart(2,"0")}</small><h3>${x[0]}</h3><p><b>建议表达：</b>${x[1]}</p></article>`).join("");
+document.getElementById("quiz").innerHTML=quiz.map((x,i)=>`<button onclick="this.classList.toggle('open');const p=this.querySelector('p');p.hidden=!p.hidden;this.querySelector('i').textContent=p.hidden?'看答案':'收起'"><span>${String(i+1).padStart(2,"0")}</span><div><b>${x[0]}</b><p hidden>${x[1]}</p></div><i>看答案</i></button>`).join("");
+render();
+</script>
+</body>
+</html>
