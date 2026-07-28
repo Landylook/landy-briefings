@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年7月28日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  @media (max-width: 768px) {
+    body { margin: 20px auto; padding: 16px; font-size: 16px; line-height: 1.9; }
+    h1 { font-size: 20px; }
+    .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
+    .section { margin-bottom: 24px; }
+    .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 10px; }
+    table { font-size: 15px; }
+    th, td { padding: 10px 12px; }
+    .highlight, .warning { padding: 14px 18px; font-size: 15px; }
+    .back-button { font-size: 15px; padding: 10px 14px; margin-bottom: 16px; }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body { max-width: 90%; margin: 30px auto; padding: 24px; }
+    h1 { font-size: 21px; }
+  }
+  @media (max-width: 480px) {
+    body { margin: 12px auto; padding: 12px; font-size: 17px; }
+    h1 { font-size: 19px; }
+    .date { font-size: 14px; }
+    .section-title { font-size: 18px; }
+    table { font-size: 14px; display: block; overflow-x: auto; }
+  }
+  @media (min-width: 1200px) {
+    body { max-width: 900px; }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年7月28日 · 周二</div>
+
+<!-- 📊 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>🔥 英伟达拟为OpenAI提供2500亿美元担保</strong> — 撬动5000亿美元俄亥俄州10GW数据中心项目（软银旗下子公司开发），有望成为全球最大AI基建项目。 <span class="source">（36氪/新浪财经, Jul 28）</span></li>
+    <li><strong>🔥 英伟达投资Ilya创办的SSI</strong> — 与OpenAI前首席科学家Safe Superintelligence建立长期合作，获Vera Rubin平台，计算能力将提升一个数量级。 <span class="source">（36氪/界面, Jul 28）</span></li>
+    <li><strong>磷酸铁锂龙头湖南裕能涨价2000元/吨</strong> — 业内多家企业同步酝酿涨价，上下游议价博弈空间打开。 <span class="source">（36氪/证券时报, Jul 28）</span></li>
+    <li><strong>英伟达7500亿美元收购谈判使投资者紧张</strong> — 市场担忧"金融炼金术"、资金循环融资风险。若因此降级，可能冲击所有AI关联债券利率。 <span class="source">（The Verge/Bloomberg, Jul 27）</span></li>
+    <li><strong>芝商所推出个股期货</strong> — 24小时交易SpaceX、英伟达、特斯拉、苹果等55只股票。 <span class="source">（36氪/新浪财经, Jul 28）</span></li>
+  </ul>
+</div>
+
+<!-- 一、AI·算力·数据中心 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 一、AI·算力·数据中心</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">🔥 头条：英伟达史诗级融资 + 投资SSI</strong>
+    <ul>
+      <li><strong>英伟达2500亿美元担保→5000亿美元AI基建</strong> — 英伟达拟为OpenAI租用俄亥俄州10GW数据中心园区提供约2500亿美元融资担保，软银能源开发该园区，总投资超5000亿美元。这将是全球规划最大的AI基础设施项目。10GW液冷管路需求=约500-800亿元。 <span class="source">（36氪/新浪财经, Jul 28）</span></li>
+      <li><strong>英伟达投资SSI（Safe Superintelligence）</strong> — 由Ilya Sutskever（OpenAI前首席科学家）创办，获英伟达投资+Vera Rubin平台，计算能力提升一个数量级。英伟达正通过投资+担保两个维度建立AI生态护城河。 <span class="source">（36氪/界面, Jul 28）</span></li>
+      <li><strong>市场担忧"算力金融炼金术"</strong> — 英伟达7500亿美元级交易引发资金循环融资质疑。保险商Coherence Credit Strategies首席投资官警告：透明度和表外交易可能导致信用评级下调。若英伟达被下调评级，AI全产业链融资成本将上升。 <span class="source">（The Verge/Bloomberg, Jul 27）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">🛰️ 卫星互联网</strong>
+    <ul>
+      <li><strong>亚马逊Leo拟部署5105颗卫星</strong> — 加入手机直连卫星竞争，2028年部署，与SpaceX/AST SpaceMobile/Lynk竞争。 <span class="source">（36氪/界面, Jul 28）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">📉 美股科技</strong>
+    <ul>
+      <li><strong>美股涨跌不一，苹果市值重返全球第一（近5万亿美元）</strong> — 苹果+1%，英伟达-5%。英伟达7500亿美元交易消息明显压低了股价。中概股普涨（腾讯音乐+5%，理想+4%）。 <span class="source">（36氪, Jul 28）</span></li>
+      <li><strong>美银：8月-10月是美股最艰难的三个月</strong> — 历年数据支持，防御性立场。美元、黄金、美债往往跑赢。 <span class="source">（36氪/财联社, Jul 28）</span></li>
+      <li><strong>芝商所推出55只个股期货+22只微型合约</strong> — 23小时交易制度，覆盖SpaceX、英伟达、特斯拉等。杠杆式多空全天候。 <span class="source">（36氪/新浪财经, Jul 28）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 二、液冷管赛道情报 -->
+<div class="section">
+  <div class="section-title orange">💧 二、液冷管赛道情报</div>
+  <ul>
+    <li><strong>🔥 10GW俄亥俄州数据中心 = 终极液冷需求信号</strong> — 英伟达2500亿美元担保撬动的5000亿美元10GW项目，与SK集团5000亿美元2GW项目不在一个量级。10GW意味着约1000万块GPU（按单GPU 1000W计算），液冷管路需求规模在500-800亿元级别。这是人类历史上最大单一AI基建规模。 <span class="source">（36氪/新浪财经, Jul 28）</span></li>
+    <li><strong>英伟达-OpenAI-软银的三角资本结构</strong> — 英伟达提供算力资产担保 → OpenAI租用 → 软银建设。这种结构如果推广，将使液冷管路从"采购品"变为"资本品"，金融机构将直接要求液冷管线标准配置。利好头部管路企业标准化+规模化。 <span class="source">（综合分析, Jul 28）</span></li>
+    <li><strong>💡 风险提示：英伟达信用风险</strong> — 若评级下调，AI产业链融资成本上升，液冷管路项目可能短期延迟。但10GW是多年建设周期，短期波动不改长期方向。 <span class="source">（The Verge/Bloomberg, Jul 27）</span></li>
+  </ul>
+</div>
+
+<!-- 三、新能源&储能 -->
+<div class="section">
+  <div class="section-title green">🔋 三、新能源&储能</div>
+  <ul>
+    <li><strong>磷酸铁锂龙头湖南裕能涨价2000元/吨</strong> — 全系产品调价，硫磺等上游材料大涨+下游需求走强双驱动。高端磷酸铁锂供不应求，业内多家企业同步酝酿涨价。行业两极分化加速，一体化+大客户深度绑定企业受益。 <span class="source">（36氪/证券时报, Jul 28）</span></li>
+    <li><strong>储能排产信号：</strong> 磷酸铁锂涨价+高端供不应求 = 储能电池排产持续走强，储能液冷热管理系统需求同步增长。VC价格（上周报）涨40%+，与磷酸铁锂涨价形成共振。 <span class="source">（36氪/证券时报, Jul 28）</span></li>
+    <li><strong>中美科技脱钩再升级</strong> — 同程航旅大数据显示中国男性旅游偏好变化，AI争夺稀土等资源。中美科技竞争从芯片扩展到矿产端。 <span class="source">（The Verge, Jul 27）</span></li>
+  </ul>
+</div>
+
+<!-- 四、二级市场 & 资本动向 -->
+<div class="section">
+  <div class="section-title purple">📈 四、二级市场 & 资本动向</div>
+  <ul>
+    <li><strong>美联储7月维持利率不变概率63.7%</strong> — 9月维持概率仅18.5%，累计加息25bp概率55.7%。降息预期降温，加息概率上升。 <span class="source">（36氪/财联社, Jul 28）</span></li>
+    <li><strong>美股三大指数涨跌不一</strong> — 道指+0.51%，标普+0.02%，纳指-0.18%。苹果市值逼近5万亿美元（全球第一），英伟达-5%。中概普涨（腾讯音乐+5%，理想+4%）。 <span class="source">（36氪, Jul 28）</span></li>
+    <li><strong>美银：8-10月最艰难的三个月</strong> — 历史规律显示标普500此区间表现最弱，美元/黄金/美债将跑赢。 <span class="source">（36氪/财联社, Jul 28）</span></li>
+    <li><strong>芝商所推出个股期货24小时交易</strong> — 55只美国股票+22只微型合约，SpaceX、英伟达、特斯拉、苹果等。为AI硬件相关美股提供更灵活的避险工具。 <span class="source">（36氪/新浪财经, Jul 28）</span></li>
+    <li><strong>韩国上半年DLS销售额同比+30%</strong> — 衍生产品热销持续，全球流动性充裕。 <span class="source">（36氪/新浪财经, Jul 28）</span></li>
+  </ul>
+</div>
+
+<!-- 五、利通科技（839167） -->
+<div class="section">
+  <div class="section-title gray">🏢 五、利通科技（839167）动态</div>
+  <ul>
+    <li>今日未监测到利通科技重大公告。</li>
+    <li><strong>超级催化剂：</strong> 英伟达-OpenAI-软银10GW俄亥俄数据中心（5000亿美元）是7月28日最重要消息。液冷管路作为AI工厂"血管"，10GW规模=500-800亿元管路市场。在SK集团（2GW Vera Rubin）之后，又一个10GW项目横空出世，液冷赛道基本盘从"高速增长"升级为"几何级增长"。</li>
+    <li><strong>⚠️ 短期风险关注：</strong> 英伟达股价单日-5%，部分因市场担忧7500亿级交易的融资循环风险。若英伟达信用评级受挑战，AI全产业链短期波动不可避免。但10GW项目多年建设周期提供了安全垫。</li>
+    <li><strong>本周关注：</strong> 7月30日小米澎程系列发布会 + 月末PMI数据。</li>
+  </ul>
+</div>
+
+<!-- 六、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 六、战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 重磅：英伟达2500亿担保→10GW数据中心</strong><br>
+    <strong>英伟达拟为OpenAI提供2500亿美元担保</strong>，撬动软银旗下俄亥俄州10GW数据中心园区，总投资超5000亿美元。这是继SK集团5000亿美元（2GW）合作之后，另一个量级更大的AI基建信号。液冷管路市场从百亿级跃升至千亿级。 <span class="source">（36氪/新浪财经, Jul 28）</span>
+  </div>
+
+  <div class="warning">
+    <strong>🟡 警示：英伟达融资循环风险</strong><br>
+    <strong>英伟达7500亿美元级交易引发质疑</strong> — 市场担忧"金融炼金术"、资金表外循环。若英伟达信用评级下调，AI全产业链融资成本上升，短期可能带来液冷项目波动。但GPU订单已下、数据中心规划已定，长期刚性需求不变。 <span class="source">（The Verge/Bloomberg, Jul 27）</span>
+  </div>
+
+  <div class="highlight">
+    <strong>🟢 机会信号</strong><br>
+    <strong>1. 磷酸铁锂涨价=储能排产加速</strong> — 储能电池需求走强，液冷储能配套持续放量。<br>
+    <strong>2. 小米澎程7月30日发布</strong> — 新能源车热管理供应链关注度升温。<br>
+    <strong>3. 芝商所个股期货推出</strong> — 北交所/液冷概念股流动性可能受益。<br>
+    <strong>4. 美银预警8-10月风险</strong> — 若科技股回调，可考虑加仓液冷等确定性赛道。
+  </div>
+</div>
+
+</body>
+</html>
