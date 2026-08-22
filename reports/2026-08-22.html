@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年8月22日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section { margin-bottom: 28px; }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  ul { margin: 0; padding-left: 20px; }
+  li { margin-bottom: 8px; }
+  li strong { font-weight: 600; }
+  .source { color: #888; font-size: 12px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 8px; }
+  th { background: #f5f5f5; text-align: left; padding: 8px 10px; border: 1px solid #ddd; font-weight: 600; }
+  td { padding: 8px 10px; border: 1px solid #ddd; vertical-align: top; }
+  .highlight { background: #fff8e1; padding: 12px 16px; border-left: 4px solid #f9a825; margin-top: 10px; font-size: 14px; }
+  .warning { background: #fce8e6; padding: 12px 16px; border-left: 4px solid #ea4335; margin-top: 10px; font-size: 14px; }
+  .back-button {
+    display: inline-flex; align-items: center; color: #1a73e8; text-decoration: none;
+    font-size: 14px; font-weight: 500; margin-bottom: 20px; padding: 8px 12px; border-radius: 4px;
+  }
+  .back-button:hover { background-color: #f5f5f5; }
+  .back-button span { margin-right: 6px; }
+  @media (max-width: 768px) {
+    body { margin: 20px auto; padding: 16px; font-size: 16px; line-height: 1.9; }
+    h1 { font-size: 20px; }
+    .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
+    .section { margin-bottom: 24px; }
+    .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 10px; }
+    table { font-size: 15px; }
+    th, td { padding: 10px 12px; }
+    .highlight, .warning { padding: 14px 18px; font-size: 15px; }
+    .back-button { font-size: 15px; padding: 10px 14px; margin-bottom: 16px; }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body { max-width: 90%; margin: 30px auto; padding: 24px; }
+    h1 { font-size: 21px; }
+  }
+  @media (max-width: 480px) {
+    body { margin: 12px auto; padding: 12px; font-size: 17px; }
+    h1 { font-size: 19px; }
+    .date { font-size: 14px; }
+    .section-title { font-size: 18px; }
+    table { font-size: 14px; display: block; overflow-x: auto; }
+  }
+  @media (min-width: 1200px) { body { max-width: 900px; } }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button"><span>←</span> 返回简报列表</a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年8月22日 · 周六</div>
+
+<!-- ⚠️ 说明 -->
+<div class="section">
+  <div class="section-title red">⚠️ 系统提示</div>
+  <div class="warning">
+    <strong>简报中断 24 天（7月30日-8月21日）</strong><br>
+    由于服务器自动任务（cron）连续 SIGKILL 失败，7月30日至8月21日的简报未能自动生成。今日（8月22日）恢复人工补发。部分信源今日访问受限（36氪安全检测、第一电动403、web_search故障），今日数据以可获取信源为准，重点信息以战略判断补足。
+  </div>
+</div>
+
+<!-- 📊 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>🔴 Apollo（GPU抵押贷款巨头）遭黑客入侵</strong> — GPU融资生态安全风险暴露，AI算力金融链或受冲击。 <span class="source">（The Verge, Aug 21）</span></li>
+    <li><strong>Meta发布开源AI模型Glimmer</strong> — 与闭源Muse Spark形成"开源+闭源"双轨，扎克伯格鼓吹"AI为所有人"。 <span class="source">（The Verge, Aug 14）</span></li>
+    <li><strong>ChatGPT直连Apple Messages</strong> — OpenAI将AI深入操作系统层，搜索/回复/起草消息。 <span class="source">（The Verge, Aug 20-21）</span></li>
+    <li><strong>Apple Music推AI标签</strong> — AI生成音乐强制标注（Transparency Tags），平台内容治理走向标准化。 <span class="source">（The Verge, Aug 21）</span></li>
+    <li><strong>智能家居语音助手AI化</strong> — Alexa Plus vs Gemini for Home 对比评测，生成式AI全面接管家庭入口。 <span class="source">（The Verge, Aug 20）</span></li>
+  </ul>
+</div>
+
+<!-- 一、AI·算力·数据中心 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 一、AI·算力·数据中心</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">🔴 风险头条：GPU融资巨头Apollo遭攻击</strong>
+    <ul>
+      <li><strong>Apollo（GPU-backed loan主要玩家）被黑</strong> — 继此前英伟达7500亿级融资循环争议后，GPU抵押贷款核心机构遭入侵。若涉及客户抵押资产数据，可能引发算力杠杆融资的系统性信任危机。 <span class="source">（The Verge, Aug 21）</span></li>
+      <li><strong>解读：</strong> AI算力金融化的"影子银行"风险正在从"担忧"走向"现实"。对液冷等实体供应链反而构成利好——金融杠杆若收紧，资金将更加向有真实订单、真实产能的实体企业集中。
+    </li>
+  </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">🧠 模型生态</strong>
+    <ul>
+      <li><strong>Meta开源AI模型 Glimmer</strong> — 任何人可下载、在自家硬件运行；对比闭源Muse Spark。扎克伯格公开信：AI应"为所有人"而非被少数实验室垄断。 <span class="source">（The Verge, Aug 14）</span></li>
+      <li><strong>解读：</strong> 开源模型可本地部署 → 边缘/私有化算力需求上升 → 对液冷的"分布式/中小型数据中心"场景构成增量，不只是巨头超大集群逻辑。</li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">🔌 AI应用渗透</strong>
+    <ul>
+      <li><strong>ChatGPT直连Apple Messages</strong> — 官方插件可"搜索消息、跟进对话、起草并发送回复"，AI开始直接读写个人通讯。 <span class="source">（The Verge, Aug 20）</span></li>
+      <li><strong>Apple Music AI标签上线</strong> — 强制标注AI生成内容，苹果内容治理进入"AI可识别"时代。 <span class="source">（The Verge, Aug 21）</span></li>
+      <li><strong>智能家居语音AI化</strong> — Alexa Plus 与 Gemini for Home 的生成式AI能力全面对比，语音助手成为家庭AI入口主战场。 <span class="source">（The Verge, Aug 20）</span></li>
+      <li><strong>LinkedIn的"AI slop"按钮使用量大</strong> — AI生成内容的泛滥引发质量争议，平台治理压力上升。 <span class="source">（The Verge, Aug 21）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 二、液冷管赛道情报 -->
+<div class="section">
+  <div class="section-title orange">💧 二、液冷管赛道情报</div>
+  <ul>
+    <li><strong>💡 核心判断更新（结合8月产业逻辑）：</strong> 液冷管赛道的中长期逻辑未变——<strong>芯片功耗持续攀升</strong>（H100 700W → Rubin 1800W+）使液冷从"可选"变"强制"；工信部要求新建智算中心液冷渗透率100%（此前数据）。<strong>Meta开源模型热</strong>进一步推动"私有化部署+分布式算力"，这对液冷管路在中小数据中心、边缘节点的渗透是新增量。</li>
+    <li><strong>🛡️ Apollo事件对液冷的间接利好：</strong> GPU金融杠杆若收紧，资金更倾向流向有真实订单的实体（液冷管路企业手握集成商/IDC订单，属"硬资产"），相对受益。</li>
+    <li><strong>⚠️ 数据说明：</strong> 今日国内液冷产业快讯因信源访问受限（36氪/储能头条/IDC圈均被拦），具体订单、中标数据待网络恢复后在下期补录。</li>
+  </ul>
+</div>
+
+<!-- 三、储能&新能源 -->
+<div class="section">
+  <div class="section-title green">🔋 三、储能&新能源</div>
+  <ul>
+    <li><strong>数据说明：</strong> 今日高工锂电、储能头条、第一电动等信源访问受限（403/域名无法解析），储能与新能源板块暂无新增确认数据。</li>
+    <li><strong>持续跟踪点：</strong> 磷酸铁锂价格走势（7月底湖南裕能刚上调2000元/吨）、储能大项目招标、液冷超充桩（2026年国内需求破百万根）落地进展。待网络恢复后补录最新排产与订单数据。</li>
+  </ul>
+</div>
+
+<!-- 四、二级市场 & 资本动向 -->
+<div class="section">
+  <div class="section-title purple">📈 四、二级市场 & 资本动向</div>
+  <ul>
+    <li><strong>GPU融资链条风险（最重要变化）：</strong> Apollo被黑事件叠加此前"英伟达7500亿融资循环"担忧，AI算力金融杠杆的脆弱性显现。短期可能压制AI硬件股价波动，中期利好实体供应链（有真实产能的液冷、电源、散热企业）。</li>
+    <li><strong>美股科技AI应用端活跃</strong> — Apple（AI标签）、Meta（开源模型Glimmer）、OpenAI（直连Messages）动作密集，AI从"基建"向"应用/终端"扩散，消费级AI商业化提速。</li>
+    <li><strong>提示：</strong> 由于24天断档+今日信源受限，A股/北交所/利通科技具体行情数据暂缺，下期补全。</li>
+  </ul>
+</div>
+
+<!-- 五、利通科技（839167） -->
+<div class="section">
+  <div class="section-title gray">🏢 五、利通科技（839167）动态</div>
+  <ul>
+    <li><strong>数据说明：</strong> 今日公告、行情、资金流数据因信源受限暂缺（东方财富/北交所公告页未成功抓取）。待网络恢复后补录 7月30日-8月22日期间的公司公告与股价走势。</li>
+    <li><strong>战略参考（基于可确认逻辑）：</strong> 液冷管作为AI算力"血管"，长逻辑（功耗↑+政策强制渗透+国产替代）未变；今日核心信号是<strong>GPU金融杠杆风险</strong>——若融资收紧，资金将更青睐利通这类手握真实订单、产能落地、进北交所有估值锚地的实体标的。</li>
+    <li><strong>待补事项：</strong> ①补录断档期公告/股价；②关注"小米澎程"后新能源车热管理供应链进展；③（重要）排查并修复 cron 断档问题，避免再次出现24天空窗。</li>
+  </ul>
+</div>
+
+<!-- 六、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 六、战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 重点：GPU融资杠杆系统性风险</strong><br>
+    <strong>Apollo（GPU抵押贷款巨头）遭黑客入侵</strong>，叠加英伟达此前7500亿级"融资循环"争议。<strong>AI算力金融化的脆弱性正式暴露。</strong>若杠杆收紧：短期冲击AI硬件股情绪；中期利好有真实订单/产能的实体供应链。液冷管路企业属后者，相对受益。 <span class="source">（The Verge, Aug 21）</span>
+  </div>
+
+  <div class="highlight">
+    <strong>🟢 机会信号</strong><br>
+    <strong>1. Meta开源Glimmer → 私有化/分布式算力</strong> — 开源模型可本地部署，中小数据中心、边缘节点液冷需求成为新增量。<br>
+    <strong>2. AI应用渗透终端（Apple/Meta/OpenAI）</strong> — 消费级AI商业化提速，中长期算力需求只增不减。<br>
+    <strong>3. GPU金融杠杆收紧 → 资金聚焦实体</strong> — 有真实订单的液冷/散热/电源企业相对受益。
+  </div>
+
+  <div class="warning">
+    <strong>🟡 运营提醒（重要）</strong><br>
+    <strong>简报 cron 已连续24天 SIGKILL 失败（7/30-8/21空窗）。</strong>建议叶总/Kiro排查服务器资源限制与 cron 隔离会话被杀问题，否则每日简报仍会断档。貔貅今日已人工补发8月22日简报。
+  </div>
+</div>
+
+</body>
+</html>
