@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年8月23日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+  @media (max-width: 768px) {
+    body { margin: 20px auto; padding: 16px; font-size: 16px; line-height: 1.9; }
+    h1 { font-size: 20px; }
+    .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
+    .section { margin-bottom: 24px; }
+    .section-title { font-size: 17px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 10px; }
+  }
+  @media (min-width: 1200px) {
+    body { max-width: 900px; }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年8月23日 星期日</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>英伟达服务器涨价</strong> — 部分核心客户被告知服务器上调超<strong>15%</strong>，AI数据中心成本压力加剧 <span class="source">（The Verge）</span></li>
+    <li><strong>Meta发布开源模型Glimmer</strong> — 可本地部署，扎克伯格主张"AI属于所有人"，但开放程度存疑 <span class="source">（TechCrunch）</span></li>
+    <li><strong>存储与内存涨价蔓延</strong> — 亚马逊将涨价归因于存储/内存组件成本上涨，硬件价格周期开启 <span class="source">（The Verge）</span></li>
+    <li><strong>液冷需求逻辑强化</strong> — 芯片散热功耗攀升背景下，液冷从"可选"走向"强制" <span class="source">（财联社）</span></li>
+  </ul>
+</div>
+
+<!-- 一、地缘 · 中东 -->
+<div class="section">
+  <div class="section-title red">🌍 一、地缘 · 中东</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#ea4335;">🛢️ 能源与油价</strong>
+    <ul>
+      <li>国际油价在地缘风险与需求预期的拉锯中震荡，中东运输通道安全仍是市场定价的核心变量之一 <span class="source">（The Verge/综合）</span></li>
+      <li>红海与霍尔木兹海峡通行受关注，运费与保险成本高企，对全球供应链形成扰动 <span class="source">（综合外媒）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#ea4335;">⚔️ 地缘动态</strong>
+    <ul>
+      <li>中东主要经济体的AI算力军备竞赛升温，海湾国家加大数据中心与液冷基建投入，本地化算力需求上升 <span class="source">（综合）</span></li>
+      <li>地缘对峙未明显缓和，但短期未见剧烈升级信号，市场维持"高波动、低确定性"状态 <span class="source">（综合）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 二、AI · 科技 -->
+<div class="section">
+  <div class="section-title orange">🤖 二、AI · 科技</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">💻 算力与芯片</strong>
+    <ul>
+      <li><strong>英伟达服务器涨价超15%</strong>：据彭博社报道，部分最大型客户已被通知数据中心服务器价格上调超<strong>15%</strong>，源自组件成本与AI需求飙升；英伟达今年已上调GPU价格，周三Q2财报或有更多信息 <span class="source">（The Verge）</span></li>
+      <li>AI数据中心造价与运营成本抬升，液冷散热的性价比优势进一步凸显，规模部署加速 <span class="source">（The Verge）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#e87020;">🧠 大模型与开源</strong>
+    <ul>
+      <li><strong>Meta发布开源权重模型Glimmer</strong>：任何人可下载并本地运行，与封闭的Muse Spark形成对比；扎克伯格发文主张"AI应属于所有人"，但业界指出其开放程度仍有保留 <span class="source">（TechCrunch）</span></li>
+      <li>开源与封闭路线之争持续，企业部署选择增多，利好本地化、边缘算力与液冷配套需求 <span class="source">（TechCrunch）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、A股 · 港股 -->
+<div class="section">
+  <div class="section-title green">📈 三、A股 · 港股</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">💹 市场动向</strong>
+    <ul>
+      <li>本周A股围绕科技成长与算力主题轮动，数据中心、液冷、光模块等AI硬件链热度延续 <span class="source">（财联社）</span></li>
+      <li>港股科技股随全球AI情绪波动，资金对确定性增长赛道（算力基建、先进制造）偏好增强 <span class="source">（财联社）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">⚡ 产业催化</strong>
+    <ul>
+      <li>硬件涨价周期启动（GPU、存储、服务器），上游涨价向中游传导，具备成本转嫁能力的龙头受益 <span class="source">（The Verge）</span></li>
+      <li>中报披露窗口，算力与液冷相关公司业绩兑现度成为资金筛选的重要标准 <span class="source">（财联社）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、利通科技 -->
+<div class="section">
+  <div class="section-title purple">🏢 四、利通科技（839167）</div>
+  <ul>
+    <li><strong>赛道逻辑</strong> — 液冷管作为AI算力基建"血管"，受益于芯片功耗攀升（H100 700W → Rubin <strong>1800W+</strong>）与政策强制液冷渗透，需求确定性增强 <span class="source">（财联社/综合）</span></li>
+    <li><strong>行业环境</strong> — 服务器涨价与算力扩张背景下，液冷方案渗透率提升，为管路环节带来放量机遇 <span class="source">（The Verge/综合）</span></li>
+    <li><strong>关注要点</strong> — 中报业绩兑现、订单落地与产能扩张进展，以及国产替代下冷却液/管路环节格局变化 <span class="source">（财联社）</span></li>
+    <li><strong>同业参照</strong> — 英维克、曙光数创、高澜股份、申菱环境、巨化股份等集成商与材料商动态，作为赛道景气参照系 <span class="source">（综合）</span></li>
+  </ul>
+</div>
+
+<div class="highlight">
+  <strong>🟡 今日策略提示</strong><br>
+  硬件涨价周期 + AI算力扩张双轮驱动液冷景气，重点跟踪英伟达周三财报对算力需求的指引，以及中报业绩兑现度高的标的。利通科技关注订单与产能爬坡信号。
+</div>
+
+</body>
+</html>

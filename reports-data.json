@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-08-23",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "英伟达服务器涨价 · Meta发布开源模型Glimmer · 存储与内存涨价蔓延",
+    "tags": [
+      "ai",
+      "stock",
+      "energy"
+    ],
+    "file": "reports/2026-08-23.html"
+  },
+  {
     "date": "2026-08-22",
     "title": "AI研究员--Landy葉的简报",
     "desc": "🔴 Apollo（GPU抵押贷款巨头）遭黑客入侵 · Meta发布开源AI模型Glimmer · ChatGPT直连Apple Messages",
