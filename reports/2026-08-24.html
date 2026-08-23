@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年8月24日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  /* 响应式设计 - 手机端 */
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 {
+      font-size: 20px;
+    }
+    .date {
+      font-size: 15px;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+    }
+    .section {
+      margin-bottom: 24px;
+    }
+    .section-title {
+      font-size: 17px;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+    }
+    ul {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    table {
+      font-size: 15px;
+    }
+    th, td {
+      padding: 10px 12px;
+    }
+    .highlight, .warning {
+      padding: 14px 18px;
+      font-size: 15px;
+    }
+    .back-button {
+      font-size: 15px;
+      padding: 10px 14px;
+      margin-bottom: 16px;
+    }
+  }
+
+  /* 响应式设计 - 平板端 */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body {
+      max-width: 90%;
+      margin: 30px auto;
+      padding: 24px;
+    }
+    h1 {
+      font-size: 21px;
+    }
+  }
+
+  /* 响应式设计 - 小屏幕手机 */
+  @media (max-width: 480px) {
+    body {
+      margin: 12px auto;
+      padding: 12px;
+      font-size: 17px;
+    }
+    h1 {
+      font-size: 19px;
+    }
+    .date {
+      font-size: 14px;
+    }
+    .section-title {
+      font-size: 18px;
+    }
+    table {
+      font-size: 14px;
+      display: block;
+      overflow-x: auto;
+    }
+  }
+
+  /* 响应式设计 - 大屏幕电脑 */
+  @media (min-width: 1200px) {
+    body {
+      max-width: 900px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年8月24日 周一</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>Meta开源Glimmer模型</strong> — 扎克伯格称AI应"属于每个人"，轻量开放权重与闭源Muse Spark形成对比 <span class="source">（TechCrunch）</span></li>
+    <li><strong>黄仁勋喊话"算力即资产"</strong> — 试图把"GPU抵押贷款"焦虑转向"算力作为资产类别"叙事 <span class="source">（The Verge）</span></li>
+    <li><strong>伊朗放话"制裁即宣战"</strong> — 中东局势再生变数，油价与避险情绪或扰动市场 <span class="source">（AP News）</span></li>
+    <li><strong>美加贸易摩擦升温</strong> — 特朗普对加拿大施压，特鲁多/卡尼面临经济胁迫考验 <span class="source">（AP News）</span></li>
+  </ul>
+</div>
+
+<!-- 一、大势研判 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 一、大势研判</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">📈 行业数据</strong>
+    <ul>
+      <li><strong>英伟达GPU功耗持续攀升</strong>（H100 700W → Rubin 1800W+），液冷从"可选"变为"强制"，数据中心单机柜功率密度不断刷新上限 <span class="source">（The Verge）</span></li>
+      <li>黄仁勋将算力定义为"<strong>资产类别</strong>"，弱化市场对"GPU抵押贷款"杠杆风险的担忧，指向AI资本开支的长期化 <span class="source">（The Verge）</span></li>
+      <li>Meta本周发布开放权重模型<strong>Glimmer</strong>，可本地部署，与闭源Muse Spark形成路线之争，利好开源算力生态 <span class="source">（TechCrunch）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">⚡ 政策动态</strong>
+    <ul>
+      <li>工信部要求新建智算中心液冷渗透率<strong>100%</strong>，政策红利持续兑现（行业背景）</li>
+      <li>美国拟对加拿大加征关税，中美欧贸易与科技博弈仍是宏观主线 <span class="source">（AP News）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 二、液冷管赛道情报 -->
+<div class="section">
+  <div class="section-title orange">💧 二、液冷管赛道情报</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🔬 技术路线</strong>
+    <ul>
+      <li>芯片功耗跃升（H100 700W → Rubin <strong>1800W+</strong>）倒逼冷板式液冷成为主流，<strong>液冷管</strong>作为"散热血管"需求确定性增强（行业背景）</li>
+      <li>开放权重模型本地部署兴起（Meta Glimmer），边缘/自建算力增多，中性偏利多中低功耗液冷场景渗透 <span class="source">（TechCrunch）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🏭 竞争格局</strong>
+    <ul>
+      <li>液冷产业链参与者扩容，<strong>国产替代</strong>加速：冷却液、液冷管路国产化进程持续推进（行业背景）</li>
+      <li>"算力即资产"叙事若兑现，将驱动更多资本进入数据中心基础设施，液冷管路作为核心耗材持续受益 <span class="source">（The Verge）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#e87020;">📦 客户与订单</strong>
+    <ul>
+      <li>头部智算中心新建项目按"100%液冷"标配推进，液冷管路订单确定性随算力扩张提升（行业背景）</li>
+      <li>储能大储项目液冷渗透率已达<strong>92.7%</strong>，管路需求从数据中心的"必选"向储能、汽车、超充等多场景扩散（行业背景）</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、下游应用战场 -->
+<div class="section">
+  <div class="section-title green">🔋 三、下游应用战场</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🖥️ 数据中心/算力中心</strong>
+    <ul>
+      <li><strong>GPU算力资本开支持续加码</strong>，黄仁勋呼吁把算力当作资产而非负债，冷却方案升级需求明确 <span class="source">（The Verge）</span></li>
+      <li>开放权重模型（Meta Glimmer）推动本地化/自建推理算力，中小算力中心液冷渗透率或提升 <span class="source">（TechCrunch）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🔋 储能行业</strong>
+    <ul>
+      <li>大储项目液冷渗透率<strong>92.7%</strong>，液冷管路由"选配"走向"标配"，储能热管理升级持续（行业背景）</li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🚗 新能源汽车</strong>
+    <ul>
+      <li>800V高压平台加速渗透，整车热管理升级带来液冷管路新增量（行业背景）</li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#34a853;">⚡ 液冷超充桩</strong>
+    <ul>
+      <li>单枪<strong>600kW~1.5MW</strong>液冷超充桩加速落地，2026年国内需求有望破百万根，管路耗材逻辑强化（行业背景）</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、集成商动态 -->
+<div class="section">
+  <div class="section-title purple">📡 四、集成商动态（渠道情报）</div>
+  <table>
+    <tr>
+      <th style="width:18%">企业</th>
+      <th>核心进展</th>
+    </tr>
+    <tr>
+      <td><strong>英维克</strong></td>
+      <td>数据中心温控龙头，液冷全链条布局，持续受益智算中心需求（行业跟踪）</td>
+    </tr>
+    <tr>
+      <td><strong>曙光数创</strong></td>
+      <td>浸没式/冷板式液冷双线推进，绑定国产算力生态（行业跟踪）</td>
+    </tr>
+    <tr>
+      <td><strong>高澜股份</strong></td>
+      <td>储能与数据中心热管理双轮驱动，液冷渗透率提升直接受益（行业跟踪）</td>
+    </tr>
+    <tr>
+      <td><strong>申菱环境</strong></td>
+      <td>数据中心温控设备商，液冷系统集成能力增强（行业跟踪）</td>
+    </tr>
+    <tr>
+      <td><strong>巨化股份</strong></td>
+      <td>含氟冷却液龙头，国产浸没式冷却液加速替代进口（行业跟踪）</td>
+    </tr>
+  </table>
+</div>
+
+<!-- 五、二级市场 & 资本动向 -->
+<div class="section">
+  <div class="section-title darkblue">📈 五、二级市场 & 资本动向</div>
+  <ul>
+    <li><strong>AI资本开支主线</strong>持续，GPU与算力资产叙事支撑数据中心相关板块估值 <span class="source">（The Verge）</span></li>
+    <li>中东局势（伊朗"制裁即宣战"表态）或扰动<strong>油价与避险情绪</strong>，关注对A股相关板块的传导 <span class="source">（AP News）</span></li>
+    <li>美加贸易摩擦、泽连斯基与防长矛盾等地缘事件，短期压制风险偏好 <span class="source">（AP News）</span></li>
+  </ul>
+</div>
+
+<!-- 六、利通科技 -->
+<div class="section">
+  <div class="section-title gray">🏢 六、利通科技（839167）动态</div>
+  <ul>
+    <li>液冷管赛道核心标的，聚焦<strong>数据中心/AI算力</strong>大热管理赛道，受益芯片功耗攀升与液冷渗透率提升（复盘）</li>
+    <li>下游覆盖数据中心、储能（渗透率<strong>92.7%</strong>）、新能源汽车、液冷超充桩四大场景，需求多点开花（行业背景）</li>
+    <li>关注：算力资本开支加速 + 国产替代 + 政策强制液冷，三重逻辑共振下液冷管路环节的业绩弹性（行业跟踪）</li>
+  </ul>
+</div>
+
+<!-- 七、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 七、战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 高度关注</strong><br>
+    伊朗高阶官员称"支持新制裁即宣战"，中东地缘风险升温，警惕<strong>油价跳涨与全球避险情绪</strong>对A股分子端的短期冲击。美加贸易摩擦升级同样值得跟踪。<span class="source">（AP News）</span>
+  </div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    Meta开源<strong>Glimmer</strong>（可本地部署）标志开放权重路线升温，关注其是否催化"边缘/自建算力 + 液冷普及"的投资叙事。黄仁勋"算力即资产"的表态，是后续AI资本开支预期的关键风向标。<span class="source">（TechCrunch / The Verge）</span>
+  </div>
+</div>
+
+</body>
+</html>
