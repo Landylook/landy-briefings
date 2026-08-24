@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年8月25日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  /* 响应式设计 - 手机端 */
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 {
+      font-size: 20px;
+    }
+    .date {
+      font-size: 15px;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+    }
+    .section {
+      margin-bottom: 24px;
+    }
+    .section-title {
+      font-size: 17px;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+    }
+    ul {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    table {
+      font-size: 15px;
+    }
+    th, td {
+      padding: 10px 12px;
+    }
+    .highlight, .warning {
+      padding: 14px 18px;
+      font-size: 15px;
+    }
+    .back-button {
+      font-size: 15px;
+      padding: 10px 14px;
+      margin-bottom: 16px;
+    }
+  }
+
+  /* 响应式设计 - 平板端 */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body {
+      max-width: 90%;
+      margin: 30px auto;
+      padding: 24px;
+    }
+    h1 {
+      font-size: 21px;
+    }
+  }
+
+  /* 响应式设计 - 小屏幕手机 */
+  @media (max-width: 480px) {
+    body {
+      margin: 12px auto;
+      padding: 12px;
+      font-size: 17px;
+    }
+    h1 {
+      font-size: 19px;
+    }
+    .date {
+      font-size: 14px;
+    }
+    .section-title {
+      font-size: 18px;
+    }
+    table {
+      font-size: 14px;
+      display: block;
+      overflow-x: auto;
+    }
+  }
+
+  /* 响应式设计 - 大屏幕电脑 */
+  @media (min-width: 1200px) {
+    body {
+      max-width: 900px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年8月25日 周二</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>"算电协同"顶层设计落地</strong> — "十五五"算力网投资约4万亿 + 电网投资超5万亿，数据中心配建储能成新刚需，2030年新型储能目标<strong>3亿千瓦</strong> <span class="source">（IDC圈）</span></li>
+    <li><strong>美国电价容量拍卖暴涨9倍</strong> — PJM从28.92跃升至269.92美元/兆瓦日，数据中心被指为主要推手，电力成算力核心成本 <span class="source">（IDC圈）</span></li>
+    <li><strong>AI数据中心资产高估值</strong> — 科氏工业拟出售数据中心开发商Edged，估值或超<strong>150亿美元</strong>；算力资产证券化提速 <span class="source">（IDC圈）</span></li>
+    <li><strong>美国首个50MW漂浮式数据中心启动</strong> — 三星重工联手M3，冷却与选址模式创新 <span class="source">（IDC圈）</span></li>
+  </ul>
+</div>
+
+<!-- 一、大势研判 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 一、大势研判</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">📈 行业数据</strong>
+    <ul>
+      <li>2026作为"十五五"开局之年，两个万亿级市场交汇：<strong>算力网建设新增直接投资约4万亿元</strong> + <strong>电网固定资产投资超5万亿元</strong>，核心落脚点是"算电协同" <span class="source">（IDC圈）</span></li>
+      <li>美国最大电网PJM电容量拍卖价每兆瓦日从<strong>28.92美元暴涨至269.92美元（约9倍）</strong>，数据中心被指为用电负载上涨主因，孟菲斯智算集群（特斯拉）已在辖区自备<strong>14台发电机</strong> <span class="source">（IDC圈）</span></li>
+      <li>AI驱动数据中心估值重估：科氏拟出售<strong>Edged</strong>（估值或超<strong>150亿美元</strong>），DataBank潜在股权估值接近<strong>250亿美元</strong> <span class="source">（IDC圈）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">⚡ 政策动态</strong>
+    <ul>
+      <li>国家发改委、国家能源局密集印发《新型电力系统建设"十五五"规划》《可再生能源发展"十五五"规划》，明确<strong>2030年全国新型储能装机提升至3亿千瓦</strong>，引导新建数据中心与可再生能源协同布局 <span class="source">（IDC圈）</span></li>
+      <li>规划鼓励<strong>绿电直连、源网荷储一体化</strong>，AIDC将配建分布式新能源+储能，构建自发自用微电网生态 <span class="source">（IDC圈）</span></li>
+      <li>工信部要求新建智算中心液冷渗透率<strong>100%</strong>，政策红利延续（行业背景）</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 二、液冷管赛道情报 -->
+<div class="section">
+  <div class="section-title orange">💧 二、液冷管赛道情报</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🔬 技术路线</strong>
+    <ul>
+      <li>单机柜密度≥<strong>20kW即需液冷</strong>，智算中心推进"高上架率"演进，冷板式液冷成主流，<strong>液冷管</strong>作为"散热血管"需求确定性持续增强 <span class="source">（IDC圈）</span></li>
+      <li>8月27日<strong>中国智算产业绿色科技大会</strong>（上海）将聚焦算力、电力、制冷议题，液冷厂商为核心参与方，行业催化窗口临近 <span class="source">（IDC圈）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🏭 竞争格局</strong>
+    <ul>
+      <li>电力成本跳涨（PJM 9倍）倒逼所有数据中心提高能源效率，高效冷却系统（液冷）成为降本刚需，<strong>液冷从"可选"走向"标配"</strong> <span class="source">（IDC圈）</span></li>
+      <li>液冷产业链参与者扩容、国产替代加速：冷却液、液冷管路国产化进程持续推进（行业跟踪）</li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#e87020;">📦 客户与订单</strong>
+    <ul>
+      <li>"算电协同"下新建智算中心按液冷标配推进，叠加储能配建需求，<strong>液冷管路订单确定性</strong>随算力扩张与储能放量双重提升 <span class="source">（IDC圈）</span></li>
+      <li>储能大储项目液冷渗透率已达<strong>92.7%</strong>，管路需求从数据中心向储能、汽车、超充多场景扩散（行业背景）</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、下游应用战场 -->
+<div class="section">
+  <div class="section-title green">🔋 三、下游应用战场</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🖥️ 数据中心/算力中心</strong>
+    <ul>
+      <li>AI资本开支持续加码，美国数据中心资产进入高估值交易期（Edged 150亿美元、DataBank 250亿美元），算力资本化提速 <span class="source">（IDC圈）</span></li>
+      <li>"东数西算"纵深推进，新建数据中心与绿电协同、时空负荷调节，高效冷却（液冷）成为硬性技术门槛 <span class="source">（IDC圈）</span></li>
+      <li>美国首个<strong>50MW漂浮式数据中心</strong>（三星重工+M3）启动建设，缺水/高电费地区冷却方案创新 <span class="source">（IDC圈）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🔋 储能行业</strong>
+    <ul>
+      <li>"十五五"规划明确<strong>2030年新型储能装机3亿千瓦</strong>目标，数据中心配建储能可参与需求侧响应/虚拟电厂，吃峰谷价差，储能需求确定性增强 <span class="source">（IDC圈）</span></li>
+      <li>大储项目液冷渗透率<strong>92.7%</strong>，储能热管理升级带动液冷管路"标配"化（行业背景）</li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🚗 新能源汽车</strong>
+    <ul>
+      <li>800V高压平台加速渗透，整车热管理升级带来液冷管路新增量（行业背景）</li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#34a853;">⚡ 液冷超充桩</strong>
+    <ul>
+      <li>单枪<strong>600kW~1.5MW</strong>液冷超充桩加速落地，2026年国内需求有望破百万根，管路耗材逻辑强化（行业背景）</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、集成商动态 -->
+<div class="section">
+  <div class="section-title purple">📡 四、集成商动态（渠道情报）</div>
+  <table>
+    <tr>
+      <th style="width:18%">企业</th>
+      <th>核心进展</th>
+    </tr>
+    <tr>
+      <td><strong>英维克</strong></td>
+      <td>数据中心温控龙头，液冷全链条布局，电力成本跳涨背景下高效冷却需求持续受益（行业跟踪）</td>
+    </tr>
+    <tr>
+      <td><strong>曙光数创</strong></td>
+      <td>浸没式/冷板式液冷双线推进，绑定国产算力生态（行业跟踪）</td>
+    </tr>
+    <tr>
+      <td><strong>高澜股份</strong></td>
+      <td>储能与数据中心热管理双轮驱动，液冷渗透率提升+储能配建双受益（行业跟踪）</td>
+    </tr>
+    <tr>
+      <td><strong>申菱环境</strong></td>
+      <td>数据中心温控设备商，液冷系统集成能力增强（行业跟踪）</td>
+    </tr>
+    <tr>
+      <td><strong>巨化股份</strong></td>
+      <td>含氟冷却液龙头，国产浸没式冷却液加速替代进口（行业跟踪）</td>
+    </tr>
+  </table>
+</div>
+
+<!-- 五、二级市场 & 资本动向 -->
+<div class="section">
+  <div class="section-title darkblue">📈 五、二级市场 & 资本动向</div>
+  <ul>
+    <li>AI资本开支与算力资产高估值叙事延续，数据中心+储能+液冷链条估值受支撑 <span class="source">（IDC圈）</span></li>
+    <li>美国电价跳涨凸显<strong>电力成本</strong>在算力产业链的地位，高效冷却与储能配建成为资本关注焦点 <span class="source">（IDC圈）</span></li>
+    <li>注：今日国内财经/交易所信源访问受限，A股实时资金流与利通股价数据暂缺，后续补全（采集说明）</li>
+  </ul>
+</div>
+
+<!-- 六、利通科技 -->
+<div class="section">
+  <div class="section-title gray">🏢 六、利通科技（839167）动态</div>
+  <ul>
+    <li>液冷管赛道核心标的，聚焦<strong>数据中心/AI算力</strong>大热管理赛道，受益芯片功耗攀升、液冷渗透率提升与"算电协同"政策共振（复盘）</li>
+    <li>下游覆盖数据中心、储能（渗透率<strong>92.7%</strong>）、新能源汽车、液冷超充桩四大场景，需求多点开花（行业背景）</li>
+    <li>关注：算力资本开支加速 + 国产替代 + 政策强制液冷 + 储能配建刚需，多重逻辑共振下液冷管路环节的业绩弹性（行业跟踪）</li>
+    <li>注：今日信源（东方财富/北交所/财联社）访问受限，利通最新公告与订单动态待补全（采集说明）</li>
+  </ul>
+</div>
+
+<!-- 七、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 七、战略预警 / 机会提示</div>
+
+  <div class="highlight">
+    <strong>🟡 机会提示</strong><br>
+    <strong>"算电协同"</strong>是今日最大增量主线：十五五<strong>4万亿算力网+5万亿电网</strong>双轮驱动，数据中心配建储能（2030年3亿千瓦目标）+ 绿电直连 + 液冷标配，构成液冷管与储能热管理环节的中长期确定性需求。<strong>8月27日中国智算产业绿色科技大会</strong>（上海）为近期催化窗口，建议重点关注。<span class="source">（IDC圈）</span>
+  </div>
+
+  <div class="warning">
+    <strong>🔴 高度关注</strong><br>
+    美国PJM电价容量成本暴涨<strong>9倍</strong>揭示能耗/电力约束已成为全球算力扩张的核心瓶颈。国内若电价市场化深化，液冷（降耗）与储能（削峰填谷）的价值将进一步凸显，但也要警惕<strong>算力板块对电力成本上升的负面定价</strong>及A股相关板块的短期波动。今日信源（财联社/东财/北交所）访问受限，利通科技及竞品最新订单、公告需尽快补全跟踪。<span class="source">（IDC圈 / 采集说明）</span>
+  </div>
+</div>
+
+</body>
+</html>
