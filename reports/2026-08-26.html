@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年8月26日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  @media (max-width: 768px) {
+    body { margin: 20px auto; padding: 16px; font-size: 16px; line-height: 1.9; }
+    h1 { font-size: 20px; }
+    .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
+    .section { margin-bottom: 24px; }
+    .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 10px; }
+    table { font-size: 15px; }
+    th, td { padding: 10px 12px; }
+    .highlight, .warning { padding: 14px 18px; font-size: 15px; }
+    .back-button { font-size: 15px; padding: 10px 14px; margin-bottom: 16px; }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body { max-width: 90%; margin: 30px auto; padding: 24px; }
+    h1 { font-size: 21px; }
+  }
+  @media (max-width: 480px) {
+    body { margin: 12px auto; padding: 12px; font-size: 17px; }
+    h1 { font-size: 19px; }
+    .date { font-size: 14px; }
+    .section-title { font-size: 18px; }
+    table { font-size: 14px; display: block; overflow-x: auto; }
+  }
+  @media (min-width: 1200px) {
+    body { max-width: 900px; }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年8月26日 周三</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>OpenAI数据中心负责人离职</strong> — Chris Malone（负责OpenAI大规模数据中心建设计划）上周离开公司，OpenAI算力扩张节奏引发关注 <span class="source">（The Verge/WSJ）</span></li>
+    <li><strong>美国数据中心燃气发电项目激增</strong> — 2026年上半年数据中心配套燃气发电项目提案<strong>同比翻倍</strong>，近1/3落地德克萨斯州，电力供应紧张持续 <span class="source">（The Verge/Global Energy Monitor）</span></li>
+    <li><strong>Dolly Parton 去世，享年80岁</strong> — 传奇音乐人/企业家，3,000+歌曲，1亿+唱片销量 <span class="source">（AP News）</span></li>
+    <li><strong>Google Meet硬件端支持AI会议笔记控制</strong> — 8月31日起可直接从会议室触控控制器管理Gemini"帮我记笔记"功能 <span class="source">（The Verge）</span></li>
+  </ul>
+</div>
+
+<!-- 一、大势研判 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 一、大势研判</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">📈 AI算力动态</strong>
+    <ul>
+      <li><strong>OpenAI数据中心负责人Chris Malone离职</strong> — 曾任职Meta和Google，2025年初加入OpenAI，负责千亿级数据中心建设计划。其离职正值OpenAI算力扩张关键期，战略执行节奏值得关注 <span class="source">（The Verge/WSJ）</span></li>
+      <li>美国数据中心配套燃气发电项目<strong>2026年上半年提案同比翻倍</strong>，近1/3新增容量落地德州，数据中心自备电源成应对电网瓶颈主流方案 <span class="source">（The Verge/Global Energy Monitor）</span></li>
+      <li>美国电价容量成本（PJM）昨日已现<strong>9倍暴涨</strong>（28.92→269.92美元/兆瓦日），电力约束持续强化，液冷（降能耗）与储能（削峰填谷）刚需属性凸显 <span class="source">（IDC圈，昨日数据延续）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">⚡ 政策与行业背景</strong>
+    <ul>
+      <li>"十五五"开局年：算力网新增直接投资约<strong>4万亿元</strong> + 电网固定投资超<strong>5万亿元</strong>，"算电协同"主线延续 <span class="source">（IDC圈）</span></li>
+      <li>工信部要求新建智算中心液冷渗透率<strong>100%</strong>，政策红利持续（行业背景）</li>
+      <li>大储项目液冷渗透率已达<strong>92.7%</strong>，液冷管需求从数据中心向储能、汽车、超充多场景扩散（行业背景）</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 二、液冷管赛道情报 -->
+<div class="section">
+  <div class="section-title orange">💧 二、液冷管赛道情报</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🔬 技术路线</strong>
+    <ul>
+      <li>单机柜密度≥<strong>20kW即需液冷</strong>，AI芯片功耗持续攀升（H100 700W → Rubin 1800W+），冷板式液冷成主流，液冷管作为"散热血管"需求确定性持续增强 <span class="source">（行业背景）</span></li>
+      <li>燃气自备电源（数据中心）方案增多，对散热效率要求更高，液冷系统渗透率将进一步提升 <span class="source">（The Verge）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🏭 竞争格局</strong>
+    <ul>
+      <li>液冷集成商（英维克/高澜/曙光数创/申菱）持续受益于智算中心建设提速，国产替代进程加速推进（行业跟踪）</li>
+      <li>巨化股份含氟冷却液国产化加速，浸没式液冷路线逐步成熟 <span class="source">（行业跟踪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#e87020;">📦 需求驱动</strong>
+    <ul>
+      <li>算电协同 + 数据中心配建储能（2030年目标<strong>3亿千瓦</strong>）+ 绿电直连，液冷管路订单确定性随算力扩张与储能放量双重提升 <span class="source">（IDC圈）</span></li>
+      <li>液冷超充桩2026年国内需求有望破<strong>百万根</strong>，液冷管耗材逻辑持续强化 <span class="source">（行业背景）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、下游应用战场 -->
+<div class="section">
+  <div class="section-title green">🔋 三、下游应用战场</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🖥️ 数据中心/算力中心</strong>
+    <ul>
+      <li>OpenAI数据中心负责人离职，暴露大型AI公司算力扩张中的人才/管理瓶颈，但资本开支方向未变 <span class="source">（The Verge）</span></li>
+      <li>数据中心配套燃气发电项目美国本土激增（上半年同比翻倍），反映电力约束下的"自力更生"路径，冷却效率优化成竞争关键 <span class="source">（The Verge/Global Energy Monitor）</span></li>
+      <li>AI驱动数据中心资产持续高估值：Edged（科氏系）估值超<strong>150亿美元</strong>，DataBank潜在估值接近<strong>250亿美元</strong> <span class="source">（IDC圈，延续昨日）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🔋 储能行业</strong>
+    <ul>
+      <li>"十五五"规划明确<strong>2030年新型储能装机3亿千瓦</strong>目标，数据中心配建储能可参与需求侧响应/虚拟电厂 <span class="source">（IDC圈）</span></li>
+      <li>大储项目液冷渗透率<strong>92.7%</strong>，热管理系统升级持续带动液冷管路需求（行业背景）</li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🚗 新能源汽车</strong>
+    <ul>
+      <li>800V高压平台加速渗透，整车热管理升级带来液冷管路新增量（行业背景）</li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#34a853;">⚡ 液冷超充桩</strong>
+    <ul>
+      <li>单枪<strong>600kW~1.5MW</strong>液冷超充桩加速落地，2026年国内需求有望破<strong>百万根</strong>，管路耗材逻辑强化（行业背景）</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、集成商动态 -->
+<div class="section">
+  <div class="section-title purple">📡 四、集成商动态（渠道情报）</div>
+  <table>
+    <tr>
+      <th style="width:18%">企业</th>
+      <th>核心进展</th>
+    </tr>
+    <tr>
+      <td><strong>英维克</strong></td>
+      <td>数据中心温控龙头，液冷全链条布局，燃气自备电源趋势下高效冷却需求持续受益（行业跟踪）</td>
+    </tr>
+    <tr>
+      <td><strong>曙光数创</strong></td>
+      <td>浸没式/冷板式液冷双线推进，绑定国产算力生态（行业跟踪）</td>
+    </tr>
+    <tr>
+      <td><strong>高澜股份</strong></td>
+      <td>储能与数据中心热管理双轮驱动，液冷渗透率提升+储能配建双受益（行业跟踪）</td>
+    </tr>
+    <tr>
+      <td><strong>申菱环境</strong></td>
+      <td>数据中心温控设备商，液冷系统集成能力增强（行业跟踪）</td>
+    </tr>
+    <tr>
+      <td><strong>巨化股份</strong></td>
+      <td>含氟冷却液龙头，国产浸没式冷却液加速替代进口（行业跟踪）</td>
+    </tr>
+  </table>
+</div>
+
+<!-- 五、二级市场 & 资本动向 -->
+<div class="section">
+  <div class="section-title darkblue">📈 五、二级市场 & 资本动向</div>
+  <ul>
+    <li>美国数据中心资产持续高估值交易（Edged 150亿+美元、DataBank 250亿美元），算力资产证券化逻辑延续，A股液冷板块估值有望受支撑 <span class="source">（IDC圈）</span></li>
+    <li>燃气发电项目激增反映能源约束下算力扩张路径分化，但长期看冷却系统效率（液冷）仍是降本核心 <span class="source">（The Verge）</span></li>
+    <li>注：今日国内财经/交易所信源（财联社/东财/北交所）访问受限，A股实时资金流与利通股价数据暂缺（采集说明）</li>
+  </ul>
+</div>
+
+<!-- 六、利通科技 -->
+<div class="section">
+  <div class="section-title gray">🏢 六、利通科技（839167）动态</div>
+  <ul>
+    <li>液冷管赛道核心标的，聚焦<strong>数据中心/AI算力</strong>大热管理赛道，受益芯片功耗攀升、液冷渗透率提升与"算电协同"政策共振（复盘）</li>
+    <li>下游覆盖数据中心、储能（渗透率<strong>92.7%</strong>）、新能源汽车、液冷超充桩四大场景，需求多点开花（行业背景）</li>
+    <li>关注：OpenAI算力扩张节奏变化 + 国产替代 + 政策强制液冷 + 储能配建刚需，多重逻辑共振下液冷管路环节的业绩弹性（行业跟踪）</li>
+    <li>注：今日信源（财联社/东财/北交所）访问受限，利通最新公告与订单动态待补全（采集说明）</li>
+  </ul>
+</div>
+
+<!-- 七、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 七、战略预警 / 机会提示</div>
+
+  <div class="highlight">
+    <strong>🟡 机会提示</strong><br>
+    <strong>燃气自备电源</strong>成为美国数据中心应对电力约束的主流路径，但这恰恰印证了冷却系统的重要性——自备燃气机组同样需要高效散热，液冷管路需求不降反升。建议关注国内液冷管路企业在数据中心+储能双场景的渗透率提升节奏，以及<strong>8月27日中国智算产业绿色科技大会</strong>（上海）可能释放的产业催化信号。<span class="source">（The Verge / IDC圈）</span>
+  </div>
+
+  <div class="warning">
+    <strong>🔴 高度关注</strong><br>
+    OpenAI数据中心负责人<strong>Chris Malone离职</strong>值得警惕——大客户（OpenAI/Meta/Google等）算力扩张背后依赖的关键人才正在流失，这可能影响短期订单释放节奏，但不改中长期算力投入方向。国内"十五五"4万亿算力投资仍是最强支撑逻辑，液冷管路刚需属性不改。今日<strong>财联社/东财/北交所访问受限</strong>，利通科技及竞品最新公告、订单数据待补全，建议叶总通过其他渠道确认公司近期动态。<span class="source">（The Verge / 采集说明）</span>
+  </div>
+</div>
+
+</body>
+</html>

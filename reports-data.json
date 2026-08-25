@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-08-26",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "OpenAI数据中心负责人离职 · 美国数据中心燃气发电项目激增 · Dolly Parton 去世，享年80岁",
+    "tags": [
+      "ai",
+      "stock",
+      "energy"
+    ],
+    "file": "reports/2026-08-26.html"
+  },
+  {
     "date": "2026-08-25",
     "title": "AI研究员--Landy葉的简报",
     "desc": "\"算电协同\"顶层设计落地 · 美国电价容量拍卖暴涨9倍 · AI数据中心资产高估值",
