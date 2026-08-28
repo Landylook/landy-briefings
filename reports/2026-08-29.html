@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年8月29日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.gray { border-bottom-color: #0f9d58; color: #0f9d58; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 { font-size: 20px; }
+    .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
+    .section { margin-bottom: 24px; }
+    .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 10px; }
+    table { font-size: 15px; }
+    th, td { padding: 10px 12px; }
+    .highlight, .warning { padding: 14px 18px; font-size: 15px; }
+    .back-button { font-size: 15px; padding: 10px 14px; margin-bottom: 16px; }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body { max-width: 90%; margin: 30px auto; padding: 24px; }
+    h1 { font-size: 21px; }
+  }
+
+  @media (max-width: 480px) {
+    body { margin: 12px auto; padding: 12px; font-size: 17px; }
+    h1 { font-size: 19px; }
+    .date { font-size: 14px; }
+    .section-title { font-size: 18px; }
+    table { font-size: 14px; display: block; overflow-x: auto; }
+  }
+
+  @media (min-width: 1200px) {
+    body { max-width: 900px; }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年8月29日 · 星期六</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>伊朗持续控制霍尔木兹海峡</strong> — 革命卫队称美方"开放声明"为谎言，船只未经协调不得通行 <span class="source">（财联社）</span></li>
+    <li><strong>美联储加息预期升温</strong> — 沃什重申抗通胀承诺，市场押注最快9月加息，美债收益率曲线显著趋平 <span class="source">（财联社）</span></li>
+    <li><strong>美股芯片股重挫</strong> — 费城半导体指数跌3.47%，英伟达大跌4.57%，"七巨头"分化 <span class="source">（财联社）</span></li>
+    <li><strong>国际贵金属暴跌</strong> — 现货黄金跌3.2%报4454美元/盎司，白银跌4.26%，油价周跌约4% <span class="source">（财联社）</span></li>
+    <li><strong>Meta发布开源AI模型Glimmer</strong> — 扎克伯格称AI应"为所有人"，可本地部署 <span class="source">（TechCrunch）</span></li>
+  </ul>
+</div>
+
+<!-- 一、地缘·中东 -->
+<div class="section">
+  <div class="section-title red">🌍 一、地缘·中东</div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#ea4335;">⛽ 霍尔木兹海峡博弈持续</strong>
+    <ul>
+      <li>伊朗伊斯兰革命卫队海军声明：美方关于海峡"开放"的声明为谎言，目的仅为控制油价并掩盖失败；<strong>革命卫队对海峡控制权"绝对稳固"</strong>，未经伊朗协调的船只一律不得通行 <span class="source">（央视/财联社）</span></li>
+      <li>伊朗总统佩泽希齐扬：若海峡在特定框架下重新开放，<strong>美方必须解除封锁与制裁、解冻伊朗资金、停止以色列在黎巴嫩的敌对行动</strong> <span class="source">（财联社）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-top:14px;">
+    <strong style="color:#ea4335;">⚔️ 黎巴嫩 / 委内瑞拉</strong>
+    <ul>
+      <li>黎巴嫩真主党领导人卡西姆呼吁取消黎以美三方框架协议，称其"不合法、不正当且具有羞辱性"，但重申接受2024年11月停火协议 <span class="source">（央视/财联社）</span></li>
+      <li>特朗普宣布与委内瑞拉达成石油协议，<strong>美方获得约650亿桶（另有报道900亿桶）石油资产多数的控制权</strong>；雪佛龙拟将合资企业迁移至新框架 <span class="source">（财联社）</span></li>
+      <li>俄乌冲突持续：俄军命中乌基辅巡航导弹仓库及敖德萨6座军火库；乌军袭击俄雅罗斯拉夫尔炼油厂并击中恩格斯市战略轰炸机 <span class="source">（央视/财联社）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 二、AI·科技 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 二、AI·科技</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">🧠 大模型与前沿</strong>
+    <ul>
+      <li><strong>Meta发布开源模型Glimmer</strong>，任何人可下载并在自有硬件本地部署；扎克伯格同步发文称AI应"为所有人"，对比封闭的Muse Spark（更强大但锁在自家API后） <span class="source">（TechCrunch）</span></li>
+      <li><strong>Google自动扩展AI搜索摘要</strong>——对部分查询不再先展示网页链接，直接生成AI摘要 <span class="source">（The Verge）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">💾 算力与市场</strong>
+    <ul>
+      <li>美股芯片股重挫：<strong>费城半导体指数跌3.47%，英伟达跌4.57%</strong>；同期"科技七巨头"中亚马逊涨3.97%、微软涨1.68%、苹果涨1.63% <span class="source">（财联社）</span></li>
+      <li>中国高端能源装备突破：<strong>F级50兆瓦重型燃气轮机首次整机出口海外</strong>（发往哈萨克斯坦），打破国外长期垄断 <span class="source">（财联社）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">📱 消费科技</strong>
+    <ul>
+      <li>苹果上调Apple TV+月费至<strong>14.99美元</strong>（原12.99），年费升至119美元 <span class="source">（财联社）</span></li>
+      <li>EA《钢铁侠》游戏内部预告片泄露，画面流畅度媲美《蜘蛛侠》系列 <span class="source">（The Verge）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、A股·港股 -->
+<div class="section">
+  <div class="section-title green">📈 三、A股·港股</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">📉 隔夜市场</strong>
+    <ul>
+      <li><strong>美股三大指数集体下跌</strong>：道指跌0.02%、纳指跌0.52%、标普500跌0.25%；本周道指累涨0.53%、纳指累涨0.85%、标普累涨0.49% <span class="source">（财联社）</span></li>
+      <li>富时中国A50指数期货夜盘<strong>收跌0.31%</strong> <span class="source">（财联社）</span></li>
+      <li>利弗莫尔中概股龙头指数<strong>收涨0.13%</strong>：联电涨3.93%、霸王茶姬涨3.86%、贝壳涨3.21% <span class="source">（财联社）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🏦 资金动向</strong>
+    <ul>
+      <li><strong>券商二季度调仓曝光</strong>：239家上市公司前十大流通股股东出现券商身影，合计持股70.17亿股、市值659亿元；前五大重仓为中信建投、江苏银行、中际旭创、永安期货、新易盛 <span class="source">（上证报/财联社）</span></li>
+      <li>券商行业持仓重仓<strong>金融（301.55亿元）、医药生物（33.25亿元）、机械设备</strong>板块 <span class="source">（上证报/财联社）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#34a853;">🌏 大宗商品</strong>
+    <ul>
+      <li>国际金价<strong>大跌3.2%</strong>报4454.23美元/盎司、白银跌4.26%，受美联储加息预期压制 <span class="source">（财联社）</span></li>
+      <li>油价回落：布油跌0.5%收88.10美元、WTI跌0.2%至83.40美元，<strong>本周累计跌约4%</strong> <span class="source">（财联社）</span></li>
+      <li><strong>铜价连涨九周</strong>，为2020年以来最长连涨；LME期铜报14294美元/吨，一度升破14300美元 <span class="source">（财联社）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、利通科技 -->
+<div class="section">
+  <div class="section-title gray">🏢 四、利通科技（839167）动态</div>
+  <ul>
+    <li>今日无直接相关公告或新闻快讯发布；利通科技为北交所液冷管赛道核心标的，建议持续跟踪液冷产业链订单与产能释放 <span class="source">（财联社搜索）</span></li>
+    <li>产业链背景利好：<strong>铜价连涨九周</strong>、算力芯片需求扩张，液冷管作为AI算力"血管"需求端逻辑持续强化 <span class="source">（财联社）</span></li>
+  </ul>
+
+  <div class="highlight">
+    <strong>🟡 赛道跟踪提示</strong><br>
+    液冷四大场景（数据中心/储能/新能源车/液冷超充桩）中期需求逻辑未变；本周芯片股回调，关注短期估值波动风险，逢低布局优质液冷管标的。
+  </div>
+</div>
+
+<!-- 五、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 五、战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 高度关注</strong><br>
+    1) 美联储加息预期骤然升温，市场已计入最早9月加息，全球风险资产波动加大；<br>
+    2) 霍尔木兹海峡持续封锁叠加美委石油协议，油价短期不确定性高企，关注对大宗商品和通胀路径的传导。
+  </div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    1) 英伟达周五大跌4.57%，关注AI算力链下周企稳信号；<br>
+    2) 券商二季度重仓中际旭创、新易盛，光模块/算力硬件获机构加仓；<br>
+    3) 铜价9连涨创2020年新高，上游资源品景气强化。
+  </div>
+</div>
+
+</body>
+</html>
