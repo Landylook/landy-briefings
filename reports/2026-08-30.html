@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年8月30日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.gray { border-bottom-color: #0f9d58; color: #0f9d58; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  @media (max-width: 768px) {
+    body { margin: 20px auto; padding: 16px; font-size: 16px; line-height: 1.9; }
+    h1 { font-size: 20px; }
+    .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
+    .section { margin-bottom: 24px; }
+    .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 10px; }
+    table { font-size: 15px; }
+    th, td { padding: 10px 12px; }
+    .highlight, .warning { padding: 14px 18px; font-size: 15px; }
+    .back-button { font-size: 15px; padding: 10px 14px; margin-bottom: 16px; }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body { max-width: 90%; margin: 30px auto; padding: 24px; }
+    h1 { font-size: 21px; }
+  }
+
+  @media (max-width: 480px) {
+    body { margin: 12px auto; padding: 12px; font-size: 17px; }
+    h1 { font-size: 19px; }
+    .date { font-size: 14px; }
+    .section-title { font-size: 18px; }
+    table { font-size: 14px; display: block; overflow-x: auto; }
+  }
+
+  @media (min-width: 1200px) {
+    body { max-width: 900px; }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年8月30日 · 星期六</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>Meta开源模型Glimmer引热议</strong> — 扎克伯格喊话AI应"为所有人"，可本地部署，与封闭强模型Muse Spark形成对比 <span class="source">（TechCrunch）</span></li>
+    <li><strong>Brave浏览器新增邮箱别名</strong> — 支持生成"诱饵地址"注册服务，防大厂追踪，隐私浏览器继续加码 <span class="source">（The Verge）</span></li>
+    <li><strong>特朗普提词器操作员被罚17.2万美元</strong> — 因在Kalshi押注总统演讲关键词涉内幕交易，联邦调查结案 <span class="source">（The Verge）</span></li>
+    <li><strong>西藏吉隆泥石流抢险持续</strong> — 已致5人遇难558人失联，李强赴一线指导，两部门出手稳楼市 <span class="source">（新京报）</span></li>
+    <li><strong>美军加速信息化军售</strong> — 北极星、Cerberus等国防科技股获市场关注（板块跟踪） <span class="source">（AP News）</span></li>
+  </ul>
+</div>
+
+<!-- 一、地缘·中东 -->
+<div class="section">
+  <div class="section-title red">🌍 一、地缘·中东</div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#ea4335;">⛽ 中东局势观察</strong>
+    <ul>
+      <li>霍尔木兹海峡博弈仍是全球能源定价核心变量：伊朗革命卫队此前坚称对海峡"控制权绝对稳固"，美方若需重开海峡，伊朗开出的条件是<strong>解除封锁制裁、解冻资金、停止以色列在黎敌对行动</strong> <span class="source">（财联社·持续跟踪）</span></li>
+      <li>黎以美三方框架协议遭真主党质疑"不合法"，但黎方仍接受2024年停火，中东短线波动风险仍在 <span class="source">（财联社·持续跟踪）</span></li>
+      <li><strong>特朗普对格陵兰威胁</strong>投下阴影：冰岛举行是否启动欧盟入盟谈判投票，北欧安全格局受牵动 <span class="source">（AP News）</span></li>
+      <li>尼泊尔-中国交界洪水救援持续，<strong>近3000人失联</strong>，幸存者撤离至安全区；我外交部长王毅同尼外长通话 <span class="source">（AP News/新京报）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 二、AI·科技 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 二、AI·科技</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">🧠 大模型与开源</strong>
+    <ul>
+      <li><strong>Meta发布开源权重模型Glimmer</strong> — 任何人可下载并在自有硬件本地部署；扎克伯格同步发文称AI应"为所有人"，而非被少数实验室控制，但其更强大的模型Muse Spark仍锁在自家API之后，被指"愿景带星号" <span class="source">（TechCrunch）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">🔐 隐私与浏览器</strong>
+    <ul>
+      <li><strong>Brave浏览器新增邮箱别名功能</strong> — 为用户生成"诱饵地址"注册各类服务，邮件仍转发至主邮箱，同时降低被大厂跨站追踪的风险 <span class="source">（The Verge）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">💾 算力与产业</strong>
+    <ul>
+      <li>AI算力链延续高景气预期，但需警惕前期芯片股大幅回调的估值消化；液冷作为数据中心"热管理"刚需环节，中期渗透率提升逻辑未变 <span class="source">（财联社·持续跟踪）</span></li>
+      <li>人形机器人、消费电子等前沿硬件持续获政策与资本双轮驱动（产业跟踪） <span class="source">（新京报）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、A股·港股 -->
+<div class="section">
+  <div class="section-title green">📈 三、A股·港股</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🏦 政策与宏观</strong>
+    <ul>
+      <li><strong>两部门出手稳楼市</strong> — 降门槛与防风险并重，市场解读楼市进入"长期主义"新阶段 <span class="source">（新京报/贝壳财经）</span></li>
+      <li>券商二季度持仓延续加仓<strong>金融、医药生物、机械设备</strong>方向，前五大重仓含中信建投、中际旭创、新易盛等 <span class="source">（上证报·持续跟踪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🌏 大宗与外围</strong>
+    <ul>
+      <li>隔夜市场延续美联储加息预期扰动：美债收益率曲线趋平，风险资产波动加大；<strong>关注9月议息窗口</strong> <span class="source">（财联社·持续跟踪）</span></li>
+      <li>金价、油价短线承压，铜价此前<strong>连涨九周创2020年来最长连涨</strong>，上游资源景气度仍高 <span class="source">（财联社·持续跟踪）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#34a853;">🏢 资本市场事件</strong>
+    <ul>
+      <li>特朗普<strong>提词器操作员Gabriel Perez</strong>因押注总统演讲关键词被罚<strong>17.2万美元</strong>，联邦内幕交易调查结案，凸显"事件驱动"交易监管趋严 <span class="source">（The Verge）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、利通科技 -->
+<div class="section">
+  <div class="section-title gray">🏢 四、利通科技（839167）动态</div>
+  <ul>
+    <li>今日财联社/公开渠道暂未检索到利通科技新增公告或直接快讯（网页搜索接口暂不可用），建议以交易所公告口径为准 <span class="source">（财联社搜索）</span></li>
+    <li>产业链背景持续利好：<strong>AI算力需求扩张 + 数据中心液冷渗透率提升</strong>，液冷管作为AI基建"血管"的中期逻辑未变；四大下游（数据中心/储能/新能源车/液冷超充桩）驱动需求 <span class="source">（产业跟踪）</span></li>
+    <li>上游铜价强势、芯片国产化与政策推动（新建智算中心液冷渗透率要求）对液冷管赛道形成持续催化 <span class="source">（产业跟踪）</span></li>
+  </ul>
+
+  <div class="highlight">
+    <strong>🟡 赛道跟踪提示</strong><br>
+    液冷四大场景中期需求逻辑未变；本周外围芯片股曾大幅回调，关注短期估值波动风险，逢低布局优质液冷管标的。今日为周六，市场休市，重点跟踪下周产业链订单与产能释放信号。
+  </div>
+</div>
+
+<!-- 五、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 五、战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 高度关注</strong><br>
+    1) 美联储9月议息临近，市场已计入提前加息预期，全球风险资产波动加大，注意仓位控制；<br>
+    2) 中东霍尔木兹海峡博弈与油价连带影响未消，叠加格陵兰/冰岛地缘发酵，能源与资源品短线不确定性高企。
+  </div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    1) AI开源模型节奏（Meta Glimmer）与算力链估值企稳信号；<br>
+    2) 液冷管赛道订单、产能与四大下游需求；<br>
+    3) 国内稳楼市政策落地后A股地产链与顺周期表现。
+  </div>
+</div>
+
+</body>
+</html>
