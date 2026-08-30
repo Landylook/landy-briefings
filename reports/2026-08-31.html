@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年8月31日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.gray { border-bottom-color: #0f9d58; color: #0f9d58; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  @media (max-width: 768px) {
+    body { margin: 20px auto; padding: 16px; font-size: 16px; line-height: 1.9; }
+    h1 { font-size: 20px; }
+    .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
+    .section { margin-bottom: 24px; }
+    .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 10px; }
+    table { font-size: 15px; }
+    th, td { padding: 10px 12px; }
+    .highlight, .warning { padding: 14px 18px; font-size: 15px; }
+    .back-button { font-size: 15px; padding: 10px 14px; margin-bottom: 16px; }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body { max-width: 90%; margin: 30px auto; padding: 24px; }
+    h1 { font-size: 21px; }
+  }
+
+  @media (max-width: 480px) {
+    body { margin: 12px auto; padding: 12px; font-size: 17px; }
+    h1 { font-size: 19px; }
+    .date { font-size: 14px; }
+    .section-title { font-size: 18px; }
+    table { font-size: 14px; display: block; overflow-x: auto; }
+  }
+
+  @media (min-width: 1200px) {
+    body { max-width: 900px; }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年8月31日 · 星期一</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>中东局势急剧升级</strong> — 伊朗革命卫队发射导弹袭击驻约旦美军基地，美军空袭伊朗拉腊克岛两处武器装置，美军已改变83艘商船航线，霍尔木兹海峡博弈升温 <span class="source">（第一财经·央视新闻）</span></li>
+    <li><strong>沃什鹰派首秀重挫金价</strong> — 美联储主席杰克逊霍尔讲话释放9月加息信号（概率升至57%），现货黄金暴跌2.95%至4453美元/盎司 <span class="source">（第一财经）</span></li>
+    <li><strong>千亿液冷赛道加速升温</strong> — 订单排到年底，行业迎来系统性放量期；AI服务器"吃铜"凶猛，高端铜箔量价齐升（赛道利好） <span class="source">（第一财经·今日速览）</span></li>
+    <li><strong>券商上半年净利创历史最佳</strong> — 43家上市券商合计营收3647.1亿元、归母净利1553.7亿元，超800家公司计划中期分红 <span class="source">（第一财经）</span></li>
+    <li><strong>Meta开源模型Glimmer落地</strong> — 扎克伯格喊话AI应"为所有人"，可本地部署；Rockstar确认《GTA6》无生成式AI与微交易 <span class="source">（TechCrunch/The Verge）</span></li>
+  </ul>
+</div>
+
+<!-- 一、地缘·中东 -->
+<div class="section">
+  <div class="section-title red">🌍 一、地缘·中东</div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#ea4335;">⚔️ 美伊冲突升级</strong>
+    <ul>
+      <li><strong>伊朗袭击驻约旦美军</strong> — 美军消息人士证实，伊朗正在袭击驻约旦美军基地，多数来袭导弹已被拦截，尚未造成重大影响 <span class="source">（第一财经·央视新闻）</span></li>
+      <li>伊朗革命卫队声明：为回应美以对拉腊克岛的"侵略"，已向驻约旦美军基地发射导弹和无人机；同日拉腊克岛附近多次传出爆炸声 <span class="source">（第一财经·央视新闻）</span></li>
+      <li>美官员称<strong>美军空袭拉腊克岛两处伊朗革命卫队武器装置</strong>，系美军一个月来首次对伊朗采取军事行动；伊朗方面称袭击致多人受伤，"必将惩罚侵略者" <span class="source">（第一财经·央视新闻）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-top:14px;">
+    <strong style="color:#ea4335;">🛢️ 能源与航运</strong>
+    <ul>
+      <li><strong>美军中央司令部已改变83艘商船航行路线</strong> — 在对伊朗实施封锁期间，美海军驱逐舰在阿拉伯海执行任务，霍尔木兹海峡与原油定价风险再度升温 <span class="source">（第一财经·央视新闻）</span></li>
+      <li>乌克兰首都基辅再度传出爆炸声、拉响防空警报，俄乌冲突延续；叙利亚高官14年来首次访利比亚，叙使馆恢复运作 <span class="source">（第一财经·央视新闻）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 二、AI·科技 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 二、AI·科技</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">🧠 大模型与开源</strong>
+    <ul>
+      <li><strong>Meta开源权重模型Glimmer发布</strong> — 任何人可下载并在自有硬件本地部署，与锁在自家 API 之后的强模型 Muse Spark 形成对比；扎克伯格发文称 AI 应"为所有人"而非被少数实验室控制，但被指"愿景带星号" <span class="source">（TechCrunch）</span></li>
+      <li><strong>Rockstar确认《GTA6》无生成式AI与微交易</strong> — 回应业界两大争议，为发布避雷 <span class="source">（The Verge）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">🤖 AI应用与算力</strong>
+    <ul>
+      <li><strong>银行AI应用全面落地</strong> — Token（词元）消耗量爆发式增长，成为上市银行半年报衡量AI应用规模与活跃度的关键指标，工行等大行AI已嵌入经营全链条 <span class="source">（第一财经·上证报）</span></li>
+      <li><strong>AI服务器"吃铜"凶猛</strong> — 高端铜箔需求爆发260%，量价齐升进入黄金期，算力硬件上游景气延续 <span class="source">（第一财经·今日速览）</span></li>
+      <li>普洛斯算力中心引入浙江国资战略股东、第四范式定位"AI时代Salesforce"，算力与AI应用资本动作频仍 <span class="source">（第一财经）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">📱 消费电子</strong>
+    <ul>
+      <li>Apple 测试过折叠屏 iPhone 用的手写笔（磁吸在机身侧面充电），但<strong>大概率不会随首发机型上市</strong> <span class="source">（The Verge·Bloomberg）</span></li>
+      <li>《Pokémon Sleep》联名 Fitbit Air 9月15日发售，内含皮卡丘涂装 <span class="source">（The Verge）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、A股·港股 -->
+<div class="section">
+  <div class="section-title green">📈 三、A股·港股</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">📊 市场快照</strong>
+    <ul>
+      <li>上证指数<strong>3952.18（-0.11%）</strong>；深证成指13953.07（-0.68%）；创业板指3424.40（-1.41%）；科创综指1942.91（-1.57%） <span class="source">（第一财经）</span></li>
+      <li>恒生指数<strong>25584.79（+0.07%）</strong>；标普500 7711.76（-0.25%）；纳斯达克26402.42（-0.52%） <span class="source">（第一财经）</span></li>
+      <li>机构展望：A股半年报披露基本结束、<strong>企业盈利修复延续、盈利超预期夯实基本面</strong>，市场反弹窗口或渐近 <span class="source">（第一财经·上证报）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🏦 中报与资本动向</strong>
+    <ul>
+      <li><strong>43家上市券商上半年营收3647.1亿元、归母净利1553.7亿元，创历史最佳</strong>，"百亿俱乐部"持续扩容，市场交投活跃驱动 <span class="source">（第一财经·上证报）</span></li>
+      <li><strong>超800家公司计划中期分红</strong>，监管常态化引导+盈利韧性凸显+现金流改善；有色、化工板块集体回暖，价格修复与产业升级共振 <span class="source">（第一财经·证券时报）</span></li>
+      <li>508家医药上市公司披露半年报，191家净利同比增长，<strong>创新与出海双向提速</strong>，医药释放回暖信号 <span class="source">（第一财经·证券时报）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#34a853;">🌏 宏观与美联储</strong>
+    <ul>
+      <li><strong>沃什杰克逊霍尔首秀偏鹰</strong> — 称通胀"仍然过高"，7月核心PCE达3.3%高于预期，重燃9月加息预期（概率升至约57%） <span class="source">（第一财经）</span></li>
+      <li><strong>黄金踩踏式暴跌</strong> — 现货金重挫<strong>2.95%</strong>收报4453.67美元/盎司，跌破4500关口终结周线三连涨；两年期美债收益率升至4.3% <span class="source">（第一财经）</span></li>
+      <li><strong>食品通胀卷土重来</strong> — 气候、战争冲击全球农产品，小麦玉米创三年新高；美债长端收益率高企成全球资产定价核心变量 <span class="source">（第一财经）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、利通科技 -->
+<div class="section">
+  <div class="section-title gray">🏢 四、利通科技（839167）动态</div>
+  <ul>
+    <li>财联社/公开渠道今日暂未检索到利通科技新增公告或直接快讯（网页搜索接口暂不可用），<strong>建议以交易所公告口径为准</strong> <span class="source">（财联社搜索）</span></li>
+    <li><strong>赛道重大利好：千亿液冷赛道加速升温</strong> — 第一财经"今日速览"重点提及"订单排到年底，千亿液冷赛道加速升温，行业迎来系统性放量期"，数据中心液冷渗透率提升逻辑强化，直接利好液冷管产业链 <span class="source">（第一财经）</span></li>
+    <li><strong>铜价/铜箔联动利好</strong> — AI服务器"吃铜"凶猛，高端铜箔需求爆发260%、量价齐升进入黄金期；液冷管上游铜材及散热导材景气度同步受益 <span class="source">（第一财经·今日速览）</span></li>
+    <li>四大下游逻辑（数据中心/储能/新能源车/液冷超充桩）中期不变，叠加政策推动新建智算中心液冷渗透率，赛道催化持续 <span class="source">（产业跟踪）</span></li>
+  </ul>
+
+  <div class="highlight">
+    <strong>🟡 赛道跟踪提示</strong><br>
+    媒体点名"千亿液冷赛道系统性放量期"+高端铜箔量价齐升，构成液冷管产业链的阶段性强催化。今日为周一，重点跟踪本周产业链订单、产能释放与北交所盘中表现；中东美伊冲突升级对上游铜、原油价格的连带影响需同步关注。
+  </div>
+</div>
+
+<!-- 五、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 五、战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 高度关注</strong><br>
+    1) <strong>中东美伊冲突急剧升级</strong>：伊朗导弹袭击驻约旦美军基地、美军空袭拉腊克岛、83艘商船改道，霍尔木兹海峡与油价不确定性显著抬升；<br>
+    2) <strong>美联储9月加息概率升至约57%</strong>：沃什鹰派首秀+7月核心PCE超预期，黄金暴跌2.95%、贵金属与高估值资产短期承压，注意仓位管理。
+  </div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    1) 千亿液冷赛道"系统性放量期"下，利通科技产业链订单与产能释放信号——本周为关键观察窗口；<br>
+    2) 高端铜箔量价齐升 + AI算力链资本开支，液冷管"铜-液冷"双属性受益确定性；<br>
+    3) 银行AI Token消耗量爆发与券商创历史最佳业绩，验证AI商业化与资本市场活跃度的中期趋势。
+  </div>
+</div>
+
+</body>
+</html>
