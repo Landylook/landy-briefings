@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年9月1日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+  @media (max-width: 768px) {
+    body { margin: 20px auto; padding: 16px; font-size: 16px; line-height: 1.9; }
+    h1 { font-size: 20px; }
+    .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
+    .section { margin-bottom: 24px; }
+    .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 10px; }
+    .highlight, .warning { padding: 14px 18px; font-size: 15px; }
+    .back-button { font-size: 15px; padding: 10px 14px; margin-bottom: 16px; }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body { max-width: 90%; margin: 30px auto; padding: 24px; }
+    h1 { font-size: 21px; }
+  }
+  @media (max-width: 480px) {
+    body { margin: 12px auto; padding: 12px; font-size: 17px; }
+    h1 { font-size: 19px; }
+    .date { font-size: 14px; }
+    .section-title { font-size: 18px; }
+  }
+  @media (min-width: 1200px) {
+    body { max-width: 900px; }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年9月1日 周二</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>美伊战事持续升级</strong> — 美军袭击霍尔木兹海峡伊朗火箭发射阵地，另一艘油轮遭袭，中东局势再趋紧张 <span class="source">（AP News）</span></li>
+    <li><strong>Meta 发布开源 AI 模型 Glimmer</strong> — 扎克伯格公开信称 AI 应"为所有人服务"，与闭源 Muse Spark 形成对比 <span class="source">（TechCrunch）</span></li>
+    <li><strong>全球内存（RAM）价格飙升</strong> — 带动电子产品涨价潮，谷歌流媒体设备、苹果、亚马逊相继提价 <span class="source">（The Verge）</span></li>
+    <li><strong>尼泊尔与中国洪水灾情严峻</strong> — 水电隧道内数百人被困，死亡人数超950人 <span class="source">（AP News）</span></li>
+  </ul>
+</div>
+
+<!-- 一、地缘·中东 -->
+<div class="section">
+  <div class="section-title red">🌍 一、地缘·中东</div>
+  <ul>
+    <li><strong>美军袭击霍尔木兹海峡伊朗火箭发射阵地</strong> — 数周来首次军事行动，同时另一艘油轮在霍尔木兹海峡遭袭 <span class="source">（AP News）</span></li>
+    <li><strong>新型美军导弹在伊朗城市拉梅尔德造成重大伤亡</strong> — 报告称"留下大片死亡与破坏" <span class="source">（AP News）</span></li>
+    <li><strong>伊朗发布视频</strong> — 展示向中东美军基地发射导弹画面，反击态势明显 <span class="source">（AP News）</span></li>
+    <li><strong>德黑兰筹备已故最高领袖葬礼</strong> — 伊朗政治过渡进入关键期，局势充满不确定性 <span class="source">（AP News）</span></li>
+    <li><strong>万斯在瑞士与伊朗高层会面</strong> — 美伊谈判"进展不确定"，但存在达成协议的迹象 <span class="source">（AP News）</span></li>
+  </ul>
+  <div class="highlight">
+    <strong>🟡 战略研判</strong><br>
+    美伊战事从军事对抗转向"边打边谈"。霍尔木兹海峡（全球石油咽喉）持续受扰，对全球油价、航运、以及液冷数据中心能源成本构成上游扰动。若冲突升级，将推升算力中心电费与建设成本，需持续跟踪。
+  </div>
+</div>
+
+<!-- 二、AI·科技 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 二、AI·科技</div>
+  <ul>
+    <li><strong>Meta 发布开源模型 Glimmer</strong> — 可免费下载并在自有硬件本地运行，与仅限API的旗舰模型 Muse Spark 形成"开源vs闭源"对照 <span class="source">（TechCrunch）</span></li>
+    <li><strong>扎克伯格公开信</strong> — 主张 AI 应"为所有人服务"，而非被少数实验室掌控，但评论人士指出愿景存在"星号" <span class="source">（TechCrunch）</span></li>
+    <li><strong>内存（RAM）价格飙涨</strong> — 三星等厂商减产叠加AI需求，推高整个消费电子与服务器成本 <span class="source">（The Verge）</span></li>
+    <li><strong>Fairphone 6+ 进军美国市场</strong> — 强调可维修性与环保材料，瞄准"耐用品"细分赛道，响应内存涨价下的产品寿命议题 <span class="source">（The Verge）</span></li>
+    <li><strong>加州通过 Linux 年龄验证豁免案</strong> — 将开源操作系统排除在州《年龄验证法》之外，利好开源生态 <span class="source">（The Verge）</span></li>
+    <li><strong>Sony 为 PS5 推出免费电视</strong> — 引入 FAST 广告频道，覆盖 Crunchyroll、NHL 等内容 <span class="source">（The Verge）</span></li>
+  </ul>
+  <div class="highlight">
+    <strong>🟡 关联液冷</strong><br>
+    AI 模型持续开源化 + 本地化部署，意味着推理算力将从云端向边缘/企业自有数据中心扩散。无论是 Meta 的开源权重，还是本地运行趋势，都在加速数据中心扩容，从而拉动液冷散热刚性需求。
+  </div>
+</div>
+
+<!-- 三、A股·港股 -->
+<div class="section">
+  <div class="section-title green">📈 三、A股·港股</div>
+  <ul>
+    <li><strong>科技硬件成本承压</strong> — 全球内存价格上涨蔓延至服务器、PC、消费电子产业链，A股存储与算力硬件板块或波动 <span class="source">（The Verge）</span></li>
+    <li><strong>新能源与算力基建</strong> — 数据中心热管理与液冷渗透逻辑未变，政策端"新建智算中心液冷100%"持续推进，产业链订单景气 <span class="source">（行业跟踪）</span></li>
+    <li><strong>港股科技</strong> — 在美元流动性及中东地缘扰动下，港股科技板块短期承压，关注回调后的布局窗口 <span class="source">（行业跟踪）</span></li>
+    <li><strong>资源与航运</strong> — 霍尔木兹海峡扰动加剧油运风险溢价，航运、油气板块或有交易性机会 <span class="source">（AP News）</span></li>
+  </ul>
+  <div class="warning">
+    <strong>🔴 风险提示</strong><br>
+    中东冲突若进一步升级，将推升国际油价，从而抬高全球通胀预期，可能压制成长股估值并影响国内货币政策空间。需密切跟踪地缘演变。
+  </div>
+</div>
+
+<!-- 四、利通科技 -->
+<div class="section">
+  <div class="section-title gray">🏢 四、利通科技（839167）动态</div>
+  <ul>
+    <li><strong>液冷管核心逻辑稳固</strong> — AI 芯片功耗持续攀升 + 新建智算中心液冷渗透率100%政策，液冷管作为"AI算力血管"需求确定性高 <span class="source">（行业跟踪）</span></li>
+    <li><strong>四大应用场景</strong> — 数据中心/智算中心、储能（大储渗透率92.7%）、新能源汽车（800V热管理升级）、液冷超充桩（2026年需求破百万根）持续放量 <span class="source">（行业跟踪）</span></li>
+    <li><strong>国产替代主线</strong> — 冷却液、液冷管路国产化加速，利通作为北交所液冷管标的，受益于国产替代与AI基建双轮驱动 <span class="source">（行业跟踪）</span></li>
+    <li><strong>竞争格局</strong> — 与英维克、曙光数创、高澜股份、申菱环境等同赛道，关注供应链卡位与订单兑现 <span class="source">（行业跟踪）</span></li>
+  </ul>
+  <div class="highlight">
+    <strong>🟡 跟踪要点</strong><br>
+    ① 液冷管订单能见度与产能爬坡；② 储能+超充桩放量节奏；③ 与英伟达GPU功耗升级（H100 700W → Rubin 1800W+）对齐的散热方案迭代。今日未捕获利通科技个股新增公告，基本面逻辑未变。
+  </div>
+</div>
+
+<!-- 战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 高度关注</strong><br>
+    ① 美伊冲突升级风险——霍尔木兹海峡持续受扰，油价上行或冲击全球风险偏好；② 全球内存涨价对算力硬件成本的影响，可能改变数据中心BOM结构与液冷配置节奏。
+  </div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    液冷赛道中期逻辑（政策100%渗透 + 芯片功耗攀升）未变，短期受地缘与成本扰动属正常波动。建议逢回调关注液冷产业链核心标的，重点跟踪利通科技订单与产能信号。
+  </div>
+</div>
+
+</body>
+</html>
