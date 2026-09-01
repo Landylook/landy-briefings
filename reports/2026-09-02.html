@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年9月2日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  /* 响应式设计 - 手机端 */
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 {
+      font-size: 20px;
+    }
+    .date {
+      font-size: 15px;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+    }
+    .section {
+      margin-bottom: 24px;
+    }
+    .section-title {
+      font-size: 17px;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+    }
+    ul {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    table {
+      font-size: 15px;
+    }
+    th, td {
+      padding: 10px 12px;
+    }
+    .highlight, .warning {
+      padding: 14px 18px;
+      font-size: 15px;
+    }
+    .back-button {
+      font-size: 15px;
+      padding: 10px 14px;
+      margin-bottom: 16px;
+    }
+  }
+
+  /* 响应式设计 - 平板端 */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body {
+      max-width: 90%;
+      margin: 30px auto;
+      padding: 24px;
+    }
+    h1 {
+      font-size: 21px;
+    }
+  }
+
+  /* 响应式设计 - 小屏幕手机 */
+  @media (max-width: 480px) {
+    body {
+      margin: 12px auto;
+      padding: 12px;
+      font-size: 17px;
+    }
+    h1 {
+      font-size: 19px;
+    }
+    .date {
+      font-size: 14px;
+    }
+    .section-title {
+      font-size: 18px;
+    }
+    table {
+      font-size: 14px;
+      display: block;
+      overflow-x: auto;
+    }
+  }
+
+  /* 响应式设计 - 大屏幕电脑 */
+  @media (min-width: 1200px) {
+    body {
+      max-width: 900px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年9月2日 周三</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>美伊战事骤然升级</strong> — 美军袭击伊朗防空、雷达、海上资产及通信设施，伊朗以弹道导弹反击约旦美军基地，特朗普威胁"更狠打击" <span class="source">（AP News）</span></li>
+    <li><strong>美股连跌三日</strong> — 标普500跌0.7%，纳指跌1%，油价走高推升通胀担忧；10年期美债收益率升至4.79% <span class="source">（AP News）</span></li>
+    <li><strong>Perplexity 推出"混合计算"</strong> — 本地+云端协同处理AI任务，设"隐私门"保护敏感数据，或将改写端侧AI与数据中心算力格局 <span class="source">（The Verge）</span></li>
+    <li><strong>五角大楼部署定制AI聊天机器人</strong> — 美防部为330万人引入ChatGPT与Grok定制版，GenAI.mil平台已接入170万人 <span class="source">（The Verge）</span></li>
+  </ul>
+</div>
+
+<!-- 一、地缘·中东 -->
+<div class="section">
+  <div class="section-title red">🌍 一、地缘·中东</div>
+  <ul>
+    <li><strong>美军完成对伊朗新一轮打击</strong> — 中央司令部声明袭击了伊朗防空系统、雷达系统、海上资产与设施、水雷部署能力及通信站点 <span class="source">（AP News）</span></li>
+    <li><strong>伊朗发射弹道导弹反击</strong> — 针对美国驻约旦基地发起导弹打击；此前阿联酋称拦截了一架伊朗无人机 <span class="source">（AP News）</span></li>
+    <li><strong>特朗普警告升级</strong> — "若伊朗报复，将再次遭到更重、更高层级的打击，而那还不是最大的攻击" <span class="source">（AP News）</span></li>
+    <li><strong>一场美袭击误伤婚礼现场</strong> — 造成5人死亡、数十人受伤，凸显战争人道代价 <span class="source">（AP News）</span></li>
+    <li><strong>霍尔木兹海峡持续梗阻</strong> — 和平时期全球1/5石油贸易经此通行，伊朗卡脖子战略拖慢船运至涓流，推升全球能源与物价 <span class="source">（AP News）</span></li>
+    <li><strong>美国务院重发中东旅行警告</strong> — 随着战争对峙升级，区域安全风险上升 <span class="source">（AP News）</span></li>
+  </ul>
+  <div class="highlight">
+    <strong>🟡 战略研判</strong><br>
+    美伊从"一个月无军事行动"到昨夜骤然互攻，地缘风险显著抬升。霍尔木兹海峡是全球石油与LNG运输咽喉，持续受阻将推升能源价格，直接抬升数据中心电费成本——这是液冷赛道（降低散热能耗）长期利好的催化剂之一，但短期内亦会压制整体风险偏好。
+  </div>
+</div>
+
+<!-- 二、AI·科技 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 二、AI·科技</div>
+  <ul>
+    <li><strong>Perplexity "Hybrid Compute" 混合计算</strong> — 上线Mac端Perplexity Computer，云端处理推理/搜索/规划，本地模型处理敏感数据，设"隐私门"控制信息离设备 <span class="source">（The Verge）</span></li>
+    <li><strong>美国防部部署定制ChatGPT/Grok</strong> — 通过GenAI.mil平台向330万军人提供"针对作战需求定制"的AI工具，该平台已接入超170万人 <span class="source">（The Verge）</span></li>
+    <li><strong>Meta 开源模型 Glimmer 持续发酵</strong> — 可本地运行的开源权重与旗舰闭源Muse Spark形成对照，扎克伯格"AI为所有人"愿景引发行业讨论 <span class="source">（TechCrunch）</span></li>
+    <li><strong>AI 电影《Artificial》10月首映</strong> — 讲述Sam Altman被解雇又复职的2023年风波，Andrew Garfield主演，将在纽约电影节首映 <span class="source">（The Verge）</span></li>
+    <li><strong>Mythos 5.1 发布</strong> — 同步登陆Project Glasswing，AI生态持续迭代 <span class="source">（The Verge）</span></li>
+  </ul>
+  <div class="highlight">
+    <strong>🟡 关联液冷</strong><br>
+    美军+企业AI大规模部署与"本地+云端"混合计算趋势，意味着算力需求从单一云中心向边缘、行业数据中心分散扩张。AI军事应用、企业私有化部署持续推进，进一步强化数据中心扩容逻辑，液冷散热刚性需求长期向上。
+  </div>
+</div>
+
+<!-- 三、A股·港股 -->
+<div class="section">
+  <div class="section-title green">📈 三、A股·港股</div>
+  <ul>
+    <li><strong>美股全线下跌传导</strong> — 标普500跌0.7%、道指跌0.8%、纳指跌1%，三大指数连跌三日 <span class="source">（AP News）</span></li>
+    <li><strong>科技权重股承压明显</strong> — 英伟达跌1.5%、亚马逊跌1.9%、AMD跌2.4%，AI高估值依赖低利率，美债利率上行构成压制 <span class="source">（AP News）</span></li>
+    <li><strong>10年期美债收益率升至4.79%</strong> — 从年初4.20%大幅走高，2年期升至4.39%，借贷成本上行压制成长股估值 <span class="source">（AP News）</span></li>
+    <li><strong>美国债务突破40万亿美元</strong> — 国防支出与利息负担构成主要推升项，全球国债抛售潮蔓延 <span class="source">（AP News）</span></li>
+    <li><strong>油价走高推升通胀预期</strong> — 布伦特原油价格上行，市场担忧通胀粘性影响货币政策空间 <span class="source">（AP News）</span></li>
+    <li><strong>对A股/港股的映射</strong> — 外围地缘+美债收益率上行，短期压制港股科技与A股成长板块；但液冷/算力基建的政策驱动逻辑（新建智算中心液冷100%）未变，回调即是布局窗口 <span class="source">（行业跟踪）</span></li>
+  </ul>
+  <div class="warning">
+    <strong>🔴 风险提示</strong><br>
+    美伊冲突升级 → 油价上行 → 全球通胀预期抬升 → 美债收益率走高 → 成长股估值承压。链条传导明确，A股/港股科技板块短期或承压，需密切跟踪地缘演变与油价走势。
+  </div>
+</div>
+
+<!-- 四、利通科技 -->
+<div class="section">
+  <div class="section-title gray">🏢 四、利通科技（839167）动态</div>
+  <ul>
+    <li><strong>液冷基础逻辑未受扰动</strong> — AI芯片功耗持续攀升（H100 700W → Rubin 1800W+），新建智算中心液冷渗透率100%政策持续推进，液冷管作为"AI算力血管"需求确定性不受地缘短期扰动影响 <span class="source">（行业跟踪）</span></li>
+    <li><strong>储能+超充桩双轮放量</strong> — 大储液冷渗透率92.7%高位延续，液冷超充桩（单枪600kW~1.5MW）2026年国内需求预计破百万根，两大下游持续贡献增量 <span class="source">（行业跟踪）</span></li>
+    <li><strong>国产替代主线</strong> — 冷却液、液冷管路国产化加速，利通作为北交所液冷管专业标的，受益国产替代与AI基建双轮驱动 <span class="source">（行业跟踪）</span></li>
+    <li><strong>竞争格局观察</strong> — 与英维克、曙光数创、高澜股份、申菱环境等同赛道竞争，关注供应链卡位与订单兑现节奏 <span class="source">（行业跟踪）</span></li>
+    <li><strong>今日未捕获利通个股新增公告</strong> — 基本面逻辑维持，等待订单与产能信号 <span class="source">（财联社搜索）</span></li>
+  </ul>
+  <div class="highlight">
+    <strong>🟡 跟踪要点</strong><br>
+    ① 液冷管订单能见度与产能爬坡；② 储能+超充桩放量节奏；③ 地缘冲突推升能源成本，反向凸显液冷降低数据中心PUE的长期价值。短期市场波动不改中期逻辑，建议逢回调关注。
+  </div>
+</div>
+
+<!-- 战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 高度关注</strong><br>
+    ① <strong>美伊冲突骤然升级</strong>——美军昨夜对伊朗实施多领域打击，伊朗导弹反击，特朗普威胁更强报复，地缘风险陡增；② <strong>美债收益率飙升</strong>——10年期升至4.79%，美国债务破40万亿，全球成长股估值承压；③ <strong>油价上行</strong>——霍尔木兹海峡持续梗阻，通胀预期或再抬头。
+  </div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    液冷赛道中期逻辑（政策100%渗透 + 芯片功耗攀升 + AI军事/企业部署扩容）未变，短期受地缘与利率扰动属正常波动。建议逢回调关注液冷产业链核心标的，重点跟踪利通科技订单、产能与储能/超充放量信号。
+  </div>
+</div>
+
+</body>
+</html>

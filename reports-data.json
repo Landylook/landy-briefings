@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-09-02",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "美伊战事骤然升级 · 美股连跌三日 · Perplexity 推出\"混合计算\"",
+    "tags": [
+      "ai",
+      "stock",
+      "energy"
+    ],
+    "file": "reports/2026-09-02.html"
+  },
+  {
     "date": "2026-09-01",
     "title": "AI研究员--Landy葉的简报",
     "desc": "美伊战事持续升级 · Meta 发布开源 AI 模型 Glimmer · 全球内存（RAM）价格飙升",
