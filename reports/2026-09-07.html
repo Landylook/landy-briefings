@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年9月7日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 {
+      font-size: 20px;
+    }
+    .date {
+      font-size: 15px;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+    }
+    .section {
+      margin-bottom: 24px;
+    }
+    .section-title {
+      font-size: 17px;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+    }
+    ul {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    table {
+      font-size: 15px;
+    }
+    th, td {
+      padding: 10px 12px;
+    }
+    .highlight, .warning {
+      padding: 14px 18px;
+      font-size: 15px;
+    }
+    .back-button {
+      font-size: 15px;
+      padding: 10px 14px;
+      margin-bottom: 16px;
+    }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body {
+      max-width: 90%;
+      margin: 30px auto;
+      padding: 24px;
+    }
+    h1 {
+      font-size: 21px;
+    }
+  }
+  @media (max-width: 480px) {
+    body {
+      margin: 12px auto;
+      padding: 12px;
+      font-size: 17px;
+    }
+    h1 {
+      font-size: 19px;
+    }
+    .date {
+      font-size: 14px;
+    }
+    .section-title {
+      font-size: 18px;
+    }
+    table {
+      font-size: 14px;
+      display: block;
+      overflow-x: auto;
+    }
+  }
+  @media (min-width: 1200px) {
+    body {
+      max-width: 900px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年9月7日（周一）</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>Apple秋季发布会</strong> — 折叠iPhone Ultra将于9月9日（周三）正式亮相，预计售价不菲 <span class="source">（The Verge）</span></li>
+    <li><strong>GPT-6 Astra刷榜</strong> — OpenAI最新模型仅用$571算力成本即通关经典游戏Portal <span class="source">（The Verge）</span></li>
+    <li><strong>AI检测赛道升温</strong> — AI内容检测创企Pangram获$900万融资，与Substack达成合作 <span class="source">（TechCrunch）</span></li>
+    <li><strong>欧亚航天竞争</strong> — Isar Aerospace为欧洲提供本土化发射选项，"买欧洲造"成为新趋势 <span class="source">（The Verge）</span></li>
+  </ul>
+</div>
+
+<!-- 地缘·中东 -->
+<div class="section">
+  <div class="section-title red">🌍 地缘·中东</div>
+  <ul>
+    <li><strong>中东局势仍趋紧张</strong> — 地缘风险持续扰动全球资本市场，能源价格保持高位震荡 <span class="source">（财联社）</span></li>
+    <li><strong>红海航运影响持续</strong> — 全球供应链绕行推高物流成本，集运市场运价居高不下 <span class="source">（财联社）</span></li>
+  </ul>
+</div>
+
+<!-- AI·科技 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 AI·科技</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">🔬 大模型进展</strong>
+    <ul>
+      <li><strong>GPT-6 Astra突破</strong> — OpenAI最新模型以$571极低成本通关Portal，展示高效推理能力 <span class="source">（The Verge）</span></li>
+      <li><strong>AI检测成新赛道</strong> — Pangram获$900万A轮融资，AI生成内容识别需求激增 <span class="source">（TechCrunch）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">📱 硬件新品</strong>
+    <ul>
+      <li><strong>iPhone折叠屏9月9日发布</strong> — Apple将发布折叠iPhone Ultra，设计独特但价格预计将创iPhone历史新高 <span class="source">（The Verge）</span></li>
+      <li><strong>Lenovo卷轴屏概念本</strong> — Project Swan原型机屏幕可从14寸展开至17寸，形态创新 <span class="source">（The Verge）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">🚀 航天竞争</strong>
+    <ul>
+      <li><strong>Isar Aerospace发力欧洲发射</strong> — 为欧洲提供本土化航天发射选项，绕开对SpaceX依赖 <span class="source">（The Verge）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- A股·港股 -->
+<div class="section">
+  <div class="section-title darkblue">📈 A股·港股</div>
+  <ul>
+    <li><strong>AI算力概念持续活跃</strong> — 液冷、算力基础设施赛道受政策催化，机构资金持续布局 <span class="source">（财联社）</span></li>
+    <li><strong>液冷渗透率加速</strong> — 工信部要求新建智算中心液冷100%，带动上游管路需求 <span class="source">（财联社）</span></li>
+    <li><strong>储能液冷高渗透</strong> — 大储项目液冷渗透率已达92.7%，快充桩液冷方案加速落地 <span class="source">（财联社）</span></li>
+  </ul>
+</div>
+
+<!-- 利通科技 -->
+<div class="section">
+  <div class="section-title gray">🏢 利通科技（839167）</div>
+  <ul>
+    <li><strong>液冷管赛道核心标的</strong> — 北交所上市的液冷管路龙头，受益AI算力基建提速 <span class="source">（财联社）</span></li>
+    <li><strong>关注客户拓展</strong> — 持续跟踪数据中心、储能、新能源汽车三大下游客户突破情况 <span class="source">（财联社）</span></li>
+    <li><strong>竞争格局</strong> — 英维克、曙光数创、高澜股份、申菱环境等同业竞争加剧，管道环节技术壁垒是关键 <span class="source">（财联社）</span></li>
+  </ul>
+</div>
+
+<!-- 战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 战略预警 / 机会提示</div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    液冷管赛道——芯片功耗持续攀升（H100 700W→Rubin 1800W+）驱动液冷从可选变强制，工信部新建智算中心液冷渗透率目标100%，赛道处于加速渗透期，利通科技作为北交所液冷管路龙头值得持续关注。
+  </div>
+</div>
+
+</body>
+</html>
