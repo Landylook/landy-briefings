@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年9月9日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 {
+      font-size: 20px;
+    }
+    .date {
+      font-size: 15px;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+    }
+    .section {
+      margin-bottom: 24px;
+    }
+    .section-title {
+      font-size: 17px;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+    }
+    ul {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    table {
+      font-size: 15px;
+    }
+    th, td {
+      padding: 10px 12px;
+    }
+    .highlight, .warning {
+      padding: 14px 18px;
+      font-size: 15px;
+    }
+    .back-button {
+      font-size: 15px;
+      padding: 10px 14px;
+      margin-bottom: 16px;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body {
+      max-width: 90%;
+      margin: 30px auto;
+      padding: 24px;
+    }
+    h1 {
+      font-size: 21px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    body {
+      margin: 12px auto;
+      padding: 12px;
+      font-size: 17px;
+    }
+    h1 {
+      font-size: 19px;
+    }
+    .date {
+      font-size: 14px;
+    }
+    .section-title {
+      font-size: 18px;
+    }
+    table {
+      font-size: 14px;
+      display: block;
+      overflow-x: auto;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    body {
+      max-width: 900px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年9月9日 星期三</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>特朗普政府施压福特</strong> — 要求切断与宁德时代、吉利的合作，显示美国对华科技脱钩持续加码 <span class="source">（The Verge）</span></li>
+    <li><strong>OpenAI被曝五角大楼合作</strong> — 报道称OpenAI提供"最小拒绝率"军事AI，美防部AI应用加速 <span class="source">（The Intercept via The Verge）</span></li>
+    <li><strong>Google Gemini Daily Brief全面开放</strong> — 美国用户均可使用，AI个人助理竞争加剧 <span class="source">（The Verge）</span></li>
+    <li><strong>液冷管赛道持续扩容</strong> — AI算力需求推动数据中心液冷渗透率加速，H100到Rubin功耗持续攀升 <span class="source">（行业观察）</span></li>
+  </ul>
+</div>
+
+<!-- 一、大势研判 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 一、大势研判</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">📈 行业数据</strong>
+    <ul>
+      <li><strong>H100 GPU功耗700W → Rubin Ultra 1800W+</strong>，芯片功耗持续攀升推动液冷从可选变强制 <span class="source">（行业研究）</span></li>
+      <li><strong>2026年液冷超充桩</strong>国内需求预计突破百万根，单枪功率600kW~1.5MW <span class="source">（行业研究）</span></li>
+      <li><strong>储能行业液冷渗透率</strong>已达92.7%，成为最成熟应用场景 <span class="source">（行业研究）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">⚡ 政策动态</strong>
+    <ul>
+      <li><strong>工信部要求</strong>新建智算中心液冷渗透率100%，政策驱动明确 <span class="source">（政策文件）</span></li>
+      <li><strong>国产替代加速</strong>：冷却液、液冷管路国产化进程提速 <span class="source">（行业观察）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 二、液冷管赛道情报 -->
+<div class="section">
+  <div class="section-title orange">💧 二、液冷管赛道情报</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🔬 技术路线</strong>
+    <ul>
+      <li>冷板式液冷仍是主流，但<strong>浸没式液冷</strong>在高功率密度场景加速渗透 <span class="source">（行业研究）</span></li>
+      <li><strong>氟化液冷却液</strong>国产化突破，成本下降空间打开 <span class="source">（行业观察）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🏭 竞争格局</strong>
+    <ul>
+      <li>英维克、曙光数创、高澜股份、申菱环境、巨化股份占据主要集成市场 <span class="source">（上市公司公告）</span></li>
+      <li><strong>管路环节</strong>：利通科技等精密橡塑企业聚焦液冷管路国产替代 <span class="source">（公司公告）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#e87020;">📦 客户与订单</strong>
+    <ul>
+      <li>液冷管路供应商持续获得<strong>数据中心、储能、新能源汽车</strong>订单 <span class="source">（行业跟踪）</span></li>
+      <li><strong>800V高压平台</strong>热管理升级带动液冷管路需求 <span class="source">（行业研究）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、下游应用战场 -->
+<div class="section">
+  <div class="section-title green">🔋 三、下游应用战场</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🖥️ 数据中心/算力中心</strong>
+    <ul>
+      <li>AI训练推理需求爆发，<strong>英伟达GPU功耗持续攀升</strong>，液冷成为刚需 <span class="source">（行业研究）</span></li>
+      <li>智算中心建设提速，液冷渗透率政策要求100% <span class="source">（政策驱动）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🔋 储能行业</strong>
+    <ul>
+      <li>大储项目液冷渗透率<strong>92.7%</strong>，是最成熟应用场景 <span class="source">（行业数据）</span></li>
+      <li>温控要求提升，液冷管路需求稳定增长 <span class="source">（行业观察）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🚗 新能源汽车</strong>
+    <ul>
+      <li><strong>800V高压平台</strong>成为主流，热管理升级带动液冷管路需求 <span class="source">（行业研究）</span></li>
+      <li>宁德时代与福特合作受阻，显示<strong>中美新能源供应链博弈</strong>持续 <span class="source">（The Verge）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#34a853;">⚡ 液冷超充桩</strong>
+    <ul>
+      <li><strong>2026年国内液冷超充桩需求</strong>预计突破百万根 <span class="source">（行业预测）</span></li>
+      <li>单枪功率600kW~1.5MW，对液冷管路提出更高要求 <span class="source">（行业研究）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、集成商动态 -->
+<div class="section">
+  <div class="section-title purple">📡 四、集成商动态（渠道情报）</div>
+  <table>
+    <tr>
+      <th style="width:18%">企业</th>
+      <th>核心进展</th>
+    </tr>
+    <tr>
+      <td><strong>英维克</strong></td>
+      <td>液冷温控龙头，数据中心液冷订单持续增长 <span class="source">（上市公司公告）</span></td>
+    </tr>
+    <tr>
+      <td><strong>曙光数创</strong></td>
+      <td>浸没式液冷领先，智算中心项目持续落地 <span class="source">（行业跟踪）</span></td>
+    </tr>
+    <tr>
+      <td><strong>高澜股份</strong></td>
+      <td>储能温控为主，数据中心液冷布局加速 <span class="source">（行业观察）</span></td>
+    </tr>
+    <tr>
+      <td><strong>申菱环境</strong></td>
+      <td>专精特新，液冷温控解决方案持续交付 <span class="source">（行业跟踪）</span></td>
+    </tr>
+    <tr>
+      <td><strong>巨化股份</strong></td>
+      <td>氟化液产能释放，冷却液国产替代主力 <span class="source">（公司公告）</span></td>
+    </tr>
+  </table>
+</div>
+
+<!-- 五、二级市场 & 资本动向 -->
+<div class="section">
+  <div class="section-title darkblue">📈 五、二级市场 & 资本动向</div>
+  <ul>
+    <li><strong>液冷管赛道</strong>持续获得资本关注，国产替代逻辑明确 <span class="source">（市场观察）</span></li>
+    <li><strong>北交所</strong>流动性改善，相关标的关注度提升 <span class="source">（市场数据）</span></li>
+    <li><strong>利通科技（839167）</strong>：液冷管赛道核心标的，精密橡塑能力支撑国产替代 <span class="source">（公司研究）</span></li>
+  </ul>
+</div>
+
+<!-- 六、利通科技 -->
+<div class="section">
+  <div class="section-title gray">🏢 六、利通科技（839167）动态</div>
+  <ul>
+    <li><strong>液冷管路</strong>作为核心产品，受益AI算力基建+储能+新能源汽车三大赛道需求共振 <span class="source">（公司业务）</span></li>
+    <li><strong>精密橡塑技术</strong>积累深厚，液冷管路国产替代具备技术基础 <span class="source">（公司能力）</span></li>
+    <li><strong>北交所上市</strong>，流动性相对有限，但赛道景气度支撑长期逻辑 <span class="source">（资本市场）</span></li>
+  </ul>
+</div>
+
+<!-- 七、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 七、战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 高度关注</strong><br>
+    特朗普政府持续推动对华科技脱钩，宁德时代、吉利等供应链企业面临压力，可能影响液冷管路出口市场
+  </div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    工信部智算中心液冷100%渗透率政策落地进度，以及利通科技液冷管路订单释放情况
+  </div>
+</div>
+
+</body>
+</html>
