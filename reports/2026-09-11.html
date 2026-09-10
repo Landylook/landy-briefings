@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年9月11日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 {
+      font-size: 20px;
+    }
+    .date {
+      font-size: 15px;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+    }
+    .section {
+      margin-bottom: 24px;
+    }
+    .section-title {
+      font-size: 17px;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+    }
+    ul {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    table {
+      font-size: 15px;
+    }
+    th, td {
+      padding: 10px 12px;
+    }
+    .highlight, .warning {
+      padding: 14px 18px;
+      font-size: 15px;
+    }
+    .back-button {
+      font-size: 15px;
+      padding: 10px 14px;
+      margin-bottom: 16px;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body {
+      max-width: 90%;
+      margin: 30px auto;
+      padding: 24px;
+    }
+    h1 {
+      font-size: 21px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    body {
+      margin: 12px auto;
+      padding: 12px;
+      font-size: 17px;
+    }
+    h1 {
+      font-size: 19px;
+    }
+    .date {
+      font-size: 14px;
+    }
+    .section-title {
+      font-size: 18px;
+    }
+    table {
+      font-size: 14px;
+      display: block;
+      overflow-x: auto;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    body {
+      max-width: 900px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年9月11日</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>燧原科技登陆科创板</strong> — 国产AI芯片"四小龙"（摩尔线程、沐曦股份、壁仞科技、燧原科技）齐聚资本市场 <span class="source">（第一财经）</span></li>
+    <li><strong>2026中国算力大会</strong> — 9月11日至13日在河北廊坊举行，液冷散热需求持续攀升 <span class="source">（第一财经）</span></li>
+    <li><strong>中东局势升温</strong> — 也门胡塞武装占领红海战略要地哈尼什群岛，霍尔木兹海峡安全威胁等级仍为"严重" <span class="source">（第一财经/央视）</span></li>
+    <li><strong>Adobe业绩创新高</strong> — Q3营收**$67.6亿**（+13%），AI产品全面落地超10亿月活用户 <span class="source">（The Verge）</span></li>
+    <li><strong>加州立法监管AI</strong> — 州长签署法案，禁止向16岁以下未成年人提供成瘾性社交推送 <span class="source">（The Verge）</span></li>
+  </ul>
+</div>
+
+<!-- 地缘·中东 -->
+<div class="section">
+  <div class="section-title red">🌍 地缘·中东</div>
+  <ul>
+    <li><strong>胡塞武装占领哈尼什群岛</strong> — 也门胡塞武装在政府海军部队撤出后，占领红海战略要地哈尼什群岛，也门政府军将西海岸区域划定为"作战区" <span class="source">（第一财经）</span></li>
+    <li><strong>霍尔木兹海峡威胁等级"严重"</strong> — 联合海上信息中心通报，中东海上安全形势持续紧张，美财政部宣布对伊朗相关个人和实体实施制裁 <span class="source">（第一财经）</span></li>
+    <li><strong>美伊制裁升级</strong> — 美国财政部将伊朗在中东地区的代理人网络相关个人和实体列入制裁名单 <span class="source">（央视新闻）</span></li>
+    <li><strong>加拿大与乌克兰扩大无人机合作</strong> — 加拿大总理与泽连斯基会晤，宣布合作扩大军用无人机生产 <span class="source">（央视新闻）</span></li>
+  </ul>
+</div>
+
+<!-- AI·科技 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 AI·科技</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">🖥️ AI芯片 & 算力</strong>
+    <ul>
+      <li><strong>燧原科技登陆科创板</strong> — 9月11日正式上市，国产AI芯片"四小龙"（摩尔线程、沐曦股份、壁仞科技、燧原科技）齐聚资本市场，国产算力自主可控加速 <span class="source">（第一财经/证券时报）</span></li>
+      <li><strong>2026中国算力大会</strong> — 9月11日至13日在河北廊坊举行，AI基础设施投资持续升温 <span class="source">（第一财经）</span></li>
+      <li><strong>部分基金净值V型修复</strong> — 历经7月深度回撤后，8月以来AI相关基金净值率先修复，基本面决定AI行情走向 <span class="source">（第一财经）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">💰 科技巨头财报</strong>
+    <ul>
+      <li><strong>Adobe Q3营收创新高</strong> — 第三季度营收**<strong>$67.6亿</strong>**（+13%），月活用户超<strong>10亿</strong>，AI产品全面落地Photoshop、Premiere等全家桶 <span class="source">（The Verge）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">⚖️ 监管政策</strong>
+    <ul>
+      <li><strong>加州签署AI安全法案</strong> — 州长签署AB1709，禁止向16岁以下用户推送成瘾性内容；同时要求聊天机器人制造商通知年轻用户其并非人类 <span class="source">（The Verge）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">📱 消费电子</strong>
+    <ul>
+      <li><strong>苹果iPhone18系列发布</strong> — 顶配售价**2.65万元**，史上最贵iPhone，同步全面涨价；折叠屏、AI手机、AI眼镜新品密集落地 <span class="source">（第一财经）</span></li>
+      <li><strong>T-Mobile对iPhone Handoff收费</strong> — 每月$5，引发用户争议 <span class="source">（The Verge）</span></li>
+      <li><strong>SteamVR 2.17重大更新</strong> — Valve为VR平台推出大量新功能，改进Steam Link串流 <span class="source">（The Verge）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- A股·港股 -->
+<div class="section">
+  <div class="section-title green">📈 A股·港股</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🔥 市场动态</strong>
+    <ul>
+      <li><strong>20家上市银行中期分红超2600亿</strong> — 六大行分红比例集体提升，银行板块防御价值凸显 <span class="source">（第一财经）</span></li>
+      <li><strong>A股股票回购热潮</strong> — 9月11日20家公司披露回购进展，其中3家首次披露预案，7家披露回购实施中 <span class="source">（第一财经）</span></li>
+      <li><strong>13家公司定增进展</strong> — 9月11日A股共13家公司发布定增公告，1家披露预案，6家获股东大会通过，5家获证监会通过 <span class="source">（第一财经）</span></li>
+      <li><strong>今日限售股解禁5.54亿元</strong> — 4家公司合计解禁6504.4万股 <span class="source">（第一财经）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🏭 行业机会</strong>
+    <ul>
+      <li><strong>消费电子新一轮催化</strong> — 折叠屏、AI手机、AI眼镜加速落地，叠加政策利好，头部厂商秋季新品密集发布 <span class="source">（第一财经）</span></li>
+      <li><strong>糖价受厄尔尼诺催化</strong> — 中粮糖业、*ST广糖等集体涨停，代糖概念板块同步大涨 <span class="source">（第一财经）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#34a853;">💧 液冷赛道</strong>
+    <ul>
+      <li><strong>普洛斯算力中心引入浙江国资</strong> — 算力基础设施国资化战略持续推进，液冷散热作为算力中心标配需求明确 <span class="source">（第一财经）</span></li>
+      <li><strong>燧原科技上市</strong> — 国产AI芯片企业密集上市，算力芯片功耗持续攀升（H100 700W→Rubin 1800W+），液冷散热从可选变强制 <span class="source">（第一财经）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 利通科技 -->
+<div class="section">
+  <div class="section-title gray">🏢 利通科技（839167）动态</div>
+  <ul>
+    <li><strong>液冷管核心受益逻辑</strong> — 芯片功耗持续攀升，液冷散热从可选变强制；工信部要求新建智算中心液冷渗透率100%；利通科技作为北交所液冷管龙头，持续受益算力基建扩张 <span class="source">（行业研究）</span></li>
+    <li><strong>液冷管四大应用场景</strong> — 数据中心/智算中心（AI训练推理）+ 储能行业（液冷渗透率92.7%）+ 新能源汽车（800V高压平台）+ 液冷超充桩（单枪600kW~1.5MW） <span class="source">（行业研究）</span></li>
+    <li><strong>关注竞争格局</strong> — 英维克、曙光数创、高澜股份、申菱环境、巨化股份等集成商动态影响液冷管需求，需持续跟踪 <span class="source">（行业研究）</span></li>
+  </ul>
+</div>
+
+<!-- 战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 战略预警 / 机会提示</div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    1. 2026中国算力大会（9.11-13，廊坊）— 关注液冷散热技术路线和集成商动态<br>
+    2. 燧原科技上市后表现 — 国产AI芯片四小龙齐聚，资本热度映射产业趋势<br>
+    3. 胡塞武装占领哈尼什群岛 — 红海航线紧张，关注能源价格波动对储能需求影响
+  </div>
+</div>
+
+</body>
+</html>
