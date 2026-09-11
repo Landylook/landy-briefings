@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年9月12日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 { font-size: 20px; }
+    .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
+    .section { margin-bottom: 24px; }
+    .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 10px; }
+    table { font-size: 15px; }
+    th, td { padding: 10px 12px; }
+    .highlight, .warning { padding: 14px 18px; font-size: 15px; }
+    .back-button { font-size: 15px; padding: 10px 14px; margin-bottom: 16px; }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body { max-width: 90%; margin: 30px auto; padding: 24px; }
+    h1 { font-size: 21px; }
+  }
+  @media (max-width: 480px) {
+    body { margin: 12px auto; padding: 12px; font-size: 17px; }
+    h1 { font-size: 19px; }
+    .date { font-size: 14px; }
+    .section-title { font-size: 18px; }
+    table { font-size: 14px; display: block; overflow-x: auto; }
+  }
+  @media (min-width: 1200px) {
+    body { max-width: 900px; }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年9月12日 星期六</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>中东地缘风险升温</strong> — 沙特输油管道遭伊拉克方向无人机袭击，油价波动风险上升 <span class="source">（新浪新闻 9/12）</span></li>
+    <li><strong>A股今日低开急跌</strong> — 全场超5000家下跌，沪指最低回踩3852点附近，通信设备净流入<strong>47.41亿元</strong>位居首位 <span class="source">（东方财富 9/12）</span></li>
+    <li><strong>AI视频赛道升温</strong> — Quibi创始人杰弗里·卡岑伯格联手前OpenAI Sora负责人比尔·佩布尔斯，创办AI视频公司 <span class="source">（The Verge 9/11）</span></li>
+    <li><strong>液冷管中游持续受益</strong> — 智算中心建设提速+储能液冷渗透率92.7%，液冷管路国产替代逻辑持续强化 <span class="source">（行业观察）</span></li>
+  </ul>
+</div>
+
+<!-- 一、地缘·中东 -->
+<div class="section">
+  <div class="section-title red">🌍 一、地缘·中东</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#ea4335;">⚡ 能源设施袭击</strong>
+    <ul>
+      <li><strong>沙特输油管道遭无人机袭击</strong> — 伊拉克方向无人机袭击沙特输油管道，伊总理下令紧急调查，中东能源供应风险升温 <span class="source">（新浪新闻 9/12）</span></li>
+      <li>影响评估：若持续冲突，油价波动将传导至化工品成本，间接影响冷却液等液冷材料价格 <span class="source">（财联社）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#ea4335;">🔍 地缘关联信号</strong>
+    <ul>
+      <li>胡塞武装持续袭击红海航运，能源供应链扰动成常态 <span class="source">（行业跟踪）</span></li>
+      <li>液冷管原材料（橡胶、钢管）价格波动需关注 <span class="source">（财联社）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 二、AI·科技 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 二、AI·科技</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">🚀 创业与融资</strong>
+    <ul>
+      <li><strong>Quibi创始人 + 前Sora负责人联手创业</strong> — 杰弗里·卡岑伯格（DreamWorks联合创始人）与前OpenAI Sora团队负责人Bill Peebles创办AI视频公司，目标训练自有视频模型并争取电影制作方支持，已获融资支持 <span class="source">（The Verge 9/11）</span></li>
+      <li><strong>Pangram获900万美元融资</strong> — AI检测工具获融资并与Substack合作，帮助识别AI生成内容 <span class="source">（TechCrunch 9/2）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">🛠️ 产品与平台</strong>
+    <ul>
+      <li><strong>Twitch测试AI Stream Coach</strong> — AI教练功能在直播后为创作者提供建议，目前小范围测试，属可选功能 <span class="source">（The Verge 9/11）</span></li>
+      <li><strong>Microsoft允许自定义Copilot键</strong> — Windows 11最新预览版支持将Copilot键重映射为Control或上下文菜单键 <span class="source">（The Verge 9/11）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">💡 算力需求持续</strong>
+    <ul>
+      <li>英伟达Rubin GPU功耗预计达<strong>1800W+</strong>，液冷散热方案从可选变强制 <span class="source">（行业研究）</span></li>
+      <li>工信部要求新建智算中心液冷渗透率<strong>100%</strong>，液冷管路国产化加速 <span class="source">（政策跟踪）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、A股·港股 -->
+<div class="section">
+  <div class="section-title darkblue">📈 三、A股·港股</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#0f9d58;">📊 今日市况（9/12）</strong>
+    <ul>
+      <li><strong>A股低开低走</strong> — 受外围股市大跌影响，两市大幅低开，沪指最低回踩<strong>3852点</strong>附近，全场超5000家下跌 <span class="source">（东方财富 9/12）</span></li>
+      <li><strong>通信设备一枝独秀</strong> — 全天净流入<strong>47.41亿元</strong>，位居所有行业首位，铜缆高速连接、射频天线、连接器等细分领涨 <span class="source">（东方财富 9/12）</span></li>
+      <li>市场情绪降温至冰点，但下午有明显资金进场承接，缓和情绪 <span class="source">（东方财富）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#0f9d58;">🔍 液冷相关板块</strong>
+    <ul>
+      <li>液冷散热、数据中心概念随算力建设提速持续受到关注 <span class="source">（行业跟踪）</span></li>
+      <li>储能液冷赛道（渗透率92.7%）维持高景气，相关标的估值支撑较强 <span class="source">（财联社）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、利通科技 -->
+<div class="section">
+  <div class="section-title gray">🏢 四、利通科技（839167）</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#5f6368;">📋 公司概况</strong>
+    <ul>
+      <li><strong>北交所上市</strong>，核心产品为液压软管及总成，近年切入液冷管路赛道</li>
+      <li液冷管应用于数据中心、储能、新能源汽车热管理三大场景</li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#5f6368;">💧 液冷管业务逻辑</strong>
+    <ul>
+      <li><strong>数据中心</strong>：英伟达GPU功耗持续攀升，液冷散热方案成刚性需求，液冷管路国产替代加速</li>
+      <li><strong>储能</strong>：大储项目液冷渗透率<strong>92.7%</strong>，持续贡献增量</li>
+      <li><strong>新能源汽车</strong>：800V高压平台热管理升级，液冷管路单车价值量提升</li>
+      <li><strong>液冷超充桩</strong>：单枪600kW~1.5MW，2026年国内需求预计破百万根</li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#5f6368;">📌 近期关注点</strong>
+    <ul>
+      <li>关注北交所流动性改善政策对中小市值科技股的催化 <span class="source">（政策跟踪）</span></li>
+      <li>液冷管路行业竞争格局：英维克、曙光数创、高澜股份、申菱环境、巨化股份等集成商动态影响上游管路需求 <span class="source">（财联社）</span></li>
+      <li>原材料价格波动（橡胶、钢管）对毛利率的影响 <span class="source">（行业跟踪）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 五、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 五、战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 高度关注</strong><br>
+    中东能源设施遭袭频率上升，若冲突持续，油价波动可能传导至液冷管原材料（橡胶、钢管）成本，建议密切关注利通科技毛利率变化。
+  </div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    A股通信设备板块持续净流入（今日47.41亿元），液冷散热作为数据中心基础设施关键环节，中长期逻辑强化。液冷管路国产替代空间持续，建议逢低关注利通科技布局机会。
+  </div>
+</div>
+
+</body>
+</html>
