@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年9月16日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 { font-size: 20px; }
+    .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
+    .section { margin-bottom: 24px; }
+    .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 10px; }
+    table { font-size: 15px; }
+    th, td { padding: 10px 12px; }
+    .highlight, .warning { padding: 14px 18px; font-size: 15px; }
+    .back-button { font-size: 15px; padding: 10px 14px; margin-bottom: 16px; }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body { max-width: 90%; margin: 30px auto; padding: 24px; }
+    h1 { font-size: 21px; }
+  }
+  @media (max-width: 480px) {
+    body { margin: 12px auto; padding: 12px; font-size: 17px; }
+    h1 { font-size: 19px; }
+    .date { font-size: 14px; }
+    .section-title { font-size: 18px; }
+    table { font-size: 14px; display: block; overflow-x: auto; }
+  }
+  @media (min-width: 1200px) {
+    body { max-width: 900px; }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年9月16日</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>全球首个AI+脑机接口标准中国首发</strong> — 国家药监局批准发布第三个脑机接口医疗器械标准，明年9月正式实施 <span class="source">（CCTV科技）</span></li>
+    <li><strong>美国61%选民反对建设AI数据中心</strong> — 公众对AI基础设施扩张持谨慎态度，可能影响数据中心选址与审批 <span class="source">（The Verge）</span></li>
+    <li><strong>特斯拉Cybercab面临NHTSA安全质询</strong> — 无方向盘/踏板设计须在9月30日前回应联邦安全标准合规问题 <span class="source">（The Verge）</span></li>
+    <li><strong>英国三地首席部长罕见会晤</strong> — 讨论推动各自地区举行自决权投票，苏格兰、北爱尔兰、威尔士政治格局生变 <span class="source">（CCTV）</span></li>
+    <li><strong>八部门联合发文促进智能家居消费</strong> — 适应消费升级需求，政策端持续刺激智能终端市场 <span class="source">（CCTV）</span></li>
+  </ul>
+</div>
+
+<!-- 一、大势研判 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 一、大势研判</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">🌏 地缘动态</strong>
+    <ul>
+      <li><strong>英三地首席部长罕见会晤</strong> — 新芬党主席玛丽·麦克唐纳出席，讨论推动各自地区举行自决权投票，苏格兰、北爱尔兰政治不确定性上升 <span class="source">（CCTV）</span></li>
+      <li><strong>日本冲绳知事选举结果出炉</strong> — 美军基地搬迁立场生变，亚太地区美军事部署面临新博弈 <span class="source">（CCTV）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">⚡ 政策面</strong>
+    <ul>
+      <li><strong>八部门联合促进智能家居消费</strong> — 适应消费升级需求，智能家居赛道政策持续加码 <span class="source">（CCTV）</span></li>
+      <li><strong>全球首个AI+脑机接口标准中国首发</strong> — 国家药监局批准，明年起正式实施，AI+医疗标准化进程提速 <span class="source">（CCTV科技）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 二、液冷管赛道情报 -->
+<div class="section">
+  <div class="section-title orange">💧 二、液冷管赛道情报</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🔬 行业背景</strong>
+    <ul>
+      <li><strong>AI数据中心能耗飙升</strong> — 英伟达H100 GPU功耗700W，Rubin系列达1800W+，液冷从可选变强制配置 <span class="source">（行业研究）</span></li>
+      <li><strong>美国61%选民反对新建AI数据中心</strong> — 公众反对声音或影响数据中心选址审批，增加项目落地不确定性 <span class="source">（The Verge）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🏭 竞争格局</strong>
+    <ul>
+      <li><strong>工信部要求新建智算中心液冷渗透率100%</strong> — 政策强制要求，液冷管路国产化加速 <span class="source">（政策文件）</span></li>
+      <li><strong>储能行业液冷渗透率达92.7%</strong> — 大储项目液冷已成标配，利通科技液冷管受益明确 <span class="source">（行业数据）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#e87020;">📦 重点客户动态</strong>
+    <ul>
+      <li><strong>800V高压平台新能源汽车热管理升级</strong> — 液冷管需求从电池包向整车热管理扩散 <span class="source">（行业研究）</span></li>
+      <li><strong>液冷超充桩单枪功率600kW~1.5MW</strong> — 2026年国内需求或破百万根，超充场站快速扩张 <span class="source">（行业研究）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、下游应用战场 -->
+<div class="section">
+  <div class="section-title green">🔋 三、下游应用战场</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🖥️ 数据中心/算力中心</strong>
+    <ul>
+      <li><strong>AI算力需求爆发</strong> — GPU功耗从700W到1800W+，传统风冷已无法满足散热需求，液冷成为新建数据中心标配 <span class="source">（行业研究）</span></li>
+      <li><strong>美国选民反对AI数据中心建设</strong> — 61%反对率显示公众对能源消耗的担忧，可能影响项目审批进度 <span class="source">（The Verge）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🔋 储能行业</strong>
+    <ul>
+      <li><strong>大储项目液冷渗透率92.7%</strong> — 液冷温控在大型储能项目中的应用已高度成熟 <span class="source">（行业数据）</span></li>
+      <li><strong>储能温控需求持续增长</strong> — 电网级储能项目加速落地，带动液冷管路配套需求 <span class="source">（行业研究）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🚗 新能源汽车</strong>
+    <ul>
+      <li><strong>800V高压平台加速普及</strong> — 热管理要求提升，液冷管在电池包及整车的应用持续扩大 <span class="source">（行业研究）</span></li>
+      <li><strong>特斯拉Cybercab Robotaxi</strong> — 无方向盘/踏板设计面临NHTSA安全质询，9月30日前需回应 <span class="source">（The Verge）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#34a853;">⚡ 液冷超充桩</strong>
+    <ul>
+      <li><strong>单枪功率600kW~1.5MW</strong> — 液冷超充桩进入爆发期，2026年国内需求或破百万根 <span class="source">（行业研究）</span></li>
+      <li><strong>超充场站建设提速</strong> — 新能源汽车续航焦虑推动超充网络快速扩张 <span class="source">（行业研究）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、集成商动态 -->
+<div class="section">
+  <div class="section-title purple">📡 四、集成商动态（渠道情报）</div>
+  <table>
+    <tr>
+      <th style="width:18%">企业</th>
+      <th>核心进展</th>
+    </tr>
+    <tr>
+      <td><strong>英维克</strong></td>
+      <td>液冷温控龙头，持续受益智算中心液冷渗透率提升</td>
+    </tr>
+    <tr>
+      <td><strong>曙光数创</strong></td>
+      <td>数据中心液冷方案核心供应商，受益AI算力建设</td>
+    </tr>
+    <tr>
+      <td><strong>高澜股份</strong></td>
+      <td>储能温控+数据中心液冷双线布局</td>
+    </tr>
+    <tr>
+      <td><strong>申菱环境</strong></td>
+      <td>环境温控设备供应商，液冷柜产品供应主流集成商</td>
+    </tr>
+    <tr>
+      <td><strong>巨化股份</strong></td>
+      <td>冷却液国产化布局，液冷产业链上游</td>
+    </tr>
+  </table>
+</div>
+
+<!-- 五、二级市场 & 资本动向 -->
+<div class="section">
+  <div class="section-title darkblue">📈 五、二级市场 & 资本动向</div>
+  <ul>
+    <li><strong>液冷赛道持续获资本关注</strong> — AI算力基建提速，液冷管路作为核心配套材料，景气度维持高位 <span class="source">（行业研究）</span></li>
+    <li><strong>国产替代逻辑强化</strong> — 工信部政策驱动+供应链安全需求，液冷管路国产化率持续提升 <span class="source">（政策文件）</span></li>
+    <li><strong>利通科技（839167）</strong> — 北交所液冷管核心标的，受益AI数据中心+储能+新能源汽车三大应用场景 <span class="source">（行业研究）</span></li>
+  </ul>
+</div>
+
+<!-- 六、利通科技 -->
+<div class="section">
+  <div class="section-title gray">🏢 六、利通科技（839167）动态</div>
+  <ul>
+    <li><strong>液冷管赛道核心标的</strong> — 公司液冷管产品覆盖数据中心、储能、新能源汽车、液冷超充四大应用场景 <span class="source">（公司公告）</span></li>
+    <li><strong>国产替代机遇</strong> — 液冷管路国产化加速，公司作为国内头部供应商充分受益 <span class="source">（行业研究）</span></li>
+    <li><strong>北交所流动性改善预期</strong> — 政策支持专精特新企业融资，北交所改革持续推进 <span class="source">（政策文件）</span></li>
+  </ul>
+</div>
+
+<!-- 七、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 七、战略预警 / 机会提示</div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    特斯拉Cybercab安全质询进展（9月30日截止）— 若通过联邦认证，Robotaxi量产加速将带动液冷管需求；液冷超充桩2026年百万根需求或超预期。
+  </div>
+</div>
+
+</body>
+</html>
