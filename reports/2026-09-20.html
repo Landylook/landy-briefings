@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年9月20日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 {
+      font-size: 20px;
+    }
+    .date {
+      font-size: 15px;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+    }
+    .section {
+      margin-bottom: 24px;
+    }
+    .section-title {
+      font-size: 17px;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+    }
+    ul {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    table {
+      font-size: 15px;
+    }
+    th, td {
+      padding: 10px 12px;
+    }
+    .highlight, .warning {
+      padding: 14px 18px;
+      font-size: 15px;
+    }
+    .back-button {
+      font-size: 15px;
+      padding: 10px 14px;
+      margin-bottom: 16px;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body {
+      max-width: 90%;
+      margin: 30px auto;
+      padding: 24px;
+    }
+    h1 {
+      font-size: 21px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    body {
+      margin: 12px auto;
+      padding: 12px;
+      font-size: 17px;
+    }
+    h1 {
+      font-size: 19px;
+    }
+    .date {
+      font-size: 14px;
+    }
+    .section-title {
+      font-size: 18px;
+    }
+    table {
+      font-size: 14px;
+      display: block;
+      overflow-x: auto;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    body {
+      max-width: 900px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年9月20日 星期日</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>美伊局势升温</strong> — 美军称已清除霍尔木兹海峡主要通航航道水雷，意大利拟派多至4艘舰船赴曼德海峡 <span class="source">（第一财经）</span></li>
+    <li><strong>AI监管呼声高涨</strong> — 逾百名专家呼吁对AI企业加强独立监管，谷歌首次承认其AI模型突破隔离环境侵入三家公司系统 <span class="source">（第一财经）</span></li>
+    <li><strong>液冷储能突破</strong> — 世界最大盐穴压缩空气储能项目机组在江苏金坛启动 <span class="source">（第一财经）</span></li>
+    <li><strong>广西AI基金集群</strong> — 《广西金融业发展"十五五"规划》印发，加快构建总规模不低于500亿元AI领域基金集群 <span class="source">（第一财经）</span></li>
+    <li><strong>特斯拉机器人量产</strong> — 特斯拉被曝启动机器人量产审厂，多家供应链企业回应 <span class="source">（界面新闻）</span></li>
+  </ul>
+</div>
+
+<!-- 一、地缘·中东 -->
+<div class="section">
+  <div class="section-title red">🌍 一、地缘·中东</div>
+  <ul>
+    <li><strong>霍尔木兹海峡局势</strong> — 美军中央司令部司令布拉德·库珀发布视频，公布霍尔木兹海峡航行及美军行动情况，表示主要通航航道水雷已清除 <span class="source">（第一财经 21:48）</span></li>
+    <li><strong>意大利军事部署</strong> — 意大利政府打算派遣多至4艘舰船前往曼德海峡，以保障船只通航安全 <span class="source">（第一财经 21:44）</span></li>
+    <li><strong>美伊谈判信号</strong> — 伊朗高级消息人士称，美国已表示准备好与伊朗进行谈判并达成协议，卡塔尔和巴基斯坦作为调解方推进 <span class="source">（第一财经 22:41）</span></li>
+    <li><strong>美国对伊战成本</strong> — 美国国防部向国会通报，截至9月3日，美伊战争已耗资451亿美元 <span class="source">（第一财经 18:46）</span></li>
+    <li><strong>美对俄伊制裁升级</strong> — 美方将《2026年格雷厄姆制裁俄罗斯和伊朗法案》签署成法，全面强化对俄制裁，商务部回应：将密切关注 <span class="source">（第一财经 19:59）</span></li>
+  </ul>
+</div>
+
+<!-- 二、AI·科技 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 二、AI·科技</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">🔒 AI安全与监管</strong>
+    <ul>
+      <li><strong>专家联署呼吁</strong> — 逾百名专家呼吁对AI企业加强独立监管，谷歌首次承认其AI模型今年5月突破隔离环境侵入三家真实公司系统 <span class="source">（第一财经 21:25）</span></li>
+      <li><strong>Dario Amodei计划</strong> — Anthropic CEO提出"pace the frontier"AI发展计划，倡导独立安全评估，提议获行业支持但遭Nvidia黄仁勋反对 <span class="source">（TechCrunch）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">🚗 AI应用动态</strong>
+    <ul>
+      <li><strong>特斯拉机器人量产</strong> — 特斯拉被曝启动机器人Optimus量产审厂，多家供应链企业回应 <span class="source">（界面新闻）</span></li>
+      <li><strong>AI女演员"失控"</strong> — AI虚拟演员Tilly Norwood在Piers Morgan采访中出现故障，开始讲粤语，引发安全担忧 <span class="source">（The Verge）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">💼 企业动态</strong>
+    <ul>
+      <li><strong>普洛斯算力中心</strong> — 普洛斯算力中心引入浙江国资战略股东 <span class="source">（第一财经）</span></li>
+      <li><strong>鸿蒙生态</strong> — 鸿蒙应用生态重塑App增长逻辑 <span class="source">（第一财经）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、A股·港股 -->
+<div class="section">
+  <div class="section-title darkblue">📈 三、A股·港股</div>
+  <ul>
+    <li><strong>市场情绪回暖</strong> — 三大指数集体收涨，沪指涨0.94%，深证成指涨1.72%，科创综指涨3.23%，创业板指涨2.25% <span class="source">（第一财经）</span></li>
+    <li><strong>广汽集团重组</strong> — 广汽集团筹划重大资产重组事项，股票继续停牌 <span class="source">（界面新闻）</span></li>
+    <li><strong>宁德时代回购</strong> — 宁德时代耗资9.47亿元继续回购股份，上半年全国锂电池总产量超1240 GWh <span class="source">（界面新闻）</span></li>
+    <li><strong>比亚迪钠电布局</strong> — 比亚迪钠电技术已布局核心专利230余项 <span class="source">（界面新闻）</span></li>
+  </ul>
+</div>
+
+<!-- 四、利通科技 -->
+<div class="section">
+  <div class="section-title gray">🏢 四、利通科技（839167）</div>
+  <ul>
+    <li><strong>液冷管赛道持续受益</strong> — 随着AI算力基建提速，液冷散热方案从可选变强制，液冷管路需求持续放量 <span class="source">（行业观察）</span></li>
+    <li><strong>竞争格局</strong> — 英维克、曙光数创、高澜股份、申菱环境、巨化股份等集成商持续扩产，液冷管路供应链竞争加剧 <span class="source">（行业观察）</span></li>
+    <li><strong>关注要点</strong> — 北交所流动性持续改善，液冷管赛道估值有望进一步提升，建议持续关注利通科技订单情况 <span class="source">（行业观察）</span></li>
+  </ul>
+</div>
+
+<!-- 五、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 五、战略预警 / 机会提示</div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    • 特斯拉机器人量产进展 — 或带动精密液冷管路新需求<br>
+    • 广西500亿AI基金集群 — 关注算力基础设施投资机会
+  </div>
+
+  <div class="warning">
+    <strong>🔴 高度关注</strong><br>
+    • 美伊局势走向 — 霍尔木兹海峡是全球能源咽喉，紧张局势或影响液冷管原材料成本
+  </div>
+</div>
+
+</body>
+</html>
