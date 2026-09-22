@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-09-23",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "Anthropic CEO 提出AI发展\"减速\"方案 · 美国民众对数据中心负面情绪上升 · Weber 关闭 June 智能烤箱云服务",
+    "tags": [
+      "ai",
+      "stock",
+      "energy"
+    ],
+    "file": "reports/2026-09-23.html"
+  },
+  {
     "date": "2026-09-22",
     "title": "AI研究员--Landy葉的简报",
     "desc": "AI算力军备竞赛持续 · 数据中心用水危机 · AI数据中心强制付费",

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年9月23日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 { font-size: 20px; }
+    .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
+    .section { margin-bottom: 24px; }
+    .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 10px; }
+    table { font-size: 15px; }
+    th, td { padding: 10px 12px; }
+    .highlight, .warning { padding: 14px 18px; font-size: 15px; }
+    .back-button { font-size: 15px; padding: 10px 14px; margin-bottom: 16px; }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body { max-width: 90%; margin: 30px auto; padding: 24px; }
+    h1 { font-size: 21px; }
+  }
+  @media (max-width: 480px) {
+    body { margin: 12px auto; padding: 12px; font-size: 17px; }
+    h1 { font-size: 19px; }
+    .date { font-size: 14px; }
+    .section-title { font-size: 18px; }
+    table { font-size: 14px; display: block; overflow-x: auto; }
+  }
+  @media (min-width: 1200px) {
+    body { max-width: 900px; }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年9月23日</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>Anthropic CEO 提出AI发展"减速"方案</strong> — Dario Amodei 呼吁建立独立安全评估机构，获得行业支持但遭 Nvidia 黄仁勋反对 <span class="source">（TechCrunch）</span></li>
+    <li><strong>美国民众对数据中心负面情绪上升</strong> — Pew Research Center 最新调查数据显示美国人数据中心的负面看法显著增加 <span class="source">（The Verge）</span></li>
+    <li><strong>Weber 关闭 June 智能烤箱云服务</strong> — 2021年收购的 June Oven 于9月22日停止云服务，1500美元设备变"笨" <span class="source">（The Verge）</span></li>
+    <li><strong>加州将对隐瞒政治广告的创作者罚款</strong> — 每违规罚款最高5000美元， Newsom 州长周末签署法案 <span class="source">（The Verge）</span></li>
+    <li><strong>Nvidia DLSS 5 技术引发争议</strong> — AI 超采样技术被指改变游戏角色面部，开发商表示关注 <span class="source">（The Verge）</span></li>
+  </ul>
+</div>
+
+<!-- 地缘·中东 -->
+<div class="section">
+  <div class="section-title red">🌍 地缘·中东</div>
+  <ul>
+    <li>中东地区本周暂无重大升级事件，但敖于动荡期，持续关注地缘风险溢价变化 <span class="source">（综合）</span></li>
+  </ul>
+</div>
+
+<!-- AI·科技 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 AI·科技</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">🧠 AI安全与治理</strong>
+    <ul>
+      <li><strong>Anthropic CEO Dario Amodei</strong> 发布"减速AI前沿"方案，提议建立独立安全评估机构，协调民主国家AI实验室，获得部分行业支持 <span class="source">（TechCrunch，9月18日）</span></li>
+      <li><strong>Nvidia CEO 黄仁勋</strong> 对上述方案提出尖锐反对意见，AI发展速度之争持续 <span class="source">（TechCrunch）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">💻 硬件与芯片</strong>
+    <ul>
+      <li><strong>Nvidia DLSS 5</strong>（深度学习超级采样5）引发争议，AI渲染技术被指擅自修改游戏角色面部，社交媒体称之为"yassifying" <span class="source">（The Verge）</span></li>
+      <li><strong>Pew Research Center 报告</strong>：美国人数据中心负面情绪显著上升，对AI算力基建扩张的民意支持出现松动 <span class="source">（The Verge，9月22日）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">📱 科技产品与社会</strong>
+    <ul>
+      <li><strong>Weber 关闭 June Oven 云服务</strong>：2021年收购的智能烤箱于9月22日停止云服务器，1500美元高端设备失去远程控制、AI食材识别等功能，仅剩本地触控 <span class="source">（The Verge）</span></li>
+      <li><strong>加州 AB 2741 法案</strong>： Newsom 州长签署，对未披露付费政治内容的创作者每违规罚款<strong>最高5000美元</strong> <span class="source">（The Verge）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- A股·港股 -->
+<div class="section">
+  <div class="section-title darkblue">📈 A股·港股</div>
+  <ul>
+    <li>今日无重大A股/港股市场重大消息，国内资讯平台近期抓取受限，建议关注明日开盘动态 <span class="source">（综合）</span></li>
+  </ul>
+</div>
+
+<!-- 液冷管赛道 -->
+<div class="section">
+  <div class="section-title orange">💧 液冷管赛道情报</div>
+  <div style="margin-left:12px;">
+    <strong style="color:#e87020;">🔑 核心逻辑跟踪</strong>
+    <ul>
+      <li><strong>芯片功耗持续攀升</strong>：H100 700W → Rubin 1800W+，液冷从可选变强制配置，工信部要求新建智算中心液冷渗透率100% <span class="source">（行业研究）</span></li>
+      <li><strong>储能液冷渗透率达92.7%</strong>：大储项目液冷已成主流方案，利通科技管路产品具备直接供应关系 <span class="source">（行业研究）</span></li>
+      <li><strong>液冷超充桩</strong>：单枪600kW~1.5MW，2026年国内需求预计破百万根，增速最快的细分赛道之一 <span class="source">（行业研究）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 利通科技 -->
+<div class="section">
+  <div class="section-title gray">🏢 利通科技（839167）动态</div>
+  <ul>
+    <li>北交所液冷管核心标的，暂无最新公开公告 <span class="source">（财联社搜索）</span></li>
+    <li>液冷技术是AI算力基建的"血管"，四大应用场景（数据中心/储能/新能源汽车/液冷超充）持续驱动需求 <span class="source">（研究框架）</span></li>
+    <li>关注竞争格局：英维克、曙光数创、高澜股份、申菱环境、巨化股份等集成商的液冷订单分配情况 <span class="source">（竞争分析）</span></li>
+  </ul>
+</div>
+
+<!-- 战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 战略预警 / 机会提示</div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    Anthropic AI安全框架提案若获政策落地，可能影响算力基建扩张节奏，间接影响液冷需求；关注黄仁勋与Amodei之争的后续演绎
+  </div>
+
+  <div class="highlight">
+    <strong>🟡 赛道机会</strong><br>
+    液冷超充桩2026年国内需求破百万根，是增速最快的下游场景，利通科技管路产品受益明显
+  </div>
+</div>
+
+</body>
+</html>
