@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年9月26日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 {
+      font-size: 20px;
+    }
+    .date {
+      font-size: 15px;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+    }
+    .section {
+      margin-bottom: 24px;
+    }
+    .section-title {
+      font-size: 17px;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+    }
+    ul {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    table {
+      font-size: 15px;
+    }
+    th, td {
+      padding: 10px 12px;
+    }
+    .highlight, .warning {
+      padding: 14px 18px;
+      font-size: 15px;
+    }
+    .back-button {
+      font-size: 15px;
+      padding: 10px 14px;
+      margin-bottom: 16px;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body {
+      max-width: 90%;
+      margin: 30px auto;
+      padding: 24px;
+    }
+    h1 {
+      font-size: 21px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    body {
+      margin: 12px auto;
+      padding: 12px;
+      font-size: 17px;
+    }
+    h1 {
+      font-size: 19px;
+    }
+    .date {
+      font-size: 14px;
+    }
+    .section-title {
+      font-size: 18px;
+    }
+    table {
+      font-size: 14px;
+      display: block;
+      overflow-x: auto;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    body {
+      max-width: 900px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年9月26日 星期六</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>Meta推出AI新物种</strong> — 个人AI代理Muse正超越ChatGPT早期数据，押注AI Tamagotchi概念 <span class="source">（TechCrunch）</span></li>
+    <li><strong>吉利AI充电技术</strong> — 可延长电池循环寿命20%，或为液冷超充赛道注入新动能 <span class="source">（The Verge）</span></li>
+    <li><strong>荷兰政府转向Linux</strong> — 继法国之后，欧洲第二家测试 sovereign OS，国产替代浪潮持续 <span class="source">（The Verge）</span></li>
+    <li><strong>亨通光电66亿定增</strong> — 光通信+海缆双主业布局，AI光互联赛道再加码 <span class="source">（东方财富）</span></li>
+  </ul>
+</div>
+
+<!-- 地缘·中东 -->
+<div class="section">
+  <div class="section-title red">🌍 地缘·中东</div>
+  <ul>
+    <li><strong>中东局势仍处高压</strong> — 当前中东地缘风险持续，暂无重大破局信号 <span class="source">（综合）</span></li>
+    <li><strong>能源市场关注度升温</strong> — 油价波动持续影响全球通胀预期，能源安全议题重回焦点 <span class="source">（财联社）</span></li>
+  </ul>
+  <div class="highlight">
+    <strong>📌 跟踪提示</strong><br>
+    中东局势对液冷管上游原材料（铜、特种塑料）价格有间接影响，持续关注。
+  </div>
+</div>
+
+<!-- AI·科技 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 AI·科技</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">🔥 模型大战</strong>
+    <ul>
+      <li><strong>Meta Muse AI爆火</strong> — 个人AI代理Muse据报超越ChatGPT早期数据，正推进智能眼镜+Tamagotchi式设备 <span class="source">（TechCrunch）</span></li>
+      <li><strong>Opus 5.5 + GPT-6同周发布</strong> — Anthropic与OpenAI加速模型迭代，Meta意外抢走风头</li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">🚗 汽车智能化</strong>
+    <ul>
+      <li><strong>吉利AI充电技术</strong> — 脉冲修复技术+AI充电管理，声称可延长电池循环寿命<strong>20%</strong> <span class="source">（The Verge）</span></li>
+      <li><strong>意义</strong> — 若量产落地，将加速新能源汽车热管理升级，液冷管需求同步受益</li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">🏛️ 政策监管</strong>
+    <ul>
+      <li><strong>荷兰测试主权Linux</strong> — 继法国后欧洲第二家，DAWO计划减少对非欧洲科技依赖 <span class="source">（The Verge）</span></li>
+      <li><strong>Bill Gates呼吁监管AI</strong> — 监管议题持续升温</li>
+    </ul>
+  </div>
+</div>
+
+<!-- A股·港股 -->
+<div class="section">
+  <div class="section-title darkblue">📈 A股·港股</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#0f9d58;">🔥 热门个股</strong>
+    <ul>
+      <li><strong>亨通光电（SH600487）</strong> — 拟定增募资<strong>66.36亿元</strong>，投向光通信与能源互联，当日股价下跌3.66%至67.38元，市值约1662亿 <span class="source">（东方财富）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#0f9d58;">📊 机构观点</strong>
+    <ul>
+      <li><strong>李蓓最新发声</strong> — 地产机会升至"二十年一遇"，AI可能还有"第二波下跌"，中国消费股"遍地是黄金" <span class="source">（东方财富）</span></li>
+      <li><strong>英维克/曙光数创/高澜</strong> — 液冷集成商赛道持续受到市场关注</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 利通科技（839167） -->
+<div class="section">
+  <div class="section-title gray">🏢 利通科技（839167）</div>
+  <ul>
+    <li><strong>赛道持续受益</strong> — AI算力基建加速+液冷渗透率政策要求100%，液冷管需求长期向好 <span class="source">（行业分析）</span></li>
+    <li><strong>北交所流动性</strong> — 关注北交所政策红利释放对利通这类细分龙头的影响</li>
+    <li><strong>竞争格局</strong> — 英维克、曙光数创、高澜股份等集成商扩产，液冷管路国产替代加速</li>
+  </ul>
+  <div class="highlight">
+    <strong>💡 机会提示</strong><br>
+    吉利AI充电技术若量产，新能源汽车液冷管路需求或进一步扩大，利通作为潜在供应商值得持续跟踪。
+  </div>
+</div>
+
+<!-- 战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 战略预警 / 机会提示</div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    1. 亨通光电66亿定增资金用途及光互联业务进展<br>
+    2. 吉利AI充电技术量产时间表及其对液冷超充桩的拉动<br>
+    3. 液冷管路国产替代进度及利通科技的订单突破情况
+  </div>
+</div>
+
+</body>
+</html>
