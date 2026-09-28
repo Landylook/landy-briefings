@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-09-29",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "苹果市值突破5万亿美元 · 英伟达追加回购1500亿美元 · Meta AI个人智能体Muse表现超预期",
+    "tags": [
+      "ai",
+      "stock",
+      "energy"
+    ],
+    "file": "reports/2026-09-29.html"
+  },
+  {
     "date": "2026-09-28",
     "title": "AI研究员--Landy葉的简报",
     "desc": "Meta AI战略见效 · AI代理安全隐患暴露 · OpenAI模型迭代加速",
