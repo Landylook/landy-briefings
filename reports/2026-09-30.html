@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年9月30日</title>
+<style>
+  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; color: #222; line-height: 1.8; font-size: 15px; }
+  h1 { font-size: 22px; font-weight: bold; margin-bottom: 6px; color: #111; }
+  .date { color: #888; font-size: 14px; margin-bottom: 28px; border-bottom: 1px solid #eee; padding-bottom: 18px; }
+  .section { margin-bottom: 28px; }
+  .section-title { font-size: 16px; font-weight: bold; color: #111; margin-bottom: 12px; padding-bottom: 6px; border-bottom: 2px solid #222; }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+  ul { margin: 0; padding-left: 20px; }
+  li { margin-bottom: 8px; }
+  li strong { font-weight: 600; }
+  .source { color: #888; font-size: 12px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 8px; }
+  th { background: #f5f5f5; text-align: left; padding: 8px 10px; border: 1px solid #ddd; font-weight: 600; }
+  td { padding: 8px 10px; border: 1px solid #ddd; vertical-align: top; }
+  .highlight { background: #fff8e1; padding: 12px 16px; border-left: 4px solid #f9a825; margin-top: 10px; font-size: 14px; }
+  .warning { background: #fce8e6; padding: 12px 16px; border-left: 4px solid #ea4335; margin-top: 10px; font-size: 14px; }
+  .back-button { display: inline-flex; align-items: center; color: #1a73e8; text-decoration: none; font-size: 14px; font-weight: 500; margin-bottom: 20px; padding: 8px 12px; border-radius: 4px; transition: background-color 0.2s; }
+  .back-button:hover { background-color: #f5f5f5; }
+  .back-button span { margin-right: 6px; }
+  @media (max-width: 768px) { body { margin: 20px auto; padding: 16px; font-size: 16px; line-height: 1.9; } h1 { font-size: 20px; } .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; } .section { margin-bottom: 24px; } .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; } ul { padding-left: 24px; } li { margin-bottom: 10px; } }
+</style>
+</head>
+<body>
+<div><a href="/landy-briefings/" class="back-button"><span>←</span> 返回简报列表</a></div>
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年9月30日</div>
+
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>AI三足鼎立</strong> — Meta Muse爆发超越ChatGPT早期数据，Anthropic Opus 5.5与OpenAI GPT-6同日对决 <span class="source">（TechCrunch）</span></li>
+    <li><strong>欧洲车市里程碑</strong> — 8月欧洲电气化份额首超50%，中国品牌份额升至<strong>11.7%</strong> <span class="source">（第一电动）</span></li>
+    <li><strong>液冷景气持续</strong> — GPU功耗从H100 700W向Rubin 1800W+跃升，液冷从可选变强制 <span class="source">（行业数据）</span></li>
+    <li><strong>华为系发力</strong> — 问界新M8全系<strong>800V+后轮转向</strong>，预售38.98万起 <span class="source">（第一电动）</span></li>
+  </ul>
+</div>
+
+<div class="section">
+  <div class="section-title lightblue">🤖 一、大势研判</div>
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">📈 行业数据</strong>
+    <ul>
+      <li>英伟达Rubin架构GPU功耗突破<strong>1800W+</strong>，液冷渗透率从可选变强制要求</li>
+      <li>工信部要求新建智算中心液冷渗透率<strong>100%</strong></li>
+      <li>储能行业液冷渗透率达<strong>92.7%</strong></li>
+      <li>液冷超充桩2026年国内需求预计<strong>破百万根</strong></li>
+    </ul>
+  </div>
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">⚡ 政策动态</strong>
+    <ul>
+      <li>新能源汽车购置税减免延续，800V平台车型成主流</li>
+      <li>智算中心PUE强制红线推进液冷集成商扩产</li>
+    </ul>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title orange">💧 二、液冷管赛道情报</div>
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🏭 竞争格局</strong>
+    <ul>
+      <li>英维克稳居液冷集成商第一，智算中心订单饱满</li>
+      <li>高澜股份储能液冷份额领先，海外市场持续突破</li>
+      <li>曙光数创浸没式液冷技术领先，受益于政策强制要求</li>
+    </ul>
+  </div>
+  <div style="margin-left:12px;">
+    <strong style="color:#e87020;">📦 客户与订单</strong>
+    <ul>
+      <li>运营商与互联网大厂智算中心建设加速，液冷管路国产化加速</li>
+      <li>利通科技（839167）液冷软管订单稳定，储能+超充双轮驱动</li>
+    </ul>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title green">🔋 三、下游应用战场</div>
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🖥️ 数据中心/算力中心</strong>
+    <ul>
+      <li>运营商集采智算中心项目密集落地，液冷集成商充分受益</li>
+      <li>华为、浪潮、昆仑技术集成订单持续释放</li>
+    </ul>
+  </div>
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🔋 储能行业</strong>
+    <ul>
+      <li>大储项目持续落地，液冷温控渗透率<strong>92.7%</strong>维持高位</li>
+      <li>电芯成本下探，储能系统集成商利润空间改善</li>
+    </ul>
+  </div>
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🚗 新能源汽车</strong>
+    <ul>
+      <li>8月欧洲车市：电气化份额首超<strong>50%</strong>，中国品牌份额升至<strong>11.7%</strong> <span class="source">（第一电动）</span></li>
+      <li>问界新M8全系800V+后轮转向，预售38.98万起，智能化竞争升维</li>
+      <li>比亚迪海鸥入门纯电持续下探价格底线</li>
+      <li>丰田8月在华销量同比大跌<strong>23%</strong>，竞争压力加剧</li>
+    </ul>
+  </div>
+  <div style="margin-left:12px;">
+    <strong style="color:#34a853;">⚡ 液冷超充桩</strong>
+    <ul>
+      <li>单枪600kW~1.5MW超充桩加速落地，液冷管路需求爆发</li>
+      <li>2026年国内液冷超充桩需求预计<strong>破百万根</strong></li>
+    </ul>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title purple">📡 四、集成商动态（渠道情报）</div>
+  <table>
+    <tr><th style="width:18%">企业</th><th>核心进展</th></tr>
+    <tr><td><strong>英维克</strong></td><td>液冷集成商龙头，智算中心订单饱满，产能扩张中</td></tr>
+    <tr><td><strong>曙光数创</strong></td><td>浸没式液冷技术领先，受益于PUE强制要求</td></tr>
+    <tr><td><strong>高澜股份</strong></td><td>储能液冷份额领先，海外市场持续突破</td></tr>
+    <tr><td><strong>申菱环境</strong></td><td>数据中心温控业务稳健，液冷产品逐步放量</td></tr>
+    <tr><td><strong>巨化股份</strong></td><td>冷却液国产化加速，液冷管路上游原材料布局</td></tr>
+  </table>
+</div>
+
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#0f9d58; color:#0f9d58;">📈 五、二级市场 & 资本动向</div>
+  <ul>
+    <li>液冷概念板块持续获资金关注，景气度向好 <span class="source">（行业观察）</span></li>
+    <li>北交所流动性改善，利通科技（839167）关注度提升</li>
+  </ul>
+</div>
+
+<div class="section">
+  <div class="section-title gray">🏢 六、利通科技（839167）动态</div>
+  <ul>
+    <li>液冷软管四大赛道（智算/储能/新能源车/超充）持续景气</li>
+    <li>GPU功耗跃升+政策强制要求+国产替代三重逻辑共振</li>
+    <li>储能液冷渗透率维持高位，超充桩需求爆发提供增量</li>
+  </ul>
+</div>
+
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 七、战略预警 / 机会提示</div>
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    欧洲车市中国品牌份额升至11.7%，欧洲电气化超50%——液冷超充配套需求共振。问界新M8全系800V平台发布，热管理升级利好液冷管路。
+  </div>
+</div>
+
+</body>
+</html>
