@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年10月12日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 { font-size: 20px; }
+    .date { font-size: 15px; margin-bottom: 24px; padding-bottom: 16px; }
+    .section { margin-bottom: 24px; }
+    .section-title { font-size: 17px; margin-bottom: 14px; padding-bottom: 8px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 10px; }
+    table { font-size: 15px; }
+    th, td { padding: 10px 12px; }
+    .highlight, .warning { padding: 14px 18px; font-size: 15px; }
+    .back-button { font-size: 15px; padding: 10px 14px; margin-bottom: 16px; }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body { max-width: 90%; margin: 30px auto; padding: 24px; }
+    h1 { font-size: 21px; }
+  }
+  @media (max-width: 480px) {
+    body { margin: 12px auto; padding: 12px; font-size: 17px; }
+    h1 { font-size: 19px; }
+    .date { font-size: 14px; }
+    .section-title { font-size: 18px; }
+    table { font-size: 14px; display: block; overflow-x: auto; }
+  }
+  @media (min-width: 1200px) {
+    body { max-width: 900px; }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年10月12日 · 农历九月初十 · 周一</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>地缘风险升温</strong> — 中东局势持续紧张，能源市场波动加剧 <span class="source">（The Verge）</span></li>
+    <li><strong>AI硬件军备竞赛</strong> — 微软发布RTX Spark笔记本，Maia 300芯片2027年量产 <span class="source">（The Verge）</span></li>
+    <li><strong>液冷需求刚性</strong> — 芯片功耗持续攀升（H100 700W→Rubin 1800W+），液冷从可选变强制 <span class="source">（行业观察）</span></li>
+    <li><strong>摄像头安全风险</strong> — 全球12亿联网摄像头被黑客利用于军事监控 <span class="source">（The Verge）</span></li>
+    <li><strong>任天堂确认</strong> — 不会放弃实体游戏，physical games战略延续 <span class="source">（The Verge）</span></li>
+  </ul>
+</div>
+
+<!-- 地缘·中东 -->
+<div class="section">
+  <div class="section-title lightblue">🌍 地缘·中东</div>
+  <ul>
+    <li><strong>伊朗通过鸡笼摄像头监控以色列</strong> — 黑客利用民用摄像头（全球约12亿台）进行军事侦察，物联网设备安全漏洞成关键风险 <span class="source">（The Verge）</span></li>
+    <li><strong>乌克兰通过建筑监控系统追踪俄罗斯潜艇</strong> — 商用监控设备被军事化利用 <span class="source">（The Verge）</span></li>
+    <li><strong>能源供应扰动预期升温</strong> — 地缘紧张局势叠加冬季来临，欧洲与亚洲能源安全关注度提升 <span class="source">（行业观察）</span></li>
+  </ul>
+</div>
+
+<!-- AI·科技 -->
+<div class="section">
+  <div class="section-title green">🤖 AI·科技</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🖥️ 硬件新品</strong>
+    <ul>
+      <li><strong>微软Surface Laptop Ultra</strong> — 搭载RTX Spark显卡，正在测试中，预计近期发布，剑指AI PC市场 <span class="source">（The Verge）</span></li>
+      <li><strong>AMD Maia 300芯片</strong> — 2027年开始量产AI工作负载，定位中端市场 <span class="source">（The Verge）</span></li>
+      <li><strong>Google Pixel Watch + Apple Watch融合定位</strong> — 中端智能手表结合Air简洁性与Pixel健康功能 <span class="source">（The Verge）</span></li>
+      <li><strong>CMF模块化音箱</strong> — 支持3D打印自定义面板和旋钮 <span class="source">（The Verge）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">📡 产业动态</strong>
+    <ul>
+      <li><strong>Fitbit旧版绕过强制迁移关闭</strong> — Google强制用户迁移至Google Health，第三方健康数据平台空间受挤压 <span class="source">（The Verge）</span></li>
+      <li><strong>任天堂重申实体游戏战略</strong> — 高管确认"无放弃实体游戏计划"，游戏行业渠道博弈持续 <span class="source">（The Verge）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#34a853;">🔐 安全警示</strong>
+    <ul>
+      <li><strong>12亿联网摄像头成为攻击跳板</strong> — 黑客通过不安全摄像头监控军事目标，企业需重新评估IoT安全边界 <span class="source">（The Verge）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- A股·港股 -->
+<div class="section">
+  <div class="section-title darkblue">📈 A股·港股</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#0f9d58;">💧 液冷赛道</strong>
+    <ul>
+      <li><strong>英维克</strong> — 液冷温控龙头，受益智算中心液冷渗透率强制要求</li>
+      <li><strong>曙光数创</strong> — 浸没式液冷核心供应商，订单持续释放</li>
+      <li><strong>高澜股份</strong> — 数据中心热管理布局加速</li>
+      <li><strong>申菱环境</strong> — 液冷产品已实现规模交付</li>
+      <li><strong>巨化股份</strong> — 冷却液国产替代核心标的</li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#0f9d58;">📊 液冷行业催化剂</strong>
+    <ul>
+      <li>工信部要求<strong>新建智算中心液冷渗透率100%</strong></li>
+      <li>H100 GPU功耗<strong>700W</strong>→Rubin芯片功耗<strong>1800W+</strong>，风冷接近物理极限</li>
+      <li>储能行业液冷渗透率达<strong>92.7%</strong>，示范效应显著</li>
+      <li>800V高压平台车型密集上市，热管理升级需求明确</li>
+      <li>液冷超充桩单枪功率<strong>600kW~1.5MW</strong>，2026年国内需求预计破百万根</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 利通科技 -->
+<div class="section">
+  <div class="section-title gray">🏢 利通科技（839167）动态</div>
+  <ul>
+    <li><strong>核心逻辑不变</strong> — 北交所液冷管细分龙头，充分受益AI算力基建+储能+新能源三重景气叠加 <span class="source">（自营研究）</span></li>
+    <li><strong>竞争格局</strong> — 液冷管路国产替代加速，利通技术积累深厚，具备先发优势 <span class="source">（行业观察）</span></li>
+    <li><strong>四大下游景气</strong> — 数据中心（算力） / 储能（大储92.7%液冷渗透）/ 新能源汽车（800V热管理）/ 液冷超充桩 <span class="source">（行业研究）</span></li>
+    <li><strong>北交所流动性</strong> — 关注北交所政策红利与流动性改善带来的估值修复机会 <span class="source">（市场观察）</span></li>
+  </ul>
+</div>
+
+<!-- 战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 战略预警 / 机会提示</div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    · 液冷超充桩标准制定进展（百万根需求缺口）<br>
+    · 英维克/曙光数创等集成商订单释放节奏<br>
+    · 工信部智算中心液冷强制标准细化执行时间表<br>
+    · Rubin芯片量产节奏（1800W+功耗将加速液冷替代）
+  </div>
+
+  <div class="warning">
+    <strong>🔴 关注变量</strong><br>
+    · 地缘风险对能源价格的扰动（冷却液成本端）<br>
+    · 北交所流动性边际变化<br>
+    · 竞争者扩产节奏（关注高澜、申菱产能投放）
+  </div>
+</div>
+
+</body>
+</html>
