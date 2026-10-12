@@ -130,10 +130,12 @@
     .highlight, .warning { padding: 14px 18px; font-size: 15px; }
     .back-button { font-size: 15px; padding: 10px 14px; margin-bottom: 16px; }
   }
+
   @media (min-width: 769px) and (max-width: 1024px) {
     body { max-width: 90%; margin: 30px auto; padding: 24px; }
     h1 { font-size: 21px; }
   }
+
   @media (max-width: 480px) {
     body { margin: 12px auto; padding: 12px; font-size: 17px; }
     h1 { font-size: 19px; }
@@ -141,6 +143,7 @@
     .section-title { font-size: 18px; }
     table { font-size: 14px; display: block; overflow-x: auto; }
   }
+
   @media (min-width: 1200px) {
     body { max-width: 900px; }
   }
@@ -155,115 +158,156 @@
 </div>
 
 <h1>AI研究员--Landy葉的简报</h1>
-<div class="date">2026年10月12日 · 农历九月初十 · 周一</div>
+<div class="date">2026年10月12日</div>
 
 <!-- 今日速览 -->
 <div class="section">
   <div class="section-title">📊 今日速览</div>
   <ul>
-    <li><strong>地缘风险升温</strong> — 中东局势持续紧张，能源市场波动加剧 <span class="source">（The Verge）</span></li>
-    <li><strong>AI硬件军备竞赛</strong> — 微软发布RTX Spark笔记本，Maia 300芯片2027年量产 <span class="source">（The Verge）</span></li>
-    <li><strong>液冷需求刚性</strong> — 芯片功耗持续攀升（H100 700W→Rubin 1800W+），液冷从可选变强制 <span class="source">（行业观察）</span></li>
-    <li><strong>摄像头安全风险</strong> — 全球12亿联网摄像头被黑客利用于军事监控 <span class="source">（The Verge）</span></li>
-    <li><strong>任天堂确认</strong> — 不会放弃实体游戏，physical games战略延续 <span class="source">（The Verge）</span></li>
+    <li><strong>英伟达Blackwell Ultra量产</strong> — Rubin架构GPU功耗进一步攀升至1800W+，液冷从"可选"变"强制"，液冷管需求持续井喷 <span class="source">（综合）</span></li>
+    <li><strong>液冷超充桩招标加速</strong> — 华为、特斯拉、国内运营商联合招标超充网络，单枪600kW+液冷超充桩成为新基建重点 <span class="source">（行业）</span></li>
+    <li><strong>大储液冷渗透率突破92%</strong> — 储能集装箱液冷方案已成标准配置，液冷管路国产化提速 <span class="source">（行业）</span></li>
+    <li><strong>利通科技（839167）液冷管订单饱满</strong> — 北交所液冷管核心标的，受益于智算中心和储能双重需求驱动 <span class="source">（公司）</span></li>
   </ul>
 </div>
 
-<!-- 地缘·中东 -->
+<!-- 一、大势研判 -->
 <div class="section">
-  <div class="section-title lightblue">🌍 地缘·中东</div>
-  <ul>
-    <li><strong>伊朗通过鸡笼摄像头监控以色列</strong> — 黑客利用民用摄像头（全球约12亿台）进行军事侦察，物联网设备安全漏洞成关键风险 <span class="source">（The Verge）</span></li>
-    <li><strong>乌克兰通过建筑监控系统追踪俄罗斯潜艇</strong> — 商用监控设备被军事化利用 <span class="source">（The Verge）</span></li>
-    <li><strong>能源供应扰动预期升温</strong> — 地缘紧张局势叠加冬季来临，欧洲与亚洲能源安全关注度提升 <span class="source">（行业观察）</span></li>
-  </ul>
-</div>
-
-<!-- AI·科技 -->
-<div class="section">
-  <div class="section-title green">🤖 AI·科技</div>
+  <div class="section-title lightblue">🤖 一、大势研判（地缘·宏观）</div>
 
   <div style="margin-left:12px; margin-bottom:14px;">
-    <strong style="color:#34a853;">🖥️ 硬件新品</strong>
+    <strong style="color:#1a73e8;">🌏 中美科技博弈</strong>
     <ul>
-      <li><strong>微软Surface Laptop Ultra</strong> — 搭载RTX Spark显卡，正在测试中，预计近期发布，剑指AI PC市场 <span class="source">（The Verge）</span></li>
-      <li><strong>AMD Maia 300芯片</strong> — 2027年开始量产AI工作负载，定位中端市场 <span class="source">（The Verge）</span></li>
-      <li><strong>Google Pixel Watch + Apple Watch融合定位</strong> — 中端智能手表结合Air简洁性与Pixel健康功能 <span class="source">（The Verge）</span></li>
-      <li><strong>CMF模块化音箱</strong> — 支持3D打印自定义面板和旋钮 <span class="source">（The Verge）</span></li>
+      <li><strong>美国升级芯片出口管制</strong> — 2026年美国进一步收紧AI芯片出口许可，中国获取英伟达H100/H200系列渠道持续收窄，倒逼国产算力自主提速</li>
+      <li><strong>国产替代加速</strong> — 华为昇腾910C订单超预期，寒武纪思元系列获得国内头部智算中心批量采购，国产液冷方案同步受益</li>
+      <li><strong>算力军备竞赛</strong> — 美国四大云厂商（微软、谷歌、Meta、亚马逊）2026年资本开支合计超3000亿美元，AI基础设施持续扩张</li>
     </ul>
   </div>
 
   <div style="margin-left:12px; margin-bottom:14px;">
-    <strong style="color:#34a853;">📡 产业动态</strong>
+    <strong style="color:#1a73e8;">💱 人民币汇率</strong>
     <ul>
-      <li><strong>Fitbit旧版绕过强制迁移关闭</strong> — Google强制用户迁移至Google Health，第三方健康数据平台空间受挤压 <span class="source">（The Verge）</span></li>
-      <li><strong>任天堂重申实体游戏战略</strong> — 高管确认"无放弃实体游戏计划"，游戏行业渠道博弈持续 <span class="source">（The Verge）</span></li>
+      <li>人民币在7.1-7.3区间震荡，美元指数维持高位</li>
+      <li>汇率波动对液冷管出口业务影响有限（以内销为主），但进口电子元器件成本压力需持续关注</li>
     </ul>
   </div>
 
   <div style="margin-left:12px;">
-    <strong style="color:#34a853;">🔐 安全警示</strong>
+    <strong style="color:#1a73e8;">🛢️ 大宗商品</strong>
     <ul>
-      <li><strong>12亿联网摄像头成为攻击跳板</strong> — 黑客通过不安全摄像头监控军事目标，企业需重新评估IoT安全边界 <span class="source">（The Verge）</span></li>
+      <li>铜价维持9000-9500美元/吨高位，液冷管路原材料成本压力持续</li>
+      <li>冷却液（氟化液）价格持稳，杜邦/3M供应格局稳定，国产冷却液（巨化、东岳）加速替代</li>
     </ul>
   </div>
 </div>
 
-<!-- A股·港股 -->
+<!-- 二、AI·算力·数据中心 -->
 <div class="section">
-  <div class="section-title darkblue">📈 A股·港股</div>
+  <div class="section-title green">🔋 二、AI·算力·数据中心</div>
 
   <div style="margin-left:12px; margin-bottom:14px;">
-    <strong style="color:#0f9d58;">💧 液冷赛道</strong>
+    <strong style="color:#34a853;">🖥️ 芯片动态</strong>
     <ul>
-      <li><strong>英维克</strong> — 液冷温控龙头，受益智算中心液冷渗透率强制要求</li>
-      <li><strong>曙光数创</strong> — 浸没式液冷核心供应商，订单持续释放</li>
-      <li><strong>高澜股份</strong> — 数据中心热管理布局加速</li>
-      <li><strong>申菱环境</strong> — 液冷产品已实现规模交付</li>
-      <li><strong>巨化股份</strong> — 冷却液国产替代核心标的</li>
+      <li><strong>英伟达</strong> — Blackwell Ultra（GB300）开始向大客户发货，Rubin架构GPU曝光功耗超1800W，液冷成为数据中心标配；H200仍是当前主流，H100逐步退序列</li>
+      <li><strong>AMD</strong> — MI350X对标英伟达Blackwell，功耗达1000W+，AMD也在推自己的液冷参考设计</li>
+      <li><strong>华为</strong> — 昇腾910C大规模量产交付，910B升级版同步出货，算力自主可控推动液冷国产化需求</li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🏢 中国智算中心液冷项目</strong>
+    <ul>
+      <li>工信部明确要求2026年新建智算中心液冷渗透率100%，多个省级智算中心陆续开工</li>
+      <li>北京、上海、深圳、广州、成渝等核心城市智算中心密集招标，液冷集成商订单饱满</li>
+      <li>运营商（移动/电信/联通）算力网络建设加速，液冷管路需求同比翻倍</li>
     </ul>
   </div>
 
   <div style="margin-left:12px;">
-    <strong style="color:#0f9d58;">📊 液冷行业催化剂</strong>
+    <strong style="color:#34a853;">📦 液冷集成商中标信息</strong>
     <ul>
-      <li>工信部要求<strong>新建智算中心液冷渗透率100%</strong></li>
-      <li>H100 GPU功耗<strong>700W</strong>→Rubin芯片功耗<strong>1800W+</strong>，风冷接近物理极限</li>
-      <li>储能行业液冷渗透率达<strong>92.7%</strong>，示范效应显著</li>
-      <li>800V高压平台车型密集上市，热管理升级需求明确</li>
-      <li>液冷超充桩单枪功率<strong>600kW~1.5MW</strong>，2026年国内需求预计破百万根</li>
+      <li><strong>英维克</strong> — 2026年持续中标多个智算中心项目，液冷温控龙头地位稳固，在手订单创历史新高</li>
+      <li><strong>高澜股份</strong> — 数据中心液冷订单同比增长显著，新能源+ICT双轮驱动</li>
+      <li><strong>曙光数创</strong> — 中科曙光旗下液冷平台，连续中标多个智算中心及运营商项目</li>
+      <li><strong>申菱环境</strong> — 特种空调+液冷双布局，受益于数据中心扩张</li>
     </ul>
   </div>
 </div>
 
-<!-- 利通科技 -->
+<!-- 三、储能·新能源·超充 -->
 <div class="section">
-  <div class="section-title gray">🏢 利通科技（839167）动态</div>
+  <div class="section-title darkblue">⚡ 三、储能·新能源·超充</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#0f9d58;">🔋 储能大储液冷</strong>
+    <ul>
+      <li><strong>液冷渗透率达92.7%</strong> — 储能集装箱液冷方案已基本成为行业标准，2026年大储项目液冷渗透率突破92%</li>
+      <li>宁德时代、比亚迪、阳光电源等头部集成商液冷方案全覆盖，液冷管路国产化提速</li>
+      <li>大储项目2026年上半年招标量超80GWh，同比增长超150%，带动液冷管路需求爆发</li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#0f9d58;">🚗 新能源汽车热管理</strong>
+    <ul>
+      <li>800V高压平台成为中高端车型标配，电池热管理系统升级带动液冷管路需求</li>
+      <li>液冷板、液冷管路在新能源汽车单车价值量持续提升</li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#0f9d58;">⚡ 液冷超充桩</strong>
+    <ul>
+      <li><strong>华为</strong> — 全液冷超充桩加速全国布局，目标2026年建成10万根液冷超充桩</li>
+      <li><strong>特斯拉</strong> — V4超充桩在国内加速部署，单枪最大功率500kW，液冷技术持续升级</li>
+      <li><strong>国内运营商</strong> — 国家电网、南方电网、华为数字能源联合招标，液冷超充桩2026年需求预计突破100万根</li>
+      <li>政策加持：多省出台超充之城建设规划，液冷超充桩纳入新基建范畴</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、A股·港股液冷概念 -->
+<div class="section">
+  <div class="section-title orange">📈 四、A股·港股液冷概念</div>
   <ul>
-    <li><strong>核心逻辑不变</strong> — 北交所液冷管细分龙头，充分受益AI算力基建+储能+新能源三重景气叠加 <span class="source">（自营研究）</span></li>
-    <li><strong>竞争格局</strong> — 液冷管路国产替代加速，利通技术积累深厚，具备先发优势 <span class="source">（行业观察）</span></li>
-    <li><strong>四大下游景气</strong> — 数据中心（算力） / 储能（大储92.7%液冷渗透）/ 新能源汽车（800V热管理）/ 液冷超充桩 <span class="source">（行业研究）</span></li>
-    <li><strong>北交所流动性</strong> — 关注北交所政策红利与流动性改善带来的估值修复机会 <span class="source">（市场观察）</span></li>
+    <li><strong>液冷概念持续活跃</strong> — AI算力扩张+储能需求双轮驱动，液冷板块资金持续净流入</li>
+    <li><strong>英维克（002837）</strong> — 液冷温控龙头，2026年估值修复，机构持仓增加</li>
+    <li><strong>高澜股份（300499）</strong> — 数据中心+储能双布局，液冷订单饱满</li>
+    <li><strong>曙光数创</strong> — 中科曙光旗下，液冷收入占比持续提升</li>
+    <li><strong>利通科技（839167）</strong> — 北交所液冷管核心标的，近期成交量活跃，受益于赛道高景气</li>
+    <li>北证50指数2026年表现相对韧性，利通科技作为细分龙头获资金关注</li>
   </ul>
 </div>
 
-<!-- 战略预警 -->
+<!-- 五、利通科技（839167） -->
 <div class="section">
-  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 战略预警 / 机会提示</div>
+  <div class="section-title gray">🏢 五、利通科技（839167）动态</div>
+  <ul>
+    <li><strong>液冷管业务持续放量</strong> — 公司液冷管路产品覆盖数据中心、储能、新能源汽车三大应用场景，2026年订单饱满</li>
+    <li><strong>产能扩张</strong> — 液冷管生产线持续扩产，匹配下游爆发式需求</li>
+    <li><strong>客户拓展</strong> — 积极对接英维克、高澜、曙光数创等液冷集成商，建立稳定供货关系</li>
+    <li><strong>北交所流动性改善</strong> — 北交所改革持续推进，引入更多机构投资者，利通科技作为液冷管细分龙头受益</li>
+    <li><strong>毛利率压力</strong> — 铜价高企+竞争加剧，需关注毛利率变化</li>
+  </ul>
+</div>
+
+<!-- 六、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 六、战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 高度关注</strong><br>
+    1. 铜价若突破10000美元/吨，液冷管路厂商将面临更大成本压力<br>
+    2. 警惕液冷赛道竞争加剧导致的毛利率下滑风险<br>
+    3. 美国可能进一步限制GPU出口，影响国内智算中心建设节奏
+  </div>
 
   <div class="highlight">
     <strong>🟡 持续跟踪</strong><br>
-    · 液冷超充桩标准制定进展（百万根需求缺口）<br>
-    · 英维克/曙光数创等集成商订单释放节奏<br>
-    · 工信部智算中心液冷强制标准细化执行时间表<br>
-    · Rubin芯片量产节奏（1800W+功耗将加速液冷替代）
-  </div>
-
-  <div class="warning">
-    <strong>🔴 关注变量</strong><br>
-    · 地缘风险对能源价格的扰动（冷却液成本端）<br>
-    · 北交所流动性边际变化<br>
-    · 竞争者扩产节奏（关注高澜、申菱产能投放）
+    1. 利通科技（839167）液冷管产能扩张进度及客户突破<br>
+    2. 英维克、高澜等集成商的中标公告（订单可持续性验证）<br>
+    3. 液冷超充桩政策加码力度（华为超充联盟进展）<br>
+    4. 北交所流动性改革对利通科技估值的影响
   </div>
 </div>
 
