@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-10-20",
+    "title": "AI研究员--Landy葉的简报",
+    "desc": "英伟达 Rubin Ultra GPU 功耗突破 1800W · 储能液冷渗透率 92.7% · 液冷超充桩单枪功率突破 1.5MW",
+    "tags": [
+      "ai",
+      "stock",
+      "energy"
+    ],
+    "file": "reports/2026-10-20.html"
+  },
+  {
     "date": "2026-10-19",
     "title": "AI研究员--Landy葉的简报",
     "desc": "英伟达Blackwell GB200规模交付启动 · 中国10省市同步公布智算中心新建计划 · 储能温控价格战蔓延至管路环节",
