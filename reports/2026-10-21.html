@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年10月21日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 {
+      font-size: 20px;
+    }
+    .date {
+      font-size: 15px;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+    }
+    .section {
+      margin-bottom: 24px;
+    }
+    .section-title {
+      font-size: 17px;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+    }
+    ul {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    table {
+      font-size: 15px;
+    }
+    th, td {
+      padding: 10px 12px;
+    }
+    .highlight, .warning {
+      padding: 14px 18px;
+      font-size: 15px;
+    }
+    .back-button {
+      font-size: 15px;
+      padding: 10px 14px;
+      margin-bottom: 16px;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body {
+      max-width: 90%;
+      margin: 30px auto;
+      padding: 24px;
+    }
+    h1 {
+      font-size: 21px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    body {
+      margin: 12px auto;
+      padding: 12px;
+      font-size: 17px;
+    }
+    h1 {
+      font-size: 19px;
+    }
+    .date {
+      font-size: 14px;
+    }
+    .section-title {
+      font-size: 18px;
+    }
+    table {
+      font-size: 14px;
+      display: block;
+      overflow-x: auto;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    body {
+      max-width: 900px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年10月21日（周二）</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>地缘·宏观</strong> — 中东局势持续紧张，原油价格高位震荡；美联储降息预期降温，美元走强压制风险资产。 <span class="source">（综合）</span></li>
+    <li><strong>AI·算力·数据中心</strong> — 英伟达Blackwell GPU产能持续爬坡，GB200 NVL72订单超预期；国内智算中心液冷渗透率政策加码。 <span class="source">（产业调研）</span></li>
+    <li><strong>储能·新能源·超充</strong> — 大储项目液冷渗透率维持高位，华为液冷超充桩中标多个省份项目。 <span class="source">（公开资料）</span></li>
+    <li><strong>A股·港股</strong> — A股成交有所回暖，液冷/算力板块有所分化；港股科技股承压。 <span class="source">（市场数据）</span></li>
+    <li><strong>利通科技839167</strong> — 暂无重大公开信息，建议持续关注北交所液冷管相关招标动态。 <span class="source">（公开资料）</span></li>
+  </ul>
+</div>
+
+<!-- 一、大势研判 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 一、地缘·宏观</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">🌍 地缘政治</strong>
+    <ul>
+      <li><strong>中东局势</strong> — 以色列与伊朗紧张关系持续，地缘风险溢价支撑原油高位震荡，布伦特原油维持在80美元/桶上方。 <span class="source">（Bloomberg）</span></li>
+      <li><strong>俄乌局势</strong> — 俄乌冲突持续，欧洲能源危机预期有所缓解但冬季供暖压力仍存，LNG价格相对平稳。 <span class="source">（路透）</span></li>
+      <li><strong>台海局势</strong> — 南海局势略有升温，但未出现重大升级信号，市场情绪相对稳定。 <span class="source">（综合）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">💰 宏观政策</strong>
+    <ul>
+      <li><strong>美联储</strong> — 美联储官员密集发声，9月降息后市场降息预期降温，美元指数走强至104上方，压制全球风险资产。 <span class="source">（CME FedWatch）</span></li>
+      <li><strong>中国宏观</strong> — 国内财政政策持续发力，专项债发行提速，四季度有望继续出台稳增长措施。 <span class="source">（新华社）</span></li>
+      <li><strong>人民币汇率</strong> — 美元强势下人民币承压，在岸 USD/CNY 维持在7.1-7.2 区间波动。 <span class="source">（外汇交易中心）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">📊 大宗商品</strong>
+    <ul>
+      <li><strong>铜价</strong> — 伦铜维持在9500美元/吨附近，AI基建需求长期利好，但短期受美元压制。 <span class="source">（LME）</span></li>
+      <li><strong>原油</strong> — 布伦特原油约82美元/桶，地缘溢价持续。 <span class="source">（ICE）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 二、AI·算力·数据中心 -->
+<div class="section">
+  <div class="section-title orange">💧 二、AI·算力·数据中心</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🖥️ 算力需求</strong>
+    <ul>
+      <li><strong>英伟达Blackwell</strong> — GB200 NVL72订单持续超预期，Meta、Google、微软等云厂商2026年采购量预计同比增长50%以上；H200向Rubin过渡加速。 <span class="source">（The Information）</span></li>
+      <li><strong>国内算力</strong> — 华为昇腾910B/C持续出货，国产大模型训练需求旺盛；运营商智算中心建设提速，中国移动2026年智算算力目标大幅提升。 <span class="source">（IDC圈）</span></li>
+      <li><strong>算力租赁</strong> — 算力租赁价格持续分化，高性能算力（H100/GB200等价）租金维持高位，中低端算力价格有所松动。 <span class="source">（算力圈）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🏭 数据中心建设</strong>
+    <ul>
+      <li><strong>海外</strong> — 北美数据中心建设持续火热，凤凰城、达拉斯、盐湖城等地成为新建热点；ESG要求趋严，绿电采购成竞争焦点。 <span class="source">（Synergy Research）</span></li>
+      <li><strong>国内</strong> — 智算中心建设提速，工信部要求新建智算中心液冷渗透率100%；"东数西算"工程进入实质性推进阶段。 <span class="source">（工信部）</span></li>
+      <li><strong>液冷趋势</strong> — 芯片TDP持续攀升（Rubin单芯预计超1000W），液冷从"可选"变"强制"，冷板式液冷成为数据中心主流方案。 <span class="source">（Uptime Institute）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#e87020;">🔬 技术路线</strong>
+    <ul>
+      <li><strong>散热方案</strong> — 冷板式液冷+背门液冷组合方案成为大型数据中心标配；单相浸没式液冷技术逐步成熟。 <span class="source">（CDCC）</span></li>
+      <li><strong>液冷管路</strong> — 快插接头国产化加速，泄漏检测技术持续优化，运维智能化成为新竞争维度。 <span class="source">（行业调研）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、储能·新能源·超充 -->
+<div class="section">
+  <div class="section-title green">🔋 三、储能·新能源·超充</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🔋 储能行业</strong>
+    <ul>
+      <li><strong>大储</strong> — 2026年大储项目液冷渗透率维持92.7%高位；系统集成商竞争加剧，央国企主导格局稳固，阳光电源、华为数字能源领先。 <span class="source">（储能头条）</span></li>
+      <li><strong>工商储</strong> — 峰谷价差收窄压力下，工商储经济性承压，但配套负荷侧响应需求仍有增长。 <span class="source">（储能政策）</span></li>
+      <li><strong>海外储能</strong> — 美国大储项目并网加速，IRA补贴持续吸引力强；欧洲大储市场德国领跑。 <span class="source">（Woodmac）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🚗 新能源汽车</strong>
+    <ul>
+      <li><strong>国内市场</strong> — 新能源车渗透率持续提升，800V高压平台成为中高端车型标配，热管理系统升级需求明确。 <span class="source">（乘联会）</span></li>
+      <li><strong>热管理</strong> — 800V平台下电机/电池热管理复杂度提升，液冷管路用量增加，单车价值量提升约30-50%。 <span class="source">（行业调研）</span></li>
+      <li><strong>特斯拉</strong> — Cybertruck热泵系统持续迭代，快充性能优化中。 <span class="source">（公开资料）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#34a853;">⚡ 液冷超充桩</strong>
+    <ul>
+      <li><strong>华为液冷超充</strong> — 华为数字能源液冷超充桩中标四川、广东等多个省份项目，2026年国内需求预计突破百万根。 <span class="source">（各地公共资源交易中心）</span></li>
+      <li><strong>单枪功率</strong> — 液冷超充桩单枪功率持续提升，600kW-1.5MW产品陆续发布，对液冷管路需求明确。 <span class="source">（行业动态）</span></li>
+      <li><strong>运营商布局</strong> — 国家电网、南方电网、华为等加速超充网络建设，液冷超充进入规模化落地阶段。 <span class="source">（电网招标）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、集成商动态 -->
+<div class="section">
+  <div class="section-title purple">📡 四、集成商动态（渠道情报）</div>
+  <table>
+    <tr>
+      <th style="width:18%">企业</th>
+      <th>核心进展</th>
+    </tr>
+    <tr>
+      <td><strong>英维克</strong></td>
+      <td>液冷温控龙头，受益AI算力建设；数据中心温控订单饱满，海外业务持续拓展中。 <span class="source">（互动e）</span></td>
+    </tr>
+    <tr>
+      <td><strong>曙光数创</strong></td>
+      <td>中科曙光旗下液冷资产，浸没式液冷技术领先，持续服务智算中心项目。 <span class="source">（公司公告）</span></td>
+    </tr>
+    <tr>
+      <td><strong>高澜股份</strong></td>
+      <td>数据中心液冷订单稳定，新能源汽车热管理业务稳步推进。 <span class="source">（互动e）</span></td>
+    </tr>
+    <tr>
+      <td><strong>申菱环境</strong></td>
+      <td>专注数据服务环境领域，液冷温控产品持续出货，客户结构以运营商和大型互联网为主。 <span class="source">（公司公告）</span></td>
+    </tr>
+    <tr>
+      <td><strong>巨化股份</strong></td>
+      <td>冷却液国产化进度持续，氟化工龙头；液冷冷却液已向下游部分客户供货。 <span class="source">（公司公告）</span></td>
+    </tr>
+  </table>
+</div>
+
+<!-- 五、A股·港股 -->
+<div class="section">
+  <div class="section-title darkblue">📈 五、A股·港股</div>
+  <ul>
+    <li><strong>A股市场</strong> — 上证指数在3100点附近震荡，成交量有所回暖；液冷/算力板块走势分化，部分个股有所回调。 <span class="source">（Wind）</span></li>
+    <li><strong>液冷板块</strong> — 英维克、高澜股份等液冷标的近期有所调整，但长期逻辑不变，订单高景气持续。 <span class="source">（公开行情）</span></li>
+    <li><strong>港股科技</strong> — 港股科技股受美元强势压制，腾讯、阿里等震荡整固，南向资金小幅净流入。 <span class="source">（港交所）</span></li>
+    <li><strong>北交所</strong> — 北证50指数窄幅波动，利通科技（839167）成交量维持较低水平，换手率平稳。 <span class="source">（北交所）</span></li>
+    <li><strong>流动性</strong> — 两融余额维持在1.6万亿上方，市场情绪中性偏暖。 <span class="source">（Wind）</span></li>
+  </ul>
+</div>
+
+<!-- 六、利通科技 -->
+<div class="section">
+  <div class="section-title gray">🏢 六、利通科技（839167）动态</div>
+  <ul>
+    <li><strong>公司概况</strong> — 利通科技（839167）为北交所上市公司，主营液压胶管及总成，液冷管路为其新兴布局方向。 <span class="source">（公司公告）</span></li>
+    <li><strong>液冷管进展</strong> — 液冷管产品处于市场推广阶段，已有部分送样/测试，尚未形成批量订单；建议关注后续订单落地情况。 <span class="source">（行业调研）</span></li>
+    <li><strong>液冷赛道催化</strong> — 工信部要求新建智算中心液冷渗透率100%，液冷管路国产化需求明确，长期空间可观。 <span class="source">（政策文件）</span></li>
+    <li><strong>竞争格局</strong> — 液冷管路赛道仍以外资品牌为主，国产替代空间大；利通科技作为北交所标的，具备灵活机制优势。 <span class="source">（行业分析）</span></li>
+    <li><strong>近期注意</strong> — 暂无重大公开公告；建议关注北交所液冷相关招标信息及公司投资者关系动态。 <span class="source">（公开资料）</span></li>
+  </ul>
+</div>
+
+<!-- 七、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 七、战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 高度关注</strong><br>
+    <strong>1. 英伟达Rubin平台进展</strong> — Rubin单芯片TDP预计超1000W，液冷强制需求；关注Rubin量产时间线及对液冷管路需求的拉动。<br>
+    <strong>2. 华为液冷超充招标</strong> — 2026年国内液冷超充桩需求破百万根，华为系中标密集期，关注相关管路供应商准入机会。
+  </div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    <strong>1. 液冷管国产替代进度</strong> — 快插接头、冷却液等关键材料国产化进展，利通科技能否切入主流集成商供应链。<br>
+    <strong>2. 北交所液冷相关招标</strong> — 关注三大运营商、华为系集成商液冷管路招标信息。<br>
+    <strong>3. 储能大储并网数据</strong> — 2026年大储并网量预期超80GWh，液冷渗透率维持高位，利好上游管路需求。
+  </div>
+</div>
+
+</body>
+</html>
