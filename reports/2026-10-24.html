@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年10月24日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  /* 响应式设计 - 手机端 */
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 {
+      font-size: 20px;
+    }
+    .date {
+      font-size: 15px;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+    }
+    .section {
+      margin-bottom: 24px;
+    }
+    .section-title {
+      font-size: 17px;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+    }
+    ul {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    table {
+      font-size: 15px;
+    }
+    th, td {
+      padding: 10px 12px;
+    }
+    .highlight, .warning {
+      padding: 14px 18px;
+      font-size: 15px;
+    }
+    .back-button {
+      font-size: 15px;
+      padding: 10px 14px;
+      margin-bottom: 16px;
+    }
+  }
+
+  /* 响应式设计 - 平板端 */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body {
+      max-width: 90%;
+      margin: 30px auto;
+      padding: 24px;
+    }
+    h1 {
+      font-size: 21px;
+    }
+  }
+
+  /* 响应式设计 - 小屏幕手机 */
+  @media (max-width: 480px) {
+    body {
+      margin: 12px auto;
+      padding: 12px;
+      font-size: 17px;
+    }
+    h1 {
+      font-size: 19px;
+    }
+    .date {
+      font-size: 14px;
+    }
+    .section-title {
+      font-size: 18px;
+    }
+    table {
+      font-size: 14px;
+      display: block;
+      overflow-x: auto;
+    }
+  }
+
+  /* 响应式设计 - 大屏幕电脑 */
+  @media (min-width: 1200px) {
+    body {
+      max-width: 900px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年10月24日（周五）｜数据截止：10月21日收盘 / 10月22日早间信息</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>地缘·宏观</strong> — 中东风险再起：沙特达曼机场遇袭致一死8伤、美要求非紧急人员撤离沙特，美国对伊朗启动新一轮制裁；油价重回高位（WTI 97.15美元/桶），美联储10月按兵不动概率83.9%但12月加息25bp预期达76%，全球流动性环境边际收紧。 <span class="source">（综合）</span></li>
+    <li><strong>AI·算力·数据中心</strong> — 黄仁勋柏林GTC抛出硬数据：AI工厂部署周期最快压缩至14天，年入400亿美元的数据中心晚投产三个月代价100亿美元；英伟达发布 Vera Rubin DSX POD 模块化AI工厂，闭环液冷+干冷可令冷却用水量降至近零、同等算力输出最多节电30%，液冷从"可选项"彻底变为"基础设施刚需"。 <span class="source">（英伟达GTC）</span></li>
+    <li><strong>储能·新能源·超充</strong> — 发改委《电力现货市场基本规则》征求意见，明确支持新能源与场站内配储作为联合报价主体参与现货申报/出清/结算，储能首次获得制度性收益来源；工信部提出2030年建设约500个国家级零碳工厂和零碳算力设施，储能与绿电成为算力刚需配套。 <span class="source">（发改委/工信部）</span></li>
+    <li><strong>A股·港股</strong> — 10月21日A股普跌：沪指3713.03（-0.60%）、深成指11704.35（-0.82%）、创业板指2694.71（-1.62%）、北证50 975.78（-0.72%）；港股恒指23651.87（-0.90%）、恒生科技3994.77（-1.26%）。北交所迎制度红利（新股市值配售+北证50 ETF落地），18只主动ETF开售有望带来360亿元增量资金。 <span class="source">（腾讯行情/交易所）</span></li>
+    <li><strong>利通科技（现920225）</strong> — 10月21日收14.90元（-2.49%），总市值18.91亿、PE(TTM)24.46；2026中报营收2.64亿（+11.42%）、归母净利4677万（-11.22%），但Q2单季营收同比+41.1%、净利同比+118.7%、扣非+150.5%，拐点信号明确。 <span class="source">（公司中报/交易所）</span></li>
+  </ul>
+</div>
+
+<!-- 一、地缘·宏观 -->
+<div class="section">
+  <div class="section-title lightblue">🌏 一、地缘·宏观</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">🌍 地缘政治</strong>
+    <ul>
+      <li><strong>中东再起波澜</strong> — 沙特达曼国际机场遭袭致1死8伤，美国要求非紧急人员撤离沙特；伊朗南部霍尔木兹甘省锡里克县传出连续爆炸声（伊方称起因不明）；美国财政部对支持伊朗非法航运的巴拿马、希腊律所实施制裁，"经济孤立行动"再加码。原油地缘溢价重新计入。 <span class="source">（新华社/路透）</span></li>
+      <li><strong>海湾供应未断</strong> — 科威特石油公司CEO确认已有客户前往海湾提货，原油出口已恢复至战前水平；安哥拉12月装船计划32船高于11月28船，供给端实际扰动有限。 <span class="source">（财联社）</span></li>
+      <li><strong>俄乌三方会谈</strong> — 泽连斯基表示乌方支持尽快启动新一轮三方会谈，俄方愿于11月重启美俄乌三方会谈；基辅市区21日传出连续爆炸声。地缘缓和预期尚未转化为能源价格回落。 <span class="source">（央视/路透）</span></li>
+      <li><strong>关税与反制</strong> — 加拿大宣布87亿加元（约62亿美元）战略产业援助计划应对美国关税冲击；美国财政部拍卖130亿美元20年期国债，得标利率5.469%，投标倍数2.73，长端利率维持高位。 <span class="source">（新华社/美财政部）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">💰 宏观政策</strong>
+    <ul>
+      <li><strong>美联储路径转向</strong> — CME FedWatch显示10月维持利率不变概率83.9%（累计加息25bp概率16.1%），12月维持不变仅9.9%、累计加息25bp概率高达76.0%。市场定价已从"降息交易"切换为"加息尾部风险"，这是本周对全球风险资产最关键的定价变化。 <span class="source">（CME FedWatch）</span></li>
+      <li><strong>美元与人民币</strong> — 美元指数21日涨0.08%收于101.780；美财政部20年期国债中标利率5.469%，中美利差压力不减。 <span class="source">（外汇交易中心）</span></li>
+      <li><strong>中国货币政策</strong> — 央行行长潘功胜在2026金融街论坛年会提出推动贷款利率定价基准改革，从单一参考LPR转向"更加多元的定价基准"（可选银行间隔夜回购利率或LPR）；央行同步启动连续隔夜逆回购，首日操作量800亿元。政策意图是"调控更精准、利率更平稳"，非降息。 <span class="source">（央行/经济参考报）</span></li>
+      <li><strong>资本市场增量资金</strong> — 中央财政注资八家中央金融企业加速落地；18只主动ETF开售在即，有望为A股带来约360亿元增量资金；个人养老金基金数量突破350只。 <span class="source">（证券日报/上证所）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">📊 大宗商品</strong>
+    <ul>
+      <li><strong>原油</strong> — WTI 12月合约结算价97.15美元/桶（-0.68%），布伦特108.82美元/桶（+0.03%）；上期所原油夜盘收跌1.5%至690.3元/桶。油价重回100美元上方，对数据中心能源成本与储能经济性构成双向压力。 <span class="source">（ICE/上期所）</span></li>
+      <li><strong>贵金属</strong> — COMEX黄金涨0.41%报4159.5美元/盎司，白银涨0.2%报58.115美元/盎司；沪金主力涨0.29%报893元/克。避险情绪抬头。 <span class="source">（COMEX/上期所）</span></li>
+      <li><strong>极端天气</strong> — 联合国警告超强厄尔尼诺强度或"冲出图表"，或引发万亿级经济损失；新华社专文呼吁"搅乱全球天气"背景下及早应对，对电力供需与储能配置构成长期变量。 <span class="source">（财联社/上观）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 二、AI·算力·数据中心 -->
+<div class="section">
+  <div class="section-title orange">🤖 二、AI·算力·数据中心</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🗣️ 英伟达GTC柏林（10月21日）</strong>
+    <ul>
+      <li><strong>100亿美元的焦虑</strong> — 黄仁勋以一座年收入400亿美元的AI数据中心举例：晚投产三个月的代价是100亿美元收入，"会让任何人感到焦虑"。同时宣称AI工厂部署周期最快可缩短至14天。这组数字是液冷管路行业最强的需求侧背书——交付节奏直接等同于营收确认节奏。 <span class="source">（英伟达GTC）</span></li>
+      <li><strong>Vera Rubin DSX POD</strong> — 英伟达发布模块化AI工厂参考架构，戴尔、HPE、联想、施耐德电气、维谛技术参与生态建设，工厂内完成集成与验证，现场只需接入电力、冷却和网络；合作伙伴计划2027年批量交付。 <span class="source">（英伟达）</span></li>
+      <li><strong>冷却革命（液冷核心）</strong> — 英伟达明确宣称DSX平台通过"闭环液冷+干式冷却器排热"可将AI工厂冷却用水量降至近零，同等算力输出下最多节电30%。这是液冷管路从"设备件"升级为"运营成本刚需"的最强产业背书。 <span class="source">（英伟达）</span></li>
+      <li><strong>供应链扩产</strong> — 英伟达计划未来三年将基板产能提升至目前的2.5倍；KYEC获英伟达11亿美元预付款用于美国新厂；安靠科技与英伟达签署13亿美元新协议扩大韩国先进封装产能（双方美韩协议总额达30亿美元），安靠计划2028年底先进封装产能提升逾300%。 <span class="source">（英伟达/安靠）</span></li>
+      <li><strong>性能实测</strong> — Nscale在冰岛AI工厂用DSX MaxLPS评估4个GB300 NVL72机架，在264kW固定供电预算下推理吞吐提升49%、可管理GPU容量增加37%；Lambda用HGXB200概念验证，固定电力预算下集群Token吞吐+24%、GPU容量+19%。 <span class="source">（英伟达）</span></li>
+      <li><strong>欧洲投入</strong> — 英伟达已向欧洲科技生态投入近100亿美元，与超过1.2万家合作伙伴合作；欧洲、北欧、非洲及中亚云服务商正扩建英伟达AI工厂。 <span class="source">（英伟达）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">📈 算力供需</strong>
+    <ul>
+      <li><strong>谷歌警示算力紧缺</strong> — CEO皮查伊称客户寻求2027年算力，要满足需求"极其困难"，并表示正牺牲云业务短期收入把算力转向前沿AI研发。机构预计算力租赁全年市场规模有望突破2600亿元，55只算力概念股今年业绩有望翻倍。 <span class="source">（东方财富/机构一致预测）</span></li>
+      <li><strong>AWS提前锁货</strong> — 亚马逊通过新提前接收流程，预计在美国接收约50亿美元的英伟达GB300服务器机架，此后每月接收约30亿美元相关设备；但部分GPU仓库因缺电闲置。 <span class="source">（财联社）</span></li>
+      <li><strong>SpaceX算力业务爆发</strong> — SpaceX Q3超级智能算力业务营收同比激增逾9倍至75.6亿美元，首次成为第一大收入来源；同时在孟菲斯自建数据中心，为工人提供20%额外薪酬。 <span class="source">（SpaceX财报）</span></li>
+      <li><strong>光互联成为瓶颈</strong> — 2026全球光纤光缆大会显示数通用光纤已占光纤总需求超30%，光纤逐渐成为算力基建交付的瓶颈部件；高速多模、保偏、超低损、空芯、多芯等特种光纤及连接器成为主要增长方向。 <span class="source">（东方财富）</span></li>
+      <li><strong>国内算力</strong> — 国家数据集团在雄安成立，"国家队"入场，全国一体化数据市场建设有望提速；优刻得等在内蒙古设立算力科技公司，注册资本1亿元；工信部再定调"扩容提质"，国产算力确定性提升。 <span class="source">（上海证券报）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#e87020;">🏗️ 数据中心建设与电力</strong>
+    <ul>
+      <li><strong>特朗普的"自发电"令</strong> — 特朗普要求新建的大型乃至巨型数据中心必须自行发电，多余电力回馈或出售给当地社区/电网，并称企业应向社区支付"红利"。自建电源+储能将成为美国数据中心标配，直接放大储能温控与管路需求。 <span class="source">（白宫）</span></li>
+      <li><strong>欧洲主权AI</strong> — IREN计划在西班牙建设300MW AI数据中心园区，目标2028年投运；英伟达携欧洲云服务商扩建AI基础设施。 <span class="source">（IREN/英伟达）</span></li>
+      <li><strong>国内零碳算力</strong> — 工信部《加快构建工业和信息化领域碳排放双控工作体系实施方案（2026—2030年）》明确：到2030年建设约500个国家级零碳工厂和零碳算力设施，制定实施重点工业产品碳足迹核算规则标准约400项。 <span class="source">（工信部）</span></li>
+      <li><strong>绿电算力协同</strong> — 《经济参考报》专题讨论"促进绿电与算力深度协同，夯实数字经济绿色底座"，绿电+储能+算力的一体化配套成为政策主线。 <span class="source">（经济参考报）</span></li>
+      <li><strong>风险信号</strong> — 澳洲AI基建风向标NextDC单日暴跌44%创九年低位，CoreWeave此前亦大跌；亚马逊因缺电闲置GPU仓库。数据中心交付瓶颈已从"芯片"转向"电力+冷却"。 <span class="source">（东方财富）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、储能·新能源·超充 -->
+<div class="section">
+  <div class="section-title green">🔋 三、储能·新能源·超充</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🔋 储能政策（本周最大利好）</strong>
+    <ul>
+      <li><strong>配储纳入现货市场</strong> — 国家发改委《电力现货市场基本规则（公开征求意见稿）》提出，支持新能源与场站内配套储能作为<strong>联合报价主体</strong>参与电力现货市场申报、出清、调用、结算和考核。储能首次获得制度化的电价收益来源，这是"从强制配储到市场化盈利"的关键一步，直接提升储能系统投资回报率，利好大储招标放量。 <span class="source">（发改委/证券日报）</span></li>
+      <li><strong>碳市场扩容</strong> — 全国碳排放权交易市场配额累计成交突破10亿吨，明年扩围至石化、化工等工业行业；《中国应对气候变化的政策与行动2026年度报告》发布，2030年国家自主贡献中部分指标已提前完成。 <span class="source">（上海证券报/人民日报）</span></li>
+      <li><strong>氢能加码</strong> — 三部门发文加强氢能综合应用，试点城市群奖励资金最高16亿元；中办国办《意见》明确在氢能和核聚变能、脑机接口、具身智能、第六代移动通信等前沿领域探索多元技术路线。 <span class="source">（21世纪经济报道）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🏭 储能产业</strong>
+    <ul>
+      <li><strong>宁德时代：回购+业绩</strong> — 单日回购A股348.86万股、均价229.32元/股，耗资约8亿元，最高400亿元回购计划加速实施；前三季度营收4421.37亿元（+56.19%）、归母净利645.30亿元（+31.60%），动力+储能电池合计销量领先。券商密集把脉三季报，宁德获431元目标价。 <span class="source">（中国基金报/中证快报）</span></li>
+      <li><strong>宁德时代压力与定调</strong> — Q3利润增速明显放缓，受税金、研发、减值多因素扰动，固态电池板块震荡走弱（宁德一度跌超11%、上海洗霸跌停）；公司回应2027年行业需求"依旧可期，没有市场预期的那么悲观"，储能业务或撑起新增长极。 <span class="source">（财联社/东方财富）</span></li>
+      <li><strong>负极扩产</strong> — 杉杉股份拟定增募资40亿元投建15万吨负极材料一体化项目，海螺集团全额现金认购；爱旭股份拟11.5亿元将天津基地PERC产能升级至6GW ABC电池；多氟多Q3净利同比+200.68%，新能源材料及电池板块收入增长。 <span class="source">（证券时报/公司公告）</span></li>
+      <li><strong>储能温控含义</strong> — 储能系统容量与项目数同步放量，直接放大液冷温控pack、快插接头、液冷管路需求；大储项目液冷方案渗透率已达高位，标准化程度提升利好上游零部件规模化出货。 <span class="source">（储能头条/行业调研）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🌞 新能源</strong>
+    <ul>
+      <li><strong>风电光伏</strong> — 湖南发展签署新宁县400MW集中式风电投资框架协议，预计总投资约22亿元；广州发展拟7.33亿元建设重庆黔江200MW/262MWp地面集中式光伏（"农林光互补"）；TCL科技持股公司成立新能源公司含光伏业务。 <span class="source">（公司公告）</span></li>
+      <li><strong>绿电直连</strong> — 南京公用子公司拟参与中盐红四方（新疆）绿电直连项目投标，"绿电+算力+储能"一体化项目落地路径进一步清晰。 <span class="source">（公司公告）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#34a853;">🚗 汽车与⚡超充</strong>
+    <ul>
+      <li><strong>智能网联汽车规模化</strong> — 工信部表示智能网联汽车已迈入规模化应用新阶段，"聪明的车"加快上路；奔驰、奥迪加速引入英伟达工业AI与数字孪生（Omni/STAR-CCM+），加速整车仿真与热管理开发效率提升。 <span class="source">（工信部/英伟达）</span></li>
+      <li><strong>电池国标落地</strong> — 市场监管总局发布《电动汽车动力蓄电池在役检测试验方法》国家标准，2027年3月1日正式实施，动力电池全生命周期检测体系补齐。 <span class="source">（市场监管总局）</span></li>
+      <li><strong>车企动态</strong> — 雷军、李斌、何小鹏近期密集发声；继峰股份获新能源主机厂座椅总成项目定点（2027年8月量产）；比亚迪、华为等800V高压平台车型持续投放，液冷热管理单车价值量维持800-1500元区间。 <span class="source">（公开资料/行业调研）</span></li>
+      <li><strong>超充展望</strong> — 液冷超充单枪600kW~1.5MW，2026年国内需求预计突破百万根；新能源车主机厂定点密集释放，利好车端液冷管路与超充桩液冷管路双向放量。 <span class="source">（充电桩圈/行业调研）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、A股·港股 -->
+<div class="section">
+  <div class="section-title darkblue">📈 四、A股·港股</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#0f9d58;">📊 指数收盘（10月21日）</strong>
+    <ul>
+      <li><strong>A股普跌</strong> — 上证指数3713.03（-0.60%，成交约6487亿）、深证成指11704.35（-0.82%）、创业板指2694.71（-1.62%）、沪深300 4111.93（-0.97%）、科创50 1343.28（+0.06%）；成长风格明显承压，创业板领跌。 <span class="source">（腾讯行情）</span></li>
+      <li><strong>北交所</strong> — 北证50收975.78（-0.72%），成交62.9亿元、流通市值约3047亿；北交所董事长鲁颂宾宣布引入新股发行市值配售、推进北证50 ETF落地，证监会同步表态"稳妥实施北交所新股市值配售"，制度红利持续释放。 <span class="source">（北交所/证监会）</span></li>
+      <li><strong>港股</strong> — 恒生指数23651.87（-0.90%）、恒生科技3994.77（-1.26%），科技股承压；腾讯控股完成发行18亿美元及人民币260亿元全球中期票据；摩根士丹利将太古地产加入中港重点关注名单、移除宁德时代。 <span class="source">（港交所/腾讯行情）</span></li>
+      <li><strong>美股/亚太</strong> — 10月21日美股三大指数集体收涨（道指52856.09 +0.69%、纳指26702.86 +1.05%、标普500 7757.17 +0.58%），AI算力与服务器领涨（超微电脑+9.55%、戴尔+5.27%、AMD+3.36%、英伟达+2.54%）；亚太第33届APEC财长会在港闭幕。 <span class="source">（东方财富Choice）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#0f9d58;">🧭 资金与结构</strong>
+    <ul>
+      <li><strong>公募再平衡</strong> — 红利基金跑赢科技基金，公募资金加速"转战"低配赛道；中欧基金冯炉丹大幅减仓"易中天"（光模块组合），基金经理对光模块高位开始兑现；基金发行市场呈现"债热股冷"格局。 <span class="source">（证券日报/东方财富）</span></li>
+      <li><strong>产业资本</strong> — 逾30家A股公司10月披露回购预案，宁德时代单日回购近8亿元最高400亿；20家公司披露回购进展；A股限售股解禁市值13.27亿元，规模温和。 <span class="source">（证券日报/东方财富）</span></li>
+      <li><strong>监管趋严</strong> — 从"有法可依"到"有尺可量"，违规减持精准执法升级；AI短剧概念牛股遭上交所监管警示，太极股份紧急澄清"国家数据集团合作"传闻——题材炒作监管持续压制。 <span class="source">（证券日报/证券时报）</span></li>
+      <li><strong>CPO与光模块</strong> — 算力基建政策助力下CPO概念集体反弹，源杰科技获281家机构调研、杰普特与四会富仕均超100家机构关注；数通用光纤已占光纤需求超30%，特种光纤成为算力基建交付瓶颈部件。 <span class="source">（东方财富）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#0f9d58;">🏢 液冷产业链个股（10月21日收盘）</strong>
+    <ul>
+      <li><strong>英维克（002837）</strong> — 45.15元（+0.69%），成交8.67亿元，换手1.68%，PE(TTM)117.6，总市值577.4亿；液冷温控绝对龙头，数据中心+储能双线订单，海外扩张持续。 <span class="source">（腾讯行情）</span></li>
+      <li><strong>申菱环境（301018）</strong> — 76.11元（+2.84%），成交6.00亿元，换手2.77%，PE(TTM)236.6，总市值284.9亿；当日液冷板块内涨幅居前，特殊空调与液冷温控双轮驱动。 <span class="source">（腾讯行情）</span></li>
+      <li><strong>高澜股份（300499）</strong> — 26.23元（-0.15%），成交3.91亿元，换手5.46%，PE(TTM)256.8，总市值80.1亿；数据中心液冷+储能温控双主业，估值高、弹性大。 <span class="source">（腾讯行情）</span></li>
+      <li><strong>曙光数创（872808）</strong> — 43.48元，总市值87.0亿；液冷集成方案领先厂商，深度绑定互联网客户，但当日无成交，流动性偏弱。 <span class="source">（腾讯行情）</span></li>
+      <li><strong>巨化股份（600160）</strong> — 29.72元（+0.64%），成交6.23亿元，PE(TTM)18.3，总市值802.4亿；冷却液国产替代龙头，电子级冷却液项目推进，估值在产业链中最低。 <span class="source">（腾讯行情）</span></li>
+      <li><strong>弹性补充</strong> — 美格智能（002881）41.24元（+7.09%，换手15.54%）、同飞股份（300990）99.12元（-1.86%，换手8.03%）、川环科技（300547）21.40元（+0.05%，PE 25.7）。川环科技作为流体连接件同业，是利通科技最直接的可比参照。 <span class="source">（腾讯行情）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 五、利通科技 -->
+<div class="section">
+  <div class="section-title gray">🏢 五、利通科技动态</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#5f6368;">⚠️ 代码更正（重要）</strong>
+    <ul>
+      <li><strong>839167 并非利通科技</strong> — 经交易所与行情源核对：<strong>839167 是同享科技（920167）</strong>，主营高性能光伏焊带；<strong>利通科技当前证券代码为 920225</strong>（原北交所832225，已完成代码切换至920开头新号段），全称漯河利通液压科技股份有限公司。原839225亦为健源生物，与本公司无关。 <span class="source">（交易所/行情源核对）</span></li>
+      <li><strong>建议</strong> — 后续所有持仓跟踪、选股软件自选股、财务终端均请切换至 <strong>920225</strong>，避免误操作到同属北交所的光伏焊带标的。 <span class="source">（投资笔记）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#5f6368;">📋 公司概况与行情</strong>
+    <ul>
+      <li><strong>主营业务</strong> — 主营高中低压橡胶软管及软管组合件、高分子材料的研发、生产和销售，近年积极拓展液冷管路业务，聚焦数据中心、储能、新能源汽车三大液冷应用场景；注册地漯河经济开发区民营工业园，2021年2月25日上市。 <span class="source">（公司公告）</span></li>
+      <li><strong>10月21日行情</strong> — 收14.90元（-2.49%，前收15.28元），最高15.28、最低14.68，成交额2096万元、成交量13.98万股，换手率1.69%，PE(TTM)24.46，总市值18.91亿元、流通市值12.33亿元；52周区间20.22/9.36元，每股净资产6.03元。 <span class="source">（腾讯行情）</span></li>
+      <li><strong>股本结构</strong> — 总股本1.269亿股，流通股8278万股（占65.2%）；股东结构散户为主，机构关注度仍有提升空间。 <span class="source">（公司公告）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#5f6368;">📊 2026年中报拆解（拐点信号）</strong>
+    <ul>
+      <li><strong>半年报</strong> — 营收2.643亿元（+11.42%），归母净利4677万元（-11.22%），扣非净利4542万元（+8.33%），毛利率42.07%（同比+3.04pct），净利率17.66%，ROE(加权)6.21%，EPS 0.37元，BPS 6.03元。 <span class="source">（公司中报）</span></li>
+      <li><strong>Q2单季（关键）</strong> — 单季营收同比 <strong>+41.12%</strong>、归母净利同比 <strong>+118.72%</strong>、扣非同比 <strong>+150.52%</strong>；环比营收+51.85%、净利+292.52%。对比Q1（营收-15.56%、净利-73.36%），<strong>公司经营已在Q2出现明确反转</strong>。 <span class="source">（公司中报）</span></li>
+      <li><strong>财务健康度</strong> — 资产负债率22.88%（同比+11.51pct但绝对水平低），流动比率2.08，总资产9.92亿元、净资产7.65亿元，ROIC 5.77%；经营性现金流净额328万元（偏弱），应收周转82天、存货周转164天。 <span class="source">（公司中报）</span></li>
+      <li><strong>人员与效率</strong> — 员工753人，人均创收35.1万元、人均创利6.21万元；总资产周转率0.52次。 <span class="source">（公司中报）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#5f6368;">🔍 投资逻辑与近期动态</strong>
+    <ul>
+      <li><strong>赛道β</strong> — Rubin单芯片TDP超1000W已确认，英伟达DSX平台"闭环液冷+干冷、冷却用水近零、同等算力最多节电30%"，液冷从可选变强制；液冷管路是数据中心的"血管"，需求刚性极强。 <span class="source">（英伟达GTC）</span></li>
+      <li><strong>政策α</strong> — 工信部2030年建设约500个国家级零碳工厂和零碳算力设施；发改委推动新能源+配储联合报价，储能盈利机制落地；液冷管路市场规模有望5年翻3倍。 <span class="source">（工信部/发改委）</span></li>
+      <li><strong>竞争格局</strong> — 液冷管路国产替代空间可观，公司深耕流体连接件与软管总成，具备技术与产线协同优势；可比公司川环科技PE 25.7倍，与利通24.5倍基本持平，估值处于合理区间。 <span class="source">（行业调研）</span></li>
+      <li><strong>近期动态</strong> — 10月12日披露使用暂时闲置自有资金购买理财产品进展；9月23日独立董事离任；9月16日股东减持股份结果公告（前期减持计划已实施完毕）；8月31日披露投资者关系活动记录表（公司已就液冷业务与市场沟通）；8月27日发布2026年半年度报告。 <span class="source">（交易所公告）</span></li>
+      <li><strong>弹性测算</strong> — 当前总市值仅18.9亿元，PE(TTM)24.5倍；若液冷管路业务收入占比提升至30%并维持42%以上毛利率，利润弹性可观，安全边际在液冷板块中最高。 <span class="source">（财务模型）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 六、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 六、战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 高度关注</strong><br>
+    <strong>① 交付节奏风险</strong>：黄仁勋明确"AI工厂晚投产三个月=损失100亿美元"，英伟达DSX POD合作伙伴计划2027年批量交付——液冷管路的订单确认高度绑定整机厂交付周期，一旦海外AI资本开支节奏放缓，NextDC单日暴跌44%、CoreWeave连续重挫已是先行信号。<br>
+    <strong>② 宏观流动性转向</strong>：CME显示12月美联储累计加息25bp概率达76.0%，美元指数101.78，20年期美债中标利率5.469%，全球高估值成长资产（液冷、算力、CPO）估值分母端压力上升，短期波动放大。<br>
+    <strong>③ 油价与电力成本</strong>：WTI 97.15美元/桶、布伦特108.82美元，中东袭击+制裁推动地缘溢价回补；叠加特朗普"数据中心必须自行发电"要求，电力与冷却系统成本将成为算力项目的硬约束。
+  </div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    <strong>① 配储现货市场细则落地</strong>：发改委《电力现货市场基本规则》征求意见稿若正式发布，新能源+配储联合报价机制将直接改善储能项目收益率，是大储招标放量的前置信号——这是液冷管路在储能侧最确定的一条政策主线。<br>
+    <strong>② 利通科技代码切换与中报验证</strong>：请将自选股改为 <strong>920225</strong>；重点跟踪三季报能否延续Q2单季净利+118.7%、扣非+150.5%的反转斜率，以及液冷管路收入是否首次单列披露。<br>
+    <strong>③ 北交所制度红利</strong>：新股发行市值配售+北证50 ETF落地+18只主动ETF带来360亿元增量资金，北交所流动性改善利好小市值标的估值修复。<br>
+    <strong>④ 液冷管路招标</strong>：密切跟踪国内智算中心液冷管路招标公告、华为液冷超充桩中标省份扩张节奏、数据中心"自发电+自建储能"配套项目落地情况。
+  </div>
+
+  <div class="highlight" style="background:#e8f0fe; border-left-color:#1a73e8;">
+    <strong>💡 一句话逻辑</strong><br>
+    英伟达用"冷却用水近零、最多节电30%"把液冷从技术选项变成运营KPI，工信部用"零碳算力设施"和发改委用"配储联合报价"把液冷从行业选项变成政策刚需——<strong>利通科技（920225）Q2单季净利同比+118.7%、市值仅18.9亿、PE 24.5倍，是这条链上估值与业绩错配最明显的标的</strong>。
+  </div>
+</div>
+
+</body>
+</html>
