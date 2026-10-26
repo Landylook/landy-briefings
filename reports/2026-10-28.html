@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年10月28日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  /* 响应式设计 - 手机端 */
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 {
+      font-size: 20px;
+    }
+    .date {
+      font-size: 15px;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+    }
+    .section {
+      margin-bottom: 24px;
+    }
+    .section-title {
+      font-size: 17px;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+    }
+    ul {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    table {
+      font-size: 15px;
+    }
+    th, td {
+      padding: 10px 12px;
+    }
+    .highlight, .warning {
+      padding: 14px 18px;
+      font-size: 15px;
+    }
+    .back-button {
+      font-size: 15px;
+      padding: 10px 14px;
+      margin-bottom: 16px;
+    }
+  }
+
+  /* 响应式设计 - 平板端 */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body {
+      max-width: 90%;
+      margin: 30px auto;
+      padding: 24px;
+    }
+    h1 {
+      font-size: 21px;
+    }
+  }
+
+  /* 响应式设计 - 小屏幕手机 */
+  @media (max-width: 480px) {
+    body {
+      margin: 12px auto;
+      padding: 12px;
+      font-size: 17px;
+    }
+    h1 {
+      font-size: 19px;
+    }
+    .date {
+      font-size: 14px;
+    }
+    .section-title {
+      font-size: 18px;
+    }
+    table {
+      font-size: 14px;
+      display: block;
+      overflow-x: auto;
+    }
+  }
+
+  /* 响应式设计 - 大屏幕电脑 */
+  @media (min-width: 1200px) {
+    body {
+      max-width: 900px;
+    }
+  }
+</style>
+</head>
+<body>
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年10月28日</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>利通三季报仍未落地</strong> — 东财公告 API 实拉：920225 最新公告仍为 <strong>10/12 理财进展</strong>，无三季报预告或快报；预约披露日 <strong>2026-10-27</strong> 已过，尚未见披露，仍属"零预期锚"的裸披露状态。 <span class="source">（来源：东方财富公告 API）</span></li>
+    <li><strong>"超级央行周"来袭</strong> — 美欧日央行本周同步公布利率决议；美联储是否加息成为全球资产定价核心变量，通胀数据与官员措辞出现矛盾。 <span class="source">（来源：东方财富、证券时报）</span></li>
+    <li><strong>AWS 云计算爆单至 2027 年</strong> — 售罄至 2027 年，行业景气有望持续上行；同时马斯克官宣 SpaceX 举债 <strong>400 亿美元</strong>采购 GPU，并警告新云厂商危机将至。 <span class="source">（来源：东方财富）</span></li>
+    <li><strong>《国家信息化"十五五"规划》印发</strong> — 到 2030 年新一代通信网全面建成，适时启动 <strong>6G 商用</strong>；党的二十届五中全会 10/26–29 在京召开。 <span class="source">（来源：东方财富、新华社）</span></li>
+  </ul>
+</div>
+
+<!-- 一、大势研判 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 一、大势研判</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">📈 大宗与市场数据</strong>
+    <ul>
+      <li>原油高位回落：纽约原油 <strong>101.12 美元</strong>（-2.08%），布伦特 <strong>109.71 美元</strong>（-1.78%），较上周 112.10 的高位有所回落，但仍站稳百元上方。 <span class="source">（来源：腾讯财经行情，10/26 10:36）</span></li>
+      <li>贵金属高位震荡：纽约黄金 <strong>4006.25</strong>（-0.04%），纽约白银 <strong>53.79</strong>（-0.29%）。 <span class="source">（来源：腾讯财经行情）</span></li>
+      <li>A 股 10/26 早盘震荡走弱：上证 <strong>3673.53</strong>（-0.46%），深证成指 <strong>11504.83</strong>（-1.45%），创业板指 <strong>2619.27</strong>（-2.42%），北证 50 <strong>980.03</strong>（-0.49%）。 <span class="source">（来源：腾讯财经行情，10/26 10:04）</span></li>
+      <li>港股分化：恒生指数 <strong>23143.43</strong>（+0.22%），恒生科技 <strong>3835.10</strong>（-0.94%）。 <span class="source">（来源：腾讯财经行情）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">⚡ 政策与宏观</strong>
+    <ul>
+      <li>本周为"超级央行周"，美欧日同步公布利率决议；华尔街热议美联储是否加息，消费者信心创五个月新低，PMI 涨幅创四年多新高。 <span class="source">（来源：东方财富、国际晨讯）</span></li>
+      <li>央行今日开展 <strong>3980 亿元</strong>隔夜逆回购操作；我国首个区域电力市场（南方区域）已正式运行。 <span class="source">（来源：东方财富能源早报）</span></li>
+      <li>中办国办关注 AI 就业影响，强调"减缓 AI 应用就业替代"；国资委要求持续优化国有经济布局、加强关键核心技术攻关。 <span class="source">（来源：东方财富）</span></li>
+      <li>地缘：美驻沙特大使馆发布安全警报要求非紧急政府人员撤离；特朗普称美俄乌三方会谈"很快"举行；巴西总统卢拉赢得连任。 <span class="source">（来源：东方财富国际）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 二、液冷管赛道情报 -->
+<div class="section">
+  <div class="section-title orange">💧 二、液冷管赛道情报</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🔬 技术与需求信号</strong>
+    <ul>
+      <li><strong>AWS 2027 年容量售罄</strong>，订单排期已至 2028 年；算力租赁市场扩容直接拉动机房侧液冷管路需求。 <span class="source">（来源：东方财富）</span></li>
+      <li><strong>算电协同进入实操阶段</strong> — 媒体同步讨论"算电协同，不能只算'建'的账"与"算电协同新棋局"；东电资本/中国电力企业联合会等机构算电协同项目进展披露，配套液冷是"建"的标配环节。 <span class="source">（来源：上证聚焦、东方财富）</span></li>
+      <li><strong>国家数据集团成立</strong>，人民日报聚焦其"加快释放数据要素价值"；算力基础设施投资主体进一步集中化。 <span class="source">（来源：人民日报）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🏭 竞争格局</strong>
+    <ul>
+      <li>液冷链今日整体回调：英维克 <strong>42.77</strong>（-3.63%，PE 111.39）、申菱环境 <strong>69.39</strong>（-5.06%）、高澜股份 <strong>26.11</strong>（-1.73%，PE 145.75）、川环科技 <strong>20.95</strong>（-2.56%）、巨化股份 <strong>29.35</strong>（+0.31%）。 <span class="source">（来源：腾讯财经行情，10/26 10:20）</span></li>
+      <li>英维克同日（10/27）披露三季报；申菱环境、阳光电源 <strong>10/31</strong> 披露，构成 10 月末完整验证周。阳光电源今日 <strong>70.46</strong>（-2.41%，PE 13.30）。 <span class="source">（来源：东方财富预约披露表）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#e87020;">📦 客户与订单</strong>
+    <ul>
+      <li><strong>天齐锂业前三季净利猛增 30 倍</strong>（归母增超 13 倍），达 <strong>56 亿元</strong>；锂电产业链景气为储能侧液冷提供配套需求。 <span class="source">（来源：东方财富）</span></li>
+      <li>德明利 Q3 净利同比 <strong>+2903%</strong>，存储龙头业绩暴增超 320 倍；韩国"存储双雄"本周公布财报，预计合计超 <strong>184 万亿韩元</strong>。 <span class="source">（来源：东方财富）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、下游应用战场 -->
+<div class="section">
+  <div class="section-title green">🔋 三、下游应用战场</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🖥️ 数据中心/算力中心</strong>
+    <ul>
+      <li>马斯克官宣 <strong>SpaceX 举债 400 亿美元采购 GPU</strong>，同时警告新云厂商危机将至——算力供给竞赛进入资本开支白热化阶段。 <span class="source">（来源：东方财富）</span></li>
+      <li>AI 芯片重磅消息频出；月之暗面发布新一代全球参数最大开源模型；AI 制药赛道升温，14 股业绩倍增可期。 <span class="source">（来源：东方财富）</span></li>
+      <li>全国太阳能装机 16 年暴涨 4 万倍；"人造太阳"工程推进消息引发关注。 <span class="source">（来源：东方财富）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🔋 储能行业</strong>
+    <ul>
+      <li>天齐锂业前三季归母净利增超 13 倍至 <strong>56 亿元</strong>，锂价周期对储能成本端形成支撑。 <span class="source">（来源：东方财富）</span></li>
+      <li>阳光电源今日 <strong>70.46</strong>（-2.41%），PE(TTM) <strong>13.30</strong>，为储能链估值最低梯队之一。 <span class="source">（来源：腾讯财经行情）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🚗 新能源汽车</strong>
+    <ul>
+      <li>前 9 月广州 GDP <strong>24851 亿元</strong>，同比增长 <strong>5.7%</strong>，汽车与电子产业链为区域增长主要拉动项之一。 <span class="source">（来源：东方财富）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#34a853;">⚡ 液冷超充桩</strong>
+    <ul>
+      <li>我国首个区域电力市场正式运行，新能源消纳与充电负荷管理机制落地，对超充桩液冷枪线需求形成长期支撑。 <span class="source">（来源：东方财富能源早报）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、集成商动态 -->
+<div class="section">
+  <div class="section-title purple">📡 四、集成商动态（渠道情报）</div>
+  <table>
+    <tr>
+      <th style="width:18%">企业</th>
+      <th>核心进展</th>
+    </tr>
+    <tr>
+      <td><strong>英维克</strong><br><span class="source">002837</span></td>
+      <td>今日收 <strong>42.77</strong>（-3.63%），PE(TTM) <strong>111.39</strong>，市值约 485 亿。10/27 披露三季报，2025Q3 基数极高，为板块对照关键锚。 <span class="source">（来源：腾讯财经行情、东财预约披露表）</span></td>
+    </tr>
+    <tr>
+      <td><strong>申菱环境</strong><br><span class="source">301018</span></td>
+      <td>今日收 <strong>69.39</strong>（-5.06%），跌幅居前。10/31 披露三季报。 <span class="source">（来源：腾讯财经行情）</span></td>
+    </tr>
+    <tr>
+      <td><strong>高澜股份</strong><br><span class="source">300499</span></td>
+      <td>今日收 <strong>26.11</strong>（-1.73%），PE(TTM) <strong>145.75</strong>，市值约 71 亿。三季报已披露：营收 7.67 亿（+30.49%）、净利 6053 万（+76.82%），为板块内基本面最扎实者。 <span class="source">（来源：腾讯财经行情、前期公告）</span></td>
+    </tr>
+    <tr>
+      <td><strong>巨化股份</strong><br><span class="source">600160</span></td>
+      <td>今日收 <strong>29.35</strong>（+0.31%），液冷链中逆势收红，为冷却液/氟化工材料端受益标的。 <span class="source">（来源：腾讯财经行情）</span></td>
+    </tr>
+    <tr>
+      <td><strong>川环科技</strong><br><span class="source">300547</span></td>
+      <td>今日收 <strong>20.95</strong>（-2.56%），PE(TTM) 约 25.8。管路直接竞品，估值与利通同处低估值象限。 <span class="source">（来源：腾讯财经行情）</span></td>
+    </tr>
+  </table>
+</div>
+
+<!-- 五、二级市场 -->
+<div class="section">
+  <div class="section-title darkblue">📈 五、二级市场 & 资本动向</div>
+  <ul>
+    <li>10/26 早盘沪指 <strong>3673.53</strong>（-0.46%）、创业板指 <strong>2619.27</strong>（-2.42%）、北证 50 <strong>980.03</strong>（-0.49%）；两市融资余额减少 <strong>242.78 亿元</strong>。 <span class="source">（来源：腾讯财经行情、东方财富）</span></li>
+    <li>上证系列综合指数新规<strong>今起实施</strong>（10/26），上交所、中证指数同步修订编制方案，指数生态进入调整周期。 <span class="source">（来源：东方财富）</span></li>
+    <li>超千家公司三季报放榜，最高 <strong>324 倍</strong>，<strong>177 股净利翻倍</strong>；德明利暂居增幅王。券商首批三季报出炉，18 家中期分红超 <strong>135 亿元</strong>。 <span class="source">（来源：东方财富）</span></li>
+    <li>ETF 追踪：10/23 股票型 ETF 净申购 <strong>587 亿元</strong>，资金加仓沪深 300 ETF；机构调研端 WMO 再发厄尔尼诺警告，机构扎堆调研绩优潜力股。 <span class="source">（来源：东方财富）</span></li>
+    <li>本周港股要闻前瞻：全球多家央行公布利率决议，<strong>中际旭创</strong>等公司披露业绩。 <span class="source">（来源：东方财富）</span></li>
+  </ul>
+</div>
+
+<!-- 六、利通科技 -->
+<div class="section">
+  <div class="section-title gray">🏢 六、利通科技（920225）动态</div>
+  <ul>
+    <li><strong>三季报尚未披露（重点跟踪）</strong> — 东财公告 API 实拉确认：最新公告为 <strong>2026-10-12《关于使用暂时闲置自有资金购买理财产品进展的公告》</strong>，无三季报预告、无业绩快报。10/27 预约披露日已过仍未落地，需关注是否顺延或已发布未入库。 <span class="source">（来源：东方财富公告 API）</span></li>
+    <li>今日盘中收 <strong>14.78</strong>（-0.67%），昨收 14.88，成交 <strong>3789 手</strong>，振幅 14.66–15.00；北证 50 同期 -0.49%，个股基本与大盘同步。 <span class="source">（来源：腾讯财经行情，10/26 10:20）</span></li>
+    <li>对比基准（H1 2026）：营收 <strong>2.643 亿</strong>（+11.42%）、归母净利 <strong>4677 万</strong>（-11.22%）、毛利率 <strong>42.07%</strong>（同比 +3.04pct）。 <span class="source">（来源：2026 年半年度报告）</span></li>
+    <li>近期其他公司动作：<strong>9/16 股东减持股份结果公告</strong>、<strong>9/23 独立董事离任公告</strong>、<strong>8/31 投资者关系活动记录表</strong>；5–9 月两度公告使用闲置自有资金购买理财。 <span class="source">（来源：东方财富公告列表）</span></li>
+    <li>估值坐标：市值约 <strong>18.9 亿</strong>，PE(TTM) 约 <strong>24</strong>、PB 约 <strong>2.47</strong>；与申菱 PE 227、英维克 116、高澜 148 相比，利通处于<strong>低估值 + 小市值</strong>象限，弹性来自业绩兑现而非估值抬升。 <span class="source">（来源：腾讯财经行情、前期简报测算）</span></li>
+  </ul>
+</div>
+
+<!-- 七、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 七、战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 高度关注：利通三季报披露状态异常</strong><br>
+    10/27 为预约披露日，东财公告 API 至 10/26 10:20 仍无任何三季报相关条目（无预告、无快报、无正文）。两种可能：<strong>(1) 公司已披露但数据入库延迟</strong>；<strong>(2) 披露延期</strong>。建议直接登录北交所官网核对 920225 公告。<br><br>
+    披露后的四个判断点（基于 H1 基线倒算）：Q3 单季营收 ≥ <strong>0.818 亿元</strong>、Q3 单季归母 ≥ <strong>1936 万元</strong>、Q3 单季毛利率 ≥ <strong>41.0%</strong>（2025Q3 为 41.04%）、累计毛利率 ≥ <strong>42%</strong>（H1 为 42.07%）。<br>
+    <strong>利通历史呈"前高后低"</strong>：2025 年 Q1 净利 +86% → 全年 -22%，Q4 为传统淡季，三季报即便转正也不宜线性外推 Q4。
+  </div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    <strong>1. "超级央行周"利率路径</strong>：美欧日同步决议，若美联储加息超预期，成长股估值端承压，利通这类小市值弹性标的双向波动放大；同时原油仍在 100 美元上方，抬高算力/储能/制造成本，与 Q4 液冷业绩兑现期形成对冲。<br><br>
+    <strong>2. 10 月末液冷验证周</strong>：英维克 10/27、申菱环境/阳光电源 10/31 披露三季报，与利通形成完整对照周。板块内部分化已现（高澜 +76.82% vs 川环 H1 -23.85%、同飞/银轮以价换量），管路环节需重点看<strong>毛利率是否守住</strong>而非只看收入。<br><br>
+    <strong>3. SpaceX 400 亿美元 GPU 采购 + AWS 售罄至 2027</strong>：算力资本开支白热化，是液冷管路最硬的需求侧背书；但新云厂商危机提示供给端竞争也在加剧，需区分"需求增长"与"份额转移"。<br><br>
+    <strong>4. 低价位竞争</strong>：申菱 PE 227、英维克 116、高澜 148 vs 阳光 13.3、巨化 20、利通 24.4、川环 25.8——上游材料与管件环节估值显著更低，利通当前估值已隐含部分业绩预期，进一步上行需靠 Q3 数据兑现。
+  </div>
+</div>
+
+</body>
+</html>
