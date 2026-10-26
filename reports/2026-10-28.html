@@ -216,7 +216,7 @@
 <div class="section">
   <div class="section-title">📊 今日速览</div>
   <ul>
-    <li><strong>利通三季报仍未落地</strong> — 东财公告 API 实拉：920225 最新公告仍为 <strong>10/12 理财进展</strong>，无三季报预告或快报；预约披露日 <strong>2026-10-27</strong> 已过，尚未见披露，仍属"零预期锚"的裸披露状态。 <span class="source">（来源：东方财富公告 API）</span></li>
+    <li><strong>利通三季报明日（10/27）披露</strong> — 东财预约披露表实拉：920225 2026 年三季报 <strong>APPOINT_PUBLISH_DATE = 2026-10-27</strong>（明日），<strong>ACTUAL_PUBLISH_DATE = null、IS_PUBLISH = 0</strong>，尚属正常未披露状态；截至今日最新公告为 <strong>10/12 理财进展</strong>，无预告、无快报，属<strong>"零预期锚"裸披露</strong>。 <span class="source">（来源：东方财富数据中心 RPT_PUBLIC_BS_APPOIN、公告 API）</span></li>
     <li><strong>"超级央行周"来袭</strong> — 美欧日央行本周同步公布利率决议；美联储是否加息成为全球资产定价核心变量，通胀数据与官员措辞出现矛盾。 <span class="source">（来源：东方财富、证券时报）</span></li>
     <li><strong>AWS 云计算爆单至 2027 年</strong> — 售罄至 2027 年，行业景气有望持续上行；同时马斯克官宣 SpaceX 举债 <strong>400 亿美元</strong>采购 GPU，并警告新云厂商危机将至。 <span class="source">（来源：东方财富）</span></li>
     <li><strong>《国家信息化"十五五"规划》印发</strong> — 到 2030 年新一代通信网全面建成，适时启动 <strong>6G 商用</strong>；党的二十届五中全会 10/26–29 在京召开。 <span class="source">（来源：东方财富、新华社）</span></li>
@@ -361,7 +361,7 @@
 <div class="section">
   <div class="section-title gray">🏢 六、利通科技（920225）动态</div>
   <ul>
-    <li><strong>三季报尚未披露（重点跟踪）</strong> — 东财公告 API 实拉确认：最新公告为 <strong>2026-10-12《关于使用暂时闲置自有资金购买理财产品进展的公告》</strong>，无三季报预告、无业绩快报。10/27 预约披露日已过仍未落地，需关注是否顺延或已发布未入库。 <span class="source">（来源：东方财富公告 API）</span></li>
+    <li><strong>三季报预约披露日为明日 10/27（重点跟踪）</strong> — 东财数据中心实拉确认：920225 三季报 <strong>FIRST_APPOINT_DATE = APPOINT_PUBLISH_DATE = 2026-10-27</strong>，<strong>ACTUAL_PUBLISH_DATE = null、IS_PUBLISH = 0</strong>，属正常待披露；<strong>预约日至今无任何变更记录</strong>（FIRST/ SECOND/ THIRD_CHANGE_DATE 均为 null）。截至今日最新公告为 <strong>2026-10-12《关于使用暂时闲置自有资金购买理财产品进展的公告》</strong>，无三季报预告、无业绩快报。 <span class="source">（来源：东方财富数据中心 RPT_PUBLIC_BS_APPOIN、公告 API）</span></li>
     <li>今日盘中收 <strong>14.78</strong>（-0.67%），昨收 14.88，成交 <strong>3789 手</strong>，振幅 14.66–15.00；北证 50 同期 -0.49%，个股基本与大盘同步。 <span class="source">（来源：腾讯财经行情，10/26 10:20）</span></li>
     <li>对比基准（H1 2026）：营收 <strong>2.643 亿</strong>（+11.42%）、归母净利 <strong>4677 万</strong>（-11.22%）、毛利率 <strong>42.07%</strong>（同比 +3.04pct）。 <span class="source">（来源：2026 年半年度报告）</span></li>
     <li>近期其他公司动作：<strong>9/16 股东减持股份结果公告</strong>、<strong>9/23 独立董事离任公告</strong>、<strong>8/31 投资者关系活动记录表</strong>；5–9 月两度公告使用闲置自有资金购买理财。 <span class="source">（来源：东方财富公告列表）</span></li>
@@ -375,9 +375,9 @@
 
   <div class="warning">
     <strong>🔴 高度关注：利通三季报披露状态异常</strong><br>
-    10/27 为预约披露日，东财公告 API 至 10/26 10:20 仍无任何三季报相关条目（无预告、无快报、无正文）。两种可能：<strong>(1) 公司已披露但数据入库延迟</strong>；<strong>(2) 披露延期</strong>。建议直接登录北交所官网核对 920225 公告。<br><br>
+    利通三季报预约披露日为 <strong>明日 2026-10-27（周二）</strong>，东财数据中心显示 ACTUAL_PUBLISH_DATE = null、IS_PUBLISH = 0，<strong>预约日无变更记录，属正常待披露状态</strong>——今天无公告是预期之内，不是异常。<br><br>    <strong>明日验证清单</strong>：<strong>(1)</strong> 10/27 盘后是否如期披露，若延期需第一时间确认原因；<strong>(2)</strong> 披露后对照四个判断点；<strong>(3)</strong> 核对北交所官网与东财数据是否同步入库。<br><br>
     披露后的四个判断点（基于 H1 基线倒算）：Q3 单季营收 ≥ <strong>0.818 亿元</strong>、Q3 单季归母 ≥ <strong>1936 万元</strong>、Q3 单季毛利率 ≥ <strong>41.0%</strong>（2025Q3 为 41.04%）、累计毛利率 ≥ <strong>42%</strong>（H1 为 42.07%）。<br>
-    <strong>利通历史呈"前高后低"</strong>：2025 年 Q1 净利 +86% → 全年 -22%，Q4 为传统淡季，三季报即便转正也不宜线性外推 Q4。
+    <strong>利通历史呈"前高后低"</strong>：2025 年 Q1 净利 +86% → 全年 -22%，Q4 为传统淡季，三季报即便转正也不宜线性外推 Q4。<br><br>    <strong>由于预约日无预告、无快报、板块内无可比预期</strong>，明日披露属于<strong>纯裸奔</strong>：利通自身无预期锚，波动完全由数据本身决定；而英维克同日披露且 2025Q3 基数极高，两个数据将被市场直接对照定价。
   </div>
 
   <div class="highlight">
