@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年10月30日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  /* 响应式设计 - 手机端 */
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 {
+      font-size: 20px;
+    }
+    .date {
+      font-size: 15px;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+    }
+    .section {
+      margin-bottom: 24px;
+    }
+    .section-title {
+      font-size: 17px;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+    }
+    ul {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    table {
+      font-size: 15px;
+    }
+    th, td {
+      padding: 10px 12px;
+    }
+    .highlight, .warning {
+      padding: 14px 18px;
+      font-size: 15px;
+    }
+    .back-button {
+      font-size: 15px;
+      padding: 10px 14px;
+      margin-bottom: 16px;
+    }
+  }
+
+  /* 响应式设计 - 平板端 */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body {
+      max-width: 90%;
+      margin: 30px auto;
+      padding: 24px;
+    }
+    h1 {
+      font-size: 21px;
+    }
+  }
+
+  /* 响应式设计 - 小屏幕手机 */
+  @media (max-width: 480px) {
+    body {
+      margin: 12px auto;
+      padding: 12px;
+      font-size: 17px;
+    }
+    h1 {
+      font-size: 19px;
+    }
+    .date {
+      font-size: 14px;
+    }
+    .section-title {
+      font-size: 18px;
+    }
+    table {
+      font-size: 14px;
+      display: block;
+      overflow-x: auto;
+    }
+  }
+
+  /* 响应式设计 - 大屏幕电脑 */
+  @media (min-width: 1200px) {
+    body {
+      max-width: 900px;
+    }
+  }
+</style>
+</head>
+<body>
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年10月30日</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>🔴 利通三季报落地：营收过关，利润与毛利率双双不及格</strong> — 前三季营收 <strong>3.778 亿</strong>（+9.17%）、归母 <strong>5231 万</strong>（<strong>-20.90%</strong>）、毛利率 <strong>39.51%</strong>（较 H1 的 42.07% 下滑 2.56pct）。Q3 单季营收 1.135 亿（+4.26%），但 Q3 单季归母仅 <strong>554 万</strong>（<strong>-58.79%</strong>）。 <span class="source">（来源：东方财富数据中心 RPT_LICO_FN_CPD、公司三季报）</span></li>
+    <li><strong>四个判断点：1 过 3 不过</strong> — Q3 单季营收 ≥0.818 亿 ✅（实际 1.135 亿）；Q3 单季归母 ≥1936 万 ❌（实际 554 万，仅达标 28.6%）；Q3 单季毛利率 ≥41.0% ❌；累计毛利率 ≥42% ❌（实际 39.51%）。 <span class="source">（来源：实拉数据测算）</span></li>
+    <li><strong>利通今日收 14.09（-3.43%）</strong>，跌幅与北证50（-3.35%）基本同步——三季报利空未引发额外杀跌，恐慌已在 H1 披露时释放。 <span class="source">（来源：腾讯财经行情，10/28 早盘）</span></li>
+    <li><strong>需求端全线向上</strong> — 美股半导体指数大涨超 3%、SK海力士 Q3 运营利润 83.33万亿韩元超预期；东财专题"AI算力扩张提速！液冷服务器需求升温"。 <span class="source">（来源：东方财富）</span></li>
+  </ul>
+</div>
+
+<!-- 一、大势研判 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 一、大势研判</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">📈 大宗与市场数据</strong>
+    <ul>
+      <li>原油继续回落：纽约原油 <strong>100.08 美元</strong>（+0.18%），布伦特 <strong>109.68 美元</strong>（-0.96%），纽约原油逼近百元关口。 <span class="source">（来源：腾讯财经行情，10/28 07:54）</span></li>
+      <li>黄金续创新高：纽约黄金 <strong>4076.37</strong>（+0.04%），连续站上 4000 后继续走高。 <span class="source">（来源：腾讯财经行情）</span></li>
+      <li>美股 10/27 收涨，纳指涨超 <strong>1%</strong>，<strong>美股半导体指数大涨超 3%</strong>，存储与光通信板块领涨。 <span class="source">（来源：东方财富）</span></li>
+      <li>A 股 10/28 早盘承压：北证50 <strong>931.64</strong>（-3.35%）、申菱环境 <strong>63.67</strong>（-7.40%）、川环科技 <strong>19.99</strong>（-4.35%）、高澜股份 <strong>25.03</strong>（-4.28%）。 <span class="source">（来源：腾讯财经行情）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">⚡ 政策与宏观</strong>
+    <ul>
+      <li><strong>机构集体看多超跌</strong>：多家券商首席研判"当前 A 股明显超调，估值已具备较好的中长期性价比"，"错杀机会正在出现"。 <span class="source">（来源：东方财富）</span></li>
+      <li><strong>公募三季报重仓股大换血</strong>：光模块依旧坚挺，存储、CXO 杀入前十；债基规模暴增超 <strong>5000 亿元</strong>，权益基金缩水超万亿。 <span class="source">（来源：东方财富）</span></li>
+      <li>前 9 月规上工业企业利润同比 <strong>+15.5%</strong>，高技术制造业引领；2026 年前三季度全国电力交易量同比 <strong>+18.9%</strong>，电气机械业利润同比 -5.9%。 <span class="source">（来源：东方财富新能源早参）</span></li>
+      <li><strong>地缘缓和</strong>：出口民调显示内塔尼亚胡阵营未获议会多数席位；伊朗传出重磅消息，AI 硬件股闻声全线大涨。 <span class="source">（来源：东方财富）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 二、液冷管赛道情报 -->
+<div class="section">
+  <div class="section-title orange">💧 二、液冷管赛道情报</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🔬 需求信号（全线向上）</strong>
+    <ul>
+      <li><strong>东财专题：AI 算力扩张提速！液冷服务器需求升温</strong>，多股业绩倍增可期——这是今日最直接的液冷行业级信号。 <span class="source">（来源：东方财富）</span></li>
+      <li><strong>SK海力士 Q3 运营利润 83.33 万亿韩元</strong>，超市场预期的 77.5 万亿；希捷 Q1 调整后 EPS 7.68 美元高于预期——<strong>存储产业链全面超预期</strong>，直接拉动算力硬件扩产。 <span class="source">（来源：东方财富）</span></li>
+      <li>谷歌 <strong>Genie 4</strong> 亮相，一句话创造虚拟世界；马斯克最新预测机器人内存需求超乎想象。 <span class="source">（来源：东方财富）</span></li>
+      <li>长鑫科技有望被纳入上证指数；上海发布太空频轨资源规划，2030 年三千颗卫星、<strong>八百亿产业规模</strong>。 <span class="source">（来源：东方财富）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🏭 竞争格局（明显分化）</strong>
+    <ul>
+      <li>液冷链 10/28 早盘集体回调：申菱 <strong>-7.40%</strong>（PE 197.91）、川环 <strong>-4.35%</strong>、高澜 <strong>-4.28%</strong>（PE 139.72）、英维克 <strong>-3.68%</strong>（PE 107.73）、阳光电源 <strong>-2.83%</strong>（PE 12.88）。 <span class="source">（来源：腾讯财经行情）</span></li>
+      <li><strong>巨化股份 -0.33%</strong> 基本持平，PE 仅 <strong>20.59</strong>——高估值管路/集成环节杀跌，<strong>材料端与低估值环节抗跌</strong>的特征再度显现。 <span class="source">（来源：腾讯财经行情）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#e87020;">📦 客户与订单</strong>
+    <ul>
+      <li><strong>PCB 产业链上市公司集中披露三季报</strong>，算力硬件链条业绩验证持续推进。 <span class="source">（来源：东方财富）</span></li>
+      <li>高澜股份三季报（已披露）：营收 7.67 亿（+30.49%）、净利 6053 万（+76.82%），<strong>板块内基本面最扎实</strong>。 <span class="source">（来源：公司公告）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、下游应用战场 -->
+<div class="section">
+  <div class="section-title green">🔋 三、下游应用战场</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🖥️ 数据中心/算力中心</strong>
+    <ul>
+      <li><strong>AI 硬件股全线大涨</strong>（10/28 亚太盘），美股半导体指数隔夜涨超 3%；存储、光通信为最强主线。 <span class="source">（来源：东方财富）</span></li>
+      <li>为对手 CoreWeave 站台，Crusoe 掌门人称新云抛售属反应过度——算力租赁市场情绪修复。 <span class="source">（来源：东方财富）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🔋 储能行业</strong>
+    <ul>
+      <li>阳光电源 10/28 早盘 <strong>68.24</strong>（-2.83%），PE(TTM) <strong>12.88</strong>，储能链估值最低梯队。 <span class="source">（来源：腾讯财经行情）</span></li>
+      <li>前三季度全国电力交易量同比 <strong>+18.9%</strong>，电力市场活力加快释放。 <span class="source">（来源：东方财富新能源早参）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🚗 新能源汽车</strong>
+    <ul>
+      <li>21 社论提出"让人工智能成为就业的增量器"；21 社论同时强调推动实现<strong>就业友好型</strong>人工智能发展路径，AI 替代效应受政策关注。 <span class="source">（来源：21世纪经济报道）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#34a853;">⚡ 液冷超充桩</strong>
+    <ul>
+      <li>前 9 月规上工业企业利润 +15.5%，高技术制造业引领、原材料制造业较快增长；电气机械业利润同比 -5.9%，制造端成本压力仍在。 <span class="source">（来源：东方财富新能源早参）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、集成商动态 -->
+<div class="section">
+  <div class="section-title purple">📡 四、集成商动态（渠道情报）</div>
+  <table>
+    <tr>
+      <th style="width:18%">企业</th>
+      <th>核心进展</th>
+    </tr>
+    <tr>
+      <td><strong>英维克</strong><br><span class="source">002837</span></td>
+      <td>10/28 早盘 <strong>41.39</strong>（-3.68%），PE(TTM) <strong>107.73</strong>，市值约 485 亿。10/27 三季报披露窗口与利通重叠，为最直接对照锚。 <span class="source">（来源：腾讯财经行情）</span></td>
+    </tr>
+    <tr>
+      <td><strong>申菱环境</strong><br><span class="source">301018</span></td>
+      <td>10/28 早盘 <strong>63.67</strong>（<strong>-7.40%</strong>），PE(TTM) <strong>197.91</strong>，为板块最高估值且跌幅最大。10/31 披露三季报。 <span class="source">（来源：腾讯财经行情）</span></td>
+    </tr>
+    <tr>
+      <td><strong>高澜股份</strong><br><span class="source">300499</span></td>
+      <td>10/28 早盘 <strong>25.03</strong>（-4.28%），PE(TTM) <strong>139.72</strong>。三季报已披露：营收 7.67 亿（+30.49%）、净利 6053 万（+76.82%），<strong>板块内基本面最扎实</strong>。 <span class="source">（来源：腾讯财经行情、公司公告）</span></td>
+    </tr>
+    <tr>
+      <td><strong>巨化股份</strong><br><span class="source">600160</span></td>
+      <td>10/28 早盘 <strong>30.18</strong>（-0.33%），PE(TTM) <strong>20.59</strong>，几乎平盘，<strong>材料端最强抗跌标的</strong>。 <span class="source">（来源：腾讯财经行情）</span></td>
+    </tr>
+    <tr>
+      <td><strong>川环科技</strong><br><span class="source">300547</span></td>
+      <td>10/28 早盘 <strong>19.99</strong>（-4.35%），PE(TTM) <strong>24.02</strong>。管路直接竞品，估值与利通同处低区间。 <span class="source">（来源：腾讯财经行情）</span></td>
+    </tr>
+    <tr>
+      <td><strong>阳光电源</strong><br><span class="source">300274</span></td>
+      <td>10/28 早盘 <strong>68.24</strong>（-2.83%），PE(TTM) <strong>12.88</strong>，估值最低。10/31 披露三季报。 <span class="source">（来源：腾讯财经行情）</span></td>
+    </tr>
+  </table>
+</div>
+
+<!-- 五、二级市场 -->
+<div class="section">
+  <div class="section-title darkblue">📈 五、二级市场 & 资本动向</div>
+  <ul>
+    <li>10/28 早盘北证50 <strong>931.64（-3.35%）</strong>，利通 <strong>14.09（-3.43%）</strong>——三季报利空下个股与指数基本同步，未出现额外恐慌抛售。 <span class="source">（来源：腾讯财经行情）</span></li>
+    <li><strong>机构一致看多超跌</strong>：多家券商首席集体研判 A 股明显超调，估值已具较好中长期性价比，错杀机会正在出现。 <span class="source">（来源：东方财富）</span></li>
+    <li>公募三季度规模分化：债基暴增超 <strong>5000 亿元</strong>，权益基金缩水超万亿；重仓股换血中光模块依旧坚挺，存储、CXO 进入前十。 <span class="source">（来源：东方财富）</span></li>
+    <li>A 股业绩利好刷屏，最高增长超 <strong>38 倍</strong>；10/27 晚间披露的多家公司业绩暴增。 <span class="source">（来源：东方财富）</span></li>
+    <li>证监会拟对 5 连板大牛股下发监管工作函；长鑫科技有望被纳入上证指数；加码智能制造，上海发布重要文件。 <span class="source">（来源：东方财富）</span></li>
+  </ul>
+</div>
+
+<!-- 六、利通科技 -->
+<div class="section">
+  <div class="section-title gray">🏢 六、利通科技（920225）动态</div>
+
+  <div class="highlight">
+    <strong>📊 2026 年三季报核心数据（已于 10/27 披露）</strong><br><br>
+    <strong>前三季度累计：</strong>营收 <strong>3.7781 亿元</strong>（同比 <strong>+9.17%</strong>）；归母净利 <strong>5231.28 万元</strong>（同比 <strong>-20.90%</strong>）；扣非归母 <strong>-298.71 万元</strong>（同比 <strong>-85.13%</strong>）；毛利率 <strong>39.51%</strong>（同比 -1.55pct）；基本 EPS <strong>0.41 元</strong>；加权 ROE <strong>6.92%</strong>；每股经营现金流 <strong>0.2175 元</strong>；每股净资产 <strong>6.0757 元</strong>。 <span class="source">（来源：东方财富数据中心 RPT_LICO_FN_CPD、公司三季报，2026-10-27 17:33）</span><br><br>
+    <strong>Q3 单季推算（累计减 H1）：</strong>营收 <strong>1.1354 亿元</strong>（同比 <strong>+4.26%</strong>）；归母净利 <strong>554 万元</strong>（同比 <strong>-58.79%</strong>）。 <span class="source">（来源：实拉累计数据测算）</span><br><br>
+    <strong>基准对比：</strong>H1 营收 2.6426 亿（+11.42%）、归母 4676.96 万（-11.22%）、毛利率 <strong>42.07%</strong>。即 <strong>Q3 单季毛利率约 31.5%，较 H1 大幅下滑</strong>。
+  </div>
+
+  <ul>
+    <li><strong>🔴 四个判断点：1 过 3 不过</strong> — Q3 单季营收 ≥0.818 亿 ✅（实际 1.135 亿，超额 38.8%）；Q3 单季归母 ≥1936 万 ❌（实际 554 万，仅达标 <strong>28.6%</strong>）；Q3 单季毛利率 ≥41.0% ❌（约 31.5%）；累计毛利率 ≥42% ❌（实际 <strong>39.51%</strong>）。 <span class="source">（来源：实拉数据对照）</span></li>
+    <li><strong>🔴 最刺眼的一项：扣非归母 -298.71 万元</strong>，同比 <strong>-85.13%</strong>——前三季扣非仍为亏损，意味着<strong>账面 5231 万归母中有约 5530 万来自非经常性损益</strong>（政府补助、投资收益等）。主营盈利能力已连续三个季度为负，这是比净利下滑更严重的问题。 <span class="source">（来源：RPT_LICO_FN_CPD：SJLHZ = -85.13）</span></li>
+    <li><strong>同日公告还包括治理层变动</strong>：10/27 一次性发布 6 份公告——独立董事变动公告（<strong>曹淼</strong> 任独立董事候选人及承诺）、补选第五届董事会专门委员会委员、第五届董事会第三次会议决议、<strong>关于召开 2026 年第二次临时股东会通知</strong>。治理结构调整与三季报同日，值得留意。 <span class="source">（来源：东方财富公告列表）</span></li>
+    <li>10/28 早盘收 <strong>14.09</strong>（-3.43%），PE(TTM) <strong>25.76</strong>，总市值约 <strong>17.9 亿</strong>，换手 1.30%。跌幅与北证50（-3.35%）基本同步。 <span class="source">（来源：腾讯财经行情）</span></li>
+    <li>估值坐标对照：申菱 PE 197.91、英维克 107.73、高澜 139.72 vs 阳光 12.88、巨化 20.59、川环 24.02、<strong>利通 25.76</strong>——利通仍在低估值象限，但<strong>低估值对应的是"扣非亏损"而非"业绩待兑现"</strong>，逻辑已从"预期差"切换为"基本面验证"。 <span class="source">（来源：腾讯财经行情）</span></li>
+  </ul>
+</div>
+
+<!-- 七、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 七、战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 高度关注：利通三季报"增收不增利"，扣非连续三季为负</strong><br>
+    10/27 如期披露（预约日与实际披露日一致，无延期），但数据质量弱于预期：营收 +9.17% 尚可，<strong>归母 -20.90%、扣非 -85.13% 至 -298.71 万元、毛利率从 H1 的 42.07% 降至 39.51%</strong>。Q3 单季归母 554 万、同比 -58.79%，单季毛利率推算仅约 31.5%。<br><br>
+    <strong>三个核心问题</strong>：<strong>(1)</strong> 收入增长但毛利被侵蚀——是原材料涨价无法传导、还是价格战丢单？<strong>(2)</strong> 扣非为负说明主营不赚钱，5231 万归母靠非经常性损益支撑，<strong>业绩含金量极低</strong>；<strong>(3)</strong> 10/27 同日更换独立董事并召开临时股东会，治理层与业绩同期变动需关注是否有战略调整或人事原因。<br><br>
+    <strong>时间窗口提醒</strong>：Q4 是利通的传统淡季（2025 年 Q1 +86% → 全年 -22%），若 Q3 已是低点，Q4 环比可能改善；但若毛利率继续下滑，<strong>全年扣非转正的难度将显著上升</strong>。
+  </div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    <strong>1. 与英维克 10/27 三季报对照</strong>（待取数）：英维克 2025Q3 基数极高，若其 Q3 同样利润大幅下滑，说明是<strong>行业性"增收不增利"</strong>（需求向好但价格战全面开打）；若英维克利润稳健，则利通的问题在<strong>自身份额与产品结构</strong>，性质更严重。<br><br>
+    <strong>2. 材料端 vs 管路端的剪刀差</strong>：巨化 PE 20.59 几乎平盘、申菱 PE 197.91 大跌 7.40%——<strong>市场正在给"材料涨价受益"付钱、给"管路加工"打折</strong>。利通处于管路加工环节，若毛利率压力来自上游原材料涨价，属于被动承压；若来自价格战，则是主动丢份额，需区分。<br><br>
+    <strong>3. 需求端无需担心</strong>：SK海力士 Q3 运营利润超预期、希捷 EPS 超预期、美股半导体涨超 3%、东财专题直呼"液冷服务器需求升温"、AI 硬件股全线大涨。<strong>需求在，缺的是价格与利润的传导。</strong><br><br>
+    <strong>4. 估值支撑仍在</strong>：利通 PE 25.76、市值 17.9 亿，机构普遍判断 A 股"明显超调、错杀机会正在出现"。若 11 月 Q4 订单回暖或原材料价格回落，<strong>17.9 亿市值下的弹性会很大</strong>；但基本面未确认前，不建议单纯因"低估值"加仓。
+  </div>
+</div>
+
+</body>
+</html>
