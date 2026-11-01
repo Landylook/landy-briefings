@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年11月2日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  /* 响应式设计 - 手机端 */
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 {
+      font-size: 20px;
+    }
+    .date {
+      font-size: 15px;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+    }
+    .section {
+      margin-bottom: 24px;
+    }
+    .section-title {
+      font-size: 17px;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+    }
+    ul {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    table {
+      font-size: 15px;
+    }
+    th, td {
+      padding: 10px 12px;
+    }
+    .highlight, .warning {
+      padding: 14px 18px;
+      font-size: 15px;
+    }
+    .back-button {
+      font-size: 15px;
+      padding: 10px 14px;
+      margin-bottom: 16px;
+    }
+  }
+
+  /* 响应式设计 - 平板端 */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body {
+      max-width: 90%;
+      margin: 30px auto;
+      padding: 24px;
+    }
+    h1 {
+      font-size: 21px;
+    }
+  }
+
+  /* 响应式设计 - 小屏幕手机 */
+  @media (max-width: 480px) {
+    body {
+      margin: 12px auto;
+      padding: 12px;
+      font-size: 17px;
+    }
+    h1 {
+      font-size: 19px;
+    }
+    .date {
+      font-size: 14px;
+    }
+    .section-title {
+      font-size: 18px;
+    }
+    table {
+      font-size: 14px;
+      display: block;
+      overflow-x: auto;
+    }
+  }
+
+  /* 响应式设计 - 大屏幕电脑 */
+  @media (min-width: 1200px) {
+    body {
+      max-width: 900px;
+    }
+  }
+</style>
+</head>
+<body>
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年11月2日</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>🔴 全球 AI 硬件股恐慌抛售，英特尔暴跌 28.58%、英伟达 -4.22%、纳指 -2.86%</strong> — 11 月开局动荡，周末机构已提示"恐慌抛售席卷市场"。美股科技股连续两日重挫将直接传导至 A 股液冷链。 <span class="source">（来源：东方财富、腾讯财经行情）</span></li>
+    <li><strong>🔴 利通三日累计 -9.7%，PE 23.26 处历史低位</strong> — 10/30 收 <strong>12.72</strong>，市值约 <strong>16.2 亿</strong>；但当日 -2.90% 已是板块里跌得最少的一只（英维克 -7.74%、申菱 -7.45%、高澜 -7.37%）。 <span class="source">（来源：腾讯财经行情）</span></li>
+    <li><strong>周末政策面持续转暖</strong> — 证监会「全力稳市场稳预期」、央行「保持流动性充裕」；外资加大布局新赛道，中国高技术产业使用外资占比超四成；能源保供中长期合同纳入统一制度管理。 <span class="source">（来源：东方财富、新华财经）</span></li>
+    <li><strong>10 月 PMI 49.3%</strong>，新动能市场需求保持扩张；DeepSeek 发布全新 Agent 架构 Super-agent。 <span class="source">（来源：东方财富）</span></li>
+  </ul>
+</div>
+
+<!-- 一、大势研判 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 一、大势研判</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">📈 市场数据</strong>
+    <ul>
+      <li>最新 A 股收盘（10/30，本周最后交易日）：上证 <strong>3599.02</strong>（-1.44%）、深证成指 <strong>10833.78</strong>（-2.73%）、创业板指 <strong>2413.63</strong>（<strong>-4.13%</strong>）、北证50 <strong>885.74</strong>（-2.67%）。 <span class="source">（来源：腾讯财经行情）</span></li>
+      <li>港股独强：恒生指数 <strong>23294.42</strong>（<strong>+1.46%</strong>）、恒生科技 3754.90（+0.29%）。 <span class="source">（来源：腾讯财经行情）</span></li>
+      <li><strong>美股 10/30 集体重挫</strong>：道指 <strong>51770.31</strong>（-1.09%）、纳指 <strong>25437.00</strong>（<strong>-2.86%</strong>）、<strong>英特尔 65.76（暴跌 28.58%）</strong>、<strong>英伟达 204.64（-4.22%）</strong>；亚马逊 -1.41%、谷歌 -1.45%、微软 -1.55%、Meta -1.53%、苹果 -1.23%。 <span class="source">（来源：腾讯财经行情、东方财富）</span></li>
+      <li><strong>周末机构提示：「恐慌抛售席卷市场，11 月开局动荡预定？」</strong>——费城半导体指数前一日已跌超 7%。 <span class="source">（来源：东方财富）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">⚡ 政策与宏观</strong>
+    <ul>
+      <li><strong>证监会：全力稳市场稳预期，持续提升资本市场韧性和信心</strong>；<strong>央行：继续实施适度宽松的货币政策，保持流动性充裕</strong>。 <span class="source">（来源：东方财富、新华财经）</span></li>
+      <li><strong>外资加大布局新赛道</strong>，中国高技术产业使用外资占比<strong>超四成</strong>。 <span class="source">（来源：东方财富）</span></li>
+      <li><strong>能源保供中长期合同纳入统一制度管理</strong>；五部门发布《加强消费基础设施建设 促进消费投资良性互动的指导意见》。 <span class="source">（来源：东方财富）</span></li>
+      <li><strong>10 月制造业采购经理指数 49.3%</strong>，新动能市场需求保持扩张态势；小微经营者四季度信心指数回升。 <span class="source">（来源：东方财富）</span></li>
+      <li>申万宏源证券首席经济学家赵伟：<strong>国产替代加快推进</strong>。 <span class="source">（来源：东方财富）</span></li>
+      <li>下周看点：<strong>美国中期选举、非农数据、苹果财报</strong>接连来袭，AI 热潮面临考验。 <span class="source">（来源：东方财富）</span></li>
+      <li>地缘：伊朗外长称目前没有与美方会谈计划；外交部就美方无理打压中国企业表示坚决反对。 <span class="source">（来源：东方财富）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 二、液冷管赛道情报 -->
+<div class="section">
+  <div class="section-title orange">💧 二、液冷管赛道情报</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🔬 需求信号：利空与利多交织</strong>
+    <ul>
+      <li><strong>🔴 英伟达展示下一代 CPO 方案</strong>——取消光引擎独立的有机基板，光互联技术路线发生重大变化，<strong>对算力硬件链是估值层面的冲击</strong>。 <span class="source">（来源：东方财富）</span></li>
+      <li><strong>🟢 英伟达砍融资、砍估值</strong>——万亿 AI 巨头融资压力显现；同时标普将 Meta 评级展望<strong>下调至负面</strong>，原因是 AI 支出持续增加。 <span class="source">（来源：东方财富）</span></li>
+      <li><strong>村田（MLCC）斥资万亿日元加码</strong>，锚定 AI 服务器、算力硬件市场——<strong>上游被动元件仍在加码资本开支</strong>，说明算力硬件实物需求未减。 <span class="source">（来源：东方财富）</span></li>
+      <li><strong>长鑫科技业绩说明会：四季度毛利率预计保持稳定</strong>。 <span class="source">（来源：东方财富）</span></li>
+      <li><strong>DeepSeek 发布全新 Agent 架构 Super-agent</strong>；我国计划 2030 年前实现首次载人登月。 <span class="source">（来源：东方财富）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🏭 竞争格局：估值出清进行中</strong>
+    <ul>
+      <li>10/30 液冷链集体下跌，<strong>PE 越高跌得越狠</strong>：英维克 <strong>37.80（-7.74%）</strong> PE 98.39、申菱环境 <strong>59.15（-7.45%）</strong> PE 106.08、高澜股份 <strong>23.51（-7.37%）</strong> PE 131.24。 <span class="source">（来源：腾讯财经行情）</span></li>
+      <li>低估值端明显抗跌：川环科技 <strong>19.73（-2.71%）</strong> PE 22.96、阳光电源 <strong>65.29（-2.86%）</strong> PE 16.55、巨化股份 <strong>28.76（-2.44%）</strong> PE 19.62、盛弘股份 <strong>29.77（-2.07%）</strong> PE 16.47。 <span class="source">（来源：腾讯财经行情）</span></li>
+      <li>申菱 PE 由 <strong>208.66 压缩至 106.08</strong>，英维克由 106.64 降至 <strong>98.39</strong>，高澜由 141.68 降至 <strong>131.24</strong>——板块杀估值仍在进行中。 <span class="source">（来源：腾讯财经行情）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#e87020;">📦 区域与产业配套</strong>
+    <ul>
+      <li><strong>内蒙古乌兰察布崛起算力高地</strong>（立足资源禀赋、强化项目招引）；<strong>山东济南机器人产业聚链成势</strong>。 <span class="source">（来源：东方财富）</span></li>
+      <li><strong>国家电投山东海阳核电项目三期工程开工</strong>——"算电协同"落地案例，核电为智算中心提供稳定基荷电力。 <span class="source">（来源：东方财富）</span></li>
+      <li>北京氢能产业发展方案出炉；11 月起一批新规实施（含"自愿放弃社保"协议无效等）。 <span class="source">（来源：东方财富）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、三季报验证周结论回顾 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#d93025; color:#d93025;">📊 三、三季报验证周结论回顾（核心框架）</div>
+
+  <div class="highlight">
+    <strong>🔑 已确立的判断框架（2026Q3 全景对照）</strong><br><br>
+    <strong>行业共性成立</strong>：申菱环境营收 <strong>+36.91%</strong> 而归母 <strong>-5.38%</strong>；英维克 Q3 营收 <strong>+33.04%</strong> 而归母 +0.25%；阳光电源 Q3 单季归母 <strong>约 -67.7%</strong>。「增收不增利」是 2026 年液冷/温控环节的普遍现象，<strong>这轮是业绩杀估值</strong>。<br><br>
+    <strong>利通有个性病灶</strong>：8 家里<strong>只有利通一家毛利率断崖</strong>（42.07% → 约 31.5%），也是<strong>唯一一家扣非转负</strong>的（-298.71 万）。对照川环科技——同处管路环节、Q3 单季归母<strong>约 +15%</strong>、毛利率稳在 22.5%——证明<strong>管路制造环节本身有能力赚钱</strong>。<br><br>
+    <strong>最可能解释（按概率）</strong>：<strong>① 丢单/份额被抢</strong>（赛道龙头普遍 +30% 以上而利通仅 +4.26%）→ <strong>② 主动以价换量</strong>（毛利率塌 10 个点但收入没起来，两头失血）→ <strong>③ 产品结构下沉</strong>。成本端不成立：巨化（液冷材料端）毛利率 31.47% 且利润 +5.34%，前 9 月工业企业单位成本持续下降。
+  </div>
+</div>
+
+<!-- 四、下游应用战场 -->
+<div class="section">
+  <div class="section-title green">🔋 四、下游应用战场</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🖥️ 数据中心/算力中心</strong>
+    <ul>
+      <li>算电协同与绿电直连政策推进；国家电投海阳核电三期开工，为智算中心提供稳定电源。 <span class="source">（来源：东方财富）</span></li>
+      <li>乌兰察布算力高地、济南机器人聚链——区域智算中心建设持续，液冷配套需求随之而来。 <span class="source">（来源：东方财富）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🔋 储能行业（2026 年明确转弱）</strong>
+    <ul>
+      <li><strong>阳光电源前三季营收 -26.41%、归母 -44.46%，Q3 单季归母约 -67.7%</strong>，PE(TTM) 仅 <strong>16.55</strong>。<strong>储能是四大场景中唯一明确转弱的一个</strong>，储能液冷需求增速需下修。 <span class="source">（来源：RPT_LICO_FN_CPD）</span></li>
+      <li>盛弘股份前三季营收 +25.05%、归母 +32.31%、毛利率 40.43%——<strong>储能变流环节仍在增长</strong>，阳光下滑更多源于自身光伏逆变器业务结构。 <span class="source">（来源：RPT_LICO_FN_CPD）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🚗 新能源汽车</strong>
+    <ul>
+      <li>前滩租下 8 栋楼，智元机器人创上海最大租赁单——具身智能与商用车热管理需求扩容。 <span class="source">（来源：东方财富）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#34a853;">⚡ 液冷超充桩</strong>
+    <ul>
+      <li>能源保供中长期合同纳入统一制度管理；消费基建政策组合拳——宏观需求端温和修复。 <span class="source">（来源：东方财富）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 五、二级市场 -->
+<div class="section">
+  <div class="section-title darkblue">📈 五、二级市场 & 资本动向</div>
+  <ul>
+    <li><strong>10 月 3600 亿 ETF 净流入</strong>，2 只个股当月翻倍；机构复盘历轮调整周期后称 <strong>「A 股已现底部特征」</strong>。 <span class="source">（来源：东方财富）</span></li>
+    <li><strong>三季报披露收官</strong>：险资持仓曝光、券商三季度新买进 <strong>71 只个股</strong>、社保基金八大机构调仓一览；阳光私募"押中"万亿巨头，七大行业最集中、16 只绩优"超跌"股浮现。 <span class="source">（来源：东方财富）</span></li>
+    <li><strong>8 家券商归母净利润破百亿元</strong>，机构称头部券商 ROE 上行可期；四大行三季报出炉，利息收入集体提速。 <span class="source">（来源：东方财富）</span></li>
+    <li><strong>11 家 A 股公司三季报有董事拒投"赞成票"</strong>——信息披露质量分化，治理类风险需留意。 <span class="source">（来源：东方财富）</span></li>
+    <li>时隔半年再调整，<strong>10 只 ETF 新进港股通</strong>，日本、东盟、港美资产加速入通；海外赴港 IPO 趋严。 <span class="source">（来源：东方财富）</span></li>
+    <li>日本"国家队"将加速抛售 ETF（年内已卖 2440 亿日元），为外部流动性扰动项。 <span class="source">（来源：东方财富）</span></li>
+  </ul>
+</div>
+
+<!-- 六、利通科技 -->
+<div class="section">
+  <div class="section-title gray">🏢 六、利通科技（920225）动态</div>
+
+  <div class="highlight">
+    <strong>📊 2026 年三季报核心数据（10/27 披露）</strong><br><br>
+    前三季营收 <strong>3.7781 亿</strong>（<strong>+9.17%</strong>）；归母 <strong>5231.28 万</strong>（<strong>-20.90%</strong>）；<strong>扣非 -298.71 万（-85.13%）</strong>；毛利率 <strong>39.51%</strong>（H1 为 42.07%）；EPS 0.41；加权 ROE 6.92%。<br>
+    Q3 单季：营收 <strong>1.1354 亿</strong>（+4.26%）、归母 <strong>554 万</strong>（<strong>-58.79%</strong>），单季毛利率推算约 <strong>31.5%</strong>。
+  </div>
+
+  <ul>
+    <li><strong>🔴 三日累计 -9.7%，仍是液冷链最弱一档</strong> — 10/28 <strong>-2.48%</strong>（板块独跌）、10/29 <strong>-4.66%</strong>、10/30 <strong>-2.90%</strong>，14.09 → <strong>12.72</strong>。同期英维克 -8.7%、申菱 -7.1%、高澜 -6.1%、川环 -1.3%、阳光 -4.3%。 <span class="source">（来源：腾讯财经行情测算）</span></li>
+    <li><strong>🟢 10/30 单日已明显抗跌</strong> — 当日利通 -2.90%，而英维克 -7.74%、申菱 -7.45%、高澜 -7.37%。<strong>在板块被杀的第三天，利通反而跌得最少</strong>——三季报利空开始被充分定价的第一个迹象。 <span class="source">（来源：腾讯财经行情）</span></li>
+    <li><strong>估值进入历史低位区</strong>：12.72 元对应市值约 <strong>16.2 亿</strong>、PE(TTM) <strong>23.26</strong>，较 9 月三季报预告前的高位明显回落。 <span class="source">（来源：腾讯财经行情）</span></li>
+    <li><strong>10/27 公告盘点（三季报同日 7 份）</strong>：三季度报告、第五届董事会第三次会议决议、<strong>独立董事变动</strong>（曹淼）、独立董事候选人声明与承诺、<strong>补选第五届董事会专门委员会委员</strong>、<strong>关于召开 2026 年第二次临时股东会通知（提供网络投票）</strong>。 <span class="source">（来源：东方财富公告列表）</span></li>
+    <li><strong>9 月以来的股东行为值得注意</strong>：<strong>09/16 股东减持股份结果公告</strong>、<strong>09/23 独立董事离任公告</strong>、<strong>10/12 使用暂时闲置自有资金购买理财产品进展公告</strong>。 <span class="source">（来源：东方财富公告列表）</span></li>
+    <li><strong>待验证的两个前瞻信号</strong>：<strong>(1)</strong> 临时股东会审议议案中是否含战略或人事调整；<strong>(2)</strong> 液冷管路中标/在手订单公告——验证「是否丢单」最直接的证据。 <span class="source">（来源：待跟踪）</span></li>
+  </ul>
+</div>
+
+<!-- 七、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 七、战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 核心判断</strong><br>
+    <strong>结论：行业有共性问题 + 利通有个性病灶，两者叠加。</strong><br><br>
+    <strong>行业共性（成立）</strong>：2026 年液冷/温控环节大面积「增收不增利」——申菱营收 +36.91% 而归母 -5.38%，英维克 Q3 营收 +33.04% 而归母 +0.25%，阳光 Q3 归母约 -67.7%。这轮是<strong>业绩杀估值</strong>。<br><br>
+    <strong>利通个性病灶（成立且更严重）</strong>：8 家里<strong>只有利通一家毛利率断崖</strong>（42.07% → 约 31.5%），且是<strong>唯一一家扣非转负</strong>的。川环同处管路环节、Q3 单季归母约 +15%、毛利率稳在 22.5%，证明管路制造环节有能力赚钱。<strong>利通是「收入几乎不增 + 毛利率塌 10 个点 + 扣非转负」三病齐发。</strong><br><br>
+    <strong>⚠️ 关于加仓的直说</strong>：市值 16.2 亿、PE 23.26 确实便宜，但「低估值」的基础是<strong>扣非连续为负</strong>，不是「业绩待兑现」——两者估值锚完全不同。<strong>在看到扣非转正或单季毛利率回到 38% 以上之前，不建议基于超跌逻辑加仓。</strong>当前唯一支持左侧的信号是 10/30 单日抗跌（-2.90% vs 英维克 -7.74%）。
+  </div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    <strong>1. 下周风险窗口密集</strong>：<strong>美国中期选举、非农数据、苹果财报</strong>接连来袭；美股恐慌抛售可能继续，<strong>利通作为 16.2 亿市值的北交所高 Beta 标的，波动会放大</strong>。 <span class="source">（来源：东方财富）</span></li>
+    <strong>2. 订单是唯一硬证据</strong>：液冷管路中标公告、集成商供应商名录变更、临时股东会议案——任一出现实质进展，才是基本面转向的第一个信号。 <span class="source">（来源：待跟踪）</span></li>
+    <strong>3. 政策底已现，等市场底</strong>：证监会稳市场 + 央行保持流动性充裕 + 10 月 3600 亿 ETF 净流入 + 外资加码高技术产业 + 机构称 A 股已现底部特征。<strong>利通弹性最大，但高 Beta 意味着基本面未确认前双向波动剧烈。</strong> <span class="source">（来源：东方财富）</span></li>
+    <strong>4. 需求侧仍有实物支撑</strong>：村田万亿日元加码 MLCC 锚定 AI 服务器、长鑫四季度毛利率预计稳定、DeepSeek 发布 Super-agent。<strong>AI 硬件实物需求未减，回调主要是估值与融资压力，不是订单消失。</strong> <span class="source">（来源：东方财富）</span></li>
+    <strong>5. 国产替代逻辑被官方强化</strong>：申万宏源赵伟明确"国产替代加快推进"，外资高技术产业占比超四成。<strong>液冷管路国产化是叶总赛道的结构性长逻辑，短期杀估值不改变这一点。</strong> <span class="source">（来源：东方财富）</span></li>
+    <strong>6. 治理与信息披露风险</strong>：三季报同日 7 份公告集中于独董变动与专门委员会补选，9 月以来有股东减持结果与独董离任记录，临时股东会议案值得仔细读。 <span class="source">（来源：东方财富公告列表）</span></li>
+  </div>
+</div>
+
+</body>
+</html>
