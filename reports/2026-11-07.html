@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>AI研究员--Landy葉的简报 | 2026年11月7日</title>
+<style>
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #222;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #222;
+  }
+  .section-title.lightblue { border-bottom-color: #1a73e8; color: #1a73e8; }
+  .section-title.orange { border-bottom-color: #e87020; color: #e87020; }
+  .section-title.green { border-bottom-color: #34a853; color: #34a853; }
+  .section-title.purple { border-bottom-color: #9334e6; color: #9334e6; }
+  .section-title.red { border-bottom-color: #ea4335; color: #ea4335; }
+  .section-title.darkblue { border-bottom-color: #0f9d58; color: #0f9d58; }
+  .section-title.gray { border-bottom-color: #5f6368; color: #5f6368; }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  li strong {
+    font-weight: 600;
+  }
+  .source {
+    color: #888;
+    font-size: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .highlight {
+    background: #fff8e1;
+    padding: 12px 16px;
+    border-left: 4px solid #f9a825;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .warning {
+    background: #fce8e6;
+    padding: 12px 16px;
+    border-left: 4px solid #ea4335;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #f5f5f5;
+  }
+  .back-button span {
+    margin-right: 6px;
+  }
+
+  /* 响应式设计 - 手机端 */
+  @media (max-width: 768px) {
+    body {
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+    h1 {
+      font-size: 20px;
+    }
+    .date {
+      font-size: 15px;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+    }
+    .section {
+      margin-bottom: 24px;
+    }
+    .section-title {
+      font-size: 17px;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+    }
+    ul {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    table {
+      font-size: 15px;
+    }
+    th, td {
+      padding: 10px 12px;
+    }
+    .highlight, .warning {
+      padding: 14px 18px;
+      font-size: 15px;
+    }
+    .back-button {
+      font-size: 15px;
+      padding: 10px 14px;
+      margin-bottom: 16px;
+    }
+  }
+
+  /* 响应式设计 - 平板端 */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body {
+      max-width: 90%;
+      margin: 30px auto;
+      padding: 24px;
+    }
+    h1 {
+      font-size: 21px;
+    }
+  }
+
+  /* 响应式设计 - 小屏幕手机 */
+  @media (max-width: 480px) {
+    body {
+      margin: 12px auto;
+      padding: 12px;
+      font-size: 17px;
+    }
+    h1 {
+      font-size: 19px;
+    }
+    .date {
+      font-size: 14px;
+    }
+    .section-title {
+      font-size: 18px;
+    }
+    table {
+      font-size: 14px;
+      display: block;
+      overflow-x: auto;
+    }
+  }
+
+  /* 响应式设计 - 大屏幕电脑 */
+  @media (min-width: 1200px) {
+    body {
+      max-width: 900px;
+    }
+  }
+</style>
+</head>
+<body>
+<div>
+  <a href="/landy-briefings/" class="back-button">
+    <span>←</span> 返回简报列表
+  </a>
+</div>
+
+<h1>AI研究员--Landy葉的简报</h1>
+<div class="date">2026年11月7日</div>
+
+<!-- 今日速览 -->
+<div class="section">
+  <div class="section-title">📊 今日速览</div>
+  <ul>
+    <li><strong>🟢🟢 国常会：完善资本市场稳市机制，增强股市内在稳定性</strong> — 最高层级定调；<strong>6 家头部券商完成互换便利操作、落地首批股票投资</strong>，多家券商启动第三批。 <span class="source">（来源：东方财富、新华财经）</span></li>
+    <li><strong>🟢🟢 关键验证通过：利通连续 2 日跑赢川环</strong> — 11/6 美股崩盘日，利通 <strong>-3.24%</strong>（13.16）vs 川环 <strong>-3.56%</strong>（20.31）；11/5 利通 <strong>+3.58%</strong> vs 川环 +1.99%。<strong>在板块最弱的两天里相对强度连续改善。</strong> <span class="source">（来源：腾讯财经行情）</span></li>
+    <li><strong>🟢 美股芯片股大反弹</strong> — 纳指 <strong>+1.09%</strong>、费半 <strong>+4%</strong>、<strong>AMD +11.04%</strong>、英特尔 <strong>+7.71%</strong>、美光 +5.12%、闪迪 +3.55%、英伟达 +2.78%。 <span class="source">（来源：东方财富、腾讯财经行情）</span></li>
+    <li><strong>🟢 需求侧硬数据再添一笔</strong> — <strong>中国移动明年计划算力投资 1000 亿元</strong>；英伟达寻求破解存储瓶颈、台积电据悉考虑布局 3D DRAM。 <span class="source">（来源：东方财富）</span></li>
+  </ul>
+</div>
+
+<!-- 一、大势研判 -->
+<div class="section">
+  <div class="section-title lightblue">🤖 一、大势研判</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#1a73e8;">📈 市场数据</strong>
+    <ul>
+      <li>11/6 A 股低开调整：上证 <strong>3649.18</strong>（-1.10%）、北证50 <strong>888.48</strong>（-2.38%），成交缩至 477 万手（前日 571 万手）。 <span class="source">（来源：腾讯财经行情）</span></li>
+      <li><strong>美股 11/6 崩盘后 11/7 强力反弹</strong>：纳指 <strong>24579.42</strong>（<strong>+1.09%</strong>）、<strong>费城半导体指数涨超 4%</strong>、<strong>AMD +11.04%</strong>、<strong>英特尔 +7.71%</strong>、美光 +5.12%、闪迪 +3.55%、英伟达 <strong>186.64（+2.78%）</strong>；道指 -0.46%、微软 -0.99%、苹果 -0.52%。 <span class="source">（来源：东方财富、腾讯财经行情）</span></li>
+      <li>11/6 液冷链普跌：阳光电源 <strong>81.97</strong>（+0.99%）、巨化股份 <strong>32.32</strong>（-2.80%）、盛弘股份 <strong>33.47</strong>（-2.62%）、川环科技 <strong>20.31</strong>（<strong>-3.56%</strong>）、高澜股份 <strong>23.26</strong>（-4.87%）、申菱环境 <strong>60.97</strong>（<strong>-5.98%</strong>）、英维克 <strong>37.33</strong>（<strong>-5.68%</strong>）。 <span class="source">（来源：腾讯财经行情）</span></li>
+      <li><strong>中概股集体走强</strong>：小鹏、百度、B 站、网易领涨，中国资产反攻。 <span class="source">（来源：东方财富）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#1a73e8;">⚡ 政策与宏观（稳市机制最高层级定调）</strong>
+    <ul>
+      <li><strong>🔴 国务院常务会议：完善资本市场稳市机制，增强股市内在稳定性</strong>——高层定调。 <span class="source">（来源：东方财富、新华财经）</span></li>
+      <li><strong>增量资金已入市</strong>：<strong>6 家头部券商完成互换便利操作并落地首批股票投资</strong>，多家券商启动第三批。 <span class="source">（来源：东方财富）</span></li>
+      <li>国家发展改革委：推动能源消费绿色化低碳化；"老空间"孕育"新场景"，城市更新释放消费投资潜力。 <span class="source">（来源：东方财富）</span></li>
+      <li><strong>创业板指数编制方案修订</strong>；美联储戴利仍倾向进一步收紧政策（科技股"痛苦"调整难阻加息预期）。 <span class="source">（来源：东方财富、21早新闻）</span></li>
+      <li>特朗普称正在与伊朗进行沟通；美国宣布新一轮对伊制裁措施。 <span class="source">（来源：东方财富）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 二、液冷管赛道情报 -->
+<div class="section">
+  <div class="section-title orange">💧 二、液冷管赛道情报</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🔬 需求信号（算力资本开支再上台阶）</strong>
+    <ul>
+      <li><strong>🟢🟢 中国移动明年计划算力投资 1000 亿元</strong>——国内运营商算力资本开支的明确数字，对国产液冷管路是直接订单来源。 <span class="source">（来源：东方财富）</span></li>
+      <li><strong>🟢 英伟达寻求破解存储瓶颈，台积电据悉考虑布局 3D DRAM</strong>；AMD +11.04%、英特尔 +7.71% 重启芯片行情。 <span class="source">（来源：东方财富）</span></li>
+      <li><strong>微软据报逐步终止甲骨文算力租约</strong>——资本开支从"租赁"转向"自建"（谷歌 170 亿美元怀俄明州 DC 是同一逻辑）。<strong>自建 DC 对液冷管路的拉动强于租赁。</strong> <span class="source">（来源：东方财富）</span></li>
+      <li><strong>AI 应用加速渗透，内容产业迎价值重估</strong>；21 社论：中美 AI 发展模式不同，中国 AI 具备"独立叙事"基础。 <span class="source">（来源：东方财富、21世纪经济报道）</span></li>
+      <li><strong>AI 基建遇上民意阻力</strong>，OpenAI 财务官仍坚称需求真实存在；百亿美元投资谷歌浮亏，伯克希尔 AI 押注即将迎来市场审视。 <span class="source">（来源：东方财富）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#e87020;">🏭 竞争格局（11/6 利通跑赢川环，连续第 2 日）</strong>
+    <ul>
+      <li>11/6 板块普跌，<strong>利通科技 13.16（-3.24%）</strong>，<strong>好于川环科技 20.31（-3.56%）</strong>，且远好于申菱 -5.98%、英维克 -5.68%、高澜 -4.87%。 <span class="source">（来源：腾讯财经行情）</span></li>
+      <li><strong>连续两日相对强度对比</strong>：11/5 利通 <strong>+3.58%</strong> vs 川环 +1.99%（差 +1.59）；11/6 利通 <strong>-3.24%</strong> vs 川环 -3.56%（差 +0.32）。<strong>两天累计相对收益 +1.91 个百分点</strong>，且第二日是在板块最弱的环境下取得——含金量更高。 <span class="source">（来源：腾讯财经行情测算）</span></li>
+      <li>估值：利通 PE(TTM) 约 <strong>23.8</strong>（按 13.16 计）、市值约 <strong>16.8 亿</strong>；川环 PE 约 24.12，申菱 PE 约 109.4，英维克 PE 约 97.1，高澜 PE 约 129.7。 <span class="source">（来源：腾讯财经行情）</span></li>
+      <li>阳光电源 11/6 逆势 <strong>+0.99%</strong> 至 81.97，成交 110 万手；<strong>储能是当前唯一逆势分支</strong>。 <span class="source">（来源：腾讯财经行情）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#e87020;">📦 成本与材料</strong>
+    <ul>
+      <li>巨化股份 11/6 <strong>-2.80%</strong> 至 32.32，三日累计 +12.4%（28.76→32.32）；金价企稳 4100 美元上方，稀贵金属循环利用政策推进。 <span class="source">（来源：腾讯财经行情、东方财富）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 三、下游应用战场 -->
+<div class="section">
+  <div class="section-title green">🔋 三、下游应用战场</div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🖥️ 数据中心/算力中心（最强分支）</strong>
+    <ul>
+      <li><strong>🟢 中国移动明年算力投资 1000 亿元</strong> + 谷歌 170 亿美元自建 DC + 微软终止甲骨文租约转向自建——<strong>三条线索都指向"自建数据中心"，这是液冷管路最直接的需求形态。</strong> <span class="source">（来源：东方财富）</span></li>
+      <li>AMD +11.04%、英特尔 +7.71%、费半 +4%、英伟达 +2.78%——芯片股重启。 <span class="source">（来源：腾讯财经行情）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🔋 储能行业（唯一逆势分支）</strong>
+    <ul>
+      <li>阳光电源 11/6 逆势 +0.99% 至 81.97；新疆新型储能装机同比增九成；钠电产业化拐点渐近。 <span class="source">（来源：腾讯财经行情、东方财富）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px; margin-bottom:14px;">
+    <strong style="color:#34a853;">🚗 新能源汽车</strong>
+    <ul>
+      <li>小鹏领涨中概股；工信部第 413 批新车申报量锐减、新规阻击速成车。 <span class="source">（来源：东方财富）</span></li>
+    </ul>
+  </div>
+
+  <div style="margin-left:12px;">
+    <strong style="color:#34a853;">⚡ 液冷超充桩 / 零碳</strong>
+    <ul>
+      <li>城市如何走向零碳？福建宁德探路政企联动；国家发改委推动能源消费绿色化低碳化。 <span class="source">（来源：东方财富）</span></li>
+      <li>第九届进博会持续：进博会美企参展面积增 1500 平方米、连续八年第一；民航进博购物车金额创新高。 <span class="source">（来源：东方财富）</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 四、二级市场 -->
+<div class="section">
+  <div class="section-title darkblue">📈 四、二级市场 & 资本动向</div>
+  <ul>
+    <li><strong>🔴 11/6 A 股低开调整</strong>（上证 -1.10%、北证50 -2.38%），成交缩量至 477 万手——外部冲击下市场选择观望而非恐慌抛售。 <span class="source">（来源：腾讯财经行情）</span></li>
+    <li><strong>稳市机制最高层级定调</strong>：国常会 + 6 家头部券商完成互换便利落地首批股票投资 + 多家启动第三批 + 中央汇金类平准基金 + 回购增持再贷款。 <span class="source">（来源：东方财富、新华财经）</span></li>
+    <li><strong>中概股集体走强</strong>，小鹏、百度、B 站、网易领涨，中国资产反攻。 <span class="source">（来源：东方财富）</span></li>
+    <li><strong>美联储戴利仍倾向进一步收紧政策</strong>——科技股调整难阻加息预期，这是估值端的持续压制。 <span class="source">（来源：东方财富）</span></li>
+    <li>创业板指数编制方案修订；市场监督管理行政处罚裁量新规发布（"首违不罚"）；5 连板浙文影业称无 AI 短剧业务、同日上交所下发监管工作函。 <span class="source">（来源：东方财富、21早新闻）</span></li>
+    <li>10 月银行罚单罚没 1.27 亿元、环比回落，外汇领域开出千万级重罚。 <span class="source">（来源：东方财富）</span></li>
+  </ul>
+</div>
+
+<!-- 五、利通科技 -->
+<div class="section">
+  <div class="section-title gray">🏢 五、利通科技（920225）动态</div>
+
+  <div class="highlight">
+    <strong>📊 2026 年三季报核心数据（10/27 披露）</strong><br><br>
+    前三季营收 <strong>3.7781 亿</strong>（<strong>+9.17%</strong>）；归母 <strong>5231.28 万</strong>（<strong>-20.90%</strong>）；<strong>扣非 -298.71 万（-85.13%）</strong>；毛利率 <strong>39.51%</strong>（H1 为 42.07%）；EPS 0.41；加权 ROE 6.92%。<br>
+    Q3 单季：营收 <strong>1.1354 亿</strong>（+4.26%）、归母 <strong>554 万</strong>（<strong>-58.79%</strong>），单季毛利率推算约 <strong>31.5%</strong>。
+  </div>
+
+  <ul>
+    <li><strong>🟢🟢 连续 2 日跑赢川环 —— 相对强度改善得到初步验证</strong> — 11/5 <strong>+3.58%</strong> vs +1.99%；11/6 <strong>-3.24%</strong> vs -3.56%。<strong>两天累计相对收益 +1.91 个百分点，且第二日是在板块最弱的环境下取得。</strong>这是三季报利空定价以来第一个持续两日的相对强度信号。 <span class="source">（来源：腾讯财经行情）</span></li>
+    <li><strong>仍低于三季报披露前水平</strong> — 收 <strong>13.16</strong>，PE(TTM) 约 <strong>23.8</strong>，市值约 <strong>16.8 亿</strong>；披露前为 14.09。 <span class="source">（来源：腾讯财经行情）</span></li>
+    <li><strong>🟢 顺风在累积</strong> — 国常会稳市定调 + 券商互换便利落地首批 + 中国移动 1000 亿算力投资 + 谷歌 170 亿自建 DC + 美股芯片股反弹 4%。<strong>宏观、流动性、需求三条线同时向上。</strong> <span class="source">（来源：东方财富）</span></li>
+    <li><strong>🔴 但基本面硬证据仍未出现</strong> — 自 10/27 起无新增公告，最新仍是三季报同日 7 份（三季度报告、第五届董事会第三次会议决议、独董变动〔曹淼〕、独董候选人声明与承诺、补选第五届董事会专门委员会委员、<strong>2026 年第二次临时股东会通知〔提供网络投票〕</strong>）。此前 <strong>09/16 股东减持股份结果公告</strong>、<strong>09/23 独立董事离任公告</strong>、<strong>10/12 使用暂时闲置自有资金购买理财产品进展公告</strong>。 <span class="source">（来源：东方财富公告列表）</span></li>
+    <li><strong>待验证的两个前瞻信号</strong> — ① 临时股东会审议议案是否含战略或人事调整；② 液冷管路中标/在手订单公告（验证"是否丢单"最直接的证据）。 <span class="source">（来源：待跟踪）</span></li>
+  </ul>
+</div>
+
+<!-- 六、战略预警 -->
+<div class="section">
+  <div class="section-title" style="border-bottom-color:#f9a825; color:#f9a825;">📌 六、战略预警 / 机会提示</div>
+
+  <div class="warning">
+    <strong>🔴 核心判断（相对强度改善已获初步验证，但仍非基本面转向）</strong><br><br>
+    <strong>进展一（重要）：连续两日跑赢川环。</strong>此前连续 4 日"川环强于利通"（10/28、10/29、10/30、11/4），11/5 首次反超（+3.58% vs +1.99%），<strong>11/6 在板块最弱的一天继续跑赢（-3.24% vs -3.56%），两天累计相对收益 +1.91 个百分点。</strong>第二日是在美股崩盘、板块普跌的环境下取得的，含金量高于第一日。<strong>这条线现在有了连续性，不再是单日噪声。</strong><br><br>
+    <strong>进展二：宏观、流动性、需求三条线同时向上。</strong>国常会定调完善资本市场稳市机制（最高层级）→ 6 家头部券商互换便利落地首批股票投资（增量资金实际入场）→ 中国移动 1000 亿算力投资 + 谷歌 170 亿自建 DC + 微软弃租转自建（需求侧）。<strong>同时美股芯片股反弹 4%、中概股领涨。</strong><br><br>
+    <strong>⚠️ 但两条线仍然缺失</strong>：<br>
+    <strong>(1) 基本面硬证据</strong>：自 10/27 起利通无新增公告，<strong>液冷管路中标/在手订单、集成商供应商名录变更、临时股东会议案——三者至今没有实质进展</strong>。相对强度改善是"市场重新给机会"，不是"公司变好了"。<br>
+    <strong>(2) 成本端改善尚未兑现到报表</strong>：布伦特原油 11/4 暴跌 8.82% 至 94.47，但需等 11/12 月单季毛利率才能验证。<br><br>
+    <strong>⚠️ 关于加仓的直说（结论不变，但风险收益比在改善）</strong>：市值 16.8 亿、PE 约 23.8 仍在历史低位区，"低估值"的基础依然是<strong>扣非连续为负</strong>而非"业绩待兑现"。<strong>在看到扣非转正或单季毛利率回到 38% 以上之前，不建议基于超跌或相对强度加仓。</strong>但需要说明的是：<strong>连续两日的相对强度改善，配合稳市机制与 1000 亿算力投资，右侧观察仓的性价比在上升</strong>——如果叶总本来就有配置计划，现在的风险收益比比一周前更好，而不是更差。
+  </div>
+
+  <div class="highlight">
+    <strong>🟡 持续跟踪</strong><br>
+    <strong>1. 相对强度能否延续到第 3 天（今日 11/7 收盘验证）</strong>：若利通继续跑赢川环，则从"超跌反弹"升级为"资金开始重新配置"；若再次跑输，则前两日仍只是随机波动。 <span class="source">（来源：待跟踪）</span></li>
+    <strong>2. 订单是唯一硬证据（优先级最高）</strong>：液冷管路中标公告、集成商供应商名录变更、临时股东会议案。<strong>中国移动 1000 亿算力投资是很好的线索——建议重点跟其中是否包含液冷管路采购，以及利通是否进入供应商名录。</strong> <span class="source">（来源：待跟踪）</span></li>
+    <strong>3. 成本端验证窗口</strong>：布伦特 94.47（-8.82%）。看 11/12 月单季毛利率是否从 31.5% 回升——回升说明 Q3 塌陷有成本成分；不回升则坐实是定价或份额问题。 <span class="source">（来源：腾讯财经行情）</span></li>
+    <strong>4. 利率仍是估值端的持续压制</strong>：美联储戴利倾向进一步收紧，英国央行已加息。稳市工具能稳指数，但改不了贴现率。 <span class="source">（来源：东方财富）</span></li>
+    <strong>5. 自建 DC 是需求形态的最优跟踪项</strong>：谷歌 170 亿美元、微软弃租转自建、中国移动 1000 亿——<strong>自建占比提升 = 液冷管路需求强度提升</strong>。 <span class="source">（来源：东方财富）</span></li>
+    <strong>6. 治理与信息披露</strong>：5 连板浙文影业称无 AI 短剧业务被上交所下发监管工作函——监管对"蹭概念"零容忍，利通的业务表述需以公告为准，第三方资讯仅作线索。 <span class="source">（来源：东方财富）</span></li>
+  </div>
+</div>
+
+</body>
+</html>
